@@ -1671,6 +1671,7 @@ img{display:block}
 .in-p5 .row{display:grid;grid-template-columns:340px 1fr;align-items:center;gap:40px}
 .in-p5 .row b{font-size:150px;font-weight:900;line-height:1;letter-spacing:-.06em;color:var(--purple)}
 .in-p5 .row b.r{color:var(--red)}
+.in-p5 .row b .pre{display:block;font-style:normal;font-size:52px;font-weight:900;letter-spacing:-.04em;color:var(--ink);margin-bottom:6px}
 .in-p5 .row span{display:block;font-size:32px;font-weight:800;line-height:1.4;letter-spacing:-.04em;color:var(--ink);word-break:keep-all}
 .in-p5 .row small{display:block;margin-top:10px;font-size:21px;font-weight:700;color:var(--muted)}
 .in-p5 .qt{display:flex;flex-direction:column;justify-content:center;padding:56px 60px;background:#fff;border-radius:8px;box-shadow:0 2px 24px rgba(20,16,40,.06)}
@@ -2565,10 +2566,10 @@ img{display:block}
 <div class="in-col" style="justify-content:center">
   <div class="in-p5">
     <div class="st">
-      <div class="row"><b class="r">30일</b><div><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간 (중앙값)</span><small>오픈소스 개발자 n=60 · Krüger et al. 2018</small></div></div>
-      <div class="row"><b>5시간</b><div><span>경력 3년 미만 개발자가 하루 8시간 중<br>코드를 읽고 이해하는 데 쓰는 시간</span><small>작업시간의 66% 환산 · n=78 · Xia et al. 2018</small></div></div>
+      <div class="row"><b class="r">30일</b><div><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간 (중앙값)</span><small>Krüger et al., 「Do You Remember This Source Code?」, 2018.</small></div></div>
+      <div class="row"><b><i class="pre">8시간 중</i>5시간</b><div><span>경력 3년 미만 개발자가<br>코드를 읽고 이해하는 데 쓰는 시간</span><small>Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, 2018.</small></div></div>
     </div>
-    <div class="qt"><div class="mk">"</div><blockquote>스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다</blockquote><small>채용 담당자 · OKKY×바이라인네트워크 2025 (n=71)</small></div>
+    <div class="qt"><div class="mk">"</div><blockquote>스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다</blockquote><small>바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.</small></div>
   </div>
   <div class="in-bar">그런데 면접에서는 그 코드를 <span>왜 그렇게 짰는지</span> 설명해야 합니다</div>
 </div></div>
@@ -2579,13 +2580,13 @@ img{display:block}
 
 출처 (research/R10-recall-own-code.md, 접근 2026-11-10):
 - 30일 = Krüger, Wiemann, Fenske, Saake, Leich, ICSE 2018, 오픈소스 개발자 60명(GitHub 10개 프로젝트). 원문 «forget half of their files after 30 days in the median and 40 days on average». ⚠ 측정값이 아니라 본인 추정치. ⚠ 같은 파일을 여러 번 고쳤거나 직접 쓴 비율이 높으면 더 오래 기억함 → Q&amp;A에서는 «한 번 짜고 다시 안 본 코드일수록 빨리 잊는다». https://jacobkrueger.github.io/assets/papers/Krueger2018Remember.pdf
-- 66%·58% = Xia, Bao, Lo, Xing, Hassan, Li, IEEE TSE 44(10) 2018, 현업 78명·3,148 작업시간 자동 기록. 저경력(3년 미만) 66.37%, 전체 58%. 장표 «5시간» = 66.37% × 8시간 = 5.3시간 환산(8시간 근무 가정, 원문은 비율만 제시). ⚠ 자기 코드에 한정한 수치가 아니라 코드 이해 일반. https://xin-xia.github.io/publication/TSE17.pdf
+- 66%·58% = Xia, Bao, Lo, Xing, Hassan, Li, IEEE TSE 44(10) 2018, 현업 78명·3,148 작업시간 자동 기록. 저경력(3년 미만) 66.37%, 전체 58%. 장표 «5시간» = 66.37% × 8시간 = 5.3시간 환산(8시간 근무 가정, 원문은 비율만 제시). 장표 캡션에서는 환산 표기를 뺐으니(11-10 사용자: 출처만) 질문 나오면 이 계산으로 답할 것. ⚠ 자기 코드에 한정한 수치가 아니라 코드 이해 일반. https://xin-xia.github.io/publication/TSE17.pdf
 - 인용 = OKKY×바이라인네트워크 2025-02-28, IT 전문가 71명, 채용 담당자 발언(R4 V2). ⚠ 표본 작음. https://byline.network/2025/02/27-431/
 ⛔ «취준생 N%가 자기 코드를 기억 못 한다» 류 설문 수치 없음(국내·해외 못 찾음) → 만들지 말 것. ⛔ 취준생 레포·커밋 규모 통계 없음 → 노트의 «레포가 여러 개이고 커밋도 많아서»에 숫자 붙이지 말 것. ⛔ Minelli 70% 쓰지 말 것.
 Q&amp;A 보조: Anthropic 2026-01, 52명 무작위 실험 — AI로 코딩한 그룹의 이해도 퀴즈 50% vs 손코딩 67% (작업 직후 측정, 벤더 자체 연구).
 삭제한 이전 장(84%·WGU 60%·Big Tech 58%) 수치는 Q&amp;A용: Stack Overflow 2025 · WGU Workforce Decoded 2026(미국 n=3,128) · Pragmatic Engineer Pulse #146(interviewing.io n=63).
 
-[장표 출처 — 화면에서는 뺌] Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크(OKKY 공동 조사), 「개발자 채용 설문」, 2025.</template></section>
+[장표 출처 — 화면에서는 뺌] Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.</template></section>
 <section class="slide " data-order="6" data-title="그 경험은 이미 내 GitHub에 남아 있습니다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg" alt="">Dev<b>Fit</b></div>
