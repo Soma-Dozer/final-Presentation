@@ -1666,6 +1666,7 @@ img{display:block}
 .in-nums3{display:grid;grid-template-columns:1fr 1fr .8fr;gap:60px;width:100%;align-items:end}
 .in-num.s b{font-size:150px;color:var(--ink)}
 .in-num.s span{font-size:28px}
+.in-num.q blockquote{margin:0;padding-left:28px;border-left:8px solid var(--red);font-size:36px;font-weight:800;line-height:1.45;letter-spacing:-.04em;color:var(--ink);word-break:keep-all}
 .in-bar{margin-top:56px;background:var(--dark);color:#fff;border-radius:20px;padding:26px 36px;text-align:center;font-size:32px;font-weight:900;letter-spacing:-.04em}
 .in-bar span{color:#b9b0ff}
 .in-gh{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;width:100%;height:100%;min-height:0;align-items:stretch}
@@ -2545,30 +2546,33 @@ img{display:block}
 인용: 현직 개발자 인터뷰 2026-09-07(collect/D P1).
 
 [장표 출처 — 화면에서는 뺌] 면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 바이라인네트워크 2026-09-02 · CJ올리브영: 아시아경제 2026-07-21 · Canva 공식 블로그 2025-06-11 · Meta: 404 Media 2025-07-29 · 컬리: 중앙일보 2025-06-10 · 지원자 인용: 현직 개발자 인터뷰 (2026-09-07)</template></section>
-<section class="slide problem" data-order="5" data-title="AI가 짠 코드 앞에서, 채용은 실제 역량을 가리기 어려워졌습니다">
+<section class="slide problem" data-order="5" data-title="취준생은 전에 짠 코드를 다시 보기도, 기억하기도 어렵습니다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg" alt="">Dev<b>Fit</b></div>
-    <header class="topline"><div class="eyebrow">Problem</div><h1 class="title">AI가 짠 코드 앞에서, 채용은 <span class="red">실제 역량</span>을 가리기 어려워졌습니다</h1></header>
+    <header class="topline"><div class="eyebrow">Problem</div><h1 class="title">취준생은 전에 짠 코드를 <span class="red">다시 보기도, 기억하기도</span> 어렵습니다</h1></header>
     <div class="slide-content">
 <div class="in-col" style="justify-content:center">
   <div class="in-nums3">
-    <div class="in-num"><b>84%</b><span>AI 도구를 쓰거나<br>쓸 계획인 개발자</span><small>Stack Overflow 2025</small></div>
-    <div class="in-num"><b class="r">60%</b><span>"AI 때문에 지원자의 실제 역량을<br>평가하기 더 어려워졌다"</span><small>미국 채용 담당자 · WGU 2026 (n=3,128)</small></div>
-    <div class="in-num s"><b>58%</b><span>AI 대응으로 질문을 바꾼<br>Big Tech 면접관 (일부는 "왜 그렇게 짰나")</span><small>interviewing.io 설문 n=63 · Pragmatic Engineer 2025</small></div>
+    <div class="in-num"><b class="r">30일</b><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간 (중앙값)</span><small>오픈소스 개발자 n=60 · Krüger et al. 2018</small></div>
+    <div class="in-num"><b>66%</b><span>경력 3년 미만 개발자가 코드를<br>이해하는 데 쓰는 시간 (전체 58%)</span><small>현업 n=78, 3,148시간 실측 · Xia et al. 2018</small></div>
+    <div class="in-num q"><blockquote>"스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다"</blockquote><small>채용 담당자 · OKKY×바이라인네트워크 2025 (n=71)</small></div>
   </div>
-  <div class="in-bar">AI로 코드를 짜는 것이 기본이 되면서, 면접은 <span>코드를 이해하고 짰는지</span> 확인합니다</div>
+  <div class="in-bar">그런데 면접에서는 그 코드를 <span>왜 그렇게 짰는지</span> 설명해야 합니다</div>
 </div></div>
     <div class="folio"></div>
     
   </div>
-<template class="notes">[0:46–0:55] 숫자로 정리하면, 개발자 84%가 이미 AI 도구를 쓰거나 쓸 계획입니다. 그리고 미국 채용 담당자 60%가 AI 때문에 지원자의 실제 역량을 가리기가 더 어려워졌다고 답했습니다. 그래서 면접관이 묻는 방식도 바뀝니다. Big Tech 면접관 58%가 AI에 맞춰 질문을 바꿨고, 그중에는 «무엇을 썼나»보다 «왜 그렇게 짰나»를 묻는 쪽이 있습니다. 그래서 면접은 코드 자체가 아니라 그 코드를 «알고 짰는지»를 묻게 됩니다.
+<template class="notes">[0:46–0:55] 문제는 지원자 쪽에도 있습니다. 개발자들은 자기가 쓴 파일도 한 달쯤 지나면 절반은 잊는다고 답했습니다. 코드를 다시 읽는 일도 가볍지 않습니다. 경력 3년 미만 개발자는 일하는 시간의 66%를 코드를 이해하는 데 씁니다. 취준생은 레포가 여러 개이고 커밋도 많아서 전부 다시 보기가 어렵습니다. 그래서 채용 담당자들은 이력서에 적은 프로젝트를 물어보면 답하지 못하는 지원자를 많이 봤다고 말합니다. 그런데 면접은 바로 그 코드를 왜 그렇게 짰는지 묻습니다.
 
-출처: 84% = Stack Overflow Developer Survey 2025. 60% = WGU Workforce Decoded 2026(미국 채용 실무자 n=3,128) — 반드시 «미국» 표기.
-58% = interviewing.io 면접관 설문 n=63 중 Big Tech 면접관, «질문 종류를 조정했다» (The Pragmatic Engineer «The Pulse #146», 2025-09-18, 원문 확인 — last-dance/research/R1-experience-interview.md E1). 소표본·자기보고. ⛔ 같은 설문에서 알고리즘 질문을 버린 사람 0명 → «경험 위주로 바뀌었다» 단정 금지, «"왜·어떻게"를 캐묻는 쪽으로 바뀌는 중»까지만.
-본편에서 뺀 수치(Q&amp;A용): AI 결과 정확도를 신뢰하지 않는 개발자 46% (Stack Overflow 2025). 기업 사례: Canva가 CS 기초 스크리닝을 AI 허용 면접으로 대체(공식 블로그 2025-06-11), CJ올리브영 라이브 코딩 폐지 → 과정 평가 AI 과제(아시아경제 2026-07-21, 언론 경유) — R1 E10·E11.
-⛔ «연봉 30%» 금지. ⛔ 두 숫자를 «경험 면접이 N% 늘었다»로 엮지 말 것(C1은 간접 근거).
+출처 (research/R10-recall-own-code.md, 접근 2026-11-10):
+- 30일 = Krüger, Wiemann, Fenske, Saake, Leich, ICSE 2018, 오픈소스 개발자 60명(GitHub 10개 프로젝트). 원문 «forget half of their files after 30 days in the median and 40 days on average». ⚠ 측정값이 아니라 본인 추정치. ⚠ 같은 파일을 여러 번 고쳤거나 직접 쓴 비율이 높으면 더 오래 기억함 → Q&amp;A에서는 «한 번 짜고 다시 안 본 코드일수록 빨리 잊는다». https://jacobkrueger.github.io/assets/papers/Krueger2018Remember.pdf
+- 66%·58% = Xia, Bao, Lo, Xing, Hassan, Li, IEEE TSE 44(10) 2018, 현업 78명·3,148 작업시간 자동 기록. 저경력(3년 미만) 66.37%, 전체 58%. ⚠ 자기 코드에 한정한 수치가 아니라 코드 이해 일반. https://xin-xia.github.io/publication/TSE17.pdf
+- 인용 = OKKY×바이라인네트워크 2025-02-28, IT 전문가 71명, 채용 담당자 발언(R4 V2). ⚠ 표본 작음. https://byline.network/2025/02/27-431/
+⛔ «취준생 N%가 자기 코드를 기억 못 한다» 류 설문 수치 없음(국내·해외 못 찾음) → 만들지 말 것. ⛔ 취준생 레포·커밋 규모 통계 없음 → 노트의 «레포가 여러 개이고 커밋도 많아서»에 숫자 붙이지 말 것. ⛔ Minelli 70% 쓰지 말 것.
+Q&amp;A 보조: Anthropic 2026-01, 52명 무작위 실험 — AI로 코딩한 그룹의 이해도 퀴즈 50% vs 손코딩 67% (작업 직후 측정, 벤더 자체 연구).
+삭제한 이전 장(84%·WGU 60%·Big Tech 58%) 수치는 Q&amp;A용: Stack Overflow 2025 · WGU Workforce Decoded 2026(미국 n=3,128) · Pragmatic Engineer Pulse #146(interviewing.io n=63).
 
-[장표 출처 — 화면에서는 뺌] Stack Overflow Developer Survey 2025 · WGU, Workforce Decoded 2026 (미국 채용 실무자 n=3,128) · The Pragmatic Engineer, The Pulse #146 (2025-09-18, interviewing.io 면접관 n=63)</template></section>
+[장표 출처 — 화면에서는 뺌] Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크(OKKY 공동 조사), 「개발자 채용 설문」, 2025.</template></section>
 <section class="slide " data-order="6" data-title="그 경험은 이미 내 GitHub에 남아 있습니다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg" alt="">Dev<b>Fit</b></div>
