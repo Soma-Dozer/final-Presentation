@@ -347,7 +347,7 @@ S.append(shell('Problem', '취준생은 전에 짠 코드를 <span class="red">�
   <div class="in-p5">
     <div class="st">
       <div class="row"><b class="r">30일</b><div><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간 (중앙값)</span><small>오픈소스 개발자 n=60 · Krüger et al. 2018</small></div></div>
-      <div class="row"><b>66%</b><div><span>경력 3년 미만 개발자가 코드를<br>이해하는 데 쓰는 시간 (전체 58%)</span><small>현업 n=78, 3,148시간 실측 · Xia et al. 2018</small></div></div>
+      <div class="row"><b>66%</b><div><span>경력 3년 미만 개발자가 일하는 시간 중<br>코드를 읽고 이해하는 데 쓰는 비율 (전체 58%)</span><small>현업 n=78, 3,148시간 실측 · Xia et al. 2018</small></div></div>
     </div>
     <div class="qt"><div class="mk">"</div><blockquote>스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다</blockquote><small>채용 담당자 · OKKY×바이라인네트워크 2025 (n=71)</small></div>
   </div>
