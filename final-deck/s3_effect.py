@@ -235,11 +235,162 @@ CSS = r""".ef-d3{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;align
 .ef-state{margin-top:14px;text-align:center;font-size:24px;font-weight:800;color:var(--muted);letter-spacing:-.03em}
 .ef-state b{color:var(--ink);font-weight:900}
 
+
+/* Marketing: verified source snapshots, 2026-11-11 */
+@font-face{font-family:Pretendard;src:url('assets/mkt-Pretendard-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Pretendard;src:url('assets/mkt-Pretendard-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Pretendard;src:url('assets/mkt-Pretendard-Black.woff2') format('woff2');font-weight:900;font-display:swap}
+.ef-mkt{flex:1;min-height:0;display:flex;flex-direction:column;gap:22px}
+.ef-mkt *{letter-spacing:-.025em;word-break:keep-all}
+.ef-mkt-period{font-size:20px;font-weight:700;color:var(--muted);margin:0}
+.ef-mkt-foot{font-size:20px;line-height:1.5;color:var(--muted);margin-top:auto;font-weight:700}
+.ef-mkt-layout{display:grid;grid-template-columns:1.9fr 1fr;gap:34px;flex:1;min-height:0;align-items:stretch}
+.ef-mkt-channels{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-content:stretch}
+.ef-mkt-channel{background:white;padding:28px 30px;border:1px solid var(--line);border-radius:16px}
+.ef-mkt-channel .tag{color:var(--purple);font-size:25px;font-weight:900;margin-bottom:18px}
+.ef-mkt-channel h3{font-size:35px;line-height:1.2;margin:0 0 18px;font-weight:900}
+.ef-mkt-channel p{font-size:24px;line-height:1.5;color:var(--muted);margin:0;font-weight:700}
+.ef-mkt-channel small{display:block;font-size:19px;line-height:1.5;color:var(--muted);margin-top:18px}
+.ef-mkt-photo{display:flex;flex-direction:column;gap:16px;min-height:0}
+.ef-mkt-photo img{width:100%;object-fit:cover;border-radius:12px}
+.ef-mkt-photo .fair{height:330px}
+.ef-mkt-photo .goods{height:220px;object-position:center 58%}
+.ef-mkt-photo span{font-size:20px;font-weight:700;color:var(--muted)}
+.ef-mkt-ads{display:grid;grid-template-columns:1fr 1fr;gap:30px;flex:1}
+.ef-mkt-ad{border-radius:20px;background:white;border:1px solid var(--line);padding:30px 38px;display:flex;flex-direction:column;gap:18px}
+.ef-mkt-ad h3{font-size:36px;margin:0;font-weight:900}
+.ef-mkt-ad .spend{display:flex;justify-content:space-between;font-size:25px;color:var(--muted);font-weight:700}
+.ef-mkt-ad .spend b{color:var(--ink)}
+.ef-mkt-ad .click{font-size:102px;font-weight:900;line-height:1.05;color:var(--purple);letter-spacing:-.055em}
+.ef-mkt-ad .click small{font-size:27px;letter-spacing:-.03em;margin-left:14px;color:var(--muted)}
+.ef-mkt-ad .metrics{display:grid;grid-template-columns:1.15fr 1fr .75fr;gap:18px;padding:16px 0 20px;border-bottom:1px solid var(--line)}
+.ef-mkt-ad .metrics b{font-size:35px;display:block;line-height:1.2}
+.ef-mkt-ad .metrics span{font-size:20px;font-weight:700;color:var(--muted);display:block;margin-bottom:10px}
+.ef-mkt-ad .engage{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.ef-mkt-ad .engage span{font-size:21px;font-weight:700;line-height:1.5;color:var(--muted)}
+.ef-mkt-ad .engage b{font-size:42px;white-space:nowrap;color:var(--purple-deep)}
+.ef-mkt-ad .engage small{font-size:18px;color:var(--muted);display:block;text-align:right;margin-top:5px}
+.ef-mkt-ad.google .click{color:var(--ink)}
+.ef-mkt-plots{display:flex;flex-direction:column;gap:18px}
+.ef-mkt-plot{padding:20px 22px 4px;background:white;border:1px solid var(--line);border-radius:16px;min-height:0}
+.ef-mkt-plot h3{font-size:25px;margin:0 0 0 16px;font-weight:900;display:flex;justify-content:space-between;align-items:baseline}
+.ef-mkt-plot h3 span{font-size:18px;color:var(--muted);font-weight:700}
+.ef-mkt-plot img{width:100%;height:235px;object-fit:contain}
+.ef-mkt-stats{display:flex;flex-direction:column;gap:22px}
+.ef-mkt-stat{background:var(--purple-pale);border-radius:18px;padding:30px 32px;flex:1;display:flex;flex-direction:column;justify-content:center}
+.ef-mkt-stat.dark{background:#eeecf2}
+.ef-mkt-stat .number{font-size:96px;line-height:1.05;font-weight:900;color:var(--purple-deep);letter-spacing:-.06em}
+.ef-mkt-stat.dark .number{color:var(--ink)}
+.ef-mkt-stat .number small{font-size:29px;letter-spacing:-.02em;margin-left:7px}
+.ef-mkt-stat h3{font-size:28px;margin:16px 0 8px;font-weight:900}
+.ef-mkt-stat p{font-size:20px;line-height:1.5;margin:0;color:var(--muted);font-weight:700}
+.ef-mkt-guestplot{display:flex;flex-direction:column;justify-content:center;padding:24px 26px;background:white;border:1px solid var(--line);border-radius:20px}
+.ef-mkt-guestplot h3{font-size:30px;margin:0 0 28px 12px;font-weight:900}
+.ef-mkt-guestplot img{width:100%;height:440px;object-fit:contain}
+.ef-mkt-usage{display:grid;grid-template-columns:1.7fr 1fr;gap:45px;flex:1;align-items:stretch}
+.ef-mkt-usage .chart{background:white;border:1px solid var(--line);border-radius:20px;padding:34px 38px}
+.ef-mkt-usage .chart h3{font-size:30px;margin:0 0 30px;font-weight:900}
+.ef-mkt-bar{display:grid;grid-template-columns:170px 1fr 140px;gap:18px;align-items:center;margin:26px 0}
+.ef-mkt-bar>span{font-size:28px;font-weight:900}
+.ef-mkt-bar .track{height:34px;background:#efedf6;border-radius:5px;overflow:hidden}
+.ef-mkt-bar .fill{height:100%;background:var(--purple)}
+.ef-mkt-bar strong{font-size:30px;text-align:right;font-weight:900}
+.ef-mkt-bar strong small{font-size:20px;color:var(--muted);margin-left:6px}
+.ef-mkt-focus{display:flex;flex-direction:column;justify-content:center;gap:26px}
+.ef-mkt-focus .big{font-size:100px;font-weight:900;line-height:1;color:var(--purple);letter-spacing:-.06em}
+.ef-mkt-focus .big small{font-size:34px;margin-left:10px}
+.ef-mkt-focus h3{font-size:34px;font-weight:900;line-height:1.35;margin:0}
+.ef-mkt-focus p{font-size:24px;line-height:1.6;margin:0;font-weight:700;color:var(--muted)}
+.ef-mkt-next{padding:22px 24px;background:var(--purple-pale);border-left:5px solid var(--purple);font-size:23px;font-weight:700;line-height:1.55}
+.ef-mkt-next b{display:block;color:var(--purple-deep);margin-bottom:6px}
+
 """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# MARKETING_REVISION_CSS_BEGIN
+CSS += '\n/* marketing revision: evidence and product metrics */\n.ef-mr-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;flex:1;min-height:0}\n.ef-mr-grid.wide{grid-template-columns:1.7fr 1fr}\n.ef-mr-card{background:white;border:1px solid var(--line);border-radius:18px;padding:30px 34px;min-height:0}\n.ef-mr-card h3{font-size:32px;margin:0 0 18px;line-height:1.3;font-weight:900}\n.ef-mr-card p{font-size:25px;line-height:1.55;margin:14px 0;color:var(--muted);font-weight:700}\n.ef-mr-card .label{color:var(--purple);font-size:23px;font-weight:900;margin-bottom:18px}\n.ef-mr-number{font-size:102px;line-height:1.1;font-weight:900;color:var(--purple-deep);letter-spacing:-.055em}\n.ef-mr-number small{font-size:30px;margin-left:10px;letter-spacing:-.02em}\n.ef-mr-card .sub{font-size:20px;color:var(--muted);line-height:1.55;margin-top:15px}\n.ef-mr-card .rule{border-top:1px solid var(--line);padding-top:22px;margin-top:23px}\n.ef-mr-pair{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:26px 0}\n.ef-mr-pair b{font-size:39px;display:block;margin-top:8px;color:var(--ink)}\n.ef-mr-pair span{font-size:22px;color:var(--muted);font-weight:700}\n.ef-mr-highlight{padding:20px 24px;background:var(--purple-pale);border-left:5px solid var(--purple);font-size:25px;font-weight:800;line-height:1.5;margin-top:20px}\n.ef-mr-chart{width:100%;height:540px;object-fit:contain;display:block}\n.ef-mr-chart.accounts{height:580px}\n.ef-mr-aside{display:flex;flex-direction:column;gap:22px}\n.ef-mr-aside .ef-mr-card{flex:1;display:flex;flex-direction:column;justify-content:center}\n.ef-mr-bars{display:flex;flex-direction:column;gap:25px;margin-top:28px}\n.ef-mr-bar{display:grid;grid-template-columns:160px 1fr 150px;align-items:center;gap:16px;font-size:25px;font-weight:800}\n.ef-mr-track{height:34px;background:#efedf6;border-radius:4px;overflow:hidden}\n.ef-mr-fill{height:100%;background:var(--purple)}\n.ef-mr-bar b{text-align:right;font-size:27px}\n.ef-mr-strip{display:flex;height:62px;border-radius:6px;overflow:hidden;margin:22px 0 30px;color:white;font-size:26px;font-weight:900}\n.ef-mr-strip div{display:flex;align-items:center;justify-content:center}\n.ef-mr-three{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;flex:1}\n.ef-mr-three .ef-mr-number{font-size:88px}\n.ef-mr-three .ef-mr-card{display:flex;flex-direction:column}\n.ef-mr-three .ef-mr-card .rule{margin-top:auto}\n.ef-mr-table{width:100%;border-collapse:collapse;font-size:24px}\n.ef-mr-table td,.ef-mr-table th{text-align:left;padding:17px 8px;border-bottom:1px solid var(--line)}\n.ef-mr-table th{font-size:21px;color:var(--muted)}\n.ef-mr-table td:last-child{text-align:right;font-weight:900;color:var(--purple-deep)}\n/* Presentation copy: secondary explanations are retained in speaker notes. */\n.ef-marketing-slide .folio{display:none}\n.ef-marketing-slide .ef-mkt-photo{gap:20px;justify-content:flex-start}\n.ef-marketing-slide .ef-mkt-photo .goods{height:390px;object-fit:contain;object-position:center;background:#eeecf2}\n.ef-marketing-slide .ef-mkt-photo .fair{height:330px;object-fit:contain;background:#eeecf2}\n.ef-marketing-slide .ef-mr-card p,.ef-marketing-slide .ef-mkt-channel p{color:var(--ink)}\n.ef-cash-head{font-size:80px;font-weight:900;color:var(--purple-deep);letter-spacing:-.045em;margin:22px 0 34px}\n.ef-cash-head span{color:#aba3bd;font-size:60px;margin:0 12px}\n.ef-cash-compare{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:20px 0 35px}\n.ef-cash-compare h3{font-size:27px}\n.ef-cash-track{height:40px;background:#eeecf3;border-radius:4px;margin-bottom:20px}\n.ef-cash-track>div{height:100%;background:var(--purple);border-radius:4px}\n.ef-cash-compare b{font-size:42px;font-weight:900}\n.ef-cash-compare p{font-size:22px;line-height:1.5}\n.ef-cash-table{width:100%;border-collapse:collapse;margin-top:30px;font-size:26px}\n.ef-cash-table td,.ef-cash-table th{padding:21px 12px;text-align:right;border-bottom:1px solid var(--line)}\n.ef-cash-table td:first-child,.ef-cash-table th:first-child{text-align:left}\n.ef-cash-table th{font-size:24px}\n.ef-cash-table td:last-child{font-weight:900;color:var(--purple-deep)}\n.ef-cash-table .accent{background:var(--purple-pale);font-weight:900}\n.ef-perf-chart{width:100%;height:420px;object-fit:contain;display:block;margin:8px 0}\n.ef-perf-table{width:100%;border-collapse:collapse;font-size:24px;margin:26px 0}\n.ef-perf-table td,.ef-perf-table th{padding:20px 9px;border-bottom:1px solid var(--line);text-align:right}\n.ef-perf-table td:first-child,.ef-perf-table th:first-child{text-align:left}\n.ef-perf-table td:last-child{font-weight:900;color:var(--purple-deep)}\n.ef-perf-table th{font-size:23px}\n.ef-perf-note{font-size:23px;line-height:1.6;color:var(--ink);font-weight:700;margin-top:20px}\n.ef-performance-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}\n.ef-performance-kpis .ef-mr-card{padding:25px 30px}\n.ef-performance-kpis .metric{font-size:56px;font-weight:900;color:var(--purple-deep);line-height:1.25;letter-spacing:-.04em}\n.ef-performance-kpis .metric small{font-size:29px}\n.ef-performance-kpis .flow{font-size:27px;font-weight:800;margin-top:18px;color:var(--ink)}\n.ef-performance-kpis .change{font-size:25px;color:var(--purple-deep);font-weight:900;margin-top:14px}\n.ef-performance-summary{display:grid;grid-template-columns:1.6fr 1fr;gap:26px;flex:1}\n.ef-performance-summary .ef-mr-card{padding:25px 30px}\n\n.ef-ad-period{font-size:23px;font-weight:700;color:var(--ink);margin:0;line-height:1.4}\n.ef-ad-chart{width:100%;height:335px;object-fit:contain;display:block}\n.ef-ad-observations{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}\n.ef-ad-observation{border:1px solid var(--line);background:white;border-radius:14px;padding:23px 27px}\n.ef-ad-observation .label{font-size:23px;font-weight:900;color:var(--purple);margin-bottom:13px}\n.ef-ad-observation h3{font-size:29px;line-height:1.35;margin:0 0 12px;font-weight:900}\n.ef-ad-observation p{font-size:23px;line-height:1.5;margin:0;font-weight:700}\n.ef-ad-observation b{color:var(--purple-deep)}\n.ef-ad-ai{display:grid;grid-template-columns:0.9fr 1.6fr;gap:28px;flex:1;min-height:0}\n.ef-ad-ai .ef-mr-number{font-size:83px}\n.ef-ad-table{font-size:25px;width:100%;border-collapse:collapse;margin-top:15px}\n.ef-ad-table th,.ef-ad-table td{padding:16px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}\n.ef-ad-table th{font-size:21px;font-weight:800}\n.ef-ad-table th:first-child,.ef-ad-table td:first-child{text-align:left}\n.ef-ad-table tr.selected{background:var(--purple-pale);color:var(--purple-deep);font-weight:900}\n.ef-ad-ai .ef-mr-highlight{font-size:25px;margin-top:28px}\n.ef-ad-region{display:grid;grid-template-columns:1fr 1.35fr;gap:28px;flex:1;min-height:0}\n.ef-ad-region .ef-mr-bar{grid-template-columns:150px 1fr 150px;margin:18px 0;font-size:25px}\n.ef-ad-region .ef-mr-bars{gap:25px;margin:35px 0}\n.ef-ad-region .ef-mr-track{height:40px}\n.ef-ad-region .ef-mr-number{font-size:94px;margin:25px 0 16px}\n.ef-feature-top{display:grid;grid-template-columns:1fr 1fr;gap:25px}\n.ef-feature-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;flex:1}\n.ef-feature-card{background:white;border:1px solid var(--line);border-radius:16px;padding:26px 32px}\n.ef-feature-card h3{font-size:29px;margin:0 0 14px;font-weight:900;line-height:1.4}\n.ef-feature-card p{font-size:23px;font-weight:700;margin:12px 0 0;line-height:1.5}\n.ef-feature-number{font-size:85px;line-height:1.1;font-weight:900;color:var(--purple-deep);letter-spacing:-.05em}\n.ef-feature-number small{font-size:28px;margin-left:10px}\n.ef-feature-top .ef-feature-card{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:20px;min-height:240px}\n.ef-feature-top .ef-feature-number{text-align:right;font-size:96px}\n.ef-feature-bottom .ef-feature-card{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(180deg,#fff 25%,#f6f4ff 100%)}\n.ef-feature-bottom .ef-feature-number{margin:18px 0;font-size:96px}\n.ef-plan-grid{display:grid;grid-template-columns:1.12fr 1fr;gap:28px;flex:1;min-height:0}\n.ef-plan-creative{background:#30264e;border-radius:18px;padding:35px 38px;color:white;display:flex;flex-direction:column}\n.ef-plan-creative .label{font-size:24px;font-weight:800;color:#d8cdff;margin-bottom:23px}\n.ef-plan-creative h3{font-size:44px;line-height:1.3;margin:0 0 25px;font-weight:900}\n.ef-plan-scenes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:10px 0 30px}\n.ef-plan-scene{border:1px solid #70638e;border-radius:10px;background:#40345e;padding:24px 23px;min-height:145px}\n.ef-plan-scene b{font-size:26px;display:block;margin-bottom:14px}\n.ef-plan-scene span{font-size:24px;line-height:1.5;display:block}\n.ef-plan-cta{font-size:28px;font-weight:900;color:#33264f;background:#e7ddff;border-radius:8px;padding:22px 25px;margin-top:auto;text-align:center}\n.ef-plan-measure{display:grid;grid-template-rows:1fr 1fr;gap:24px;min-height:0}\n.ef-plan-measure .ef-mr-card{flex:1;padding:29px 32px}\n.ef-plan-measure h3{font-size:31px}\n.ef-plan-measure .ef-mr-highlight{font-size:25px;margin-top:15px}\n.ef-mock-current{background:white;border:1px solid var(--line);border-radius:16px;padding:26px 32px;display:flex;flex-direction:column}\n.ef-mock-current .label,.ef-mock-value .label,.ef-mock-next .label{font-size:23px;font-weight:900;color:var(--purple);margin-bottom:20px}\n.ef-mock-kpis{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:12px 0 8px;flex:1}\n.ef-mock-kpi{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:24px;padding-right:28px;border-right:1px solid var(--line)}\n.ef-mock-kpi:last-child{border:0;padding-right:0}\n.ef-mock-kpi h3{font-size:29px;line-height:1.4;margin:0;font-weight:900}\n.ef-mock-kpi p{font-size:25px;line-height:1.4;margin:0;font-weight:700}\n.ef-mock-kpi .number{font-size:118px;line-height:1;font-weight:900;white-space:nowrap;color:var(--purple-deep);letter-spacing:-.05em}\n.ef-mock-kpi .number small{font-size:26px;letter-spacing:-.02em;margin-left:10px}\n.ef-mock-direction{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;flex:1;min-height:0}\n.ef-mock-value{background:white;border:1px solid var(--line);border-radius:16px;padding:26px 32px;color:var(--ink)}\n.ef-mock-value .label{color:var(--purple);margin-bottom:16px}\n.ef-mock-core-body{display:grid;grid-template-columns:1fr 1.2fr;gap:45px;align-items:center}\n.ef-mock-value h3{font-size:36px;line-height:1.3;font-weight:900;margin:0}\n.ef-mock-value p{font-size:24px;line-height:1.5;font-weight:700;margin:0}\n.ef-mock-value .emphasis{font-size:23px;line-height:1.5;font-weight:800;color:var(--purple-deep);margin-top:12px}\n.ef-mock-next{background:white;border:1px solid var(--line);border-radius:16px;padding:30px 34px;display:flex;flex-direction:column}\n.ef-mock-next h3{font-size:40px;line-height:1.35;font-weight:900;margin:8px 0 22px}\n.ef-mock-next p{font-size:25px;line-height:1.6;font-weight:700;margin:0 0 24px}\n.ef-mock-goal{font-size:28px;font-weight:900;line-height:1.4;background:var(--purple-pale);color:var(--purple-deep);border-left:5px solid var(--purple);padding:22px 24px;margin-top:auto}\n'
+# MARKETING_REVISION_CSS_END
 
 # ================= 4. Effect =================
 S.append(divider('04 · Effect', 'Effect', '6개월 수행 내용, 운영 지표, 비즈니스 모델, 비전'))
 S.note('''[구분] Effect — 6개월 동안 무엇을 했고, 무엇이 남았는지.''')
+
+
+# ---------- 마케팅: 2026-11-11 검증 집계, Effect 시작부 ----------
+S.append(shell('Effect', '검색 · 광고 · SNS · 현장을 통한 <span class="purple">사용자 유입</span>', '''
+<div class="ef-mkt">
+ <div class="ef-mkt-layout">
+  <div class="ef-mkt-channels">
+   <div class="ef-mkt-channel"><div class="tag">검색 콘텐츠</div><h3>CS 문서 172편<br>면접 질문 875문항</h3><p>직군 가이드 12종과 함께<br>학습 콘텐츠에서 서비스로 연결</p></div>
+   <div class="ef-mkt-channel"><div class="tag">유료 광고</div><h3>Meta · Google Ads</h3><p>채널별 캠페인 집행<br>클릭 비용과 참여 지표 비교</p></div>
+   <div class="ef-mkt-channel"><div class="tag">SNS</div><h3>Threads · Instagram</h3><p>서비스 소개 콘텐츠 게시<br>UTM으로 유입 경로 구분</p></div>
+   <div class="ef-mkt-channel"><div class="tag">현장 홍보</div><h3>숭실대 취업 박람회</h3><p>서비스 소개 팜플렛과<br>QR 클리커 굿즈 배포</p></div>
+  </div>
+  <div class="ef-mkt-photo"><img class="fair" src="assets/ef-fair.jpg" alt="숭실대 취업 박람회 DevFit 소개 현장"><img class="goods" src="assets/ef-goods.jpg" alt="DevFit 팜플렛과 QR 클리커 굿즈"></div>
+ </div>
+</div>''', cls='ef-marketing-slide', source='Dozer, 「DevFit 최종보고서 마케팅」, 2026. Microsoft Clarity, 「CS 지식백과 진입 집계」, 2026. Meta·Google Ads, 「캠페인 내보내기」, 2026.'))
+S.note('''[약 25초] 마케팅은 검색 콘텐츠, 유료 광고, SNS, 현장 홍보로 나눠 실행했습니다. CS 문서와 면접 질문에서 서비스를 접할 수 있게 했고, Meta와 Google 광고를 집행했습니다. SNS는 게시물별 유입 경로를 구분했고, 숭실대 취업 박람회에서는 팜플렛과 QR 굿즈로 직접 소개했습니다.
+
+근거: final-report의 기존 마케팅 장표와 사진 원본. 콘텐츠 규모 172편·875문항·가이드 12종은 원본 보고서 기준. CS 진입 169세션은 cs_acquisition_summary.json, 2026-08-12~11-09 04:39 KST. 직접·내부·광고 등 모든 진입 포함이며 검색 성과로 주장하지 않음. 검색결과 referrer 확인 세션은 3건(네이버 Search Advisor 1건 제외). 박람회 날짜·배포량·가입 효과는 미확인.
+광고비 3,501,256원=Meta 2,338,208+Google 1,163,048. 11/05 검증 CSV 기준이며 실제 카드 결제액·VAT 포함 청구액과 다름. 11/04 부록 A5의 광고비와 집계 시점이 다름.
+기존 콜백 메일은 구축 근거만 있고 실제 발송·복귀 성과가 확인되지 않아 수행 실적 목록에 포함하지 않음.''')
+
+
+S.append(shell('Effect', 'Meta 중심 집행, <span class="purple">유입 비용과 참여를 함께 고려</span>', '\n<div class="ef-mkt"><p class="ef-mkt-period">11/05 누적 집행 · Meta 233.8만 원 / Google 116.3만 원</p>\n<div class="ef-mr-strip"><div style="width:66.78%;background:#6c5ce7">Meta 66.8%</div><div style="width:33.22%;background:#3d354f">Google 33.2%</div></div>\n<div class="ef-mr-grid">\n <div class="ef-mr-card"><div class="label">Meta에 더 많은 비중을 둔 근거</div><h3>낮은 클릭 비용으로<br>서비스 유입 규모 확보</h3><div class="ef-mr-pair"><div><span>링크 클릭당 비용</span><b>110원</b></div><div><span>링크 클릭</span><b>21,318회</b></div></div><p>소재를 바꾸며 반응을 탐색하고<br>적은 단가로 넓은 접점 확보</p></div>\n <div class="ef-mr-card"><div class="label">Google에도 예산을 유지한 근거</div><h3>검색 의도가 있는 유입과<br>서비스 이용 가능성 확인</h3><div class="ef-mr-pair"><div><span>광고 클릭당 비용</span><b>571원</b></div><div><span>광고 클릭</span><b>2,038회</b></div></div><p>Google 광고로 처음 유입된<br>활성 사용자당 평균 참여 시간 <b>4분 38초</b></p></div>\n</div></div>', cls='ef-marketing-slide', source='Meta·Google Ads, 「11/05 캠페인 CSV」, 2026. Google Analytics 4, 「8/24~11/05 사용자 획득」, 2026.'))
+S.note('[약 30초] 누적 집행액은 Meta가 약 3분의 2, Google이 약 3분의 1입니다. Meta는 클릭당 약 110원으로 폭넓게 서비스를 알리고 소재 반응을 탐색하는 데 활용했습니다. Google은 클릭 단가가 높지만 관측된 사용자 참여 시간이 길어, 검색 의도가 있는 유입을 함께 확인하는 채널로 설명할 수 있습니다. 실제 지표를 바탕으로 집행 비중의 타당성을 설명하는 것이며, 처음부터 2 대 1이 최적임을 실험으로 입증했다는 뜻은 아닙니다.\n근거: 03_Meta캠페인.csv 합계2,338,208원/21,318링크클릭;04_Google주별.csv 합계1,163,048원/2,038클릭. 합3,501,256원; Meta66.782%,Google33.218%. CPC109.68/570.68원. 예산계획서나 날짜별 배분 결정 로그는 미확인; 이 슬라이드는 사후 성과 해석에 따른 설명 근거. 광고 클릭 정의는 플랫폼별로 다름. GA4 05_GA4획득.csv 첫 사용자 소스/매체 ig/paid61명57초, google/cpc57명278초. 활성 사용자당 평균 참여 시간이며 세션 체류시간 아님. 측정 동의 범위의 표본이며 인과 실험 아님. Google PMax 전체를 검색광고라고 부르지 않음. Google 최신11/11 지출1,377,062원과 혼합하지 않고11/05 스냅샷 사용.')
+
+S.append(shell('Effect', '초반 노출 집중을 보고, <span class="purple">새 광고를 순차 투입</span>', '\n<div class="ef-mkt"><p class="ef-ad-period">가설 1 · 1주 단위 신규 소재 투입으로 초기 노출 확보 시도</p>\n<div class="ef-mr-card" style="padding:12px 25px"><img class="ef-ad-chart" src="assets/mkt-ad-additions.svg" alt="전체 광고 일별 노출과 10월13일 새 고객 광고 추가, 10월23일 재집행, 10월25일 광고 추가"></div>\n<div class="ef-ad-observations">\n<div class="ef-ad-observation"><div class="label">초기 광고에서 관찰</div><h3>광고 1 · 집행 초반 노출 집중</h3><p>2일 차 <b>3,172회</b><br>3일 차 273회</p></div>\n<div class="ef-ad-observation"><div class="label">새 고객 광고 · 10/13 시작</div><h3>첫날 대비 2일 차 노출 확대</h3><p>7,155회 → <b>13,635회</b><br>10/23 재집행 후 2일 차 34,239회</p></div>\n<div class="ef-ad-observation"><div class="label">10/25 광고 · 10/25 시작</div><h3>2일 차에 해당 광고 최대 노출</h3><p>15,854회 → <b>26,918회</b><br>첫날 대비 <b>69.8% 증가</b></p></div>\n</div></div>', cls='ef-marketing-slide', source='Meta Ads, 「광고 이름·광고 세트별 일별 실적 CSV」, 2026-11-11. Dozer 운영자, 「소재 추가 운영 의도」, 2026-11-11.'))
+S.note('[약 35초] 먼저 집행한 광고에서 초반에 노출이 집중되는 사례를 보고, 일주일 단위로 새 소재를 넣어 초기 반응을 확보해 보자는 가설을 세웠습니다. 예를 들어 광고1은2일차3,172회였지만3일차에는273회로 줄었습니다. 이후 새 고객 광고와10월25일 광고를 추가했습니다. 새 고객 광고는첫날7,155회에서2일차13,635회로,10월25일 광고는15,854회에서2일차26,918회로 늘었습니다. 신규 광고의 집행 초반에 노출이 확대되는 현상을 다시 관찰했습니다.\n운영 의도: 사용자2026-11-11 설명의 일주일 단위 광고 추가 시도. 실제 최초 노출일은 새 고객 광고10/13,재집행10/23,10/25광고10/25. 두 광고 최초 집행일 간격은12일,재집행과10/25간격은2일이므로 정확히7일마다 집행했다고 발표하지 않음. 날짜는 업로드/편집 시각이 아닌 최초 실제 노출일. 재집행은10/15~22해당광고 노출없음 뒤10/23관측 재개를 뜻함.\ndata/troubleshooting/meta-ad-daily.csv는광고세트와광고이름·일별실적의실제Meta내보내기. 일별전체노출합666197. 그래프는광고전체합,하단은개별광고수치이므로10/25총노출26517과개별첫날15854를혼동하지않음. 새고객10/13:7155,10/14:13635,10/23:28223,10/24:34239,10/25:10663.10/25광고의10/26:26918은해당광고최대일노출. (26918/15854-1)*100=69.7868%.\n앞선모든광고에서1~2일최대였다는뜻은아님. test세트는3일차최대, test사본과오디세이는후반최대인반례도있음. 초반집중관찰사례를제시한것이며주간교체의보편적효과를입증한것이아님. 광고1중단및소재변경,예산,집행시간,타깃,학습상태를통제하지않았으므로노출감소를소재피로도만으로단정하거나플랫폼노출부스트라고설명하지않음.')
+
+S.append(shell('Effect', 'AI 기능을 활용한 10/25 광고, <span class="purple">첫 7일 노출 최다</span>', '\n<div class="ef-mkt"><p class="ef-ad-period">가설 2 · Meta AI 기능 활용 시 노출 확대 가능성 · 전체 6개 광고 세트의 첫 7일 비교</p>\n<div class="ef-ad-ai"><div class="ef-mr-card"><div class="label">10/25 캠페인에 적용</div><h3>AI 이미지 생성<br>+ 음악 추가</h3><p>Meta가 제공하는 기능을<br>활용해 광고 소재 제작</p><div class="rule"><div class="ef-mr-number">124,257<small>회</small></div><h3 style="margin-top:18px">첫 7일 노출 수 1위</h3></div><div class="ef-mr-highlight">1,000회 노출당 비용도 최저<br><b>3,340원</b></div></div>\n<div class="ef-mr-card"><div class="label">최초 노출일부터 7일간 · 모든 실집행 광고 세트</div><table class="ef-ad-table"><thead><tr><th>광고 세트</th><th>노출 수</th><th>집행액</th><th>1천 회당 비용</th></tr></thead><tbody><tr><td>기본 광고 세트</td><td>40,047</td><td>13.5만</td><td>3,360원</td></tr><tr><td>test</td><td>51,552</td><td>19.1만</td><td>3,705원</td></tr><tr><td>test 사본</td><td>58,213</td><td>25.0만</td><td>4,290원</td></tr><tr><td>10/13 · 새 고객</td><td>20,790</td><td>8.3만</td><td>3,972원</td></tr><tr><td>테스트</td><td>17,341</td><td>6.8만</td><td>3,934원</td></tr><tr class="selected"><td>10/25 · AI 활용</td><td>124,257</td><td>41.5만</td><td>3,340원</td></tr></tbody></table><div class="ef-mr-highlight">다른 5개 세트의 합산 기준 대비<br>1,000회 노출당 비용 <b>13.5% 낮음</b></div></div></div></div>', cls='ef-marketing-slide', source='Meta Ads, 「광고 세트별 첫 7일 실적」, 2026-11-11. Dozer 운영자, 「10/25 AI 이미지·음악 기능 활용」, 2026-11-11.'))
+S.note('[약 35초] 두 번째는Meta자체AI기능을활용하면노출확대에도움이될수있다는가설입니다.10월25일캠페인에는AI이미지생성과음악추가를활용했습니다. 모든광고세트의최초노출일부터7일을비교한결과10월25일세트가124,257회로가장많이노출됐습니다. 집행액이서로다르므로1,000회노출당비용도함께봤습니다.10월25일세트는3,340원으로가장낮았고,나머지5개세트의합산기준보다13.5%낮았습니다. AI기능을활용한광고에서초기노출성과가좋았던사례입니다.\n음악추가·AI이미지생성을10/25캠페인에사용했다는사실은사용자2026-11-11운영설명에근거.기존확인자료meta-ad-settings.json은test1소재의현재설정이므로10/25의기능증빙으로전용하지않음. 음악추가가반드시AI로작곡한음악이라는뜻도아님.\n모집단:meta-ad-daily.csv의실제노출있는6개광고세트모두. 비교기준은각세트최초실노출일부터6일후까지7개달력일. 무집행일포함,서로다른광고가동일세트에있으면합산. 기간8/31~9/6,9/26~10/2,9/29~10/5,10/13~19두세트,10/25~31. scripts/analyze_ad_level.py와ad-set-first7-comparison.csv참조. 10/25노출124257,지출415079,CPM3340.48786;나머지합산CPM3863.38411,13.5347%낮음.단순CPM평균이아닌지출합/노출합.기본세트CPM3360.20426과의차이는약0.6%로근소함.10/25의총집행기간노출124258과1회차이는11/1잔여노출1회.\n첫7일의관측순위이며전체기간이나클릭률·클릭당비용까지1위라는뜻은아님. 전체기간CPM은기본세트2990.41원으로10/25보다낮음. 다른세트도AI기능을사용했을수있으며ON/OFF대조군없음. 예산·기간·타깃·소재·집행중단을통제하지않아AI사용자체의효과또는Meta의노출우대가증명됐다고말하지않음.기간선택은초기집행성과비교를위해모든세트에동일7일규칙적용;비용보정지표가인과통제를대체하지않음.')
+
+S.append(shell('Effect', '서울에서 시작해, <span class="purple">전국 16개 시도로 도달 확대</span>', '\n<div class="ef-mkt"><p class="ef-ad-period">초기 서울 타기팅 → 대한민국 전체로 확대 · Meta 지역별 도달 수 기준</p>\n<div class="ef-ad-region"><div class="ef-mr-card"><div class="label">1단계 · 서울 우선 공략</div><h3>초기 기본 광고 세트<br>8/31~9/23</h3><div class="ef-mr-number">138,998<small>명</small></div><h3>서울 도달 수</h3><p>서울을 중심으로<br>서비스 인지도 확보</p><div class="ef-mr-highlight">인접 경기 지역에도<br>14,366명 도달</div></div>\n<div class="ef-mr-card"><div class="label">2단계 · 전국으로 접점 확대</div><h3>새 고객 광고 · 10/13~25</h3><div class="ef-mr-bars"><div class="ef-mr-bar"><span>서울</span><div class="ef-mr-track"><div class="ef-mr-fill" style="width:50.05%;background:#b7a7df"></div></div><b>15,014</b></div><div class="ef-mr-bar"><span>경기·인천</span><div class="ef-mr-track"><div class="ef-mr-fill" style="width:71.67%;background:#9580d2"></div></div><b>21,500</b></div><div class="ef-mr-bar"><span>비수도권</span><div class="ef-mr-track"><div class="ef-mr-fill" style="width:92.61%;background:#6c5ce7"></div></div><b>27,783</b></div></div><div class="ef-mr-highlight">비수도권에서도 <b>27,783</b> 도달<br>전국 <b>16개 시도</b>에서 광고 도달 확인</div><p style="font-size:22px;margin-top:24px">경기·인천 및 비수도권: 시도별 도달 수 합계</p></div></div></div>', cls='ef-marketing-slide', source='Meta Ads, 「광고 세트×지역 도달 실적 CSV」, 2026-11-11. Dozer 운영자, 「서울→전국 타기팅 변경」, 2026-11-11.'))
+S.note("[약30초] 처음에는서울을우선공략해서비스를알렸습니다. 초기기본광고세트에서서울도달수는138,998명이었습니다. 이후온라인서비스의이용가능지역에맞춰대한민국전체로타기팅을넓혔습니다. 새고객광고에서는서울15,014,경기·인천21,500,비수도권27,783의지역별도달을확인했습니다. 서울에서시작해전국16개시도로접점을넓힌운영과정입니다.\n실측:data/troubleshooting/meta-adset-region-reach.csv,Meta보고서광고세트×지역의도달지표.초기기본광고세트정식이름'추천 설정이 적용된 새로운 트래픽 광고 세트',8/31~9/23실제집행.서울138998,경기14366,인천0. 광고별도달을합산하지않고광고세트수준으로중복제거된지역별추정치를조회. 초기서울설정은사용자설명이나실제경기에도도달하므로서울밖0이라고말하지않음.\n전국확대사례는10/13광고세트/새고객광고,10/13~25실제노출일5일. 서울15014,경기18404,인천3096,나머지13개시도27783,Unknown4. 국가전체도달추정치63603과지역합계64301은일치하지않음:Meta의추정·중복등으로지역수치의단순합을중복제거된고유인원으로표현하면안됨. 화면에경기인천·비수도권은시도합계임을명시. 비수도권합계는서울경기인천및Unknown제외. 전국17개시도중세종별도행없음,도달확인16개. 10/25광고는4지역에서만도달이확인되므로전국확대성과로대체하지않음.\n비교는운영단계의대표광고세트로노출지역이다양해졌음을보임. 서로다른집행기간·비용으로도달규모증가율이나지역확대로인한가입상승을계산하지않음. 모든지역에균등분배됐다는뜻이아니며점차넓힌도달범위에관한설명.")
+
+S.append(shell('Effect', '캐시워크 제외 전후, <span class="purple">광고 클릭 효율 비교</span>', '\n<div class="ef-mkt"><p class="ef-mkt-period">9/30 캐시워크 제외 · 전 9/23~29 / 후 10/01~07 · Google 캠페인 전체 실적</p>\n<div class="ef-performance-kpis">\n<div class="ef-mr-card"><div class="label">클릭당 비용</div><div class="metric">43.4<small>% 감소</small></div><div class="flow">486원 → 275원</div></div>\n<div class="ef-mr-card"><div class="label">클릭률</div><div class="metric">1.43<small>배</small></div><div class="flow">1.39% → 1.98%</div></div>\n<div class="ef-mr-card"><div class="label">광고비 1만 원당 클릭</div><div class="metric">76.7<small>% 증가</small></div><div class="flow">20.6회 → 36.4회</div></div>\n</div><div class="ef-performance-summary">\n<div class="ef-mr-card"><div class="label">전후 7일 집행 실적</div><table class="ef-perf-table" style="margin:5px 0"><tr><th>지표</th><th>제외 전</th><th>제외 후</th></tr><tr><td>광고비</td><td>146,233원</td><td>210,293원</td></tr><tr><td>전체 노출</td><td>21,677회</td><td>38,658회</td></tr><tr><td>클릭 수</td><td>301회</td><td>765회</td></tr></table></div>\n<div class="ef-mr-card"><div class="label">성과 해석</div><h3>지출 증가율보다<br>높은 클릭 증가율</h3><p>광고비 <b>43.8% 증가</b><br>클릭 수 <b>154.2% 증가</b></p><div class="ef-mr-highlight">클릭당 비용과 클릭률에서<br>유입 효율 개선 확인</div></div></div></div>', cls='ef-marketing-slide', source='Google Ads, 「변경 이력·캠페인 실적」, 2026-11-11 조회. Google Ads Help, 「About All conversions」.'))
+S.note('[약 30초] 캐시워크를 제외한 뒤 해당앱노출이0이됐다는것은차단여부확인에불과해성과지표에서뺐습니다. 전후7일의캠페인전체실적을비교하면클릭당비용은486원에서275원으로43.4%낮아졌고,클릭률은1.39%에서1.98%로높아졌습니다.광고비1만원당확보한클릭도20.6회에서36.4회로늘었습니다.지출은43.8%늘었지만클릭은154.2%늘어클릭유입효율개선을확인했습니다.예산·입찰·소재도함께바뀌어변화전체를캐시워크제외만의효과라고단정하지는않습니다.\n변경시각2026-09-30 16:03:10 KST,계정제외mobileapp::2-com.cashwalk.cashwalk추가.비교기간9/23~29대10/1~7,양쪽7일·변경일제외.정본data/troubleshooting/cashwalk-before-after.json,실조회google-campaigns-before.json/after.json.전노출21677/클릭301/지출146233원,후38658/765/210293원.CPC485.8239→274.8928원,43.4172%감소.CTR1.3885685→1.9788918%,1.42513배,+0.5903233%p.클릭/지출*10000=20.5836→36.3778,76.7316%증가.1만원당클릭은실제동일예산으로실험한결과가아니라관측지출을정규화한값이며CPC의역수라독립된3번째효과근거는아님.광고비43.8068%증가,클릭154.1528%증가.\n동일시점입찰조정·제외키워드·전환목표등변경,9/28예산증액·신규애셋등동반변화.랜덤대조군없음.클릭효율개선을가입전환·면접이용·매출개선으로확대하지않음.전환수열은9/30저장소접근선택이주요→부수로바뀌고면접준비생성전환이신규추가돼전후구성이다름.각기간기본전환수4건과4건을동일행동의전환비교로쓰지않음.모든전환수에는페이지조회등다른행동이섞이므로그합계로성과주장하지않음. Google공식 https://support.google.com/google-ads/answer/3419678?hl=en , https://support.google.com/google-ads/answer/2375435?hl=en .\n캐시워크12516→0및보고서내65.2→0%는제외작동확인용보조근거로만보존;PMax게재위치보고서는검색노출제외라캠페인전체분모와다름.슬라이드성과비교는같은캠페인전체분모만사용.앱별지출이나가입손실액추정금지.')
+
+S.append(shell('Effect', '로그인 회원 수의 <span class="purple">누적 추이</span>', '<div class="ef-mkt"><p class="ef-mkt-period">8/03~11/11 05:42 KST · 상단 누적 / 하단 일별 신규</p><div class="ef-mr-grid wide"><div class="ef-mr-card"><img class="ef-mr-chart accounts" src="assets/mkt-login-trend.svg" alt="로그인 회원 누적 및 일별 추이"></div><div class="ef-mr-aside"><div class="ef-mr-card"><div class="ef-mr-number">86<small>개</small></div><h3 style="margin-top:24px">로그인 회원</h3><p>GitHub 로그인 등으로 가입한<br>정식 회원 계정</p></div></div></div></div>', cls='ef-marketing-slide', source='DevFit 운영 DB, 「회원·게스트 계정 생성일 집계」, 2026-11-11.'))
+S.note('[약 15초] 로그인 회원는 현재86개입니다. 위는누적계정수,아래는그날새로생성된계정수입니다.\n운영DB 읽기전용 트랜잭션,2026-11-11 05:42 KST. data/features/counts.sql 및counts.json. CANDIDATE계정 중 payment-test.invalid/review.invalid이메일제외. 내부운영자소유일반계정은추가제외하지않아기존관리자회원집계와일치. 사용자개별식별자는저장하지않음. 계정의created_at(UTC)+9시간KST가입일집계. 현재남아있는회원/게스트상태에따른계정생성추이이며일별로그인횟수나DAU가아님. 게스트→회원전환은현재회원으로분류되어과거곡선이재집계시바뀔수있음. 오늘은조회시점부분값이며이전날들과선연결. 전체연속날짜8/03~11/11. 합계는계정합이지동일인중복제거된사람수가아님.')
+
+S.append(shell('Effect', '비로그인 체험 계정 수의 <span class="purple">누적 추이</span>', '<div class="ef-mkt"><p class="ef-mkt-period">8/03~11/11 05:42 KST · 상단 누적 / 하단 일별 신규</p><div class="ef-mr-grid wide"><div class="ef-mr-card"><img class="ef-mr-chart accounts" src="assets/mkt-guest-trend.svg" alt="비로그인 체험 계정 누적 및 일별 추이"></div><div class="ef-mr-aside"><div class="ef-mr-card"><div class="ef-mr-number">485<small>개</small></div><h3 style="margin-top:24px">비로그인 체험 계정</h3><p>로그인 전 서비스 체험을 위해<br>생성된 게스트 계정</p></div></div></div></div>', cls='ef-marketing-slide', source='DevFit 운영 DB, 「회원·게스트 계정 생성일 집계」, 2026-11-11.'))
+S.note('[약 15초] 비로그인 체험 계정는 현재485개입니다. 위는누적계정수,아래는그날새로생성된계정수입니다.\n운영DB 읽기전용 트랜잭션,2026-11-11 05:42 KST. data/features/counts.sql 및counts.json. CANDIDATE계정 중 payment-test.invalid/review.invalid이메일제외. 내부운영자소유일반계정은추가제외하지않아기존관리자회원집계와일치. 사용자개별식별자는저장하지않음. 계정의created_at(UTC)+9시간KST가입일집계. 현재남아있는회원/게스트상태에따른계정생성추이이며일별로그인횟수나DAU가아님. 게스트→회원전환은현재회원으로분류되어과거곡선이재집계시바뀔수있음. 오늘은조회시점부분값이며이전날들과선연결. 전체연속날짜8/03~11/11. 합계는계정합이지동일인중복제거된사람수가아님.')
+
+S.append(shell('Effect', '로그인·비로그인 계정을 합친 <span class="purple">전체 추이</span>', '<div class="ef-mkt"><p class="ef-mkt-period">8/03~11/11 05:42 KST · 상단 누적 / 하단 일별 신규</p><div class="ef-mr-grid wide"><div class="ef-mr-card"><img class="ef-mr-chart accounts" src="assets/mkt-combined-trend.svg" alt="계정 합계 누적 및 일별 추이"></div><div class="ef-mr-aside"><div class="ef-mr-card"><div class="ef-mr-number">571<small>개</small></div><h3 style="margin-top:24px">계정 합계</h3><p>로그인 회원 86개<br>+ 비로그인 체험 계정 485개</p></div></div></div></div>', cls='ef-marketing-slide', source='DevFit 운영 DB, 「회원·게스트 계정 생성일 집계」, 2026-11-11.'))
+S.note('[약 15초] 계정 합계는 현재571개입니다. 위는누적계정수,아래는그날새로생성된계정수입니다.\n운영DB 읽기전용 트랜잭션,2026-11-11 05:42 KST. data/features/counts.sql 및counts.json. CANDIDATE계정 중 payment-test.invalid/review.invalid이메일제외. 내부운영자소유일반계정은추가제외하지않아기존관리자회원집계와일치. 사용자개별식별자는저장하지않음. 계정의created_at(UTC)+9시간KST가입일집계. 현재남아있는회원/게스트상태에따른계정생성추이이며일별로그인횟수나DAU가아님. 게스트→회원전환은현재회원으로분류되어과거곡선이재집계시바뀔수있음. 오늘은조회시점부분값이며이전날들과선연결. 전체연속날짜8/03~11/11. 합계는계정합이지동일인중복제거된사람수가아님.')
+
+S.append(shell('Effect', '공고 분석부터 면접·피드백까지, <span class="purple">기능 이용 실적</span>', '\n<div class="ef-mkt"><p class="ef-ad-period">로그인·비로그인 합산 · 테스트 계정 제외 · 11/11 05:42 KST</p>\n<div class="ef-feature-top">\n<div class="ef-feature-card"><div><h3>공고 분석 결과</h3><p>분석 결과를 보유한 준비 카드<br>서로 다른 공고 본문 141개</p></div><div class="ef-feature-number">234<small>건</small></div></div>\n<div class="ef-feature-card"><div><h3>레포지토리 코드 분석</h3><p>실제 코드 근거 생성 기준<br>고유 저장소 220개</p></div><div class="ef-feature-number">359<small>건</small></div></div>\n</div><div class="ef-feature-bottom">\n<div class="ef-feature-card"><h3>텍스트 면접 세트</h3><div class="ef-feature-number">66<small>세트</small></div><p>문항을 실제 열어본 세트<br>질문 학습 포함</p></div>\n<div class="ef-feature-card"><h3>음성 모의면접</h3><div class="ef-feature-number">20<small>세트</small></div><p>문항을 실제 열어본 세트<br>음성 인식 10세트 · 25회</p></div>\n<div class="ef-feature-card"><h3>문항 피드백 생성</h3><div class="ef-feature-number">91<small>개</small></div><p>문항별 답변 피드백<br>37개 세트에 제공</p></div>\n</div></div>', cls='ef-marketing-slide', source='DevFit 운영 DB, 「공고·레포 분석, 문항 열람, 음성 인식, 문항 피드백 집계」, 2026-11-11.'))
+S.note('[약35초] 실제이용기록을기준으로대표기능의성과를한장에모았습니다. 공고분석결과를보유한준비카드는234건,코드근거가생성된레포분석은359건입니다. 고유저장소로는220개입니다. 문항을실제로열어본텍스트면접세트는질문학습을포함해66세트,음성모의면접은20세트였습니다. 문항별피드백은37개세트에서총91개생성됐습니다. 이수치는기능별이용기록이며고유사용자수와는다릅니다.\n통합전39·40페이지의동일DB집계. CANDIDATE계정중payment-test.invalid/review.invalid제외.일반내부계정추가제외없음. SQL읽기전용. 공고본문과insight결과존재234카드,md5본문141,전체준비252;캐시재사용포함,고유정규화공고141을뜻하지않음.레포분석snippet>0이고cs_only=false,READY49+PARTIAL310=359.실패58·CS전용65제외.저장소정규화이름lower기준220.359건모두완전성공이라고쓰지않음.\nset_id별viewed_at보유를1세트로집계.텍스트66=JD_MATCH33+PRIORITY31+MOCK_INTERVIEW2로질문학습포함. 운영화면의텍스트입력은JD_MATCH이고기본모의면접은PRIORITY로생성됨. MOCK_INTERVIEW라는DB유형명만으로텍스트모의면접을정의하면누락이생기므로모드분류는voice_enabled기준. 텍스트MOCK_INTERVIEW2세트는질문은행선택경로의일부이며텍스트모의면접전체가아님.음성MOCK_INTERVIEW20,STT보유10세트25건,음성답변저장9세트. 문항열람은재실행횟수/모든질문완료수와다름. 모의면접완료상태0.피드백attempt_feedback91행/37세트,그중MOCK_INTERVIEW8행/7세트. 피드백생성이지확인/열람횟수아님.각지표를사람수퍼널로연결하거나합산하지않음.')
+
+S.append(shell('Effect', '핵심 기능인 모의면접, <span class="purple">이용 확대에 맞춘 광고</span>', '\n<div class="ef-mkt"><p class="ef-ad-period">11/11 05:42 KST · 로그인·비로그인 합산 · 계정 기준 중복 제거</p>\n<div class="ef-mock-value"><div class="label">01 DevFit의 핵심 기능</div><div class="ef-mock-core-body"><h3>내 코드로 연습하는<br>텍스트·음성 모의면접</h3><div><p>코드 기반 질문에 직접 답하고<br>피드백으로 설명력을 점검하는 경험</p><div class="emphasis">핵심 기능의 가치를 알리고 실제 답변까지 이어지는 이용 확대</div></div></div></div>\n<div class="ef-mock-direction"><div class="ef-mock-current"><div class="label">02 이용 현황 · 모의면접 문항을 열어본 계정</div><div class="ef-mock-kpis">\n<div class="ef-mock-kpi"><h3>텍스트 모의면접</h3><div class="number">29<small>개 계정</small></div><p>66세트 문항 열람</p></div>\n<div class="ef-mock-kpi"><h3>음성 모의면접</h3><div class="number">5<small>개 계정</small></div><p>20세트 문항 열람</p></div>\n</div></div>\n<div class="ef-mock-next"><div class="label">03 앞으로의 광고 포커스</div><h3>앞으로는 모의면접 기능을<br>중점적으로 홍보합니다</h3><p>내 코드로 답변을 연습하고 피드백을 받는<br>텍스트·음성 모의면접의 가치를 알립니다.</p><div class="ef-mock-goal">목표 · 모의면접 기능 이용자 확대</div></div></div></div>', cls='ef-marketing-slide', source='DevFit 운영 DB, 「답변 모드별 문항 열람·답변 보유 계정 집계」, 2026-11-11. DevFit FE·BE, 「운영 브랜치 모드 분류 코드」, 2026-11-11.'))
+S.note("[약25초] DevFit의 핵심 기능은 내 코드에서 나온 질문에 직접 답하고 피드백을 받는 텍스트·음성 모의면접입니다. 실제 이용 현황을 보면 문항을 열어본 계정은 텍스트 29개, 음성 5개입니다. 앞으로는 이 모의면접 기능을 중점적으로 홍보하겠습니다. 내 코드로 답변을 연습하고 피드백을 받는 가치를 알려, 핵심 기능을 이용하는 사용자를 늘리는 것이 목표입니다.\n정정: 이전40쪽의텍스트1개/답변2개는set_type='MOCK_INTERVIEW'로잘못한정한부분집계였다. 운영코드상텍스트입력선택은JD_MATCH,자동기본모의면접은PRIORITY로생성되므로두유형을제외하면실제텍스트이용을누락한다. 현재화면·관리자와같이voice_enabled=false를텍스트,true를음성으로분류하되이용지표는세트생성후실제문항최초열람을확인한계정으로집계. 생성수와문항열람수를혼동하지않음.\n코드근거: Devfit_FE prod 9b436df993d0a2d6e51db5b097abc0f52757d666의SetDashboard.tsx, ANSWER_MODE_OPTIONS의JD_MATCH=텍스트입력,MOCK_INTERVIEW=음성인식,카드표시voiceEnabled기준. Devfit_BE prod 88d6f3b8f0f2c0a78dbb64ac85adc9f6c7cec363의StudySetService.java는bootstrapDefaultSet에서PRIORITY로기본모의면접생성;AdminBehaviorService.java도voice_enabled로TEXT/VOICE분류. 저장사본data/features/*-prod.*. 관리자생성기준수치와차이가나는이유는관리자가created_at을집계하고이슬라이드는viewed_at까지확인하기때문. 제외계정기준도관리자기본과다를수있음.\n데이터근거:data/features/interview-mode-audit.sql, interview-mode-audit.json. 운영DB읽기전용집계,개인식별자·원문답변추출없음. 조회시각2026-11-10T22:07:33.706168+00:00. 이전39쪽과맞추기위해계정·세트생성및문항최초열람을2026-11-10 20:42:51.23812UTC(11/11 05:42:51KST)이하로제한. CANDIDATE중payment-test.invalid/review.invalid제외,내부일반계정포함. 현재보존데이터/현재guest상태기준. 답변은당시이전생성된question_attempt의현재비공백answer를집계하므로과거수정·삭제를완전히복원하는시점복구쿼리는아님.\n텍스트:201세트생성/87계정,66세트열람/29계정(회원21·게스트8),답변기록32세트/19계정. 열람세트유형JD_MATCH33·PRIORITY31·MOCK_INTERVIEW2. 유형별이용계정은20·17·1이며중복이있어단순합이아닌user_id중복제거로29. 음성:20세트열람/5계정(회원3·게스트2),답변기록10세트/2계정,STT10세트/2계정. 두모드이용중복5계정→합계29,답변계정중복2→합계19. 39쪽66세트와40쪽29계정은같은텍스트모드·문항열람범위. 기록보유계정이지고유자연인수는아님. 문항열람은전체면접완료나답변완료가아님. StudySetService.restoreArchivedAnswers로이전답변복원도가능하므로답변19는'신규답변제출자'대신'답변기록보유계정'으로표기.\n화면에서는 중복 제거 계정·답변 기록 합계와 하단 집계 설명을 삭제하고, 계정 수와 열람 세트 수를 확대 배치. 집계 정의와 원자료는 위 근거 노트에 보존. 3번은 모의면접 기능의 가치 홍보와 이용자 확대라는 향후 방향만 제시하며, 영상 제작·랜딩·CTA·광고비 등 구체적인 광고 방식 설명은 삭제. 향후 계획이며 집행 완료가 아님. 임의 목표 수치 없음. 이용이 적은 원인이 광고라고 입증한 것은 아님. 실제 광고 설정 변경·게시 없음.")
+
+# ---------- 마케팅 끝 ----------
+
 
 # ---------- ① 6개월 타임라인 ---------- (근거: research/R3-ef-timeline.md)
 
@@ -418,57 +569,10 @@ APX.note('''[부록 · 11-11 사용자 지시] DevFit은 채용 플랫폼 5곳�
 
 
 # ---------- ③ 지표 — 유저 · 실운영 ----------
-S.append(shell('Effect', '가입자 <span class="purple">90.4%</span>가 실제 공고로 준비 시작', '''
-<div class="ef-stage"><div class="ef-two">
-  <div class="ef-num"><b>90.4<small>%</small></b><span>가입 회원 83명 중 75명이<br>지원할 공고를 넣고 준비 카드 생성</span><i>게스트 체험 계정 제외</i></div>
-  <div class="ef-num"><b class="k">81.9<small>%</small></b><span>가입 회원 83명 중 68명이<br>내 저장소 분석까지 도달</span><i>가입 대비 · 준비 카드 대비 90.7%</i></div>
-</div></div>''', source='최종보고서 KPI (운영 DB, 2026-11-09 실측, 게스트 제외 GitHub 연동 회원 83명)'))
-S.note('''[≈15초] 가입한 회원 83명 중 75명, 90.4%가 실제 지원할 공고를 넣고 준비 카드를 만들었습니다. 그중 68명, 가입 대비 81.9%가 자기 저장소 분석까지 갔습니다.
-
-83명은 최종보고서 KPI와 같은 기준(게스트 체험 계정 제외 GitHub 연동 회원, 2026-11-09 실측). 퍼널: 가입 83 → 준비 카드 75(90.4%) → 저장소 분석 68(가입 대비 81.9% · 준비 카드 대비 90.7%). 원본 last-dance/kpi/kpi.html.
-⚠ Dev 관리자 콘솔 캡처의 76 · 61 · 75.0%는 11-05 시점 내부 계정 포함 값 — 이 장과 기준이 다름. 발표 시 "앞 장 화면은 캡처 시점 값, 성과는 보고서 KPI 기준"으로 구분.
-(이전 판 76% = 11-05 외부 79명 중 60명 · 126명 = 공고 등록 회원 64 + 비회원 62 — 보고서와 기준이 달라 뺌.)
-Q&A용: 가입 30%가 밤 9시~새벽 1시 (자체 가입 데이터 기준 — «취준생은 밤에 준비한다» 같은 일반화는 하지 않음, 한국 외부 근거 없음).
-Q&A용(장표에 넣지 않음): 모의면접 답변 작성은 15.7% — 보고서에도 다음 개선 과제로 적힌 수치. 질문 받으면 그대로 답하고, 답변 전환이 다음 목표라고 말함.
-⛔ «400명대»·«393명»(비로그인 세션)을 활성화율 분모로 쓰지 않음.''')
-
-S.append(shell('Effect', '출시 이후 <span class="purple">누적 가입자</span> 추이', '''
-<div class="ef-col">
-  <div class="ef-shot" style="width:100%;max-width:1600px"><img src="assets/ef-admin-growth.png" alt="관리자 콘솔 B2C 대시보드 — 누적 회원 수 8/7 7명에서 11/4 83명"></div>
-  <div class="ef-line">관리자 콘솔 원본 화면 · 누적 회원 <span>8/7 7명 → 11/4 83명</span></div>
-</div>''', source='관리자 콘솔 B2C 대시보드 "누적 회원 수" 패널 (2026-11-04 12:32 캡처, 패널만 잘라냄) · 캡처 시점 값 — 활성화 지표는 보고서 KPI(11-09, 게스트 제외 83명) 기준'))
-S.note('''[≈15초] 앞의 숫자는 모두 우리가 만든 관리자 콘솔에서 셌습니다. 방문 분석 도구는 쿠키 동의나 봇 때문에 숫자가 크게 흔들려서, 가입·공고·분석·답변은 회원 DB를 정본으로 삼고 내부 계정을 빼고 셉니다. 8월 7일 7명에서 11월 4일 83명이 됐습니다.
-
-이미지: metrics/screenshots/admin_b2c_growth_365d_20261104-1232.png 에서 «누적 회원 수» 패널만 자름(브라우저 주소창·북마크·계정 영역 제외).
-측정 도구별 차이(Clarity 2.2만 · GA4 235 · DB 83)는 부록 A4. 계측 도구 구성 자체는 Development 파트 5에서 설명.''')
-
-# ---------- 마케팅 · 유저 (11-10 ppt-start 요청 — 사용자: "마케팅, b2b, 유저") ----------
-S.append(shell('Effect', '사용자 확보 경로 <span class="purple">5가지</span>: 검색 · 광고 · SNS · 현장 · 재방문', '''
-<div class="ef-mk">
-  <div class="ef-mk-list">
-    <div class="ef-mk-row"><em class="k" style="font-style:normal">검색</em><b>CS 문서 172편<br>질문 875문항</b><span>직군 가이드 12종까지 페이지별 SEO · 문서에서 공고 분석으로 연결</span></div>
-    <div class="ef-mk-row"><em class="k" style="font-style:normal">광고</em><b>₩347.5만</b><span>구글 + 메타 · 대기업 공채 시즌 집중 · 세부는 부록 A5</span></div>
-    <div class="ef-mk-row"><em class="k" style="font-style:normal">SNS</em><b>UTM 캠페인 링크</b><span>스레드 · 인스타그램 게시물별 유입 · 가입 구분 (관리자 콘솔 생성기)</span></div>
-    <div class="ef-mk-row"><em class="k" style="font-style:normal">현장</em><b>숭실대 취업 박람회</b><span>QR 3D 프린팅 클리커 굿즈 · 서비스 설명서 팜플렛 배포</span></div>
-    <div class="ef-mk-row"><em class="k" style="font-style:normal">재방문</em><b>콜백 메일 · 알림</b><span>질문을 읽고 돌아오지 않은 회원 대상 메일 · 지원 일정 알림 · 면접 리뷰 안내</span></div>
-  </div>
-  <div class="ef-mk-ph">
-    <figure class="a"><img src="assets/ef-fair.jpg" alt="숭실대학교 취업 박람회 현장 — DevFit 팜플렛을 건네는 모습"><figcaption>숭실대 취업 박람회 현장</figcaption></figure>
-    <figure class="b"><img src="assets/ef-goods.jpg" alt="DevFit 팜플렛과 3D 프린팅 클리커 굿즈"><figcaption>팜플렛 · 클리커 굿즈</figcaption></figure>
-  </div>
-</div>''', source='최종보고서 «마케팅»(검색·광고·SNS·현장) · 광고비 Meta ₩233.8만 + Google ₩113.7만(부록 A5와 같은 값) · 사진: 최종보고서 그림 33 원본 · 팜플렛·굿즈 촬영본'))
-S.note('''[≈15초] 사용자는 다섯 갈래로 모았습니다. CS 문서 172편과 면접 질문 875문항을 검색에 노출해 문서에서 공고 분석으로 이어지게 했고, 대기업 공채 시즌에 구글과 메타 광고를 집행했습니다. 스레드와 인스타그램은 게시물마다 캠페인 링크를 따로 만들어 어디서 가입했는지 구분했고, 숭실대 취업 박람회에서는 QR이 들어간 클리커 굿즈와 팜플렛을 나눴습니다. 한 번 쓰고 떠난 회원에게는 콜백 메일과 일정 알림으로 다시 부릅니다.
-
-출처: 최종보고서 45쪽 «마케팅» 4갈래와 같은 범위 + 재방문(보고서 41쪽 관리자 콘솔 «콜백 메일» 화면, 여정 트래커 알림). 광고비 ₩347.5만 = Meta ₩233.8만 + Google ₩113.7만 — 부록 A5 «유료 광고»와 같은 값(가입 단가·자연 검색 한계는 A5에서).
-사진: assets/ef-fair.jpg = 최종보고서 그림 33 왼쪽(박람회 현장) 원본 이미지 · assets/ef-goods.jpg = ~/Downloads/KakaoTalk_Photo_2026-11-07-23-47-28.jpeg(팜플렛 표지 + 클리커).
-⚠ 박람회 날짜·배포 수량은 근거 없음 → 말하지 않음(보고서에도 없음).
-⚠ 콜백 메일 규칙: 공고 질문을 처음 읽고 72시간 동안 다시 안 오면 발송 후보, 사용자별 14일에 최대 1건, 08~21시(callback-email-operations.md). 그 문서 시점엔 «운영 서버는 기능이 꺼져 있다» — 발송 건수·복귀율은 말하지 않음, «구축»까지만.
-⛔ «바이럴»·«폭발적 유입» 같은 효과 주장 금지. 유입 효과 수치는 부록 A4·A5.''')
-
 S.append(shell('Effect', '외부 회원이 준비한 공고 <span class="purple">83건</span> (토스 · 현대자동차 · 당근 등)', '''
 <div class="ef-stage"><div class="ef-us">
   <div>
-    <div class="ef-us-h">준비한 회사 · 고유 회원 수 (상위)</div>
+    <div class="ef-us-h">준비한 회사 · 고유 회원 수 (상위)<br><small style="font-size:18px">11/04 집계 · 내부 4개 계정 제외 · 외부 회원 79명</small></div>
     <div class="ef-bar"><span>토스 계열</span><i class="top" style="width:100%"></i><b>9명</b></div>
     <div class="ef-bar"><span>현대자동차</span><i style="width:44%"></i><b>4명</b></div>
     <div class="ef-bar"><span>롯데이노베이트</span><i style="width:22%"></i><b>2명</b></div>
