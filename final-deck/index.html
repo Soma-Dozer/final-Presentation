@@ -1666,6 +1666,17 @@ img{display:block}
 .in-nums3{display:grid;grid-template-columns:1fr 1fr .8fr;gap:60px;width:100%;align-items:end}
 .in-num.s b{font-size:150px;color:var(--ink)}
 .in-num.s span{font-size:28px}
+.in-p5{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;width:100%;align-items:stretch}
+.in-p5 .st{display:flex;flex-direction:column;gap:56px;justify-content:center}
+.in-p5 .row{display:grid;grid-template-columns:340px 1fr;align-items:center;gap:40px}
+.in-p5 .row b{font-size:150px;font-weight:900;line-height:1;letter-spacing:-.06em;color:var(--purple)}
+.in-p5 .row b.r{color:var(--red)}
+.in-p5 .row span{display:block;font-size:32px;font-weight:800;line-height:1.4;letter-spacing:-.04em;color:var(--ink);word-break:keep-all}
+.in-p5 .row small{display:block;margin-top:10px;font-size:21px;font-weight:700;color:var(--muted)}
+.in-p5 .qt{display:flex;flex-direction:column;justify-content:center;padding:56px 60px;background:#fff;border-radius:8px;box-shadow:0 2px 24px rgba(20,16,40,.06)}
+.in-p5 .qt .mk{font-size:120px;font-weight:900;line-height:.6;color:var(--red);height:56px}
+.in-p5 .qt blockquote{margin:0;font-size:44px;font-weight:800;line-height:1.45;letter-spacing:-.045em;color:var(--ink);word-break:keep-all}
+.in-p5 .qt small{display:block;margin-top:28px;font-size:22px;font-weight:700;color:var(--muted)}
 .in-num.q blockquote{margin:0;padding-left:28px;border-left:8px solid var(--red);font-size:36px;font-weight:800;line-height:1.45;letter-spacing:-.04em;color:var(--ink);word-break:keep-all}
 .in-bar{margin-top:56px;background:var(--dark);color:#fff;border-radius:20px;padding:26px 36px;text-align:center;font-size:32px;font-weight:900;letter-spacing:-.04em}
 .in-bar span{color:#b9b0ff}
@@ -2552,10 +2563,12 @@ img{display:block}
     <header class="topline"><div class="eyebrow">Problem</div><h1 class="title">취준생은 전에 짠 코드를 <span class="red">다시 보기도, 기억하기도</span> 어렵습니다</h1></header>
     <div class="slide-content">
 <div class="in-col" style="justify-content:center">
-  <div class="in-nums3">
-    <div class="in-num"><b class="r">30일</b><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간 (중앙값)</span><small>오픈소스 개발자 n=60 · Krüger et al. 2018</small></div>
-    <div class="in-num"><b>66%</b><span>경력 3년 미만 개발자가 코드를<br>이해하는 데 쓰는 시간 (전체 58%)</span><small>현업 n=78, 3,148시간 실측 · Xia et al. 2018</small></div>
-    <div class="in-num q"><blockquote>"스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다"</blockquote><small>채용 담당자 · OKKY×바이라인네트워크 2025 (n=71)</small></div>
+  <div class="in-p5">
+    <div class="st">
+      <div class="row"><b class="r">30일</b><div><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간 (중앙값)</span><small>오픈소스 개발자 n=60 · Krüger et al. 2018</small></div></div>
+      <div class="row"><b>66%</b><div><span>경력 3년 미만 개발자가 코드를<br>이해하는 데 쓰는 시간 (전체 58%)</span><small>현업 n=78, 3,148시간 실측 · Xia et al. 2018</small></div></div>
+    </div>
+    <div class="qt"><div class="mk">"</div><blockquote>스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다</blockquote><small>채용 담당자 · OKKY×바이라인네트워크 2025 (n=71)</small></div>
   </div>
   <div class="in-bar">그런데 면접에서는 그 코드를 <span>왜 그렇게 짰는지</span> 설명해야 합니다</div>
 </div></div>
