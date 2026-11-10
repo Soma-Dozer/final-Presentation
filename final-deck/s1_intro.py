@@ -254,7 +254,7 @@ CSS = r"""
 # ================= 01 표지 =================
 S.append(raw('cover', f'''<div class="slide-shell"><div class="cover-grid">
   <div class="cover-copy">
-    <div class="cover-kicker">GitHub 커밋 기반<br>공고 맞춤 기술면접 준비</div>
+    <div class="cover-kicker">GitHub 기반<br>개발자 기술면접 솔루션</div>
     <div class="cover-wordmark"><img src="assets/icon.svg" alt=""><span>Dev<b>Fit</b></span></div>
     <div class="cover-tagline">내 <b>코드</b>로 준비하는 공고 맞춤 기술면접</div>
     <div class="cover-meta">AI·SW마에스트로 17기 최종평가<br><strong>팀 Dozer</strong> 박천웅, 김건우, 노재원</div>

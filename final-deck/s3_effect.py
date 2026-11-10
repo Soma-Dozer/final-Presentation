@@ -9,7 +9,10 @@ from core import *
 
 S = Slides()    # 본편 — 이 파일 순서 그대로 들어간다
 APX = Slides()  # 부록 — A번호 순으로 자동 정렬
-CSS = r"""
+CSS = r""".ef-d3{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;align-items:start;margin:auto 0}.ef-d3 figure{margin:0;text-align:center}.ef-d3 img{height:560px;max-width:100%;object-fit:contain;display:block;margin:0 auto;border:1px solid var(--line);box-shadow:0 18px 40px rgba(20,16,40,.14);background:#fff}.ef-d3 figcaption{margin-top:16px;font-size:16px;font-weight:700;color:var(--muted)}.ef-d3 figcaption b{display:block;font-size:22px;font-weight:900;color:var(--ink);margin-bottom:2px}
+.ef-dj{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;margin:auto 0}.ef-dj .ef-law-doc{transform:none}.ef-dj .ef-law-doc img{height:600px;width:auto}.ef-dj .r{display:flex;flex-direction:column;gap:22px}.ef-dj .why{font-size:24px;font-weight:700;line-height:1.55;color:var(--ink);background:var(--purple-pale);border-radius:18px;padding:22px 28px;word-break:keep-all}.ef-dj .why small{display:block;font-size:16px;font-weight:900;color:var(--purple);margin-bottom:6px}.ef-dj .why b{color:var(--purple)}.ef-dj .ef-law-act p{font-size:17px}.ef-dj .src{display:block;margin-top:10px;font-size:14px;color:var(--muted);font-family:inherit}
+.ef-dp{display:grid;grid-template-columns:1fr 1fr;gap:40px;flex:1;min-height:0}.ef-dp .l,.ef-dp .r{position:relative;min-height:620px}.ef-dp .hd{font-size:18px;font-weight:900;color:var(--purple)}.ef-dp .nt,.ef-dp .sp{position:absolute}.ef-dp .nt img{width:600px;display:block;border:1px solid var(--line);box-shadow:0 14px 34px rgba(20,16,40,.16);background:#fff}.ef-dp .sp img{height:560px;display:block;border:1px solid var(--line);box-shadow:0 14px 34px rgba(20,16,40,.16);background:#fff}.ef-dp .l .nt,.ef-dp .l .hd{margin-left:var(--ofl)}.ef-dp .r .sp,.ef-dp .r .hd{margin-left:var(--ofr)}.ef-dp .l{--ofl:calc((100% - 668px)/2)}.ef-dp .r{--ofr:calc((100% - 640px)/2)}.ef-dp .tag{position:absolute;left:12px;top:-14px;background:var(--ink);color:#fff;font-size:14px;font-weight:800;padding:5px 11px;border-radius:4px;white-space:nowrap}
+
 /* 부록 A16 직업정보제공사업 법률 (11-11) */
 .ef-lawa{flex:1;min-height:0;display:grid;grid-template-columns:470px 1fr;gap:56px;align-items:center;margin-top:10px;padding:0 20px}
 .ef-lawa .ef-law-doc img{max-height:640px;width:auto;max-width:100%}
@@ -222,6 +225,9 @@ CSS = r"""
 .ef-ent-box ol li:before{content:counter(li);counter-increment:li;display:inline-block;width:28px;height:28px;line-height:28px;text-align:center;border-radius:6px;background:var(--purple);color:#fff;font-size:15px;font-weight:900;margin-right:10px;vertical-align:2px}
 .ef-ent-box ol{counter-reset:li}
 .ef-ent-plus{text-align:center;font-size:40px;font-weight:900;color:var(--purple);line-height:1;margin:-8px 0}
+.ef-ent-guide{display:flex;align-items:center;gap:16px;color:var(--muted);font-size:18px;font-weight:700;text-decoration:none;align-self:flex-start}
+.ef-ent-guide img{width:96px;height:96px;display:block}
+.ef-ent-guide span{white-space:nowrap}
 .ef-ent-r{position:relative;height:600px}
 .ef-ent-r .ef-shot{position:absolute;padding:0;border-radius:18px}
 .ef-ent-r .s1{left:0;top:0;width:86%;z-index:1}
@@ -348,33 +354,53 @@ BIZ_SRC = 'cert-biz.png' if _os.path.exists(_os.path.join(_os.path.dirname(OUT),
 def stackdoc(src, alt, cap, left, top, rot, z):
     return f'<div class="sd" style="left:{left}px;top:{top}px;transform:rotate({rot}deg);z-index:{z}"><img src="assets/{src}" alt="{alt}"><span class="tag">{cap}</span></div>'
 pat = [('patent-a.png', '10-2026-0214808', '선별'), ('patent-b.png', '10-2026-0214809', '생성'), ('patent-c.png', '10-2026-0214811', '음성')]
-S.append(shell('Effect', '사업자등록 · 통신판매업 · <span class="purple">직업정보제공사업</span> 신고와 <span class="purple">특허·상표</span> 출원', f'''
-<div class="ev">
-  <div class="ev-a">
-    {stackdoc(BIZ_SRC, '사업자등록증', '① 사업자등록증', 0, 44, -2.2, 1)}
-    {stackdoc('cert-mail.png', '통신판매업 신고증', '② 통신판매업 신고증', 205, 18, -0.6, 2)}
-    {stackdoc('cert-job.png', '직업정보제공사업 신고확인증', '③ 직업정보제공사업 신고', 410, 44, 0.8, 3)}
-    {stackdoc('ef-trademark.png', 'DevFit 상표 출원공고결정서 (제42류, 출원번호 40-2026-0177374)', '④ 상표 출원공고 결정 · 제42류', 615, 18, 2.2, 4)}
-  </div>
-  <div class="ev-b">
-    {''.join(f"""<div class="sd p" style="left:{i*30}px;top:{16+i*196}px;z-index:{i+1}"><img src="assets/{f}" alt="{n} 출원번호통지서"><span class="tag">특허 출원 · {k} · {n}</span></div>""" for i, (f, n, k) in enumerate(pat))}
-  </div>
-</div>''', source='증빙 원본 스캔·캡처 그대로 (자르거나 가리지 않음) · 특허·상표는 출원 단계'))
-S.note('''[≈14초] 결제를 받으려면 서류가 필요했습니다. 사업자등록과 통신판매업 신고를 마쳤고, 채용공고를 모아 보여 주는 서비스라 직업정보제공사업 신고도 했습니다. DevFit 이름은 상표로, 핵심 기술은 특허 3건으로 출원했습니다.
+S.append(shell('Effect', '<span class="purple">사업자등록 · 통신판매업 신고 · 상표 출원</span>', f'''
+<div class="ef-d3">
+  <figure><img src="assets/{BIZ_SRC}" alt="사업자등록증"><figcaption><b>사업자등록증</b>도저랩스 · 개업 2026-09-02</figcaption></figure>
+  <figure><img src="assets/cert-mail.png" alt="통신판매업 신고증"><figcaption><b>통신판매업 신고증</b>제2026-서울서초-3702호 · 11-02</figcaption></figure>
+  <figure><img src="assets/ef-trademark.png" alt="DevFit 상표 출원공고결정서 (제42류, 출원번호 40-2026-0177374)"><figcaption><b>상표 출원공고 결정</b>DevFit · 제42류 · 40-2026-0177374</figcaption></figure>
+</div>''', source='증빙 원본 스캔·캡처 그대로 (자르거나 가리지 않음) · 상표는 출원공고 결정 단계'))
+S.note('''[≈10초] 결제를 받으려면 서류가 필요했습니다. 사업자등록과 통신판매업 신고를 마쳤고, DevFit이라는 이름은 상표로 출원해 출원공고 결정까지 받았습니다.
 
-[증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서)·통신판매업 신고증(제2026-서울서초-3702호, 11-02)·특허 출원번호통지서 3건(11-01) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).
-상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지.
-⛔ «매출» · «공동대표» · 특허 «등록»·«회사 특허» 금지 (출원인 김건우 개인, 발명자 3명, 심사청구 무). 특허 요지는 부록 A9.
+[증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서) · 통신판매업 신고증(제2026-서울서초-3702호, 11-02) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).
+상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지. ⛔ «매출» · «공동대표» 금지.''')
 
-[직업정보제공사업 신고 · 법률 멘토링 — 11-11 사용자 지시로 법률 장표를 빼고 신고확인증만 이 장에 합침. 아래는 Q&A용]
-직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호).
-[증빙] 직업정보제공사업 신고확인증(서울청 제2026-31호, 신고일 2026-10-19) 원본 그대로. 법령 원문: 직업안정법 제2조의2 제8호 · 제23조, 법률 제20121호(2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사(개정 표기 «<개정 2010.6.4>»·«[전문개정 2009.10.9]»만 뺌). 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음.
-법률 멘토링: 장표 표기 «법무법인 백상 김재철 변호사»(사용자 지시 2026-11-06). 소마 게시판 작성자 표기 «김재철»과 일치(사용자 확인 2026-11-06). 소마 멘토로서 진행한 멘토링이며 법무법인과의 자문 계약 아님. 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» — 2026-11-05 18:30~19:30 공식 일정(실제 약 2시간, 사용자 진술), 온라인 Webex, 작성자 김재철, 신청자 김건우·박천웅·노재원 (swmaestro.ai 멘토링 게시판, 사용자 캡처 11-06). 주제 크롤링·저작권 · 개인정보 · 특허·상표 · 직업정보·결제 · DevFit 전반(사용자 확인).
-«기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 멘토링 자리의 구두 검토 의견(사용자 진술 2026-11-06) — 서면 법률의견서·녹취 없음 → claims.md 등록 필요. Q&A에서 «법원 판단·법률의견서»로 말하지 않고 «법률 멘토 검토 의견»으로 답할 것.
-«출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(사용자 진술 2026-11-06, 서면·녹취 없음) → claims.md 등록 필요. 근거 법조: 특허법 제30조(공지 등이 되지 아니한 발명으로 보는 경우) — 공개일부터 12개월 이내 출원. 실제 신청 여부·대상 출원은 장표에서 말하지 않음.
-개인정보 보호 조치(사용자 지시 11-07 추가) — 근거는 운영 코드(BE origin/prod d84cb1c · FE e9b4f2b, 2026-11-06): §30 처리방침 = devfit.app/privacy/(라이브 200, 2026-09-09 시행) · §22 선택 동의 = FE components/analytics/ConsentBanner.tsx «[선택] 이용 통계와 광고 성과 측정에 동의» · §29 = auth/GithubTokenCipher AES/GCM + auth/TokenStore «원문 토큰을 남기지 않고 SHA-256 지문만 저장» · §21 = user/UserDeletionService «비활성 표시가 아니라 물리 삭제»(채용 워크스페이스 소속 계정은 지원자 데이터 때문에 탈퇴 차단·안내).
-⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. collect/K-compliance.md §1: 라이브 처리방침에 OpenAI(커밋 diff 국외 이전)·토스페이먼츠·Sentry·음성·업로드 문서가 아직 없음(11-07 curl 재확인, 시행일 9/9 그대로) → Q&A «비공개 코드가 어디로 가나요?»에 «AWS 안에서만»이라고 답하지 말 것. 처리방침 개정 전까지 장표는 «보호 조치»까지만.
-순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6).''')
+S.append(shell('Effect', '<span class="purple">직업정보제공사업</span> 신고', '''
+<div class="ef-dj">
+  <div class="ef-law-doc"><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증"><span class="tag">신고확인증 · 서울청 제2026-31호 · 2026-10-19</span></div>
+  <div class="r">
+    <div class="ef-law-act">
+      <h4>직업안정법</h4>
+      <p><b>제2조의2(정의)</b> 8. "직업정보제공사업"이란 신문, 잡지, 그 밖의 간행물 또는 유선ㆍ무선방송이나 컴퓨터통신 등으로 구인ㆍ구직 정보 등 직업정보를 제공하는 사업을 말한다.</p>
+      <p><b>제23조(직업정보제공사업의 신고)</b> ① 직업정보제공사업을 하려는 자(제18조에 따라 무료직업소개사업을 하는 자와 제19조에 따라 유료직업소개사업을 하는 자는 제외한다)는 고용노동부장관에게 신고하여야 한다. 신고 사항을 변경하는 경우에도 또한 같다.</p>
+      <span class="src">법률 제20121호, 2024. 1. 23., 일부개정 · 국가법령정보센터 원문</span>
+    </div>
+    <div class="why">서울노동청에 <b>정식 신고된 직업정보제공사업자</b>로서 보다 정확하고 다양한 직업 정보를 제공</div>
+  </div>
+</div>''', source='신고확인증 원본 그대로 (자르거나 가리지 않음) · 직업안정법 [법률 제20121호, 2024. 1. 23., 일부개정] 국가법령정보센터 원문'))
+S.note('''[≈10초] 채용공고를 모아 보여 주는 서비스는 직업안정법상 직업정보제공사업입니다. 10월 19일에 서울고용노동청에 신고를 마쳤고, 그래서 여러 채용 플랫폼과 기업 사이트의 공고를 정식 사업자로서 한곳에 모아, 출처가 분명한 최신 원문으로 보여 줄 수 있습니다.
+
+[직업정보제공사업 신고 · 법률 멘토링 메모 — Q&A용]
+직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.
+법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).
+개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).
+순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 부록 A16.''')
+
+spec = [('patent-spec-a.png', '선별'), ('patent-spec-b.png', '생성'), ('patent-spec-c.png', '음성')]
+S.append(shell('Effect', '핵심 기술 3건 <span class="purple">특허 출원</span>: 질문 선별 · 질문 생성 · 음성 답변 평가', f'''
+<div class="ef-dp">
+  <div class="l"><div class="hd">출원번호통지서 (2026-11-01)</div>
+    {''.join(f"""<div class="nt" style="left:{i*34}px;top:{38+i*168}px;z-index:{i+1}"><img src="assets/{f}" alt="{n} 출원번호통지서"><span class="tag">{k} · {n}</span></div>""" for i, (f, n, k) in enumerate(pat))}
+  </div>
+  <div class="r"><div class="hd">특허 명세서</div>
+    {''.join(f"""<div class="sp" style="left:{i*120}px;top:{38+i*22}px;z-index:{i+1};transform:rotate({(i-1)*1.6}deg)"><img src="assets/{f}" alt="{k} 특허 명세서 첫 장"><span class="tag">{k}</span></div>""" for i, (f, k) in enumerate(spec))}
+  </div>
+</div>''', source='출원번호통지서 원본 캡처 · 명세서는 출원 제출본 docx 첫 장 렌더링 (특허/A_면접질문선별, B_면접질문생성, C_음성모의면접) · 출원 단계'))
+S.note('''[≈10초] 핵심 기술은 특허 3건으로 출원했습니다. 커밋에서 면접 질문을 고르는 방법, 근거를 대조해 질문을 만드는 방법, 음성 대화로 답변을 평가하는 방법입니다. 왼쪽이 출원번호통지서, 오른쪽이 명세서입니다.
+
+[증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).
+명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.
+⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A9.''')
 
 APX.append(shell('Appendix · A16', '채용공고를 보여 주는 서비스의 <span class="purple">직업정보제공사업 신고</span> 근거', """
 <div class="ef-lawa">
@@ -571,12 +597,13 @@ S.note('''[≈15초] 개발자 서비스들도 질문은 기출 문항 은행이
 행 근거(11-07 추가): GitHub 연동 = Greenroom «Ari reads your repos»(G1) · 본인 커밋 선별 = GithubService author: 필터(D3), Greenroom은 레포 단위까지만 공개 · 비공개 레포 = includePrivate 증분 동의(users.github_scopes, V38) · 공고 자동 수집 = prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24(D1·D2) · 캡처 이미지 = /candidate/interview-preps/extract-image(vision OCR) — 경쟁 5곳 공개 페이지에 공고 URL·이미지 입력 언급 없음(사람인은 자사 공고 URL만 받지만 이 표에 없음) · 어필 포인트 = prep/AppealService · 지원 일정·마감 = journey/ 여정 트래커(운영 중) · 면접관 콘솔 = /recruit/*(Greenroom «For teams — Soon», interviewing.io «For employers» 링크만 → –).\n⛔ «AI는 레포를 못 읽는다» 금지(ChatGPT 커넥터·Claude 연동은 읽음). ⛔ 타사 비방 금지 — 공개 페이지 사실만, «–»는 부재가 아님.''')
 
 # ---------- B2B — DevFit Enterprise (11-10 사용자 지시: 서비스 소개서 기준) ----------
-S.append(shell('Effect', '채용 관리(ATS)와 GitHub 코드 면접을 합친 <span class="purple">DevFit Enterprise</span>', '''
+S.append(shell('Effect', '채용 관리(ATS)와 IT 특화를 합친 <span class="purple">DevFit Enterprise</span>', '''
 <div class="ef-ent">
   <div class="ef-ent-l">
     <div class="ef-ent-box"><h4>채용 관리 (ATS)</h4><p>로그인 없는 지원 링크 · 전형 단계 칸반 · 맞춤형 평가표 · 팀 코멘트 · 블라인드 평가 · 면접 일정 · 안내 메일</p></div>
     <div class="ef-ent-plus">+</div>
-    <div class="ef-ent-box cd"><h4>코드 면접</h4><ol><li>이력서 · 공고에 맞는 저장소 선별</li><li>지원자 본인 작성 커밋만 추출</li><li>질문 의도 · 평가 가이드 · 꼬리질문</li><li>구조화된 면접 평가</li><li>사전 동의 · 블라인드</li></ol></div>
+    <div class="ef-ent-box cd"><h4>IT 특화</h4><ol><li>이력서 · 공고에 맞는 저장소 선별</li><li>지원자 본인 작성 커밋만 추출</li><li>질문 의도 · 평가 가이드 · 꼬리질문</li><li>구조화된 면접 평가</li><li>사전 동의 · 블라인드</li></ol></div>
+    <a class="ef-ent-guide" href="https://devfit.app/enterprise.pdf" target="_blank" rel="noopener"><img src="assets/ef-enterprise-qr.png" alt="DevFit Enterprise 서비스 소개서 QR 코드"><span>https://devfit.app/enterprise.pdf</span></a>
   </div>
   <div class="ef-ent-r">
     <div class="ef-shot s1"><img src="assets/ef-ent-10.jpg" alt="DevFit Enterprise 면접 브리프 화면 — 프로젝트 요약과 핵심 질문"></div>
