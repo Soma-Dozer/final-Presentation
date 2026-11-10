@@ -1,0 +1,86 @@
+{
+  "B1": {
+    "fe-signify": {
+      "parsed": 8,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "num_turns": 9,
+      "cost_usd": 0.46363899999999997,
+      "duration_ms": 314147,
+      "is_error": false
+    },
+    "py-ddareungi": {
+      "parsed": 8,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "num_turns": 8,
+      "cost_usd": 0.2552974,
+      "duration_ms": 292424,
+      "is_error": false
+    },
+    "fe-aiden-web": {
+      "parsed": 8,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "num_turns": 21,
+      "cost_usd": 0.5770194,
+      "duration_ms": 334794,
+      "is_error": false
+    },
+    "oss-itsdangerous": {
+      "parsed": 8,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "num_turns": 6,
+      "cost_usd": 0.2433174,
+      "duration_ms": 167148,
+      "is_error": false
+    }
+  },
+  "B2": {
+    "fe-signify": {
+      "parsed": 2,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "num_turns": 1,
+      "cost_usd": 0.043863400000000004,
+      "duration_ms": 20121,
+      "is_error": false
+    },
+    "py-ddareungi": {
+      "parsed": 8,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "num_turns": 1,
+      "cost_usd": 0.10169779999999998,
+      "duration_ms": 37838,
+      "is_error": false
+    },
+    "fe-aiden-web": {
+      "parsed": 0,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "num_turns": 1,
+      "cost_usd": 0.0652818,
+      "duration_ms": 21650,
+      "is_error": false
+    },
+    "oss-itsdangerous": {
+      "parsed": 8,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "num_turns": 1,
+      "cost_usd": 0.11967779999999999,
+      "duration_ms": 50249,
+      "is_error": false
+    }
+  }
+}

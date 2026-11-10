@@ -1,0 +1,11 @@
+page_path,views,active_users,views_per_user,avg_engagement_sec,key_events
+/candidate/dashboard/,906,53,17.09,132,2
+/,684,196,3.49,59,0
+/candidate/analyze,429,88,4.88,50,44
+/candidate/analyze/,367,54,6.80,130,33
+/candidate/studio/,159,20,7.95,60,0
+/login/,129,45,2.87,11,0
+/candidate/journey/,123,23,5.35,72,0
+/cs/,97,19,5.11,81,0
+/candidate/settings/,89,21,4.24,116,1
+/candidate/tutorial/,80,29,2.76,31,0

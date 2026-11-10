@@ -1,0 +1,11 @@
+session_channel,sessions,engaged_sessions,engagement_rate_pct,avg_engagement_sec_per_session,events_per_session,events,key_events,session_key_event_rate_pct
+Direct,247,159,64.37,68,14.21,3511,35,9.72
+Referral,121,83,68.60,173,19.25,2329,24,17.36
+Cross-network,116,91,78.45,178,17.72,2055,33,18.10
+Paid Social,89,62,69.66,39,8.55,761,7,6.74
+Organic Search,48,39,81.25,113,17.19,825,4,6.25
+Unassigned,45,21,46.67,138,8.73,393,2,2.22
+Organic Social,8,7,87.50,133,10.38,83,1,12.50
+Paid Search,3,2,66.67,14,5.33,16,0,0
+AI Assistant,1,1,100,492,37,37,2,100
+TOTAL,680,466,68.53,110,14.72,10010,108,11.47

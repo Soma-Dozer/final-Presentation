@@ -1,0 +1,11 @@
+session_source_medium,sessions,engaged_sessions,engagement_rate_pct,avg_engagement_sec,key_events,session_key_event_rate_pct,note
+(direct) / (none),247,159,64.37,68,35,9.72,
+google / cpc,117,91,77.78,176,33,17.95,Google Ads PMax
+ig / paid,88,61,69.32,39,7,6.82,Meta 광고
+github.com / referral,65,42,64.62,228,18,24.62,대부분 GitHub OAuth 복귀로 추정
+google / organic,46,38,82.61,112,4,6.52,
+signup_onboarding / (not set),39,19,48.72,94,2,2.56,이벤트 파라미터 source 충돌로 생긴 가짜 소스
+clarity.microsoft.com / referral,23,17,73.91,149,0,0,팀의 Clarity 녹화 열람(내부)
+news.hada.io / referral,21,13,61.90,93,3,9.52,
+l.threads.com / referral,11,10,90.91,68,3,27.27,
+(not set),4,0,0,620,0,0,

@@ -1,0 +1,18 @@
+event_name,event_count,total_users,events_per_active_user,is_key_event,origin
+page_view,6072,234,25.95,,자동
+user_engagement,1207,225,5.36,,자동
+scroll,1023,146,7.01,,향상된 측정
+session_start,679,235,2.89,,자동
+first_visit,232,231,1.00,,자동
+login_start,153,53,2.89,,코드
+cta_click,118,66,1.79,,코드
+prep_created,100,52,1.92,Y,코드
+view_search_results,93,9,10.33,,향상된 측정(노이즈 추정)
+click,76,20,3.80,,향상된 측정(이탈 클릭)
+form_start,72,39,1.85,,향상된 측정
+analysis_started,60,32,1.88,,코드
+login_sheet_open,54,27,2.00,,코드
+repository_access_selected,42,40,1.05,Y,코드
+form_submit,25,10,2.50,,향상된 측정
+study_set_completed,4,4,1.00,,코드
+purchase,0,0,0,Y,미구현

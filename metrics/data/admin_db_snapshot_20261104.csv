@@ -1,0 +1,27 @@
+metric,value,unit,note
+b2c_members_total,82,명,관리자 콘솔 B2C 대시보드 2026-11-04 09:41 KST · 팀원·멘토 4명 포함
+b2c_members_external_est,78,명,추정: 82 - 팀원·멘토 표시 4명
+b2c_new_members_30d,23,명,10/5 59명 → 82명
+b2c_new_members_7d,5,명,
+guest_sessions,391,세션,비로그인 방문자(회원과 분리)
+interview_preps,151,건,공고 등록
+interview_prep_users,63,명,
+signup_to_prep_rate,76.8,%,신규 가입자 중 공고 등록 이력
+repo_analyses,402,건,
+repo_analysis_users,56,명,
+repo_analyses_ready,74,건,정상 완료
+repo_analyses_partial,288,건,부분 완료
+repo_analyses_failed,40,건,
+analysis_completion_rate,90.0,%,(READY+PARTIAL)/전체
+study_sets_created,154,건,
+study_set_users,51,명,
+study_sets_completed,6,건,
+answers,88,건,
+answer_users,13,명,
+signup_to_answer_rate,15.9,%,
+documents,48,건,31명
+member_llm_calls,4996,회,
+member_llm_tokens,25096294,토큰,
+paid_orders,0,건,Toss LIVE 11-02~ · 환불·구독·테스트 결제도 0
+paid_amount,0,원,
+b2b_metrics,,,모름: B2B 대시보드 «지표 연결 전»

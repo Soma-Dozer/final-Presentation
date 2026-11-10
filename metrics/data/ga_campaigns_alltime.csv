@@ -1,0 +1,10 @@
+session_campaign,sessions,engaged_sessions,engagement_rate_pct,avg_engagement_sec,key_events,session_key_event_rate_pct
+(direct),247,159,64.37,68,35,9.72
+(referral),134,93,69.40,167,25,16.42
+Campaign #1 (Google PMax),114,89,78.07,180,33,18.42
+(organic),46,38,82.61,112,4,6.52
+(not set),43,19,44.19,143,2,2.33
+Meta 120251606236520425,30,16,53.33,18,2,6.67
+Meta 120250422715540425,23,16,69.57,13,0,0
+Meta 120251356149870425,23,19,82.61,82,3,13.04
+Meta 120251780965680425,13,11,84.62,57,2,7.69

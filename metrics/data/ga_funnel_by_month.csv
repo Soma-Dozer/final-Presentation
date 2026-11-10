@@ -1,0 +1,9 @@
+step,sep_users,oct1_nov3_users,sep_events,oct1_nov3_events
+전체 사용자,102,132,,
+first_visit,97,115,97,116
+cta_click,27,45,35,83
+login_start,25,30,66,78
+prep_created,16,40,34,66
+analysis_started,14,21,27,33
+repository_access_selected,21,18,21,19
+study_set_completed,1,3,1,3

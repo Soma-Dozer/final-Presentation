@@ -1,0 +1,38 @@
+{
+  "A|ALL": {
+    "n": 20,
+    "sha_ok": 20,
+    "file_ok": 20,
+    "touched": 20,
+    "quote_ok": 20,
+    "evidence_ok": 20,
+    "own_strict": 20,
+    "own_coauth": 20,
+    "anchored": 15,
+    "portable": 9
+  },
+  "A|fe-aiden-web": {
+    "n": 3,
+    "sha_ok": 3,
+    "file_ok": 3,
+    "touched": 3,
+    "quote_ok": 3,
+    "evidence_ok": 3,
+    "own_strict": 3,
+    "own_coauth": 3,
+    "anchored": 2,
+    "portable": 2
+  },
+  "A|oss-itsdangerous": {
+    "n": 17,
+    "sha_ok": 17,
+    "file_ok": 17,
+    "touched": 17,
+    "quote_ok": 17,
+    "evidence_ok": 17,
+    "own_strict": 17,
+    "own_coauth": 17,
+    "anchored": 13,
+    "portable": 7
+  }
+}

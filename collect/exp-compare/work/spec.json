@@ -1,0 +1,46 @@
+{
+  "name": "exp-compare",
+  "note": "DevFit vs Claude Code 파일럿 비교 (2026-11-05). 포지션별 고정 JD 1개.",
+  "cases": [
+    {
+      "id": "fe-signify",
+      "kind": "compare",
+      "repoUrl": "https://github.com/aidengoldkr/Signify",
+      "login": "aidengoldkr",
+      "positionCode": "FRONTEND",
+      "targetRole": "프론트엔드 개발자",
+      "experienceLevel": "신입",
+      "jobDescription": "[모집부문] 프론트엔드 엔지니어(신입)\n[주요업무] React/Next.js 기반 웹 서비스 화면 개발, 사용자 입력 처리와 상태 관리 설계, 외부 API 연동, 접근성과 성능 최적화\n[자격요건] TypeScript 이해, React 컴포넌트 설계 경험, HTTP/브라우저 동작 이해\n[우대사항] SSR/정적 배포 경험, 브라우저 API(Canvas·Pointer Events 등) 활용 경험, 테스트 작성 경험"
+    },
+    {
+      "id": "py-ddareungi",
+      "kind": "compare",
+      "repoUrl": "https://github.com/aidengoldkr/Ddareungi-Navigation-Kakao-ChatBot",
+      "login": "aidengoldkr",
+      "positionCode": "BACKEND",
+      "targetRole": "백엔드 개발자",
+      "experienceLevel": "신입",
+      "jobDescription": "[모집부문] 백엔드 개발자(신입)\n[주요업무] Python 기반 서버·라이브러리 개발, 외부 API 연동, 인증 토큰·서명 등 보안 관련 로직 구현, 서버리스/클라우드 배포 운영\n[자격요건] Python 이해, REST API와 HTTP 이해\n[우대사항] 오픈소스 기여 경험, 테스트 코드 작성 습관, AWS Lambda 등 서버리스 배포 경험"
+    },
+    {
+      "id": "fe-aiden-web",
+      "kind": "compare",
+      "repoUrl": "https://github.com/aidengoldkr/Aiden-WEB",
+      "login": "aidengoldkr",
+      "positionCode": "FRONTEND",
+      "targetRole": "프론트엔드 개발자",
+      "experienceLevel": "신입",
+      "jobDescription": "[모집부문] 프론트엔드 엔지니어(신입)\n[주요업무] React/Next.js 기반 웹 서비스 화면 개발, 사용자 입력 처리와 상태 관리 설계, 외부 API 연동, 접근성과 성능 최적화\n[자격요건] TypeScript 이해, React 컴포넌트 설계 경험, HTTP/브라우저 동작 이해\n[우대사항] SSR/정적 배포 경험, 브라우저 API(Canvas·Pointer Events 등) 활용 경험, 테스트 작성 경험"
+    },
+    {
+      "id": "oss-itsdangerous",
+      "kind": "compare",
+      "repoUrl": "https://github.com/pallets/itsdangerous",
+      "login": "mitsuhiko",
+      "positionCode": "BACKEND",
+      "targetRole": "백엔드 개발자",
+      "experienceLevel": "신입",
+      "jobDescription": "[모집부문] 백엔드 개발자(신입)\n[주요업무] Python 기반 서버·라이브러리 개발, 외부 API 연동, 인증 토큰·서명 등 보안 관련 로직 구현, 서버리스/클라우드 배포 운영\n[자격요건] Python 이해, REST API와 HTTP 이해\n[우대사항] 오픈소스 기여 경험, 테스트 코드 작성 습관, AWS Lambda 등 서버리스 배포 경험"
+    }
+  ]
+}

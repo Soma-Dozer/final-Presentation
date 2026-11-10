@@ -1,0 +1,5 @@
+action,source,status,optimization,count_setting,click_window_days,in_account_goal,all_conversions_7d
+면접 준비 생성 (GA4 prep_created),GA4 import,운영중,기본,1회,90,예,1.00
+저장소 접근 선택 (GA4 repository_access_selected),GA4 import,운영중,보조,1회,90,아니요,1.00
+페이지 조회,Google Ads 태그,운영중,기본,매회,30,아니요,226.00
+Android installs (all other apps),Google Play,최근 전환 없음,보조,1회,30,아니요,0.00

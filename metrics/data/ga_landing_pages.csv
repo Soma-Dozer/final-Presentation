@@ -1,0 +1,10 @@
+landing_page,sessions,active_users,new_users,avg_engagement_sec,key_events,session_key_event_rate_pct
+/,378,180,176,110,57,10.85
+(not set),90,31,0,16,0,0
+/candidate/analyze,53,37,32,137,28,39.62
+/candidate/dashboard,37,22,14,269,11,24.32
+/candidate/interview-preps/{id}/questions (1건),18,2,0,146,0,0
+/login,10,6,6,79,3,20
+/candidate/archived,3,2,0,243,2,33.33
+/candidate/journey,3,3,0,504,0,0
+/cs,3,2,0,7,0,0

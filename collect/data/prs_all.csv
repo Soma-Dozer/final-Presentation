@@ -1,0 +1,374 @@
+repo,number,title,author,base,head,state,created_kst,merged_kst,ttm_h,reviews,reviewers,review_by_other,approved,comments,comment_authors,bot_comments,additions,deletions,files
+FE,210,release: refresh shared OG image URL for messenger caches,ia-n0704,prod,staging,MERGED,2026-11-03T19:08:00+09:00,2026-11-03T19:08:29+09:00,0.01,0,,0,0,0,,0,11,10,9
+FE,209,fix: refresh messenger previews with versioned OG image URL,ia-n0704,staging,fix/og-image-cache-20261103,MERGED,2026-11-03T19:00:57+09:00,2026-11-03T19:07:39+09:00,0.11,0,,0,0,0,,0,11,10,9
+FE,208,release: update production OG image,ia-n0704,prod,staging,MERGED,2026-11-03T16:16:03+09:00,2026-11-03T16:16:48+09:00,0.01,0,,0,0,0,,0,0,0,1
+FE,207,fix: replace shared OG image with approved collage,ia-n0704,staging,release/og-image-20261103,MERGED,2026-11-03T16:08:34+09:00,2026-11-03T16:15:27+09:00,0.11,0,,0,0,0,,0,0,0,1
+FE,206,운영 승격: 관리자 메일 인라인 이미지,aidengoldkr,prod,staging,MERGED,2026-11-03T07:53:30+09:00,2026-11-03T08:03:09+09:00,0.16,0,,0,0,0,,0,116,6,2
+FE,205,feat(admin): 메일 발송 탭 이미지 추가,aidengoldkr,staging,release/admin-email-images-20261103,MERGED,2026-11-03T07:42:14+09:00,2026-11-03T07:53:18+09:00,0.18,0,,0,0,0,,0,116,6,2
+FE,204,feat: 멘토링 개선 — 공고 수정 배너·분석 단계 체크리스트·JD 대비 진행도,aidengoldkr,main,integrate/mentoring-fixes-fe,MERGED,2026-11-02T14:15:07+09:00,2026-11-02T14:36:35+09:00,0.36,0,,0,0,0,,0,1071,12,16
+FE,203,fix: Free 음성·자소서 월 한도 5회 안내 (main 반영),aidengoldkr,main,fix/free-monthly-5-main-20261102,OPEN,2026-11-02T13:49:14+09:00,,,0,,0,0,0,,0,6,6,4
+FE,202,hotfix: Free 음성·자소서 월 한도 5회 안내 (2026-11-02),aidengoldkr,staging,hotfix/free-monthly-5-20261102,OPEN,2026-11-02T13:48:50+09:00,,,0,,0,0,0,,0,6,6,4
+FE,201,release: Plus 준비 중 표시와 Free 월 10회 안내 운영 반영 (2026-11-02),aidengoldkr,prod,staging,MERGED,2026-11-02T11:05:39+09:00,2026-11-02T11:33:54+09:00,0.47,0,,0,0,0,,0,106,53,20
+FE,200,release: Plus 준비 중 표시와 Free 월 10회 안내 운영 승격 준비,aidengoldkr,staging,release/toss-onetime-live-20261102,MERGED,2026-11-02T10:49:56+09:00,2026-11-02T11:05:28+09:00,0.26,0,,0,0,0,,0,106,53,20
+FE,199,fix: 처리방침 OpenAI 국외 이전 고지 + 동의 기반 Meta Pixel,aidengoldkr,main,fix/gap-fixes-20261101,OPEN,2026-11-01T15:43:58+09:00,,,0,,0,0,0,,0,546,18,9
+FE,198,"운영 승격: Next.js 16.4.3과 Node 24 업그레이드, 관리자 SBOM 화면",CheonWoong-Park,prod,staging,MERGED,2026-11-01T15:12:31+09:00,2026-11-01T15:55:04+09:00,0.71,0,,0,0,0,,0,1151,649,15
+FE,197,"release: Next.js 16.4.3과 Node 24 업그레이드, 관리자 SBOM 화면",CheonWoong-Park,staging,release/runtime-upgrade-sbom-20261101,MERGED,2026-11-01T15:04:44+09:00,2026-11-01T15:12:17+09:00,0.13,0,,0,0,0,,0,1151,649,15
+FE,196,release: 관리자 행동 분석 366일 상한 테스트 수정 운영 반영 (2026-10-30),aidengoldkr,prod,staging,MERGED,2026-10-30T14:10:39+09:00,2026-10-30T14:10:51+09:00,0.0,0,,0,0,0,,0,2,2,1
+FE,195,release: 관리자 행동 분석 366일 상한 테스트 기대값 수정,aidengoldkr,staging,release/admin-behavior-range-fix-20261030,MERGED,2026-10-30T14:10:27+09:00,2026-10-30T14:10:35+09:00,0.0,0,,0,0,0,,0,2,2,1
+FE,194,release: 관리자 행동 분석 조회 범위 366일 확대 운영 반영 (2026-10-30),aidengoldkr,prod,staging,MERGED,2026-10-30T13:53:39+09:00,2026-10-30T13:54:02+09:00,0.01,0,,0,0,0,,0,2,2,2
+FE,193,release: 관리자 행동 분석 조회 범위 366일 확대 운영 승격 준비,aidengoldkr,staging,release/admin-behavior-range-20261030,MERGED,2026-10-30T11:32:16+09:00,2026-10-30T13:53:26+09:00,2.35,0,,0,0,0,,0,2,2,2
+FE,192,release: 회원 순위 제외 명단 저장 운영 반영 (2026-10-29),CheonWoong-Park,prod,staging,MERGED,2026-10-29T15:17:43+09:00,2026-10-29T15:27:47+09:00,0.17,0,,0,0,0,,0,72,8,2
+FE,191,release: 회원 순위 제외 명단 저장 운영 승격 준비,CheonWoong-Park,staging,release/admin-exclusion-persist-20261029,MERGED,2026-10-29T15:00:19+09:00,2026-10-29T15:16:03+09:00,0.26,0,,0,0,0,,0,72,8,2
+FE,190,ci: 개발 배포 잡의 중복 환경변수 키 제거,CheonWoong-Park,staging,fix/ci-duplicate-env-20261029,MERGED,2026-10-29T10:44:15+09:00,2026-10-29T10:44:38+09:00,0.01,0,,0,0,0,,0,0,1,1
+FE,189,"release: B2B 조직 관리와 블라인드 평가, 관리자 성장 추이 차트 운영 반영 (2026-10-29)",CheonWoong-Park,prod,staging,MERGED,2026-10-29T10:25:51+09:00,2026-10-29T10:49:43+09:00,0.4,0,,0,0,0,,0,2148,78,24
+FE,188,"release: B2B 조직 관리와 블라인드 평가, 관리자 성장 추이 차트 운영 승격 준비",CheonWoong-Park,staging,release/b2b-organization-blind-20261029,MERGED,2026-10-29T10:11:55+09:00,2026-10-29T10:25:33+09:00,0.23,0,,0,0,0,,0,2148,77,23
+FE,187,feat(billing): Plus 정기결제 준비 중 표시 + Free 음성·자소서 AI 월 10회 안내,aidengoldkr,main,feat/toss-onetime-live-20261028,MERGED,2026-10-28T12:29:00+09:00,2026-11-02T10:49:28+09:00,118.34,0,,0,0,0,,0,106,53,20
+FE,186,feat(admin): 메일 발송 탭 수신자 직접 입력,aidengoldkr,staging,feat/admin-email-external-20261028,OPEN,2026-10-28T12:16:17+09:00,,,0,,0,0,0,,0,45,8,2
+FE,185,release: 최신 개발사항 프로덕션 반영 (2026-10-28),ia-n0704,prod,staging,MERGED,2026-10-28T12:03:57+09:00,2026-10-28T12:05:11+09:00,0.02,0,,0,0,0,,0,4689,1933,96
+FE,184,release: 최신 면접 준비와 서비스 UI 변경 운영 승격 준비,ia-n0704,staging,release/production-preparation-20261028,MERGED,2026-10-28T12:02:21+09:00,2026-10-28T12:03:54+09:00,0.03,0,,0,0,0,,0,4689,1933,96
+FE,183,feat: 내 모의면접을 단일 강조 버튼으로 정리,ia-n0704,main,feat/mock-interview-entry-20261028,MERGED,2026-10-28T12:02:18+09:00,2026-10-28T12:03:51+09:00,0.03,0,,0,0,0,,0,31,133,7
+FE,182,feat(admin): 관리자 콘솔 메일 발송 탭 (main 동기화),aidengoldkr,main,feat/admin-email-send-main-20261028,OPEN,2026-10-28T08:08:15+09:00,,,0,,0,0,0,,0,303,1,5
+FE,181,release: 관리자 메일 발송 탭·집계 기간 365일·링크 미리보기 제목,aidengoldkr,prod,staging,MERGED,2026-10-28T08:07:43+09:00,2026-10-28T10:40:00+09:00,2.54,0,,0,0,0,,0,310,7,11
+FE,180,feat(admin): 관리자 콘솔 메일 발송 탭,aidengoldkr,staging,feat/admin-email-send-20261028,MERGED,2026-10-28T08:06:51+09:00,2026-10-28T08:07:11+09:00,0.01,0,,0,0,0,,0,303,1,5
+FE,179,feat: 요금 링크·고객센터 푸터·관리자 집계 기간 확장,aidengoldkr,main,feat/local-leftovers-20261028,OPEN,2026-10-28T07:45:14+09:00,,,0,,0,0,0,,0,78,6,8
+FE,178,feat: 관리자 B2C 집계 조회 기간을 최대 365일로 확장,aidengoldkr,staging,fix/admin-range-365-20261028,MERGED,2026-10-28T07:33:18+09:00,2026-10-28T07:38:06+09:00,0.08,0,,0,0,0,,0,6,5,5
+FE,177,fix(candidate): 결제 내역이 있는 면접 준비 삭제 실패에 사유 안내,aidengoldkr,main,fix/prep-delete-payment-409,MERGED,2026-10-28T07:32:56+09:00,2026-10-28T07:37:55+09:00,0.08,0,,0,0,0,,0,25,3,4
+FE,176,feat: 면접 준비 화면 가독성과 피드백 대기 UI 개선,ia-n0704,main,release/preparation-ui-20261027,MERGED,2026-10-27T17:17:13+09:00,2026-10-27T17:23:58+09:00,0.11,0,,0,0,0,,0,605,413,40
+FE,175,release: 근거 없는 분석 실패 사유 안내,CheonWoong-Park,prod,staging,MERGED,2026-10-19T17:14:46+09:00,2026-10-19T18:01:56+09:00,0.79,0,,0,0,0,,0,471,16,15
+FE,174,feat: 근거 없는 분석 실패에 재시도 대신 사유를 안내,CheonWoong-Park,staging,fix/analysis-no-evidence-code-20261019,MERGED,2026-10-19T16:53:26+09:00,2026-10-19T17:02:58+09:00,0.16,0,,0,0,0,,0,471,16,15
+FE,173,feat: 학습실에 회사별 기출 문제 탭 추가,ia-n0704,main,feat/company-interview-questions-20261018,MERGED,2026-10-18T23:26:43+09:00,2026-10-18T23:32:01+09:00,0.09,0,,0,0,0,,0,433,16,13
+FE,172,feat: AI 서류 작성 개편을 운영에 복구,CheonWoong-Park,prod,staging,MERGED,2026-10-18T18:22:25+09:00,2026-10-18T18:48:36+09:00,0.44,0,,0,0,0,,0,8951,7196,39
+FE,171,release: 면접 리뷰 공고 선택 기능 반영,aidengoldkr,prod,staging,MERGED,2026-10-18T04:49:14+09:00,2026-10-18T05:06:12+09:00,0.28,0,,0,0,0,,0,209,13,6
+FE,170,feat: 면접 리뷰에서 기존 공고 선택 지원,aidengoldkr,staging,feat/review-select-preparation-20261018,MERGED,2026-10-18T04:48:08+09:00,2026-10-18T04:49:06+09:00,0.02,0,,0,0,0,,0,209,13,6
+FE,169,release: 면접 리뷰 바로 작성과 간편 진입,aidengoldkr,prod,staging,MERGED,2026-10-18T03:23:26+09:00,2026-10-18T04:06:10+09:00,0.71,0,,0,0,0,,0,152,46,11
+FE,168,feat: 일정 등록 없이 면접 리뷰 바로 작성,aidengoldkr,staging,feat/interview-review-without-schedule-20261018,MERGED,2026-10-18T03:20:17+09:00,2026-10-18T03:23:14+09:00,0.05,0,,0,0,0,,0,152,46,11
+FE,167,Fix study card render test after Plus gating,aidengoldkr,staging,fix/toss-review-ci-20261017,MERGED,2026-10-17T23:45:21+09:00,2026-10-17T23:46:06+09:00,0.01,0,,0,0,0,,0,4,0,1
+FE,166,Promote payment review flow and Plus success screen,aidengoldkr,prod,staging,MERGED,2026-10-17T23:43:54+09:00,2026-10-17T23:48:46+09:00,0.08,0,,0,0,0,,0,317,90,22
+FE,165,Prepare payment review flow and Plus success screen,aidengoldkr,staging,fix/toss-review-pricing-dev-20261017,MERGED,2026-10-17T23:41:53+09:00,2026-10-17T23:43:19+09:00,0.02,0,,0,0,0,,0,313,90,21
+FE,164,release: kt is 대표 공고 운영 배포,aidengoldkr,prod,staging,MERGED,2026-10-16T11:04:35+09:00,2026-10-16T11:05:00+09:00,0.01,0,,0,0,0,,0,107,5,5
+FE,163,feat: kt is 신입 채용 대표 공고 추가,aidengoldkr,staging,release/kt-is-featured-20261016,MERGED,2026-10-16T10:58:32+09:00,2026-10-16T11:04:30+09:00,0.1,0,,0,0,0,,0,107,5,5
+FE,162,fix: 면접 리뷰 입력 통일과 KPI 집계 기준 표시,aidengoldkr,staging,release/interview-review-kpi-v2-20261015,MERGED,2026-10-15T11:18:30+09:00,2026-10-15T11:28:31+09:00,0.17,0,,0,0,0,,0,199,385,12
+FE,161,운영 승격: 토스 심사 페이지와 면접 리뷰 KPI 개선,aidengoldkr,prod,staging,MERGED,2026-10-15T11:06:02+09:00,2026-10-15T11:34:36+09:00,0.48,0,,0,0,0,,0,3216,417,103
+FE,160,Prepare Toss payment review pages and TEST checkout,aidengoldkr,staging,release/toss-20261015,MERGED,2026-10-15T10:55:44+09:00,2026-10-15T11:05:12+09:00,0.16,0,,0,0,0,,0,3017,32,91
+FE,159,운영 승격: 관리자 콜백 메일 성과 탭,aidengoldkr,prod,staging,MERGED,2026-10-15T00:42:45+09:00,2026-10-15T01:02:11+09:00,0.32,0,,0,0,0,,0,247,0,4
+FE,158,관리자 콜백 메일 성과 탭,aidengoldkr,staging,feat/callback-admin-prod,MERGED,2026-10-15T00:35:29+09:00,2026-10-15T00:42:39+09:00,0.12,0,,0,0,0,,0,247,0,4
+FE,157,release: 관리자 분석 화면 운영 빌드 수정,ia-n0704,prod,staging,MERGED,2026-10-14T13:39:32+09:00,2026-10-14T13:45:20+09:00,0.1,0,,0,0,0,,0,2,1,1
+FE,156,fix: 관리자 단독 빌드에서 브라우저 테스트 제외,ia-n0704,staging,fix/admin-build-test-scope-20261014,MERGED,2026-10-14T13:35:27+09:00,2026-10-14T13:39:24+09:00,0.07,0,,0,0,0,,0,2,1,1
+FE,155,release: 관리자 행동 분석·채널 추적 운영 반영,ia-n0704,prod,staging,MERGED,2026-10-14T11:31:38+09:00,2026-10-14T13:13:56+09:00,1.71,0,,0,0,0,,0,797,24,24
+FE,154,feat: 관리자 행동 분석과 채널별 유입 추적,ia-n0704,staging,feat/admin-behavior-analytics-20261013,MERGED,2026-10-14T11:06:07+09:00,2026-10-14T11:31:24+09:00,0.42,0,,0,0,0,,0,797,24,24
+FE,153,perf: Sentry SDK 지연 로딩을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-10-12T21:19:08+09:00,2026-10-12T21:24:15+09:00,0.09,0,,0,0,0,,0,134,35,9
+FE,152,perf: Sentry SDK를 첫 화면 이후 지연 로딩한다,CheonWoong-Park,staging,perf/sentry-lazy-init,MERGED,2026-10-12T21:13:38+09:00,2026-10-12T21:19:04+09:00,0.09,0,,0,0,0,,0,134,35,9
+FE,151,fix: 관리자 개선을 프로덕션에 복원,aidengoldkr,prod,staging,MERGED,2026-10-12T20:23:44+09:00,2026-10-12T20:24:10+09:00,0.01,0,,0,0,0,,0,581,119,21
+FE,150,fix: 관리자 개선을 정규 운영 배포 경로에 복원,aidengoldkr,staging,release/admin-restore-20261012,MERGED,2026-10-12T20:13:17+09:00,2026-10-12T20:23:41+09:00,0.17,0,,0,0,0,,0,581,119,21
+FE,149,feat: 최신 대기 게임과 예시 공고 카드를 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-10-12T19:39:13+09:00,2026-10-12T19:43:42+09:00,0.07,0,,0,0,0,,0,1841,73,20
+FE,148,feat: 최신 분석 대기 게임을 운영 배포 경로에 복원,CheonWoong-Park,staging,release/waiting-game-prod-20261012,MERGED,2026-10-12T19:33:53+09:00,2026-10-12T19:39:02+09:00,0.09,0,,0,0,0,,0,1673,60,14
+FE,147,feat: 공고 분석에 토스·SK하이닉스 예시 카드 적용,ia-n0704,staging,release/featured-postings-prod-20261010,MERGED,2026-10-10T22:32:53+09:00,2026-10-10T22:59:51+09:00,0.45,0,,0,0,0,,0,168,13,6
+FE,146,fix: 회원 관리 수정과 정상화된 테스트를 스테이징에 반영,CheonWoong-Park,staging,release/admin-members-staging-20261009,MERGED,2026-10-09T22:02:37+09:00,2026-10-09T22:08:22+09:00,0.1,0,,0,0,0,,0,1,1,1
+FE,145,fix: 관리자 회원 목록 수정과 링크 검증 반영,CheonWoong-Park,staging,main,CLOSED,2026-10-09T22:00:37+09:00,,,0,,0,0,0,,0,141,289,4
+FE,144,fix: 관리자 회원 관리를 회원 사용 순위 목록으로 되돌림 운영 반영,CheonWoong-Park,prod,staging,MERGED,2026-10-09T21:49:49+09:00,2026-10-09T22:13:50+09:00,0.4,0,,0,0,0,,0,117,294,4
+FE,143,fix: 관리자 회원 관리를 회원 사용 순위 목록으로 되돌림,CheonWoong-Park,staging,release/admin-member-ranking-list,MERGED,2026-10-09T21:47:20+09:00,2026-10-09T21:49:41+09:00,0.04,0,,0,0,0,,0,117,294,4
+FE,142,chore: staging의 관리자와 서비스 개선을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-10-09T19:40:22+09:00,2026-10-09T20:09:29+09:00,0.49,0,,0,0,0,,0,11148,1171,63
+FE,141,chore: main 변경을 staging에 병합,CheonWoong-Park,staging,release/main-staging-20261009,MERGED,2026-10-09T19:34:15+09:00,2026-10-09T19:40:11+09:00,0.1,0,,0,0,0,,0,11148,1171,63
+FE,140,refactor: 관리자 중복 화면 정리와 Sentry 연동 반영,CheonWoong-Park,staging,release/admin-staging-20261009,CLOSED,2026-10-09T19:28:47+09:00,,,0,,0,0,0,,0,1243,1052,22
+FE,139,feat: 운영 프런트엔드 Sentry 오류 수집 배포,CheonWoong-Park,prod,staging,MERGED,2026-10-08T23:37:24+09:00,2026-10-08T23:43:20+09:00,0.1,0,,0,0,0,,0,3407,318,24
+FE,138,feat: 운영 Sentry 오류 수집을 스테이징에 반영,CheonWoong-Park,staging,feat/sentry-production,MERGED,2026-10-08T23:31:15+09:00,2026-10-08T23:37:19+09:00,0.1,0,,0,0,0,,0,3407,318,24
+FE,137,fix: 관리자 회원·방문객 분리 집계 UI 운영 반영,aidengoldkr,prod,staging,MERGED,2026-10-08T22:09:13+09:00,2026-10-08T22:25:01+09:00,0.26,0,,0,0,0,,0,163,33,9
+FE,136,Staging,aidengoldkr,prod,staging,MERGED,2026-10-08T21:12:01+09:00,2026-10-08T21:12:11+09:00,0.0,0,,0,0,0,,0,9,4,2
+FE,135,fix(admin): show guest metrics separately,aidengoldkr,staging,deploy/guest-metrics-release,MERGED,2026-10-08T21:01:32+09:00,2026-10-08T21:08:00+09:00,0.11,0,,0,0,0,,0,9,4,2
+FE,134,fix(admin): show guest metrics separately,aidengoldkr,main,deploy/guest-metrics-dev,MERGED,2026-10-08T21:00:15+09:00,2026-10-08T21:01:20+09:00,0.02,0,,0,0,0,,0,147,7,5
+FE,133,fix: 면접 질문 화면의 학습 목표 표시 제거,ia-n0704,main,fix/development-local-sync-20261007,MERGED,2026-10-07T16:28:58+09:00,2026-10-07T16:29:27+09:00,0.01,0,,0,0,0,,0,3,9,3
+FE,132,fix: 꼬리질문 실패 시 피드백 생성 안내 및 게임 문구 변경,ia-n0704,main,fix/voice-feedback-guidance,MERGED,2026-10-05T12:35:30+09:00,2026-10-05T12:35:50+09:00,0.01,0,,0,0,0,,0,99,28,8
+FE,131,fix: 음성 면접 질문 단계 표시와 색상 정리,ia-n0704,main,fix/voice-followup-clarity,MERGED,2026-10-03T23:39:53+09:00,2026-10-03T23:40:35+09:00,0.01,0,,0,0,0,,0,25,14,3
+FE,130,fix: 프로덕션 공고 로딩 화면 중앙 정렬 복구,ia-n0704,prod,staging,MERGED,2026-10-02T13:37:36+09:00,2026-10-02T13:37:50+09:00,0.0,0,,0,0,0,,0,1,1,1
+FE,129,fix: 공고 분석·직무 분류 로딩 카드 중앙 정렬 복구,ia-n0704,staging,fix/prod-centered-posting-loader,MERGED,2026-10-02T13:36:45+09:00,2026-10-02T13:37:06+09:00,0.01,0,,0,0,0,,0,1,1,1
+FE,128,fix: 무공고 시작을 레포 선택 및 분석으로 연결,ia-n0704,main,fix/no-posting-repositories,MERGED,2026-10-02T01:19:38+09:00,2026-10-02T01:20:37+09:00,0.02,0,,0,0,0,,0,100,10,5
+FE,127,fix: 알고리즘 설명 표시와 장애물 표지판 이동 수정,ia-n0704,main,fix/runner-signs-and-hints,MERGED,2026-10-02T00:15:27+09:00,2026-10-02T00:21:38+09:00,0.1,0,,0,0,0,,0,7,6,3
+FE,126,fix: 운영에서 개발 중인 대기 게임 제거,CheonWoong-Park,prod,staging,MERGED,2026-10-02T00:10:06+09:00,2026-10-02T00:49:16+09:00,0.65,0,,0,0,0,,0,19,1321,18
+FE,125,feat: 답변 기반 음성 꼬리질문과 대기 게임 개선,ia-n0704,main,feat/algorithm-runner-1000,MERGED,2026-10-01T22:33:05+09:00,2026-10-01T23:51:09+09:00,1.3,0,,0,0,0,,0,662,175,21
+FE,124,feat: 공고 없이 CS 면접 시작 및 토스 추천 공고 배치,ia-n0704,main,feat/guest-preparation-waiting-ui,MERGED,2026-10-01T22:01:15+09:00,2026-10-01T22:06:01+09:00,0.08,0,,0,0,0,,0,61,11,5
+FE,123,release: 비로그인 준비·대기 게임·음성 UI 운영 배포,ia-n0704,prod,release/guest-preparation-20261001,MERGED,2026-10-01T21:05:47+09:00,2026-10-01T22:09:31+09:00,1.06,0,,0,0,0,,0,2181,295,68
+FE,122,feat: 비로그인 면접 준비와 대기 게임·음성 UI 개선,ia-n0704,main,feat/guest-preparation-waiting-ui,MERGED,2026-10-01T20:52:35+09:00,2026-10-01T21:14:37+09:00,0.37,0,,0,0,0,,0,593,223,51
+FE,121,feat: submit CS typing challenges in repository analysis runner,ia-n0704,main,feat/cs-typing-repo-runner,MERGED,2026-10-01T18:39:48+09:00,2026-10-01T18:44:36+09:00,0.08,0,,0,0,0,,0,375,215,11
+FE,120,feat: add retro CS runner mechanics and enlarge desktop Toss card,ia-n0704,main,feat/retro-cs-runner-floating,MERGED,2026-10-01T17:02:09+09:00,2026-10-01T17:06:30+09:00,0.07,0,,0,0,0,,0,440,248,9
+FE,119,feat: extend career runner and float Toss job entry,ia-n0704,main,feat/career-runner-progression,MERGED,2026-10-01T15:05:44+09:00,2026-10-01T15:20:32+09:00,0.25,0,,0,0,0,,0,331,179,14
+FE,118,feat: illustrate waiting game and add company offer finish,ia-n0704,main,feat/illustrated-career-runner,MERGED,2026-10-01T01:09:00+09:00,2026-10-01T01:13:47+09:00,0.08,0,,0,0,0,,0,322,76,11
+FE,117,fix: 고양이 점프 게임과 토스 바로가기 강조,ia-n0704,main,fix/ascii-cat-runner,MERGED,2026-10-01T00:34:05+09:00,2026-10-01T00:39:05+09:00,0.08,0,,0,0,0,,0,280,110,8
+FE,116,feat: 모바일 토스 직무 진입과 분석 대기 게임,ia-n0704,main,feat/mobile-posting-wait-game,MERGED,2026-09-30T23:49:38+09:00,2026-10-01T00:02:58+09:00,0.22,0,,0,0,0,,0,419,20,17
+FE,115,fix(review): hide popup CTA when no interview is available,aidengoldkr,staging,fix/interview-review-general-popup,MERGED,2026-09-30T20:24:29+09:00,2026-09-30T20:29:36+09:00,0.09,0,,0,0,0,,0,35,10,3
+FE,114,fix: Devfit 공유 미리보기 제목 변경,ia-n0704,staging,fix/threads-share-title,MERGED,2026-09-30T20:15:27+09:00,2026-10-28T07:38:30+09:00,659.38,0,,0,0,0,,0,1,1,1
+FE,113,feat(review): interview review experience and KPI dashboard,aidengoldkr,staging,feat/interview-review-production,MERGED,2026-09-30T20:04:46+09:00,2026-09-30T20:08:28+09:00,0.06,0,,0,0,0,,0,1821,36,21
+FE,112,feat: 면접 리뷰와 KPI 화면을 기존 운영 기능과 함께 승격,aidengoldkr,prod,staging,MERGED,2026-09-30T18:40:34+09:00,2026-10-01T23:32:29+09:00,28.87,0,,0,0,0,,0,2180,36,29
+FE,111,fix: 기출문제 카드를 개념 정리 바로 위에 표시,aidengoldkr,staging,feat/interview-evidence-card-order,MERGED,2026-09-30T18:34:07+09:00,2026-09-30T18:40:06+09:00,0.1,0,,0,0,0,,0,3,1,2
+FE,110,feat: 질문 학습 화면에 실제 면접 출제 사례 표시,aidengoldkr,staging,feat/interview-evidence-candidate,MERGED,2026-09-30T16:01:40+09:00,2026-09-30T18:05:15+09:00,2.06,0,,0,0,0,,0,317,0,7
+FE,109,deploy(admin): 기출문제 목록·회사·유형 필터 운영 반영,aidengoldkr,prod,staging,MERGED,2026-09-30T15:32:37+09:00,2026-09-30T15:44:00+09:00,0.19,0,,0,0,0,,0,110,24,2
+FE,108,feat(admin): 면접 기출문제 목록과 회사·유형 필터 개선,aidengoldkr,staging,feat/admin-question-ux,MERGED,2026-09-30T15:23:03+09:00,2026-09-30T15:32:02+09:00,0.15,0,,0,0,0,,0,110,24,2
+FE,107,feat(admin): 전체 회원 수와 운영 데이터 탭 추가,aidengoldkr,staging,fix/admin-member-count-stats,MERGED,2026-09-30T14:14:35+09:00,2026-09-30T14:16:36+09:00,0.03,0,,0,0,0,,0,220,2,7
+FE,106,release: 관리자 회원 수·통계 화면·데이터 탭,aidengoldkr,prod,staging,MERGED,2026-09-30T11:07:27+09:00,2026-09-30T14:40:18+09:00,3.55,0,,0,0,0,,0,256,11,9
+FE,105,fix: keep private repository query scope stable,aidengoldkr,staging,fix/private-repos-single-fetch,MERGED,2026-09-30T11:02:32+09:00,2026-09-30T11:07:08+09:00,0.08,0,,0,0,0,,0,36,9,2
+FE,104,fix: prevent second repository fetch after private scope detection,aidengoldkr,main,fix/private-repos-development,MERGED,2026-09-30T11:02:29+09:00,2026-09-30T11:06:06+09:00,0.06,0,,0,0,0,,0,36,9,2
+FE,103,Promote admin member ranking visibility fix,aidengoldkr,prod,staging,MERGED,2026-09-30T11:01:41+09:00,2026-09-30T11:05:43+09:00,0.07,0,,0,0,0,,0,9,1,2
+FE,102,Show ranking on member management page,aidengoldkr,staging,fix/admin-ranking-members,MERGED,2026-09-30T11:01:27+09:00,2026-09-30T11:01:38+09:00,0.0,0,,0,0,0,,0,9,1,2
+FE,101,Promote admin ranking console to production,aidengoldkr,prod,staging,MERGED,2026-09-30T07:57:31+09:00,2026-09-30T08:17:46+09:00,0.34,0,,0,0,0,,0,93,0,4
+FE,100,Show admin rankings and product counts,aidengoldkr,staging,feat/admin-ranking-prod,MERGED,2026-09-30T07:54:56+09:00,2026-09-30T07:57:06+09:00,0.04,0,,0,0,0,,0,93,0,4
+FE,99,feat: 운영 관리자 B2C 지표 화면 확장,aidengoldkr,prod,staging,MERGED,2026-09-28T00:03:37+09:00,2026-09-28T00:30:48+09:00,0.45,0,,0,0,0,,0,47,5,2
+FE,98,prod 승격: 질문 음성 전 문항 프리페치,ia-n0704,prod,staging,MERGED,2026-09-22T22:56:17+09:00,2026-09-22T22:56:37+09:00,0.01,0,,0,0,0,,0,120,20,6
+FE,97,"ci: 배포 개선과 채용 안내, 관리자 변경을 운영에 반영",aidengoldkr,prod,staging,MERGED,2026-09-21T19:08:16+09:00,2026-09-22T13:09:12+09:00,18.02,0,,0,0,0,,0,592,148,16
+FE,96,fix: 기업 채용 사이트 안내에서 플랫폼형 채용 홈페이지 3종 카드 제거,aidengoldkr,main,fix/guide-remove-platform-section,MERGED,2026-09-19T21:24:57+09:00,2026-09-19T21:27:13+09:00,0.04,0,,0,0,0,,0,76,113,3
+FE,95,feat: 기업 채용 사이트 안내에 토스 커리어 추가 + /extract cached 타입,aidengoldkr,main,feat/posting-cache,MERGED,2026-09-19T13:34:30+09:00,2026-09-19T21:13:32+09:00,7.65,0,,0,0,0,,0,51,9,3
+FE,94,prod 승격: 음성 면접 화면 복원·3분 제한·녹음 흐름 개선,ia-n0704,prod,staging,MERGED,2026-09-18T00:31:34+09:00,2026-09-18T07:55:13+09:00,7.39,0,,0,0,0,,0,802,1247,22
+FE,93,모바일 히어로 증거 카드를 「공고 ↔ 내 커밋 매칭」으로 교체,aidengoldkr,staging,main,MERGED,2026-09-18T00:12:25+09:00,2026-09-18T00:30:11+09:00,0.3,0,,0,0,0,,0,802,1247,22
+FE,92,"준비 카드 레일에서 포지션 배지 제거, D-day만 유지",aidengoldkr,staging,main,MERGED,2026-09-17T23:11:34+09:00,2026-09-17T23:11:54+09:00,0.01,0,,0,0,0,,0,19,50,3
+FE,91,운영 배포: 준비 카드 레일 상단 정렬 + 지원 상태 드롭다운,aidengoldkr,prod,staging,MERGED,2026-09-17T22:57:03+09:00,2026-09-17T23:20:03+09:00,0.38,0,,0,0,0,,0,1541,1382,25
+FE,90,준비 카드 레일 상단 정렬 + 지원 상태 드롭다운을 레일로,aidengoldkr,staging,main,MERGED,2026-09-17T22:56:02+09:00,2026-09-17T22:56:45+09:00,0.01,0,,0,0,0,,0,1567,1377,27
+FE,89,운영 배포: 준비 카드 포지션·마감 배지를 사이드 레일로 이동,aidengoldkr,prod,staging,MERGED,2026-09-17T13:41:57+09:00,2026-09-17T14:53:48+09:00,1.2,0,,0,0,0,,0,39,39,2
+FE,88,준비 카드 포지션·마감 배지를 사이드 레일로 이동,aidengoldkr,staging,main,MERGED,2026-09-17T13:41:31+09:00,2026-09-17T13:41:42+09:00,0.0,0,,0,0,0,,0,39,39,2
+FE,87,release: 마이크 권한 헤더 수정,ia-n0704,prod,staging,MERGED,2026-09-17T13:35:05+09:00,2026-09-17T13:35:30+09:00,0.01,0,,0,0,0,,0,2410,1262,92
+FE,86,release: 마이크 권한 헤더 수정,ia-n0704,staging,main,MERGED,2026-09-17T13:34:45+09:00,2026-09-17T13:35:02+09:00,0.0,0,,0,0,0,,0,2410,1262,92
+FE,85,운영 배포: 대시보드 카드 사이드 레일 레이아웃 · 신규 가입자 사용 가이드,aidengoldkr,prod,staging,MERGED,2026-09-17T13:04:54+09:00,2026-09-17T13:05:59+09:00,0.02,0,,0,0,0,,0,877,147,19
+FE,84,대시보드 카드 사이드 레일 레이아웃 · 신규 가입자 사용 가이드,aidengoldkr,staging,main,MERGED,2026-09-17T13:03:57+09:00,2026-09-17T13:04:32+09:00,0.01,0,,0,0,0,,0,877,147,19
+FE,83,"seo(cs): 도해를 파일로 빼 이미지 검색·JSON-LD·이미지 sitemap에 싣고, 상위 검색어 12편에 도해 13개 추가",aidengoldkr,main,seo/cs-figures-image-search,MERGED,2026-09-17T12:41:09+09:00,2026-09-17T13:05:41+09:00,0.41,0,,0,0,0,,0,2408,1260,90
+FE,82,Add CS interview questions index and update document titles,aidengoldkr,prod,staging,MERGED,2026-09-17T08:25:02+09:00,2026-09-17T08:25:10+09:00,0.0,0,,0,0,0,,0,531,12,12
+FE,81,Add CS interview questions index and update document titles,aidengoldkr,staging,main,MERGED,2026-09-17T08:24:19+09:00,2026-09-17T08:24:28+09:00,0.0,0,,0,0,0,,0,531,12,12
+FE,80,"seo(cs): 기술면접 질문 색인 /cs/interview-questions/ 신설, 문서·카테고리 title에 검색 수식어",aidengoldkr,main,seo/cs-interview-questions-hub,MERGED,2026-09-17T08:03:27+09:00,2026-09-17T08:23:40+09:00,0.34,0,,0,0,0,,0,531,12,12
+FE,79,release: B2C canonical 호스트를 devfit.app(apex)으로,aidengoldkr,prod,staging,MERGED,2026-09-17T07:35:42+09:00,2026-09-17T07:46:43+09:00,0.18,0,,0,0,0,,0,37,33,9
+FE,78,release: B2C canonical 호스트를 devfit.app(apex)으로,aidengoldkr,staging,main,MERGED,2026-09-17T07:33:35+09:00,2026-09-17T07:34:53+09:00,0.02,0,,0,0,0,,0,37,33,9
+FE,77,infra(b2c): 운영 B2C canonical 호스트를 devfit.app(apex)으로 — #76 main 반영,aidengoldkr,main,seo/landing-keyword-jsonld-404,MERGED,2026-09-17T07:28:55+09:00,2026-09-17T07:32:21+09:00,0.06,0,,0,0,0,,0,37,33,9
+FE,76,infra(b2c): 운영 B2C canonical 호스트를 devfit.app(apex)으로,aidengoldkr,seo/landing-keyword-jsonld-404,infra/apex-b2c-host,MERGED,2026-09-16T22:02:34+09:00,2026-09-17T07:26:37+09:00,9.4,0,,0,0,0,,0,37,33,9
+FE,75,release: 음성 모의면접 UI 개선,ia-n0704,prod,staging,MERGED,2026-09-16T21:21:36+09:00,2026-09-16T21:22:08+09:00,0.01,0,,0,0,0,,0,4014,207,41
+FE,74,release: 음성 모의면접 UI 개선,ia-n0704,staging,main,MERGED,2026-09-16T21:18:14+09:00,2026-09-16T21:21:17+09:00,0.05,0,,0,0,0,,0,4014,207,41
+FE,73,"seo(landing): 「개발자 기술면접」 타깃 메타·헤딩·JSON-LD 보강, 커스텀 404 확장",aidengoldkr,main,seo/landing-keyword-jsonld-404,MERGED,2026-09-16T20:33:57+09:00,2026-09-16T20:41:28+09:00,0.13,0,,0,0,0,,0,156,48,12
+FE,72,release: 모바일 랜딩 개선 + 대기업 공고 링크 23곳(목록 피커·안내·로고),aidengoldkr,prod,staging,MERGED,2026-09-16T08:30:52+09:00,2026-09-16T11:43:22+09:00,3.21,0,,0,0,0,,0,2318,619,39
+FE,71,feat: B2B 면접 브리프와 운영 비공개 화면을 배포,CheonWoong-Park,prod,staging,MERGED,2026-09-14T15:20:51+09:00,2026-09-14T15:39:55+09:00,0.32,0,,0,0,0,,0,3739,2079,42
+FE,70,feat: B2B 면접 브리프와 공개 설정을 staging에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-14T15:14:23+09:00,2026-09-14T15:20:48+09:00,0.11,0,,0,0,0,,0,3739,2079,42
+FE,69,chore: 지원자 안정성 수정과 main 변경을 운영에 반영,aidengoldkr,prod,staging,MERGED,2026-09-09T16:08:41+09:00,2026-09-12T14:55:52+09:00,70.79,0,,0,0,0,,0,2449,304,38
+FE,68,운영 승격: 로고 마퀴 · 공고 분석 줄바꿈 · 비공개 레포 토글,aidengoldkr,prod,staging,MERGED,2026-09-09T15:19:29+09:00,2026-09-09T15:27:24+09:00,0.13,0,,0,0,0,,0,727,74,19
+FE,67,Integrate job selection and analysis features into main interface,aidengoldkr,prod,staging,MERGED,2026-09-09T07:28:25+09:00,2026-09-09T07:28:39+09:00,0.0,0,,0,0,0,,0,1369,116,25
+FE,66,Integrate job selection and analysis features into main interface,aidengoldkr,staging,main,MERGED,2026-09-09T07:26:03+09:00,2026-09-09T07:26:44+09:00,0.01,0,,0,0,0,,0,1369,116,25
+FE,65,Rearrange mobile hero and remove unnecessary elements,aidengoldkr,prod,staging,MERGED,2026-09-07T00:58:38+09:00,2026-09-07T00:58:58+09:00,0.01,0,,0,0,0,,0,69,59,18
+FE,64,chore: staging 변경사항을 prod에 승격,CheonWoong-Park,prod,staging,MERGED,2026-09-06T14:39:24+09:00,2026-09-06T14:43:39+09:00,0.07,0,,0,0,0,,0,724,85,9
+FE,63,chore: main 변경사항을 staging에 승격,CheonWoong-Park,staging,main,MERGED,2026-09-06T14:25:15+09:00,2026-09-06T14:38:46+09:00,0.23,0,,0,0,0,,0,724,85,9
+FE,62,feat: 관리자 운영 모니터링과 단가 화면 추가,CheonWoong-Park,main,feat/admin-monitoring,MERGED,2026-09-06T13:57:50+09:00,2026-09-06T13:58:45+09:00,0.02,0,,0,0,0,,0,724,85,9
+FE,61,fix: 대기업 로고 넘침 수정을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-09-05T01:36:04+09:00,2026-09-05T01:39:17+09:00,0.05,0,,0,0,0,,0,24,3,2
+FE,60,fix: 대기업 로고 넘침 수정을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-05T01:29:06+09:00,2026-09-05T01:35:47+09:00,0.11,0,,0,0,0,,0,24,3,2
+FE,59,feat: 공식 채용 공고 동선과 사업자 고지를 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-09-05T00:57:45+09:00,2026-09-05T01:00:56+09:00,0.05,0,,0,0,0,,0,996,91,33
+FE,58,feat: 공식 채용 공고 동선과 사업자 고지를 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-05T00:48:33+09:00,2026-09-05T00:57:23+09:00,0.15,0,,0,0,0,,0,858,23,26
+FE,57,Refactor landing mockup and improve mobile interview experience,aidengoldkr,prod,staging,MERGED,2026-09-03T01:06:20+09:00,2026-09-03T07:48:55+09:00,6.71,0,,0,0,0,,0,2210,504,41
+FE,56,Google 태그 상시 로드(Consent Mode) + 인크루트 공고 지원을 운영에 배포,aidengoldkr,prod,staging,MERGED,2026-09-01T09:34:00+09:00,2026-09-01T10:22:23+09:00,0.81,0,,0,0,0,,0,172,75,15
+FE,55,Google 태그 상시 로드(Consent Mode) + 인크루트 공고 지원을 스테이징에 반영,aidengoldkr,staging,main,MERGED,2026-09-01T09:26:50+09:00,2026-09-01T09:30:17+09:00,0.06,0,,0,0,0,,0,172,75,15
+FE,54,Staging,aidengoldkr,prod,staging,MERGED,2026-08-29T19:47:38+09:00,2026-08-29T19:56:16+09:00,0.14,0,,0,0,0,,0,548,104,16
+FE,53,feat: B2C 관리자 화면을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-29T00:30:57+09:00,2026-08-29T00:31:29+09:00,0.01,0,,0,0,0,,0,1088,248,13
+FE,52,feat: B2C 관리자 화면을 운영에 배포,CheonWoong-Park,prod,staging,MERGED,2026-08-28T23:25:31+09:00,2026-08-29T00:32:05+09:00,1.11,0,,0,0,0,,0,2042,218,16
+FE,51,feat: 사용량 화면을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-28T23:21:14+09:00,2026-08-28T23:25:16+09:00,0.07,0,,0,0,0,,0,991,7,9
+FE,50,feat: 관리자 콘솔을 운영에 배포,CheonWoong-Park,prod,staging,MERGED,2026-08-28T22:08:51+09:00,2026-08-28T22:13:34+09:00,0.08,0,,0,0,0,,0,9456,2,31
+FE,49,feat: 관리자 콘솔을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-28T22:03:56+09:00,2026-08-28T22:08:30+09:00,0.08,0,,0,0,0,,0,9456,2,31
+FE,48,chore: 프런트 스테이징 변경 사항을 운영에 반영,aidengoldkr,prod,staging,MERGED,2026-08-28T14:06:58+09:00,2026-08-28T14:11:28+09:00,0.07,0,,0,0,0,,0,139,10,13
+FE,47,chore: 프런트 스테이징 변경 사항을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-25T12:09:31+09:00,2026-08-25T12:12:17+09:00,0.05,0,,0,0,0,,0,955,64,26
+FE,46,chore: 프런트 메인 변경 사항을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-25T11:54:32+09:00,2026-08-25T12:09:22+09:00,0.25,0,,0,0,0,,0,955,64,26
+FE,45,Staging,aidengoldkr,prod,staging,MERGED,2026-08-21T11:43:51+09:00,2026-08-21T11:44:00+09:00,0.0,0,,0,0,0,,0,1,1,2
+FE,44,naver,aidengoldkr,staging,main,MERGED,2026-08-21T11:43:14+09:00,2026-08-21T11:43:23+09:00,0.0,0,,0,0,0,,0,1,1,2
+FE,43,Add Naver ownership verification file to public assets,aidengoldkr,prod,staging,MERGED,2026-08-21T07:58:47+09:00,2026-08-21T08:18:44+09:00,0.33,0,,0,0,1,aidengoldkr,0,1,0,1
+FE,42,Enhance sitemap and indexing paths for CS knowledge base,aidengoldkr,prod,staging,MERGED,2026-08-21T07:35:25+09:00,2026-08-21T07:35:34+09:00,0.0,0,,0,0,0,,0,627,7,11
+FE,41,fix: 모바일 랜딩과 질문 합계 수정을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-20T08:49:30+09:00,2026-08-20T08:52:00+09:00,0.04,0,,0,0,0,,0,613,117,22
+FE,40,edit moblie landing,aidengoldkr,staging,main,MERGED,2026-08-20T08:32:42+09:00,2026-08-20T08:49:12+09:00,0.28,0,,0,0,0,,0,613,117,22
+FE,39,fix: 최신 사용자 흐름 수정을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-20T02:49:27+09:00,2026-08-20T02:55:58+09:00,0.11,0,,0,0,0,,0,432,92,30
+FE,38,fix: 최신 사용자 흐름 수정을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-20T02:45:02+09:00,2026-08-20T02:48:01+09:00,0.05,0,,0,0,0,,0,432,92,30
+FE,37,chore: 질문은행 화면을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-19T18:25:01+09:00,2026-08-19T18:29:02+09:00,0.07,0,,0,0,0,,0,7038,1959,65
+FE,36,chore: 질문은행 화면을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-19T18:19:59+09:00,2026-08-19T18:24:24+09:00,0.07,0,,0,0,0,,0,7038,1959,65
+FE,35,Improve OG card generation and styling for CS knowledge base,aidengoldkr,prod,staging,MERGED,2026-08-18T08:54:36+09:00,2026-08-18T09:01:58+09:00,0.12,0,,0,0,0,,0,1198,94,19
+FE,34,CS 지식백과 문서별 OG 카드 (라이트 좌측 정렬),aidengoldkr,staging,main,MERGED,2026-08-18T08:27:08+09:00,2026-08-18T08:29:22+09:00,0.04,0,,0,0,0,,0,1198,94,19
+FE,33,release: CS 지식백과를 prod에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-17T21:01:26+09:00,2026-08-17T21:03:42+09:00,0.04,0,,0,0,0,,0,12379,9,189
+FE,32,chore: CS 지식백과를 staging에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-17T20:58:43+09:00,2026-08-17T21:00:58+09:00,0.04,0,,0,0,0,,0,12379,9,189
+FE,31,feat: CS 지식백과 토픽 클러스터와 검색 최적화 강화,CheonWoong-Park,main,feat/cs-wiki,MERGED,2026-08-17T20:03:42+09:00,2026-08-17T20:06:20+09:00,0.04,0,,0,0,0,,0,12379,9,189
+FE,30,B2B 랜딩 v2 출시 잠금을 prod에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-17T14:10:37+09:00,2026-08-17T14:10:44+09:00,0.0,0,,0,0,0,,0,131,70,8
+FE,29,release: 직군별 기술면접 대비 가이드 13페이지를 운영에 반영한다,aidengoldkr,prod,staging,MERGED,2026-08-17T14:03:10+09:00,2026-08-17T14:07:35+09:00,0.07,0,,0,0,0,,0,94,23,5
+FE,28,Enhance UI and add features for interview guides and calendar,aidengoldkr,staging,main,MERGED,2026-08-17T13:56:32+09:00,2026-08-17T14:01:00+09:00,0.07,0,,0,0,0,,0,2513,57,36
+FE,27,Enhance calendar and landing page features with new guides,aidengoldkr,prod,main,MERGED,2026-08-17T13:16:23+09:00,2026-08-17T13:37:42+09:00,0.36,0,,0,0,0,,0,2513,57,36
+FE,26,feat: 직군별 기술면접 대비 가이드 13페이지를 공개한다,aidengoldkr,main,feat/position-interview-guides,MERGED,2026-08-17T12:03:30+09:00,2026-08-17T13:02:14+09:00,0.98,0,,0,0,0,,0,1178,2,8
+FE,25,chore: staging을 prod로 승격,CheonWoong-Park,prod,staging,MERGED,2026-08-15T21:25:44+09:00,2026-08-15T21:28:06+09:00,0.04,0,,0,0,0,,0,1091,371,49
+FE,24,ci: 정적 배포 순서와 API 계약 검사를 개선,aidengoldkr,main,integration/p0-frontend,MERGED,2026-08-13T04:40:39+09:00,2026-09-22T12:54:36+09:00,968.23,0,,0,0,0,,0,58443,5572,572
+FE,23,"Optimize mobile layout, update OG card design, and enhance brand entity",aidengoldkr,prod,staging,MERGED,2026-08-13T04:18:43+09:00,2026-08-13T11:23:34+09:00,7.08,0,,0,0,0,,0,438,280,30
+FE,22,ci: 내부 분석 문서를 개발 환경에만 배포하고 운영에서는 차단한다,aidengoldkr,main,ci/analysis-docs-dev-only,MERGED,2026-08-13T03:46:13+09:00,2026-08-13T03:58:17+09:00,0.2,0,,0,0,0,,0,92,1,1
+FE,21,release: 모바일 최적화·OG 카드·브랜드 엔티티를 staging에 반영,aidengoldkr,staging,release/main-to-staging-20260813,MERGED,2026-08-13T03:22:20+09:00,2026-08-13T03:24:26+09:00,0.04,0,,0,0,0,,0,438,280,30
+FE,20,feat: GEO 감사 개선을 운영 환경에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-12T15:47:55+09:00,2026-08-12T17:04:35+09:00,1.28,0,,0,0,0,,0,278,175,11
+FE,19,release: OG 카드 단일화와 랜딩 모바일 최적화를 staging에 반영,aidengoldkr,staging,release/main-to-staging-20260812,MERGED,2026-08-12T14:17:26+09:00,2026-08-12T14:23:48+09:00,0.11,0,,0,0,0,,0,103,449,8
+FE,18,chore: staging 검증 변경 사항을 prod에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-12T14:16:53+09:00,2026-08-12T14:25:05+09:00,0.14,0,,0,0,0,,0,1568,1300,42
+FE,17,fix: 잘못 병합된 B2B 출시 잠금을 main에서 복구,CheonWoong-Park,main,agent/revert-pr-15,MERGED,2026-08-12T14:15:42+09:00,2026-08-12T14:24:42+09:00,0.15,0,,0,0,0,,0,23,94,5
+FE,16,레츠고,ia-n0704,feature/b2c-quiz,main,MERGED,2026-08-12T12:40:28+09:00,2026-08-12T12:41:01+09:00,0.01,0,,0,0,0,,0,12038,1141,141
+FE,15,fix: B2B 출시 준비 상태를 운영 브랜치에 반영,CheonWoong-Park,main,staging,MERGED,2026-08-12T12:25:21+09:00,2026-08-12T12:36:15+09:00,0.18,0,,0,0,0,,0,94,23,5
+FE,14,Refactor demo to use production components and adjust flow order,aidengoldkr,prod,main,CLOSED,2026-08-12T11:37:12+09:00,,,0,,0,0,0,,0,1592,1157,35
+FE,13,feat: 레포 분석 선택 한도를 20개로 확대,CheonWoong-Park,prod,staging,MERGED,2026-08-11T15:15:48+09:00,2026-08-11T15:22:56+09:00,0.12,0,,0,0,0,,0,3,4,1
+FE,12,release: staging 프런트엔드 변경 사항을 prod에 반영하고 B2B 출시 잠금을 유지,CheonWoong-Park,prod,staging,MERGED,2026-08-11T00:22:57+09:00,2026-08-11T00:25:05+09:00,0.04,0,,0,0,0,,0,7972,608,93
+FE,11,release: B2C 변경 사항을 staging에 반영하고 B2B 출시 잠금을 유지,CheonWoong-Park,staging,release/main-to-staging-20260810,MERGED,2026-08-10T23:51:02+09:00,2026-08-10T23:54:48+09:00,0.06,0,,0,0,0,,0,7972,608,93
+FE,10,개인정보처리방침 수정과 그리고 자잘자잘이들,aidengoldkr,prod,staging,MERGED,2026-08-05T14:14:15+09:00,2026-08-05T14:17:27+09:00,0.05,0,,0,0,0,,0,3234,397,55
+FE,9,CI 운영 승격 경로를 staging → prod로 변경,CheonWoong-Park,prod,staging,MERGED,2026-08-03T11:53:11+09:00,2026-08-03T12:00:43+09:00,0.13,0,,0,0,0,,0,7,7,2
+FE,8,배포 전 검수 완료,CheonWoong-Park,prod,staging,MERGED,2026-08-03T11:46:18+09:00,2026-08-03T11:46:47+09:00,0.01,0,,0,0,0,,0,1767,630,43
+FE,7,ㅇㅎ,ia-n0704,feature/b2c-quiz,main,MERGED,2026-07-30T15:33:07+09:00,2026-07-30T15:38:10+09:00,0.08,0,,0,0,0,,0,3642,194,38
+FE,6,Feature/b2c quiz,ia-n0704,main,feature/b2c-quiz,MERGED,2026-07-30T15:20:24+09:00,2026-07-30T15:25:28+09:00,0.08,0,,0,0,0,,0,544,957,8
+FE,5,지원 여정 트래커 UI — 카드 상태·파이프라인·회고·알림·캘린더,aidengoldkr,main,feat/job-journey-tracker,MERGED,2026-07-30T01:51:35+09:00,2026-07-30T10:50:49+09:00,8.99,0,,0,0,0,,0,3318,427,25
+FE,4,공고 링크 입력란 사람인·원티드 지원 및 플랫폼 로고 표시,ia-n0704,main,feature/saramwantjob,MERGED,2026-07-28T17:32:20+09:00,2026-07-28T17:34:21+09:00,0.03,0,,0,0,0,,0,28,4,4
+FE,3,Fix/b2c audit fixes,aidengoldkr,main,fix/b2c-audit-fixes,MERGED,2026-07-24T17:56:45+09:00,2026-07-24T17:56:56+09:00,0.0,0,,0,0,0,,0,495,2665,17
+FE,2,Set up frontend CI/CD,CheonWoong-Park,main,agent/frontend-cicd,MERGED,2026-07-23T17:38:23+09:00,2026-07-23T17:39:16+09:00,0.01,0,,0,0,0,,0,101,1,1
+FE,1,지원자 대시보드와 B2B 채용 UX 통합,CheonWoong-Park,main,agent/integrate-candidate-b2b,MERGED,2026-07-19T21:07:50+09:00,2026-07-21T23:22:51+09:00,50.25,0,,0,0,0,,0,6955,2801,88
+BE,163,운영 승격: 관리자 이미지 메일 발송 실패 수정,aidengoldkr,prod,staging,MERGED,2026-11-03T10:45:14+09:00,2026-11-03T11:46:32+09:00,1.02,0,,0,0,0,,0,45,99,2
+BE,162,fix(admin): 이미지 메일 발송 실패(ses:SendRawEmail 403) 수정,aidengoldkr,staging,fix/admin-email-images-ses-permission-20261103,MERGED,2026-11-03T10:34:07+09:00,2026-11-03T10:45:06+09:00,0.18,0,,0,0,0,,0,45,99,2
+BE,161,운영 승격: 관리자 메일 인라인 이미지,aidengoldkr,prod,staging,MERGED,2026-11-03T07:53:27+09:00,2026-11-03T08:03:05+09:00,0.16,0,,0,0,0,,0,243,3,2
+BE,160,feat(admin): 관리자 메일 인라인 이미지 첨부,aidengoldkr,staging,release/admin-email-images-20261103,MERGED,2026-11-03T07:42:11+09:00,2026-11-03T07:53:14+09:00,0.18,0,,0,0,0,,0,243,3,2
+BE,159,feat: pgvector 질문 연결을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-11-02T16:24:48+09:00,2026-11-02T16:36:01+09:00,0.19,0,,0,0,0,,0,1242,11,19
+BE,158,feat: 기업 기출 질문의 pgvector 연결을 스테이징에 반영,CheonWoong-Park,staging,release/pgvector-staging-20261102,MERGED,2026-11-02T16:09:23+09:00,2026-11-02T16:23:52+09:00,0.24,0,,0,0,0,,0,1242,11,19
+BE,157,feat: 멘토링 개선 — 공고 변경 감지·분석 진행 단계·JD 커버리지·BE 취약점 게이트,aidengoldkr,main,integrate/mentoring-fixes-be,MERGED,2026-11-02T14:15:00+09:00,2026-11-02T14:36:18+09:00,0.35,0,,0,0,0,,0,2452,27,38
+BE,156,fix: Free 음성·자소서 월 한도 5회 (main 반영),aidengoldkr,main,fix/free-monthly-5-main-20261102,OPEN,2026-11-02T13:49:12+09:00,,,0,,0,0,0,,0,10,10,4
+BE,155,hotfix: Free 음성·자소서 월 한도 5회 (2026-11-02),aidengoldkr,staging,hotfix/free-monthly-5-20261102,OPEN,2026-11-02T13:48:48+09:00,,,0,,0,0,0,,0,10,10,4
+BE,154,release: 단건 결제 LIVE 분리와 Free 월 10회 운영 반영 (2026-11-02),aidengoldkr,prod,staging,MERGED,2026-11-02T11:05:36+09:00,2026-11-02T11:14:50+09:00,0.15,0,,0,0,0,,0,304,98,19
+BE,153,release: 단건 결제 LIVE 분리와 Free 월 10회 운영 승격 준비,aidengoldkr,staging,release/toss-onetime-live-20261102,MERGED,2026-11-02T10:49:54+09:00,2026-11-02T11:05:25+09:00,0.26,0,,0,0,0,,0,304,98,19
+BE,152,운영 승격: Spring Boot 4.1 업그레이드와 관리자 SBOM API,CheonWoong-Park,prod,staging,MERGED,2026-11-01T15:28:41+09:00,2026-11-01T15:39:13+09:00,0.18,0,,0,0,0,,0,237,63,56
+BE,151,release: Spring Boot 4.1 업그레이드와 관리자 SBOM API,CheonWoong-Park,staging,release/runtime-upgrade-sbom-20261101,MERGED,2026-11-01T15:12:13+09:00,2026-11-01T15:28:37+09:00,0.27,0,,0,0,0,,0,237,63,56
+BE,150,release: 관리자 행동 분석 조회 범위 366일 확대 운영 반영 (2026-10-30),aidengoldkr,prod,staging,MERGED,2026-10-30T13:53:36+09:00,2026-10-30T13:53:58+09:00,0.01,0,,0,0,0,,0,5,3,2
+BE,149,release: 관리자 행동 분석 조회 범위 366일 확대 운영 승격 준비,aidengoldkr,staging,release/admin-behavior-range-20261030,MERGED,2026-10-30T11:32:13+09:00,2026-10-30T13:53:23+09:00,2.35,0,,0,0,0,,0,5,3,2
+BE,148,release: 관리자 지표 회원 기준 통일 운영 반영 (2026-10-29),CheonWoong-Park,prod,staging,MERGED,2026-10-29T15:17:41+09:00,2026-10-29T15:27:43+09:00,0.17,0,,0,0,0,,0,27,10,3
+BE,147,release: 관리자 지표 회원 기준 통일 운영 승격 준비,CheonWoong-Park,staging,release/admin-member-filter-20261029,MERGED,2026-10-29T15:00:09+09:00,2026-10-29T15:16:00+09:00,0.26,0,,0,0,0,,0,27,10,3
+BE,146,"release: B2B 조직 관리와 블라인드 평가, 관리자 B2C 추이 API 운영 반영 (2026-10-29)",CheonWoong-Park,prod,staging,MERGED,2026-10-29T11:02:08+09:00,2026-10-29T11:12:20+09:00,0.17,0,,0,0,0,,0,1938,39,24
+BE,145,"release: B2B 조직 관리와 블라인드 평가, 관리자 B2C 추이 API 운영 승격 준비",CheonWoong-Park,staging,release/b2b-organization-blind-20261029,MERGED,2026-10-29T10:10:43+09:00,2026-10-29T11:02:03+09:00,0.86,0,,0,0,0,,0,1938,39,24
+BE,144,feat(billing): 단건 결제 LIVE 분리 스위치 + Free 음성·자소서 AI 월 10회,aidengoldkr,main,feat/toss-onetime-live-20261028,MERGED,2026-10-28T12:28:58+09:00,2026-11-02T10:49:25+09:00,118.34,0,,0,0,0,,0,304,98,19
+BE,143,feat(admin): 회원이 아닌 주소에도 관리자 메일 발송,aidengoldkr,staging,feat/admin-email-external-20261028,OPEN,2026-10-28T12:16:15+09:00,,,0,,0,0,0,,0,122,21,3
+BE,142,release: 최신 개발사항 프로덕션 반영 (2026-10-28),ia-n0704,prod,staging,MERGED,2026-10-28T12:15:13+09:00,2026-10-28T12:15:27+09:00,0.0,0,,0,0,0,,0,3997,446,83
+BE,141,release: 최신 면접 분석과 서비스 수정사항 운영 승격 준비,ia-n0704,staging,release/production-preparation-20261028,MERGED,2026-10-28T12:02:24+09:00,2026-10-28T12:15:02+09:00,0.21,0,,0,0,0,,0,3997,446,83
+BE,140,feat(admin): 관리자 메일 발송 API (main 동기화),aidengoldkr,main,feat/admin-email-send-main-20261028,OPEN,2026-10-28T08:08:12+09:00,,,0,,0,0,0,,0,379,0,6
+BE,139,release: 관리자 메일 발송 API·집계 기간 365일,aidengoldkr,prod,staging,MERGED,2026-10-28T08:07:27+09:00,2026-10-28T08:18:22+09:00,0.18,0,,0,0,0,,0,386,5,9
+BE,138,feat(admin): 관리자 메일 발송 API,aidengoldkr,staging,feat/admin-email-send-20261028,MERGED,2026-10-28T08:06:49+09:00,2026-10-28T08:07:08+09:00,0.01,0,,0,0,0,,0,379,0,6
+BE,137,feat: 로컬 전용 질문 생성 로직·운영 보정 이식,aidengoldkr,main,feat/local-leftovers-20261028,MERGED,2026-10-28T07:45:11+09:00,2026-10-28T07:45:29+09:00,0.01,0,,0,0,0,,0,3071,392,59
+BE,136,feat: 관리자 B2C 집계 조회 기간을 최대 365일로 확장,aidengoldkr,staging,fix/admin-range-365-20261028,MERGED,2026-10-28T07:33:23+09:00,2026-10-28T07:37:39+09:00,0.07,0,,0,0,0,,0,7,5,3
+BE,135,fix(prep): 결제 주문이 걸린 면접 준비 삭제가 FK 위반 500으로 끝나던 문제,aidengoldkr,main,fix/prep-delete-payment-fk,MERGED,2026-10-28T07:32:52+09:00,2026-10-28T07:36:50+09:00,0.07,0,,0,0,0,,0,139,3,3
+BE,134,fix(billing): 결제·수신거부·탈퇴 결함 7건 수정,aidengoldkr,main,fix/billing-review-20261022,MERGED,2026-10-28T07:13:19+09:00,2026-10-28T07:35:45+09:00,0.37,0,,0,0,0,,0,288,23,11
+BE,133,fix: 일정 기록 명칭과 인재상 생성 형식 정리,ia-n0704,main,release/preparation-ui-20261027,MERGED,2026-10-27T17:17:10+09:00,2026-10-27T19:01:42+09:00,1.74,0,,0,0,0,,0,12,9,5
+BE,132,feat: 면접 근거 판별 개선과 콜백 수정 사항을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-10-24T03:03:33+09:00,2026-10-24T03:15:09+09:00,0.19,0,,0,0,0,,0,1399,137,31
+BE,131,feat: 면접 근거 diff 판별 개선을 staging에 반영,CheonWoong-Park,staging,main,MERGED,2026-10-24T02:53:00+09:00,2026-10-24T03:03:25+09:00,0.17,0,,0,0,0,,0,1352,130,27
+BE,130,feat: 면접 근거 diff 판별과 수집 중 병렬 처리 연결,CheonWoong-Park,main,fix/decision-evidence-quality-20261023,MERGED,2026-10-24T02:43:34+09:00,2026-10-24T02:52:52+09:00,0.15,0,,0,0,0,,0,1352,130,27
+BE,129,fix: 같은 방문에서 이어 읽은 질문이 콜백 메일을 취소하지 않게 함,aidengoldkr,main,fix/callback-same-visit-20261021,MERGED,2026-10-21T11:50:22+09:00,2026-10-28T07:35:32+09:00,163.75,0,,0,0,0,,0,47,7,4
+BE,128,fix: 같은 방문에서 이어 읽은 질문이 콜백 메일을 취소하지 않게 함,aidengoldkr,staging,fix/callback-same-visit-20261021,MERGED,2026-10-21T11:38:00+09:00,2026-10-21T11:50:02+09:00,0.2,0,,0,0,0,,0,47,7,4
+BE,127,fix: 테스트 결제 생성권과 심사 계정 도메인 가입 차단,aidengoldkr,main,fix/test-payment-privilege-20261021,MERGED,2026-10-21T10:27:58+09:00,2026-10-21T11:36:19+09:00,1.14,0,,0,0,0,,0,105,7,7
+BE,126,release: 테스트 결제 생성권과 심사 계정 도메인 가입 차단,aidengoldkr,prod,staging,MERGED,2026-10-21T10:27:36+09:00,2026-10-21T10:39:22+09:00,0.2,0,,0,0,0,,0,105,7,7
+BE,125,fix: 테스트 결제 생성권과 심사 계정 도메인 가입 차단,aidengoldkr,staging,fix/test-payment-privilege-20261021,MERGED,2026-10-21T08:59:46+09:00,2026-10-21T10:27:29+09:00,1.46,0,,0,0,0,,0,105,7,7
+BE,124,release: 레포 생성 전 커밋 누락 수정과 근거 없음 실패 사유 코드,CheonWoong-Park,prod,staging,MERGED,2026-10-19T17:03:16+09:00,2026-10-19T17:03:20+09:00,0.0,0,,0,0,0,,0,563,39,12
+BE,123,fix: 레포 생성 전 커밋 누락과 근거 없음 실패 사유 코드,CheonWoong-Park,staging,fix/analysis-no-evidence-20261019,MERGED,2026-10-19T16:53:43+09:00,2026-10-19T17:02:41+09:00,0.15,0,,0,0,0,,0,563,39,12
+BE,122,feat: 공고 회사의 면접 기출 조회 API 추가,ia-n0704,main,feat/company-interview-questions-20261018,MERGED,2026-10-18T23:16:10+09:00,2026-10-18T23:26:25+09:00,0.17,0,,0,0,0,,0,353,0,5
+BE,121,feat: AI 서류 작성 개편을 운영에 복구,CheonWoong-Park,prod,staging,MERGED,2026-10-18T18:22:24+09:00,2026-10-18T18:31:00+09:00,0.14,0,,0,0,0,,0,4050,779,44
+BE,120,release: 면접 리뷰 기존 공고 선택과 질문 연결,aidengoldkr,prod,staging,MERGED,2026-10-18T04:49:47+09:00,2026-10-18T04:50:16+09:00,0.01,0,,0,0,0,,0,184,24,6
+BE,119,feat: 일정 없는 면접 리뷰에 기존 공고 연결,aidengoldkr,staging,feat/review-select-preparation-20261018,MERGED,2026-10-18T04:49:22+09:00,2026-10-18T04:49:40+09:00,0.01,0,,0,0,0,,0,184,24,6
+BE,118,release: 운영 이력을 보존하는 면접 리뷰 migration 수정,aidengoldkr,prod,staging,MERGED,2026-10-18T03:44:42+09:00,2026-10-18T03:45:10+09:00,0.01,0,,0,0,0,,0,30,1,2
+BE,117,fix: 기존 운영 V80 이력을 보존해 리뷰 migration 적용,aidengoldkr,staging,fix/review-migration-history-20261018,MERGED,2026-10-18T03:44:14+09:00,2026-10-18T03:44:27+09:00,0.0,0,,0,0,0,,0,30,1,2
+BE,116,release: 일정 없이 면접 리뷰 작성 지원,aidengoldkr,prod,staging,MERGED,2026-10-18T03:23:25+09:00,2026-10-18T03:23:56+09:00,0.01,0,,0,0,0,,0,191,10,11
+BE,115,feat: 일정 없는 면접 리뷰 저장과 KPI 집계 지원,aidengoldkr,staging,feat/interview-review-without-schedule-20261018,MERGED,2026-10-18T03:22:45+09:00,2026-10-18T03:23:12+09:00,0.01,0,,0,0,0,,0,191,10,11
+BE,114,Promote payment review access and admin test account filter,aidengoldkr,prod,staging,MERGED,2026-10-17T23:43:54+09:00,2026-10-17T23:48:46+09:00,0.08,0,,0,0,0,,0,287,51,23
+BE,113,Prepare payment review entitlements and hide test members,aidengoldkr,staging,fix/toss-review-pricing-dev-20261017,MERGED,2026-10-17T23:41:53+09:00,2026-10-17T23:43:19+09:00,0.02,0,,0,0,0,,0,287,51,23
+BE,112,feat: OpenAI Decisions로 유의미한 커밋 판별을 보강,CheonWoong-Park,staging,feat/commit-decision-20261016,MERGED,2026-10-16T23:13:16+09:00,2026-10-18T18:22:02+09:00,43.15,0,,0,0,1,CheonWoong-Park,0,2572,81,42
+BE,111,운영 승격: 질문 생성 출력 상한 1만 토큰,CheonWoong-Park,prod,staging,MERGED,2026-10-16T13:27:12+09:00,2026-10-16T13:37:45+09:00,0.18,0,,0,0,0,,0,76,17,10
+BE,110,perf: 질문 생성 출력 상한을 1만 토큰으로 상향,CheonWoong-Park,staging,perf/question-output-budget-20261016,MERGED,2026-10-16T13:12:32+09:00,2026-10-16T13:27:07+09:00,0.24,0,,0,0,0,,0,76,17,10
+BE,109,Promote Toss review origin fix,aidengoldkr,prod,staging,MERGED,2026-10-15T12:18:11+09:00,2026-10-15T12:28:55+09:00,0.18,0,,0,0,0,,0,5,3,4
+BE,108,Fix production Toss review origin,aidengoldkr,staging,fix/toss-review-origin-20261015,MERGED,2026-10-15T12:09:10+09:00,2026-10-15T12:18:07+09:00,0.15,0,,0,0,0,,0,5,3,4
+BE,107,운영 승격: 토스 TEST 결제와 면접 리뷰 KPI 개선,aidengoldkr,prod,staging,MERGED,2026-10-15T11:21:46+09:00,2026-10-15T11:41:35+09:00,0.33,0,,0,0,0,,0,6770,143,100
+BE,106,fix: 면접 요청 단위로 리뷰 KPI 전환율 집계,aidengoldkr,staging,release/interview-review-kpi-v2-20261015,MERGED,2026-10-15T11:18:00+09:00,2026-10-15T11:32:14+09:00,0.24,0,,0,0,0,,0,137,105,7
+BE,105,Add isolated Toss TEST payment and review backend,aidengoldkr,staging,release/toss-20261015,MERGED,2026-10-15T10:55:44+09:00,2026-10-15T11:21:42+09:00,0.43,0,,0,0,0,,0,6633,38,93
+BE,104,운영 승격: 콜백 메일 및 재방문 집계,aidengoldkr,prod,staging,MERGED,2026-10-15T00:44:51+09:00,2026-10-15T00:45:27+09:00,0.01,0,,0,0,0,,0,1120,8,25
+BE,103,콜백 메일 재방문 집계와 운영 발송,aidengoldkr,staging,feat/callback-admin-prod,MERGED,2026-10-15T00:35:30+09:00,2026-10-15T00:44:46+09:00,0.15,0,,0,0,0,,0,1120,8,25
+BE,102,release: 관리자 기능 이용·유입 통계 API 운영 반영,ia-n0704,prod,staging,MERGED,2026-10-14T11:31:36+09:00,2026-10-14T11:59:46+09:00,0.47,0,,0,0,0,,0,658,0,10
+BE,101,feat: 관리자 기능 이용·유입 통계 API,ia-n0704,staging,feat/admin-behavior-analytics-20261013,MERGED,2026-10-14T11:05:57+09:00,2026-10-14T11:31:23+09:00,0.42,0,,0,0,0,,0,658,0,10
+BE,100,fix: 운영 관리자 API 개선을 정규 소스에 통합,aidengoldkr,prod,staging,MERGED,2026-10-12T20:28:38+09:00,2026-10-12T20:28:49+09:00,0.0,0,,0,0,0,,0,1365,812,24
+BE,99,fix: 관리자 API 개선을 정규 운영 배포 경로에 반영,aidengoldkr,staging,release/admin-restore-20261012,MERGED,2026-10-12T20:13:22+09:00,2026-10-12T20:28:35+09:00,0.25,0,,0,0,0,,0,1365,812,24
+BE,98,ci: 운영 관리자 Sentry 조회 연결 설정 반영,CheonWoong-Park,prod,staging,MERGED,2026-10-09T22:08:30+09:00,2026-10-09T22:19:17+09:00,0.18,0,,0,0,0,,0,8,0,2
+BE,97,ci: 운영 관리자 Sentry 조회 토큰 전달,CheonWoong-Park,staging,main,MERGED,2026-10-09T22:00:18+09:00,2026-10-09T22:08:26+09:00,0.14,0,,0,0,0,,0,8,0,2
+BE,96,chore: staging의 관리자와 서비스 개선을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-10-09T19:53:07+09:00,2026-10-09T19:53:28+09:00,0.01,0,,0,0,0,,0,3687,119,66
+BE,95,chore: main 변경과 DB 업그레이드를 staging에 병합,CheonWoong-Park,staging,release/main-staging-20261009,MERGED,2026-10-09T19:34:16+09:00,2026-10-09T19:53:03+09:00,0.31,0,,0,0,0,,0,3687,119,66
+BE,94,feat: 관리자 회원 통합과 Sentry 조회 API 반영,CheonWoong-Park,staging,release/admin-staging-20261009,CLOSED,2026-10-09T19:28:31+09:00,,,0,,0,0,0,,0,596,104,17
+BE,93,feat: 운영 API와 분석 워커 Sentry 오류 수집 배포,CheonWoong-Park,prod,staging,MERGED,2026-10-08T23:39:58+09:00,2026-10-08T23:47:18+09:00,0.12,0,,0,0,0,,0,323,1,9
+BE,92,feat: 운영 Sentry 오류 수집을 스테이징에 반영,CheonWoong-Park,staging,feat/sentry-production,MERGED,2026-10-08T23:31:18+09:00,2026-10-08T23:39:54+09:00,0.14,0,,0,0,0,,0,323,1,9
+BE,91,fix: 관리자 overview PostgreSQL 오류 수정 운영 반영,aidengoldkr,prod,staging,MERGED,2026-10-08T21:49:43+09:00,2026-10-08T22:01:20+09:00,0.19,0,,0,0,0,,0,35,1,2
+BE,90,fix: PostgreSQL 날짜 바인딩 오류로 인한 관리자 조회 실패 수정,aidengoldkr,staging,fix/admin-overview-postgres,MERGED,2026-10-08T21:42:53+09:00,2026-10-08T21:49:02+09:00,0.1,0,,0,0,0,,0,35,1,2
+BE,89,Staging,aidengoldkr,prod,staging,MERGED,2026-10-08T21:10:02+09:00,2026-10-08T21:10:14+09:00,0.0,0,,0,0,0,,0,594,68,8
+BE,88,fix(admin): separate guest activity from member metrics,aidengoldkr,staging,deploy/guest-metrics-release,MERGED,2026-10-08T21:01:32+09:00,2026-10-08T21:08:08+09:00,0.11,0,,0,0,0,,0,142,55,5
+BE,87,fix(admin): separate guest activity from member metrics,aidengoldkr,main,deploy/guest-metrics-dev,MERGED,2026-10-08T21:00:15+09:00,2026-10-08T21:07:06+09:00,0.11,0,,0,0,0,,0,378,16,12
+BE,86,fix: 짧고 중복 없는 음성 꼬리질문 생성,ia-n0704,main,fix/voice-followup-clarity,MERGED,2026-10-03T23:39:54+09:00,2026-10-03T23:40:37+09:00,0.01,0,,0,0,0,,0,268,26,4
+BE,85,data: 면접 기출 근거 853건으로 확장,aidengoldkr,staging,feat/interview-evidence-dataset-20261002,MERGED,2026-10-02T23:36:11+09:00,2026-10-02T23:41:25+09:00,0.09,0,,0,0,0,,0,452,13,3
+BE,84,fix: 공고 없이 시작해도 레포 선택과 코드 질문 생성 유지,ia-n0704,main,fix/no-posting-repositories,MERGED,2026-10-02T01:19:37+09:00,2026-10-02T01:20:36+09:00,0.02,0,,0,0,0,,0,56,5,4
+BE,83,feat: 실제 답변 기반 음성 꼬리질문과 종합 피드백,ia-n0704,main,feat/voice-dialogue-follow-ups,MERGED,2026-10-01T23:31:11+09:00,2026-10-01T23:40:00+09:00,0.15,0,,0,0,0,,0,497,9,12
+BE,82,perf: 질문 생성 속도 패치만 운영에 선택 배포,CheonWoong-Park,prod,release/question-output-speed-20261001,MERGED,2026-10-01T23:01:14+09:00,2026-10-01T23:08:52+09:00,0.13,0,,0,0,0,,0,576,41,15
+BE,81,feat: 공고 없는 CS 준비와 환경별 DB 버전 호환,ia-n0704,main,feat/guest-local,MERGED,2026-10-01T22:01:33+09:00,2026-10-01T22:08:41+09:00,0.12,0,,0,0,0,,0,82,5,8
+BE,80,release: 비로그인 면접 준비 API만 운영에 선택 배포,ia-n0704,prod,release/guest-preparation-20261001,MERGED,2026-10-01T21:05:46+09:00,2026-10-01T22:09:27+09:00,1.06,0,,0,0,0,,0,830,17,18
+BE,79,feat: 비로그인 준비 기록 보존과 기본 CS 면접 지원,ia-n0704,main,feat/guest-local,MERGED,2026-10-01T20:52:34+09:00,2026-10-01T21:07:16+09:00,0.24,0,,0,0,0,,0,753,17,17
+BE,78,fix(review): count cross-source popup completions,aidengoldkr,staging,fix/interview-review-popup-attribution,MERGED,2026-09-30T20:24:48+09:00,2026-09-30T20:31:12+09:00,0.11,0,,0,0,0,,0,35,5,4
+BE,77,feat(review): 실제 면접 리뷰와 KPI 백엔드,aidengoldkr,staging,feat/interview-review-system,MERGED,2026-09-30T19:37:25+09:00,2026-09-30T19:45:16+09:00,0.13,0,,0,0,0,,0,2896,0,39
+BE,76,feat: 면접 리뷰와 KPI를 질문 생성 속도 패치와 함께 운영에 반영,aidengoldkr,prod,staging,MERGED,2026-09-30T18:39:50+09:00,2026-10-01T23:40:29+09:00,29.01,0,,0,0,0,,0,3741,9,55
+BE,75,feat: 생성 질문에 실제 면접 출제 근거 연결,aidengoldkr,staging,feat/interview-evidence-candidate,MERGED,2026-09-30T16:01:40+09:00,2026-09-30T18:05:39+09:00,2.07,0,,0,0,0,,0,815,9,16
+BE,74,deploy(admin): 면접 기출문제 DB 미러링과 필터 API 운영 반영,aidengoldkr,prod,staging,MERGED,2026-09-30T15:32:37+09:00,2026-09-30T15:33:23+09:00,0.01,0,,0,0,0,,0,520,48,11
+BE,73,feat(admin): 면접 기출문제 DB 조회와 필터 API,aidengoldkr,staging,feat/admin-question-db,MERGED,2026-09-30T15:23:03+09:00,2026-09-30T15:31:28+09:00,0.14,0,,0,0,0,,0,520,48,11
+BE,72,docs(admin): 새 목록 API 호출 화면 명시,aidengoldkr,staging,fix/admin-data-api-docs,MERGED,2026-09-30T14:24:12+09:00,2026-09-30T14:24:21+09:00,0.0,0,,0,0,0,,0,4,2,2
+BE,71,release: 관리자 데이터 목록과 회원 통계 개선,aidengoldkr,prod,staging,MERGED,2026-09-30T14:17:04+09:00,2026-09-30T14:31:44+09:00,0.24,0,,0,0,0,,0,888,1,11
+BE,70,feat(admin): 공고 캐시와 면접 기출문제 조회 API,aidengoldkr,staging,feat/admin-data-lists,MERGED,2026-09-30T14:14:35+09:00,2026-09-30T14:16:36+09:00,0.03,0,,0,0,0,,0,886,1,11
+BE,69,Document admin ranking endpoint,aidengoldkr,staging,fix/admin-ranking-docs,MERGED,2026-09-30T08:04:14+09:00,2026-09-30T08:04:25+09:00,0.0,0,,0,0,0,,0,4,0,1
+BE,68,Promote admin member rankings to production,aidengoldkr,prod,staging,MERGED,2026-09-30T07:57:31+09:00,2026-09-30T08:11:10+09:00,0.23,0,,0,0,0,,0,88,1,4
+BE,67,Add admin member usage ranking,aidengoldkr,staging,feat/admin-ranking-prod,MERGED,2026-09-30T07:54:56+09:00,2026-09-30T07:57:06+09:00,0.04,0,,0,0,0,,0,84,1,4
+BE,66,feat: 운영 관리자 B2C 제품 지표 추가,aidengoldkr,prod,staging,MERGED,2026-09-28T00:03:36+09:00,2026-09-28T00:17:40+09:00,0.23,0,,0,0,0,,0,193,0,5
+BE,65,fix: 토스 세부 포지션 URL 및 캐시 지원 운영 반영,aidengoldkr,prod,staging,MERGED,2026-09-22T23:23:59+09:00,2026-09-22T23:30:55+09:00,0.12,0,,0,0,0,,0,75,3,4
+BE,64,prod 승격: 음성 선합성 확장·STT 하이브리드·TTS 원속,ia-n0704,prod,staging,MERGED,2026-09-22T22:56:08+09:00,2026-09-22T22:56:27+09:00,0.01,0,,0,0,0,,0,177,33,5
+BE,63,ci: 백엔드 배포 대기를 AWS로 옮기고 Slack 알림 연결,CheonWoong-Park,main,ci/async-backend-deployment,MERGED,2026-09-22T12:27:05+09:00,2026-09-22T12:32:35+09:00,0.09,0,,0,0,0,,0,257,45,5
+BE,62,ci: 비동기 배포와 공고 캐시 변경을 운영에 반영,aidengoldkr,prod,staging,MERGED,2026-09-21T19:09:09+09:00,2026-09-22T12:55:48+09:00,17.78,0,,0,0,0,,0,25930,797,155
+BE,61,fix: 공고 캐시 오만료와 공채 비개발 직무 분석 차단,aidengoldkr,main,fix/posting-cache-production,MERGED,2026-09-21T19:08:12+09:00,2026-09-22T12:34:08+09:00,17.43,0,,0,0,0,,0,178,36,7
+BE,60,feat: 대기업 공고 캐시 + 크롤러 + 토스 커리어 (V59·V60),aidengoldkr,main,feat/posting-cache,MERGED,2026-09-19T13:34:26+09:00,2026-09-19T21:20:11+09:00,7.76,0,,0,0,0,,0,25314,722,141
+BE,59,prod 승격: 음성 모의면접 안정화·기업 공고 확장,ia-n0704,prod,staging,MERGED,2026-09-18T00:30:40+09:00,2026-09-18T00:31:42+09:00,0.02,0,,0,0,0,,0,2410,1076,100
+BE,58,feat: 기업 채용 사이트 20곳 로고를 번들 PNG로 카드에 붙임,aidengoldkr,main,feat/corporate-logos,MERGED,2026-09-17T23:31:02+09:00,2026-09-17T23:38:54+09:00,0.13,0,,0,0,0,,0,438,28,45
+BE,57,feat: 음성 모의면접 처리 대기와 답변 원문 보존 개선,ia-n0704,main,feature/STT-Quiz,MERGED,2026-09-17T22:20:00+09:00,2026-09-17T22:28:58+09:00,0.15,0,,0,0,0,,0,1230,141,25
+BE,56,chore: 신규 가입자 안내와 오류 수정을 운영으로 승격,CheonWoong-Park,prod,staging,MERGED,2026-09-17T15:00:14+09:00,2026-09-17T15:06:45+09:00,0.11,0,,0,0,0,,0,249,6,8
+BE,55,chore: 신규 가입자 안내와 오류 수정을 staging에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-17T14:53:43+09:00,2026-09-17T15:00:11+09:00,0.11,0,,0,0,0,,0,249,6,8
+BE,54,release: 음성 모의면접 Supertonic 전환,ia-n0704,prod,staging,MERGED,2026-09-16T21:17:17+09:00,2026-09-16T21:17:55+09:00,0.01,0,,0,0,0,,0,13178,111,98
+BE,53,release: 음성 모의면접 Supertonic 전환,ia-n0704,staging,main,MERGED,2026-09-16T21:16:42+09:00,2026-09-16T21:16:58+09:00,0.0,0,,0,0,0,,0,47736,1141,223
+BE,52,release: B2C 로그인 유지·private 권한 보존 + 마감 임박 메일(보라 테마·즉시 발송·UUID 링크),aidengoldkr,prod,staging,MERGED,2026-09-16T15:04:15+09:00,2026-09-16T20:41:46+09:00,5.63,0,,0,0,0,,0,643,96,18
+BE,51,release: 대기업 공고 링크 지원 23곳(목록·공채·이미지 OCR),aidengoldkr,prod,staging,MERGED,2026-09-16T11:54:23+09:00,2026-09-16T12:03:08+09:00,0.15,0,,0,0,0,,0,33915,934,108
+BE,50,feat: B2B 면접 브리프와 운영 비공개 설정을 배포,CheonWoong-Park,prod,staging,MERGED,2026-09-14T15:20:50+09:00,2026-09-14T15:26:20+09:00,0.09,0,,0,0,0,,0,925,73,26
+BE,49,feat: B2B 면접 브리프와 공개 설정을 staging에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-14T15:14:23+09:00,2026-09-14T15:20:47+09:00,0.11,0,,0,0,0,,0,925,73,26
+BE,48,chore: 지원자 안정성 수정과 main 변경을 운영에 반영,aidengoldkr,prod,staging,MERGED,2026-09-09T16:09:05+09:00,2026-09-12T14:42:21+09:00,70.55,0,,0,0,0,,0,1552,136,31
+BE,47,질문 난이도 축 분리 + 질문 품질 신로직 (운영 승격),aidengoldkr,prod,staging,MERGED,2026-09-09T01:17:49+09:00,2026-09-09T01:17:59+09:00,0.0,0,,0,0,0,,0,11756,461,108
+BE,46,질문 난이도 축 분리 + 질문 품질 신로직,aidengoldkr,staging,main,MERGED,2026-09-09T01:16:32+09:00,2026-09-09T01:17:44+09:00,0.02,0,,0,0,0,,0,11756,461,108
+BE,45,fix: 모의면접 출력 한도 확대를 운영에 승격,CheonWoong-Park,prod,staging,MERGED,2026-09-07T20:50:58+09:00,2026-09-07T20:55:16+09:00,0.07,0,,0,0,0,,0,347,25,9
+BE,44,fix: 모의면접 출력 한도 확대를 staging에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-07T20:46:22+09:00,2026-09-07T20:50:55+09:00,0.08,0,,0,0,0,,0,347,25,9
+BE,43,fix: 관리자 단가 API 인증 오류를 prod에 승격,CheonWoong-Park,prod,staging,MERGED,2026-09-06T15:04:18+09:00,2026-09-06T15:08:27+09:00,0.07,0,,0,0,0,,0,34,11,2
+BE,42,fix: 관리자 단가 API 인증 오류를 staging에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-06T14:59:23+09:00,2026-09-06T15:03:57+09:00,0.08,0,,0,0,0,,0,34,11,2
+BE,41,chore: staging 변경사항을 prod에 승격,CheonWoong-Park,prod,staging,MERGED,2026-09-06T14:39:23+09:00,2026-09-06T14:43:39+09:00,0.07,0,,0,0,0,,0,207,13,5
+BE,40,chore: main 변경사항을 staging에 승격,CheonWoong-Park,staging,main,MERGED,2026-09-06T14:25:15+09:00,2026-09-06T14:38:46+09:00,0.23,0,,0,0,0,,0,207,13,5
+BE,39,feat: 관리자 모델 단가 조회와 비용 계산 추가,CheonWoong-Park,main,fix/nova-bedrock-pricing,MERGED,2026-09-06T13:57:49+09:00,2026-09-06T13:58:46+09:00,0.02,0,,0,0,0,,0,200,13,5
+BE,38,feat: 대기업 공식 채용 공고 지원을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-09-05T00:53:39+09:00,2026-09-05T00:58:33+09:00,0.08,0,,0,0,0,,0,1069,18,6
+BE,37,feat: 대기업 공식 채용 공고 지원을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-05T00:48:33+09:00,2026-09-05T00:53:10+09:00,0.08,0,,0,0,0,,0,1069,18,6
+BE,36,운영 백그라운드 안정화 변경을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-09-02T15:37:58+09:00,2026-09-02T15:50:18+09:00,0.21,0,,0,0,0,,0,288,40,12
+BE,35,운영 백그라운드 안정화 변경을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-09-02T15:26:25+09:00,2026-09-02T15:36:55+09:00,0.17,0,,0,0,0,,0,288,40,12
+BE,34,인크루트 공고 지원 + 분석 원인 집계를 운영에 배포,aidengoldkr,prod,staging,MERGED,2026-09-01T09:33:35+09:00,2026-09-01T10:22:05+09:00,0.81,0,,0,0,0,,0,975,22,12
+BE,33,인크루트 공고 지원 + 분석 실패 원인 집계를 스테이징에 반영,aidengoldkr,staging,main,MERGED,2026-09-01T09:27:09+09:00,2026-09-01T09:31:30+09:00,0.07,0,,0,0,0,,0,975,22,12
+BE,32,feat: B2C 회원별 사용량을 운영에 배포,CheonWoong-Park,prod,staging,MERGED,2026-08-29T00:31:46+09:00,2026-08-29T00:32:05+09:00,0.01,0,,0,0,0,,0,1492,79,31
+BE,31,feat: B2C 회원별 사용량을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-29T00:30:57+09:00,2026-08-29T00:31:29+09:00,0.01,0,,0,0,0,,0,1492,79,31
+BE,30,feat: 사용량 계측을 운영에 배포,CheonWoong-Park,prod,staging,MERGED,2026-08-28T23:24:51+09:00,2026-08-28T23:28:52+09:00,0.07,0,,0,0,0,,0,1679,29,24
+BE,29,feat: 사용량 계측을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-28T23:20:08+09:00,2026-08-28T23:24:34+09:00,0.07,0,,0,0,0,,0,1679,29,24
+BE,28,feat: 관리자 운영 API를 운영에 배포,CheonWoong-Park,prod,staging,MERGED,2026-08-28T22:08:51+09:00,2026-08-28T22:13:34+09:00,0.08,0,,0,0,0,,0,1384,1,30
+BE,27,feat: 관리자 운영 API를 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-28T22:03:57+09:00,2026-08-28T22:08:30+09:00,0.08,0,,0,0,0,,0,1384,1,30
+BE,26,chore: 백엔드 스테이징 변경 사항을 운영에 반영,aidengoldkr,prod,staging,MERGED,2026-08-28T14:06:40+09:00,2026-08-28T14:11:45+09:00,0.08,0,,0,0,0,,0,1036,35,8
+BE,25,chore: 백엔드 스테이징 변경 사항을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-25T12:03:36+09:00,2026-08-25T12:07:36+09:00,0.07,0,,0,0,0,,0,142,6,6
+BE,24,chore: 백엔드 메인 변경 사항을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-25T11:54:32+09:00,2026-08-25T12:03:23+09:00,0.15,0,,0,0,0,,0,142,6,6
+BE,23,fix: 질문 생성 토큰 확대를 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-20T08:44:07+09:00,2026-08-20T08:47:23+09:00,0.05,0,,0,0,0,,0,1,1,1
+BE,22,fix: 질문 생성 토큰 확대를 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-20T08:30:03+09:00,2026-08-20T08:43:43+09:00,0.23,0,,0,0,0,,0,1,1,1
+BE,21,fix: 질문 상세 로딩 개선을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-20T02:49:27+09:00,2026-08-20T02:52:51+09:00,0.06,0,,0,0,0,,0,310,29,7
+BE,20,fix: 질문 상세 로딩 개선을 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-20T02:45:02+09:00,2026-08-20T02:49:11+09:00,0.07,0,,0,0,0,,0,310,29,7
+BE,19,chore: 질문은행 API를 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-19T18:25:01+09:00,2026-08-19T18:29:02+09:00,0.07,0,,0,0,0,,0,3512,194,56
+BE,18,chore: 질문은행 API를 스테이징에 반영,CheonWoong-Park,staging,main,MERGED,2026-08-19T18:19:59+09:00,2026-08-19T18:24:24+09:00,0.07,0,,0,0,0,,0,3375,167,52
+BE,17,feat: 전체 일정 캘린더 .ics 내보내기를 추가한다,aidengoldkr,staging,main,MERGED,2026-08-17T13:01:43+09:00,2026-08-17T13:02:20+09:00,0.01,0,,0,0,0,,0,137,27,4
+BE,16,chore: staging을 prod로 승격,CheonWoong-Park,prod,staging,MERGED,2026-08-15T21:25:44+09:00,2026-08-15T21:27:42+09:00,0.03,0,,0,0,0,,0,1655,99,42
+BE,15,P0 긴급 수정 4건 — 문항 수 집계 N+1 · 스케줄러 풀 · 로그인 시도 제한 · 토큰 키 경고,aidengoldkr,main,integration/p0-backend,MERGED,2026-08-13T04:41:24+09:00,2026-08-13T11:25:42+09:00,6.74,0,,0,0,0,,0,1123,15,17
+BE,14,쨔스,ia-n0704,feature/b2c-quiz,main,MERGED,2026-08-12T12:43:55+09:00,2026-08-12T12:44:35+09:00,0.01,0,,0,0,0,,0,13113,1240,124
+BE,13,fix: 이미지 공고 OCR 안정화 변경을 운영에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-11T19:28:13+09:00,2026-08-11T19:28:59+09:00,0.01,0,,0,0,0,,0,499,42,9
+BE,12,feat: 레포 분석 한도 확대와 질문 재시도 개선,CheonWoong-Park,prod,staging,MERGED,2026-08-11T15:15:48+09:00,2026-08-11T15:23:18+09:00,0.12,0,,0,0,0,,0,232,108,6
+BE,11,ci: 운영 토큰 주입과 ECS 완료 대기를 보강,CheonWoong-Park,prod,staging,MERGED,2026-08-11T01:41:18+09:00,2026-08-11T02:12:06+09:00,0.51,0,,0,0,0,,0,28,16,1
+BE,10,ci: 운영 HMAC 주입과 선택 토큰 검증을 수정,CheonWoong-Park,prod,staging,MERGED,2026-08-11T00:53:02+09:00,2026-08-11T00:55:07+09:00,0.03,0,,0,0,0,,0,25,17,1
+BE,9,release: staging 백엔드 변경 사항을 prod에 반영,CheonWoong-Park,prod,staging,MERGED,2026-08-11T00:22:56+09:00,2026-08-11T00:25:23+09:00,0.04,0,,0,0,0,,0,12259,1214,122
+BE,8,release: main 백엔드 변경 사항을 staging에 반영,CheonWoong-Park,staging,release/main-to-staging-20260810,MERGED,2026-08-10T23:51:01+09:00,2026-08-10T23:54:47+09:00,0.06,0,,0,0,0,,0,12259,1214,122
+BE,7,fix: recover authored commits when GitHub author filter is empty,CheonWoong-Park,prod,staging,MERGED,2026-08-04T09:22:11+09:00,2026-08-04T09:22:20+09:00,0.0,0,,0,0,0,,0,255,8,2
+BE,6,CI 운영 승격 경로를 staging → prod로 변경,CheonWoong-Park,prod,staging,MERGED,2026-08-03T11:53:11+09:00,2026-08-03T12:00:25+09:00,0.12,0,,0,0,0,,0,7,7,2
+BE,5,배포전 검수 완료,CheonWoong-Park,prod,staging,MERGED,2026-08-03T11:48:33+09:00,2026-08-03T11:49:05+09:00,0.01,0,,0,0,0,,0,1375,132,29
+BE,4,지원 여정 트래커 — 상태·일정·회고·알림·캘린더 (V22),aidengoldkr,main,feat/job-journey-tracker,MERGED,2026-07-30T01:51:13+09:00,2026-07-30T10:50:40+09:00,8.99,0,,0,0,0,,0,5099,261,62
+BE,3,Feature/saramwantjob,ia-n0704,main,feature/saramwantjob,MERGED,2026-07-28T19:38:18+09:00,2026-07-30T10:50:40+09:00,39.21,0,,0,0,0,,0,145,7,3
+BE,2,Set up backend CI/CD,CheonWoong-Park,main,agent/backend-cicd,CLOSED,2026-07-23T17:38:23+09:00,,,0,,0,0,1,CheonWoong-Park,0,242,2,1
+BE,1,B2C 지원자 학습 및 B2B 채용 워크플로우 통합,CheonWoong-Park,main,feature/candidate-dashboard,MERGED,2026-07-21T23:40:32+09:00,2026-07-21T23:42:43+09:00,0.04,0,,0,0,0,,0,5976,1108,88

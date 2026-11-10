@@ -1,0 +1,1054 @@
+run_id	workflow	event	head_branch	status	conclusion	created_at_utc	updated_at_utc	run_started_at_utc	head_sha	run_attempt
+41568177193	Backend CI/CD	push	prod	completed	success	2026-11-03T02:46:36Z	2026-11-03T03:21:37Z	2026-11-03T03:06:36Z	500f4af10e80bef261860db18d5bcd63e4814272	2
+41568177173	Slack Commit Notification	push	prod	completed	success	2026-11-03T02:46:36Z	2026-11-03T02:46:43Z	2026-11-03T02:46:36Z	500f4af10e80bef261860db18d5bcd63e4814272	1
+41561781173	Backend CI/CD	pull_request	staging	completed	success	2026-11-03T01:45:18Z	2026-11-03T01:56:05Z	2026-11-03T01:45:18Z	42f760b6dd8b8f0026bfecbeaba85dc50790a2c5	1
+41561780784	Production promotion source	pull_request_target	staging	completed	success	2026-11-03T01:45:18Z	2026-11-03T01:45:35Z	2026-11-03T01:45:18Z	42f760b6dd8b8f0026bfecbeaba85dc50790a2c5	1
+41561764567	Slack Commit Notification	push	staging	completed	success	2026-11-03T01:45:09Z	2026-11-03T01:45:17Z	2026-11-03T01:45:09Z	42f760b6dd8b8f0026bfecbeaba85dc50790a2c5	1
+41560572883	Backend CI/CD	pull_request	fix/admin-email-images-ses-permission-20261103	completed	success	2026-11-03T01:34:10Z	2026-11-03T01:44:44Z	2026-11-03T01:34:10Z	f99d9c24fb8bdac687307fc1ad0e58c987251548	1
+41560566431	Slack Commit Notification	push	fix/admin-email-images-ses-permission-20261103	completed	success	2026-11-03T01:34:07Z	2026-11-03T01:34:13Z	2026-11-03T01:34:07Z	f99d9c24fb8bdac687307fc1ad0e58c987251548	1
+41542307112	Slack Commit Notification	push	prod	completed	success	2026-11-02T23:03:09Z	2026-11-02T23:03:17Z	2026-11-02T23:03:09Z	d7034477f44cfb10dde4b11d2e97fda7c41892b7	1
+41542306886	Backend CI/CD	push	prod	completed	success	2026-11-02T23:03:09Z	2026-11-02T23:13:42Z	2026-11-02T23:03:09Z	d7034477f44cfb10dde4b11d2e97fda7c41892b7	1
+41541020672	Production promotion source	pull_request_target	staging	completed	success	2026-11-02T22:53:31Z	2026-11-02T22:53:39Z	2026-11-02T22:53:31Z	fde2589c7a6b18e1bb59d485ab5001fe9fe82d52	1
+41541020639	Backend CI/CD	pull_request	staging	completed	success	2026-11-02T22:53:31Z	2026-11-02T23:02:28Z	2026-11-02T22:53:31Z	fde2589c7a6b18e1bb59d485ab5001fe9fe82d52	1
+41540988273	Slack Commit Notification	push	staging	completed	success	2026-11-02T22:53:17Z	2026-11-02T22:53:25Z	2026-11-02T22:53:17Z	fde2589c7a6b18e1bb59d485ab5001fe9fe82d52	1
+41539481189	Backend CI/CD	pull_request	release/admin-email-images-20261103	completed	success	2026-11-02T22:42:15Z	2026-11-02T22:52:54Z	2026-11-02T22:42:15Z	e5b0fa7ccd83b91fb4426f9657f88b7b4dd0bbf9	1
+41539468626	Slack Commit Notification	push	release/admin-email-images-20261103	completed	success	2026-11-02T22:42:09Z	2026-11-02T22:42:17Z	2026-11-02T22:42:09Z	e5b0fa7ccd83b91fb4426f9657f88b7b4dd0bbf9	1
+41407348508	Backend CI/CD	push	prod	completed	success	2026-11-02T07:36:04Z	2026-11-02T07:47:40Z	2026-11-02T07:36:04Z	c680990176e6f32176bf179837f8eebaf07a4ee6	1
+41407348468	Slack Commit Notification	push	prod	completed	success	2026-11-02T07:36:04Z	2026-11-02T07:36:12Z	2026-11-02T07:36:04Z	c680990176e6f32176bf179837f8eebaf07a4ee6	1
+41406139686	Production promotion source	pull_request_target	staging	completed	success	2026-11-02T07:24:51Z	2026-11-02T07:25:01Z	2026-11-02T07:24:51Z	bc15ceda741f8e7b8f25e2654cc35142fae6f643	1
+41406139171	Backend CI/CD	pull_request	staging	completed	success	2026-11-02T07:24:51Z	2026-11-02T07:35:13Z	2026-11-02T07:24:51Z	bc15ceda741f8e7b8f25e2654cc35142fae6f643	1
+41406038760	Slack Commit Notification	push	staging	completed	success	2026-11-02T07:23:55Z	2026-11-02T07:24:07Z	2026-11-02T07:23:55Z	bc15ceda741f8e7b8f25e2654cc35142fae6f643	1
+41404456553	Backend CI/CD	pull_request	release/pgvector-staging-20261102	completed	success	2026-11-02T07:09:26Z	2026-11-02T07:19:57Z	2026-11-02T07:09:26Z	33e7b0c5b34ad2dd7f1049dcc4a0004fb17b0f9b	1
+41403993064	Slack Commit Notification	push	release/pgvector-staging-20261102	completed	success	2026-11-02T07:05:09Z	2026-11-02T07:05:16Z	2026-11-02T07:05:09Z	33e7b0c5b34ad2dd7f1049dcc4a0004fb17b0f9b	1
+41402134860	Backend CI/CD	push	main	completed	success	2026-11-02T06:47:24Z	2026-11-02T07:36:44Z	2026-11-02T07:36:11Z	e5aa487743d73e074d4ea63372b6138f3c6125a3	4
+41402134785	Slack Commit Notification	push	main	completed	success	2026-11-02T06:47:24Z	2026-11-02T06:47:33Z	2026-11-02T06:47:24Z	e5aa487743d73e074d4ea63372b6138f3c6125a3	1
+41394998029	Slack Commit Notification	push	main	completed	success	2026-11-02T05:36:19Z	2026-11-02T05:36:26Z	2026-11-02T05:36:19Z	656e9bbe7ff1de8ce0f66d81ff7f22d6e1fd78ef	1
+41394997804	Backend CI/CD	push	main	completed	success	2026-11-02T05:36:19Z	2026-11-02T05:46:26Z	2026-11-02T05:36:19Z	656e9bbe7ff1de8ce0f66d81ff7f22d6e1fd78ef	1
+41394142832	Backend CI/CD	pull_request	integrate/mentoring-fixes-be	completed	success	2026-11-02T05:27:33Z	2026-11-02T05:35:22Z	2026-11-02T05:27:33Z	3e088ad8df336294a659fb09489000d0595d5559	1
+41394138228	Slack Commit Notification	push	integrate/mentoring-fixes-be	completed	success	2026-11-02T05:27:30Z	2026-11-02T05:27:38Z	2026-11-02T05:27:30Z	3e088ad8df336294a659fb09489000d0595d5559	1
+41392898528	Backend CI/CD	pull_request	integrate/mentoring-fixes-be	completed	failure	2026-11-02T05:15:03Z	2026-11-02T05:25:29Z	2026-11-02T05:15:03Z	05a17037dd45789da40bfc32423d53547e70742b	1
+41392894313	Slack Commit Notification	push	integrate/mentoring-fixes-be	completed	success	2026-11-02T05:15:01Z	2026-11-02T05:15:09Z	2026-11-02T05:15:01Z	05a17037dd45789da40bfc32423d53547e70742b	1
+41392893046	Slack Commit Notification	push	feat/analysis-progress-steps	completed	success	2026-11-02T05:15:00Z	2026-11-02T05:15:09Z	2026-11-02T05:15:00Z	a8118d2f215b8ca8572c8a83816ad13d589b29f4	1
+41392892811	Slack Commit Notification	push	feat/posting-change-detection	completed	success	2026-11-02T05:15:00Z	2026-11-02T05:15:07Z	2026-11-02T05:15:00Z	b9040a813e240419b3ce88d2334d114f402d1788	1
+41392892761	Slack Commit Notification	push	feat/jd-coverage	completed	success	2026-11-02T05:15:00Z	2026-11-02T05:15:07Z	2026-11-02T05:15:00Z	b1ed74cfff544ec7b60add9ae08b4662326f31da	1
+41392892737	Slack Commit Notification	push	ci/be-vulnerability-gate	completed	success	2026-11-02T05:15:00Z	2026-11-02T05:15:07Z	2026-11-02T05:15:00Z	f7d2f423ec9409fdb4dcf01fe48fa2bd476553a4	1
+41391227245	Backend CI/CD	pull_request	fix/free-monthly-5-main-20261102	completed	success	2026-11-02T04:57:01Z	2026-11-02T05:07:31Z	2026-11-02T04:57:01Z	b60438a01e7f3175336be8199cd48483f846259c	1
+41391222782	Backend CI/CD	pull_request	hotfix/free-monthly-5-20261102	completed	success	2026-11-02T04:56:58Z	2026-11-02T05:07:07Z	2026-11-02T04:56:58Z	768777e3c910316a6f0392ef77c808f1a97744d8	1
+41391221062	Slack Commit Notification	push	fix/free-monthly-5-main-20261102	completed	success	2026-11-02T04:56:57Z	2026-11-02T04:57:03Z	2026-11-02T04:56:57Z	b60438a01e7f3175336be8199cd48483f846259c	1
+41391218502	Slack Commit Notification	push	hotfix/free-monthly-5-20261102	completed	success	2026-11-02T04:56:55Z	2026-11-02T04:57:02Z	2026-11-02T04:56:55Z	768777e3c910316a6f0392ef77c808f1a97744d8	1
+41390549708	Backend CI/CD	pull_request	fix/free-monthly-5-main-20261102	completed	failure	2026-11-02T04:49:14Z	2026-11-02T04:57:34Z	2026-11-02T04:49:14Z	80e7f404d2fbf43a95ee2c337eb45a4e3d787a75	1
+41390545587	Slack Commit Notification	push	fix/free-monthly-5-main-20261102	completed	success	2026-11-02T04:49:11Z	2026-11-02T04:49:20Z	2026-11-02T04:49:11Z	80e7f404d2fbf43a95ee2c337eb45a4e3d787a75	1
+41390517621	Backend CI/CD	pull_request	hotfix/free-monthly-5-20261102	completed	failure	2026-11-02T04:48:51Z	2026-11-02T04:56:08Z	2026-11-02T04:48:51Z	b4dda493b01457143af8e17b66753c2fc0a3ad15	1
+41390512790	Slack Commit Notification	push	hotfix/free-monthly-5-20261102	completed	success	2026-11-02T04:48:48Z	2026-11-02T04:48:56Z	2026-11-02T04:48:48Z	b4dda493b01457143af8e17b66753c2fc0a3ad15	1
+41376677845	Slack Commit Notification	push	prod	completed	success	2026-11-02T02:14:52Z	2026-11-02T02:15:00Z	2026-11-02T02:14:52Z	882c0786ceb6559e271f58fe85bb57639295abb5	1
+41376677837	Backend CI/CD	push	prod	completed	success	2026-11-02T02:14:52Z	2026-11-02T02:28:39Z	2026-11-02T02:14:52Z	882c0786ceb6559e271f58fe85bb57639295abb5	1
+41375842305	Production promotion source	pull_request_target	staging	completed	success	2026-11-02T02:05:40Z	2026-11-02T02:05:47Z	2026-11-02T02:05:40Z	fe0bce6380c20fbe285cfedd039d5176dc4ba523	1
+41375842216	Backend CI/CD	pull_request	staging	completed	success	2026-11-02T02:05:40Z	2026-11-02T02:14:18Z	2026-11-02T02:05:40Z	fe0bce6380c20fbe285cfedd039d5176dc4ba523	1
+41375823547	Slack Commit Notification	push	staging	completed	success	2026-11-02T02:05:28Z	2026-11-02T02:05:36Z	2026-11-02T02:05:28Z	fe0bce6380c20fbe285cfedd039d5176dc4ba523	1
+41374510135	Backend CI/CD	pull_request	release/toss-onetime-live-20261102	completed	success	2026-11-02T01:49:57Z	2026-11-02T02:00:18Z	2026-11-02T01:49:57Z	bb62d42fed69293ec0d4c9808eec3f5c32f7a04f	1
+41374488145	Slack Commit Notification	push	release/toss-onetime-live-20261102	completed	success	2026-11-02T01:49:42Z	2026-11-02T01:49:49Z	2026-11-02T01:49:42Z	bb62d42fed69293ec0d4c9808eec3f5c32f7a04f	1
+41374468277	Backend CI/CD	push	main	completed	success	2026-11-02T01:49:28Z	2026-11-02T02:03:41Z	2026-11-02T01:49:28Z	bb62d42fed69293ec0d4c9808eec3f5c32f7a04f	1
+41374468265	Slack Commit Notification	push	main	completed	success	2026-11-02T01:49:28Z	2026-11-02T01:49:35Z	2026-11-02T01:49:28Z	bb62d42fed69293ec0d4c9808eec3f5c32f7a04f	1
+41373521353	Backend CI/CD	pull_request	feat/toss-onetime-live-20261028	completed	success	2026-11-02T01:38:19Z	2026-11-02T01:48:58Z	2026-11-02T01:38:19Z	4949c7cb68e18affbe8664fccaa2bb53328c1502	1
+41373515337	Slack Commit Notification	push	feat/toss-onetime-live-20261028	completed	success	2026-11-02T01:38:15Z	2026-11-02T01:38:23Z	2026-11-02T01:38:15Z	4949c7cb68e18affbe8664fccaa2bb53328c1502	1
+41373407036	Backend CI/CD	pull_request	feat/toss-onetime-live-20261028	completed	success	2026-11-02T01:37:00Z	2026-11-02T01:47:35Z	2026-11-02T01:37:00Z	90ed6c6938c00a11d785d60c04af417a185fe868	1
+41373402092	Slack Commit Notification	push	feat/toss-onetime-live-20261028	completed	success	2026-11-02T01:36:56Z	2026-11-02T01:37:04Z	2026-11-02T01:36:56Z	90ed6c6938c00a11d785d60c04af417a185fe868	1
+41373209648	Backend CI/CD	pull_request	feat/toss-onetime-live-20261028	completed	success	2026-11-02T01:34:48Z	2026-11-02T01:43:35Z	2026-11-02T01:34:48Z	1b918cb28e4417a4888a2cdace74e81fe4a86cfe	1
+41373206159	Slack Commit Notification	push	feat/toss-onetime-live-20261028	completed	success	2026-11-02T01:34:46Z	2026-11-02T01:34:53Z	2026-11-02T01:34:46Z	1b918cb28e4417a4888a2cdace74e81fe4a86cfe	1
+41281699485	Backend CI/CD	push	prod	completed	success	2026-11-01T06:39:15Z	2026-11-01T06:49:43Z	2026-11-01T06:39:15Z	796103068653c02b6b4a5d3e3322bfdd66291bd8	1
+41281699479	Slack Commit Notification	push	prod	completed	success	2026-11-01T06:39:15Z	2026-11-01T06:39:22Z	2026-11-01T06:39:15Z	796103068653c02b6b4a5d3e3322bfdd66291bd8	1
+41280991821	Production promotion source	pull_request_target	staging	completed	success	2026-11-01T06:28:44Z	2026-11-01T06:28:51Z	2026-11-01T06:28:44Z	7025ad58d3cad3d1f13163f1bfb51f5ff75bce6c	1
+41280991815	Backend CI/CD	pull_request	staging	completed	success	2026-11-01T06:28:44Z	2026-11-01T06:38:56Z	2026-11-01T06:28:44Z	7025ad58d3cad3d1f13163f1bfb51f5ff75bce6c	1
+41280987352	Slack Commit Notification	push	staging	completed	success	2026-11-01T06:28:40Z	2026-11-01T06:28:46Z	2026-11-01T06:28:40Z	7025ad58d3cad3d1f13163f1bfb51f5ff75bce6c	1
+41280360355	Backend CI/CD	pull_request	release/runtime-upgrade-sbom-20261101	completed	success	2026-11-01T06:19:29Z	2026-11-01T06:28:18Z	2026-11-01T06:19:29Z	af8af6c913de8477d1d9b66eb772c3382c7ac04d	1
+41280357459	Slack Commit Notification	push	release/runtime-upgrade-sbom-20261101	completed	success	2026-11-01T06:19:27Z	2026-11-01T06:19:33Z	2026-11-01T06:19:27Z	af8af6c913de8477d1d9b66eb772c3382c7ac04d	1
+41279866805	Backend CI/CD	pull_request	release/runtime-upgrade-sbom-20261101	completed	failure	2026-11-01T06:12:17Z	2026-11-01T06:13:40Z	2026-11-01T06:12:17Z	5ed874ffdaaada54329dc29975ed15f2b7eb184c	1
+41279860665	Slack Commit Notification	push	release/runtime-upgrade-sbom-20261101	completed	success	2026-11-01T06:12:12Z	2026-11-01T06:12:19Z	2026-11-01T06:12:12Z	5ed874ffdaaada54329dc29975ed15f2b7eb184c	1
+41278793918	Backend CI/CD	push	main	completed	success	2026-11-01T05:55:59Z	2026-11-01T06:10:57Z	2026-11-01T05:55:59Z	5ed874ffdaaada54329dc29975ed15f2b7eb184c	1
+41278793870	Slack Commit Notification	push	main	completed	success	2026-11-01T05:55:59Z	2026-11-01T05:56:07Z	2026-11-01T05:55:59Z	5ed874ffdaaada54329dc29975ed15f2b7eb184c	1
+41005422893	Slack Commit Notification	push	prod	completed	success	2026-10-30T04:54:00Z	2026-10-30T04:54:07Z	2026-10-30T04:54:00Z	d7f24d0bd8c32a21212fb0067763aec5ebf1f89f	1
+41005422879	Backend CI/CD	push	prod	completed	success	2026-10-30T04:54:00Z	2026-10-30T05:09:09Z	2026-10-30T04:54:00Z	d7f24d0bd8c32a21212fb0067763aec5ebf1f89f	1
+41005392277	Backend CI/CD	pull_request	staging	completed	success	2026-10-30T04:53:39Z	2026-10-30T05:02:33Z	2026-10-30T04:53:39Z	730d4d7971a106121760fd3c697e9aa55b8ab1da	1
+41005392191	Production promotion source	pull_request_target	staging	completed	success	2026-10-30T04:53:39Z	2026-10-30T04:53:47Z	2026-10-30T04:53:39Z	730d4d7971a106121760fd3c697e9aa55b8ab1da	1
+41005370103	Slack Commit Notification	push	staging	completed	success	2026-10-30T04:53:26Z	2026-10-30T04:53:33Z	2026-10-30T04:53:26Z	730d4d7971a106121760fd3c697e9aa55b8ab1da	1
+40992263832	Backend CI/CD	pull_request	release/admin-behavior-range-20261030	completed	success	2026-10-30T02:32:16Z	2026-10-30T02:43:05Z	2026-10-30T02:32:16Z	6cc018c352a39dbde1f74b4c2a9a33adf4263522	1
+40992257700	Slack Commit Notification	push	release/admin-behavior-range-20261030	completed	success	2026-10-30T02:32:12Z	2026-10-30T02:32:20Z	2026-10-30T02:32:12Z	6cc018c352a39dbde1f74b4c2a9a33adf4263522	1
+40991930336	Backend CI/CD	pull_request	feat/toss-onetime-live-20261028	completed	success	2026-10-30T02:28:55Z	2026-10-30T02:40:19Z	2026-10-30T02:28:55Z	289b042c3d756a9d48e6cfc3caace49a3404dc4d	1
+40991924187	Slack Commit Notification	push	feat/toss-onetime-live-20261028	completed	success	2026-10-30T02:28:51Z	2026-10-30T02:29:00Z	2026-10-30T02:28:51Z	289b042c3d756a9d48e6cfc3caace49a3404dc4d	1
+40829347884	Slack Commit Notification	push	prod	completed	success	2026-10-29T06:27:46Z	2026-10-29T06:27:53Z	2026-10-29T06:27:46Z	fa03bf2a27ba629208784e37b1e971347c2fb6fd	1
+40829347759	Backend CI/CD	push	prod	completed	success	2026-10-29T06:27:46Z	2026-10-29T06:41:50Z	2026-10-29T06:27:46Z	fa03bf2a27ba629208784e37b1e971347c2fb6fd	1
+40828342581	Production promotion source	pull_request_target	staging	completed	success	2026-10-29T06:17:44Z	2026-10-29T06:17:52Z	2026-10-29T06:17:44Z	3713586fc1c888a5a54fedb3b70beff270eba166	1
+40828342498	Backend CI/CD	pull_request	staging	completed	success	2026-10-29T06:17:44Z	2026-10-29T06:27:23Z	2026-10-29T06:17:44Z	3713586fc1c888a5a54fedb3b70beff270eba166	1
+40828178820	Slack Commit Notification	push	staging	completed	success	2026-10-29T06:16:02Z	2026-10-29T06:16:09Z	2026-10-29T06:16:02Z	3713586fc1c888a5a54fedb3b70beff270eba166	1
+40826597190	Backend CI/CD	pull_request	release/admin-member-filter-20261029	completed	success	2026-10-29T06:00:13Z	2026-10-29T06:09:12Z	2026-10-29T06:00:13Z	6b6efd454ea85e75c9af4c0ad6c29543b3fc2d77	1
+40826589901	Slack Commit Notification	push	release/admin-member-filter-20261029	completed	success	2026-10-29T06:00:09Z	2026-10-29T06:00:19Z	2026-10-29T06:00:09Z	6b6efd454ea85e75c9af4c0ad6c29543b3fc2d77	1
+40826095973	Backend CI/CD	push	main	completed	success	2026-10-29T05:54:47Z	2026-10-29T06:09:24Z	2026-10-29T05:54:47Z	6b6efd454ea85e75c9af4c0ad6c29543b3fc2d77	1
+40826095921	Slack Commit Notification	push	main	completed	success	2026-10-29T05:54:47Z	2026-10-29T05:54:55Z	2026-10-29T05:54:47Z	6b6efd454ea85e75c9af4c0ad6c29543b3fc2d77	1
+40804970584	Slack Commit Notification	push	prod	completed	success	2026-10-29T02:12:23Z	2026-10-29T02:12:31Z	2026-10-29T02:12:23Z	fba7d64d0f35f7c1604cb3414afd20ce17c8b01c	1
+40804970485	Backend CI/CD	push	prod	completed	success	2026-10-29T02:12:23Z	2026-10-29T02:27:12Z	2026-10-29T02:12:23Z	fba7d64d0f35f7c1604cb3414afd20ce17c8b01c	1
+40803950419	Production promotion source	pull_request_target	staging	completed	success	2026-10-29T02:02:12Z	2026-10-29T02:02:19Z	2026-10-29T02:02:12Z	ae284466e490231fd1fd5d97ffacf4fa1bd13a17	1
+40803950274	Backend CI/CD	pull_request	staging	completed	success	2026-10-29T02:02:11Z	2026-10-29T02:11:59Z	2026-10-29T02:02:11Z	ae284466e490231fd1fd5d97ffacf4fa1bd13a17	1
+40803941080	Slack Commit Notification	push	staging	completed	success	2026-10-29T02:02:06Z	2026-10-29T02:02:13Z	2026-10-29T02:02:06Z	ae284466e490231fd1fd5d97ffacf4fa1bd13a17	1
+40802857781	Backend CI/CD	pull_request	release/b2b-organization-blind-20261029	completed	success	2026-10-29T01:50:51Z	2026-10-29T02:01:38Z	2026-10-29T01:50:51Z	342e3c8780ac924c921f097eaf1c0b8fff474559	1
+40802854179	Slack Commit Notification	push	release/b2b-organization-blind-20261029	completed	success	2026-10-29T01:50:49Z	2026-10-29T01:50:58Z	2026-10-29T01:50:49Z	342e3c8780ac924c921f097eaf1c0b8fff474559	1
+40802411092	Slack Commit Notification	push	release/b2b-organization-blind-20261029	completed	success	2026-10-29T01:46:17Z	2026-10-29T01:46:23Z	2026-10-29T01:46:17Z	c0e9e395b84825e3802f6d96b590fe9652ae867c	1
+40802408799	Slack Commit Notification	push	main	completed	success	2026-10-29T01:46:15Z	2026-10-29T01:46:23Z	2026-10-29T01:46:15Z	c0e9e395b84825e3802f6d96b590fe9652ae867c	1
+40802408644	Backend CI/CD	push	main	completed	success	2026-10-29T01:46:15Z	2026-10-29T01:59:52Z	2026-10-29T01:46:15Z	c0e9e395b84825e3802f6d96b590fe9652ae867c	1
+40800315836	Slack Commit Notification	push	release/b2b-organization-blind-20261029	completed	success	2026-10-29T01:25:14Z	2026-10-29T01:25:21Z	2026-10-29T01:25:14Z	a5a77d74ab9640f505b94b1d35dd6e8d5fe28c31	1
+40800312754	Backend CI/CD	push	main	completed	failure	2026-10-29T01:25:13Z	2026-10-29T01:35:37Z	2026-10-29T01:25:13Z	a5a77d74ab9640f505b94b1d35dd6e8d5fe28c31	1
+40800312725	Slack Commit Notification	push	main	completed	success	2026-10-29T01:25:13Z	2026-10-29T01:25:20Z	2026-10-29T01:25:13Z	a5a77d74ab9640f505b94b1d35dd6e8d5fe28c31	1
+40798811632	Backend CI/CD	pull_request	release/b2b-organization-blind-20261029	completed	failure	2026-10-29T01:10:47Z	2026-10-29T01:22:39Z	2026-10-29T01:10:47Z	a6f8144499e422ffae7b026d326a589b13a64b0f	1
+40798803997	Slack Commit Notification	push	release/b2b-organization-blind-20261029	completed	success	2026-10-29T01:10:43Z	2026-10-29T01:10:49Z	2026-10-29T01:10:43Z	a6f8144499e422ffae7b026d326a589b13a64b0f	1
+40798802098	Backend CI/CD	push	main	completed	failure	2026-10-29T01:10:42Z	2026-10-29T01:20:13Z	2026-10-29T01:10:42Z	a6f8144499e422ffae7b026d326a589b13a64b0f	1
+40798802055	Slack Commit Notification	push	main	completed	success	2026-10-29T01:10:42Z	2026-10-29T01:10:48Z	2026-10-29T01:10:42Z	a6f8144499e422ffae7b026d326a589b13a64b0f	1
+40793938260	Backend CI/CD	push	main	completed	failure	2026-10-29T00:25:16Z	2026-10-29T00:25:20Z	2026-10-29T00:25:16Z	93162361e9131364a8f7b128e9fc7a7b12f5ccbf	1
+40793938108	Slack Commit Notification	push	main	completed	failure	2026-10-29T00:25:16Z	2026-10-29T00:25:20Z	2026-10-29T00:25:16Z	93162361e9131364a8f7b128e9fc7a7b12f5ccbf	1
+40631387944	Backend CI/CD	pull_request	feat/toss-onetime-live-20261028	completed	failure	2026-10-28T04:16:23Z	2026-10-28T04:16:29Z	2026-10-28T04:16:23Z	7f8753dacacb47d673c127d17db6af3341f17df3	1
+40631381558	Slack Commit Notification	push	feat/toss-onetime-live-20261028	completed	failure	2026-10-28T04:16:19Z	2026-10-28T04:16:24Z	2026-10-28T04:16:19Z	7f8753dacacb47d673c127d17db6af3341f17df3	1
+40626933512	Backend CI/CD	pull_request	feat/toss-onetime-live-20261028	completed	failure	2026-10-28T03:29:02Z	2026-10-28T03:29:06Z	2026-10-28T03:29:02Z	3f1dca81bade255d75fcc5d08bad244d6899f502	1
+40626869899	Slack Commit Notification	push	feat/toss-onetime-live-20261028	completed	failure	2026-10-28T03:28:21Z	2026-10-28T03:28:25Z	2026-10-28T03:28:21Z	3f1dca81bade255d75fcc5d08bad244d6899f502	1
+40625723616	Backend CI/CD	pull_request	feat/admin-email-external-20261028	completed	failure	2026-10-28T03:16:18Z	2026-10-28T03:16:22Z	2026-10-28T03:16:18Z	cf0f7382f319c19b3c45d2c205fb801d746544a0	1
+40625716760	Slack Commit Notification	push	feat/admin-email-external-20261028	completed	failure	2026-10-28T03:16:14Z	2026-10-28T03:16:17Z	2026-10-28T03:16:14Z	cf0f7382f319c19b3c45d2c205fb801d746544a0	1
+40625646043	Slack Commit Notification	push	prod	completed	failure	2026-10-28T03:15:30Z	2026-10-28T03:15:34Z	2026-10-28T03:15:30Z	f8efa71f87b35fc86ef5e630dfedd5e871c0c9bf	1
+40625645958	Backend CI/CD	push	prod	completed	failure	2026-10-28T03:15:30Z	2026-10-28T03:15:34Z	2026-10-28T03:15:30Z	f8efa71f87b35fc86ef5e630dfedd5e871c0c9bf	1
+40625622203	Production promotion source	pull_request_target	staging	completed	failure	2026-10-28T03:15:16Z	2026-10-28T03:15:21Z	2026-10-28T03:15:16Z	ddf209628175194014e59616ef72747e392fb70b	1
+40625622071	Backend CI/CD	pull_request	staging	completed	failure	2026-10-28T03:15:16Z	2026-10-28T03:15:21Z	2026-10-28T03:15:16Z	ddf209628175194014e59616ef72747e392fb70b	1
+40625600001	Slack Commit Notification	push	staging	completed	failure	2026-10-28T03:15:04Z	2026-10-28T03:15:08Z	2026-10-28T03:15:04Z	ddf209628175194014e59616ef72747e392fb70b	1
+40624387296	Backend CI/CD	pull_request	release/production-preparation-20261028	completed	failure	2026-10-28T03:02:27Z	2026-10-28T03:02:31Z	2026-10-28T03:02:27Z	14916ac007edf95e9cf1f8c54b78312690d0308f	1
+40624320478	Slack Commit Notification	push	release/production-preparation-20261028	completed	failure	2026-10-28T03:01:43Z	2026-10-28T03:01:47Z	2026-10-28T03:01:43Z	14916ac007edf95e9cf1f8c54b78312690d0308f	1
+40601210572	Slack Commit Notification	push	prod	completed	success	2026-10-27T23:18:25Z	2026-10-27T23:18:33Z	2026-10-27T23:18:25Z	783f7caef53c6037eb9bc2ddc63e862a72cdef1c	1
+40601210549	Backend CI/CD	push	prod	completed	failure	2026-10-27T23:18:25Z	2026-10-27T23:28:51Z	2026-10-27T23:18:25Z	783f7caef53c6037eb9bc2ddc63e862a72cdef1c	1
+40599993705	Backend CI/CD	pull_request	feat/admin-email-send-main-20261028	completed	failure	2026-10-27T23:08:17Z	2026-10-27T23:17:10Z	2026-10-27T23:08:17Z	7c214650cfc191d484e8600453307bd895c2cada	1
+40599971611	Slack Commit Notification	push	feat/admin-email-send-main-20261028	completed	success	2026-10-27T23:08:06Z	2026-10-27T23:08:15Z	2026-10-27T23:08:06Z	7c214650cfc191d484e8600453307bd895c2cada	1
+40599899271	Production promotion source	pull_request_target	staging	completed	success	2026-10-27T23:07:31Z	2026-10-27T23:07:39Z	2026-10-27T23:07:31Z	adba418fed08c16ad8221d6fdc412c0e941944f3	1
+40599899256	Backend CI/CD	pull_request	staging	completed	success	2026-10-27T23:07:31Z	2026-10-27T23:17:35Z	2026-10-27T23:07:31Z	adba418fed08c16ad8221d6fdc412c0e941944f3	1
+40599859231	Slack Commit Notification	push	staging	completed	success	2026-10-27T23:07:11Z	2026-10-27T23:07:18Z	2026-10-27T23:07:11Z	adba418fed08c16ad8221d6fdc412c0e941944f3	1
+40599819394	Backend CI/CD	pull_request	feat/admin-email-send-20261028	completed	success	2026-10-27T23:06:51Z	2026-10-27T23:16:39Z	2026-10-27T23:06:51Z	0a6352188cffa74eec69677b9a1dd3acfd7e4c9e	1
+40599808200	Slack Commit Notification	push	feat/admin-email-send-20261028	completed	success	2026-10-27T23:06:46Z	2026-10-27T23:06:53Z	2026-10-27T23:06:46Z	0a6352188cffa74eec69677b9a1dd3acfd7e4c9e	1
+40597225222	Backend CI/CD	push	main	completed	failure	2026-10-27T22:45:31Z	2026-10-27T22:52:56Z	2026-10-27T22:45:31Z	33f508b24918a3fcc70b0826b02acec48d484b4b	1
+40597224623	Slack Commit Notification	push	main	completed	success	2026-10-27T22:45:31Z	2026-10-27T22:45:39Z	2026-10-27T22:45:31Z	33f508b24918a3fcc70b0826b02acec48d484b4b	1
+40597191659	Backend CI/CD	pull_request	feat/local-leftovers-20261028	completed	failure	2026-10-27T22:45:15Z	2026-10-27T22:54:45Z	2026-10-27T22:45:15Z	b596c2615dfd3376d8f4d2c1f96af4c02587ae6d	1
+40597146568	Slack Commit Notification	push	feat/local-leftovers-20261028	completed	success	2026-10-27T22:44:54Z	2026-10-27T22:45:01Z	2026-10-27T22:44:54Z	b596c2615dfd3376d8f4d2c1f96af4c02587ae6d	1
+40597034181	Slack Commit Notification	push	feat/local-leftovers-20261028	completed	success	2026-10-27T22:43:59Z	2026-10-27T22:44:07Z	2026-10-27T22:43:59Z	92c2397180d337ba2360ee9fcd0e9d57f2aee5ba	1
+40596261564	Slack Commit Notification	push	staging	completed	success	2026-10-27T22:37:42Z	2026-10-27T22:37:51Z	2026-10-27T22:37:42Z	4e81b4d3e786f590559323147fbd2311d0917d00	1
+40596159860	Slack Commit Notification	push	main	completed	success	2026-10-27T22:36:52Z	2026-10-27T22:37:01Z	2026-10-27T22:36:52Z	409c7fc0070d2f56a20dae2376e79412a9f6e375	1
+40596159835	Backend CI/CD	push	main	completed	success	2026-10-27T22:36:52Z	2026-10-27T22:53:40Z	2026-10-27T22:36:52Z	409c7fc0070d2f56a20dae2376e79412a9f6e375	1
+40596021992	Backend CI/CD	push	main	completed	success	2026-10-27T22:35:47Z	2026-10-27T22:50:32Z	2026-10-27T22:35:47Z	57b5421b4eee9229875d0263bafeb05cff32aced	1
+40596021863	Slack Commit Notification	push	main	completed	success	2026-10-27T22:35:47Z	2026-10-27T22:35:56Z	2026-10-27T22:35:47Z	57b5421b4eee9229875d0263bafeb05cff32aced	1
+40595994308	Slack Commit Notification	push	main	completed	success	2026-10-27T22:35:34Z	2026-10-27T22:35:41Z	2026-10-27T22:35:34Z	cdb8f3f8031177499918e7969dcc8cdc1f4a4aba	1
+40595994255	Backend CI/CD	push	main	completed	success	2026-10-27T22:35:34Z	2026-10-27T22:45:40Z	2026-10-27T22:35:34Z	cdb8f3f8031177499918e7969dcc8cdc1f4a4aba	1
+40595717097	Backend CI/CD	pull_request	fix/admin-range-365-20261028	completed	success	2026-10-27T22:33:26Z	2026-10-27T22:42:27Z	2026-10-27T22:33:26Z	a185a1b0e3caf6288a0a8aa961a633377594d7a9	1
+40595711368	Slack Commit Notification	push	fix/admin-range-365-20261028	completed	success	2026-10-27T22:33:23Z	2026-10-27T22:33:30Z	2026-10-27T22:33:23Z	a185a1b0e3caf6288a0a8aa961a633377594d7a9	1
+40595655905	Backend CI/CD	pull_request	fix/prep-delete-payment-fk	completed	success	2026-10-27T22:32:56Z	2026-10-27T22:42:42Z	2026-10-27T22:32:56Z	71f20b2442bf019585ba141ce9cc7115c2055130	1
+40595648073	Slack Commit Notification	push	fix/prep-delete-payment-fk	completed	success	2026-10-27T22:32:52Z	2026-10-27T22:33:01Z	2026-10-27T22:32:52Z	71f20b2442bf019585ba141ce9cc7115c2055130	1
+40593122597	Backend CI/CD	pull_request	fix/billing-review-20261022	completed	success	2026-10-27T22:13:23Z	2026-10-27T22:24:05Z	2026-10-27T22:13:23Z	c7f86d4df66b12d62cf8733786bcd1de97290304	1
+40593112873	Slack Commit Notification	push	fix/billing-review-20261022	completed	success	2026-10-27T22:13:19Z	2026-10-27T22:13:26Z	2026-10-27T22:13:19Z	c7f86d4df66b12d62cf8733786bcd1de97290304	1
+40485295515	Backend CI/CD	push	main	completed	success	2026-10-27T10:01:46Z	2026-10-27T10:16:00Z	2026-10-27T10:01:46Z	f6fb2373ffa387ba37d39c7d265130bdbdc3bf37	1
+40485294816	Slack Commit Notification	push	main	completed	success	2026-10-27T10:01:45Z	2026-10-27T10:01:54Z	2026-10-27T10:01:45Z	f6fb2373ffa387ba37d39c7d265130bdbdc3bf37	1
+40472449926	Backend CI/CD	pull_request	release/preparation-ui-20261027	completed	success	2026-10-27T08:17:14Z	2026-10-27T08:25:31Z	2026-10-27T08:17:14Z	a3ad365a04d6ab35f6e1b53ee499659a645cc641	1
+40472361026	Slack Commit Notification	push	release/preparation-ui-20261027	completed	success	2026-10-27T08:16:25Z	2026-10-27T08:16:33Z	2026-10-27T08:16:25Z	a3ad365a04d6ab35f6e1b53ee499659a645cc641	1
+40434723016	Slack Commit Notification	push	feat/org-repository-discovery	completed	success	2026-10-27T01:48:17Z	2026-10-27T01:48:24Z	2026-10-27T01:48:17Z	edeaee8ac14fb02c4e46bfc3b8d9faacbbdb0246	1
+40434720930	Backend CI/CD	push	main	completed	success	2026-10-27T01:48:16Z	2026-10-27T02:02:38Z	2026-10-27T01:48:16Z	edeaee8ac14fb02c4e46bfc3b8d9faacbbdb0246	1
+40434720810	Slack Commit Notification	push	main	completed	success	2026-10-27T01:48:16Z	2026-10-27T01:48:24Z	2026-10-27T01:48:16Z	edeaee8ac14fb02c4e46bfc3b8d9faacbbdb0246	1
+40001773317	Slack Commit Notification	push	prod	completed	success	2026-10-23T18:15:12Z	2026-10-23T18:15:19Z	2026-10-23T18:15:12Z	f5bad9698f6cc6fb4ff8f1156d3bd83a781e232c	1
+40001773289	Backend CI/CD	push	prod	completed	success	2026-10-23T18:15:12Z	2026-10-23T18:28:05Z	2026-10-23T18:15:12Z	f5bad9698f6cc6fb4ff8f1156d3bd83a781e232c	1
+40000183957	Production promotion source	pull_request_target	staging	completed	success	2026-10-23T18:03:37Z	2026-10-23T18:03:45Z	2026-10-23T18:03:37Z	c446b48a5d405273bd84c9820f0e22e612ce249d	1
+40000183680	Backend CI/CD	pull_request	staging	completed	success	2026-10-23T18:03:37Z	2026-10-23T18:14:27Z	2026-10-23T18:03:37Z	c446b48a5d405273bd84c9820f0e22e612ce249d	1
+40000163009	Slack Commit Notification	push	staging	completed	success	2026-10-23T18:03:28Z	2026-10-23T18:03:36Z	2026-10-23T18:03:28Z	c446b48a5d405273bd84c9820f0e22e612ce249d	1
+39998729089	Backend CI/CD	pull_request	main	completed	success	2026-10-23T17:53:04Z	2026-10-23T18:02:45Z	2026-10-23T17:53:04Z	48d58e767c7489ebf8aaa8a2e327496177991a78	1
+39998708202	Slack Commit Notification	push	main	completed	success	2026-10-23T17:52:55Z	2026-10-23T17:53:02Z	2026-10-23T17:52:55Z	48d58e767c7489ebf8aaa8a2e327496177991a78	1
+39998708071	Backend CI/CD	push	main	completed	success	2026-10-23T17:52:54Z	2026-10-23T18:03:43Z	2026-10-23T17:52:54Z	48d58e767c7489ebf8aaa8a2e327496177991a78	1
+39997432107	Backend CI/CD	pull_request	fix/decision-evidence-quality-20261023	completed	success	2026-10-23T17:43:38Z	2026-10-23T17:52:09Z	2026-10-23T17:43:38Z	b82467b745cedec3a5930fe3333089af5dd55d9f	1
+39997411988	Slack Commit Notification	push	fix/decision-evidence-quality-20261023	completed	success	2026-10-23T17:43:29Z	2026-10-23T17:43:46Z	2026-10-23T17:43:29Z	b82467b745cedec3a5930fe3333089af5dd55d9f	1
+39535928739	Slack Commit Notification	push	staging	completed	success	2026-10-21T02:57:55Z	2026-10-21T02:58:03Z	2026-10-21T02:57:55Z	64830b20b2f544dc9436194f7b3592ca1cf448fd	1
+39535238567	Backend CI/CD	pull_request	fix/callback-same-visit-20261021	completed	success	2026-10-21T02:50:25Z	2026-10-21T02:57:32Z	2026-10-21T02:50:25Z	5515808c9f163e3669de77ea7591f0a959e42270	1
+39535204815	Slack Commit Notification	push	staging	completed	success	2026-10-21T02:50:04Z	2026-10-21T02:50:12Z	2026-10-21T02:50:04Z	64830b20b2f544dc9436194f7b3592ca1cf448fd	1
+39534097505	Backend CI/CD	pull_request	fix/callback-same-visit-20261021	completed	success	2026-10-21T02:38:03Z	2026-10-21T02:49:23Z	2026-10-21T02:38:03Z	5515808c9f163e3669de77ea7591f0a959e42270	1
+39534092438	Slack Commit Notification	push	fix/callback-same-visit-20261021	completed	success	2026-10-21T02:37:59Z	2026-10-21T02:38:06Z	2026-10-21T02:37:59Z	5515808c9f163e3669de77ea7591f0a959e42270	1
+39533945169	Backend CI/CD	push	main	completed	success	2026-10-21T02:36:21Z	2026-10-21T02:49:32Z	2026-10-21T02:36:21Z	ce6ffe26a385ad4064d708a5dd9a6fd769d1e073	1
+39533945166	Slack Commit Notification	push	main	completed	success	2026-10-21T02:36:21Z	2026-10-21T02:36:34Z	2026-10-21T02:36:21Z	ce6ffe26a385ad4064d708a5dd9a6fd769d1e073	1
+39528581956	Slack Commit Notification	push	prod	completed	success	2026-10-21T01:39:25Z	2026-10-21T01:39:31Z	2026-10-21T01:39:25Z	2bf5e0a7cc701795a523755a53fa5adb2fe77b7b	1
+39528581759	Backend CI/CD	push	prod	completed	success	2026-10-21T01:39:24Z	2026-10-21T01:52:41Z	2026-10-21T01:39:24Z	2bf5e0a7cc701795a523755a53fa5adb2fe77b7b	1
+39527475500	Backend CI/CD	pull_request	fix/test-payment-privilege-20261021	completed	success	2026-10-21T01:28:02Z	2026-10-21T01:39:16Z	2026-10-21T01:28:02Z	f9374b21825ba4bc9d907adedc5b6bf39f913336	1
+39527437901	Production promotion source	pull_request_target	staging	completed	success	2026-10-21T01:27:39Z	2026-10-21T01:27:48Z	2026-10-21T01:27:39Z	119278287d1677f5ba52c35557e4da57d9bc5e0b	1
+39527437858	Backend CI/CD	pull_request	staging	completed	success	2026-10-21T01:27:39Z	2026-10-21T01:38:51Z	2026-10-21T01:27:39Z	119278287d1677f5ba52c35557e4da57d9bc5e0b	1
+39527427381	Slack Commit Notification	push	staging	completed	success	2026-10-21T01:27:32Z	2026-10-21T01:27:40Z	2026-10-21T01:27:32Z	119278287d1677f5ba52c35557e4da57d9bc5e0b	1
+39518548417	Backend CI/CD	pull_request	fix/test-payment-privilege-20261021	completed	success	2026-10-20T23:59:50Z	2026-10-21T00:07:13Z	2026-10-20T23:59:50Z	f9374b21825ba4bc9d907adedc5b6bf39f913336	1
+39518542624	Slack Commit Notification	push	fix/test-payment-privilege-20261021	completed	success	2026-10-20T23:59:46Z	2026-10-20T23:59:53Z	2026-10-20T23:59:46Z	f9374b21825ba4bc9d907adedc5b6bf39f913336	1
+39220054248	Slack Commit Notification	push	prod	completed	success	2026-10-19T08:03:23Z	2026-10-19T08:03:29Z	2026-10-19T08:03:23Z	b7175bee398c8e4dd9b96146561a4c560f4899df	1
+39220054077	Backend CI/CD	push	prod	completed	success	2026-10-19T08:03:23Z	2026-10-19T08:16:18Z	2026-10-19T08:03:23Z	b7175bee398c8e4dd9b96146561a4c560f4899df	1
+39220046562	Backend CI/CD	pull_request	staging	completed	success	2026-10-19T08:03:19Z	2026-10-19T08:13:32Z	2026-10-19T08:03:19Z	9b858fa462d7eccbba1a7de7e6b660cd77fc9118	1
+39220046403	Production promotion source	pull_request_target	staging	completed	success	2026-10-19T08:03:19Z	2026-10-19T08:03:25Z	2026-10-19T08:03:19Z	9b858fa462d7eccbba1a7de7e6b660cd77fc9118	1
+39219979717	Slack Commit Notification	push	staging	completed	success	2026-10-19T08:02:44Z	2026-10-19T08:02:52Z	2026-10-19T08:02:44Z	9b858fa462d7eccbba1a7de7e6b660cd77fc9118	1
+39218957857	Backend CI/CD	pull_request	fix/analysis-no-evidence-20261019	completed	success	2026-10-19T07:53:46Z	2026-10-19T08:04:09Z	2026-10-19T07:53:46Z	60e7fae6b618edeee802663d182592a5f8baf9b7	1
+39218857962	Slack Commit Notification	push	main	completed	success	2026-10-19T07:52:52Z	2026-10-19T07:52:59Z	2026-10-19T07:52:52Z	60e7fae6b618edeee802663d182592a5f8baf9b7	1
+39218857527	Backend CI/CD	push	main	completed	success	2026-10-19T07:52:52Z	2026-10-19T08:02:18Z	2026-10-19T07:52:52Z	60e7fae6b618edeee802663d182592a5f8baf9b7	1
+39218855167	Slack Commit Notification	push	fix/analysis-no-evidence-20261019	completed	success	2026-10-19T07:52:51Z	2026-10-19T07:52:59Z	2026-10-19T07:52:51Z	60e7fae6b618edeee802663d182592a5f8baf9b7	1
+39135993165	Backend CI/CD	push	main	completed	success	2026-10-18T14:26:27Z	2026-10-18T14:37:12Z	2026-10-18T14:26:27Z	162f4249d30904608d07e58285da85670e5910cd	1
+39135993137	Slack Commit Notification	push	main	completed	success	2026-10-18T14:26:27Z	2026-10-18T14:26:34Z	2026-10-18T14:26:27Z	162f4249d30904608d07e58285da85670e5910cd	1
+39135870586	Backend CI/CD	pull_request	feat/company-interview-questions-20261018	completed	success	2026-10-18T14:24:48Z	2026-10-18T14:34:42Z	2026-10-18T14:24:48Z	de27d1e63a5827b7c85eead7554f0ecdb220f629	1
+39135867463	Slack Commit Notification	push	feat/company-interview-questions-20261018	completed	success	2026-10-18T14:24:46Z	2026-10-18T14:24:55Z	2026-10-18T14:24:46Z	de27d1e63a5827b7c85eead7554f0ecdb220f629	1
+39135232308	Backend CI/CD	pull_request	feat/company-interview-questions-20261018	completed	failure	2026-10-18T14:16:14Z	2026-10-18T14:22:10Z	2026-10-18T14:16:14Z	b99db2b49598f7a8e08fc1762ab515e1e904e246	1
+39135228097	Slack Commit Notification	push	feat/company-interview-questions-20261018	completed	success	2026-10-18T14:16:10Z	2026-10-18T14:16:18Z	2026-10-18T14:16:10Z	b99db2b49598f7a8e08fc1762ab515e1e904e246	1
+39115642962	Slack Commit Notification	push	prod	completed	success	2026-10-18T09:31:02Z	2026-10-18T09:31:08Z	2026-10-18T09:31:02Z	e908b2ce39c6fb72ee77bc4d3e941b3b0eb99349	1
+39115642943	Backend CI/CD	push	prod	completed	success	2026-10-18T09:31:02Z	2026-10-18T09:44:23Z	2026-10-18T09:31:02Z	e908b2ce39c6fb72ee77bc4d3e941b3b0eb99349	1
+39115076454	Production promotion source	pull_request_target	staging	completed	success	2026-10-18T09:22:27Z	2026-10-18T09:22:34Z	2026-10-18T09:22:27Z	3680798f14a5aaf2b22e42b67882b65fa101528d	1
+39115076441	Backend CI/CD	pull_request	staging	completed	success	2026-10-18T09:22:27Z	2026-10-18T09:29:48Z	2026-10-18T09:22:27Z	3680798f14a5aaf2b22e42b67882b65fa101528d	1
+39115048040	Slack Commit Notification	push	staging	completed	success	2026-10-18T09:22:02Z	2026-10-18T09:22:09Z	2026-10-18T09:22:02Z	3680798f14a5aaf2b22e42b67882b65fa101528d	1
+39115018631	Slack Commit Notification	push	main	completed	success	2026-10-18T09:21:37Z	2026-10-18T09:21:43Z	2026-10-18T09:21:37Z	f2219aa07df74b508d9c1cbcbca424d6ee179677	1
+39115018553	Backend CI/CD	push	main	completed	success	2026-10-18T09:21:37Z	2026-10-18T09:35:53Z	2026-10-18T09:21:37Z	f2219aa07df74b508d9c1cbcbca424d6ee179677	1
+39064171300	Backend CI/CD	push	prod	completed	success	2026-10-17T19:50:18Z	2026-10-17T20:01:39Z	2026-10-17T19:50:18Z	672e683a2267a5594f50bb3092187848cef3df04	1
+39064171286	Slack Commit Notification	push	prod	completed	success	2026-10-17T19:50:18Z	2026-10-17T19:50:26Z	2026-10-17T19:50:18Z	672e683a2267a5594f50bb3092187848cef3df04	1
+39064133881	Production promotion source	pull_request_target	staging	completed	success	2026-10-17T19:49:50Z	2026-10-17T19:49:57Z	2026-10-17T19:49:50Z	d8d47a69bb2862774a8b5adc4676affdf585b83d	1
+39064133688	Backend CI/CD	pull_request	staging	completed	cancelled	2026-10-17T19:49:50Z	2026-10-17T19:51:26Z	2026-10-17T19:49:50Z	d8d47a69bb2862774a8b5adc4676affdf585b83d	1
+39064124419	Slack Commit Notification	push	staging	completed	success	2026-10-17T19:49:42Z	2026-10-17T19:49:50Z	2026-10-17T19:49:42Z	d8d47a69bb2862774a8b5adc4676affdf585b83d	1
+39064105752	Backend CI/CD	pull_request	feat/review-select-preparation-20261018	completed	cancelled	2026-10-17T19:49:25Z	2026-10-17T19:52:17Z	2026-10-17T19:49:25Z	736ab93a8ebaa46a8b16a5da1d3e8be8af0ea47a	1
+39064093424	Slack Commit Notification	push	feat/review-select-preparation-20261018	completed	success	2026-10-17T19:49:14Z	2026-10-17T19:49:22Z	2026-10-17T19:49:14Z	736ab93a8ebaa46a8b16a5da1d3e8be8af0ea47a	1
+39059477082	Slack Commit Notification	push	prod	completed	success	2026-10-17T18:45:13Z	2026-10-17T18:45:20Z	2026-10-17T18:45:13Z	555ac871605207972812d79f0529ca41987e15de	1
+39059477071	Backend CI/CD	push	prod	completed	success	2026-10-17T18:45:13Z	2026-10-17T18:58:21Z	2026-10-17T18:45:13Z	555ac871605207972812d79f0529ca41987e15de	1
+39059444869	Production promotion source	pull_request_target	staging	completed	success	2026-10-17T18:44:45Z	2026-10-17T18:44:52Z	2026-10-17T18:44:45Z	53c53fa5dac428aaf2b51a27a511c840c3ed3b05	1
+39059444711	Backend CI/CD	pull_request	staging	completed	cancelled	2026-10-17T18:44:45Z	2026-10-17T18:46:21Z	2026-10-17T18:44:45Z	53c53fa5dac428aaf2b51a27a511c840c3ed3b05	1
+39059425990	Slack Commit Notification	push	staging	completed	success	2026-10-17T18:44:29Z	2026-10-17T18:44:36Z	2026-10-17T18:44:29Z	53c53fa5dac428aaf2b51a27a511c840c3ed3b05	1
+39059409251	Backend CI/CD	pull_request	fix/review-migration-history-20261018	completed	cancelled	2026-10-17T18:44:17Z	2026-10-17T18:45:53Z	2026-10-17T18:44:17Z	e6b732f90caafbcf758dd80c73289eefd9d70e09	1
+39059405872	Slack Commit Notification	push	fix/review-migration-history-20261018	completed	success	2026-10-17T18:44:14Z	2026-10-17T18:44:22Z	2026-10-17T18:44:14Z	e6b732f90caafbcf758dd80c73289eefd9d70e09	1
+39057911760	Slack Commit Notification	push	prod	completed	success	2026-10-17T18:23:59Z	2026-10-17T18:24:06Z	2026-10-17T18:23:59Z	4314d5bd75d40090cce15248bd046bf0b935dc7e	1
+39057911718	Backend CI/CD	push	prod	completed	success	2026-10-17T18:23:59Z	2026-10-17T18:37:04Z	2026-10-17T18:23:59Z	4314d5bd75d40090cce15248bd046bf0b935dc7e	1
+39057872418	Production promotion source	pull_request_target	staging	completed	success	2026-10-17T18:23:28Z	2026-10-17T18:23:35Z	2026-10-17T18:23:28Z	471b66fb1096be099aa5e2b6f850eca2a0376b03	1
+39057872217	Backend CI/CD	pull_request	staging	completed	cancelled	2026-10-17T18:23:28Z	2026-10-17T18:26:22Z	2026-10-17T18:23:28Z	471b66fb1096be099aa5e2b6f850eca2a0376b03	1
+39057854725	Slack Commit Notification	push	staging	completed	success	2026-10-17T18:23:15Z	2026-10-17T18:23:21Z	2026-10-17T18:23:15Z	471b66fb1096be099aa5e2b6f850eca2a0376b03	1
+39057825670	Backend CI/CD	pull_request	feat/interview-review-without-schedule-20261018	completed	cancelled	2026-10-17T18:22:48Z	2026-10-17T18:25:40Z	2026-10-17T18:22:48Z	6c173b8ffc6dc691f338200a52825aa1738c0b1d	1
+39057804159	Slack Commit Notification	push	feat/interview-review-without-schedule-20261018	completed	success	2026-10-17T18:22:31Z	2026-10-17T18:22:37Z	2026-10-17T18:22:31Z	6c173b8ffc6dc691f338200a52825aa1738c0b1d	1
+39042336456	Backend CI/CD	push	prod	completed	success	2026-10-17T14:48:49Z	2026-10-17T15:00:13Z	2026-10-17T14:48:49Z	9157e29afaf6f293b537f19a12e7a0e6993a8ad3	1
+39042336430	Slack Commit Notification	push	prod	completed	success	2026-10-17T14:48:49Z	2026-10-17T14:48:56Z	2026-10-17T14:48:49Z	9157e29afaf6f293b537f19a12e7a0e6993a8ad3	1
+39041994188	Production promotion source	pull_request_target	staging	completed	success	2026-10-17T14:43:57Z	2026-10-17T14:44:05Z	2026-10-17T14:43:57Z	ee57f6808d4ac0b43cf9b40ac158db1a31b3b7b8	1
+39041993837	Backend CI/CD	pull_request	staging	completed	cancelled	2026-10-17T14:43:57Z	2026-10-17T14:50:33Z	2026-10-17T14:43:57Z	ee57f6808d4ac0b43cf9b40ac158db1a31b3b7b8	1
+39041954091	Slack Commit Notification	push	staging	completed	success	2026-10-17T14:43:21Z	2026-10-17T14:43:28Z	2026-10-17T14:43:21Z	ee57f6808d4ac0b43cf9b40ac158db1a31b3b7b8	1
+39041855621	Backend CI/CD	pull_request	fix/toss-review-pricing-dev-20261017	completed	cancelled	2026-10-17T14:41:56Z	2026-10-17T14:49:49Z	2026-10-17T14:41:56Z	9689eefe0ffd0dec613e87ac0862348c22230274	1
+39041851819	Slack Commit Notification	push	fix/toss-review-pricing-dev-20261017	completed	success	2026-10-17T14:41:53Z	2026-10-17T14:42:01Z	2026-10-17T14:41:53Z	9689eefe0ffd0dec613e87ac0862348c22230274	1
+38917725379	Slack Commit Notification	push	main	completed	success	2026-10-16T14:40:54Z	2026-10-16T14:41:01Z	2026-10-16T14:40:54Z	df3911e2a7871e81997677e58f49d3310ea627b6	1
+38917725081	Backend CI/CD	push	main	completed	success	2026-10-16T14:40:54Z	2026-10-16T14:49:10Z	2026-10-16T14:40:54Z	df3911e2a7871e81997677e58f49d3310ea627b6	1
+38917720770	Slack Commit Notification	push	feat/commit-decision-20261016	completed	success	2026-10-16T14:40:52Z	2026-10-16T14:40:58Z	2026-10-16T14:40:52Z	df3911e2a7871e81997677e58f49d3310ea627b6	1
+38916161123	Backend CI/CD	push	main	completed	failure	2026-10-16T14:29:22Z	2026-10-16T14:36:00Z	2026-10-16T14:29:22Z	185f4027f26788905493f06c2afb21fdf2b5bba5	1
+38916161034	Slack Commit Notification	push	main	completed	success	2026-10-16T14:29:22Z	2026-10-16T14:29:30Z	2026-10-16T14:29:22Z	185f4027f26788905493f06c2afb21fdf2b5bba5	1
+38916158831	Slack Commit Notification	push	feat/commit-decision-20261016	completed	success	2026-10-16T14:29:21Z	2026-10-16T14:29:29Z	2026-10-16T14:29:21Z	185f4027f26788905493f06c2afb21fdf2b5bba5	1
+38914000478	Backend CI/CD	push	main	completed	success	2026-10-16T14:13:16Z	2026-10-16T14:24:00Z	2026-10-16T14:13:16Z	d20e5ebea038105259c8c5b3fe27e9080361e72a	1
+38914000456	Slack Commit Notification	push	main	completed	success	2026-10-16T14:13:16Z	2026-10-16T14:13:24Z	2026-10-16T14:13:16Z	d20e5ebea038105259c8c5b3fe27e9080361e72a	1
+38913997496	Slack Commit Notification	push	feat/commit-decision-20261016	completed	success	2026-10-16T14:13:14Z	2026-10-16T14:13:21Z	2026-10-16T14:13:14Z	d20e5ebea038105259c8c5b3fe27e9080361e72a	1
+38907627163	Slack Commit Notification	push	main	completed	success	2026-10-16T13:24:41Z	2026-10-16T13:24:48Z	2026-10-16T13:24:41Z	c595adf4378118379d24243c26cf05ee0aacac62	1
+38907626914	Backend CI/CD	push	main	completed	success	2026-10-16T13:24:41Z	2026-10-16T13:35:42Z	2026-10-16T13:24:41Z	c595adf4378118379d24243c26cf05ee0aacac62	1
+38851605434	Slack Commit Notification	push	prod	completed	success	2026-10-16T04:37:49Z	2026-10-16T04:37:57Z	2026-10-16T04:37:49Z	320e8be643a3a87b1248e61397de078661d9b68c	1
+38851605403	Backend CI/CD	push	prod	completed	success	2026-10-16T04:37:49Z	2026-10-16T04:48:10Z	2026-10-16T04:37:49Z	320e8be643a3a87b1248e61397de078661d9b68c	1
+38850697037	Backend CI/CD	pull_request	staging	completed	success	2026-10-16T04:27:15Z	2026-10-16T04:37:30Z	2026-10-16T04:27:15Z	cd68333be5ec16742e8c25a1eb972a16e6ac3344	1
+38850696966	Production promotion source	pull_request_target	staging	completed	success	2026-10-16T04:27:15Z	2026-10-16T04:27:22Z	2026-10-16T04:27:15Z	cd68333be5ec16742e8c25a1eb972a16e6ac3344	1
+38850689321	Slack Commit Notification	push	staging	completed	success	2026-10-16T04:27:10Z	2026-10-16T04:27:16Z	2026-10-16T04:27:10Z	cd68333be5ec16742e8c25a1eb972a16e6ac3344	1
+38849432161	Backend CI/CD	pull_request	perf/question-output-budget-20261016	completed	success	2026-10-16T04:12:36Z	2026-10-16T04:23:55Z	2026-10-16T04:12:36Z	a9eb5f89dd0709733af8723cf715b18322820e04	1
+38849416058	Slack Commit Notification	push	perf/question-output-budget-20261016	completed	success	2026-10-16T04:12:26Z	2026-10-16T04:12:34Z	2026-10-16T04:12:26Z	a9eb5f89dd0709733af8723cf715b18322820e04	1
+38676485255	Backend CI/CD	push	prod	completed	success	2026-10-15T03:28:57Z	2026-10-15T03:46:06Z	2026-10-15T03:28:57Z	94679d4d7203f914e2ea64b9105cd0d052070663	1
+38676485219	Slack Commit Notification	push	prod	completed	success	2026-10-15T03:28:57Z	2026-10-15T03:29:04Z	2026-10-15T03:28:57Z	94679d4d7203f914e2ea64b9105cd0d052070663	1
+38675558004	Production promotion source	pull_request_target	staging	completed	success	2026-10-15T03:18:15Z	2026-10-15T03:18:23Z	2026-10-15T03:18:15Z	8288a1af963e6d2f504df86494cfecc3dfd7a556	1
+38675557979	Backend CI/CD	pull_request	staging	completed	success	2026-10-15T03:18:15Z	2026-10-15T03:28:29Z	2026-10-15T03:18:15Z	8288a1af963e6d2f504df86494cfecc3dfd7a556	1
+38675552027	Slack Commit Notification	push	staging	completed	success	2026-10-15T03:18:10Z	2026-10-15T03:18:18Z	2026-10-15T03:18:10Z	8288a1af963e6d2f504df86494cfecc3dfd7a556	1
+38674765780	Backend CI/CD	pull_request	fix/toss-review-origin-20261015	completed	success	2026-10-15T03:09:12Z	2026-10-15T03:17:47Z	2026-10-15T03:09:12Z	4c49f902c9f96a49087a5f3a5f7577a5085327b0	1
+38674762714	Slack Commit Notification	push	fix/toss-review-origin-20261015	completed	success	2026-10-15T03:09:10Z	2026-10-15T03:09:17Z	2026-10-15T03:09:10Z	4c49f902c9f96a49087a5f3a5f7577a5085327b0	1
+38672331604	Backend CI/CD	push	prod	completed	success	2026-10-15T02:41:37Z	2026-10-15T03:00:23Z	2026-10-15T02:41:37Z	800e9a53951a7652025e89a114b685251d3c35d4	1
+38672331592	Slack Commit Notification	push	prod	completed	success	2026-10-15T02:41:37Z	2026-10-15T02:41:46Z	2026-10-15T02:41:37Z	800e9a53951a7652025e89a114b685251d3c35d4	1
+38671520151	Backend CI/CD	pull_request	staging	completed	success	2026-10-15T02:32:21Z	2026-10-15T02:40:55Z	2026-10-15T02:32:21Z	4c367258c68fd99289ac5b0e3a11ffa3996b3764	1
+38671516236	Production promotion source	pull_request_target	staging	completed	success	2026-10-15T02:32:18Z	2026-10-15T02:32:26Z	2026-10-15T02:32:18Z	4c367258c68fd99289ac5b0e3a11ffa3996b3764	1
+38671513221	Slack Commit Notification	push	staging	completed	success	2026-10-15T02:32:16Z	2026-10-15T02:32:24Z	2026-10-15T02:32:16Z	4c367258c68fd99289ac5b0e3a11ffa3996b3764	1
+38671068670	Backend CI/CD	pull_request	release/interview-review-kpi-v2-20261015	completed	success	2026-10-15T02:27:19Z	2026-10-15T02:38:46Z	2026-10-15T02:27:19Z	a15357477fea045fe872203db70e6cd43e44cbac	1
+38671063412	Slack Commit Notification	push	release/interview-review-kpi-v2-20261015	completed	success	2026-10-15T02:27:16Z	2026-10-15T02:27:24Z	2026-10-15T02:27:16Z	a15357477fea045fe872203db70e6cd43e44cbac	1
+38670581309	Backend CI/CD	pull_request	staging	completed	success	2026-10-15T02:21:49Z	2026-10-15T02:32:12Z	2026-10-15T02:21:49Z	34f2e903afd48b0288a71940e04c802f39b2c817	1
+38670581172	Production promotion source	pull_request_target	staging	completed	success	2026-10-15T02:21:49Z	2026-10-15T02:21:57Z	2026-10-15T02:21:49Z	34f2e903afd48b0288a71940e04c802f39b2c817	1
+38670576074	Slack Commit Notification	push	staging	completed	success	2026-10-15T02:21:45Z	2026-10-15T02:21:53Z	2026-10-15T02:21:45Z	34f2e903afd48b0288a71940e04c802f39b2c817	1
+38670251188	Backend CI/CD	pull_request	release/interview-review-kpi-v2-20261015	completed	success	2026-10-15T02:18:03Z	2026-10-15T02:27:10Z	2026-10-15T02:18:03Z	5ee7c64f187d7a7c86876d8c5fa4b739fa19fc65	1
+38670221539	Slack Commit Notification	push	release/interview-review-kpi-v2-20261015	completed	success	2026-10-15T02:17:43Z	2026-10-15T02:17:49Z	2026-10-15T02:17:43Z	5ee7c64f187d7a7c86876d8c5fa4b739fa19fc65	1
+38669436331	Backend CI/CD	pull_request	release/toss-20261015	completed	success	2026-10-15T02:08:44Z	2026-10-15T02:19:56Z	2026-10-15T02:08:44Z	f1cdf439b73243aa20754fdfa5a538c90191c2a3	1
+38669431232	Slack Commit Notification	push	release/toss-20261015	completed	success	2026-10-15T02:08:40Z	2026-10-15T02:08:47Z	2026-10-15T02:08:40Z	f1cdf439b73243aa20754fdfa5a538c90191c2a3	1
+38668283056	Backend CI/CD	pull_request	release/toss-20261015	completed	failure	2026-10-15T01:55:47Z	2026-10-15T02:07:00Z	2026-10-15T01:55:47Z	315741c0247845dc78e0bca0faa598e27b8f45f9	1
+38668266979	Slack Commit Notification	push	release/toss-20261015	completed	success	2026-10-15T01:55:36Z	2026-10-15T01:55:45Z	2026-10-15T01:55:36Z	315741c0247845dc78e0bca0faa598e27b8f45f9	1
+38592139145	Slack Commit Notification	push	prod	completed	success	2026-10-14T15:45:31Z	2026-10-14T15:45:38Z	2026-10-14T15:45:31Z	7b23bc192e3f581118223ff094692f8646d2b17b	1
+38592139084	Backend CI/CD	push	prod	completed	success	2026-10-14T15:45:31Z	2026-10-14T15:59:21Z	2026-10-14T15:45:31Z	7b23bc192e3f581118223ff094692f8646d2b17b	1
+38592043528	Backend CI/CD	pull_request	staging	completed	success	2026-10-14T15:44:55Z	2026-10-14T15:54:37Z	2026-10-14T15:44:55Z	e5bb4941111dfd6c1fa9eeee47266f7806e7c113	1
+38592043454	Production promotion source	pull_request_target	staging	completed	success	2026-10-14T15:44:55Z	2026-10-14T15:45:04Z	2026-10-14T15:44:55Z	e5bb4941111dfd6c1fa9eeee47266f7806e7c113	1
+38592032321	Slack Commit Notification	push	staging	completed	success	2026-10-14T15:44:50Z	2026-10-14T15:44:57Z	2026-10-14T15:44:50Z	e5bb4941111dfd6c1fa9eeee47266f7806e7c113	1
+38590959215	Backend CI/CD	pull_request	feat/callback-admin-prod	completed	success	2026-10-14T15:37:25Z	2026-10-14T15:44:41Z	2026-10-14T15:37:25Z	6aae95191a4e4da836cdf0ab8e5977f4dce34515	1
+38590943351	Slack Commit Notification	push	feat/callback-admin-prod	completed	success	2026-10-14T15:37:18Z	2026-10-14T15:37:26Z	2026-10-14T15:37:18Z	6aae95191a4e4da836cdf0ab8e5977f4dce34515	1
+38590683895	Backend CI/CD	pull_request	feat/callback-admin-prod	completed	failure	2026-10-14T15:35:34Z	2026-10-14T15:44:11Z	2026-10-14T15:35:34Z	bd4060d5a9b5cdef482b649cd5f6235701401e17	1
+38590659085	Slack Commit Notification	push	staging	completed	success	2026-10-14T15:35:24Z	2026-10-14T15:35:33Z	2026-10-14T15:35:24Z	ef3a7e65c870c2db033a4b8608583700ef5af1c0	1
+38590632365	Slack Commit Notification	push	feat/callback-admin-prod	completed	success	2026-10-14T15:35:13Z	2026-10-14T15:35:23Z	2026-10-14T15:35:13Z	bd4060d5a9b5cdef482b649cd5f6235701401e17	1
+38584823666	Backend CI/CD	push	main	completed	success	2026-10-14T14:55:20Z	2026-10-14T15:06:28Z	2026-10-14T14:55:20Z	576f4d4e8442cce813ea5e3fbeb60bbe5eaaa2af	1
+38584823367	Slack Commit Notification	push	main	completed	success	2026-10-14T14:55:20Z	2026-10-14T14:55:33Z	2026-10-14T14:55:20Z	576f4d4e8442cce813ea5e3fbeb60bbe5eaaa2af	1
+38578042671	Backend CI/CD	push	main	completed	success	2026-10-14T14:09:42Z	2026-10-14T14:20:53Z	2026-10-14T14:09:42Z	912333ec1d6344e8a08eedd86e1c7ae027f831a3	1
+38578042475	Slack Commit Notification	push	main	completed	success	2026-10-14T14:09:42Z	2026-10-14T14:09:50Z	2026-10-14T14:09:42Z	912333ec1d6344e8a08eedd86e1c7ae027f831a3	1
+38503943951	Backend CI/CD	push	prod	completed	success	2026-10-14T02:59:48Z	2026-10-14T03:12:50Z	2026-10-14T02:59:48Z	ef3a7e65c870c2db033a4b8608583700ef5af1c0	1
+38503943856	Slack Commit Notification	push	prod	completed	success	2026-10-14T02:59:48Z	2026-10-14T02:59:57Z	2026-10-14T02:59:48Z	ef3a7e65c870c2db033a4b8608583700ef5af1c0	1
+38501493669	Production promotion source	pull_request_target	staging	completed	success	2026-10-14T02:31:39Z	2026-10-14T02:31:47Z	2026-10-14T02:31:39Z	5d0fb35b4a1116df4d0c11a92f40e2305eaead6f	1
+38501493126	Backend CI/CD	pull_request	staging	completed	success	2026-10-14T02:31:39Z	2026-10-14T02:42:03Z	2026-10-14T02:31:39Z	5d0fb35b4a1116df4d0c11a92f40e2305eaead6f	1
+38501472830	Slack Commit Notification	push	staging	completed	success	2026-10-14T02:31:25Z	2026-10-14T02:31:31Z	2026-10-14T02:31:25Z	5d0fb35b4a1116df4d0c11a92f40e2305eaead6f	1
+38499250841	Backend CI/CD	pull_request	feat/admin-behavior-analytics-20261013	completed	success	2026-10-14T02:06:00Z	2026-10-14T02:13:15Z	2026-10-14T02:06:00Z	c92cb5a1fad02beed508c0c84bd311c0524e97bd	1
+38497510086	Slack Commit Notification	push	feat/admin-behavior-analytics-20261013	completed	success	2026-10-14T01:46:27Z	2026-10-14T01:46:35Z	2026-10-14T01:46:27Z	c92cb5a1fad02beed508c0c84bd311c0524e97bd	1
+38242911408	Backend CI/CD	push	prod	completed	cancelled	2026-10-12T11:28:52Z	2026-10-12T11:30:29Z	2026-10-12T11:28:52Z	d9bce40c18e1b7c8a03fb1ad76d80be6dcf84533	1
+38242911405	Slack Commit Notification	push	prod	completed	success	2026-10-12T11:28:52Z	2026-10-12T11:29:02Z	2026-10-12T11:28:52Z	d9bce40c18e1b7c8a03fb1ad76d80be6dcf84533	1
+38242893016	Production promotion source	pull_request_target	staging	completed	success	2026-10-12T11:28:41Z	2026-10-12T11:28:48Z	2026-10-12T11:28:41Z	b6b4735e4ddad7a939a9fcb69d490fb7b6532479	1
+38242892856	Backend CI/CD	pull_request	staging	completed	success	2026-10-12T11:28:41Z	2026-10-12T11:36:48Z	2026-10-12T11:28:41Z	b6b4735e4ddad7a939a9fcb69d490fb7b6532479	1
+38242886796	Slack Commit Notification	push	staging	completed	success	2026-10-12T11:28:38Z	2026-10-12T11:28:46Z	2026-10-12T11:28:38Z	b6b4735e4ddad7a939a9fcb69d490fb7b6532479	1
+38242530543	Backend CI/CD	pull_request	release/admin-restore-20261012	completed	success	2026-10-12T11:25:16Z	2026-10-12T11:34:24Z	2026-10-12T11:25:16Z	f66e88c6934e2c3aa762c2add7d8924dc0d16fc6	1
+38242526173	Slack Commit Notification	push	release/admin-restore-20261012	completed	success	2026-10-12T11:25:13Z	2026-10-12T11:25:21Z	2026-10-12T11:25:13Z	f66e88c6934e2c3aa762c2add7d8924dc0d16fc6	1
+38241268318	Backend CI/CD	pull_request	release/admin-restore-20261012	completed	failure	2026-10-12T11:13:25Z	2026-10-12T11:23:13Z	2026-10-12T11:13:25Z	b75337ebe5bff3d2fc6554acd5b2df4886141b4f	1
+38241260046	Slack Commit Notification	push	release/admin-restore-20261012	completed	success	2026-10-12T11:13:21Z	2026-10-12T11:13:29Z	2026-10-12T11:13:21Z	b75337ebe5bff3d2fc6554acd5b2df4886141b4f	1
+37936004554	Backend CI/CD	push	prod	completed	success	2026-10-09T13:19:20Z	2026-10-09T13:29:03Z	2026-10-09T13:19:20Z	0263a2db4c477b468fcffdbe3f8ce8247712ae30	1
+37936004310	Slack Commit Notification	push	prod	completed	success	2026-10-09T13:19:19Z	2026-10-09T13:19:27Z	2026-10-09T13:19:19Z	0263a2db4c477b468fcffdbe3f8ce8247712ae30	1
+37934749054	Backend CI/CD	pull_request	staging	completed	success	2026-10-09T13:08:34Z	2026-10-09T13:18:14Z	2026-10-09T13:08:34Z	b15ba0207d4c1d21ec59b8944a8ff27954501319	1
+37934748961	Production promotion source	pull_request_target	staging	completed	success	2026-10-09T13:08:34Z	2026-10-09T13:08:41Z	2026-10-09T13:08:34Z	b15ba0207d4c1d21ec59b8944a8ff27954501319	1
+37934738735	Slack Commit Notification	push	staging	completed	success	2026-10-09T13:08:29Z	2026-10-09T13:08:38Z	2026-10-09T13:08:29Z	b15ba0207d4c1d21ec59b8944a8ff27954501319	1
+37933804633	Backend CI/CD	pull_request	main	completed	success	2026-10-09T13:00:22Z	2026-10-09T13:06:15Z	2026-10-09T13:00:22Z	62664c6795d2deee21c1ed7c7766910fc52507b3	1
+37933721988	Slack Commit Notification	push	main	completed	success	2026-10-09T12:59:41Z	2026-10-09T12:59:50Z	2026-10-09T12:59:41Z	62664c6795d2deee21c1ed7c7766910fc52507b3	1
+37933721720	Backend CI/CD	push	main	completed	success	2026-10-09T12:59:41Z	2026-10-09T13:08:46Z	2026-10-09T12:59:41Z	62664c6795d2deee21c1ed7c7766910fc52507b3	1
+37920366088	Backend CI/CD	push	prod	completed	success	2026-10-09T10:53:31Z	2026-10-09T11:05:01Z	2026-10-09T10:53:31Z	9f7b93421e9c8972de2e092b38387e58d3260321	1
+37920366050	Slack Commit Notification	push	prod	completed	success	2026-10-09T10:53:31Z	2026-10-09T10:53:39Z	2026-10-09T10:53:31Z	9f7b93421e9c8972de2e092b38387e58d3260321	1
+37920331354	Backend CI/CD	pull_request	staging	completed	cancelled	2026-10-09T10:53:11Z	2026-10-09T10:54:49Z	2026-10-09T10:53:11Z	a30c13d6f1c9b6a17a822dee6e55b56c73dd14e5	1
+37920330525	Production promotion source	pull_request_target	staging	completed	success	2026-10-09T10:53:11Z	2026-10-09T10:53:18Z	2026-10-09T10:53:11Z	a30c13d6f1c9b6a17a822dee6e55b56c73dd14e5	1
+37920321956	Slack Commit Notification	push	staging	completed	success	2026-10-09T10:53:06Z	2026-10-09T10:53:14Z	2026-10-09T10:53:06Z	a30c13d6f1c9b6a17a822dee6e55b56c73dd14e5	1
+37919142699	Backend CI/CD	pull_request	release/main-staging-20261009	completed	success	2026-10-09T10:41:28Z	2026-10-09T10:51:37Z	2026-10-09T10:41:28Z	02680cc94a913d4c6f32590f312339ca40fa6489	1
+37919136688	Slack Commit Notification	push	release/main-staging-20261009	completed	success	2026-10-09T10:41:25Z	2026-10-09T10:41:32Z	2026-10-09T10:41:25Z	02680cc94a913d4c6f32590f312339ca40fa6489	1
+37919072930	Backend CI/CD	push	main	completed	success	2026-10-09T10:40:47Z	2026-10-09T10:51:10Z	2026-10-09T10:40:47Z	d5a4810a9ab63bd64047beaec4c311b28ca7d553	1
+37919072865	Slack Commit Notification	push	main	completed	success	2026-10-09T10:40:47Z	2026-10-09T10:40:54Z	2026-10-09T10:40:47Z	d5a4810a9ab63bd64047beaec4c311b28ca7d553	1
+37918422263	Backend CI/CD	pull_request	release/main-staging-20261009	completed	cancelled	2026-10-09T10:34:20Z	2026-10-09T10:43:30Z	2026-10-09T10:34:20Z	d656c15d43b14bbdd0f470c5c435f5c1919f7382	1
+37918362847	Slack Commit Notification	push	release/main-staging-20261009	completed	success	2026-10-09T10:33:46Z	2026-10-09T10:33:54Z	2026-10-09T10:33:46Z	d656c15d43b14bbdd0f470c5c435f5c1919f7382	1
+37918358866	Backend CI/CD	push	main	completed	failure	2026-10-09T10:33:44Z	2026-10-09T10:41:36Z	2026-10-09T10:33:44Z	ee2b8130a82b55e80f8f446141a77f0d7cf1b191	1
+37918358854	Slack Commit Notification	push	main	completed	success	2026-10-09T10:33:44Z	2026-10-09T10:33:51Z	2026-10-09T10:33:44Z	ee2b8130a82b55e80f8f446141a77f0d7cf1b191	1
+37917824363	Backend CI/CD	pull_request	release/admin-staging-20261009	completed	success	2026-10-09T10:28:35Z	2026-10-09T10:36:56Z	2026-10-09T10:28:35Z	7d4dbf15ec7addb6c14a226d8b5ef364db4d4821	1
+37917789692	Slack Commit Notification	push	release/admin-staging-20261009	completed	success	2026-10-09T10:28:14Z	2026-10-09T10:28:21Z	2026-10-09T10:28:14Z	7d4dbf15ec7addb6c14a226d8b5ef364db4d4821	1
+37917723710	Slack Commit Notification	push	main	completed	success	2026-10-09T10:27:35Z	2026-10-09T10:27:43Z	2026-10-09T10:27:35Z	708f8815bdb0f29006377bc698e8d43b865b590e	1
+37917723689	Backend CI/CD	push	main	completed	success	2026-10-09T10:27:35Z	2026-10-09T10:38:15Z	2026-10-09T10:27:35Z	708f8815bdb0f29006377bc698e8d43b865b590e	1
+37795338757	Backend CI/CD	push	prod	completed	success	2026-10-08T14:47:21Z	2026-10-08T14:58:36Z	2026-10-08T14:47:21Z	5985868802d58aa67de0852b0d6a9759a70699b4	1
+37795338500	Slack Commit Notification	push	prod	completed	success	2026-10-08T14:47:21Z	2026-10-08T14:47:29Z	2026-10-08T14:47:21Z	5985868802d58aa67de0852b0d6a9759a70699b4	1
+37794331735	Backend CI/CD	pull_request	staging	completed	success	2026-10-08T14:40:03Z	2026-10-08T14:45:49Z	2026-10-08T14:40:03Z	276e441a9dcdeda1ebba691b560a2c7d66d76228	1
+37794330452	Production promotion source	pull_request_target	staging	completed	success	2026-10-08T14:40:02Z	2026-10-08T14:40:10Z	2026-10-08T14:40:02Z	276e441a9dcdeda1ebba691b560a2c7d66d76228	1
+37794319039	Slack Commit Notification	push	staging	completed	success	2026-10-08T14:39:57Z	2026-10-08T14:40:42Z	2026-10-08T14:39:57Z	276e441a9dcdeda1ebba691b560a2c7d66d76228	1
+37793153696	Backend CI/CD	pull_request	feat/sentry-production	completed	success	2026-10-08T14:31:22Z	2026-10-08T14:39:12Z	2026-10-08T14:31:22Z	5c318d86e349e40dd8e1d244197a5ddc0a6b7041	1
+37793119768	Slack Commit Notification	push	feat/sentry-production	completed	success	2026-10-08T14:31:07Z	2026-10-08T14:31:14Z	2026-10-08T14:31:07Z	5c318d86e349e40dd8e1d244197a5ddc0a6b7041	1
+37793039927	Backend CI/CD	push	main	completed	success	2026-10-08T14:30:32Z	2026-10-08T14:46:20Z	2026-10-08T14:45:28Z	d9cb13374562708507805d994ec24a82344276f0	2
+37793039656	Slack Commit Notification	push	main	completed	success	2026-10-08T14:30:32Z	2026-10-08T14:30:43Z	2026-10-08T14:30:32Z	d9cb13374562708507805d994ec24a82344276f0	1
+37788648803	Backend CI/CD	workflow_dispatch	main	completed	success	2026-10-08T13:58:30Z	2026-10-08T14:07:18Z	2026-10-08T13:58:30Z	00a4c31ae3e976e47a44c76cf69949c2e15cc0d8	1
+37786795424	Slack Commit Notification	push	main	completed	success	2026-10-08T13:44:47Z	2026-10-08T13:44:54Z	2026-10-08T13:44:47Z	00a4c31ae3e976e47a44c76cf69949c2e15cc0d8	1
+37786795216	Backend CI/CD	push	main	completed	success	2026-10-08T13:44:47Z	2026-10-08T13:56:30Z	2026-10-08T13:44:47Z	00a4c31ae3e976e47a44c76cf69949c2e15cc0d8	1
+37785259847	Slack Commit Notification	push	main	completed	success	2026-10-08T13:33:19Z	2026-10-08T13:33:26Z	2026-10-08T13:33:19Z	461e3fe29a69b02587f8f8e592c88482db3d8c1c	1
+37785259826	Backend CI/CD	push	main	completed	success	2026-10-08T13:33:19Z	2026-10-08T13:43:54Z	2026-10-08T13:33:19Z	461e3fe29a69b02587f8f8e592c88482db3d8c1c	1
+37784217444	Backend CI/CD	push	main	completed	success	2026-10-08T13:25:23Z	2026-10-08T13:35:41Z	2026-10-08T13:25:23Z	e952dc069ea3fe9289f6918b0ced51e4dde90f72	1
+37784217417	Slack Commit Notification	push	main	completed	success	2026-10-08T13:25:23Z	2026-10-08T13:25:32Z	2026-10-08T13:25:23Z	e952dc069ea3fe9289f6918b0ced51e4dde90f72	1
+37781130365	Slack Commit Notification	push	prod	completed	success	2026-10-08T13:01:24Z	2026-10-08T13:01:31Z	2026-10-08T13:01:24Z	7d498c62c7c40dcc665d391e9674dff548b0d3f6	1
+37781130242	Backend CI/CD	push	prod	completed	success	2026-10-08T13:01:24Z	2026-10-08T13:20:39Z	2026-10-08T13:09:35Z	7d498c62c7c40dcc665d391e9674dff548b0d3f6	2
+37780107037	Slack Commit Notification	push	main	completed	success	2026-10-08T12:53:13Z	2026-10-08T12:53:20Z	2026-10-08T12:53:13Z	662e8dde7b3770fcd5d101418c3244b01006799b	1
+37780107025	Backend CI/CD	push	main	completed	success	2026-10-08T12:53:13Z	2026-10-08T13:02:27Z	2026-10-08T12:53:13Z	662e8dde7b3770fcd5d101418c3244b01006799b	1
+37779683543	Backend CI/CD	pull_request	staging	completed	success	2026-10-08T12:49:47Z	2026-10-08T12:58:05Z	2026-10-08T12:49:47Z	48a449baa20b03c9ae1a9aa31f82a740a80b2d43	1
+37779683440	Production promotion source	pull_request_target	staging	completed	success	2026-10-08T12:49:46Z	2026-10-08T12:49:55Z	2026-10-08T12:49:46Z	48a449baa20b03c9ae1a9aa31f82a740a80b2d43	1
+37779600644	Slack Commit Notification	push	staging	completed	success	2026-10-08T12:49:05Z	2026-10-08T12:49:12Z	2026-10-08T12:49:05Z	48a449baa20b03c9ae1a9aa31f82a740a80b2d43	1
+37778856057	Backend CI/CD	pull_request	fix/admin-overview-postgres	completed	success	2026-10-08T12:42:57Z	2026-10-08T12:48:54Z	2026-10-08T12:42:57Z	afcb3cea9cb4dc6a31df85c4dea92e4aa78cb7df	1
+37778848829	Slack Commit Notification	push	fix/admin-overview-postgres	completed	success	2026-10-08T12:42:53Z	2026-10-08T12:43:00Z	2026-10-08T12:42:53Z	afcb3cea9cb4dc6a31df85c4dea92e4aa78cb7df	1
+37778339443	Backend CI/CD	push	main	completed	failure	2026-10-08T12:38:40Z	2026-10-08T12:44:25Z	2026-10-08T12:38:40Z	fe924cbb466af01e3645b42b9cbcff436bbba2cb	1
+37778339379	Slack Commit Notification	push	main	completed	success	2026-10-08T12:38:40Z	2026-10-08T12:38:47Z	2026-10-08T12:38:40Z	fe924cbb466af01e3645b42b9cbcff436bbba2cb	1
+37774990783	Slack Commit Notification	push	prod	completed	success	2026-10-08T12:10:17Z	2026-10-08T12:10:25Z	2026-10-08T12:10:17Z	fc8c90658099877e458192141647eaff5b81f9b4	1
+37774990687	Backend CI/CD	push	prod	completed	success	2026-10-08T12:10:17Z	2026-10-08T12:21:29Z	2026-10-08T12:10:17Z	fc8c90658099877e458192141647eaff5b81f9b4	1
+37774970797	Backend CI/CD	pull_request	staging	completed	success	2026-10-08T12:10:07Z	2026-10-08T12:18:04Z	2026-10-08T12:10:07Z	18157dc4b3fc178395e311644cff4eb245cac018	1
+37774967715	Production promotion source	pull_request_target	staging	completed	success	2026-10-08T12:10:06Z	2026-10-08T12:10:14Z	2026-10-08T12:10:06Z	18157dc4b3fc178395e311644cff4eb245cac018	1
+37774815297	Slack Commit Notification	push	deploy/guest-metrics-dev	completed	success	2026-10-08T12:08:45Z	2026-10-08T12:08:52Z	2026-10-08T12:08:45Z	bd2ac7fffd33966f4ef2a3cc49eefdd92f80224b	1
+37774751043	Slack Commit Notification	push	staging	completed	success	2026-10-08T12:08:11Z	2026-10-08T12:08:19Z	2026-10-08T12:08:11Z	18157dc4b3fc178395e311644cff4eb245cac018	1
+37774631584	Slack Commit Notification	push	main	completed	success	2026-10-08T12:07:09Z	2026-10-08T12:07:16Z	2026-10-08T12:07:09Z	900fe2f334cfb05d0304995956e6ed238cc026fa	1
+37774631566	Backend CI/CD	push	main	completed	failure	2026-10-08T12:07:09Z	2026-10-08T12:12:57Z	2026-10-08T12:07:09Z	900fe2f334cfb05d0304995956e6ed238cc026fa	1
+37773991423	Backend CI/CD	pull_request	deploy/guest-metrics-release	completed	success	2026-10-08T12:01:36Z	2026-10-08T12:09:38Z	2026-10-08T12:01:36Z	11c36a55f5ac3614d1efc7dae215cfcda60ed151	1
+37773970310	Slack Commit Notification	push	deploy/guest-metrics-release	completed	success	2026-10-08T12:01:25Z	2026-10-08T12:01:33Z	2026-10-08T12:01:25Z	11c36a55f5ac3614d1efc7dae215cfcda60ed151	1
+37773832887	Backend CI/CD	pull_request	deploy/guest-metrics-dev	completed	failure	2026-10-08T12:00:18Z	2026-10-08T12:14:45Z	2026-10-08T12:09:05Z	622e3ff4bfb329723e54caf534346127c14b44fc	2
+37773802106	Slack Commit Notification	push	deploy/guest-metrics-dev	completed	success	2026-10-08T12:00:04Z	2026-10-08T12:00:14Z	2026-10-08T12:00:04Z	622e3ff4bfb329723e54caf534346127c14b44fc	1
+37130464879	Backend CI/CD	push	main	completed	success	2026-10-03T14:40:39Z	2026-10-04T06:41:13Z	2026-10-04T06:40:35Z	645840d198b0e65f6d5f33e9f1d35a6510513315	4
+37130464861	Slack Commit Notification	push	main	completed	success	2026-10-03T14:40:39Z	2026-10-03T14:40:47Z	2026-10-03T14:40:39Z	645840d198b0e65f6d5f33e9f1d35a6510513315	1
+37130415721	Backend CI/CD	pull_request	fix/voice-followup-clarity	completed	cancelled	2026-10-03T14:39:57Z	2026-10-03T14:41:33Z	2026-10-03T14:39:57Z	1e9193a1dac34c7778801427a958f44b0ce57343	1
+37128078086	Slack Commit Notification	push	fix/voice-followup-clarity	completed	success	2026-10-03T13:59:44Z	2026-10-03T13:59:52Z	2026-10-03T13:59:44Z	1e9193a1dac34c7778801427a958f44b0ce57343	1
+37021623202	Slack Commit Notification	push	staging	completed	success	2026-10-02T14:41:28Z	2026-10-02T14:41:36Z	2026-10-02T14:41:28Z	2972b4760b16a8951dd0887d9ee78c954fd8f77c	1
+37021092304	Backend CI/CD	pull_request	feat/interview-evidence-dataset-20261002	completed	success	2026-10-02T14:36:52Z	2026-10-02T14:45:09Z	2026-10-02T14:36:52Z	cecceb9d544435ceaeb96f8668ef3db64e4d75d3	1
+37021085189	Slack Commit Notification	push	feat/interview-evidence-dataset-20261002	completed	success	2026-10-02T14:36:48Z	2026-10-02T14:36:55Z	2026-10-02T14:36:48Z	cecceb9d544435ceaeb96f8668ef3db64e4d75d3	1
+37021022632	Backend CI/CD	pull_request	feat/interview-evidence-dataset-20261002	completed	success	2026-10-02T14:36:15Z	2026-10-02T14:43:55Z	2026-10-02T14:36:15Z	c54b681820a05c794db7b0ee5e0d7d9b549cad7f	1
+37020990865	Slack Commit Notification	push	feat/interview-evidence-dataset-20261002	completed	success	2026-10-02T14:35:59Z	2026-10-02T14:36:42Z	2026-10-02T14:35:59Z	c54b681820a05c794db7b0ee5e0d7d9b549cad7f	1
+36891272038	Backend CI/CD	push	main	completed	success	2026-10-01T16:20:39Z	2026-10-01T16:30:13Z	2026-10-01T16:20:39Z	9180c0cfaf6bccc04dbfc18f51916ce9da3b9e06	1
+36891272007	Slack Commit Notification	push	main	completed	success	2026-10-01T16:20:39Z	2026-10-01T16:20:52Z	2026-10-01T16:20:39Z	9180c0cfaf6bccc04dbfc18f51916ce9da3b9e06	1
+36891147194	Backend CI/CD	pull_request	fix/no-posting-repositories	completed	cancelled	2026-10-01T16:19:41Z	2026-10-01T16:22:37Z	2026-10-01T16:19:41Z	cd7f2ccd56afbd45996b62e60074641957cae0ac	1
+36891009249	Slack Commit Notification	push	fix/no-posting-repositories	completed	success	2026-10-01T16:18:36Z	2026-10-01T16:18:45Z	2026-10-01T16:18:36Z	cd7f2ccd56afbd45996b62e60074641957cae0ac	1
+36885699610	Backend CI/CD	workflow_dispatch	main	completed	success	2026-10-01T15:37:24Z	2026-10-01T15:44:48Z	2026-10-01T15:37:24Z	49ad88da0030c8c5eacd7b2204de9ccb5d5a8fdd	1
+36878198330	Backend CI/CD	push	prod	completed	success	2026-10-01T14:40:33Z	2026-10-01T14:51:44Z	2026-10-01T14:40:33Z	55172afc26c625ccae97a2d683e2d1039593ba6b	1
+36878197990	Slack Commit Notification	push	prod	completed	success	2026-10-01T14:40:32Z	2026-10-01T14:40:41Z	2026-10-01T14:40:32Z	55172afc26c625ccae97a2d683e2d1039593ba6b	1
+36878126775	Backend CI/CD	push	main	completed	success	2026-10-01T14:40:03Z	2026-10-01T14:49:00Z	2026-10-01T14:40:03Z	49ad88da0030c8c5eacd7b2204de9ccb5d5a8fdd	1
+36878126741	Slack Commit Notification	push	main	completed	success	2026-10-01T14:40:03Z	2026-10-01T14:40:10Z	2026-10-01T14:40:03Z	49ad88da0030c8c5eacd7b2204de9ccb5d5a8fdd	1
+36876980878	Backend CI/CD	pull_request	feat/voice-dialogue-follow-ups	completed	success	2026-10-01T14:31:16Z	2026-10-01T14:38:23Z	2026-10-01T14:31:16Z	aa3e944fabfeebe3fead6ed1f6c7a68ca71a1731	1
+36876812565	Slack Commit Notification	push	feat/voice-dialogue-follow-ups	completed	success	2026-10-01T14:30:04Z	2026-10-01T14:30:12Z	2026-10-01T14:30:04Z	aa3e944fabfeebe3fead6ed1f6c7a68ca71a1731	1
+36876080012	Backend CI/CD	pull_request	staging	completed	success	2026-10-01T14:24:26Z	2026-10-01T14:31:11Z	2026-10-01T14:24:26Z	ddbb4d320fb05c10b54534114a4fee7d7c7f1927	1
+36876076462	Production promotion source	pull_request_target	staging	completed	success	2026-10-01T14:24:25Z	2026-10-01T14:24:42Z	2026-10-01T14:24:25Z	ddbb4d320fb05c10b54534114a4fee7d7c7f1927	1
+36876072725	Slack Commit Notification	push	staging	completed	success	2026-10-01T14:24:23Z	2026-10-01T14:24:32Z	2026-10-01T14:24:23Z	ddbb4d320fb05c10b54534114a4fee7d7c7f1927	1
+36874125712	Backend CI/CD	workflow_dispatch	prod	completed	success	2026-10-01T14:09:24Z	2026-10-01T14:18:28Z	2026-10-01T14:09:24Z	723f4b99e3804624af7b73b138c7293c70a95dbe	1
+36874063990	Backend CI/CD	push	prod	completed	failure	2026-10-01T14:08:55Z	2026-10-01T14:17:04Z	2026-10-01T14:08:55Z	723f4b99e3804624af7b73b138c7293c70a95dbe	1
+36874063929	Slack Commit Notification	push	prod	completed	success	2026-10-01T14:08:55Z	2026-10-01T14:09:03Z	2026-10-01T14:08:55Z	723f4b99e3804624af7b73b138c7293c70a95dbe	1
+36873081578	Production promotion source	pull_request_target	release/question-output-speed-20261001	completed	failure	2026-10-01T14:01:18Z	2026-10-01T14:01:26Z	2026-10-01T14:01:18Z	725f95ba99d6e447b87fc27ad7f057f8395ace5d	1
+36873081542	Backend CI/CD	pull_request	release/question-output-speed-20261001	completed	success	2026-10-01T14:01:18Z	2026-10-01T14:06:59Z	2026-10-01T14:01:18Z	725f95ba99d6e447b87fc27ad7f057f8395ace5d	1
+36873003920	Slack Commit Notification	push	release/question-output-speed-20261001	completed	success	2026-10-01T14:00:44Z	2026-10-01T14:00:52Z	2026-10-01T14:00:44Z	725f95ba99d6e447b87fc27ad7f057f8395ace5d	1
+36870146386	Slack Commit Notification	push	main	completed	success	2026-10-01T13:38:16Z	2026-10-01T13:38:26Z	2026-10-01T13:38:16Z	efb7f8186e43d3496555111fd9c47842a96ecd1b	1
+36870146085	Backend CI/CD	push	main	completed	success	2026-10-01T13:38:16Z	2026-10-01T13:48:39Z	2026-10-01T13:38:16Z	efb7f8186e43d3496555111fd9c47842a96ecd1b	1
+36866816570	Backend CI/CD	workflow_dispatch	prod	completed	success	2026-10-01T13:10:56Z	2026-10-01T13:19:10Z	2026-10-01T13:10:56Z	1c01000562cbfa6ae7236d25f2843af55bf32ec0	1
+36866640367	Slack Commit Notification	push	prod	completed	success	2026-10-01T13:09:31Z	2026-10-01T13:09:40Z	2026-10-01T13:09:31Z	1c01000562cbfa6ae7236d25f2843af55bf32ec0	1
+36866640355	Backend CI/CD	push	prod	completed	failure	2026-10-01T13:09:31Z	2026-10-01T13:16:41Z	2026-10-01T13:09:31Z	1c01000562cbfa6ae7236d25f2843af55bf32ec0	1
+36866546479	Slack Commit Notification	push	main	completed	success	2026-10-01T13:08:45Z	2026-10-01T13:08:54Z	2026-10-01T13:08:45Z	777b20c1ebd7e3dcffe54950cfd074d26b0ba5d4	1
+36866546464	Backend CI/CD	push	main	completed	success	2026-10-01T13:08:45Z	2026-10-01T13:18:41Z	2026-10-01T13:08:45Z	777b20c1ebd7e3dcffe54950cfd074d26b0ba5d4	1
+36865782606	Backend CI/CD	pull_request	release/guest-preparation-20261001	completed	success	2026-10-01T13:01:39Z	2026-10-01T13:08:58Z	2026-10-01T13:01:39Z	787f230e545096a218832823187c9be9d5fc4e8b	1
+36865780211	Backend CI/CD	pull_request	feat/guest-local	completed	success	2026-10-01T13:01:38Z	2026-10-01T13:08:23Z	2026-10-01T13:01:38Z	aa7956bfce600d9a59cf9462f00a8d9474e0b1db	1
+36865778739	Production promotion source	pull_request_target	release/guest-preparation-20261001	completed	failure	2026-10-01T13:01:37Z	2026-10-01T13:01:46Z	2026-10-01T13:01:37Z	787f230e545096a218832823187c9be9d5fc4e8b	1
+36865774568	Slack Commit Notification	push	release/guest-preparation-20261001	completed	success	2026-10-01T13:01:35Z	2026-10-01T13:01:46Z	2026-10-01T13:01:35Z	787f230e545096a218832823187c9be9d5fc4e8b	1
+36865736700	Slack Commit Notification	push	feat/guest-local	completed	success	2026-10-01T13:01:15Z	2026-10-01T13:01:23Z	2026-10-01T13:01:15Z	aa7956bfce600d9a59cf9462f00a8d9474e0b1db	1
+36859677743	Slack Commit Notification	push	main	completed	success	2026-10-01T12:07:19Z	2026-10-01T12:07:27Z	2026-10-01T12:07:19Z	e35cc36b430479daae85308ca8ca79a0730235f7	1
+36859677722	Backend CI/CD	push	main	completed	success	2026-10-01T12:07:19Z	2026-10-01T12:15:56Z	2026-10-01T12:07:19Z	e35cc36b430479daae85308ca8ca79a0730235f7	1
+36859520238	Production promotion source	pull_request_target	release/guest-preparation-20261001	completed	failure	2026-10-01T12:05:50Z	2026-10-01T12:05:56Z	2026-10-01T12:05:50Z	d5e33f94a054259b8cb8bee871ad028d2571565b	1
+36859520123	Backend CI/CD	pull_request	release/guest-preparation-20261001	completed	success	2026-10-01T12:05:50Z	2026-10-01T12:12:41Z	2026-10-01T12:05:50Z	d5e33f94a054259b8cb8bee871ad028d2571565b	1
+36859451887	Slack Commit Notification	push	release/guest-preparation-20261001	completed	success	2026-10-01T12:05:12Z	2026-10-01T12:05:20Z	2026-10-01T12:05:12Z	d5e33f94a054259b8cb8bee871ad028d2571565b	1
+36858119794	Backend CI/CD	pull_request	feat/guest-local	completed	success	2026-10-01T11:52:38Z	2026-10-01T11:57:33Z	2026-10-01T11:52:38Z	1c6d6830c0d11dfb68f7acff5dcf2d70159ef4c5	1
+36858047884	Slack Commit Notification	push	feat/guest-local	completed	success	2026-10-01T11:51:58Z	2026-10-01T11:52:07Z	2026-10-01T11:51:58Z	1c6d6830c0d11dfb68f7acff5dcf2d70159ef4c5	1
+36709055324	Backend CI/CD	pull_request	staging	completed	success	2026-09-30T11:31:19Z	2026-09-30T11:38:48Z	2026-09-30T11:31:19Z	44352caaba21ad0015eb2d3d99acf933b80eaf18	1
+36709051294	Production promotion source	pull_request_target	staging	completed	success	2026-09-30T11:31:17Z	2026-09-30T11:31:24Z	2026-09-30T11:31:17Z	44352caaba21ad0015eb2d3d99acf933b80eaf18	1
+36709048854	Slack Commit Notification	push	staging	completed	success	2026-09-30T11:31:15Z	2026-09-30T11:31:24Z	2026-09-30T11:31:15Z	44352caaba21ad0015eb2d3d99acf933b80eaf18	1
+36708386435	Backend CI/CD	pull_request	fix/interview-review-popup-attribution	completed	success	2026-09-30T11:24:51Z	2026-09-30T11:30:56Z	2026-09-30T11:24:51Z	12b2ed810b07e8f1760bfb2547fd8f830cab2da5	1
+36708346179	Slack Commit Notification	push	fix/interview-review-popup-attribution	completed	success	2026-09-30T11:24:28Z	2026-09-30T11:24:36Z	2026-09-30T11:24:28Z	12b2ed810b07e8f1760bfb2547fd8f830cab2da5	1
+36704341345	Backend CI/CD	pull_request	staging	completed	success	2026-09-30T10:45:21Z	2026-09-30T10:53:06Z	2026-09-30T10:45:21Z	c5b81b07d8630a9dba35eb9bd411aa9ae69d86f3	1
+36704339533	Production promotion source	pull_request_target	staging	completed	success	2026-09-30T10:45:20Z	2026-09-30T10:45:29Z	2026-09-30T10:45:20Z	c5b81b07d8630a9dba35eb9bd411aa9ae69d86f3	1
+36704336370	Slack Commit Notification	push	staging	completed	success	2026-09-30T10:45:19Z	2026-09-30T10:45:27Z	2026-09-30T10:45:19Z	c5b81b07d8630a9dba35eb9bd411aa9ae69d86f3	1
+36703546209	Backend CI/CD	pull_request	feat/interview-review-system	completed	success	2026-09-30T10:37:29Z	2026-09-30T10:44:29Z	2026-09-30T10:37:29Z	9b0ff508eb572dd22632ef064cd2e5343533ece9	1
+36703519749	Slack Commit Notification	push	feat/interview-review-system	completed	success	2026-09-30T10:37:13Z	2026-09-30T10:37:20Z	2026-09-30T10:37:13Z	9b0ff508eb572dd22632ef064cd2e5343533ece9	1
+36697543236	Production promotion source	pull_request_target	staging	completed	success	2026-09-30T09:39:54Z	2026-09-30T09:40:01Z	2026-09-30T09:39:54Z	7dc1a76368333a31225ac52500ee58c56dfd2fda	1
+36697542842	Backend CI/CD	pull_request	staging	completed	success	2026-09-30T09:39:54Z	2026-09-30T09:47:03Z	2026-09-30T09:39:54Z	7dc1a76368333a31225ac52500ee58c56dfd2fda	1
+36693875367	Slack Commit Notification	push	staging	completed	success	2026-09-30T09:05:42Z	2026-09-30T09:05:48Z	2026-09-30T09:05:42Z	7dc1a76368333a31225ac52500ee58c56dfd2fda	1
+36681391857	Backend CI/CD	pull_request	feat/interview-evidence-candidate	completed	success	2026-09-30T07:01:43Z	2026-09-30T07:07:38Z	2026-09-30T07:01:43Z	5bf5f4459e89edb6751e05d1de1ea2e8e1ea33a4	1
+36681327040	Slack Commit Notification	push	feat/interview-evidence-candidate	completed	success	2026-09-30T07:01:02Z	2026-09-30T07:01:09Z	2026-09-30T07:01:02Z	5bf5f4459e89edb6751e05d1de1ea2e8e1ea33a4	1
+36678837500	Backend CI/CD	push	prod	completed	success	2026-09-30T06:33:25Z	2026-09-30T06:41:48Z	2026-09-30T06:33:25Z	7dc13547595ec6c31e2ba85d0cbfce9c7db36b26	1
+36678837463	Slack Commit Notification	push	prod	completed	success	2026-09-30T06:33:25Z	2026-09-30T06:33:33Z	2026-09-30T06:33:25Z	7dc13547595ec6c31e2ba85d0cbfce9c7db36b26	1
+36678772742	Backend CI/CD	pull_request	staging	completed	success	2026-09-30T06:32:41Z	2026-09-30T06:39:48Z	2026-09-30T06:32:41Z	0ed791d3a4bf2dd8982464af2d1157c99b1a7239	1
+36678772687	Production promotion source	pull_request_target	staging	completed	success	2026-09-30T06:32:41Z	2026-09-30T06:33:25Z	2026-09-30T06:32:41Z	0ed791d3a4bf2dd8982464af2d1157c99b1a7239	1
+36678668697	Slack Commit Notification	push	staging	completed	success	2026-09-30T06:31:30Z	2026-09-30T06:31:38Z	2026-09-30T06:31:30Z	0ed791d3a4bf2dd8982464af2d1157c99b1a7239	1
+36677944569	Backend CI/CD	pull_request	feat/admin-question-db	completed	success	2026-09-30T06:23:07Z	2026-09-30T06:30:34Z	2026-09-30T06:23:07Z	4c05f8ec45cc1cc5b58defb53dcf19f40274a69d	1
+36677898691	Slack Commit Notification	push	feat/admin-question-db	completed	success	2026-09-30T06:22:33Z	2026-09-30T06:22:44Z	2026-09-30T06:22:33Z	4c05f8ec45cc1cc5b58defb53dcf19f40274a69d	1
+36673826446	Slack Commit Notification	push	prod	completed	success	2026-09-30T05:31:47Z	2026-09-30T05:31:55Z	2026-09-30T05:31:47Z	e59bdadf49cf72b5773e7f30ef8d591199b3df07	1
+36673826313	Backend CI/CD	push	prod	completed	success	2026-09-30T05:31:47Z	2026-09-30T05:39:07Z	2026-09-30T05:31:47Z	e59bdadf49cf72b5773e7f30ef8d591199b3df07	1
+36673256198	Backend CI/CD	pull_request	staging	completed	success	2026-09-30T05:24:28Z	2026-09-30T05:31:30Z	2026-09-30T05:24:28Z	c6a1eb99db41de32d321b10e80fdf94eec72f4d1	1
+36673253656	Production promotion source	pull_request_target	staging	completed	success	2026-09-30T05:24:26Z	2026-09-30T05:24:33Z	2026-09-30T05:24:26Z	c6a1eb99db41de32d321b10e80fdf94eec72f4d1	1
+36673251486	Slack Commit Notification	push	staging	completed	success	2026-09-30T05:24:24Z	2026-09-30T05:24:32Z	2026-09-30T05:24:24Z	c6a1eb99db41de32d321b10e80fdf94eec72f4d1	1
+36673241987	Backend CI/CD	pull_request	fix/admin-data-api-docs	completed	success	2026-09-30T05:24:16Z	2026-09-30T05:31:17Z	2026-09-30T05:24:16Z	8e09ced13eac0e270eae73aa2873425fdeb690ea	1
+36673237250	Slack Commit Notification	push	fix/admin-data-api-docs	completed	success	2026-09-30T05:24:13Z	2026-09-30T05:24:21Z	2026-09-30T05:24:13Z	8e09ced13eac0e270eae73aa2873425fdeb690ea	1
+36672702289	Backend CI/CD	pull_request	staging	completed	failure	2026-09-30T05:17:08Z	2026-09-30T05:22:30Z	2026-09-30T05:17:08Z	f40a602972d2690d10ec16d7607a4897aae7e5e9	1
+36672701552	Production promotion source	pull_request_target	staging	completed	success	2026-09-30T05:17:07Z	2026-09-30T05:17:14Z	2026-09-30T05:17:07Z	f40a602972d2690d10ec16d7607a4897aae7e5e9	1
+36672665456	Slack Commit Notification	push	staging	completed	success	2026-09-30T05:16:38Z	2026-09-30T05:16:47Z	2026-09-30T05:16:38Z	f40a602972d2690d10ec16d7607a4897aae7e5e9	1
+36672512277	Backend CI/CD	pull_request	feat/admin-data-lists	completed	failure	2026-09-30T05:14:39Z	2026-09-30T05:20:25Z	2026-09-30T05:14:39Z	1ecd44d3cf862752c3cdcdb104f757d3936d98db	1
+36672490535	Slack Commit Notification	push	feat/admin-data-lists	completed	success	2026-09-30T05:14:21Z	2026-09-30T05:14:28Z	2026-09-30T05:14:21Z	1ecd44d3cf862752c3cdcdb104f757d3936d98db	1
+36643826073	Slack Commit Notification	push	prod	completed	success	2026-09-29T23:11:13Z	2026-09-29T23:11:19Z	2026-09-29T23:11:13Z	34a58ee21debf8bbb2d24756647afcf597075c8e	1
+36643826059	Backend CI/CD	push	prod	completed	success	2026-09-29T23:11:13Z	2026-09-29T23:19:34Z	2026-09-29T23:11:13Z	34a58ee21debf8bbb2d24756647afcf597075c8e	1
+36643206988	Backend CI/CD	pull_request	staging	completed	success	2026-09-29T23:04:30Z	2026-09-29T23:10:54Z	2026-09-29T23:04:30Z	12bb08723fd2c387de4ce612496e1802c347b155	1
+36643204908	Production promotion source	pull_request_target	staging	completed	success	2026-09-29T23:04:29Z	2026-09-29T23:04:36Z	2026-09-29T23:04:29Z	12bb08723fd2c387de4ce612496e1802c347b155	1
+36643202406	Slack Commit Notification	push	staging	completed	success	2026-09-29T23:04:27Z	2026-09-29T23:04:36Z	2026-09-29T23:04:27Z	12bb08723fd2c387de4ce612496e1802c347b155	1
+36643187996	Backend CI/CD	pull_request	fix/admin-ranking-docs	completed	success	2026-09-29T23:04:18Z	2026-09-29T23:09:49Z	2026-09-29T23:04:18Z	6482623ccd1ed2032df31c6a3f37c76de10f1a06	1
+36643181889	Slack Commit Notification	push	fix/admin-ranking-docs	completed	success	2026-09-29T23:04:14Z	2026-09-29T23:04:20Z	2026-09-29T23:04:14Z	6482623ccd1ed2032df31c6a3f37c76de10f1a06	1
+36642562898	Backend CI/CD	pull_request	staging	completed	failure	2026-09-29T22:57:35Z	2026-09-29T23:03:01Z	2026-09-29T22:57:35Z	f0b3b8bb0b4bb4aaaecdb7d7e3c435fe4e74e5ad	1
+36642562574	Production promotion source	pull_request_target	staging	completed	success	2026-09-29T22:57:34Z	2026-09-29T22:57:41Z	2026-09-29T22:57:34Z	f0b3b8bb0b4bb4aaaecdb7d7e3c435fe4e74e5ad	1
+36642523816	Slack Commit Notification	push	staging	completed	success	2026-09-29T22:57:08Z	2026-09-29T22:57:16Z	2026-09-29T22:57:08Z	f0b3b8bb0b4bb4aaaecdb7d7e3c435fe4e74e5ad	1
+36642328745	Backend CI/CD	pull_request	feat/admin-ranking-prod	completed	failure	2026-09-29T22:55:00Z	2026-09-29T23:00:46Z	2026-09-29T22:55:00Z	8dd5ba8eba063055f294737833e0f4a78d4fbc83	1
+36642310288	Slack Commit Notification	push	feat/admin-ranking-prod	completed	success	2026-09-29T22:54:48Z	2026-09-29T22:54:57Z	2026-09-29T22:54:48Z	8dd5ba8eba063055f294737833e0f4a78d4fbc83	1
+36329022797	Slack Commit Notification	push	prod	completed	success	2026-09-27T15:17:43Z	2026-09-27T15:17:50Z	2026-09-27T15:17:43Z	52415aafb152700d8c6ba0745367827fb299281c	1
+36329022769	Backend CI/CD	push	prod	completed	success	2026-09-27T15:17:43Z	2026-09-27T15:27:24Z	2026-09-27T15:17:43Z	52415aafb152700d8c6ba0745367827fb299281c	1
+36328606485	Backend CI/CD	pull_request	staging	completed	success	2026-09-27T15:10:56Z	2026-09-27T15:17:23Z	2026-09-27T15:10:56Z	64aabffba6c78f890af2a5bd7b956d7cb6626c5e	1
+36328605125	Production promotion source	pull_request_target	staging	completed	success	2026-09-27T15:10:54Z	2026-09-27T15:11:03Z	2026-09-27T15:10:54Z	64aabffba6c78f890af2a5bd7b956d7cb6626c5e	1
+36328603961	Slack Commit Notification	push	staging	completed	success	2026-09-27T15:10:54Z	2026-09-27T15:11:35Z	2026-09-27T15:10:54Z	64aabffba6c78f890af2a5bd7b956d7cb6626c5e	1
+36328158174	Production promotion source	pull_request_target	staging	completed	success	2026-09-27T15:03:39Z	2026-09-27T15:03:47Z	2026-09-27T15:03:39Z	66de9a2fe61b830c0c44cc539022a05c50ae0210	1
+36328157697	Backend CI/CD	pull_request	staging	completed	failure	2026-09-27T15:03:39Z	2026-09-27T15:09:12Z	2026-09-27T15:03:39Z	66de9a2fe61b830c0c44cc539022a05c50ae0210	1
+36328138785	Slack Commit Notification	push	staging	completed	success	2026-09-27T15:03:18Z	2026-09-27T15:03:25Z	2026-09-27T15:03:18Z	66de9a2fe61b830c0c44cc539022a05c50ae0210	1
+35740846551	Slack Commit Notification	push	prod	completed	success	2026-09-22T14:30:58Z	2026-09-22T14:31:07Z	2026-09-22T14:30:58Z	0286fa9e00629d183df64f86aa335576440722ac	1
+35740846510	Backend CI/CD	push	prod	completed	success	2026-09-22T14:30:58Z	2026-09-22T14:40:39Z	2026-09-22T14:30:58Z	0286fa9e00629d183df64f86aa335576440722ac	1
+35740047477	Production promotion source	pull_request_target	staging	completed	success	2026-09-22T14:24:03Z	2026-09-22T14:24:11Z	2026-09-22T14:24:03Z	18d1dc694020cc140de0d936eb1f203f42932951	1
+35740047448	Backend CI/CD	pull_request	staging	completed	success	2026-09-22T14:24:02Z	2026-09-22T14:30:42Z	2026-09-22T14:24:02Z	18d1dc694020cc140de0d936eb1f203f42932951	1
+35740042421	Slack Commit Notification	push	staging	completed	success	2026-09-22T14:24:00Z	2026-09-22T14:24:07Z	2026-09-22T14:24:00Z	18d1dc694020cc140de0d936eb1f203f42932951	1
+35736851109	Slack Commit Notification	push	prod	completed	success	2026-09-22T13:56:31Z	2026-09-22T13:56:38Z	2026-09-22T13:56:31Z	fcb5b415fc391defc215d4201f04597d365986e8	1
+35736850998	Backend CI/CD	push	prod	completed	success	2026-09-22T13:56:30Z	2026-09-22T14:08:02Z	2026-09-22T13:56:30Z	fcb5b415fc391defc215d4201f04597d365986e8	1
+35736813821	Backend CI/CD	pull_request	staging	completed	success	2026-09-22T13:56:11Z	2026-09-22T14:02:23Z	2026-09-22T13:56:11Z	cb1622766d83e6ead158153e771a3e0791c39659	1
+35736813372	Production promotion source	pull_request_target	staging	completed	success	2026-09-22T13:56:11Z	2026-09-22T13:56:20Z	2026-09-22T13:56:11Z	cb1622766d83e6ead158153e771a3e0791c39659	1
+35736786257	Slack Commit Notification	push	staging	completed	success	2026-09-22T13:55:56Z	2026-09-22T13:56:03Z	2026-09-22T13:55:56Z	cb1622766d83e6ead158153e771a3e0791c39659	1
+35726232359	Backend CI/CD	push	main	completed	success	2026-09-22T12:16:45Z	2026-09-22T12:23:45Z	2026-09-22T12:16:45Z	341025730a7938535b6cbc351bcacf8163485aef	1
+35726232161	Slack Commit Notification	push	main	completed	success	2026-09-22T12:16:45Z	2026-09-22T12:16:55Z	2026-09-22T12:16:45Z	341025730a7938535b6cbc351bcacf8163485aef	1
+35719714706	Slack Commit Notification	push	main	completed	success	2026-09-22T11:07:34Z	2026-09-22T11:07:40Z	2026-09-22T11:07:34Z	bf771eb1d4849872af2e19d05457e13f50f406f6	1
+35719714505	Backend CI/CD	push	main	completed	success	2026-09-22T11:07:33Z	2026-09-22T11:14:40Z	2026-09-22T11:07:33Z	bf771eb1d4849872af2e19d05457e13f50f406f6	1
+35718547483	Backend CI/CD	push	main	completed	success	2026-09-22T10:54:41Z	2026-09-22T11:01:48Z	2026-09-22T10:54:41Z	b929ec4d2b772456a0e17fad7d67e815af4e935f	1
+35718547456	Slack Commit Notification	push	main	completed	success	2026-09-22T10:54:41Z	2026-09-22T10:54:48Z	2026-09-22T10:54:41Z	b929ec4d2b772456a0e17fad7d67e815af4e935f	1
+35714811286	Slack Commit Notification	push	main	completed	success	2026-09-22T10:13:40Z	2026-09-22T10:13:51Z	2026-09-22T10:13:40Z	0e57976aca8c583516fe920f10044102059c90bb	1
+35714811236	Backend CI/CD	push	main	completed	success	2026-09-22T10:13:40Z	2026-09-22T10:23:01Z	2026-09-22T10:13:40Z	0e57976aca8c583516fe920f10044102059c90bb	1
+35705977502	Backend CI/CD	push	main	completed	success	2026-09-22T08:39:14Z	2026-09-22T08:47:21Z	2026-09-22T08:39:14Z	bee6d81762e3bcff9a6581bb3333c3568b47a874	1
+35705977431	Slack Commit Notification	push	main	completed	success	2026-09-22T08:39:14Z	2026-09-22T08:39:22Z	2026-09-22T08:39:14Z	bee6d81762e3bcff9a6581bb3333c3568b47a874	1
+35684958810	Slack Commit Notification	push	prod	completed	success	2026-09-22T03:55:50Z	2026-09-22T03:56:00Z	2026-09-22T03:55:50Z	35322e0718b9b8bc95ba752a0054cb7fe727d1a2	1
+35684958747	Backend CI/CD	push	prod	completed	success	2026-09-22T03:55:50Z	2026-09-22T04:05:09Z	2026-09-22T03:55:50Z	35322e0718b9b8bc95ba752a0054cb7fe727d1a2	1
+35683810280	Backend CI/CD	pull_request	staging	completed	success	2026-09-22T03:36:59Z	2026-09-22T03:43:30Z	2026-09-22T03:36:59Z	95fabb7e20d4ff22d43325ca118d9012c40d03a6	1
+35683808930	Production promotion source	pull_request_target	staging	completed	success	2026-09-22T03:36:58Z	2026-09-22T03:37:05Z	2026-09-22T03:36:58Z	95fabb7e20d4ff22d43325ca118d9012c40d03a6	1
+35683807533	Slack Commit Notification	push	staging	completed	success	2026-09-22T03:36:56Z	2026-09-22T03:37:04Z	2026-09-22T03:36:56Z	95fabb7e20d4ff22d43325ca118d9012c40d03a6	1
+35683638907	Slack Commit Notification	push	main	completed	success	2026-09-22T03:34:12Z	2026-09-22T03:34:20Z	2026-09-22T03:34:12Z	ccf5299e71a755598fa83132d0eafd2b1ebf4c6a	1
+35683638862	Backend CI/CD	push	main	completed	success	2026-09-22T03:34:12Z	2026-09-22T03:43:08Z	2026-09-22T03:34:12Z	ccf5299e71a755598fa83132d0eafd2b1ebf4c6a	1
+35683540403	Backend CI/CD	push	main	completed	cancelled	2026-09-22T03:32:37Z	2026-09-22T03:35:17Z	2026-09-22T03:32:37Z	6bf6b0867061eaf63fccb852e137f1af61ad105c	1
+35683540387	Slack Commit Notification	push	main	completed	success	2026-09-22T03:32:37Z	2026-09-22T03:32:51Z	2026-09-22T03:32:37Z	6bf6b0867061eaf63fccb852e137f1af61ad105c	1
+35683204870	Backend CI/CD	pull_request	ci/async-backend-deployment	completed	success	2026-09-22T03:27:08Z	2026-09-22T03:31:17Z	2026-09-22T03:27:08Z	0770825e042c9f0a22c9f0fa89c119a5f5e3238c	1
+35683151870	Slack Commit Notification	push	ci/async-backend-deployment	completed	success	2026-09-22T03:26:15Z	2026-09-22T03:26:24Z	2026-09-22T03:26:15Z	0770825e042c9f0a22c9f0fa89c119a5f5e3238c	1
+35587197433	Backend CI/CD	pull_request	staging	completed	failure	2026-09-21T10:09:12Z	2026-09-21T10:09:17Z	2026-09-21T10:09:12Z	b1280882277db42806dc775565fda53477c021a2	1
+35587197317	Production promotion source	pull_request_target	staging	completed	failure	2026-09-21T10:09:12Z	2026-09-21T10:09:17Z	2026-09-21T10:09:12Z	b1280882277db42806dc775565fda53477c021a2	1
+35587192079	Slack Commit Notification	push	staging	completed	failure	2026-09-21T10:09:09Z	2026-09-21T10:09:13Z	2026-09-21T10:09:09Z	b1280882277db42806dc775565fda53477c021a2	1
+35587114374	Backend CI/CD	push	main	completed	failure	2026-09-21T10:08:19Z	2026-09-21T10:08:25Z	2026-09-21T10:08:19Z	3016317a915f6086e273d70d8b1cf565274567e1	1
+35587114218	Slack Commit Notification	push	main	completed	failure	2026-09-21T10:08:19Z	2026-09-21T10:08:23Z	2026-09-21T10:08:19Z	3016317a915f6086e273d70d8b1cf565274567e1	1
+35587108117	Backend CI/CD	pull_request	fix/posting-cache-production	completed	success	2026-09-21T10:08:15Z	2026-09-22T03:32:13Z	2026-09-22T03:25:45Z	825040508a6ad9c995d02123591d458e273bd31e	2
+35587078063	Slack Commit Notification	push	fix/posting-cache-production	completed	failure	2026-09-21T10:07:57Z	2026-09-21T10:08:02Z	2026-09-21T10:07:57Z	825040508a6ad9c995d02123591d458e273bd31e	1
+35442565662	Backend CI/CD	push	main	completed	success	2026-09-19T12:20:14Z	2026-09-19T12:29:21Z	2026-09-19T12:20:14Z	de6257a25971342313c722dd47057719a53b99d1	1
+35442565661	Slack Commit Notification	push	main	completed	success	2026-09-19T12:20:14Z	2026-09-19T12:20:22Z	2026-09-19T12:20:14Z	de6257a25971342313c722dd47057719a53b99d1	1
+35442368359	Backend CI/CD	pull_request	feat/posting-cache	completed	success	2026-09-19T12:15:58Z	2026-09-19T12:22:29Z	2026-09-19T12:15:58Z	491f32584962e4123d73aeea92019e003139a153	1
+35442367721	Slack Commit Notification	push	feat/posting-cache	completed	success	2026-09-19T12:15:57Z	2026-09-19T12:16:04Z	2026-09-19T12:15:57Z	491f32584962e4123d73aeea92019e003139a153	1
+35421653564	Backend CI/CD	pull_request	feat/posting-cache	completed	failure	2026-09-19T04:34:29Z	2026-09-19T04:40:16Z	2026-09-19T04:34:29Z	98a0c2a2f6513198c1192ddf546fe4395327ce5e	1
+35421630926	Slack Commit Notification	push	feat/posting-cache	completed	success	2026-09-19T04:33:58Z	2026-09-19T04:34:07Z	2026-09-19T04:33:58Z	98a0c2a2f6513198c1192ddf546fe4395327ce5e	1
+35301670427	Slack Commit Notification	push	feat/career-studio	completed	success	2026-09-18T03:02:22Z	2026-09-18T03:02:30Z	2026-09-18T03:02:22Z	490fb4febd0e25cb28799a8f6c32f53f5c7ef24f	1
+35240831545	Backend CI/CD	push	prod	completed	success	2026-09-17T15:31:45Z	2026-09-17T15:44:54Z	2026-09-17T15:31:45Z	08abfcb1b4633cfbb99eb87cd89e517d16710a45	1
+35240831528	Slack Commit Notification	push	prod	completed	success	2026-09-17T15:31:45Z	2026-09-17T15:31:55Z	2026-09-17T15:31:45Z	08abfcb1b4633cfbb99eb87cd89e517d16710a45	1
+35240719249	Production promotion source	pull_request_target	staging	completed	success	2026-09-17T15:30:44Z	2026-09-17T15:30:58Z	2026-09-17T15:30:44Z	737319d501b1fb23c62230582bd3bb06af82256e	1
+35240719020	Backend CI/CD	pull_request	staging	completed	success	2026-09-17T15:30:43Z	2026-09-17T15:36:11Z	2026-09-17T15:30:43Z	737319d501b1fb23c62230582bd3bb06af82256e	1
+35240629389	Slack Commit Notification	push	staging	completed	success	2026-09-17T15:29:58Z	2026-09-17T15:30:07Z	2026-09-17T15:29:58Z	737319d501b1fb23c62230582bd3bb06af82256e	1
+35238123617	Slack Commit Notification	push	main	completed	success	2026-09-17T15:07:10Z	2026-09-17T15:07:54Z	2026-09-17T15:07:10Z	73b48774e32c8d2e3e28e1a0cc4a26459aa6d59e	1
+35238123573	Backend CI/CD	push	main	completed	success	2026-09-17T15:07:10Z	2026-09-17T15:16:39Z	2026-09-17T15:07:10Z	73b48774e32c8d2e3e28e1a0cc4a26459aa6d59e	1
+35234975124	Backend CI/CD	push	main	completed	success	2026-09-17T14:38:56Z	2026-09-17T14:48:11Z	2026-09-17T14:38:56Z	915dbf96e85a7a83406077daace6dbe652daa6d1	1
+35234975083	Slack Commit Notification	push	main	completed	success	2026-09-17T14:38:56Z	2026-09-17T14:39:06Z	2026-09-17T14:38:56Z	915dbf96e85a7a83406077daace6dbe652daa6d1	1
+35234094883	Backend CI/CD	pull_request	feat/corporate-logos	completed	success	2026-09-17T14:31:06Z	2026-09-17T14:37:03Z	2026-09-17T14:31:06Z	6e1eb2f798a884376104e3e24485b92bf3e8e85e	1
+35234087349	Slack Commit Notification	push	feat/corporate-logos	completed	success	2026-09-17T14:31:01Z	2026-09-17T14:31:09Z	2026-09-17T14:31:01Z	6e1eb2f798a884376104e3e24485b92bf3e8e85e	1
+35232119865	Backend CI/CD	push	main	completed	success	2026-09-17T14:13:19Z	2026-09-17T14:22:16Z	2026-09-17T14:13:19Z	abd6a0662cac71f560b5af55568908318c2eb687	1
+35232119510	Slack Commit Notification	push	main	completed	success	2026-09-17T14:13:19Z	2026-09-17T14:13:26Z	2026-09-17T14:13:19Z	abd6a0662cac71f560b5af55568908318c2eb687	1
+35231123751	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-17T14:04:07Z	2026-09-17T14:04:16Z	2026-09-17T14:04:07Z	917876fbf3c58728290f6ea4b7281ca4579b887b	1
+35228612522	Backend CI/CD	workflow_dispatch	main	completed	success	2026-09-17T13:40:55Z	2026-09-17T13:48:22Z	2026-09-17T13:40:55Z	65b77eb760f119bc276d012f145fc054270941c1	1
+35227338506	Slack Commit Notification	push	main	completed	success	2026-09-17T13:28:59Z	2026-09-17T13:29:06Z	2026-09-17T13:28:59Z	65b77eb760f119bc276d012f145fc054270941c1	1
+35227338390	Backend CI/CD	push	main	completed	success	2026-09-17T13:28:59Z	2026-09-17T13:40:16Z	2026-09-17T13:28:59Z	65b77eb760f119bc276d012f145fc054270941c1	1
+35226841313	Backend CI/CD	push	main	completed	success	2026-09-17T13:24:11Z	2026-09-17T13:33:45Z	2026-09-17T13:24:11Z	d31bb72620cbfd397ce3bfc8fa71a4ddbad0fc3d	1
+35226840965	Slack Commit Notification	push	main	completed	success	2026-09-17T13:24:11Z	2026-09-17T13:24:19Z	2026-09-17T13:24:11Z	d31bb72620cbfd397ce3bfc8fa71a4ddbad0fc3d	1
+35225650533	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-17T13:12:41Z	2026-09-17T13:12:50Z	2026-09-17T13:12:41Z	15b1275ae544dfaaf22877e30ef08d9031381030	1
+35197182910	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-17T07:58:05Z	2026-09-17T07:58:12Z	2026-09-17T07:58:05Z	54001a2296175cd74f9875025c428e77a9c878fb	1
+35197181082	Backend CI/CD	push	main	completed	success	2026-09-17T07:58:04Z	2026-09-17T08:04:19Z	2026-09-17T07:58:04Z	c9d8b0cf4bcad0548776f751930d416aab20a766	1
+35197181074	Slack Commit Notification	push	main	completed	success	2026-09-17T07:58:04Z	2026-09-17T07:58:11Z	2026-09-17T07:58:04Z	c9d8b0cf4bcad0548776f751930d416aab20a766	1
+35192416525	Slack Commit Notification	push	feat/career-studio	completed	success	2026-09-17T07:00:27Z	2026-09-17T07:00:37Z	2026-09-17T07:00:27Z	d1c8d4e5e67ca8f1cc2c8bb438d13e769600a192	1
+35188435992	Slack Commit Notification	push	prod	completed	success	2026-09-17T06:06:48Z	2026-09-17T06:07:13Z	2026-09-17T06:06:48Z	ac7f932c5176b4f3932c8921f2f1c25967362d40	1
+35188435984	Backend CI/CD	push	prod	completed	success	2026-09-17T06:06:48Z	2026-09-17T06:20:49Z	2026-09-17T06:06:48Z	ac7f932c5176b4f3932c8921f2f1c25967362d40	1
+35187965307	Production promotion source	pull_request_target	staging	completed	success	2026-09-17T06:00:18Z	2026-09-17T06:00:25Z	2026-09-17T06:00:18Z	115ee80b6fb330f2821846a19babdbe82d6689d7	1
+35187965201	Backend CI/CD	pull_request	staging	completed	success	2026-09-17T06:00:17Z	2026-09-17T06:06:03Z	2026-09-17T06:00:17Z	115ee80b6fb330f2821846a19babdbe82d6689d7	1
+35187959498	Slack Commit Notification	push	staging	completed	success	2026-09-17T06:00:13Z	2026-09-17T06:00:20Z	2026-09-17T06:00:13Z	115ee80b6fb330f2821846a19babdbe82d6689d7	1
+35187541449	Backend CI/CD	pull_request	main	completed	success	2026-09-17T05:53:47Z	2026-09-17T05:59:40Z	2026-09-17T05:53:47Z	ccc6ff94baa99cd1a6298094d4a3b2e99ab10457	1
+35167871455	Backend CI/CD	push	main	completed	success	2026-09-17T00:45:50Z	2026-09-17T04:03:33Z	2026-09-17T04:01:55Z	ccc6ff94baa99cd1a6298094d4a3b2e99ab10457	2
+35167871389	Slack Commit Notification	push	main	completed	success	2026-09-17T00:45:50Z	2026-09-17T00:45:58Z	2026-09-17T00:45:50Z	ccc6ff94baa99cd1a6298094d4a3b2e99ab10457	1
+35167029456	Backend CI/CD	push	main	completed	failure	2026-09-17T00:33:16Z	2026-09-17T00:36:34Z	2026-09-17T00:33:16Z	02282e5c67b8fda9401ae1d343503df84f357bc5	1
+35167029435	Slack Commit Notification	push	main	completed	success	2026-09-17T00:33:16Z	2026-09-17T00:33:24Z	2026-09-17T00:33:16Z	02282e5c67b8fda9401ae1d343503df84f357bc5	1
+35166309774	Slack Commit Notification	push	main	completed	success	2026-09-17T00:22:45Z	2026-09-17T00:22:53Z	2026-09-17T00:22:45Z	7a29c3f311171f71df5ad042a5df332c7a20fbad	1
+35166309664	Backend CI/CD	push	main	completed	failure	2026-09-17T00:22:45Z	2026-09-17T00:27:50Z	2026-09-17T00:22:45Z	7a29c3f311171f71df5ad042a5df332c7a20fbad	1
+35095011166	Backend CI/CD	push	prod	completed	success	2026-09-16T12:17:58Z	2026-09-16T17:13:50Z	2026-09-16T17:08:00Z	98ebb0f33017cdaddbb8757eed6049b162fd3143	2
+35095011164	Slack Commit Notification	push	prod	completed	success	2026-09-16T12:17:58Z	2026-09-16T12:18:06Z	2026-09-16T12:17:58Z	98ebb0f33017cdaddbb8757eed6049b162fd3143	1
+35094956492	Production promotion source	pull_request_target	staging	completed	success	2026-09-16T12:17:21Z	2026-09-16T12:17:28Z	2026-09-16T12:17:21Z	641897a50838809eba02100349a4dd6c6b01673d	1
+35094956414	Backend CI/CD	pull_request	staging	completed	failure	2026-09-16T12:17:21Z	2026-09-16T12:22:26Z	2026-09-16T12:17:21Z	641897a50838809eba02100349a4dd6c6b01673d	1
+35094929385	Slack Commit Notification	push	staging	completed	success	2026-09-16T12:17:04Z	2026-09-16T12:17:12Z	2026-09-16T12:17:04Z	641897a50838809eba02100349a4dd6c6b01673d	1
+35094900318	Backend CI/CD	pull_request	main	completed	failure	2026-09-16T12:16:46Z	2026-09-16T12:21:47Z	2026-09-16T12:16:46Z	c48087a7fb6b69cf62eb84ab9f54274d7a1aad86	1
+35094168459	Backend CI/CD	push	main	completed	failure	2026-09-16T12:08:57Z	2026-09-16T12:23:21Z	2026-09-16T12:08:57Z	c48087a7fb6b69cf62eb84ab9f54274d7a1aad86	1
+35094168438	Slack Commit Notification	push	main	completed	success	2026-09-16T12:08:57Z	2026-09-16T12:09:05Z	2026-09-16T12:08:57Z	c48087a7fb6b69cf62eb84ab9f54274d7a1aad86	1
+35094147240	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-16T12:08:43Z	2026-09-16T12:08:50Z	2026-09-16T12:08:43Z	c48087a7fb6b69cf62eb84ab9f54274d7a1aad86	1
+35091700849	Slack Commit Notification	push	prod	completed	success	2026-09-16T11:41:49Z	2026-09-16T11:41:55Z	2026-09-16T11:41:49Z	5c9c2c4e8b71ffb66025b3be194a5854deed991e	1
+35091700715	Backend CI/CD	push	prod	completed	success	2026-09-16T11:41:49Z	2026-09-16T11:53:43Z	2026-09-16T11:41:49Z	5c9c2c4e8b71ffb66025b3be194a5854deed991e	1
+35090495465	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-16T11:28:25Z	2026-09-16T11:28:34Z	2026-09-16T11:28:25Z	079d8a7cb0c784fe0820dea2f0b74e7b4fdda3e9	1
+35090470028	Slack Commit Notification	push	main	completed	success	2026-09-16T11:28:07Z	2026-09-16T11:28:15Z	2026-09-16T11:28:07Z	079d8a7cb0c784fe0820dea2f0b74e7b4fdda3e9	1
+35090469916	Backend CI/CD	push	main	completed	failure	2026-09-16T11:28:07Z	2026-09-16T11:33:37Z	2026-09-16T11:28:07Z	079d8a7cb0c784fe0820dea2f0b74e7b4fdda3e9	1
+35090409443	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-16T11:27:27Z	2026-09-16T11:27:36Z	2026-09-16T11:27:27Z	feadae2432b5464489a5d69ee194a6f1ff7ede16	1
+35063067376	Backend CI/CD	pull_request	staging	completed	success	2026-09-16T06:17:41Z	2026-09-16T06:22:26Z	2026-09-16T06:17:41Z	d5eea9c729a47a8c79d732808585ec74b0dfd316	1
+35063065570	Production promotion source	pull_request_target	staging	completed	success	2026-09-16T06:17:40Z	2026-09-16T06:17:48Z	2026-09-16T06:17:40Z	d5eea9c729a47a8c79d732808585ec74b0dfd316	1
+35063064058	Slack Commit Notification	push	staging	completed	success	2026-09-16T06:17:39Z	2026-09-16T06:17:45Z	2026-09-16T06:17:39Z	d5eea9c729a47a8c79d732808585ec74b0dfd316	1
+35062982869	Backend CI/CD	push	main	completed	failure	2026-09-16T06:16:31Z	2026-09-16T06:21:31Z	2026-09-16T06:16:31Z	78e365c00b29a60efd38ecc530bd87a7dc009b81	1
+35062982851	Slack Commit Notification	push	main	completed	success	2026-09-16T06:16:31Z	2026-09-16T06:16:38Z	2026-09-16T06:16:31Z	78e365c00b29a60efd38ecc530bd87a7dc009b81	1
+35062087427	Production promotion source	pull_request_target	staging	completed	success	2026-09-16T06:04:18Z	2026-09-16T06:04:25Z	2026-09-16T06:04:18Z	7399ff1889c65fa7a3e4f6d4b0244afdbc527efd	1
+35062087233	Backend CI/CD	pull_request	staging	completed	success	2026-09-16T06:04:18Z	2026-09-16T06:09:16Z	2026-09-16T06:04:18Z	7399ff1889c65fa7a3e4f6d4b0244afdbc527efd	1
+35062051957	Slack Commit Notification	push	fix/keep-login-and-private-scope	completed	success	2026-09-16T06:03:48Z	2026-09-16T06:03:56Z	2026-09-16T06:03:48Z	bc81b0dada9c612738afb3f641034bffc6cfa194	1
+35062049118	Backend CI/CD	push	main	completed	failure	2026-09-16T06:03:45Z	2026-09-16T06:08:28Z	2026-09-16T06:03:45Z	2acae63906e46209dd1bb0c02c1f1596703ca93c	1
+35062048998	Slack Commit Notification	push	main	completed	success	2026-09-16T06:03:45Z	2026-09-16T06:03:53Z	2026-09-16T06:03:45Z	2acae63906e46209dd1bb0c02c1f1596703ca93c	1
+35062047783	Slack Commit Notification	push	staging	completed	success	2026-09-16T06:03:44Z	2026-09-16T06:03:51Z	2026-09-16T06:03:44Z	7399ff1889c65fa7a3e4f6d4b0244afdbc527efd	1
+35050319028	Backend CI/CD	push	prod	completed	success	2026-09-16T03:03:11Z	2026-09-16T03:16:14Z	2026-09-16T03:03:11Z	7cd37aa3e447f0c36c2c445b26bb7d561c5bcf1f	1
+35050319003	Slack Commit Notification	push	prod	completed	success	2026-09-16T03:03:11Z	2026-09-16T03:03:20Z	2026-09-16T03:03:11Z	7cd37aa3e447f0c36c2c445b26bb7d561c5bcf1f	1
+35049776249	Production promotion source	pull_request_target	staging	completed	success	2026-09-16T02:54:27Z	2026-09-16T02:55:43Z	2026-09-16T02:54:27Z	8a8571a9989b9bc00ca8cde9b91b749f761a4c2b	1
+35049775883	Backend CI/CD	pull_request	staging	completed	success	2026-09-16T02:54:27Z	2026-09-16T02:58:18Z	2026-09-16T02:54:27Z	8a8571a9989b9bc00ca8cde9b91b749f761a4c2b	1
+35049697762	Slack Commit Notification	push	staging	completed	success	2026-09-16T02:53:12Z	2026-09-16T02:53:54Z	2026-09-16T02:53:12Z	8a8571a9989b9bc00ca8cde9b91b749f761a4c2b	1
+35036167567	Slack Commit Notification	push	release/posting-mobile	completed	success	2026-09-15T23:33:06Z	2026-09-15T23:33:14Z	2026-09-15T23:33:06Z	8a8571a9989b9bc00ca8cde9b91b749f761a4c2b	1
+35031208994	Slack Commit Notification	push	staging	completed	success	2026-09-15T22:29:18Z	2026-09-15T22:30:02Z	2026-09-15T22:29:18Z	0a83ccbfdb0127c81b977dcb20e4858c5de4c850	1
+35030959579	Backend CI/CD	push	main	completed	failure	2026-09-15T22:26:17Z	2026-09-15T22:39:50Z	2026-09-15T22:26:17Z	7890272a918d539a3da2bd5e028dbd57f30386c0	1
+35030959471	Slack Commit Notification	push	main	completed	success	2026-09-15T22:26:17Z	2026-09-15T22:26:23Z	2026-09-15T22:26:17Z	7890272a918d539a3da2bd5e028dbd57f30386c0	1
+34943511012	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-15T07:47:31Z	2026-09-15T07:47:37Z	2026-09-15T07:47:31Z	bef159bca752322c9f26f902457dd0ce9cf36fa9	1
+34943507880	Backend CI/CD	push	main	completed	failure	2026-09-15T07:47:29Z	2026-09-15T07:50:43Z	2026-09-15T07:47:29Z	bef159bca752322c9f26f902457dd0ce9cf36fa9	1
+34943507870	Slack Commit Notification	push	main	completed	success	2026-09-15T07:47:29Z	2026-09-15T07:47:37Z	2026-09-15T07:47:29Z	bef159bca752322c9f26f902457dd0ce9cf36fa9	1
+34938649859	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-15T06:48:57Z	2026-09-15T06:49:04Z	2026-09-15T06:48:57Z	a58f6131fec805be05fa0a73bb8d40df58b52bfe	1
+34908439725	Slack Commit Notification	push	main	completed	success	2026-09-14T23:20:53Z	2026-09-14T23:20:59Z	2026-09-14T23:20:53Z	aab340292dd8da34ab9995ca263360abdd62fca9	1
+34908439693	Backend CI/CD	push	main	completed	failure	2026-09-14T23:20:53Z	2026-09-14T23:33:54Z	2026-09-14T23:20:53Z	aab340292dd8da34ab9995ca263360abdd62fca9	1
+34883292423	Backend CI/CD	push	main	completed	failure	2026-09-14T18:50:50Z	2026-09-14T19:05:57Z	2026-09-14T18:50:50Z	d94c3a4d6e89f32cdd53db597416eb569d1f346a	1
+34883292392	Slack Commit Notification	push	main	completed	success	2026-09-14T18:50:50Z	2026-09-14T18:50:58Z	2026-09-14T18:50:50Z	d94c3a4d6e89f32cdd53db597416eb569d1f346a	1
+34883289536	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-14T18:50:48Z	2026-09-14T18:50:56Z	2026-09-14T18:50:48Z	d94c3a4d6e89f32cdd53db597416eb569d1f346a	1
+34882079242	Backend CI/CD	push	main	completed	failure	2026-09-14T18:38:55Z	2026-09-14T18:44:37Z	2026-09-14T18:38:55Z	24ca43a46a7cbc95491ea5283c8db920f7699989	1
+34882079087	Slack Commit Notification	push	main	completed	success	2026-09-14T18:38:55Z	2026-09-14T18:39:03Z	2026-09-14T18:38:55Z	24ca43a46a7cbc95491ea5283c8db920f7699989	1
+34882074957	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-14T18:38:53Z	2026-09-14T18:39:00Z	2026-09-14T18:38:53Z	24ca43a46a7cbc95491ea5283c8db920f7699989	1
+34880638137	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-14T18:24:50Z	2026-09-14T18:24:57Z	2026-09-14T18:24:50Z	7067d0d3df5bb9c4aa5a12ebde7d3d2a655757da	1
+34880599214	Backend CI/CD	push	main	completed	failure	2026-09-14T18:24:27Z	2026-09-14T18:30:08Z	2026-09-14T18:24:27Z	7067d0d3df5bb9c4aa5a12ebde7d3d2a655757da	1
+34880599209	Slack Commit Notification	push	main	completed	success	2026-09-14T18:24:27Z	2026-09-14T18:24:36Z	2026-09-14T18:24:27Z	7067d0d3df5bb9c4aa5a12ebde7d3d2a655757da	1
+34880076865	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-14T18:19:15Z	2026-09-14T18:19:22Z	2026-09-14T18:19:15Z	bedb8471faac8577c28b0b6e2e1d04f43de5b80f	1
+34862799181	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-14T15:32:16Z	2026-09-14T15:32:25Z	2026-09-14T15:32:16Z	368082e874dae9cbb7b266e135ff8db54b3044d7	1
+34853186068	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-14T14:04:06Z	2026-09-14T14:04:14Z	2026-09-14T14:04:06Z	30bf842a8fedeb1f7632237f3c869a9d9dee963f	1
+34846482830	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-14T12:59:18Z	2026-09-14T12:59:26Z	2026-09-14T12:59:18Z	18cfb2e2b69e893aea199ebce0698f8b6ef156a5	1
+34835776768	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-14T10:58:01Z	2026-09-14T10:58:10Z	2026-09-14T10:58:01Z	4dedc9bbe4b6272d7914dad91fd204f7e999d33f	1
+34814315813	Backend CI/CD	push	main	completed	success	2026-09-14T06:38:25Z	2026-09-14T06:46:46Z	2026-09-14T06:38:25Z	1df46759165f32934ebeeeb560611cf1e206ac40	1
+34814315807	Slack Commit Notification	push	main	completed	success	2026-09-14T06:38:25Z	2026-09-14T06:38:34Z	2026-09-14T06:38:25Z	1df46759165f32934ebeeeb560611cf1e206ac40	1
+34814313988	Slack Commit Notification	push	fix/mock-interview-question-count	completed	success	2026-09-14T06:38:24Z	2026-09-14T06:38:32Z	2026-09-14T06:38:24Z	1df46759165f32934ebeeeb560611cf1e206ac40	1
+34813480306	Slack Commit Notification	push	prod	completed	success	2026-09-14T06:26:23Z	2026-09-14T06:26:29Z	2026-09-14T06:26:23Z	3a08a745ab82476a17a63284163ea75943f17cd2	1
+34813480256	Backend CI/CD	push	prod	completed	success	2026-09-14T06:26:23Z	2026-09-14T06:39:27Z	2026-09-14T06:26:23Z	3a08a745ab82476a17a63284163ea75943f17cd2	1
+34813081116	Production promotion source	pull_request_target	staging	completed	success	2026-09-14T06:20:54Z	2026-09-14T06:21:04Z	2026-09-14T06:20:54Z	ff0c8566707a42a60c96b759af0527296e7bfd96	1
+34813081086	Backend CI/CD	pull_request	staging	completed	success	2026-09-14T06:20:54Z	2026-09-14T06:25:24Z	2026-09-14T06:20:54Z	ff0c8566707a42a60c96b759af0527296e7bfd96	1
+34813076039	Slack Commit Notification	push	staging	completed	success	2026-09-14T06:20:50Z	2026-09-14T06:20:57Z	2026-09-14T06:20:50Z	ff0c8566707a42a60c96b759af0527296e7bfd96	1
+34812611834	Backend CI/CD	pull_request	main	completed	success	2026-09-14T06:14:26Z	2026-09-14T06:19:18Z	2026-09-14T06:14:26Z	bc8bcdfd095b4d5eeaaa57ed1b2354d5baee425a	1
+34812521868	Backend CI/CD	push	main	completed	success	2026-09-14T06:13:08Z	2026-09-14T06:21:42Z	2026-09-14T06:13:08Z	bc8bcdfd095b4d5eeaaa57ed1b2354d5baee425a	1
+34812521812	Slack Commit Notification	push	main	completed	success	2026-09-14T06:13:08Z	2026-09-14T06:13:16Z	2026-09-14T06:13:08Z	bc8bcdfd095b4d5eeaaa57ed1b2354d5baee425a	1
+34676264888	Backend CI/CD	push	prod	completed	success	2026-09-12T05:42:23Z	2026-09-12T05:54:07Z	2026-09-12T05:42:23Z	7732ac69f46ca7aa3eb641e115d4f8bbbb8ebb4b	1
+34676264878	Slack Commit Notification	push	prod	completed	success	2026-09-12T05:42:23Z	2026-09-12T05:42:29Z	2026-09-12T05:42:23Z	7732ac69f46ca7aa3eb641e115d4f8bbbb8ebb4b	1
+34676046233	Backend CI/CD	pull_request	staging	completed	success	2026-09-12T05:37:13Z	2026-09-12T05:41:16Z	2026-09-12T05:37:13Z	76a0b4851c3d86e6532ae8071e3ad35a36a2f2cb	1
+34676045032	Production promotion source	pull_request_target	staging	completed	success	2026-09-12T05:37:11Z	2026-09-12T05:37:19Z	2026-09-12T05:37:11Z	76a0b4851c3d86e6532ae8071e3ad35a36a2f2cb	1
+34676044013	Slack Commit Notification	push	staging	completed	success	2026-09-12T05:37:10Z	2026-09-12T05:37:16Z	2026-09-12T05:37:10Z	76a0b4851c3d86e6532ae8071e3ad35a36a2f2cb	1
+34676032364	Slack Commit Notification	push	main	completed	success	2026-09-12T05:36:56Z	2026-09-12T05:37:03Z	2026-09-12T05:36:56Z	abcbc250dfbb700f076559b38a120e8bea0e72c0	1
+34676032356	Backend CI/CD	push	main	completed	success	2026-09-12T05:36:56Z	2026-09-12T05:45:38Z	2026-09-12T05:36:56Z	abcbc250dfbb700f076559b38a120e8bea0e72c0	1
+34636019103	Backend CI/CD	push	main	completed	success	2026-09-11T18:55:39Z	2026-09-11T19:11:40Z	2026-09-11T19:10:00Z	1182f583c65147bd3bb73ee4c00247200c8fce74	3
+34636019100	Slack Commit Notification	push	main	completed	success	2026-09-11T18:55:39Z	2026-09-11T18:55:48Z	2026-09-11T18:55:39Z	1182f583c65147bd3bb73ee4c00247200c8fce74	1
+34601159035	Slack Commit Notification	push	main	completed	success	2026-09-11T12:52:08Z	2026-09-11T12:52:14Z	2026-09-11T12:52:08Z	d46fb3ca01e30852ad5402a2de41026036081d32	1
+34601158919	Backend CI/CD	push	main	completed	success	2026-09-11T12:52:07Z	2026-09-11T13:03:14Z	2026-09-11T12:52:07Z	d46fb3ca01e30852ad5402a2de41026036081d32	1
+34322416976	Production promotion source	pull_request_target	staging	completed	success	2026-09-09T07:09:09Z	2026-09-09T07:09:21Z	2026-09-09T07:09:09Z	21a8f6c137132e1e4d9bbe598c013127aad48a58	1
+34322416496	Backend CI/CD	pull_request	staging	completed	failure	2026-09-09T07:09:08Z	2026-09-09T07:12:29Z	2026-09-09T07:09:08Z	21a8f6c137132e1e4d9bbe598c013127aad48a58	1
+34321719016	Slack Commit Notification	push	staging	completed	success	2026-09-09T07:00:37Z	2026-09-09T07:00:45Z	2026-09-09T07:00:37Z	21a8f6c137132e1e4d9bbe598c013127aad48a58	1
+34321679075	Slack Commit Notification	push	main	completed	success	2026-09-09T07:00:11Z	2026-09-09T07:00:20Z	2026-09-09T07:00:11Z	f3d665c078140937e2377d7d5d8b073453378b06	1
+34321679001	Backend CI/CD	push	main	completed	failure	2026-09-09T07:00:11Z	2026-09-09T07:04:19Z	2026-09-09T07:00:11Z	f3d665c078140937e2377d7d5d8b073453378b06	1
+34318786928	Slack Commit Notification	push	feat/career-studio	completed	success	2026-09-09T06:22:45Z	2026-09-09T06:22:54Z	2026-09-09T06:22:45Z	d20e384e3e2627912bfa09f64057228b7686da2d	1
+34293635104	Backend CI/CD	push	main	completed	success	2026-09-09T00:07:23Z	2026-09-09T00:15:18Z	2026-09-09T00:07:23Z	efb1fbd182c8a773e4f45c2b9406daaf38d43f59	1
+34293635091	Slack Commit Notification	push	main	completed	success	2026-09-09T00:07:23Z	2026-09-09T00:07:31Z	2026-09-09T00:07:23Z	efb1fbd182c8a773e4f45c2b9406daaf38d43f59	1
+34250201214	Backend CI/CD	push	prod	completed	success	2026-09-08T16:18:02Z	2026-09-08T16:29:42Z	2026-09-08T16:18:02Z	6cf2a7e3ba99769f2a39c3fd0d6ac2976554596f	1
+34250201154	Slack Commit Notification	push	prod	completed	success	2026-09-08T16:18:02Z	2026-09-08T16:18:14Z	2026-09-08T16:18:02Z	6cf2a7e3ba99769f2a39c3fd0d6ac2976554596f	1
+34250184674	Production promotion source	pull_request_target	staging	completed	success	2026-09-08T16:17:52Z	2026-09-08T16:18:07Z	2026-09-08T16:17:52Z	051732db81dd132190ba668492cf9bf2fcabd4be	1
+34250184478	Backend CI/CD	pull_request	staging	completed	success	2026-09-08T16:17:52Z	2026-09-08T16:22:21Z	2026-09-08T16:17:52Z	051732db81dd132190ba668492cf9bf2fcabd4be	1
+34250177213	Slack Commit Notification	push	staging	completed	success	2026-09-08T16:17:48Z	2026-09-08T16:18:04Z	2026-09-08T16:17:48Z	051732db81dd132190ba668492cf9bf2fcabd4be	1
+34250057068	Backend CI/CD	pull_request	main	completed	success	2026-09-08T16:16:36Z	2026-09-08T16:20:48Z	2026-09-08T16:16:36Z	d5fe7c87ea186dc8d5891eca6f3886032c83c494	1
+34246756997	Backend CI/CD	push	main	completed	success	2026-09-08T15:45:03Z	2026-09-08T15:53:15Z	2026-09-08T15:45:03Z	d5fe7c87ea186dc8d5891eca6f3886032c83c494	1
+34246756992	Slack Commit Notification	push	main	completed	success	2026-09-08T15:45:03Z	2026-09-08T15:45:13Z	2026-09-08T15:45:03Z	d5fe7c87ea186dc8d5891eca6f3886032c83c494	1
+34241123988	Backend CI/CD	push	main	completed	success	2026-09-08T14:52:47Z	2026-09-08T15:01:37Z	2026-09-08T14:52:47Z	8aa7bfa6ccf1c5c4493f6d6c9547dd0591e6207e	1
+34241123927	Slack Commit Notification	push	main	completed	success	2026-09-08T14:52:47Z	2026-09-08T14:52:57Z	2026-09-08T14:52:47Z	8aa7bfa6ccf1c5c4493f6d6c9547dd0591e6207e	1
+34199014431	Slack Commit Notification	push	feature/STT-Quiz	completed	success	2026-09-08T07:22:38Z	2026-09-08T07:22:45Z	2026-09-08T07:22:38Z	9cf0e6eeeb32788b031e7874a0bf6a64aff6b833	1
+34181243695	Backend CI/CD	push	main	completed	success	2026-09-08T02:47:01Z	2026-09-08T02:54:37Z	2026-09-08T02:47:01Z	9cf0e6eeeb32788b031e7874a0bf6a64aff6b833	1
+34181243686	Slack Commit Notification	push	main	completed	success	2026-09-08T02:47:01Z	2026-09-08T02:47:07Z	2026-09-08T02:47:01Z	9cf0e6eeeb32788b031e7874a0bf6a64aff6b833	1
+34177426561	Slack Commit Notification	push	main	completed	success	2026-09-08T01:40:17Z	2026-09-08T01:40:25Z	2026-09-08T01:40:17Z	a66ec3e281f7e479be080fc948cafc8157d4f18e	1
+34177426547	Backend CI/CD	push	main	completed	success	2026-09-08T01:40:17Z	2026-09-08T01:49:51Z	2026-09-08T01:40:17Z	a66ec3e281f7e479be080fc948cafc8157d4f18e	1
+34119099585	Backend CI/CD	push	prod	completed	success	2026-09-07T11:55:19Z	2026-09-07T12:06:25Z	2026-09-07T11:55:19Z	9a808a20da4318e0b35aea53e8992da3f74a1beb	1
+34119099526	Slack Commit Notification	push	prod	completed	success	2026-09-07T11:55:19Z	2026-09-07T11:55:28Z	2026-09-07T11:55:19Z	9a808a20da4318e0b35aea53e8992da3f74a1beb	1
+34118733655	Backend CI/CD	pull_request	staging	completed	success	2026-09-07T11:51:02Z	2026-09-07T11:54:49Z	2026-09-07T11:51:02Z	fd163ee26c42ee03e03cf00e6e705ec49b4934d1	1
+34118732675	Production promotion source	pull_request_target	staging	completed	success	2026-09-07T11:51:01Z	2026-09-07T11:51:10Z	2026-09-07T11:51:01Z	fd163ee26c42ee03e03cf00e6e705ec49b4934d1	1
+34118728246	Slack Commit Notification	push	staging	completed	success	2026-09-07T11:50:58Z	2026-09-07T11:51:05Z	2026-09-07T11:50:58Z	fd163ee26c42ee03e03cf00e6e705ec49b4934d1	1
+34118340084	Backend CI/CD	pull_request	main	completed	success	2026-09-07T11:46:25Z	2026-09-07T11:50:19Z	2026-09-07T11:46:25Z	c5a3ac73c870dc05f79f601704c48adc35a05408	1
+34118312848	Backend CI/CD	push	main	completed	success	2026-09-07T11:46:05Z	2026-09-07T11:54:10Z	2026-09-07T11:46:05Z	c5a3ac73c870dc05f79f601704c48adc35a05408	1
+34118312790	Slack Commit Notification	push	main	completed	success	2026-09-07T11:46:05Z	2026-09-07T11:46:14Z	2026-09-07T11:46:05Z	c5a3ac73c870dc05f79f601704c48adc35a05408	1
+34079144785	Slack Commit Notification	push	main	completed	success	2026-09-07T03:17:16Z	2026-09-07T03:17:23Z	2026-09-07T03:17:16Z	18378f18abbfe3fa890a7bfae291067011b35666	1
+34079144701	Backend CI/CD	push	main	completed	success	2026-09-07T03:17:16Z	2026-09-07T03:24:39Z	2026-09-07T03:17:16Z	18378f18abbfe3fa890a7bfae291067011b35666	1
+34015727438	Backend CI/CD	push	prod	completed	success	2026-09-06T06:08:30Z	2026-09-06T06:20:23Z	2026-09-06T06:08:30Z	4d6dd94fe31897483bb65c817d21b1af57b60e54	1
+34015727392	Slack Commit Notification	push	prod	completed	success	2026-09-06T06:08:30Z	2026-09-06T06:08:37Z	2026-09-06T06:08:30Z	4d6dd94fe31897483bb65c817d21b1af57b60e54	1
+34015551460	Backend CI/CD	pull_request	staging	completed	success	2026-09-06T06:04:21Z	2026-09-06T06:08:18Z	2026-09-06T06:04:21Z	edc3d86b6e013d2d7fe74df5dcd84fc66a3ae61d	1
+34015551413	Production promotion source	pull_request_target	staging	completed	success	2026-09-06T06:04:21Z	2026-09-06T06:04:30Z	2026-09-06T06:04:21Z	edc3d86b6e013d2d7fe74df5dcd84fc66a3ae61d	1
+34015534759	Slack Commit Notification	push	staging	completed	success	2026-09-06T06:04:00Z	2026-09-06T06:04:10Z	2026-09-06T06:04:00Z	edc3d86b6e013d2d7fe74df5dcd84fc66a3ae61d	1
+34015331911	Backend CI/CD	pull_request	main	completed	success	2026-09-06T05:59:26Z	2026-09-06T06:03:23Z	2026-09-06T05:59:26Z	6ec7decc25c8e71d37a433c26569aca377d32792	1
+34015319447	Slack Commit Notification	push	main	completed	success	2026-09-06T05:59:04Z	2026-09-06T05:59:13Z	2026-09-06T05:59:04Z	6ec7decc25c8e71d37a433c26569aca377d32792	1
+34015319425	Backend CI/CD	push	main	completed	success	2026-09-06T05:59:04Z	2026-09-06T06:06:09Z	2026-09-06T05:59:04Z	6ec7decc25c8e71d37a433c26569aca377d32792	1
+34014698409	Slack Commit Notification	push	prod	completed	success	2026-09-06T05:43:42Z	2026-09-06T05:43:51Z	2026-09-06T05:43:42Z	1b74e71a027e2b8b67ca0a2878f3253778914297	1
+34014698406	Backend CI/CD	push	prod	completed	success	2026-09-06T05:43:42Z	2026-09-06T05:54:01Z	2026-09-06T05:43:42Z	1b74e71a027e2b8b67ca0a2878f3253778914297	1
+34014527394	Production promotion source	pull_request_target	staging	completed	success	2026-09-06T05:39:27Z	2026-09-06T05:39:34Z	2026-09-06T05:39:27Z	910da9b7a02e543ba715957f982d0d6d5f0f4cdc	1
+34014527319	Backend CI/CD	pull_request	staging	completed	success	2026-09-06T05:39:27Z	2026-09-06T05:43:22Z	2026-09-06T05:39:27Z	910da9b7a02e543ba715957f982d0d6d5f0f4cdc	1
+34014502594	Slack Commit Notification	push	staging	completed	success	2026-09-06T05:38:49Z	2026-09-06T05:38:58Z	2026-09-06T05:38:49Z	910da9b7a02e543ba715957f982d0d6d5f0f4cdc	1
+34013938647	Backend CI/CD	pull_request	main	completed	success	2026-09-06T05:25:18Z	2026-09-06T05:29:08Z	2026-09-06T05:25:18Z	a757fd68048d3322ee2e8cf440af6d3078f63b53	1
+34013091789	Backend CI/CD	push	main	completed	success	2026-09-06T05:05:01Z	2026-09-06T05:12:22Z	2026-09-06T05:05:01Z	a757fd68048d3322ee2e8cf440af6d3078f63b53	1
+34013091643	Slack Commit Notification	push	main	completed	success	2026-09-06T05:05:01Z	2026-09-06T05:05:09Z	2026-09-06T05:05:01Z	a757fd68048d3322ee2e8cf440af6d3078f63b53	1
+34012828899	Backend CI/CD	push	main	completed	failure	2026-09-06T04:58:46Z	2026-09-06T05:02:36Z	2026-09-06T04:58:46Z	08639f8f4f70e3885b3350fa56fc6b63fc48068f	1
+34012828878	Slack Commit Notification	push	main	completed	success	2026-09-06T04:58:46Z	2026-09-06T04:58:55Z	2026-09-06T04:58:46Z	08639f8f4f70e3885b3350fa56fc6b63fc48068f	1
+34012796691	Backend CI/CD	pull_request	fix/nova-bedrock-pricing	completed	failure	2026-09-06T04:57:53Z	2026-09-06T05:01:13Z	2026-09-06T04:57:53Z	08639f8f4f70e3885b3350fa56fc6b63fc48068f	1
+34012788548	Slack Commit Notification	push	fix/nova-bedrock-pricing	completed	success	2026-09-06T04:57:40Z	2026-09-06T04:57:47Z	2026-09-06T04:57:40Z	08639f8f4f70e3885b3350fa56fc6b63fc48068f	1
+33892528537	Backend CI/CD	push	prod	completed	success	2026-09-04T15:58:36Z	2026-09-04T16:11:28Z	2026-09-04T15:58:36Z	5df7fffd94ba444f33c053ab91b46575a0faa5f0	1
+33892528470	Slack Commit Notification	push	prod	completed	success	2026-09-04T15:58:36Z	2026-09-04T15:58:45Z	2026-09-04T15:58:36Z	5df7fffd94ba444f33c053ab91b46575a0faa5f0	1
+33892077973	Production promotion source	pull_request_target	staging	completed	success	2026-09-04T15:53:42Z	2026-09-04T15:53:49Z	2026-09-04T15:53:42Z	252a7254bd78d93b8dbca329bcd3f56cc297b516	1
+33892077756	Backend CI/CD	pull_request	staging	completed	success	2026-09-04T15:53:42Z	2026-09-04T15:58:07Z	2026-09-04T15:53:42Z	252a7254bd78d93b8dbca329bcd3f56cc297b516	1
+33892035273	Slack Commit Notification	push	staging	completed	success	2026-09-04T15:53:13Z	2026-09-04T15:53:20Z	2026-09-04T15:53:13Z	252a7254bd78d93b8dbca329bcd3f56cc297b516	1
+33891603255	Backend CI/CD	pull_request	main	completed	success	2026-09-04T15:48:36Z	2026-09-04T15:52:38Z	2026-09-04T15:48:36Z	317aeb070aa209597d22d638b55120722b8f3199	1
+33890758298	Slack Commit Notification	push	main	completed	success	2026-09-04T15:39:44Z	2026-09-04T15:39:53Z	2026-09-04T15:39:44Z	317aeb070aa209597d22d638b55120722b8f3199	1
+33890758230	Backend CI/CD	push	main	completed	success	2026-09-04T15:39:44Z	2026-09-04T15:47:39Z	2026-09-04T15:39:44Z	317aeb070aa209597d22d638b55120722b8f3199	1
+33600665290	Backend CI/CD	push	prod	completed	success	2026-09-02T06:50:21Z	2026-09-02T07:02:05Z	2026-09-02T06:50:21Z	8d519b93aa8c8ea5d1869d0aaea9b0c1b8487a62	1
+33600665286	Slack Commit Notification	push	prod	completed	success	2026-09-02T06:50:21Z	2026-09-02T06:50:27Z	2026-09-02T06:50:21Z	8d519b93aa8c8ea5d1869d0aaea9b0c1b8487a62	1
+33599718226	Backend CI/CD	pull_request	staging	completed	success	2026-09-02T06:38:01Z	2026-09-02T06:42:24Z	2026-09-02T06:38:01Z	9820bb7020459ffb13fc18af5f646d09fea6db2d	1
+33599718221	Production promotion source	pull_request_target	staging	completed	success	2026-09-02T06:38:01Z	2026-09-02T06:38:10Z	2026-09-02T06:38:01Z	9820bb7020459ffb13fc18af5f646d09fea6db2d	1
+33599639665	Slack Commit Notification	push	staging	completed	success	2026-09-02T06:36:59Z	2026-09-02T06:37:06Z	2026-09-02T06:36:59Z	9820bb7020459ffb13fc18af5f646d09fea6db2d	1
+33599196861	Backend CI/CD	pull_request	main	completed	success	2026-09-02T06:31:10Z	2026-09-02T06:35:06Z	2026-09-02T06:31:10Z	b6bd2b60f2b6c00c36a5bb050e2b30a75239dbd8	1
+33599194693	Backend CI/CD	push	main	completed	success	2026-09-02T06:31:08Z	2026-09-02T06:36:30Z	2026-09-02T06:31:08Z	b6bd2b60f2b6c00c36a5bb050e2b30a75239dbd8	1
+33599194677	Slack Commit Notification	push	main	completed	success	2026-09-02T06:31:08Z	2026-09-02T06:31:15Z	2026-09-02T06:31:08Z	b6bd2b60f2b6c00c36a5bb050e2b30a75239dbd8	1
+33598479728	Backend CI/CD	push	main	completed	success	2026-09-02T06:21:29Z	2026-09-02T06:29:43Z	2026-09-02T06:21:29Z	de8b57e630c37e9a8d4dd8b9ec7f8f831faade47	1
+33598479722	Slack Commit Notification	push	main	completed	success	2026-09-02T06:21:29Z	2026-09-02T06:21:37Z	2026-09-02T06:21:29Z	de8b57e630c37e9a8d4dd8b9ec7f8f831faade47	1
+33458459474	Backend CI/CD	push	prod	completed	success	2026-09-01T01:22:08Z	2026-09-01T01:37:59Z	2026-09-01T01:22:08Z	7020dc736013e23206780cf15b307fdf1774024a	1
+33458459472	Slack Commit Notification	push	prod	completed	success	2026-09-01T01:22:08Z	2026-09-01T01:22:15Z	2026-09-01T01:22:08Z	7020dc736013e23206780cf15b307fdf1774024a	1
+33455239809	Backend CI/CD	pull_request	staging	completed	success	2026-09-01T00:33:38Z	2026-09-01T00:37:53Z	2026-09-01T00:33:38Z	916c5d0261cd0b59eb708f7163746c2f226083ec	1
+33455239779	Production promotion source	pull_request_target	staging	completed	success	2026-09-01T00:33:38Z	2026-09-01T00:33:46Z	2026-09-01T00:33:38Z	916c5d0261cd0b59eb708f7163746c2f226083ec	1
+33455103156	Slack Commit Notification	push	staging	completed	success	2026-09-01T00:31:33Z	2026-09-01T00:31:42Z	2026-09-01T00:31:33Z	916c5d0261cd0b59eb708f7163746c2f226083ec	1
+33454804245	Backend CI/CD	pull_request	main	completed	success	2026-09-01T00:27:13Z	2026-09-01T00:31:02Z	2026-09-01T00:27:13Z	e0300ce54f366daacd779abd14bec833ea0c5674	1
+33251946077	Backend CI/CD	push	main	completed	failure	2026-08-29T12:12:55Z	2026-08-29T12:13:00Z	2026-08-29T12:12:55Z	e0300ce54f366daacd779abd14bec833ea0c5674	1
+33251946047	Slack Commit Notification	push	main	completed	failure	2026-08-29T12:12:55Z	2026-08-29T12:13:12Z	2026-08-29T12:12:55Z	e0300ce54f366daacd779abd14bec833ea0c5674	1
+33188941476	Slack Commit Notification	push	main	completed	failure	2026-08-28T16:13:32Z	2026-08-28T16:13:36Z	2026-08-28T16:13:32Z	791282e89f0d93ec98bbc0b2e740a83a05d8909d	1
+33188941456	Backend CI/CD	push	main	completed	failure	2026-08-28T16:13:32Z	2026-08-28T16:13:36Z	2026-08-28T16:13:32Z	791282e89f0d93ec98bbc0b2e740a83a05d8909d	1
+33185606271	Backend CI/CD	push	prod	completed	failure	2026-08-28T15:32:07Z	2026-08-28T15:32:12Z	2026-08-28T15:32:07Z	d3e0b784eb83694ce8f1cc68c21a05fb1217e097	1
+33185606252	Slack Commit Notification	push	prod	completed	failure	2026-08-28T15:32:07Z	2026-08-28T15:32:11Z	2026-08-28T15:32:07Z	d3e0b784eb83694ce8f1cc68c21a05fb1217e097	1
+33185580105	Production promotion source	pull_request_target	staging	completed	failure	2026-08-28T15:31:49Z	2026-08-28T15:31:53Z	2026-08-28T15:31:49Z	a18ad883ebcb61e48f0f4c8c0d66bc82ff0c671d	1
+33185579907	Backend CI/CD	pull_request	staging	completed	failure	2026-08-28T15:31:48Z	2026-08-28T15:31:53Z	2026-08-28T15:31:48Z	a18ad883ebcb61e48f0f4c8c0d66bc82ff0c671d	1
+33185557261	Slack Commit Notification	push	staging	completed	failure	2026-08-28T15:31:32Z	2026-08-28T15:31:42Z	2026-08-28T15:31:32Z	a18ad883ebcb61e48f0f4c8c0d66bc82ff0c671d	1
+33185513495	Backend CI/CD	pull_request	main	completed	failure	2026-08-28T15:31:01Z	2026-08-28T15:31:05Z	2026-08-28T15:31:01Z	a34ceb646622b8c1248f16b1f36671dc7f9f6ffb	1
+33184606279	Slack Commit Notification	push	main	completed	failure	2026-08-28T15:19:55Z	2026-08-28T15:20:00Z	2026-08-28T15:19:55Z	a34ceb646622b8c1248f16b1f36671dc7f9f6ffb	1
+33184606185	Backend CI/CD	push	main	completed	failure	2026-08-28T15:19:55Z	2026-08-28T15:20:00Z	2026-08-28T15:19:55Z	a34ceb646622b8c1248f16b1f36671dc7f9f6ffb	1
+33183749418	Slack Commit Notification	push	main	completed	success	2026-08-28T15:09:23Z	2026-08-28T15:09:32Z	2026-08-28T15:09:23Z	29ee8c0aae64ece6875fb23e460dd649c892a32b	1
+33183749385	Backend CI/CD	push	main	completed	success	2026-08-28T15:09:23Z	2026-08-28T15:17:07Z	2026-08-28T15:09:23Z	29ee8c0aae64ece6875fb23e460dd649c892a32b	1
+33180354839	Backend CI/CD	push	prod	completed	success	2026-08-28T14:28:55Z	2026-08-28T14:44:46Z	2026-08-28T14:28:55Z	874c9141c3b9b950cc47a070576011a3ced6de37	1
+33180354812	Slack Commit Notification	push	prod	completed	success	2026-08-28T14:28:55Z	2026-08-28T14:29:02Z	2026-08-28T14:28:55Z	874c9141c3b9b950cc47a070576011a3ced6de37	1
+33180017863	Production promotion source	pull_request_target	staging	completed	success	2026-08-28T14:24:55Z	2026-08-28T14:25:03Z	2026-08-28T14:24:55Z	9bdae0b0ce48f8085c6054fe488fc5278597680b	1
+33180017733	Backend CI/CD	pull_request	staging	completed	success	2026-08-28T14:24:55Z	2026-08-28T14:28:42Z	2026-08-28T14:24:55Z	9bdae0b0ce48f8085c6054fe488fc5278597680b	1
+33179993794	Slack Commit Notification	push	staging	completed	success	2026-08-28T14:24:37Z	2026-08-28T14:24:45Z	2026-08-28T14:24:37Z	9bdae0b0ce48f8085c6054fe488fc5278597680b	1
+33179639299	Backend CI/CD	pull_request	main	completed	success	2026-08-28T14:20:11Z	2026-08-28T14:24:18Z	2026-08-28T14:20:11Z	56c55b70faf5d1e7109b2c15e2217c1ccca97ff2	1
+33178537322	Backend CI/CD	push	main	completed	success	2026-08-28T14:06:38Z	2026-08-28T14:15:06Z	2026-08-28T14:06:38Z	56c55b70faf5d1e7109b2c15e2217c1ccca97ff2	1
+33178537311	Slack Commit Notification	push	main	completed	success	2026-08-28T14:06:38Z	2026-08-28T14:06:45Z	2026-08-28T14:06:38Z	56c55b70faf5d1e7109b2c15e2217c1ccca97ff2	1
+33174875528	Backend CI/CD	workflow_dispatch	main	completed	success	2026-08-28T13:19:32Z	2026-08-28T13:25:02Z	2026-08-28T13:19:32Z	d17ca259f08c6ba26864255aaa1f7dc9cbfab535	1
+33174441911	Backend CI/CD	push	prod	completed	success	2026-08-28T13:13:37Z	2026-08-28T13:28:36Z	2026-08-28T13:13:37Z	c694c2612ca406ff9c3646d003fefbb032b5c6d5	1
+33174441904	Slack Commit Notification	push	prod	completed	success	2026-08-28T13:13:37Z	2026-08-28T13:13:44Z	2026-08-28T13:13:37Z	c694c2612ca406ff9c3646d003fefbb032b5c6d5	1
+33174097129	Backend CI/CD	pull_request	staging	completed	success	2026-08-28T13:08:54Z	2026-08-28T13:12:43Z	2026-08-28T13:08:54Z	68a6d81e2c42bcf502c049d9476f6424879e5380	1
+33174097105	Production promotion source	pull_request_target	staging	completed	success	2026-08-28T13:08:54Z	2026-08-28T13:09:05Z	2026-08-28T13:08:54Z	68a6d81e2c42bcf502c049d9476f6424879e5380	1
+33174070584	Slack Commit Notification	push	staging	completed	success	2026-08-28T13:08:33Z	2026-08-28T13:08:41Z	2026-08-28T13:08:33Z	68a6d81e2c42bcf502c049d9476f6424879e5380	1
+33173734097	Backend CI/CD	pull_request	main	completed	success	2026-08-28T13:04:00Z	2026-08-28T13:07:42Z	2026-08-28T13:04:00Z	d17ca259f08c6ba26864255aaa1f7dc9cbfab535	1
+33172992717	Backend CI/CD	push	main	completed	success	2026-08-28T12:53:50Z	2026-08-28T13:01:49Z	2026-08-28T12:53:50Z	d17ca259f08c6ba26864255aaa1f7dc9cbfab535	1
+33172992707	Slack Commit Notification	push	main	completed	success	2026-08-28T12:53:50Z	2026-08-28T12:54:00Z	2026-08-28T12:53:50Z	d17ca259f08c6ba26864255aaa1f7dc9cbfab535	1
+33144027438	Backend CI/CD	push	prod	completed	success	2026-08-28T05:11:47Z	2026-08-28T05:26:24Z	2026-08-28T05:11:47Z	0099f0f535b37ceefed757dd2ae85a87d9152d4d	1
+33144027431	Slack Commit Notification	push	prod	completed	success	2026-08-28T05:11:47Z	2026-08-28T05:11:54Z	2026-08-28T05:11:47Z	0099f0f535b37ceefed757dd2ae85a87d9152d4d	1
+33143770634	Backend CI/CD	pull_request	staging	completed	success	2026-08-28T05:06:44Z	2026-08-28T05:10:31Z	2026-08-28T05:06:44Z	5b00ed2edca84f7f6d6557e9406d8e153b600828	1
+33143770552	Production promotion source	pull_request_target	staging	completed	success	2026-08-28T05:06:43Z	2026-08-28T05:06:52Z	2026-08-28T05:06:43Z	5b00ed2edca84f7f6d6557e9406d8e153b600828	1
+33143731049	Slack Commit Notification	push	staging	completed	success	2026-08-28T05:05:57Z	2026-08-28T05:06:05Z	2026-08-28T05:05:57Z	5b00ed2edca84f7f6d6557e9406d8e153b600828	1
+33130019852	Backend CI/CD	push	main	completed	success	2026-08-28T00:31:58Z	2026-08-28T00:39:58Z	2026-08-28T00:31:58Z	29d044392f9ebd3c2ed6262e528aa3e4a4198d94	1
+33130019802	Slack Commit Notification	push	main	completed	success	2026-08-28T00:31:57Z	2026-08-28T00:32:06Z	2026-08-28T00:31:57Z	29d044392f9ebd3c2ed6262e528aa3e4a4198d94	1
+32803988418	Slack Commit Notification	push	prod	completed	success	2026-08-25T03:07:38Z	2026-08-25T03:07:45Z	2026-08-25T03:07:38Z	53861419f5fe53aa35d96b0585348b2b53774684	1
+32803988415	Backend CI/CD	push	prod	completed	success	2026-08-25T03:07:38Z	2026-08-25T03:22:58Z	2026-08-25T03:07:38Z	53861419f5fe53aa35d96b0585348b2b53774684	1
+32803726631	Backend CI/CD	pull_request	staging	completed	success	2026-08-25T03:03:38Z	2026-08-25T03:06:57Z	2026-08-25T03:03:38Z	3f35f379d809c90eb41a0f6e25489be63b967ab5	1
+32803726610	Production promotion source	pull_request_target	staging	completed	success	2026-08-25T03:03:38Z	2026-08-25T03:03:50Z	2026-08-25T03:03:38Z	3f35f379d809c90eb41a0f6e25489be63b967ab5	1
+32803716068	Slack Commit Notification	push	staging	completed	success	2026-08-25T03:03:27Z	2026-08-25T03:03:35Z	2026-08-25T03:03:27Z	3f35f379d809c90eb41a0f6e25489be63b967ab5	1
+32803164111	Backend CI/CD	pull_request	main	completed	success	2026-08-25T02:54:35Z	2026-08-25T02:58:09Z	2026-08-25T02:54:35Z	14c9578f18728d723a0ca98e09d10306becc5792	1
+32588439297	Backend CI/CD	push	main	completed	success	2026-08-22T17:40:22Z	2026-08-22T17:48:32Z	2026-08-22T17:40:22Z	14c9578f18728d723a0ca98e09d10306becc5792	1
+32588439253	Slack Commit Notification	push	main	completed	success	2026-08-22T17:40:22Z	2026-08-22T17:40:31Z	2026-08-22T17:40:22Z	14c9578f18728d723a0ca98e09d10306becc5792	1
+32314718972	Slack Commit Notification	push	prod	completed	success	2026-08-19T23:47:25Z	2026-08-19T23:47:33Z	2026-08-19T23:47:25Z	a4163cdd8ef77fb533159703044264ff839674bc	1
+32314718962	Backend CI/CD	push	prod	completed	success	2026-08-19T23:47:25Z	2026-08-20T00:02:41Z	2026-08-19T23:47:25Z	a4163cdd8ef77fb533159703044264ff839674bc	1
+32314496536	Backend CI/CD	pull_request	staging	completed	success	2026-08-19T23:44:09Z	2026-08-19T23:47:01Z	2026-08-19T23:44:09Z	d781e8b2cc82a13b7c20d63c937e25ca3bbdd443	1
+32314496526	Production promotion source	pull_request_target	staging	completed	success	2026-08-19T23:44:09Z	2026-08-19T23:44:17Z	2026-08-19T23:44:09Z	d781e8b2cc82a13b7c20d63c937e25ca3bbdd443	1
+32314469954	Slack Commit Notification	push	staging	completed	success	2026-08-19T23:43:46Z	2026-08-19T23:43:52Z	2026-08-19T23:43:46Z	d781e8b2cc82a13b7c20d63c937e25ca3bbdd443	1
+32313502154	Backend CI/CD	pull_request	main	completed	success	2026-08-19T23:30:06Z	2026-08-19T23:32:59Z	2026-08-19T23:30:06Z	356b7cd181141209682c0d9e4fe610df0bd2e99f	1
+32313227303	Backend CI/CD	push	main	completed	success	2026-08-19T23:26:07Z	2026-08-19T23:32:54Z	2026-08-19T23:26:07Z	356b7cd181141209682c0d9e4fe610df0bd2e99f	1
+32313227297	Slack Commit Notification	push	main	completed	success	2026-08-19T23:26:07Z	2026-08-19T23:26:17Z	2026-08-19T23:26:07Z	356b7cd181141209682c0d9e4fe610df0bd2e99f	1
+32284158679	Backend CI/CD	push	prod	completed	success	2026-08-19T17:52:54Z	2026-08-19T18:07:53Z	2026-08-19T17:52:54Z	e131ef3f61ce3ce0caf679259acdf2c26fe269a9	1
+32284158656	Slack Commit Notification	push	prod	completed	success	2026-08-19T17:52:54Z	2026-08-19T17:53:01Z	2026-08-19T17:52:54Z	e131ef3f61ce3ce0caf679259acdf2c26fe269a9	1
+32283832080	Production promotion source	pull_request_target	staging	completed	success	2026-08-19T17:49:30Z	2026-08-19T17:49:38Z	2026-08-19T17:49:30Z	7713b6718a1c8c211fc9579a4dce8581174c26dc	1
+32283831841	Backend CI/CD	pull_request	staging	completed	success	2026-08-19T17:49:30Z	2026-08-19T17:52:28Z	2026-08-19T17:49:30Z	7713b6718a1c8c211fc9579a4dce8581174c26dc	1
+32283805750	Slack Commit Notification	push	staging	completed	success	2026-08-19T17:49:13Z	2026-08-19T17:49:21Z	2026-08-19T17:49:13Z	7713b6718a1c8c211fc9579a4dce8581174c26dc	1
+32283406544	Backend CI/CD	pull_request	main	completed	success	2026-08-19T17:45:07Z	2026-08-19T17:48:50Z	2026-08-19T17:45:07Z	a6d5a41d6360b8414687aa6d51b081e7a47e9481	1
+32282946780	Backend CI/CD	push	main	completed	success	2026-08-19T17:40:22Z	2026-08-19T17:47:45Z	2026-08-19T17:40:22Z	a6d5a41d6360b8414687aa6d51b081e7a47e9481	1
+32282946738	Slack Commit Notification	push	main	completed	success	2026-08-19T17:40:22Z	2026-08-19T17:40:33Z	2026-08-19T17:40:22Z	a6d5a41d6360b8414687aa6d51b081e7a47e9481	1
+32237835845	Slack Commit Notification	push	prod	completed	success	2026-08-19T09:29:05Z	2026-08-19T09:29:16Z	2026-08-19T09:29:05Z	8206d4291390710c2f81e73eedd4252fb9635e94	1
+32237835813	Backend CI/CD	push	prod	completed	success	2026-08-19T09:29:05Z	2026-08-19T09:43:22Z	2026-08-19T09:29:05Z	8206d4291390710c2f81e73eedd4252fb9635e94	1
+32237491266	Production promotion source	pull_request_target	staging	completed	success	2026-08-19T09:25:04Z	2026-08-19T09:25:11Z	2026-08-19T09:25:04Z	78f544a3df0070fd35b6ce22d42d4931a8f7e5ed	1
+32237491249	Backend CI/CD	pull_request	staging	completed	success	2026-08-19T09:25:04Z	2026-08-19T09:28:47Z	2026-08-19T09:25:04Z	78f544a3df0070fd35b6ce22d42d4931a8f7e5ed	1
+32237439891	Slack Commit Notification	push	staging	completed	success	2026-08-19T09:24:28Z	2026-08-19T09:24:38Z	2026-08-19T09:24:28Z	78f544a3df0070fd35b6ce22d42d4931a8f7e5ed	1
+32237066134	Backend CI/CD	pull_request	main	completed	success	2026-08-19T09:20:02Z	2026-08-19T09:24:05Z	2026-08-19T09:20:02Z	652c8f4f1f1270e8ac63b3759ab53fa40ceaf8f4	1
+32235237547	Backend CI/CD	workflow_dispatch	main	completed	success	2026-08-19T08:58:21Z	2026-08-19T09:03:58Z	2026-08-19T08:58:21Z	652c8f4f1f1270e8ac63b3759ab53fa40ceaf8f4	1
+32150968206	Backend CI/CD	push	main	completed	success	2026-08-18T14:52:09Z	2026-08-18T14:59:46Z	2026-08-18T14:52:09Z	652c8f4f1f1270e8ac63b3759ab53fa40ceaf8f4	1
+32150968087	Slack Commit Notification	push	main	completed	success	2026-08-18T14:52:09Z	2026-08-18T14:52:20Z	2026-08-18T14:52:09Z	652c8f4f1f1270e8ac63b3759ab53fa40ceaf8f4	1
+32098121587	Backend CI/CD	push	main	completed	success	2026-08-18T04:09:57Z	2026-08-18T04:18:24Z	2026-08-18T04:09:57Z	4194fae8f7cc9c8d7e3aa401a0e8959e97826829	1
+32098121520	Slack Commit Notification	push	main	completed	success	2026-08-18T04:09:57Z	2026-08-18T04:10:05Z	2026-08-18T04:09:57Z	4194fae8f7cc9c8d7e3aa401a0e8959e97826829	1
+32097437840	Backend CI/CD	push	main	completed	failure	2026-08-18T03:59:00Z	2026-08-18T04:03:31Z	2026-08-18T03:59:00Z	2c0633775a4ea90d06923a1b7941f3190f04f304	1
+32097437812	Slack Commit Notification	push	main	completed	success	2026-08-18T03:59:00Z	2026-08-18T03:59:08Z	2026-08-18T03:59:00Z	2c0633775a4ea90d06923a1b7941f3190f04f304	1
+32044402268	Slack Commit Notification	push	feat/question-bank-be	completed	success	2026-08-17T16:07:13Z	2026-08-17T16:07:20Z	2026-08-17T16:07:13Z	604f2baf7c9176730c509fc8e26b71481182e26f	1
+32022994200	Slack Commit Notification	push	feat/question-bank-be	completed	success	2026-08-17T11:02:21Z	2026-08-17T11:02:32Z	2026-08-17T11:02:21Z	7cda265db9488f5d41f0a9d7476c97bed6ead3e4	1
+31993077096	Slack Commit Notification	push	staging	completed	success	2026-08-17T04:02:22Z	2026-08-17T04:02:29Z	2026-08-17T04:02:22Z	f68123a98eea2c0e77661496b2546f56fc58ad90	1
+31993044600	Backend CI/CD	pull_request	main	completed	success	2026-08-17T04:01:47Z	2026-08-17T04:05:25Z	2026-08-17T04:01:47Z	6c64b72ca067d1387a337a54a4a688104ace06bb	1
+31923623910	Slack Commit Notification	push	main	completed	success	2026-08-16T03:10:44Z	2026-08-16T03:10:51Z	2026-08-16T03:10:44Z	6c64b72ca067d1387a337a54a4a688104ace06bb	1
+31923623802	Backend CI/CD	push	main	completed	success	2026-08-16T03:10:44Z	2026-08-16T03:18:40Z	2026-08-16T03:10:44Z	6c64b72ca067d1387a337a54a4a688104ace06bb	1
+31884658376	Slack Commit Notification	push	prod	completed	success	2026-08-15T12:27:45Z	2026-08-15T12:27:52Z	2026-08-15T12:27:45Z	792b265b1f832cf4fb51b9ad4507c70b27ee96f4	1
+31884658337	Backend CI/CD	push	prod	completed	success	2026-08-15T12:27:45Z	2026-08-15T12:42:45Z	2026-08-15T12:27:45Z	792b265b1f832cf4fb51b9ad4507c70b27ee96f4	1
+31884574248	Production promotion source	pull_request_target	staging	completed	success	2026-08-15T12:25:47Z	2026-08-15T12:25:55Z	2026-08-15T12:25:47Z	2b5be84712b12d3e2333b16b17f2e3b5cf1c9163	1
+31884574228	Backend CI/CD	pull_request	staging	completed	success	2026-08-15T12:25:47Z	2026-08-15T12:29:33Z	2026-08-15T12:25:47Z	2b5be84712b12d3e2333b16b17f2e3b5cf1c9163	1
+31884534314	Slack Commit Notification	push	staging	completed	success	2026-08-15T12:24:51Z	2026-08-15T12:24:59Z	2026-08-15T12:24:51Z	2b5be84712b12d3e2333b16b17f2e3b5cf1c9163	1
+31878606990	Slack Commit Notification	push	main	completed	success	2026-08-15T10:04:36Z	2026-08-15T10:04:45Z	2026-08-15T10:04:36Z	7f18247296bde870914466c32faa4af3904763d4	1
+31878606951	Backend CI/CD	push	main	completed	success	2026-08-15T10:04:36Z	2026-08-15T10:11:22Z	2026-08-15T10:04:36Z	7f18247296bde870914466c32faa4af3904763d4	1
+31878603546	Slack Commit Notification	push	staging	completed	success	2026-08-15T10:04:31Z	2026-08-15T10:04:38Z	2026-08-15T10:04:31Z	5b2156c1f1a23e58c3eeac4d78bdaf649eb68d25	1
+31877880282	Slack Commit Notification	push	main	completed	success	2026-08-15T09:47:16Z	2026-08-15T09:47:24Z	2026-08-15T09:47:16Z	a32f2acdeb7f5e8c42da458629def2fd0b03865d	1
+31877880280	Backend CI/CD	push	main	completed	failure	2026-08-15T09:47:16Z	2026-08-15T09:59:35Z	2026-08-15T09:47:16Z	a32f2acdeb7f5e8c42da458629def2fd0b03865d	1
+31877467226	Slack Commit Notification	push	staging	completed	success	2026-08-15T09:37:31Z	2026-08-15T09:37:42Z	2026-08-15T09:37:31Z	f237e5d656f959a0dbffa8f52fe79ea0e4a6cee5	1
+31797707357	Slack Commit Notification	push	main	completed	success	2026-08-14T11:48:35Z	2026-08-14T11:48:43Z	2026-08-14T11:48:35Z	b2a506a6f0bf2a1351743fe8356184d3bc3ff056	1
+31797707281	Backend CI/CD	push	main	completed	success	2026-08-14T11:48:34Z	2026-08-14T11:55:15Z	2026-08-14T11:48:34Z	b2a506a6f0bf2a1351743fe8356184d3bc3ff056	1
+31660793377	Backend CI/CD	push	main	completed	failure	2026-08-13T02:25:45Z	2026-08-13T02:28:17Z	2026-08-13T02:25:45Z	95337d27809f73c6ff060bdf0bf7ac95e79a452b	1
+31660793335	Slack Commit Notification	push	main	completed	success	2026-08-13T02:25:45Z	2026-08-13T02:25:54Z	2026-08-13T02:25:45Z	95337d27809f73c6ff060bdf0bf7ac95e79a452b	1
+31633886579	Backend CI/CD	pull_request	integration/p0-backend	completed	success	2026-08-12T19:41:27Z	2026-08-12T19:45:11Z	2026-08-12T19:41:27Z	bc6ebd6338d7a5502ac6b288358b3ca6243d4ffc	1
+31633767220	Slack Commit Notification	push	integration/p0-backend	completed	success	2026-08-12T19:40:03Z	2026-08-12T19:40:10Z	2026-08-12T19:40:03Z	bc6ebd6338d7a5502ac6b288358b3ca6243d4ffc	1
+31572853520	Backend CI/CD	push	main	completed	success	2026-08-12T07:10:06Z	2026-08-12T07:16:44Z	2026-08-12T07:10:06Z	9a11772163712c2b8c11f36ed376d4ea7fedf3d3	1
+31572853467	Slack Commit Notification	push	main	completed	success	2026-08-12T07:10:06Z	2026-08-12T07:10:16Z	2026-08-12T07:10:06Z	9a11772163712c2b8c11f36ed376d4ea7fedf3d3	1
+31572497495	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-08-12T07:04:50Z	2026-08-12T07:04:57Z	2026-08-12T07:04:50Z	9a11772163712c2b8c11f36ed376d4ea7fedf3d3	1
+31561062676	Backend CI/CD	pull_request	main	completed	success	2026-08-12T03:45:24Z	2026-08-12T03:48:45Z	2026-08-12T03:45:24Z	77b8eb41c7b6edd68376287874b9cb063387811e	1
+31561021252	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-08-12T03:44:39Z	2026-08-12T03:44:45Z	2026-08-12T03:44:39Z	53649fb8271fd538c074d096d6becc80708028bc	1
+31482397671	Backend CI/CD	push	prod	completed	success	2026-08-11T10:29:01Z	2026-08-11T10:44:06Z	2026-08-11T10:29:01Z	a9d98190ad4954c439aef756dfdc889a318ac4c6	1
+31482397647	Slack Commit Notification	push	prod	completed	success	2026-08-11T10:29:01Z	2026-08-11T10:29:08Z	2026-08-11T10:29:01Z	a9d98190ad4954c439aef756dfdc889a318ac4c6	1
+31482343898	Production promotion source	pull_request_target	staging	completed	success	2026-08-11T10:28:17Z	2026-08-11T10:28:25Z	2026-08-11T10:28:17Z	e09b5b15dac7f0f5ba940d8d23df33597003c993	1
+31482343734	Backend CI/CD	pull_request	staging	completed	success	2026-08-11T10:28:17Z	2026-08-11T10:31:36Z	2026-08-11T10:28:17Z	e09b5b15dac7f0f5ba940d8d23df33597003c993	1
+31482029627	Slack Commit Notification	push	staging	completed	success	2026-08-11T10:24:04Z	2026-08-11T10:24:10Z	2026-08-11T10:24:04Z	e09b5b15dac7f0f5ba940d8d23df33597003c993	1
+31481911532	Backend CI/CD	push	main	completed	success	2026-08-11T10:22:26Z	2026-08-11T10:28:49Z	2026-08-11T10:22:26Z	77b8eb41c7b6edd68376287874b9cb063387811e	1
+31481911528	Slack Commit Notification	push	main	completed	success	2026-08-11T10:22:26Z	2026-08-11T10:22:45Z	2026-08-11T10:22:26Z	77b8eb41c7b6edd68376287874b9cb063387811e	1
+31481813768	Slack Commit Notification	push	staging	completed	success	2026-08-11T10:21:06Z	2026-08-11T10:21:14Z	2026-08-11T10:21:06Z	ffbbdabb46751f58921d877d621dcc9261749a21	1
+31464891834	Backend CI/CD	push	prod	completed	success	2026-08-11T06:23:21Z	2026-08-11T06:38:09Z	2026-08-11T06:23:21Z	98d52bd5289d8e9353c1324a3ba07cf5295f20d5	1
+31464891805	Slack Commit Notification	push	prod	completed	success	2026-08-11T06:23:21Z	2026-08-11T06:23:29Z	2026-08-11T06:23:21Z	98d52bd5289d8e9353c1324a3ba07cf5295f20d5	1
+31464446423	Backend CI/CD	pull_request	staging	completed	success	2026-08-11T06:15:52Z	2026-08-11T06:19:10Z	2026-08-11T06:15:52Z	d4f8cd4aa193f21ae4610afb60c24da913e0f9f5	1
+31464446338	Production promotion source	pull_request_target	staging	completed	success	2026-08-11T06:15:52Z	2026-08-11T06:16:08Z	2026-08-11T06:15:52Z	d4f8cd4aa193f21ae4610afb60c24da913e0f9f5	1
+31463725693	Slack Commit Notification	push	main	completed	success	2026-08-11T06:03:25Z	2026-08-11T06:03:42Z	2026-08-11T06:03:25Z	f6b4b4348320f88f09ece67b651ba8b58bec8104	1
+31463725680	Backend CI/CD	push	main	completed	success	2026-08-11T06:03:25Z	2026-08-11T06:10:09Z	2026-08-11T06:03:25Z	f6b4b4348320f88f09ece67b651ba8b58bec8104	1
+31463562782	Backend CI/CD	push	main	completed	success	2026-08-11T06:00:39Z	2026-08-11T06:06:56Z	2026-08-11T06:00:39Z	92d10b3becfbe24e037768e2a458568b8a156dfe	1
+31463562777	Slack Commit Notification	push	main	completed	success	2026-08-11T06:00:39Z	2026-08-11T06:00:46Z	2026-08-11T06:00:39Z	92d10b3becfbe24e037768e2a458568b8a156dfe	1
+31463493031	Slack Commit Notification	push	staging	completed	success	2026-08-11T05:59:33Z	2026-08-11T05:59:39Z	2026-08-11T05:59:33Z	d4f8cd4aa193f21ae4610afb60c24da913e0f9f5	1
+31412844113	Backend CI/CD	push	prod	completed	success	2026-08-10T17:12:10Z	2026-08-10T17:24:58Z	2026-08-10T17:12:10Z	773c349e3fd85f2be4af843a392310b9c659cc66	1
+31412843351	Slack Commit Notification	push	prod	completed	success	2026-08-10T17:12:10Z	2026-08-10T17:12:18Z	2026-08-10T17:12:10Z	773c349e3fd85f2be4af843a392310b9c659cc66	1
+31410243097	Production promotion source	pull_request_target	staging	completed	success	2026-08-10T16:41:22Z	2026-08-10T16:41:30Z	2026-08-10T16:41:22Z	41ba94454ae60460192e42c3db5c1fee51fdc821	1
+31410243014	Backend CI/CD	pull_request	staging	completed	success	2026-08-10T16:41:22Z	2026-08-10T16:44:15Z	2026-08-10T16:41:22Z	41ba94454ae60460192e42c3db5c1fee51fdc821	1
+31410143686	Slack Commit Notification	push	staging	completed	success	2026-08-10T16:40:11Z	2026-08-10T16:40:18Z	2026-08-10T16:40:11Z	41ba94454ae60460192e42c3db5c1fee51fdc821	1
+31406202629	Slack Commit Notification	push	staging	completed	success	2026-08-10T15:55:24Z	2026-08-10T15:55:39Z	2026-08-10T15:55:24Z	7c9573b279b1fbed52cc742d2b720167185ccc4b	1
+31406184575	Slack Commit Notification	push	prod	completed	success	2026-08-10T15:55:12Z	2026-08-10T15:55:29Z	2026-08-10T15:55:12Z	29d2a483384682c907dc4d4332aec04d299c9ed9	1
+31406184495	Backend CI/CD	push	prod	completed	failure	2026-08-10T15:55:12Z	2026-08-10T16:22:38Z	2026-08-10T16:18:11Z	29d2a483384682c907dc4d4332aec04d299c9ed9	3
+31405994911	Production promotion source	pull_request_target	staging	completed	success	2026-08-10T15:53:06Z	2026-08-10T15:53:15Z	2026-08-10T15:53:06Z	2f304d3c4592344a1fcf20c66c8a02139bea0263	1
+31405994061	Backend CI/CD	pull_request	staging	completed	success	2026-08-10T15:53:06Z	2026-08-10T15:56:48Z	2026-08-10T15:53:06Z	2f304d3c4592344a1fcf20c66c8a02139bea0263	1
+31405959387	Slack Commit Notification	push	staging	completed	success	2026-08-10T15:52:41Z	2026-08-10T15:52:48Z	2026-08-10T15:52:41Z	2f304d3c4592344a1fcf20c66c8a02139bea0263	1
+31403499769	Backend CI/CD	push	prod	completed	failure	2026-08-10T15:25:26Z	2026-08-10T15:28:56Z	2026-08-10T15:25:26Z	b631ac2f3d8fd78ec66d192ddbb6b4b6449edd6d	1
+31403499710	Slack Commit Notification	push	prod	completed	success	2026-08-10T15:25:26Z	2026-08-10T15:25:36Z	2026-08-10T15:25:26Z	b631ac2f3d8fd78ec66d192ddbb6b4b6449edd6d	1
+31403275022	Production promotion source	pull_request_target	staging	completed	success	2026-08-10T15:23:01Z	2026-08-10T15:23:11Z	2026-08-10T15:23:01Z	ede3b77fd1a2105139ba6f0d0f6dcf282b07f7e0	1
+31403273978	Backend CI/CD	pull_request	staging	completed	success	2026-08-10T15:23:01Z	2026-08-10T15:26:17Z	2026-08-10T15:23:01Z	ede3b77fd1a2105139ba6f0d0f6dcf282b07f7e0	1
+31400740607	Slack Commit Notification	push	staging	completed	success	2026-08-10T14:54:53Z	2026-08-10T14:55:01Z	2026-08-10T14:54:53Z	ede3b77fd1a2105139ba6f0d0f6dcf282b07f7e0	1
+31400397596	Backend CI/CD	pull_request	release/main-to-staging-20260810	completed	success	2026-08-10T14:51:05Z	2026-08-10T14:54:20Z	2026-08-10T14:51:05Z	07e5605d50ea5d7933ba57db6a280a7c1bbee019	1
+31400285243	Slack Commit Notification	push	release/main-to-staging-20260810	completed	success	2026-08-10T14:49:51Z	2026-08-10T14:50:18Z	2026-08-10T14:49:51Z	07e5605d50ea5d7933ba57db6a280a7c1bbee019	1
+31400028283	Slack Commit Notification	push	main	completed	success	2026-08-10T14:47:00Z	2026-08-10T14:47:07Z	2026-08-10T14:47:00Z	135e28a902cb3a965724e88d2593f8ca339bb875	1
+31400028159	Backend CI/CD	push	main	completed	success	2026-08-10T14:47:00Z	2026-08-10T14:51:50Z	2026-08-10T14:47:00Z	135e28a902cb3a965724e88d2593f8ca339bb875	1
+31398721565	Slack Commit Notification	push	main	completed	success	2026-08-10T14:32:40Z	2026-08-10T14:32:49Z	2026-08-10T14:32:40Z	cac1d57f6582eaef03812bea7de67f0cb00728bb	1
+31398721144	Backend CI/CD	push	main	completed	success	2026-08-10T14:32:39Z	2026-08-10T14:40:35Z	2026-08-10T14:32:39Z	cac1d57f6582eaef03812bea7de67f0cb00728bb	1
+31398118985	Slack Commit Notification	push	main	completed	success	2026-08-10T14:26:01Z	2026-08-10T14:26:08Z	2026-08-10T14:26:01Z	3eaad665ca952f05079e7e02315acc3a6fad9382	1
+31398118823	Backend CI/CD	push	main	completed	success	2026-08-10T14:26:01Z	2026-08-10T14:32:46Z	2026-08-10T14:26:01Z	3eaad665ca952f05079e7e02315acc3a6fad9382	1
+31365240314	Backend CI/CD	push	main	completed	success	2026-08-10T07:17:06Z	2026-08-10T07:24:14Z	2026-08-10T07:17:06Z	d8280b3cb9ede4074907c3e998f9b3517be489e8	1
+31365240275	Slack Commit Notification	push	main	completed	success	2026-08-10T07:17:06Z	2026-08-10T07:17:15Z	2026-08-10T07:17:06Z	d8280b3cb9ede4074907c3e998f9b3517be489e8	1
+31363693607	Slack Commit Notification	push	main	completed	success	2026-08-10T06:53:38Z	2026-08-10T06:53:45Z	2026-08-10T06:53:38Z	a82c8ca83de70a2dd02cd561a85c3a03bbfc0718	1
+31363693557	Backend CI/CD	push	main	completed	success	2026-08-10T06:53:38Z	2026-08-10T07:00:17Z	2026-08-10T06:53:38Z	a82c8ca83de70a2dd02cd561a85c3a03bbfc0718	1
+31360254377	Backend CI/CD	push	main	completed	success	2026-08-10T05:57:32Z	2026-08-10T06:04:32Z	2026-08-10T05:57:32Z	a76550722551b4cd0a5ebaa299be3d04e885e7fa	1
+31360254367	Slack Commit Notification	push	main	completed	success	2026-08-10T05:57:32Z	2026-08-10T05:57:41Z	2026-08-10T05:57:32Z	a76550722551b4cd0a5ebaa299be3d04e885e7fa	1
+31357226846	Backend CI/CD	push	main	completed	success	2026-08-10T05:00:05Z	2026-08-10T05:07:02Z	2026-08-10T05:00:05Z	cdcd5c8099cebf3b30112c67fda2aef65d1b429f	1
+31357226818	Slack Commit Notification	push	main	completed	success	2026-08-10T05:00:05Z	2026-08-10T05:00:11Z	2026-08-10T05:00:05Z	cdcd5c8099cebf3b30112c67fda2aef65d1b429f	1
+31163553027	Backend CI/CD	workflow_dispatch	main	completed	success	2026-08-07T08:53:03Z	2026-08-07T08:57:34Z	2026-08-07T08:53:03Z	33e736459974008b1bc94a8fcf8310bfcbcef07f	1
+31140017602	Slack Commit Notification	push	main	completed	success	2026-08-07T02:03:35Z	2026-08-07T02:03:42Z	2026-08-07T02:03:35Z	33e736459974008b1bc94a8fcf8310bfcbcef07f	1
+31140017563	Backend CI/CD	push	main	completed	success	2026-08-07T02:03:35Z	2026-08-07T02:10:11Z	2026-08-07T02:03:35Z	33e736459974008b1bc94a8fcf8310bfcbcef07f	1
+31124755717	Slack Commit Notification	push	main	completed	failure	2026-08-06T18:00:00Z	2026-08-06T18:15:04Z	2026-08-06T18:00:00Z	5a02d3a40991955367acf83f69cf91c78eb61562	1
+31124755679	Backend CI/CD	push	main	completed	failure	2026-08-06T18:00:00Z	2026-08-06T18:15:04Z	2026-08-06T18:00:00Z	5a02d3a40991955367acf83f69cf91c78eb61562	1
+31088415186	Backend CI/CD	push	main	completed	success	2026-08-06T09:16:44Z	2026-08-06T09:21:35Z	2026-08-06T09:16:44Z	c20689bbc7668fb90bf72c66efb50426b7196d06	1
+31088415166	Slack Commit Notification	push	main	completed	success	2026-08-06T09:16:44Z	2026-08-06T09:16:50Z	2026-08-06T09:16:44Z	c20689bbc7668fb90bf72c66efb50426b7196d06	1
+31087191235	Backend CI/CD	push	main	completed	failure	2026-08-06T08:59:40Z	2026-08-06T09:11:48Z	2026-08-06T08:59:40Z	31eda9cae5bdd5fca633f771470f4256b0c60c6e	1
+31087190920	Slack Commit Notification	push	main	completed	success	2026-08-06T08:59:39Z	2026-08-06T08:59:47Z	2026-08-06T08:59:39Z	31eda9cae5bdd5fca633f771470f4256b0c60c6e	1
+31086774595	Slack Commit Notification	push	main	completed	success	2026-08-06T08:53:40Z	2026-08-06T08:53:49Z	2026-08-06T08:53:40Z	6d3f9def46527ea315729100184bf697b509cc58	1
+31086773751	Backend CI/CD	push	main	completed	failure	2026-08-06T08:53:39Z	2026-08-06T09:05:40Z	2026-08-06T08:53:39Z	6d3f9def46527ea315729100184bf697b509cc58	1
+31086764013	Slack Commit Notification	push	feat/candidate-documents	completed	success	2026-08-06T08:53:31Z	2026-08-06T08:53:41Z	2026-08-06T08:53:31Z	6d3f9def46527ea315729100184bf697b509cc58	1
+31080489373	Slack Commit Notification	push	feat/candidate-documents	completed	success	2026-08-06T07:19:41Z	2026-08-06T07:19:49Z	2026-08-06T07:19:41Z	aff08b15f1c5d167922b3cf85bc01f814f760512	1
+31079160606	Slack Commit Notification	push	feat/candidate-documents	completed	success	2026-08-06T06:58:41Z	2026-08-06T06:58:52Z	2026-08-06T06:58:41Z	bf1f10d2760a542081ce1f639c8d353dc2fdb7b3	1
+31069056898	Slack Commit Notification	push	main	completed	success	2026-08-06T03:39:56Z	2026-08-06T03:40:03Z	2026-08-06T03:39:56Z	d70a8b82334d9d3d71360fa9a099e77c565564b0	1
+31069056875	Backend CI/CD	push	main	completed	success	2026-08-06T03:39:56Z	2026-08-06T03:47:33Z	2026-08-06T03:39:56Z	d70a8b82334d9d3d71360fa9a099e77c565564b0	1
+30916600543	Slack Commit Notification	push	main	completed	success	2026-08-04T13:59:31Z	2026-08-04T13:59:41Z	2026-08-04T13:59:31Z	c131a506f193a4a137a7565f0eb6430c59f4bf34	1
+30916600288	Backend CI/CD	push	main	completed	success	2026-08-04T13:59:31Z	2026-08-04T14:06:05Z	2026-08-04T13:59:31Z	c131a506f193a4a137a7565f0eb6430c59f4bf34	1
+30913549481	Backend CI/CD	push	main	completed	success	2026-08-04T13:23:10Z	2026-08-04T13:29:30Z	2026-08-04T13:23:10Z	3eab74c2210ad4b9142f8022d75019a9b83d0d73	1
+30913548348	Slack Commit Notification	push	main	completed	success	2026-08-04T13:23:09Z	2026-08-04T13:23:16Z	2026-08-04T13:23:09Z	3eab74c2210ad4b9142f8022d75019a9b83d0d73	1
+30902238915	Backend CI/CD	push	main	completed	success	2026-08-04T10:49:31Z	2026-08-04T10:56:59Z	2026-08-04T10:49:31Z	adbb493fca616c8b0219974cb63184f0bb86faa9	1
+30902238844	Slack Commit Notification	push	main	completed	success	2026-08-04T10:49:31Z	2026-08-04T10:49:39Z	2026-08-04T10:49:31Z	adbb493fca616c8b0219974cb63184f0bb86faa9	1
+30898270668	Slack Commit Notification	push	main	completed	success	2026-08-04T09:53:13Z	2026-08-04T09:53:20Z	2026-08-04T09:53:13Z	3ed72c495757841d9f2c2aae21b9b416d81a9422	1
+30898270585	Backend CI/CD	push	main	completed	success	2026-08-04T09:53:13Z	2026-08-04T09:59:34Z	2026-08-04T09:53:13Z	3ed72c495757841d9f2c2aae21b9b416d81a9422	1
+30865452562	Backend CI/CD	push	main	completed	success	2026-08-04T00:24:05Z	2026-08-04T00:30:40Z	2026-08-04T00:24:05Z	31b801f187eca546a159b9793b93e8084cff7e9a	1
+30865452546	Slack Commit Notification	push	main	completed	success	2026-08-04T00:24:05Z	2026-08-04T00:24:19Z	2026-08-04T00:24:05Z	31b801f187eca546a159b9793b93e8084cff7e9a	1
+30865361669	Backend CI/CD	push	prod	completed	success	2026-08-04T00:22:23Z	2026-08-04T00:32:59Z	2026-08-04T00:22:23Z	dfe030905b0ca71fca2099a4f1846f6e56a61451	1
+30865361632	Slack Commit Notification	push	prod	completed	success	2026-08-04T00:22:23Z	2026-08-04T00:22:36Z	2026-08-04T00:22:23Z	dfe030905b0ca71fca2099a4f1846f6e56a61451	1
+30865355454	Backend CI/CD	pull_request	staging	completed	success	2026-08-04T00:22:16Z	2026-08-04T00:25:31Z	2026-08-04T00:22:16Z	a6ffc2cea4b670b4a6e97c28563b81157ce2576f	1
+30865353143	Production promotion source	pull_request_target	staging	completed	success	2026-08-04T00:22:13Z	2026-08-04T00:22:27Z	2026-08-04T00:22:13Z	a6ffc2cea4b670b4a6e97c28563b81157ce2576f	1
+30865268480	Slack Commit Notification	push	staging	completed	success	2026-08-04T00:20:35Z	2026-08-04T00:20:44Z	2026-08-04T00:20:35Z	a6ffc2cea4b670b4a6e97c28563b81157ce2576f	1
+30782666823	Backend CI/CD	workflow_dispatch	prod	completed	success	2026-08-03T03:47:09Z	2026-08-03T03:57:25Z	2026-08-03T03:47:09Z	09ab267a3cbdeb1eba35e9f45bc9d775f2099f32	1
+30780668420	Slack Commit Notification	push	prod	completed	success	2026-08-03T03:00:27Z	2026-08-03T03:00:36Z	2026-08-03T03:00:27Z	09ab267a3cbdeb1eba35e9f45bc9d775f2099f32	1
+30780668393	Backend CI/CD	push	prod	completed	failure	2026-08-03T03:00:27Z	2026-08-03T03:03:27Z	2026-08-03T03:00:27Z	09ab267a3cbdeb1eba35e9f45bc9d775f2099f32	1
+30780530948	Slack Commit Notification	push	main	completed	success	2026-08-03T02:57:00Z	2026-08-03T02:57:14Z	2026-08-03T02:57:00Z	db24e47e670079fc52617c5e08c74317f8cfc165	1
+30780530935	Backend CI/CD	push	main	completed	success	2026-08-03T02:57:00Z	2026-08-03T03:01:30Z	2026-08-03T02:57:00Z	db24e47e670079fc52617c5e08c74317f8cfc165	1
+30780371932	Production promotion source	pull_request_target	staging	completed	failure	2026-08-03T02:53:14Z	2026-08-03T02:53:22Z	2026-08-03T02:53:14Z	487305d0e3771bd63cabd99ae7e5e25bb6c367c7	1
+30780371880	Backend CI/CD	pull_request	staging	completed	success	2026-08-03T02:53:14Z	2026-08-03T02:56:24Z	2026-08-03T02:53:14Z	487305d0e3771bd63cabd99ae7e5e25bb6c367c7	1
+30780351883	Slack Commit Notification	push	staging	completed	success	2026-08-03T02:52:44Z	2026-08-03T02:52:52Z	2026-08-03T02:52:44Z	487305d0e3771bd63cabd99ae7e5e25bb6c367c7	1
+30780209263	Backend CI/CD	push	prod	completed	failure	2026-08-03T02:49:07Z	2026-08-03T02:51:59Z	2026-08-03T02:49:07Z	c909bcda2665db64b9a78799771ac1a6e12ce47c	1
+30780209259	Slack Commit Notification	push	prod	completed	success	2026-08-03T02:49:07Z	2026-08-03T02:49:14Z	2026-08-03T02:49:07Z	c909bcda2665db64b9a78799771ac1a6e12ce47c	1
+30780192171	Backend CI/CD	pull_request	staging	completed	success	2026-08-03T02:48:40Z	2026-08-03T02:51:26Z	2026-08-03T02:48:40Z	188dbee6358097a004fd70a47d225fb8e97d40c6	1
+30780189634	Production promotion source	pull_request_target	staging	completed	failure	2026-08-03T02:48:36Z	2026-08-03T02:48:50Z	2026-08-03T02:48:36Z	188dbee6358097a004fd70a47d225fb8e97d40c6	1
+30779801192	Slack Commit Notification	push	staging	completed	success	2026-08-03T02:38:49Z	2026-08-03T02:38:58Z	2026-08-03T02:38:49Z	188dbee6358097a004fd70a47d225fb8e97d40c6	1
+30734073308	Slack Commit Notification	push	main	completed	success	2026-08-02T05:24:38Z	2026-08-02T05:24:46Z	2026-08-02T05:24:38Z	188dbee6358097a004fd70a47d225fb8e97d40c6	1
+30734073303	Backend CI/CD	push	main	completed	success	2026-08-02T05:24:38Z	2026-08-02T05:31:25Z	2026-08-02T05:24:38Z	188dbee6358097a004fd70a47d225fb8e97d40c6	1
+30701392258	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-08-01T13:16:26Z	2026-08-01T13:16:32Z	2026-08-01T13:16:26Z	188dbee6358097a004fd70a47d225fb8e97d40c6	1
+30699345814	Slack Commit Notification	push	main	completed	success	2026-08-01T12:15:46Z	2026-08-01T12:15:54Z	2026-08-01T12:15:46Z	7d08356887775bec2acee8abdd6e3577aa627f3f	1
+30699345812	Backend CI/CD	push	main	completed	success	2026-08-01T12:15:46Z	2026-08-01T12:22:31Z	2026-08-01T12:15:46Z	7d08356887775bec2acee8abdd6e3577aa627f3f	1
+30699341812	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-08-01T12:15:39Z	2026-08-01T12:15:54Z	2026-08-01T12:15:39Z	18d6b46f4145600c42b561fc778fc4b19c6f1efc	1
+30689580668	Backend CI/CD	workflow_dispatch	main	completed	success	2026-08-01T07:21:26Z	2026-08-01T07:25:55Z	2026-08-01T07:21:26Z	eb118743854e5aea093cd0a9269e95780e6a62a8	1
+30688449285	Backend CI/CD	push	main	completed	success	2026-08-01T06:48:23Z	2026-08-01T06:52:58Z	2026-08-01T06:48:23Z	eb118743854e5aea093cd0a9269e95780e6a62a8	1
+30688449269	Slack Commit Notification	push	main	completed	success	2026-08-01T06:48:23Z	2026-08-01T06:48:34Z	2026-08-01T06:48:23Z	eb118743854e5aea093cd0a9269e95780e6a62a8	1
+30686994236	Slack Commit Notification	push	main	completed	success	2026-08-01T06:03:07Z	2026-08-01T06:03:21Z	2026-08-01T06:03:07Z	525fd016d723e56bf1c5fd978778c86641bb4620	1
+30686994231	Backend CI/CD	push	main	completed	success	2026-08-01T06:03:07Z	2026-08-01T06:09:18Z	2026-08-01T06:03:07Z	525fd016d723e56bf1c5fd978778c86641bb4620	1
+30686157415	Slack Commit Notification	push	main	completed	success	2026-08-01T05:36:30Z	2026-08-01T05:36:38Z	2026-08-01T05:36:30Z	6f99f732d3caf39e934bf6bc39e6b5cc6ee948f3	1
+30686157414	Backend CI/CD	push	main	completed	success	2026-08-01T05:36:30Z	2026-08-01T05:42:36Z	2026-08-01T05:36:30Z	6f99f732d3caf39e934bf6bc39e6b5cc6ee948f3	1
+30686113952	Slack Commit Notification	push	feat/daily-analysis-credits	completed	success	2026-08-01T05:35:11Z	2026-08-01T05:35:27Z	2026-08-01T05:35:11Z	6f99f732d3caf39e934bf6bc39e6b5cc6ee948f3	1
+30685596591	Slack Commit Notification	push	prod	completed	success	2026-08-01T05:18:48Z	2026-08-01T05:18:54Z	2026-08-01T05:18:48Z	ec83202b0c55b1d2f0b20b17d6a9d24a81f94b18	1
+30683878000	Slack Commit Notification	push	develop	completed	success	2026-08-01T04:24:24Z	2026-08-01T04:24:32Z	2026-08-01T04:24:24Z	ec83202b0c55b1d2f0b20b17d6a9d24a81f94b18	1
+30680512668	Slack Commit Notification	push	main	completed	success	2026-08-01T02:41:43Z	2026-08-01T02:41:49Z	2026-08-01T02:41:43Z	ec83202b0c55b1d2f0b20b17d6a9d24a81f94b18	1
+30680512659	Backend CI/CD	push	main	completed	success	2026-08-01T02:41:43Z	2026-08-01T02:53:49Z	2026-08-01T02:41:43Z	ec83202b0c55b1d2f0b20b17d6a9d24a81f94b18	1
+30637089485	Slack Commit Notification	push	agent/b2b-channel-calendar	completed	success	2026-07-31T14:04:47Z	2026-07-31T14:04:54Z	2026-07-31T14:04:47Z	112e8853b994dada62ea7ea798e3f669e8884157	1
+30635997540	Slack Commit Notification	push	main	completed	success	2026-07-31T13:49:15Z	2026-07-31T13:49:32Z	2026-07-31T13:49:15Z	1955040797ac9a9bd34c5db3e2942703dc78fee7	1
+30635997502	Backend CI/CD	push	main	completed	success	2026-07-31T13:49:15Z	2026-07-31T13:56:04Z	2026-07-31T13:49:15Z	1955040797ac9a9bd34c5db3e2942703dc78fee7	1
+30616874722	Slack Commit Notification	push	fix/position-code-uses-tech-stack	completed	success	2026-07-31T08:35:58Z	2026-07-31T08:36:07Z	2026-07-31T08:35:58Z	7167d5f3cf86ff30c5a4b9f1faa925140c124287	1
+30615555079	Slack Commit Notification	push	main	completed	success	2026-07-31T08:13:34Z	2026-07-31T08:13:41Z	2026-07-31T08:13:34Z	eb556c5022d1aff431961b05dde5e7331a5013d3	1
+30615554644	Backend CI/CD	push	main	completed	success	2026-07-31T08:13:33Z	2026-07-31T08:20:24Z	2026-07-31T08:13:33Z	eb556c5022d1aff431961b05dde5e7331a5013d3	1
+30547301130	Slack Commit Notification	push	main	completed	success	2026-07-30T13:31:28Z	2026-07-30T13:31:36Z	2026-07-30T13:31:28Z	86bd71e4de913cc6788053c83ff9f518bca752ee	1
+30547301043	Backend CI/CD	push	main	completed	success	2026-07-30T13:31:28Z	2026-07-30T13:39:04Z	2026-07-30T13:31:28Z	86bd71e4de913cc6788053c83ff9f518bca752ee	1
+30547291876	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-07-30T13:31:21Z	2026-07-30T13:31:29Z	2026-07-30T13:31:21Z	05d2374e9f8ea3ced9a50081afe2d41a769d93ff	1
+30543517985	Slack Commit Notification	push	main	completed	success	2026-07-30T12:40:18Z	2026-07-30T12:40:35Z	2026-07-30T12:40:18Z	cf2b3f4b5ce018d4fc86fee739fa8d5fcd32e5d5	1
+30543517879	Backend CI/CD	push	main	completed	success	2026-07-30T12:40:17Z	2026-07-30T12:46:05Z	2026-07-30T12:40:17Z	cf2b3f4b5ce018d4fc86fee739fa8d5fcd32e5d5	1
+30540268219	Slack Commit Notification	push	main	completed	success	2026-07-30T11:52:50Z	2026-07-30T11:52:57Z	2026-07-30T11:52:50Z	b09ec9edb63188e57eec2fa54564b3e6bf6c579e	1
+30540268179	Backend CI/CD	push	main	completed	success	2026-07-30T11:52:50Z	2026-07-30T11:59:06Z	2026-07-30T11:52:50Z	b09ec9edb63188e57eec2fa54564b3e6bf6c579e	1
+30538505768	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-07-30T11:25:38Z	2026-07-30T11:25:47Z	2026-07-30T11:25:38Z	730c5ffc38c642235b83c6f528f4711892f29929	1
+30519472948	Backend CI/CD	push	main	completed	success	2026-07-30T06:24:25Z	2026-07-30T06:31:12Z	2026-07-30T06:24:25Z	6039605a042d6af49713832b6024c5acbfb3eede	1
+30519472939	Slack Commit Notification	push	main	completed	success	2026-07-30T06:24:25Z	2026-07-30T06:24:32Z	2026-07-30T06:24:25Z	6039605a042d6af49713832b6024c5acbfb3eede	1
+30519427535	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-07-30T06:23:31Z	2026-07-30T06:23:38Z	2026-07-30T06:23:31Z	3ca14745be757677918eb05f61b1ea2ea72da6cb	1
+30518017490	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-07-30T05:55:39Z	2026-07-30T05:55:46Z	2026-07-30T05:55:39Z	2075f75762412f59b3751b77d2f098ee1924456f	1
+30517780200	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-07-30T05:50:47Z	2026-07-30T05:50:53Z	2026-07-30T05:50:47Z	61d4cde1f1a262bb92b45ad04583d29176f34c5d	1
+30517630259	Slack Commit Notification	push	fix/ocr-degeneration-guard	completed	success	2026-07-30T05:47:40Z	2026-07-30T05:47:58Z	2026-07-30T05:47:40Z	c6acf2bac652c7b843abed19d17ae81e58050c63	1
+30516531843	Slack Commit Notification	push	main	completed	success	2026-07-30T05:24:32Z	2026-07-30T05:24:39Z	2026-07-30T05:24:32Z	06e4e3a16cf03378a862290b334c0ab468213e41	1
+30516531829	Backend CI/CD	push	main	completed	success	2026-07-30T05:24:32Z	2026-07-30T05:33:25Z	2026-07-30T05:24:32Z	06e4e3a16cf03378a862290b334c0ab468213e41	1
+30516452708	Backend CI/CD	push	main	completed	success	2026-07-30T05:22:53Z	2026-07-30T05:29:15Z	2026-07-30T05:22:53Z	207f001f77f0fb185351717cc38c60f0ffb2b6bf	1
+30516452689	Slack Commit Notification	push	main	completed	success	2026-07-30T05:22:53Z	2026-07-30T05:23:08Z	2026-07-30T05:22:53Z	207f001f77f0fb185351717cc38c60f0ffb2b6bf	1
+30516430893	Slack Commit Notification	push	agent/bedrock-service-updates	completed	success	2026-07-30T05:22:26Z	2026-07-30T05:22:33Z	2026-07-30T05:22:26Z	207f001f77f0fb185351717cc38c60f0ffb2b6bf	1
+30512989042	Slack Commit Notification	push	feat/wanted-company-logo	completed	success	2026-07-30T04:07:05Z	2026-07-30T04:07:18Z	2026-07-30T04:07:05Z	d2061bc3f6cc22e15e78b492cdd50aa638f2d842	1
+30512247596	Slack Commit Notification	push	feat/wanted-company-logo	completed	success	2026-07-30T03:50:29Z	2026-07-30T03:50:39Z	2026-07-30T03:50:29Z	7ee0241e783e7e0a5cfdc89dfb047e8ca47a9a1d	1
+30511572466	Slack Commit Notification	push	agent/bedrock-service-updates	completed	success	2026-07-30T03:35:03Z	2026-07-30T03:35:12Z	2026-07-30T03:35:03Z	852c9d61b74a2cd81b6eb96938a11327b5acc6ff	1
+30511262369	Slack Commit Notification	push	feat/wanted-company-logo	completed	success	2026-07-30T03:28:11Z	2026-07-30T03:28:17Z	2026-07-30T03:28:11Z	9c31f5ba2c14d355af098eef16086b50bc87c7da	1
+30511225063	Slack Commit Notification	push	feat/wanted-company-logo	completed	success	2026-07-30T03:27:18Z	2026-07-30T03:27:26Z	2026-07-30T03:27:18Z	ddd253f38388fcdf466b053402d96d0b16d5e29d	1
+30509804154	Slack Commit Notification	push	docs/local-aws-credentials	completed	success	2026-07-30T02:56:16Z	2026-07-30T02:56:23Z	2026-07-30T02:56:16Z	65c4a440a28ef9de63ee2d328aa89664a8806071	1
+30506784195	Slack Commit Notification	push	main	completed	success	2026-07-30T01:50:43Z	2026-07-30T01:50:50Z	2026-07-30T01:50:43Z	063e2058e4b9550933b5d74610566a45c07a8bb0	1
+30506784193	Backend CI/CD	push	main	completed	success	2026-07-30T01:50:43Z	2026-07-30T01:57:27Z	2026-07-30T01:50:43Z	063e2058e4b9550933b5d74610566a45c07a8bb0	1
+30473985466	Backend CI/CD	pull_request	feat/job-journey-tracker	completed	success	2026-07-29T17:08:40Z	2026-07-29T17:11:03Z	2026-07-29T17:08:40Z	063e2058e4b9550933b5d74610566a45c07a8bb0	1
+30473982687	Slack Commit Notification	push	feat/job-journey-tracker	completed	success	2026-07-29T17:08:37Z	2026-07-29T17:08:45Z	2026-07-29T17:08:37Z	063e2058e4b9550933b5d74610566a45c07a8bb0	1
+30472647296	Backend CI/CD	pull_request	feat/job-journey-tracker	completed	success	2026-07-29T16:51:18Z	2026-07-29T16:55:10Z	2026-07-29T16:51:18Z	8c4ca5fa8d915be716089f62750a1caa97c4ab38	1
+30466908795	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-07-29T15:39:13Z	2026-07-29T15:39:20Z	2026-07-29T15:39:13Z	2ed7971adf9baba26db205dea3dc9d4142947de0	1
+30464740808	Slack Commit Notification	push	feat/job-journey-tracker	completed	success	2026-07-29T15:12:40Z	2026-07-29T15:12:49Z	2026-07-29T15:12:40Z	8c4ca5fa8d915be716089f62750a1caa97c4ab38	1
+30463829686	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-07-29T15:01:40Z	2026-07-29T15:01:55Z	2026-07-29T15:01:40Z	c40c55d90ece3ee0c1726aec3c4a45077ee746f9	1
+30461045406	Slack Commit Notification	push	feat/job-journey-tracker	completed	success	2026-07-29T14:28:35Z	2026-07-29T14:28:45Z	2026-07-29T14:28:35Z	fc7fc32d3c4e0a92339bfb4875c23aeed51373f1	1
+30459242537	Slack Commit Notification	push	feature/b2c-quiz	completed	success	2026-07-29T14:06:41Z	2026-07-29T14:06:59Z	2026-07-29T14:06:41Z	3a19a22c746abb731055cf540cf5290fbfb0b43d	1
+30458809448	Slack Commit Notification	push	feature/b2b-signin	completed	success	2026-07-29T14:01:30Z	2026-07-29T14:01:40Z	2026-07-29T14:01:30Z	3a19a22c746abb731055cf540cf5290fbfb0b43d	1
+30351552560	Backend CI/CD	pull_request	feature/saramwantjob	completed	success	2026-07-28T10:38:24Z	2026-07-28T10:41:30Z	2026-07-28T10:38:24Z	8ca42cd9a27ff7fe6e1665d2bd144ba97ccaa726	1
+30342600572	Slack Commit Notification	push	feature/saramwantjob	completed	success	2026-07-28T08:29:37Z	2026-07-28T08:29:46Z	2026-07-28T08:29:37Z	8ca42cd9a27ff7fe6e1665d2bd144ba97ccaa726	1
+30336997652	Backend CI/CD	push	main	completed	success	2026-07-28T07:03:57Z	2026-07-28T07:08:01Z	2026-07-28T07:03:57Z	3a19a22c746abb731055cf540cf5290fbfb0b43d	1
+30336997574	Slack Commit Notification	push	main	completed	success	2026-07-28T07:03:57Z	2026-07-28T07:04:07Z	2026-07-28T07:03:57Z	3a19a22c746abb731055cf540cf5290fbfb0b43d	1
+30336588035	Slack Commit Notification	push	main	completed	success	2026-07-28T06:57:22Z	2026-07-28T06:57:39Z	2026-07-28T06:57:22Z	095b357d64a56704a4e3fd36e29f685638a8fdaf	1
+30336588024	Backend CI/CD	push	main	completed	success	2026-07-28T06:57:22Z	2026-07-28T07:02:47Z	2026-07-28T06:57:22Z	095b357d64a56704a4e3fd36e29f685638a8fdaf	1
+30336114265	Slack Commit Notification	push	fix/launch-audit	completed	success	2026-07-28T06:49:28Z	2026-07-28T06:49:35Z	2026-07-28T06:49:28Z	1fb482b3feae74507bfcf1718fa88055e770f988	1
+30332369925	Slack Commit Notification	push	fix/launch-audit	completed	success	2026-07-28T05:41:01Z	2026-07-28T05:41:19Z	2026-07-28T05:41:01Z	893174f3eba9762721608d0a92df16223b4719c1	1
+30332368591	Slack Commit Notification	push	fix/quiz-room-overhaul	completed	success	2026-07-28T05:40:59Z	2026-07-28T05:41:19Z	2026-07-28T05:40:59Z	191300e667f7913161d4b47c6d6a9e7ef5fa3d4a	1
+30331295519	Slack Commit Notification	push	ci/production-deploy	completed	success	2026-07-28T05:19:25Z	2026-07-28T05:19:39Z	2026-07-28T05:19:25Z	f83a349a949a5ae472b3f0525ccd00671e42db2f	1
+30331184812	Backend CI/CD	push	main	completed	success	2026-07-28T05:17:06Z	2026-07-28T05:22:35Z	2026-07-28T05:17:06Z	220a4c5c04698757795afb90efdafda9011bcd28	1
+30331184803	Slack Commit Notification	push	main	completed	success	2026-07-28T05:17:06Z	2026-07-28T05:17:13Z	2026-07-28T05:17:06Z	220a4c5c04698757795afb90efdafda9011bcd28	1
+30324630924	Slack Commit Notification	push	main	completed	success	2026-07-28T02:58:49Z	2026-07-28T02:59:04Z	2026-07-28T02:58:49Z	89b206490a82ee6be7fe172e091a4d6ca58cdd71	1
+30324630921	Backend CI/CD	push	main	completed	success	2026-07-28T02:58:49Z	2026-07-28T03:04:43Z	2026-07-28T02:58:49Z	89b206490a82ee6be7fe172e091a4d6ca58cdd71	1
+30324611830	Slack Commit Notification	push	agent/b2c-refresh-session	completed	success	2026-07-28T02:58:22Z	2026-07-28T02:58:32Z	2026-07-28T02:58:22Z	4670289884e3b8fd0dc8dc96fe87c3f83c85460d	1
+30248960767	Backend CI/CD	push	main	completed	success	2026-07-27T08:11:54Z	2026-07-27T08:17:18Z	2026-07-27T08:11:54Z	b62423ffcd3e13e6d4b0068fe9a48a84a2698ac0	1
+30248960740	Slack Commit Notification	push	main	completed	success	2026-07-27T08:11:54Z	2026-07-27T08:12:01Z	2026-07-27T08:11:54Z	b62423ffcd3e13e6d4b0068fe9a48a84a2698ac0	1
+30248196294	Backend CI/CD	push	main	completed	failure	2026-07-27T08:00:08Z	2026-07-27T08:00:54Z	2026-07-27T08:00:08Z	b4a82869561f086f4d4d3a999137e544a2bfc597	1
+30248196178	Slack Commit Notification	push	main	completed	success	2026-07-27T08:00:08Z	2026-07-27T08:00:16Z	2026-07-27T08:00:08Z	b4a82869561f086f4d4d3a999137e544a2bfc597	1
+30246960236	Slack Commit Notification	push	feat/episode-parallel-analysis	completed	success	2026-07-27T07:39:54Z	2026-07-27T07:40:01Z	2026-07-27T07:39:54Z	79551ef4443f7f0b30de21443bf974f11ff6b111	1
+30246958976	Slack Commit Notification	push	improve/b2c-question-quality	completed	success	2026-07-27T07:39:53Z	2026-07-27T07:40:00Z	2026-07-27T07:39:53Z	2b4e08a4591d1cb99df76f23a0a9cde30cf85653	1
+30242432471	Slack Commit Notification	push	improve/b2c-question-quality	completed	success	2026-07-27T06:20:45Z	2026-07-27T06:20:52Z	2026-07-27T06:20:45Z	88622e659f657a1f87c3d84d98d3d99557c6ce16	1
+30241740393	Backend CI/CD	workflow_dispatch	main	completed	success	2026-07-27T06:07:54Z	2026-07-27T06:11:31Z	2026-07-27T06:07:54Z	84c55a9c43415560127f61e7af83954804370431	1
+30240270455	Backend CI/CD	workflow_dispatch	main	completed	success	2026-07-27T05:37:24Z	2026-07-27T05:40:53Z	2026-07-27T05:37:24Z	84c55a9c43415560127f61e7af83954804370431	1
+30239733714	Slack Commit Notification	push	main	completed	success	2026-07-27T05:26:04Z	2026-07-27T05:26:12Z	2026-07-27T05:26:04Z	84c55a9c43415560127f61e7af83954804370431	1
+30239733702	Backend CI/CD	push	main	completed	success	2026-07-27T05:26:04Z	2026-07-27T05:30:53Z	2026-07-27T05:26:04Z	84c55a9c43415560127f61e7af83954804370431	1
+30239715323	Slack Commit Notification	push	agent/bedrock-model-routing	completed	success	2026-07-27T05:25:39Z	2026-07-27T05:25:45Z	2026-07-27T05:25:39Z	84c55a9c43415560127f61e7af83954804370431	1
+30239215525	Slack Commit Notification	push	improve/b2c-question-quality	completed	success	2026-07-27T05:14:53Z	2026-07-27T05:15:02Z	2026-07-27T05:14:53Z	c441feb7eb854e876658367eb91dd1e52283b9ae	1
+30083792784	Slack Commit Notification	push	main	completed	success	2026-07-24T09:46:32Z	2026-07-24T09:46:40Z	2026-07-24T09:46:32Z	094e7c58680d1b4d87abcca4cc4dd8ecbc5c6db5	1
+30083792766	Backend CI/CD	push	main	completed	success	2026-07-24T09:46:32Z	2026-07-24T09:52:08Z	2026-07-24T09:46:32Z	094e7c58680d1b4d87abcca4cc4dd8ecbc5c6db5	1
+30083518114	Slack Commit Notification	push	fix/b2c-audit-fixes	completed	success	2026-07-24T09:42:02Z	2026-07-24T09:42:10Z	2026-07-24T09:42:02Z	094e7c58680d1b4d87abcca4cc4dd8ecbc5c6db5	1
+30082113208	Slack Commit Notification	push	fix/b2c-audit-fixes	completed	success	2026-07-24T09:18:52Z	2026-07-24T09:19:02Z	2026-07-24T09:18:52Z	7c1834caae16c6d9b3e7c4911bf907f03ede1409	1
+30082040821	Slack Commit Notification	push	main	completed	success	2026-07-24T09:17:42Z	2026-07-24T09:17:51Z	2026-07-24T09:17:42Z	008902c4f59999460566b11a0f16a1cc09d6231c	1
+30082040783	Backend CI/CD	push	main	completed	success	2026-07-24T09:17:42Z	2026-07-24T09:22:59Z	2026-07-24T09:17:42Z	008902c4f59999460566b11a0f16a1cc09d6231c	1
+30081690549	Slack Commit Notification	push	fix/b2c-audit-fixes	completed	success	2026-07-24T09:12:00Z	2026-07-24T09:12:07Z	2026-07-24T09:12:00Z	2eca46625bbf5b80e9a181aa3036b345e5db9838	1
+30078226997	Slack Commit Notification	push	fix/b2c-audit-fixes	completed	success	2026-07-24T08:14:25Z	2026-07-24T08:14:31Z	2026-07-24T08:14:25Z	8b7c800f44cdb2ce5ce4da95c2ad3ffc4e5e9558	1
+29993831392	Backend CI/CD	push	main	completed	success	2026-07-23T09:05:28Z	2026-07-23T09:23:22Z	2026-07-23T09:19:45Z	c5e41fbd022981633bfe422aa5741caa0d9901e4	3
+29993830510	Slack Commit Notification	push	main	completed	success	2026-07-23T09:05:27Z	2026-07-23T09:05:43Z	2026-07-23T09:05:27Z	c5e41fbd022981633bfe422aa5741caa0d9901e4	1
+29992568710	Slack Commit Notification	push	main	completed	success	2026-07-23T08:49:31Z	2026-07-23T08:51:45Z	2026-07-23T08:49:31Z	524284e445ba1226386f7f6302871fe75fa0a723	1
+29992568653	Backend CI/CD	push	main	completed	cancelled	2026-07-23T08:49:31Z	2026-07-23T08:51:30Z	2026-07-23T08:49:31Z	524284e445ba1226386f7f6302871fe75fa0a723	1
+29992486750	Slack Commit Notification	push	main	completed	success	2026-07-23T08:48:45Z	2026-07-23T08:48:52Z	2026-07-23T08:48:45Z	46c8676724490652f030b68f96bff0a1ba9cb2eb	1
+29992486386	Backend CI/CD	push	main	completed	cancelled	2026-07-23T08:48:44Z	2026-07-23T08:50:21Z	2026-07-23T08:48:44Z	46c8676724490652f030b68f96bff0a1ba9cb2eb	1
+29992409701	Slack Commit Notification	push	agent/backend-cicd	completed	success	2026-07-23T08:47:54Z	2026-07-23T08:48:04Z	2026-07-23T08:47:54Z	46c8676724490652f030b68f96bff0a1ba9cb2eb	1
+29992369215	Slack Commit Notification	push	main	completed	success	2026-07-23T08:47:27Z	2026-07-23T08:47:36Z	2026-07-23T08:47:27Z	be715f8bb32feaee4898c8936bb60f88c198d2f1	1
+29992368635	Backend CI/CD	push	main	completed	cancelled	2026-07-23T08:47:27Z	2026-07-23T09:00:15Z	2026-07-23T08:47:27Z	be715f8bb32feaee4898c8936bb60f88c198d2f1	1
+29991885398	Backend CI/CD	workflow_dispatch	main	completed	cancelled	2026-07-23T08:40:31Z	2026-07-23T08:50:19Z	2026-07-23T08:40:31Z	46c8676724490652f030b68f96bff0a1ba9cb2eb	1
+29991782865	Backend CI/CD	pull_request	agent/backend-cicd	completed	success	2026-07-23T08:38:26Z	2026-07-23T08:41:15Z	2026-07-23T08:38:26Z	46c8676724490652f030b68f96bff0a1ba9cb2eb	1
+29990137207	Slack Commit Notification	push	fix/b2c-ui-ux-fix	completed	success	2026-07-23T08:05:01Z	2026-07-23T08:05:10Z	2026-07-23T08:05:01Z	339ecf771c93440a7872e33ea8f2fb875f24b776	1
+29989934635	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-23T08:01:00Z	2026-07-23T08:01:59Z	2026-07-23T08:01:00Z	339ecf771c93440a7872e33ea8f2fb875f24b776	1
+29986180227	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-23T06:47:55Z	2026-07-23T06:48:04Z	2026-07-23T06:47:55Z	aedbcf1e35fec16869a171914700a13b9a0919f0	1
+29985170028	Backend CI	push	main	completed	success	2026-07-23T06:28:58Z	2026-07-23T06:31:24Z	2026-07-23T06:28:58Z	d6f3642a077f7480e0996946ba9d71d91713ebdc	1
+29985169992	Slack Commit Notification	push	main	completed	success	2026-07-23T06:28:58Z	2026-07-23T06:29:05Z	2026-07-23T06:28:58Z	d6f3642a077f7480e0996946ba9d71d91713ebdc	1
+29985137156	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-23T06:28:19Z	2026-07-23T06:28:25Z	2026-07-23T06:28:19Z	d6f3642a077f7480e0996946ba9d71d91713ebdc	1
+29984876229	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-23T06:23:14Z	2026-07-23T06:23:23Z	2026-07-23T06:23:14Z	ec2c7991a6ecdd2df6830c0283bc68d1a61f75e5	1
+29976471587	Slack Commit Notification	push	main	completed	success	2026-07-23T03:14:05Z	2026-07-23T03:14:12Z	2026-07-23T03:14:05Z	fb39e8e5ad1e23a59fa49a517bc9469bc3967bbd	1
+29976471582	Backend CI	push	main	completed	success	2026-07-23T03:14:05Z	2026-07-23T03:15:42Z	2026-07-23T03:14:05Z	fb39e8e5ad1e23a59fa49a517bc9469bc3967bbd	1
+29975432732	Backend CI	push	main	completed	success	2026-07-23T02:50:53Z	2026-07-23T02:53:04Z	2026-07-23T02:50:53Z	c3ca066bd3beebbf0d3d59bd53d648edfdef97d0	1
+29975432723	Slack Commit Notification	push	main	completed	success	2026-07-23T02:50:53Z	2026-07-23T02:50:59Z	2026-07-23T02:50:53Z	c3ca066bd3beebbf0d3d59bd53d648edfdef97d0	1
+29973472307	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-23T02:05:00Z	2026-07-23T02:05:06Z	2026-07-23T02:05:00Z	fc43b2b9b6f9614e4948093909ebb93e362386a1	1
+29972195575	Slack Commit Notification	push	feature/interviewer-company-signup	completed	success	2026-07-23T01:35:33Z	2026-07-23T01:35:39Z	2026-07-23T01:35:33Z	879e1f19d15af7bebeab088f8b9be7005311b562	1
+29911448505	Slack Commit Notification	push	feature/interviewer-company-signup	completed	success	2026-07-22T10:19:10Z	2026-07-22T10:19:21Z	2026-07-22T10:19:10Z	fe18b820787f12817401d14a668cec1181b5deb4	1
+29885877369	Slack Commit Notification	push	fix/b2c-ui-ux-fix	completed	success	2026-07-22T02:27:40Z	2026-07-22T02:27:48Z	2026-07-22T02:27:40Z	977c67b62a2fd6a553c40ddc5c5d67b20d12d47b	1
+29840414090	Backend CI	push	main	completed	success	2026-07-21T14:42:46Z	2026-07-21T14:44:47Z	2026-07-21T14:42:46Z	977c67b62a2fd6a553c40ddc5c5d67b20d12d47b	1
+29840413923	Slack Commit Notification	push	main	completed	success	2026-07-21T14:42:46Z	2026-07-21T14:42:54Z	2026-07-21T14:42:46Z	977c67b62a2fd6a553c40ddc5c5d67b20d12d47b	1
+29840235282	Backend CI	pull_request	feature/candidate-dashboard	completed	success	2026-07-21T14:40:36Z	2026-07-21T14:42:24Z	2026-07-21T14:40:36Z	381730969be9546f57770940b58a6cdff8559713	1
+29815145268	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-21T08:39:33Z	2026-07-21T08:39:39Z	2026-07-21T08:39:33Z	381730969be9546f57770940b58a6cdff8559713	1
+29678027021	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-19T07:23:29Z	2026-07-19T07:23:35Z	2026-07-19T07:23:29Z	20b0f7eba685f7e876b0e84574729e3b29313ef4	1
+29676397720	Slack Commit Notification	push	feature/b2b-v2-production	completed	success	2026-07-19T06:24:45Z	2026-07-19T06:24:52Z	2026-07-19T06:24:45Z	a02dbb3a79d59e2fd27499755967bda5856969b8	1
+29675963499	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-19T06:08:52Z	2026-07-19T06:08:59Z	2026-07-19T06:08:52Z	74b9f1858e3685870bfd676901cddb50d306cbc3	1
+29634345114	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-18T06:38:47Z	2026-07-18T06:38:56Z	2026-07-18T06:38:47Z	b75c6f6419d9fa694e6ad025598881041bf8523a	1
+29556888905	Slack Commit Notification	push	feature/candidate-dashboard	completed	success	2026-07-17T05:16:03Z	2026-07-17T05:16:10Z	2026-07-17T05:16:03Z	76e1131a416078ddd9150f296a7fd20b38c3e4fa	1
+29469872115	Slack Commit Notification	push	feature/jobseeker-interview-preparations	completed	success	2026-07-16T03:49:34Z	2026-07-16T03:49:41Z	2026-07-16T03:49:34Z	1612bcc6e9841b91cd7575026bcddd6f23c4c230	1
+29466510820	Slack Commit Notification	push	feature/jobseeker-interview-preparations	completed	success	2026-07-16T02:24:33Z	2026-07-16T02:24:42Z	2026-07-16T02:24:33Z	23bd38283c86dc88430610dc8059e7d75c2f7ba0	1
+29465494867	Slack Commit Notification	push	feature/jobseeker-interview-preparations	completed	success	2026-07-16T02:00:00Z	2026-07-16T02:00:10Z	2026-07-16T02:00:00Z	9a674b91cad45d8efb4f9175c90820bb97435d90	1
+29462386662	Backend CI	push	main	completed	success	2026-07-16T00:47:06Z	2026-07-16T00:48:28Z	2026-07-16T00:47:06Z	af887f6dc0ca242788ac64e1515d515601c6b389	1
+29462386606	Slack Commit Notification	push	main	completed	success	2026-07-16T00:47:06Z	2026-07-16T00:47:15Z	2026-07-16T00:47:06Z	af887f6dc0ca242788ac64e1515d515601c6b389	1
+29380683766	Slack Commit Notification	push	main	completed	success	2026-07-15T01:03:35Z	2026-07-15T01:03:44Z	2026-07-15T01:03:35Z	8993a8f2e730942229d9b1c355372266928c5a5e	1
+29380683500	Backend CI	push	main	completed	success	2026-07-15T01:03:35Z	2026-07-15T01:04:43Z	2026-07-15T01:03:35Z	8993a8f2e730942229d9b1c355372266928c5a5e	1
+29379930066	Slack Commit Notification	push	main	completed	success	2026-07-15T00:46:04Z	2026-07-15T00:46:13Z	2026-07-15T00:46:04Z	6d04cdf2f4e5369d195ec5d30ed3363534a8c230	1
+29379930046	Backend CI	push	main	completed	success	2026-07-15T00:46:04Z	2026-07-15T00:47:20Z	2026-07-15T00:46:04Z	6d04cdf2f4e5369d195ec5d30ed3363534a8c230	1
+29314078724	Backend CI	push	main	completed	success	2026-07-14T07:17:44Z	2026-07-14T07:18:53Z	2026-07-14T07:17:44Z	2c8cdc4ca671235dce46de203a269731b2a10e2f	1
+29314078647	Slack Commit Notification	push	main	completed	success	2026-07-14T07:17:44Z	2026-07-14T07:17:52Z	2026-07-14T07:17:44Z	2c8cdc4ca671235dce46de203a269731b2a10e2f	1
+29304134663	Slack Commit Notification	push	main	completed	success	2026-07-14T03:41:59Z	2026-07-14T03:42:08Z	2026-07-14T03:41:59Z	2c88fbea8478c27e033ea2788aa2aa5a02e7c2d1	1
+29304134617	Backend CI	push	main	completed	success	2026-07-14T03:41:59Z	2026-07-14T03:43:58Z	2026-07-14T03:41:59Z	2c88fbea8478c27e033ea2788aa2aa5a02e7c2d1	1
+29203588490	Slack Commit Notification	push	feat/b2c-position-portfolio	completed	success	2026-07-12T18:17:16Z	2026-07-12T18:17:25Z	2026-07-12T18:17:16Z	0c7933da2a0cd6e00867fe884d7f88851292de6b	1
+29160045883	Slack Commit Notification	push	main	completed	success	2026-07-11T16:34:30Z	2026-07-11T16:34:37Z	2026-07-11T16:34:30Z	12d15498c60358df43b236a020ee496a0e8648ed	1
+29160045840	Backend CI	push	main	completed	success	2026-07-11T16:34:30Z	2026-07-11T16:35:55Z	2026-07-11T16:34:30Z	12d15498c60358df43b236a020ee496a0e8648ed	1
+29160040410	Slack Commit Notification	push	integration/production-ready	completed	success	2026-07-11T16:34:21Z	2026-07-11T16:34:33Z	2026-07-11T16:34:21Z	12d15498c60358df43b236a020ee496a0e8648ed	1
+29160039843	Slack Commit Notification	push	feat/jwt-http-only-auth	completed	success	2026-07-11T16:34:20Z	2026-07-11T16:34:33Z	2026-07-11T16:34:20Z	0d8ba513916f325d0688660c05f351e7c3f12871	1
+29160039701	Slack Commit Notification	push	feat/analysis-core	completed	success	2026-07-11T16:34:20Z	2026-07-11T16:34:30Z	2026-07-11T16:34:20Z	569b4df3dbc8d86bab89e48c3b4cc80197f7eeb9	1
+29160039692	Slack Commit Notification	push	feat/production-foundation	completed	success	2026-07-11T16:34:20Z	2026-07-11T16:34:33Z	2026-07-11T16:34:20Z	a9b2e2a38cfa97c6d9b8d5077aa03954758d812c	1
+29160039483	Slack Commit Notification	push	feat/b2b-application-channel	completed	success	2026-07-11T16:34:19Z	2026-07-11T16:34:26Z	2026-07-11T16:34:19Z	dec372104221ea99f7621e1b74da8b9af9f42ec8	1
+29160039445	Slack Commit Notification	push	feat/b2c-interview-coach	completed	success	2026-07-11T16:34:19Z	2026-07-11T16:34:27Z	2026-07-11T16:34:19Z	dafb236754757ae6e250260d16a92cb7d3787942	1
+28855860120	Slack Commit Notification	push	main	completed	success	2026-07-07T09:26:26Z	2026-07-07T09:26:35Z	2026-07-07T09:26:26Z	e0551fa5ff9d0354dc93dde3d924d45bf5acfdbf	1
+28855685334	Slack Commit Notification	push	codex/backend-api-docs-repo-filter	completed	success	2026-07-07T09:23:26Z	2026-07-07T09:23:33Z	2026-07-07T09:23:26Z	e0551fa5ff9d0354dc93dde3d924d45bf5acfdbf	1
+28776623706	Slack Commit Notification	push	main	completed	success	2026-07-06T07:57:59Z	2026-07-06T07:58:06Z	2026-07-06T07:57:59Z	e0795077a4be8e499432d5da42ed8b3cc0186835	1
+28769226674	Slack Commit Notification	push	main	completed	success	2026-07-06T05:09:29Z	2026-07-06T05:09:36Z	2026-07-06T05:09:29Z	be5849c5f9b20f445d1420b6c4d498838ef49ff1	1
+28769144881	Slack Commit Notification	push	main	completed	success	2026-07-06T05:07:14Z	2026-07-06T05:07:20Z	2026-07-06T05:07:14Z	1dad538ce712b5c163895eb401aa48d192eea577	1
+28769144859	Slack Commit Notification	push	main	completed	success	2026-07-06T05:07:14Z	2026-07-06T05:07:21Z	2026-07-06T05:07:14Z	be32bf17d2e61066c33a14785e0cac0f38c0a082	1

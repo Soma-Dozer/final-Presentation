@@ -1,0 +1,16 @@
+metric,value,unit,note
+b2c_members_total,83,명,정본 · 관리자 콘솔 B2C 대시보드 365일 2026-11-04 12:27 KST · 팀원·멘토 4명 포함
+b2c_members_external_est,79,명,추정: 83 - 팀원·멘토 4명
+guest_sessions,393,세션,비로그인 방문자
+guest_prep_visitors,62,명,비로그인 공고 등록 방문자
+interview_preps,153,건,
+interview_prep_users,64,명,
+signup_to_prep_rate,77.1,%,
+analysis_users,57,명,
+analysis_completion_rate,90.1,%,
+answer_users,13,명,
+signup_to_answer_rate,15.7,%,
+study_set_users,52,명,
+study_sets_created,155,건,
+study_sets_completed,6,건,
+paid_orders,0,건,

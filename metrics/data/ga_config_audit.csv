@@ -1,0 +1,11 @@
+item,current,issue,fix
+내부 트래픽 규칙,0개,팀 트래픽이 전부 집계됨,팀 IP 규칙 추가
+내부 트래픽 데이터 필터,테스트 상태,제외가 적용되지 않음,규칙 추가 후 활성으로 전환
+원치 않는 추천,미설정,github.com(OAuth 복귀)·clarity.microsoft.com이 유입으로 잡힘,두 도메인과 결제 도메인 등록
+맞춤 측정기준,0개,이벤트 파라미터를 보고서에서 못 씀,location·method·repository_access·has_source_url 등록
+이벤트 데이터 보관,2개월,탐색 분석이 최근 2개월만 가능,14개월로 변경
+주요 이벤트,prep_created·repository_access_selected·purchase,purchase 이벤트 코드 없음(결제 성공 페이지는 GA 스킵),purchase 구현
+repository_access_selected 파라미터,source=signup_onboarding,GA4가 트래픽 소스로 해석해 출처를 덮어씀,파라미터 이름 변경(entry_point)
+페이지 경로,559개,UUID·후행 슬래시로 같은 화면이 분산,page_location 정규화
+향상된 측정,전부 켜짐,view_search_results·form_* 노이즈,사이트 검색·양식 상호작용 끄기
+Google 신호,미사용,연령·성별 데이터 없음,필요 시 활성화(동의 고지 확인)

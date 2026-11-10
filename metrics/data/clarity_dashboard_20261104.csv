@@ -1,0 +1,30 @@
+period,metric,value,unit
+last_30d,sessions,9260,세션(봇 288 제외)
+last_30d,unique_users,8727,명
+last_30d,new_user_session_pct,94.23,%
+last_30d,pages_per_session,1.29,
+last_30d,scroll_depth_pct,29.04,%
+last_30d,active_time_sec,16,초
+last_30d,referrer_instagram,7673,세션
+last_30d,referrer_devfit_app,395,세션
+last_30d,referrer_google,285,세션
+last_30d,referrer_facebook,118,세션
+last_30d,referrer_youtube,64,세션
+last_30d,referrer_github,49,세션
+last_30d,referrer_news_hada_io,34,세션
+last_30d,browser_instagram_app_pct,85.66,%
+last_30d,entry_home_pageviews,8968,회
+last_30d,form_submit_sessions,19,세션
+last_30d,lcp_sec,7.1,초(나쁨)
+last_30d,cls,0.19,개선 필요
+last_30d,perf_score,70,/100
+last_30d,js_error_sessions_pct,2.55,%
+last_30d,react_418_share_pct,66.94,% of JS errors (hydration mismatch)
+last_7d,sessions,1650,세션
+last_7d,unique_users,1543,명
+last_7d,referrer_instagram,1308,세션
+last_7d,active_time_sec,19,초
+last_7d,scroll_depth_pct,36.76,%
+last_7d,lcp_sec,8.0,초(나쁨)
+last_7d,cls,0.52,나쁨
+last_7d,react_418_share_pct,94.12,% of JS errors

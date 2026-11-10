@@ -1,0 +1,1 @@
+Ignoring 7 permissions.allow entries from .claude/settings.local.json: this workspace has not been trusted. Run Claude Code interactively here once and accept the trust dialog, or set projects["/private/tmp/claude-501/-Users-aiden-dev-teams-ASM/44e5b55b-bef1-4a3a-8ba1-583a405dcd7e/scratchpad/exp-clones/Signify"].hasTrustDialogAccepted: true in /Users/aiden/.claude.json.
