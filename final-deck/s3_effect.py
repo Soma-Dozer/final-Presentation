@@ -10,6 +10,14 @@ from core import *
 S = Slides()    # 본편 — 이 파일 순서 그대로 들어간다
 APX = Slides()  # 부록 — A번호 순으로 자동 정렬
 CSS = r"""
+/* 부록 A16 직업정보제공사업 법률 (11-11) */
+.ef-lawa{flex:1;min-height:0;display:grid;grid-template-columns:470px 1fr;gap:56px;align-items:center;margin-top:10px;padding:0 20px}
+.ef-lawa .ef-law-doc img{max-height:640px;width:auto;max-width:100%}
+.ef-lawa .ef-law-act{padding:36px 44px}
+.ef-lawa .ef-law-act h4{font-size:30px;margin-bottom:22px}
+.ef-lawa .ef-law-act p{font-size:23px;line-height:1.7;margin-bottom:18px}
+.ef-lawa .ef-law-act .src{display:block;margin-top:22px;font-family:Pretendard,sans-serif;font-size:17px;font-weight:700;color:var(--muted)}
+
 .ev-a .sd img{height:600px}
 /* Effect — 장당 핵심 1개 (참고: ASM/최종발표_ppt.pdf 40–44) */
 .ef-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;width:100%}
@@ -367,6 +375,21 @@ S.note('''[≈14초] 결제를 받으려면 서류가 필요했습니다. 사업
 개인정보 보호 조치(사용자 지시 11-07 추가) — 근거는 운영 코드(BE origin/prod d84cb1c · FE e9b4f2b, 2026-11-06): §30 처리방침 = devfit.app/privacy/(라이브 200, 2026-09-09 시행) · §22 선택 동의 = FE components/analytics/ConsentBanner.tsx «[선택] 이용 통계와 광고 성과 측정에 동의» · §29 = auth/GithubTokenCipher AES/GCM + auth/TokenStore «원문 토큰을 남기지 않고 SHA-256 지문만 저장» · §21 = user/UserDeletionService «비활성 표시가 아니라 물리 삭제»(채용 워크스페이스 소속 계정은 지원자 데이터 때문에 탈퇴 차단·안내).
 ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. collect/K-compliance.md §1: 라이브 처리방침에 OpenAI(커밋 diff 국외 이전)·토스페이먼츠·Sentry·음성·업로드 문서가 아직 없음(11-07 curl 재확인, 시행일 9/9 그대로) → Q&A «비공개 코드가 어디로 가나요?»에 «AWS 안에서만»이라고 답하지 말 것. 처리방침 개정 전까지 장표는 «보호 조치»까지만.
 순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6).''')
+
+APX.append(shell('Appendix · A16', '채용공고를 보여 주는 서비스의 <span class="purple">직업정보제공사업 신고</span> 근거', """
+<div class="ef-lawa">
+  <div class="ef-law-doc"><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증"><span class="tag">신고확인증 · 서울청 제2026-31호</span></div>
+  <div class="ef-law-act">
+    <h4>직업안정법</h4>
+    <p><b>제2조의2(정의)</b> 8. "직업정보제공사업"이란 신문, 잡지, 그 밖의 간행물 또는 유선ㆍ무선방송이나 컴퓨터통신 등으로 구인ㆍ구직 정보 등 직업정보를 제공하는 사업을 말한다.</p>
+    <p><b>제23조(직업정보제공사업의 신고)</b> ① 직업정보제공사업을 하려는 자(제18조에 따라 무료직업소개사업을 하는 자와 제19조에 따라 유료직업소개사업을 하는 자는 제외한다)는 고용노동부장관에게 신고하여야 한다. 신고 사항을 변경하는 경우에도 또한 같다.</p>
+    <p>② 제1항에 따른 신고 사항, 신고 절차, 그 밖에 신고에 필요한 사항은 대통령령으로 정한다.</p>
+    <span class="src">법률 제20121호, 2024. 1. 23., 일부개정 · 국가법령정보센터 원문</span>
+  </div>
+</div>""", source='신고확인증 원본 그대로 (자르거나 가리지 않음) · 직업안정법 [법률 제20121호, 2024. 1. 23., 일부개정] 국가법령정보센터 원문'))
+APX.note('''[부록 · 11-11 사용자 지시] DevFit은 채용 플랫폼 5곳과 기업 채용 사이트의 채용공고를 가져와 보여 주므로 직업안정법 제2조의2 제8호의 직업정보제공사업에 해당하고, 제23조에 따라 신고했습니다(신고확인증 서울청 제2026-31호, 10-19). 본편에서는 36쪽 서류 장의 ③.
+⛔ «법률 검토 통과»·«외부 법무법인 자문» 금지(claims.md C6). 법률 멘토링·저작권 검토 의견 관련 Q&A 메모는 36쪽 서류 장 노트 끝.''')
+
 
 # ---------- ③ 지표 — 유저 · 실운영 ----------
 S.append(shell('Effect', '가입자 <span class="purple">90.4%</span>가 실제 공고로 준비 시작', '''
