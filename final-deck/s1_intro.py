@@ -273,13 +273,13 @@ S.note('''[0:00–0:10] 안녕하세요, 내 코드로 준비하는 공고 맞�
 S.append(shell('Problem', 'AI가 해내는 일은 코드 몇 줄에서 <span class="red">팀의 몇 주치 일</span>까지 늘었습니다', f'''
 <div class="in-col" style="justify-content:center">
   <div class="in-lv">
-    <div><em>2023</em><h4>코드 몇 줄을<br>채워 줌</h4><p>사람이 <b>4분</b> 걸리는 작업까지</p><p>Copilot을 켠 파일의 코드 <b>46%</b>를 자동 완성</p><small>GPT-4 · METR · GitHub 2023</small></div>
+    <div><em>2023</em><h4>코드 몇 줄을<br>채워 주는 수준</h4><p>사람이 <b>4분</b> 걸리는 작업까지</p><p>Copilot을 켠 파일의 코드 <b>46%</b>를 자동 완성</p><small>GPT-4 · METR · GitHub 2023</small></div>
     <i>→</i>
-    <div><em>2024</em><h4>실제 버그를<br>찾아 고침</h4><p>GitHub 이슈 <b>49%</b>를 혼자 해결</p><small>Claude 3.5 Sonnet · SWE-bench Verified</small></div>
+    <div><em>2024</em><h4>실제 버그를<br>찾아 고치는 수준</h4><p>GitHub 이슈 <b>49%</b>를 혼자 해결</p><small>Claude 3.5 Sonnet · SWE-bench Verified</small></div>
     <i>→</i>
-    <div><em>2025</em><h4>기능 하나를<br>통째로 구현</h4><p>사람이 <b>1시간~5시간</b> 걸리는 작업</p><small>Claude 3.7 Sonnet → Opus 4.5 · METR</small></div>
+    <div><em>2025</em><h4>기능 하나를<br>통째로 만드는 수준</h4><p>사람이 <b>1시간~5시간</b> 걸리는 작업</p><small>Claude 3.7 Sonnet → Opus 4.5 · METR</small></div>
     <i>→</i>
-    <div class="on"><em>2026</em><h4>팀이 몇 주 걸릴<br>일을 하루 만에</h4><p><b>68만 줄</b> 코드 이전을 하루 안에</p><small>Claude Opus 5.5 · GPT-6 Astra · 고객 사례</small></div>
+    <div class="on"><em>2026</em><h4>팀의 몇 주치 일을<br>하루 만에 끝내는 수준</h4><p><b>68만 줄</b> 코드 이전을 하루 안에</p><small>Claude Opus 5.5 · GPT-6 Astra · 고객 사례</small></div>
   </div>
   <div class="in-lvbar"><b>그래서</b><span>1년 새 GitHub에 합류한 신규 개발자 <em>3,600만 명</em>, 그중 80%가 첫 주부터 AI와 함께 코드 작성</span><small>GitHub Octoverse 2025</small></div>
 </div>''', cls='problem', source='METR time horizon (원시 데이터 benchmark_results_1_1.yaml, 블로그 2025-03-19) · GitHub, 「The economic impact of the AI-powered developer lifecycle and lessons from GitHub Copilot」, 2023. · SWE-bench Verified: Anthropic 2024-10 · 2026: Anthropic Claude Opus 5.5 발표 (2026-09-22) 고객 사례 · GitHub Octoverse 2025 (2025-10-28)'))
