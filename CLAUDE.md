@@ -28,14 +28,15 @@ zsh final-deck/build/build.sh <내이름>
 | 파일 | 내용 | 담당 |
 |---|---|---|
 | `final-deck/s1_intro.py` | 표지 · Problem · Solution · Key Features · Live Demo | 전반부 |
-| `final-deck/s2_dev.py` | Development (수행과정·기술) | Dev |
-| `final-deck/s3_effect.py` | Effect (성과·사업) | Effect |
+| `final-deck/s2_dev.py` | Development (수행과정·기술) | 🚫 Dev 담당 팀원만 |
+| `final-deck/s3_effect.py` | Effect (성과·사업). 단 «마케팅 · 유저» 블록(사용자 확보 경로 · 외부 회원 공고 83건)은 🚫 마케팅 담당 팀원만 | Effect |
 | `final-deck/s4_closing.py` | 마무리 · 감사합니다 · 부록 목차 | 전반부 |
 | `final-deck/s5_appendix.py` | 부록 A1~A14 | 전반부 |
 | `final-deck/core.py` · `gen.py` | 공용 CSS·헬퍼 · 조립기 | 🔒 관리자만 |
 | `final-deck/assets/` | 장표 이미지·로고 | |
 | `final-deck/vendor/irdeck_new.html` | 중간평가 덱 사본 (공용 CSS·JS 원본, 고치지 말 것) | |
 
+- **🚫 표시는 담당 팀원만 고친다.** Claude는 그 부분을 읽기만 하고 고치거나 다시 쓰지 않는다.
 - **자기 담당 파일만 고친다.** 다른 파일이나 `core.py`·`gen.py`를 바꿔야 하면 담당자에게 요청.
 - 새 CSS는 자기 파일의 `CSS = r"""…"""`에, 접두사(`in-` / `dv-` / `ef-`)를 붙여서.
 - 장 순서는 파일 안 순서 그대로. 부록은 eyebrow `Appendix · A<n>` 번호순 자동 정렬.
