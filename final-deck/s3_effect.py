@@ -89,7 +89,8 @@ CSS = r"""
 .ef-mh,.ef-mr{display:grid;grid-template-columns:400px 1fr 1fr;gap:36px;align-items:center}
 .ef-mh{padding:0 36px;font-size:18px;font-weight:800;color:var(--muted);letter-spacing:.02em}
 .ef-mr{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px 36px;flex:1;min-height:0}
-.ef-mr-who{display:grid;grid-template-columns:150px 1fr;grid-template-rows:auto auto;column-gap:22px;align-items:center}
+.ef-mr-who{display:flex;flex-direction:column;justify-content:center;gap:4px}
+.ef-mr-who b,.ef-mr-who small{align-self:flex-start!important;margin:0!important;text-align:left}
 .ef-mr-lg{grid-row:1 / span 2;height:92px;display:flex;align-items:center;justify-content:center}
 .ef-mr-lg img{max-height:92px;max-width:150px;width:auto;height:auto;object-fit:contain}
 .ef-mr-who b{font-size:28px;font-weight:900;letter-spacing:-.04em;align-self:end}
@@ -306,7 +307,7 @@ SBOM 차단 게이트 f7d2f42는 11-05 0fe63e1 승격으로 origin/prod 반영(m
 def mrow(logo, alt, who, role, advice, works, todo=False):
     w = ''.join(f'<li>{x}</li>' for x in works)
     return f'''<div class="ef-mr{' todo' if todo else ''}">
-  <div class="ef-mr-who"><div class="ef-mr-lg"><img src="assets/{logo}" alt="{alt}"></div><b>{who}</b><small>{role}</small></div>
+  <div class="ef-mr-who"><b>{who}</b><small>{role}</small></div>
   <div class="ef-mr-adv">{advice}</div>
   <ul class="ef-mr-work">{w}</ul>
 </div>'''
