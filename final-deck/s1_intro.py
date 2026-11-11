@@ -266,6 +266,158 @@ S.note('''[0:00–0:10] 안녕하세요, 내 코드로 준비하는 공고 맞�
 
 사사문구 국문·영문: 00-평가안내.md §사사문구 원문 그대로.''')
 
+# ================= 팀과 멘토 소개: 중간발표 원본 =================
+S.append(r'''<section class="slide" data-title="팀 소개" data-order="2">
+  <div class="slide-shell">
+    <div class="brand"><img src="assets/icon.svg" alt="">Dev<b>Fit</b></div>
+    <header class="topline" style="min-height:auto;display:flex;align-items:center;justify-content:space-between;gap:40px;padding-right:200px">
+      <div>
+        <div class="eyebrow">팀 소개</div>
+        <h1 class="title" style="font-size:42px">팀 <span class="purple">Dozer</span></h1>
+      </div>
+      <img src="assets/Dozer_일러스트_trim.png" alt="팀 Dozer 일러스트, 왼쪽부터 노재원 박천웅 김건우" style="width:320px;height:auto;flex:none">
+    </header>
+    <div class="slide-content" style="margin-top:18px">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;flex:1">
+        <article class="panel" style="padding:24px 30px;display:flex;flex-direction:column">
+          <div style="margin-bottom:16px"><div style="font-size:28px;font-weight:900">박천웅 <span class="small-copy" style="font-size:17px;font-weight:700">Team Leader · 23세</span></div><div class="badge" style="margin-top:8px">풀스택, 인프라</div></div>
+          <div style="flex:1;display:flex;flex-direction:column;gap:12px;justify-content:space-evenly">
+            <div>
+              <div style="font-size:15px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">이력</div>
+              <div class="small-copy" style="font-size:17px;line-height:1.4;color:var(--body)">숭실대학교 소프트웨어학부<br>AI SW 마에스트로 17기<br>화이트햇 스쿨 1기<br>공군작전사령부 정보보호실 정보보호병 복무</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:12px">
+              <div style="font-size:15px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">수상</div>
+              <div class="small-copy" style="font-size:17px;line-height:1.4;color:var(--body)">KISIA CTF 장려상, 한국정보보호산업협회장상 (2026)<br>국제 대학생 사이버보안 경진대회(핵테온) 우수상 (2026)<br>화이트햇 콘테스트 2위, 우수상, 합참의장상 (2025)<br>공군 창업경진대회 최우수상, IBK기업은행장상 (2025)<br>국방부 창업 경진대회 우수상, 국방부장관상 (2025)<br>사이버공격방어대회(CCE) 공공기관 부문 4위 (2025)<br>도전! K-STARTUP 28위 (2025)<br>화이트햇 콘테스트 4위 (2024)</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:12px">
+              <div style="font-size:15px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">경험</div>
+              <div class="small-copy" style="font-size:17px;line-height:1.4;color:var(--body)">NASA 명예의 전당, 감사장 수여<br>Naver, Google 명예의 전당<br>APEX 국제 사이버 훈련 블루팀 리더<br>KUCIS 정보보호 실습교육 수료<br>대학연합 개발동아리 UMC 숭실대 부회장 (2023)</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:12px">
+              <div style="font-size:15px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">자격증</div>
+              <div class="small-copy" style="font-size:17px;line-height:1.4;color:var(--body)">AWS Solution Architect Associate<br>TOPCIT 수준 4, SQLD<br>네트워크 관리사 2급, 정보처리기능사</div>
+            </div>
+          </div>
+        </article>
+        <article class="panel" style="padding:24px 30px;display:flex;flex-direction:column">
+          <div style="margin-bottom:16px"><div style="font-size:28px;font-weight:900">김건우 <span class="small-copy" style="font-size:17px;font-weight:700">Product Manager · 18세</span></div><div class="badge" style="margin-top:8px">제품 기획, 프론트엔드</div></div>
+          <div style="flex:1;display:flex;flex-direction:column;gap:12px;justify-content:space-evenly">
+            <div>
+              <div style="font-size:15px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">이력</div>
+              <div class="small-copy" style="font-size:17px;line-height:1.4;color:var(--body)">단국대부속소프트웨어고등학교 재학<br>AI SW 마에스트로 17기 최연소 연수생<br>KAIST IP 영재기업인교육원 14기 수료<br>구리남양주교육지원청 도농발명교육센터 3년과정 수료</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:12px">
+              <div style="font-size:15px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">수상</div>
+              <div class="small-copy" style="font-size:17px;line-height:1.4;color:var(--body)">다이나믹 단국 창업아이디어 경진대회 고등부 우수상 (2026)<br>강남구 AI 문제해결 해커톤 우수상 (2026)<br>중앙대 고교AI 경진대회 대상 (2026)<br>단대소고 생활안전앱 챌린지 최우수상 (2025)<br>한양대 청소년 오픈SW GAME 코딩대회 우수상 (2025)<br>아산유스프러너 데모데이 피칭 우수상, 부스 장려상 (2025)<br>KAIST IP 미래기술 팀프로젝트 우수상 (2023)<br>과학의 날 과기정통부 장관상 표창<br>학생과학발명품경진대회 금상, 경기도 우수상<br>한국과학창의력대회 동상, YIP 발명가 프로그램 장려상</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:12px">
+              <div style="font-size:15px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">경험</div>
+              <div class="small-copy" style="font-size:17px;line-height:1.4;color:var(--body)">KAIST IP-CEO 글로벌 기업가정신 연수<br>청소년 발명기자단 16, 17기<br>DKSH VERTEX 디지털융합제품개발부 회장</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:12px">
+              <div style="font-size:15px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">자격증</div>
+              <div class="small-copy" style="font-size:17px;line-height:1.4;color:var(--body)">특허 등록 1건, 특허 출원 12건<br>COS Pro Python 1급, 2급<br>트리즈 전문가 1수준</div>
+            </div>
+          </div>
+        </article>
+        <article class="panel" style="padding:24px 30px;display:flex;flex-direction:column">
+          <div style="margin-bottom:16px"><div style="font-size:28px;font-weight:900">노재원 <span class="small-copy" style="font-size:17px;font-weight:700">Backend Engineer · 20세</span></div><div class="badge" style="margin-top:8px">백엔드, AI</div></div>
+          <div style="flex:1;display:flex;flex-direction:column;gap:26px;justify-content:space-evenly">
+            <div>
+              <div style="font-size:19px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:10px">이력</div>
+              <div class="small-copy" style="font-size:22px;line-height:1.65;color:var(--body)">숭실대학교 컴퓨터학부<br>AI SW 마에스트로 17기<br>숭실대 알고리즘 문제해결 소모임 SCCC<br>한국디지털미디어고등학교 웹프로그래밍과 졸업</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:24px">
+              <div style="font-size:19px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:10px">수상</div>
+              <div class="small-copy" style="font-size:22px;line-height:1.65;color:var(--body)">경기대학교 프로그래밍 경진대회 장려상 (2026)<br>한국정보올림피아드 1차대회 고등부 은상 (2025)<br>한국정보올림피아드 2차대회 고등부 장려상 (2025)<br>전국 창의문제 해결능력 경진대회 금상 (2024)</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:24px">
+              <div style="font-size:19px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:10px">경험</div>
+              <div class="small-copy" style="font-size:22px;line-height:1.65;color:var(--body)">Codeforces Expert<br>백준(BOJ) 1300문제 이상 해결<br>알고리즘 대회 문제 출제 및 검토</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="folio"></div>
+    <div class="source"></div>
+  </div>
+</section>''')
+S.note('''팀 Dozer는 박천웅, 김건우, 노재원으로 구성되어 있습니다. 박천웅은 풀스택과 인프라, 김건우는 제품 기획과 프론트엔드, 노재원은 백엔드와 AI를 담당합니다.
+
+출처: 중간발표 irdeck_new.html의 팀 소개 장표. 추가 수상 이력과 Google 명예의 전당은 사용자 제공.''')
+
+S.append(r'''<section class="slide" data-title="멘토 소개" data-order="3">
+  <div class="slide-shell">
+    <div class="brand"><img src="assets/icon.svg" alt="">Dev<b>Fit</b></div>
+    <header class="topline" style="min-height:auto">
+      <div class="eyebrow">멘토 소개</div>
+      <h1 class="title" style="font-size:48px"><span class="purple">비즈니스, 개발, AI</span> 모든 면을 고루 갖춘 멘토진이 함께합니다</h1>
+    </header>
+    <div class="slide-content" style="margin-top:18px">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;flex:1;align-items:stretch">
+        <article class="panel" style="padding:26px 30px 30px;display:flex;flex-direction:column">
+          <div style="margin-bottom:16px"><div style="font-size:28px;font-weight:900">고세환 <span class="small-copy" style="font-size:17px;font-weight:700">Mentor</span></div><div class="badge" style="margin-top:8px">BM, 개인정보</div></div>
+          <div style="flex:1;display:flex;flex-direction:column;gap:16px;justify-content:space-evenly">
+            <div style="min-height:158px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">이력</div>
+              <div class="small-copy" style="font-size:20px;line-height:1.55;color:var(--body)">한국과학기술연구원(KIST) 정보보안, 개인정보보호 총괄 팀장<br>KT 보안컨설팅, 네트워크 보안관제<br>컴퓨터공학 학사, 기술경영 석사와 박사수료</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:14px;min-height:270px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">주요 경험</div>
+              <div class="small-copy" style="font-size:20px;line-height:1.55;color:var(--body)">예비창업패키지, 초기창업패키지 선정위원<br>TIPS, R&D 과제 심사와 평가위원<br>유럽연구소 GDPR 개인정보보호 컨설팅<br>대학, 공공기관 창업과 정보보안 강의 다수<br>Harvard Business School Online 과정 수료<br>보드게임부터 플랫폼까지 창업 4회<br>CISSP, CPPG 보유</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:14px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">자문과 반영</div>
+              <div class="small-copy" style="font-size:19px;line-height:1.5;color:var(--body)">선행 아이템 시장 구조 지적<br><strong style="color:var(--purple-deep)">→ 베베톡 중단, DevFit 피벗</strong><br>개인정보처리방침 점검<br><strong style="color:var(--purple-deep)">→ 광고 분석 도구 고지, 가입 동의 이력 기록</strong><br>과금 구조와 비즈니스 로직 검토<br><strong style="color:var(--purple-deep)">→ 분석 크레딧, 환불 정책, 정기결제 약관</strong></div>
+            </div>
+          </div>
+        </article>
+        <article class="panel" style="padding:26px 30px 30px;display:flex;flex-direction:column">
+          <div style="margin-bottom:16px"><div style="font-size:28px;font-weight:900">김한빛 <span class="small-copy" style="font-size:17px;font-weight:700">Mentor</span></div><div class="badge" style="margin-top:8px">백엔드 아키텍처</div></div>
+          <div style="flex:1;display:flex;flex-direction:column;gap:16px;justify-content:space-evenly">
+            <div style="min-height:158px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">이력</div>
+              <div class="small-copy" style="font-size:20px;line-height:1.55;color:var(--body)">15년 차 풀스택 개발자<br>삼성전자 8년 (갤럭시 웨어러블, 메시지 앱)<br>플랭, VALLA, 개념원리, 에픽코퍼레이션<br>현 뷰브레인헬스케어 재직</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:14px;min-height:270px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">주요 경험</div>
+              <div class="small-copy" style="font-size:20px;line-height:1.55;color:var(--body)">영어 학습, 뷰티, 수학교육 서비스 개발<br>인플루언서 경매, 커머스 마켓 1인 개발과 출시<br>서버 Spring Boot, Django와 프론트 React, Vue<br>모바일 Flutter, Android, iOS와 AWS, Kubernetes 인프라</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:14px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">자문과 반영</div>
+              <div class="small-copy" style="font-size:19px;line-height:1.5;color:var(--body)">분석 작업 큐와 워커 동시성 검토<br><strong style="color:var(--purple-deep)">→ DB 작업 큐, API와 분석 워커 격리</strong><br>대규모 저장소 분석 비용 지적<br><strong style="color:var(--purple-deep)">→ 증분 수집, Decision Model(Jev) 도입</strong><br>핵심 로직에 자원 집중 조언<br><strong style="color:var(--purple-deep)">→ 부가 기능 후순위, 범위 축소</strong></div>
+            </div>
+          </div>
+        </article>
+        <article class="panel" style="padding:26px 30px 30px;display:flex;flex-direction:column">
+          <div style="margin-bottom:16px"><div style="font-size:28px;font-weight:900">이일섭 <span class="small-copy" style="font-size:17px;font-weight:700">Mentor</span></div><div class="badge" style="margin-top:8px">AI 활용, 품질 측정</div></div>
+          <div style="flex:1;display:flex;flex-direction:column;gap:16px;justify-content:space-evenly">
+            <div style="min-height:158px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">이력</div>
+              <div class="small-copy" style="font-size:20px;line-height:1.55;color:var(--body)">신한카드 AI 엔지니어, 데이터 분석가<br>연세대학교 산업공학과 박사과정<br>LLM 기반 웹, 앱 서비스 개인 운영</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:14px;min-height:270px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">주요 경험</div>
+              <div class="small-copy" style="font-size:20px;line-height:1.55;color:var(--body)">SOL 앱 리뷰 AI 요약 등 대고객 AI 프로덕트 개발<br>상담콜 AI 모니터링, 도메인 특화 LLM 파인튜닝<br>전사 AI 플랫폼 RAG, 보안 가드레일 설계<br>MLOps 실전 가이드 등 AI 도서 5권 집필<br>T-Academy 등 AI 교육 멘토링 6년<br>청년취업사관학교 AI 전담 강사, 대학 강의 다수</div>
+            </div>
+            <div style="border-top:1px solid #eae6f2;padding-top:14px">
+              <div style="font-size:17px;font-weight:900;letter-spacing:.08em;color:var(--purple-deep);margin-bottom:6px">자문과 반영</div>
+              <div class="small-copy" style="font-size:19px;line-height:1.5;color:var(--body)">LLM 비용 통제 자문<br><strong style="color:var(--purple-deep)">→ 역할별 모델 분리, 호출 상한, 일일 크레딧</strong><br>생성 품질 정량 평가 방법 조언<br><strong style="color:var(--purple-deep)">→ 고정 사례, 복수 심사 모델, 사전 등록 프로토콜</strong><br>저장소 밖 이력을 묻지 못한다는 지적<br><strong style="color:var(--purple-deep)">→ 자기소개서와 포트폴리오 Assistant</strong></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="folio"></div>
+    <div class="source"></div>
+  </div>
+</section>''')
+S.note('''고세환 멘토는 BM과 개인정보, 김한빛 멘토는 백엔드 아키텍처, 이일섭 멘토는 AI 활용과 품질 측정을 중심으로 자문했습니다.
+
+출처: 중간발표 irdeck_new.html의 멘토 소개 장표. 자문과 반영은 최종보고서 «멘토 구성 및 역할» 표(최종보고서_Dozer_v2.md 389~391행) 기준으로 갱신(2026-11-11).''')
+
 # ================= 1. 소개 — 장당 핵심 1개 (2026-11-06 재구성) =================
 # 흐름: ①AI 발전 → ②채용 시장 → ③기술면접 → ④문제 근거 → ③ 솔루션 = GitHub → ④ 솔루션 소개 → ⑤ 차별점-반론 → ⑥ 차별점-하네스 → ⑦ 경쟁사
 
