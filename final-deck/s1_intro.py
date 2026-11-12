@@ -276,7 +276,8 @@ CSS += r""".in-pbar{height:12px;border-radius:6px;background:#ecebf1;overflow:hi
 .in-cmp{display:flex;flex-direction:column;gap:14px;margin-top:14px}.in-cmp div{white-space:nowrap;display:grid;grid-template-columns:150px 1fr 76px;gap:12px;align-items:center;font-size:19px;font-weight:800;color:var(--muted)}.in-cmp div>i{display:block;height:26px;border-radius:5px;background:#ecebf1;position:relative;overflow:hidden}.in-cmp div>i>u{position:absolute;left:0;top:0;bottom:0;background:#1f1d24;border-radius:5px}.in-cmp div.hi>i>u{background:var(--red)}.in-cmp div>b{font-size:24px!important;letter-spacing:-.03em;color:var(--ink,#1f1d24)}.in-cmp div.hi>b{color:var(--red)}
 .in-donut{display:flex;align-items:center;gap:22px;margin-top:6px}.in-donut svg{width:150px;height:150px;flex:none}.in-donut span{font-size:22px!important}
 .in-ivman{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center}.in-ivman figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}.in-ivman figure svg{width:180px;height:200px}.in-ivman figcaption{font-size:20px;font-weight:900;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 14px}
-.in-ivman .bubs{display:flex;flex-direction:column;gap:22px}.in-ivman .in-q{border-radius:28px 28px 28px 28px;position:relative;margin-left:0!important}.in-ivman .in-q:before{content:"";position:absolute;left:-16px;top:34px;border:10px solid transparent;border-right:16px solid var(--line)}.in-ivman .in-q:after{content:"";position:absolute;left:-11px;top:36px;border:8px solid transparent;border-right:13px solid #fff}"""
+.in-ivman .bubs{display:flex;flex-direction:column;gap:22px}.in-ivman .in-q{border-radius:28px 28px 28px 28px;position:relative;margin-left:0!important}.in-ivman .in-q:before{content:"";position:absolute;left:-16px;top:34px;border:10px solid transparent;border-right:16px solid var(--line)}.in-ivman .in-q:after{content:"";position:absolute;left:-11px;top:36px;border:8px solid transparent;border-right:13px solid #fff}
+.in-iv{align-items:stretch;margin-top:auto!important;margin-bottom:auto!important}.in-iv .in-who{font-size:28px;margin-bottom:26px}.in-ivman{grid-template-columns:240px 1fr;gap:28px}.in-ivman figure svg{width:230px;height:256px}.in-ivman figcaption{font-size:24px}.in-ivman .bubs{gap:30px}.in-ivq .in-q{font-size:42px;padding:32px 46px}.in-ivq .in-qw{font-size:23px}.in-ivc{gap:0}.in-ivc>div:not(.in-who){padding:34px 34px;grid-template-columns:150px 1fr auto;margin-bottom:24px}.in-ivc b{font-size:31px}.in-ivc span{font-size:25px;white-space:nowrap}.in-iv{grid-template-columns:1fr 1.12fr;gap:44px}.in-ivc small{font-size:20px}"""
 # Problem 흐름 표시 (11-13 회의: «4가지 키워드를 밑에 네 칸으로, 해당 장만 활성화»)
 CSS += r""".in-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 34px}.in-flow div{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:6px;background:#ecebf1;color:#9a98a6;font-size:22px;font-weight:800;letter-spacing:-.02em}.in-flow div i{font-style:normal;font-size:17px;font-weight:900;opacity:.8}.in-flow div.on{background:var(--red,#f0334c);color:#fff}.in-flow div.done{background:#f7d6dc;color:#c22a40}.in-flow div.on i{color:#fff;opacity:.85}.in-flow+*{margin-top:auto;margin-bottom:auto}"""
 def _flow(n):
@@ -337,20 +338,23 @@ S.append(shell('Problem', '기술면접에서는 코드의 <span class="red">설
 <div class="in-col" style="justify-content:flex-start">{_flow(3)}
   <div class="in-iv">
     <div class="in-ivq"><div class="in-who">실제 개발자 면접 질문 (2026년 5~6월)</div><div class="in-ivman"><figure><svg viewBox="0 0 180 200"><rect x="10" y="150" width="160" height="14" rx="4" fill="#d9d7e0"/><circle cx="90" cy="54" r="34" fill="#1f1d24"/><path d="M38 150c0-38 23-62 52-62s52 24 52 62z" fill="#1f1d24"/><rect x="60" y="44" width="24" height="16" rx="5" fill="none" stroke="#fff" stroke-width="4"/><rect x="96" y="44" width="24" height="16" rx="5" fill="none" stroke="#fff" stroke-width="4"/><path d="M84 52h12" stroke="#fff" stroke-width="4"/><rect x="62" y="118" width="56" height="36" rx="4" fill="#fff" stroke="#d9d7e0" stroke-width="3"/><path d="M72 130h36M72 140h24" stroke="#c7c4d0" stroke-width="4"/></svg><figcaption>면접관</figcaption></figure><div class="bubs"><div class="in-q">"왜 이 코드를 썼는지<br>코드적으로 설명해 주세요"<small class="in-qw">이스트소프트 백엔드</small></div><div class="in-q">"다른 방법은 왜<br>선택하지 않았나요?"<small class="in-qw">비바리퍼블리카 시스템엔지니어</small></div></div></div></div>
-    <div class="in-ivc"><div class="in-who">채용 방식 변화</div>
-      <div><b>넥슨</b><span>인턴 코딩테스트 폐지 → AI 활용 역량 평가</span><small>2026-09</small></div>
-      <div><b>CJ올리브영</b><span>경력 개발 라이브 코딩 폐지 → 과정을 보는 AI 과제</span><small>2026-07</small></div>
-      <div><b>컬리</b><span>개발자 공채 코딩테스트에서 ChatGPT 사용 허용</span><small>2025-06</small></div></div>
+    <div class="in-ivc"><div class="in-who">면접 방식 변화</div>
+      <div><b>넥슨</b><span>기술면접관: "이 코드는 어떤 기능을 하고,<br>왜 이렇게 구현했나요"로 면접의 절반 정리</span><small>2026-06</small></div>
+      <div><b>빅테크</b><span>면접관 58%가 질문을 바꿈:<br>선택 이유, 코드 한 줄의 역할을 질문</span><small>2025-09</small></div>
+      <div><b>Codility</b><span>지원자가 제출한 코드로<br>후속 질문을 만드는 기능 출시</span><small>2025-09</small></div></div>
   </div>
-  <div class="in-scnbar">지원자 인터뷰 <em>"1달 전에 짠 코드 잘 기억이 안 나거든요"</em><small>현직 개발자 인터뷰 (2026-09-07) 발췌</small></div>
-</div>''', cls='problem', source='면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 바이라인네트워크 2026-09-02 · CJ올리브영: 아시아경제 2026-07-21 · 컬리: 중앙일보 2025-06-10 · 지원자 인용: 현직 개발자 인터뷰 (2026-09-07)'))
-S.note('''[0:34–0:46] 그래서 기술면접도 바뀝니다. 실제 올해 면접 리뷰를 보면 «왜 이 코드를 썼는지 코드적으로 설명해 달라», «다른 방법은 왜 선택하지 않았냐»를 묻습니다. 넥슨은 코딩테스트를 없애고 AI 활용 역량을 보고, CJ올리브영은 라이브 코딩 대신 과정을 보는 AI 과제를 냅니다. «AI를 쓰냐»가 아니라 «쓴 코드를 이해하고 설명할 수 있냐»를 확인하는 쪽입니다. 그런데 정작 지원자는 자기 코드를 기억하지 못합니다. «1달 전에 짠 코드 잘 기억이 안 나거든요.»
+</div>''', cls='problem', source='면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 천지일보, NDC 26 강연 보도 (2026-06-17) · 빅테크: The Pragmatic Engineer, 「The Pulse #146」 (2025-09-18, interviewing.io 면접관 설문 63명) · Codility: 공식 도움말 「Follow-Up Questions for Take-Home Assessments」 (2025-09)'))
+S.note('''[0:34–0:46] 그래서 기술면접도 바뀝니다. 실제 올해 면접 리뷰를 보면 «왜 이 코드를 썼는지 코드적으로 설명해 달라», «다른 방법은 왜 선택하지 않았냐»를 묻습니다. 넥슨의 한 기술면접관은 «이 코드는 어떤 기능을 하고, 왜 이렇게 구현했나요» 이 질문만으로 면접의 절반이 정리된다고 말했습니다. 복사하거나 AI가 짜 준 코드는 여기에 답하지 못한다는 겁니다. 해외 빅테크 면접관도 58%가 질문을 바꿨는데, 왜 그렇게 선택했는지, 이 코드 한 줄이 무슨 일을 하는지를 묻습니다. 면접 도구 회사 Codility는 지원자가 제출한 코드로 후속 질문을 만드는 기능까지 내놨습니다.
 
 주장: claims.md C1 — 직접 재는 수치 없음 → «경험 면접 N% 증가» 같은 수치 금지. «경험 위주로 바뀌었다» 단정 대신 «"왜·어떻게"를 캐묻는 쪽으로 바뀌는 중».
 면접 질문: 잡플래닛 «토스·무신사 개발자 면접 질문, 실제로 이랬다»(2026-07-01, https://www.jobplanet.co.kr/contents/news-8309) — 에디터 큐레이션, AD 표기, 대표성 없음 → «사례»로만.
-기업 사례: 넥슨 인턴십 «넥토리얼» 코딩테스트 폐지·AI 면접·AI 활용 역량평가(바이라인네트워크 2026-09-02, 채용팀장 인용) · CJ올리브영 경력 개발 직군 라이브 코딩 폐지 → 크래프톤 «코파 프로브» AI 과제로 전 과정 평가(아시아경제 2026-07-21, 법인명 재확인) · Canva(공식 블로그 2025-06-11) · Meta 일부 코딩 면접 AI 어시스턴트 허용(404 Media 2025-07-29, 내부 공지 보도 — «Meta 전체 면접 AI 허용» 확대 금지) · 컬리 개발자 공채 코테 ChatGPT 허용, 창립 후 처음(중앙일보 단독 2025-06-10, «2025년 1월»은 오기) — R1 E10~E13·E16, R5 장3.
+11-13 교체(사용자 지적: AI 허용 사례는 자기 코드 설명 면접의 근거가 아님, research/R11-own-code-interview.md):
+- 넥슨 = 오윤호 넥슨코리아 실장 NDC 26 강연, 천지일보 2026-06-17 https://www.newscj.com/news/articleView.html?idxno=3409912 ⚠ 면접관 1인 발언. «넥슨이 면접 방식을 바꿨다» 금지.
+- 빅테크 58% = Pragmatic Engineer Pulse #146 (2025-09-18), interviewing.io 면접관 설문 n=63, «58% of Big Tech interviewers said they have adjusted the kind of questions they ask». https://newsletter.pragmaticengineer.com/p/the-pulse-146 ⚠ 같은 조사에서 알고리즘 질문을 버린 면접관 0명.
+- Codility = 공식 도움말 2025-09-18 https://support.codility.com/hc/en-us/articles/39175728044689-Follow-Up-Questions-for-Take-Home-Assessments ⚠ 벤더 자료, 도입 수 없음.
+- 국내 기업 공식 «코드 리뷰 면접 도입» 발표·비중 수치는 못 찾음 → «X% 기업이 도입» 금지.
+Q&A용(장표에서 뺀 기존 3건, AI 활용 평가 확대 근거): 기업 사례: 넥슨 인턴십 «넥토리얼» 코딩테스트 폐지·AI 면접·AI 활용 역량평가(바이라인네트워크 2026-09-02, 채용팀장 인용) · CJ올리브영 경력 개발 직군 라이브 코딩 폐지 → 크래프톤 «코파 프로브» AI 과제로 전 과정 평가(아시아경제 2026-07-21, 법인명 재확인) · Canva(공식 블로그 2025-06-11) · Meta 일부 코딩 면접 AI 어시스턴트 허용(404 Media 2025-07-29, 내부 공지 보도 — «Meta 전체 면접 AI 허용» 확대 금지) · 컬리 개발자 공채 코테 ChatGPT 허용, 창립 후 처음(중앙일보 단독 2025-06-10, «2025년 1월»은 오기) — R1 E10~E13·E16, R5 장3.
 반대 근거(Q&A): Karat 2026 — 62%는 여전히 면접에서 AI 금지 · 그렙 고객도 개발 직군은 코테 유지 · Pulse #146에서 알고리즘 질문을 버린 면접관 0명. → «코테가 사라졌다» 금지, «과정·이해를 묻는 방식이 늘고 있다»까지.
-인용: 현직 개발자 인터뷰 2026-09-07(collect/D P1).
 11-13 회의(글 줄이기): Meta·Canva 행은 장표에서 빼고 Q&A용으로만 둠.''')
 
 # ④ 문제 근거 — 취준생은 전에 짠 코드를 다시 보기도, 기억하기도 어렵다 (11-10 사용자 지시, research/R10)
@@ -363,11 +367,12 @@ S.append(shell('Problem', '취준생은 과거에 작성한 코드를 <span clas
     </div>
     <div class="qt"><div class="mk">"</div><blockquote>스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다</blockquote><small>바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.</small></div>
   </div>
-  <div class="in-bar">그런데 면접에서는 그 코드를 <span>왜 그렇게 짰는지</span> 설명해야 합니다</div>
-</div>''', cls='problem', source='Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.'))
-S.note('''[0:46–0:55] 문제는 지원자 쪽에도 있습니다. 개발자들은 자기가 쓴 파일도 한 달쯤 지나면 절반은 잊는다고 답했습니다. 코드를 다시 읽는 일도 가볍지 않습니다. 경력 3년 미만 개발자는 하루 8시간 중 약 5시간을 코드를 읽고 이해하는 데 씁니다. 취준생은 레포가 여러 개이고 커밋도 많아서 전부 다시 보기가 어렵습니다. 그래서 채용 담당자들은 이력서에 적은 프로젝트를 물어보면 답하지 못하는 지원자를 많이 봤다고 말합니다. 그런데 면접은 바로 그 코드를 왜 그렇게 짰는지 묻습니다.
+  <div class="in-scnbar">지원자 인터뷰 <em>"1달 전에 짠 코드 잘 기억이 안 나거든요"</em><small>현직 개발자 인터뷰 (2026-09-07) 발췌</small></div>
+</div>''', cls='problem', source='Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025. · 지원자 인용: 현직 개발자 인터뷰 (2026-09-07).'))
+S.note('''[0:46–0:55] 문제는 지원자 쪽에도 있습니다. 개발자들은 자기가 쓴 파일도 한 달쯤 지나면 절반은 잊는다고 답했습니다. 코드를 다시 읽는 일도 가볍지 않습니다. 경력 3년 미만 개발자는 하루 8시간 중 약 5시간을 코드를 읽고 이해하는 데 씁니다. 취준생은 레포가 여러 개이고 커밋도 많아서 전부 다시 보기가 어렵습니다. 그래서 채용 담당자들은 이력서에 적은 프로젝트를 물어보면 답하지 못하는 지원자를 많이 봤다고 말합니다. 저희가 만난 현직 개발자도 이렇게 말했습니다. «1달 전에 짠 코드 잘 기억이 안 나거든요.»
 
 출처 (research/R10-recall-own-code.md, 접근 2026-11-10):
+- 인용: 현직 개발자 인터뷰 2026-09-07(collect/D P1). 11-13 사용자 지시로 4쪽에서 이동, 기존 하단 문구(면접에서 왜 그렇게 짰는지 설명) 삭제.
 - 30일 = Krüger, Wiemann, Fenske, Saake, Leich, ICSE 2018, 오픈소스 개발자 60명(GitHub 10개 프로젝트). 원문 «forget half of their files after 30 days in the median and 40 days on average». ⚠ 측정값이 아니라 본인 추정치. ⚠ 같은 파일을 여러 번 고쳤거나 직접 쓴 비율이 높으면 더 오래 기억함 → Q&A에서는 «한 번 짜고 다시 안 본 코드일수록 빨리 잊는다». https://jacobkrueger.github.io/assets/papers/Krueger2018Remember.pdf
 - 66%·58% = Xia, Bao, Lo, Xing, Hassan, Li, IEEE TSE 44(10) 2018, 현업 78명·3,148 작업시간 자동 기록. 저경력(3년 미만) 66.37%, 전체 58%. 장표 «5시간» = 66.37% × 8시간 = 5.3시간 환산(8시간 근무 가정, 원문은 비율만 제시). 장표 캡션에서는 환산 표기를 뺐으니(11-10 사용자: 출처만) 질문 나오면 이 계산으로 답할 것. ⚠ 자기 코드에 한정한 수치가 아니라 코드 이해 일반. https://xin-xia.github.io/publication/TSE17.pdf
 - 인용 = OKKY×바이라인네트워크 2025-02-28, IT 전문가 71명, 채용 담당자 발언(R4 V2). ⚠ 표본 작음. https://byline.network/2025/02/27-431/
