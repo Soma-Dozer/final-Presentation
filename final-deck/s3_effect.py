@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 3부 — Effect + 부록 A4·A5·A9·A11
+# 3부 — Effect + 부록 A4·A5·A8·A10
 # 담당: ppt-effect · 공용 헬퍼/CSS는 core.py (ppt-start 관리) — 고칠 일이 있으면 ppt-start에 요청
 # 장표 추가: S.append(shell(...)) 다음 줄에 S.note('''발표자 노트''') · 부록은 APX.append(shell('Appendix · A<n>', ...))
 # 구성 (2026-11-06 사용자 지시 — 참고 덱 ASM/최종발표_ppt.pdf 36–44장 순서):
@@ -154,7 +154,7 @@ CSS = r"""
 .ef-dj{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;margin:auto 0}.ef-dj .ef-law-doc{transform:none}.ef-dj .ef-law-doc img{height:600px;width:auto}.ef-dj .r{display:flex;flex-direction:column;gap:22px}.ef-dj .why{font-size:24px;font-weight:700;line-height:1.55;color:var(--ink);background:var(--purple-pale);border-radius:18px;padding:22px 28px;word-break:keep-all}.ef-dj .why small{display:block;font-size:16px;font-weight:900;color:var(--purple);margin-bottom:6px}.ef-dj .why b{color:var(--purple)}.ef-dj .ef-law-act p{font-size:17px}.ef-dj .src{display:block;margin-top:10px;font-size:14px;color:var(--muted);font-family:inherit}
 .ef-dp{display:grid;grid-template-columns:1fr 1fr;gap:40px;flex:1;min-height:0}.ef-dp .l,.ef-dp .r{position:relative;min-height:620px}.ef-dp .hd{font-size:18px;font-weight:900;color:var(--purple)}.ef-dp .nt,.ef-dp .sp{position:absolute}.ef-dp .nt img{width:600px;display:block;border:1px solid var(--line);box-shadow:0 14px 34px rgba(20,16,40,.16);background:#fff}.ef-dp .sp img{height:560px;display:block;border:1px solid var(--line);box-shadow:0 14px 34px rgba(20,16,40,.16);background:#fff}.ef-dp .l .nt,.ef-dp .l .hd{margin-left:var(--ofl)}.ef-dp .r .sp,.ef-dp .r .hd{margin-left:var(--ofr)}.ef-dp .l{--ofl:calc((100% - 668px)/2)}.ef-dp .r{--ofr:calc((100% - 640px)/2)}.ef-dp .tag{position:absolute;left:12px;top:-14px;background:var(--ink);color:#fff;font-size:14px;font-weight:800;padding:5px 11px;border-radius:4px;white-space:nowrap}
 
-/* 부록 A16 직업정보제공사업 법률 (11-11) */
+/* 직업정보제공사업 장 법률 (11-11) */
 .ef-lawa{flex:1;min-height:0;display:grid;grid-template-columns:470px 1fr;gap:56px;align-items:center;margin-top:10px;padding:0 20px}
 .ef-lawa .ef-law-doc img{max-height:640px;width:auto;max-width:100%}
 .ef-lawa .ef-law-act{padding:36px 44px}
@@ -652,7 +652,7 @@ S.append(shell('Effect', '11–20주차: 질문 품질 개선과 <span class="pu
 S.note('''[≈18초] 9월 7일 한유일 멘토님이 쉬운 질문이 사실 확인뿐이라고 지적하셨고, 난이도·유형 분리를 운영에 반영했습니다. 9월 22일 멘토링에서 나온 배포 알림 요청도 반영했고, 음성 모의면접과 실기업 기출이 들어갔고, 지금 기출은 1,880건입니다. 마지막 구간에는 돈을 받을 준비를 했습니다. 토스 결제 심사를 거쳐 11월 2일 단건 결제를 운영에 반영했고, 직업정보제공사업·통신판매업 신고와 특허 3건 출원을 마쳤습니다. 출시 후 운영 배포는 모두 138회입니다.
 
 출처: research/R3-ef-timeline.md §4·§5. 11–15주 커밋 556개(BE+FE 원격, 09-07~10-11, 네 구간 중 최대 — 장표에서는 뺌). 난이도 분리 BE 32e25e9·8aa7bfa → prod #47 6cf2a7e. 음성 BE#53 → prod #54 98ebb0f. 기출 BE#85 → prod #89(10-08), 10-11 정제 업로드(41개사) = 1차 853건. 11-08 운영 DB 실측(gichul) 기출 1,880 / 벡터 1,880 · 누락 0 = 1차 853 + 2차 1,027 (ppt-start 전달, 사용자 지시). 10-08 칸에 1,880을 쓰지 않음 — 그 시점엔 853. 단건 결제 BE#153 → prod #154 fe0bce6(11-02). 기출 pgvector BE#159 c680990(11-02). 특허 출원번호통지서 3건(11-01). 상표 출원공고결정서 40-2026-0177374(11-06 발송, claims C10).
-장표에서 뺀 항목(2장 압축, 2026-11-07): 광고 수신 동의·약관 개정(09-09) · IT 기업 대표 서면 회신(10-26) · 김종욱 멘토 서비스 검증(10-25) · 전략 멘토링(11-02) — 멘토 건은 부록 A15(현업 검토)에서 다룸.
+장표에서 뺀 항목(2장 압축, 2026-11-07): 광고 수신 동의·약관 개정(09-09) · IT 기업 대표 서면 회신(10-26) · 김종욱 멘토 서비스 검증(10-25) · 전략 멘토링(11-02) — 멘토 건은 부록 A13(현업 검토)에서 다룸.
 단건 결제 LIVE는 사용자 확인 완료(claims.md C3). 매출은 0.
 ⛔ 숭실대 취업박람회(09-09~10)는 실시일 미확인 → 넣지 않음. «1,880건 검증됨»·«검증된 기출» 금지(사람 검수 REVIEWED 0).
 SBOM 차단 게이트 f7d2f42는 11-05 0fe63e1 승격으로 origin/prod 반영(merge-base 확인) → «HIGH·CRITICAL 1건 이상이면 배포 잡 중단 · 백엔드만»까지 허용, ⛔ «취약점 0건 = 안전»·«FE 포함» 금지.
@@ -667,7 +667,7 @@ def mrow(logo, alt, who, role, advice, works, todo=False):
   <div class="ef-mr-adv">{advice}</div>
   <ul class="ef-mr-work">{w}</ul>
 </div>'''
-APX.append(shell('Appendix · A15', '현업 면접관·게임사 대표의 <span class="purple">서비스 검토와 반영</span>', f"""
+APX.append(shell('Appendix · A13', '현업 면접관·게임사 대표의 <span class="purple">서비스 검토와 반영</span>', f"""
 <div class="ef-mtab">
   <div class="ef-mh"><span>누구</span><span>조언</span><span>반영</span></div>
   {mrow('ef-logo-naver.png', 'NAVER', '김종욱 멘토', '네이버 검색 백엔드·AI', '10-25 Webex 약 2시간 서비스 검증. 지원자 분석 범위, 면접관 콘솔 완성도, 지원자 화면 동선까지 DevFit 전반을 실사용 관점에서 점검', ['조직 저장소 프로젝트도 지원자 분석 대상으로 연결', '면접관 콘솔 아이콘·공용 UI 정비, 모바일 하단 탭 추가', '면접관 랜딩에 콘솔 3단계 예시 데모 (채용 생성 → 접수·분석 → 면접 브리프)', '지원자 화면에서 모의면접을 준비의 첫 행동으로 배치'])}
@@ -725,7 +725,7 @@ S.note('''[≈10초] 채용공고를 모아 보여 주는 서비스는 직업안
 직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.
 법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).
 개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).
-순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 부록 A16.''')
+순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 Effect 직업정보제공사업 장.''')
 
 spec = [('patent-spec-a.png', '선별'), ('patent-spec-b.png', '생성'), ('patent-spec-c.png', '음성')]
 
@@ -743,22 +743,7 @@ S.note('''[≈10초] 핵심 기술은 특허 3건으로 출원했습니다. 커�
 
 [증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).
 명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.
-⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A9.''')
-
-APX.append(shell('Appendix · A16', '채용공고를 보여 주는 서비스의 <span class="purple">직업정보제공사업 신고</span> 근거', """
-<div class="ef-lawa">
-  <div class="ef-law-doc"><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증"><span class="tag">신고확인증 · 서울청 제2026-31호</span></div>
-  <div class="ef-law-act">
-    <h4>직업안정법</h4>
-    <p><b>제2조의2(정의)</b> 8. "직업정보제공사업"이란 신문, 잡지, 그 밖의 간행물 또는 유선ㆍ무선방송이나 컴퓨터통신 등으로 구인ㆍ구직 정보 등 직업정보를 제공하는 사업을 말한다.</p>
-    <p><b>제23조(직업정보제공사업의 신고)</b> ① 직업정보제공사업을 하려는 자(제18조에 따라 무료직업소개사업을 하는 자와 제19조에 따라 유료직업소개사업을 하는 자는 제외한다)는 고용노동부장관에게 신고하여야 한다. 신고 사항을 변경하는 경우에도 또한 같다.</p>
-    <p>② 제1항에 따른 신고 사항, 신고 절차, 그 밖에 신고에 필요한 사항은 대통령령으로 정한다.</p>
-    <span class="src">법률 제20121호, 2024. 1. 23., 일부개정 · 국가법령정보센터 원문</span>
-  </div>
-</div>""", source='신고확인증 원본 그대로 (자르거나 가리지 않음) · 직업안정법 [법률 제20121호, 2024. 1. 23., 일부개정] 국가법령정보센터 원문'))
-APX.note('''[부록 · 11-11 사용자 지시] DevFit은 채용 플랫폼 5곳과 기업 채용 사이트의 채용공고를 가져와 보여 주므로 직업안정법 제2조의2 제8호의 직업정보제공사업에 해당하고, 제23조에 따라 신고했습니다(신고확인증 서울청 제2026-31호, 10-19). 본편에서는 36쪽 서류 장의 ③.
-⛔ «법률 검토 통과»·«외부 법무법인 자문» 금지(claims.md C6). 법률 멘토링·저작권 검토 의견 관련 Q&A 메모는 36쪽 서류 장 노트 끝.''')
-
+⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A8.''')
 
 # ---------- 시장 규모 (11-11 사용자 지시: TAM·SAM·SOM 표, B2C·B2B 하이브리드) ----------
 S.append(shell('Effect', '<span class="purple">시장 규모</span> 분석', '''
@@ -785,7 +770,7 @@ S.note('''[≈22초] 시장 규모는 B2C와 B2B를 합쳐 하나로 봤습니�
 분해(Q&A): TAM = B2C 92억 + B2B 1,040억 · SAM = B2C 39.5억(42.9% 지출층) + B2B 104억(면접 단계 10%) · SOM = B2C 0.92억(1%) + B2B 3.1억(SAM 3%). 11-11 사용자 지시 «하나의 TAM·SAM·SOM으로, 기존 지표(38.8만 명 · 전환 시나리오)도 살리고». 원 크기는 금액 비례 아님.
 
 계산: 2,601,390 × 2 ≈ 520만 건(하반기 동일 가정) ÷ 13.4회 ≈ 38.8만 명(최종보고서와 같은 계산).
-B2C: TAM 388,100 × 23,700원(3개월 무료 체험 후 7,900 × 3) ≈ 92.0억 · SAM × 42.9% ≈ 166,500명 ≈ 39.5억 · SOM 1% = 3,881명 × 23,700 ≈ 0.92억(최종보고서 시나리오와 같은 값, 2%·5%는 부록 A11).
+B2C: TAM 388,100 × 23,700원(3개월 무료 체험 후 7,900 × 3) ≈ 92.0억 · SAM × 42.9% ≈ 166,500명 ≈ 39.5억 · SOM 1% = 3,881명 × 23,700 ≈ 0.92억(최종보고서 시나리오와 같은 값, 2%·5%는 부록 A10).
 B2B: TAM 520만 × ₩2만 = 1,040억 · SAM × 10%(서류 통과율 가정) = 52만 건 = 104억 · SOM 3% ≈ 3.1억(3년). collect/H-market.md §3 «3년 SOM 약 3억 원대 방어 가능»(상향식 0.8~5.2억 · 내부 고객 수 기반 3.1억 일치).
 합산: TAM 92 + 1,040 = 1,132억 · SAM 39.5 + 104 = 143.5억 → «약 143억» · SOM 0.92 + 3.1 = 4.0억. 11-11 사용자 지시 «둘이 합쳐서 개발자 채용시장 전체, DevFit Platform 기준».
 보수안(₩1만·5%): B2B TAM 520억 · SAM 26억 · SOM 0.8억 → 플랫폼 TAM 612억 · SAM 65억 · SOM 1.7억 — Q&A용.
@@ -896,7 +881,7 @@ S.note('''[≈20초] 수익 모델은 B2C와 B2B를 함께 가져가는 하이�
 B2C 근거 원문: 중간평가 IR 덱(vendor/irdeck_new.html 1485~1501행) «지원자 A · 20세, 프론트엔드 인턴 지원 경험 · 1대1 인터뷰» — Q «얼마까지 결제할 의향이 있으신가요?» → A «면접 1회 기준 만원 정도, 준비기간 동안이면 2만원까지는 결제할 의향이 있습니다». 같은 덱 B2C 칸 «인터뷰 기준 지불 의향은 면접 1회 1만원, 준비기간 이용권 2만원». 원 녹취 파일은 저장소에서 찾지 못함 → 출처는 중간평가 덱 수록본. 화자는 역할로만.
 ⚠️ 한계(Q&A): 인터뷰 1명의 진술 의향(실제 결제 아님). 보조 근거: 다른 구직자 인터뷰(feedback/04_사용자인터뷰)에서 «학원에 가서 도움을 받았다» · AI에 월 약 90만 원 지출 — 이미 취업 준비에 돈을 쓰는 층. 같은 인터뷰의 «이미 쓰는 AI로 준비하면 된다» 반론(O1)은 범용 AI 비교 실험(근거 실존 0/18 vs 28/28)으로 답.
 B2B 과금: collect/J-b2b-pilot.md «지원자 1명당 종량, 가격은 원가 ₩1,000~2,000에서 바텀업, 파일럿 결과로 확정». 시장 장의 1인 2만 원은 시장 크기 계산용 가정이지 확정 가격이 아님.
-변동비: 최종보고서 단위 경제성 — 약 330원(저장소 3개, CloudWatch 실측) · 20개 상한 약 1,404원 · 재분석 0원 · Plus 7,900원 ≈ 분석 약 24회분. 요금 화면은 부록 A7 · 이전 판 장표(pricing.png)에서 뺌.
+변동비: 최종보고서 단위 경제성 — 약 330원(저장소 3개, CloudWatch 실측) · 20개 상한 약 1,404원 · 재분석 0원 · Plus 7,900원 ≈ 분석 약 24회분. 요금 화면은 부록 A6 · 이전 판 장표(pricing.png)에서 뺌.
 토스페이먼츠 계약 완료(11-11 사용자 지시, claims.md C3). ⛔ «구독 매출»·«매출»로 말하지 않음. ⛔ B2B 가격 숫자를 확정가처럼 말하지 않음. ⛔ «60% 절감» 비교 금지.
 Q&A: «결제는 열려 있고 매출은 아직 0» (claims.md C3).''')
 
@@ -933,10 +918,10 @@ S.note('''[≈20초] 기업용 DevFit Enterprise는 B2C와 쓰는 사람도, 목
 출처: /Users/aiden/dev/teams/ASM/DevFit_enterprise_서비스소개서.pdf (2026-11 발행, 30쪽, devfit.app/enterprise.pdf). 포지셔닝 «ATS에 GitHub를 더하다»(표지) · 코드 면접 5요소(6쪽) · 면접 브리프(10쪽: 프로젝트 요약·핵심 질문 3~4개·관련 개념) · 커밋 근거(12쪽: 본인 커밋 필터링·Diff·해시·GitHub 원본 링크). 동의한 공개 저장소만 분석, AI는 합불을 판정하지 않음.
 화면: 소개서 10·12쪽을 PDF에서 렌더해 잘라 씀(다시 그리지 않음). 소개서 고지 «본 소개서의 화면은 가상의 목업 데이터» → 화면 속 지원자·기업명은 실제 아님.
 Q&A 비교(소개서 29쪽, 2026-11 각 사 공개 가이드 기준, DevFit vs 그리팅 · 나인하이어): GitHub 코드 분석 · 본인 커밋 Diff = DevFit만 제공 / 칸반 · 평가표 · 일정 메일 = 셋 다(나인하이어 평가표 일부) / 외부 채용 플랫폼 지원서 연동 = DevFit 제공 예정 / Google 캘린더 연동 = DevFit 미지원. 이 두 줄을 숨기지 않음.
-상태(11-10 사용자 메타): «B2C·B2B 둘 다 개발 완료. B2B는 개발 완료한 지 얼마 안 돼 기업들에 서비스 소개서를 보내 보는 중.» 근거: 최종보고서 43쪽 «MVP 개발 완료, 서비스 소개서로 기업 평가와 시장 검증 진행». 현업 검토(면접관·게임사 대표)는 부록 A15 참조.
+상태(11-10 사용자 메타): «B2C·B2B 둘 다 개발 완료. B2B는 개발 완료한 지 얼마 안 돼 기업들에 서비스 소개서를 보내 보는 중.» 근거: 최종보고서 43쪽 «MVP 개발 완료, 서비스 소개서로 기업 평가와 시장 검증 진행». 현업 검토(면접관·게임사 대표)는 부록 A13 참조.
 Q&A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비공개(출시 예정), 유료 고객·LOI·계약 0 — 물으면 사실대로.
 ⛔ «고객 확보»·«파일럿 진행 중»·«LOI 체결» 금지. ⛔ 평가표 점수는 면접관이 매기는 것 — «점수로 합격 판정» 뉘앙스 금지. 허용 표현은 «합불 판정 없음 · 최종 판단은 사람».
-유출 방어 근거(중간평가 심사의견 #17 «면접 질문을 면접자에게 유출하는 플랫폼» 대응, feedback/05_세션별분석/2026-08-20_중간평가_대응현황.md D-2 · 00_공방표 A7):
+유출 방어 근거(중간평가 심사의견 #17 «면접 질문을 면접자에게 유출하는 플랫폼» 대응, feedback/05_세션별분석/2026-08-20_중간평가_대응현황.md D-2 · 00_공방표 A6):
 - 지원서마다 별도 생성: ApplicationAnalysisService → bedrock.generateRepositoryInterviewKit (EVALUATION 모드, 결정적 — 같은 입력 = 같은 결과).
 - 데이터 분리: BE origin/main recruit 패키지는 B2C 질문 테이블(QuestionBank·StudySet·PrepAnalysis·InterviewPreparation)을 참조하지 않음(11-11 git grep 0건). 공개 지원 API ApplyController(/api/apply/{token})에 질문·interviewKit 응답 없음(11-11 확인). B2C·B2B 프론트는 S3 배포 분리.
 - 한계(Q&A, 숨기지 않음): 면접관 수용성 데이터 0건. 같은 지원자가 B2C로 자기 저장소를 분석하면 비슷한 주제의 질문을 볼 수는 있음 → 답: 그 준비가 곧 자기 코드 설명력이고 외워서 통과할 수 없음, 꼬리질문은 면접관이 당일 답변을 보고 고름. 11-02 멘토 제안 «커버리지 어시스턴트» 재정의는 방향.

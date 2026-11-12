@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-# 2부 — Development (5파트 + 수행과정) + 부록 A1·A6·A7·A8·A10·A12·A13·A14
+# 2부 — Development (5파트 + 수행과정) + 부록 A1·A18·A6·A7·A9·A11·A13·A12
 # 담당: ppt-dev · 공용 헬퍼/CSS는 core.py (ppt-start 관리) — 고칠 일이 있으면 ppt-start에 요청
 # 장표 추가: S.append(shell(...)) 다음 줄에 S.note('''발표자 노트''') · 부록은 APX.append(shell('Appendix · A<n>', ...))
-# 구성 (2026-11-10 사용자 지시): 개발(1 LLM 파이프라인, 2 Decision Model 도입, 3 질문 품질 개선, 4 회사 기출 질문 연결, 5 모의면접과 음성 인식, 6 자기소개서와 포트폴리오 Assistant) → 운영(1 인프라, 2 관리자 페이지) → 보안(1 AI 보안, 2 SBOM) → 수행과정. 공고 캐싱 2장, 오류 수집, 검색 노출, 서비스 보안은 부록 A17~A21
+# 구성 (2026-11-10 사용자 지시): 개발(1 LLM 파이프라인, 2 Decision Model 도입, 3 질문 품질 개선, 4 회사 기출 질문 연결, 5 모의면접과 음성 인식, 6 자기소개서와 포트폴리오 Assistant) → 운영(1 인프라, 2 관리자 페이지) → 보안(1 AI 보안, 2 SBOM) → 수행과정. 공고 캐싱 2장, 오류 수집, 검색 노출, 서비스 보안은 부록 A14~A18
 # 아이템마다 «개요 장들 → 발전과정 장들(1차·2차·3차)» 순서 (11-06 사용자 지시, 작년 우수팀 덱 Dev 구성 참고). 발전과정 장 안은 «문제 → 해결 → 결과». 수치는 origin/prod(d84cb1c, 11-06) 코드와 last-dance/collect 근거로 대조함
 # 이전 단일본: _legacy/s2_dev.before-5part.py
 from core import *
@@ -677,7 +677,7 @@ S.append(shell('Development · 개발', '1. LLM 파이프라인 <span class="pur
   <div><img src="assets/dv-logo-cohere-color.svg" alt=""><small>임베딩</small><b>Cohere Embed v3</b><span>기출 검색, 1024차원</span></div>
   <div>{ic('mic', 26)}<small>음성</small><b>faster-whisper, Supertonic</b><span>CPU 사이드카 STT, TTS</span></div>
 </aside></div>''',
-    source='최종보고서 [그림 4] 채용공고 기반 면접 준비 파이프라인 · 운영 브랜치 origin/prod (2026-11-06) · 모델과 스택 전체는 부록 A12'))
+    source='최종보고서 [그림 4] 채용공고 기반 면접 준비 파이프라인 · 운영 브랜치 origin/prod (2026-11-06) · 모델과 스택 전체는 부록 A11'))
 S.note('''[≈25초] 첫 번째 범주, 개발입니다. 먼저 LLM 파이프라인입니다. 전체는 열 단계입니다. 위쪽은 공고입니다. URL, 이미지, PDF 어떤 형태로 넣어도 OCR과 구조화를 거쳐 요구 항목이 됩니다. 아래쪽은 내 저장소입니다. 본인 커밋 최대 1,000개를 받아 Decision Model로 선별하고, 레포마다 작업 단위 4~10개로 묶은 뒤, 근거가 충분한지 게이트에서 거릅니다. 두 줄이 질문 생성에서 만나고, 질문이 인용한 코드는 서버가 원문과 대조해서 맞으면 내보내고, 틀리면 한 번 다시 묻거나 버립니다. 공고 요구 항목은 어필 포인트로도 만들어집니다. LLM은 공고 구조화, 질문 생성, 어필 포인트에서 부르고, 커밋 판정은 경량 판정 모델, 나머지는 규칙으로 처리합니다.
 
 근거(origin/prod d84cb1c): ContributionOwnershipService(LEAD 1.0 / PARTIAL 0.70 / NOT_MINE 0.0) · QuestionBankService MAX_QUESTIONS_PER_EPISODE=4 · application.yml evidence-patch-lines 72, reasoning=zai.glm-5(temperature 0.2) · 커밋 판정 gpt-6-luna(application.yml:336-354).
@@ -977,7 +977,7 @@ PARK.append(shell('Development · 개발', '회사 기출 질문 연결', '''<di
   <div class="bx syes"><div><div class="lab pu">선택한 방법</div><div class="big pu" style="margin-top:10px">공개 출처<br>+ URL</div></div>
     <ul><li><i>✓</i>공개된 후기만 수집</li><li><i>✓</i>출처 URL과 함께 보존</li><li><i>✓</i>robots가 막은 곳 제외</li><li><i>✓</i>AI 수집을 막은 블로그 제외</li></ul></div>
 </div>''',
-    source='collect/D VOC · Devfit/docs/interview-data-sourcing/00_executive_summary.md (2026-08-16) · 수집 원칙 상세는 부록 A8'))
+    source='collect/D VOC · Devfit/docs/interview-data-sourcing/00_executive_summary.md (2026-08-16) · 수집 원칙 상세는 부록 A7'))
 PARK.note('''[≈10초] 다음은 회사 기출 질문 연결입니다. 사용자는 그 회사의 실제 면접 후기를 원했습니다. 그런데 기업 면접 질문을 사 오거나 받아 올 공식 경로는 없었습니다. 그래서 공개된 후기만, 출처 URL과 함께 모으기로 했습니다.
 
 출처: collect/D-growth-voc.md:167(요청 6건 중 1건) · interview-data-sourcing/00_executive_summary.md(공식 API 0건, 판례·약관 검토).
@@ -1091,7 +1091,7 @@ S.note('''[≈18초] 두 번째 범주, 운영입니다. 화면은 S3에 올려 
 출처: 최종보고서 시스템 구성도(그림 2)와 수행 방법 «운영 측면» 표(Step Functions 상태 머신, DynamoDB 환경 잠금, 1분 주기 복구 스윕, 30분 만료, 실패와 주의와 거부 상태를 Slack으로 구분) · 게이트 횟수 collect/B §6(scripts/gates.py) · BE·FE ci.yml origin/prod: id-token: write, role-to-assume, AWS 액세스 키 시크릿 없음, deploy-production needs test와 verify-production-promotion.
 사양(구성도): API 0.5 vCPU 2GB(오토스케일 1~3), 분석 워커 1 vCPU 3GB 2태스크, 음성 4 vCPU 8GB, 운영 RDS db.t4g.small. 개발 환경은 EC2 t3.micro 모놀리식, 개발 화면은 Cognito 게이트 뒤.
 ⚠️ 13분 9초 → 2분 22초는 최종보고서 값(Actions 단계 시간). 이전 덱의 «운영 배포 잡 429–488초 → 145–260초»는 집계 기준이 달라 섞지 말 것. 배포 실패율 14.3% → 1.7%는 본편에서 뺀 수치(Q&A용).
-Q&A: PR 리뷰 0건, 96% 작성자 병합 → 사람 승인 대신 CI와 승격 게이트로 보증, PR 본문 72%에 검증 내역. 부록 A14와 내용이 겹침.''')
+Q&A: PR 리뷰 0건, 96% 작성자 병합 → 사람 승인 대신 CI와 승격 게이트로 보증, PR 본문 72%에 검증 내역. 부록 A12와 내용이 겹침.''')
 
 
 # ───────────────── 운영 2. 관리자 페이지 (운영 도구, 유저 트래킹) ─────────────────
@@ -1131,7 +1131,7 @@ PARK.note('''[≈10초] 실제 화면입니다. 위는 B2C 대시보드의 제�
 
 출처: metrics/screenshots/admin_b2c_product_metrics_90d_20261104-1225.png(브라우저·사이드바·계정 영역 잘라냄) · admin_llm_usage_90d_20261105-0043.png.
 ⛔ 캡처 속 76 · 61 · 75.0% · 11.8% 등은 내부 포함 값 — 말로 성과처럼 읽지 말 것. «매출» 금지.
-Q&A: «$32.77+»의 +는 2,472건 모델 단가 미설정(단가 설정 전 호출) 때문. 원장은 08-30 15:31부터라 그 전 호출 없음. 분석 1회 변동비 약 330원(저장소 3개, 보고서 기준)은 부록 A7. 원장 단순 평균 약 133원은 Q&A용 참고값으로만 — 330원과 비교해 «절감»이라 말하지 말 것(«60% 절감» 금지).''')
+Q&A: «$32.77+»의 +는 2,472건 모델 단가 미설정(단가 설정 전 호출) 때문. 원장은 08-30 15:31부터라 그 전 호출 없음. 분석 1회 변동비 약 330원(저장소 3개, 보고서 기준)은 부록 A6. 원장 단순 평균 약 133원은 Q&A용 참고값으로만 — 330원과 비교해 «절감»이라 말하지 말 것(«60% 절감» 금지).''')
 
 PARK.append(shell('Development · 운영', 'Clarity로 <span class="red">가장 큰 이탈</span> 발견 — Instagram 인앱', f'''
 <div class="panel" style="padding:26px 34px;flex:1;display:flex;flex-direction:column;min-height:0"><div class="small-copy" style="font-weight:900;color:var(--ink)">세션 1,000개당 가입 수 (괄호: Instagram 인앱 비중)</div>
@@ -1210,7 +1210,7 @@ S.note('''[≈15초] 마지막은 SBOM입니다. 백엔드를 빌드할 때 배�
 
 근거(origin/prod): build.gradle:5-6, 69-72(cyclonedx, bootJar 내장 META-INF/sbom/application.cdx.json) · ci.yml:54-98(SBOM 추출 → grype 0.121.0, 바이너리 sha256 검증 → vulnerability-gate.py, BLOCKING={critical, high}, MAX_EXCEPTION_DAYS=90) · ci.yml:132, 477(개발과 운영 배포 잡 needs에 vulnerability-scan) · exceptions 빈 목록 · 관리자 SBOM 화면 FE 4b9608a(11-01) · FE ci.yml:90, 96(npm audit --omit=dev --audit-level=high, test 잡 → 배포 잡 needs) · uses 줄 BE 16, FE 17 모두 40자 SHA · 최종보고서 SBOM 표(BE CycloneDX 1.6, 웹 1.5)와 기타(개인정보, 보안) 표(치명 1, 높음 6 → 4개 감사 대상 0건).
 ⛔ «취약점 0건 = 안전» 금지(알려진 HIGH와 CRITICAL만 보는 게이트). ⛔ SBOM + grype 게이트는 백엔드만. 프론트는 npm audit 게이트라 «SBOM 게이트가 전체 서비스에 있다»고 말하지 말 것.
-Q&A: 침투 테스트와 외부 보안 감사 없음 · 세부 조치는 부록 A6.''')
+Q&A: 침투 테스트와 외부 보안 감사 없음 · 세부 조치는 부록 A18.''')
 
 
 # ───────────────── 수행과정 ─────────────────
@@ -1231,7 +1231,7 @@ S.append(shell('Development', '수행과정', f'''
     <div style="display:flex;justify-content:space-between"><div class="small-copy" style="font-weight:900;color:var(--ink)">주별 운영 배포 성공 횟수 (주 시작일) · 합계 <span class="purple">138회</span></div><div class="small-copy"><span style="color:#6c5ce7">■</span> FE  <span style="color:#a79bfa">■</span> BE</div></div>
     {bars(['8/3','8/10','8/17','8/24','8/31','9/7','9/14','9/21','9/28','10/5','10/12','10/19','10/26','11/2'], [[2,2],[6,4],[10,3],[3,4],[4,5],[4,3],[11,6],[2,3],[8,7],[5,5],[11,10],[1,3],[4,4],[4,4]], 1540, 250, stacked=['#6c5ce7', '#a79bfa'], label_size=15, val_size=17, vmax=24)}
   </div>
-</div>''', source='반영일 = 운영 브랜치 배포 기준 · 08-타임라인.md(전체 간트는 부록 A13) · collect/I-feedback-patterns.md · 최종보고서 "중간점검 반영표"와 같은 분류 · GitHub Actions prod 배포 성공 (2026-08-03 ~ 11-04) · collect/data/dora_prod_deploys_weekly.csv'))
+</div>''', source='반영일 = 운영 브랜치 배포 기준 · 08-타임라인.md(전체 간트는 부록 타임라인 삭제, 본편 1~20주차 장) · collect/I-feedback-patterns.md · 최종보고서 "중간점검 반영표"와 같은 분류 · GitHub Actions prod 배포 성공 (2026-08-03 ~ 11-04) · collect/data/dora_prod_deploys_weekly.csv'))
 S.note('''[≈20초] 멘토 피드백을 받은 날과 운영에 반영한 날입니다. 멘토링 세 곳에서 받은 네 건은 당일, 쉬운 질문 문제는 2일 만에 운영에 나갔고, 중간평가 심사의견도 평가 하네스는 9일, 의도별 질문은 12일 만에 반영했습니다. 중간평가 심사의견은 19건 중 18건에 대응했습니다. 미반영 1건은 대학 B2B2C입니다. 대학 취창업지원실과 컨택하고 협력을 시도했고, 기술적인 문제는 아니었습니다. 그리고 출시 후 14주 동안 한 주도 빠짐없이 운영에 배포했습니다. 총 138회입니다.
 
 출처: 08-타임라인.md «피드백 → 반영 짝»(c5a3ac7 · 0770825 · c680990 · 32e25e9 · 98ebb0f) + collect/I §1-1·§1-2: bf771eb(09-22) · 중간평가 #5 c35298e(09-06) · #6 32e25e9 → prod #47(09-09), 모두 origin/prod 포함 확인. 중간평가 일수는 종합의견서 수신일 08-28 기준(평가일 08-20 기준이면 17·20일). 뺀 사례(Q&A용): 레포 범위 선택 16일(baebd8d) · 실패 사유 안내 27일(741df1e) · 음성 답변 9일(98ebb0f) · 비공개 권한 유지 09-09→09-16(61fbe10) · collect/I-feedback-patterns.md · collect/B · dora_prod_deploys_weekly.csv. 본편에서 뺀 수치: 배포 실패율 14.3% → 1.7% · 운영 승격 PR 29 → 125.
@@ -1240,7 +1240,7 @@ S.note('''[≈20초] 멘토 피드백을 받은 날과 운영에 반영한 날�
 
 
 # ───────────────── 부록으로 뺀 Dev 장표 (11-10 사용자: 본편은 개발 5, 운영 2, 보안 2 주제만) ─────────────────
-APX.append(shell('Appendix · A17', '공고 URL 하나로 <span class="purple">29곳</span>에서 본문을 받고, <span class="purple">두 층으로 캐시</span>', f'''
+APX.append(shell('Appendix · A14', '공고 URL 하나로 <span class="purple">29곳</span>에서 본문을 받고, <span class="purple">두 층으로 캐시</span>', f'''
 {dg(560, {
   'url': (20, 60, 230, 160, 'link', '공고 URL', '채용 플랫폼 5 + 기업 채용 사이트 24', '', ''),
   'ca':  (340, 60, 260, 160, 'L:postgresql', '캐시 조회', '본문(사이트·공고 키) + LLM 결과(본문 해시 키) · 30일', '', 'on'),
@@ -1258,7 +1258,7 @@ APX.note('''[≈15초] 다음은 공고 캐싱입니다. 공고 URL 하나를 �
 근거(origin/prod): CorporateSite 인터페이스 · sites/*Site.java 24개 · CorporateSiteRegistry · SafeFetcher(CorporateSiteSourceRulesTest가 Jsoup.connect 0건 잠금) · CorporateParsing.withOcrFallback(200자 미만 · OCR이 더 길 때만) · JobPostingReadThroughService · InterviewPreparationInsightCacheTest · 크롤 일일 예산 LLM 1,000 · OCR 300, 응답 못 받은 호출은 예산 환급, 비개발 공고는 skip_reason으로 재과금 안 함.
 ⛔ 회사명·로고·«제휴» 금지. «공고 1,450건 사전 수집» 본편 금지(직업안정법 표현 리스크, K-compliance O5).''')
 
-APX.append(shell('Appendix · A18', '본문과 LLM 결과를 2층으로 캐시해 같은 공고는 <span class="purple">한 번만 수집 · 분석</span>', '''<div class="dx dx-cc">
+APX.append(shell('Appendix · A15', '본문과 LLM 결과를 2층으로 캐시해 같은 공고는 <span class="purple">한 번만 수집 · 분석</span>', '''<div class="dx dx-cc">
   <div class="tl"><div><small>1차 · 07-19</small><b>공고 URL · 이미지 입력</b></div><i>→</i><div><small>2차 · 09-15</small><b>기업 채용 사이트 · 29곳</b></div><i>→</i><div class="on"><small>3차 · 09-18</small><b>공고 캐시 2층</b></div></div>
   <div class="why"><b>변경 사유</b>지원자마다 같은 공고를 다시 받고, 다시 OCR하고, 다시 LLM으로 분석</div>
   <div class="ly l1"><div class="hd"><span>1층</span><b>공고 본문</b></div>
@@ -1286,7 +1286,7 @@ APX.note('''[≈15초] 공고 처리는 세 번 바뀌었고, 마지막이 캐�
 Q&A: 캐시 공고 카드 1.0초 vs 미스 17~34초(운영 11-05 · 공고 4건 · 내부 계정, collect/F §2·§3) — 표본 4건이라 장표에서는 뺌. 캐시 적중 20건(1건에 39회 몰림)·마지막 크롤 9/30 → 적중률은 쓰지 않음.
 ⛔ 미리 받은 공고 건수(«1,450건 사전 수집») 본편 금지(직업안정법 표현 리스크, K-compliance O5). 회사명·로고 금지.''')
 
-APX.append(shell('Appendix · A19', '오류는 Sentry로 모으고, <span class="purple">그 SDK로 무거워진 랜딩은 다시 경량화</span>', f'''
+APX.append(shell('Appendix · A16', '오류는 Sentry로 모으고, <span class="purple">그 SDK로 무거워진 랜딩은 다시 경량화</span>', f'''
 <div class="dv-vs">
   <div class="v before"><b>377KB</b><span>Sentry 도입 직후 랜딩 초기 JS (gzip)</span></div>
   <div class="arr">→</div>
@@ -1300,7 +1300,7 @@ APX.note('''[≈8초] 10월 8일에 FE와 BE, 분석 워커까지 Sentry를 붙�
 Q&A: 14일 미해결 이슈 25개(BE 22 · FE 3), 대부분 10-28·11-04 두 번의 DB 연결 장애 — 원인 미확인(비밀번호 회전 추정). 10-08 이전은 오류 수집 공백.''')
 
 
-APX.append(shell('Appendix · A20', '구글 검색 결과 <span class="red">0건</span>에서 <span class="purple">검색엔진 등록</span>부터 시작', psr(
+APX.append(shell('Appendix · A17', '구글 검색 결과 <span class="red">0건</span>에서 <span class="purple">검색엔진 등록</span>부터 시작', psr(
     '<div class="dv-big rd">site: 0건</div><div class="dv-t">09-17 Google site:devfit.app 결과 0 · 브랜드 검색에도 미노출 · 원인은 검색엔진 미등록</div>',
     li([('기술 SEO 기반', 'metadata · sitemap · robots · JSON-LD · llms.txt (07-27~)'), ('CS 지식백과 + 질문 색인', '「개발자 기술면접」 검색어 공략 · 875문항'), ('Search Console · 네이버 · IndexNow 제출', '08-21 네이버 소유 확인 · 09-17 IndexNow 209 URL · 09-18 sitemap 4종'), ('색인 대상 172편 → 55편', '11-05 본문 보강 · 나머지는 noindex · 11-06 재제출')]),
     '<div class="dv-big pu">SEO 100</div><div class="dv-t">Lighthouse 모바일 (Perf 99) · 09-17</div><div class="dv-big" style="margin-top:14px">색인 1 → 재측정</div><div class="dv-t">지금 색인은 홈 1페이지 · 11-05 재정비 효과는 2~3주 뒤 GSC로</div>') + '<div class="dv-q" style="margin-top:18px">09-16 자유 멘토링 "1,000명 사용자 모으기 — 개발자가 할 수 있는 최고의 마케팅, SEO" (강준혁 멘토) <strong>참여 후 개선</strong><small>당일 밤 타깃 메타 · 다음 날 질문 색인 · IndexNow 제출 · sitemap 4종</small></div>',
@@ -1312,7 +1312,7 @@ APX.note('''[≈14초] 9월 16일 강준혁 멘토의 SEO 자유 멘토링에 �
 ⛔ «devfit 검색 1위»·순위·노출 증가 주장 금지 — 측정값 없음. devfit.co가 같은 카테고리를 점유(동명). sameAs에 미확인 URL 금지.
 Q&A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구글이 색인하지 않아 55편으로 줄이고 나머지는 noindex. 효과는 11월 말 재측정. · 운영 404가 아직 403(CloudFront 설정이 레포 밖 Terraform) · 네이버 서치어드바이저 새 sitemap 미재제출 · 명조 웹폰트 433KB(라이선스로 못 줄임) · 중복 주제 8쌍 301 미처리.''')
 
-APX.append(shell('Appendix · A21', 'GitHub는 <span class="purple">최소 권한</span>으로 연결하고, 토큰과 세션은 원문을 남기지 않음', f'''
+APX.append(shell('Appendix · A18', 'GitHub는 <span class="purple">최소 권한</span>으로 연결하고, 토큰과 세션은 원문을 남기지 않음', f'''
 <div class="dv-tl dv-tl-sec">
   <div><img src="assets/dv-logo-github.svg" alt="GitHub"><b>최소 권한 연동</b><span>기본 권한은 read:user, user:email뿐. 비공개 레포는 원할 때만 추가 동의, 분석할 레포는 사용자가 선택</span></div>
   <div class="on">{ic('shield', 52)}<b>토큰 암호화</b><span>GitHub access token은 AES-256-GCM으로 저장. 운영은 키가 없으면 서버가 기동하지 않음</span></div>
@@ -1320,12 +1320,84 @@ APX.append(shell('Appendix · A21', 'GitHub는 <span class="purple">최소 권�
   <div>{ic('link', 52)}<b>SSRF 차단</b><span>공고 수집은 SafeFetcher로만. 리다이렉트마다 허용 호스트를 다시 검사, 응답 8MB 상한</span></div>
   <div>{ic('search', 52)}<b>분석 도구 마스킹</b><span>Clarity는 화면 전체 마스킹, Sentry는 개인정보 전송과 Replay를 끔</span></div>
   <div>{ic('db', 52)}<b>관리자 접근 통제</b><span>관리자 콘솔은 Cognito TOTP MFA 필수. 관리자의 조회와 변경은 모두 감사 로그로 기록</span></div>
-</div>''', source='BE origin/prod: auth/GithubTokenCipher(AES-256-GCM, application-prod.yml require-token-encryption: true) · user_session(SHA-256) · prep/corporate/SafeFetcher · admin/AdminAuditService · infra/terraform prod admin.tf(mfa_configuration ON, software_token_mfa) · 최종보고서 개발 타당성과 위험 요소 · 부록 A6'))
+</div>''', source='BE origin/prod: auth/GithubTokenCipher(AES-256-GCM, application-prod.yml require-token-encryption: true) · user_session(SHA-256) · prep/corporate/SafeFetcher · admin/AdminAuditService · infra/terraform prod admin.tf(mfa_configuration ON, software_token_mfa) · 최종보고서 개발 타당성과 위험 요소 · 부록 A18'))
 APX.note('''[≈15초] 처음 받은 질문이 "GitHub 연동하면 내 코드 털리는 거 아니냐"였습니다. 그래서 GitHub는 프로필과 이메일 권한만으로 연결하고, 비공개 레포는 사용자가 원할 때만 추가로 동의받습니다. 토큰은 AES-256-GCM으로 암호화하고, 운영에서는 암호화 키가 없으면 서버가 아예 뜨지 않게 했습니다. 세션은 해시만 저장하고, 공고 URL로 내부망을 찌르는 SSRF는 수집기 한 곳에서 막습니다. 관리자 콘솔은 MFA를 거쳐야 들어가고, 관리자가 본 것과 바꾼 것은 모두 기록됩니다.
 
-근거(origin/prod): GithubTokenCipher 생성자(키 없음 + require-token-encryption=true면 IllegalStateException) · application-prod.yml:69-70 · CI가 배포 전에 APP_GITHUB_TOKEN_ENCRYPTION_KEY의 Base64와 32바이트를 검사(ci.yml:323-351, 755-784) · V38 github_user_id(username 선점 차단, 부록 A6) · Cognito 운영자 풀 TOTP MFA(terraform prod admin.tf:24, 54) · AdminAuditLog · Clarity data-clarity-mask(7aa25dc) · docs/SENTRY.md(Replay 끔) · 최종보고서 OWASP 표 5번(Sentry PII 전송 금지).
+근거(origin/prod): GithubTokenCipher 생성자(키 없음 + require-token-encryption=true면 IllegalStateException) · application-prod.yml:69-70 · CI가 배포 전에 APP_GITHUB_TOKEN_ENCRYPTION_KEY의 Base64와 32바이트를 검사(ci.yml:323-351, 755-784) · V38 github_user_id(username 선점 차단, 부록 A18) · Cognito 운영자 풀 TOTP MFA(terraform prod admin.tf:24, 54) · AdminAuditLog · Clarity data-clarity-mask(7aa25dc) · docs/SENTRY.md(Replay 끔) · 최종보고서 OWASP 표 5번(Sentry PII 전송 금지).
 레포 범위 선택은 08-07 자유멘토링 피드백 반영(반영 기간은 수행과정 장에서만 말함).
 ⛔ 침투 테스트와 외부 보안 감사는 없음. «완벽한 보안», «해킹 불가» 금지.
-🔴 확인 필요: 커밋 판정(OpenAI)과 조건부 TTS 호출이 개인정보처리방침 국외 이전 항목에 고지됐는지(부록 A12 노트 R1). 보안을 앞세우면 Q&A에서 물을 수 있음.''')
+🔴 확인 필요: 커밋 판정(OpenAI)과 조건부 TTS 호출이 개인정보처리방침 국외 이전 항목에 고지됐는지(부록 A11 노트 R1). 보안을 앞세우면 Q&A에서 물을 수 있음.''')
+
+# ───────────────── 부록: 본편에서 뺀 기술 내용 (2026-11-12) ─────────────────
+APX.append(shell('Appendix · A19', '커밋 선별 방식은 <span class="purple">세 번 바뀌어</span> Decision Model까지', '''<div class="dx dx-fx">
+  <div class="rw"><div class="dt"><small>06-29 · 1차</small><b>자체 점수식</b></div>
+    <code>점수 = 메시지 키워드 <em>× 2</em> + 로직 줄 수 <em>× 3</em> + 기술 키워드 <em>× 2</em></code>
+    <div class="why"><b>구현 방식</b>외부 라이브러리 없이 3항 선형식 · 계수는 손으로 정함</div></div>
+  <div class="rw"><div class="dt"><small>09-08 · 2차</small><b>순위 정규화</b></div>
+    <code>점수 = Σ 가중치 × <em>순위 백분위</em>(각 항)<br><s>효과 없던 항 제거</s></code>
+    <div class="why"><b>변경 사유</b>한 항이 순위를 지배해 짧은 메시지 커밋(fix bug · add pay)이 1순위 · 팀 저장소는 순위가 사라짐</div></div>
+  <div class="rw on"><div class="dt"><small>10-16 · 10-24 · 3차</small><img class="oai fx" src="assets/dv-logo-openai.svg" alt=""><b>Decision Model</b></div>
+    <code>순위 = 0.4 × 규칙 순위 + <em>0.6 × 모델 순위</em><br>품질 = 품질 × <em>(0.5 ~ 1.5)</em> ← 패치 판정</code>
+    <div class="why"><b>변경 사유</b>메시지만 보는 규칙식의 점수 역전 · OpenAI Decisions 채택(Jev는 검토 후 미채택) · 수집과 병렬</div></div>
+</div>''',
+    source='origin/prod: d7f9b98(06-29 초기 점수식) · e4d9ce8 → 9cf0e6e(09-08 midrank 정규화) · d20e5eb(10-16 Decisions 메시지·패치 판정) · b82467b(10-24 수집 중 병렬) · 최종보고서 수행 방법'))
+APX.note('''[≈15초] 커밋 선별은 세 번 바뀌었습니다. 처음엔 외부 라이브러리 없이 메시지, 로직 줄 수, 기술 키워드를 더하는 자체 점수식으로 시작했습니다. 9월에는 한 항이 순위를 지배해 짧은 메시지 커밋이 1순위로 뽑히는 문제를 순위 정규화로 풀었습니다. 10월에는 메시지만 보는 한계를 넘으려고 Decision Model을 도입해, 패치를 다시 판정해 품질 점수를 0.5배에서 1.5배 사이로 보정합니다.
+
+근거: GithubService 커밋 점수식 score(message)×2 + logicLines×3 + codeInterest×2(CLAUDE.md·d7f9b98) · e4d9ce8 커밋 메시지 «uncertainty 항이 순위를 지배해 메시지가 짧은 커밋이 1순위로 조준됐다(fix bug·afooter·add pay) … 항의 값 대신 순위 백분위를 쓰면 명목 가중치가 곧 실효 가중치가 된다. 실효 0이던 temporalRarity·상수항은 제거 … 팀 저장소 랭킹 소멸의 직접 경로» · CommitProbeDiagnostics(항별 분산 기여 로그) · d20e5eb · b82467b · 최종보고서 «9월 순위 정규화로 저장소 규모에 따른 편향을 줄이고 10월에 Decision Model을 도입».
+⛔ Jev는 «검토 후 미채택»까지(성능 비교 수치 없음). 각 단계 개선 폭은 전후 측정 없음 — 수치로 말하지 말 것. «커밋 선별 LLM 0회» 금지.''')
+
+APX.append(shell('Appendix · A20', '질문 생성 <span class="purple">호출 분할</span>과 난이도 계산 세부', '''
+<div class="dv-q3 dv-mq">
+  <div class="two">
+    <div class="q3p">
+      <h4>호출 분할의 기술적 난관</h4>
+      <div class="flow"><span class="x">7유형 1회 호출<em>응답 잘림, 타임아웃</em></span><i>→</i><span>4유형 호출<br>3유형 호출<em>병렬</em></span><i>→</i><span class="on">병합 단계<em>코드 정규화</em></span><i>→</i><span>질문 세트</span></div>
+      <table>
+        <thead><tr><th>병렬로 나누자 생긴 문제</th><th>해결</th></tr></thead>
+        <tbody>
+          <tr><td>두 호출이 서로를 몰라 같은 개념 카드를 다른 이름으로 생성</td><td>병합 단계에서 코드 정규화로 중복 개념 통합</td></tr>
+          <tr><td>같은 코드 조각을 양쪽에서 중복 인용</td><td>병합 시 인용 중복 제거</td></tr>
+          <tr><td>질문이 참조하는 개념 코드가 호출 사이에서 어긋남</td><td>질문의 개념 참조를 병합된 코드로 재연결</td></tr>
+          <tr><td>한 세트가 잘리면 전체 재생성</td><td>출력 토큰 예산을 유형 수에 비례 배분, 실패한 세트만 재시도</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="q3p">
+      <h4>난이도 계산 세부와 재발 방지</h4>
+      <div class="sub">9/9 운영 반영 (H1 32e25e9, H2 8aa7bfa)</div>
+      <table>
+        <thead><tr><th>항목</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td><b>3곳</b> 하드코딩</td><td>질문 저장 switch, 생성 프롬프트 L1~L5, 기초 세트 = 난이도 2 이하</td></tr>
+          <tr><td>근거 코드 양</td><td>적음 1, 보통 2, 많음 3</td></tr>
+          <tr><td>추론 깊이</td><td>코드에 답이 있음 +0, 다른 상황에 적용 +1, 가정을 세워 답 +2</td></tr>
+          <tr><td>프롬프트 수정</td><td>유형별 난이도 표시 삭제, 코드만 읽으면 답이 나오는 질문 금지</td></tr>
+          <tr><td><b>6건</b> 회귀 테스트</td><td>같은 유형에서 여러 난이도가 나오는지 확인, 쉬운 질문이 한 유형에 몰리면 옆 난이도에서 절반까지 채움</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>''', source='최종보고서 품질 개선 결과 2(질문 생성 호출 분할) · question-generation-logic.md (v13, 10-16) · mentor-4-final-report-2026-09-09.md(하드코딩 3곳 · H1 · H2 · QuestionDifficultyTest)'))
+APX.note('''[부록 · 2026-11-12 본편 17장에서 뺀 내용] 일곱 유형을 한 번에 만들면 잘려서 4개와 3개로 나눠 병렬로 불렀고, 그러자 두 호출이 서로를 몰라 같은 개념을 다른 이름으로 만들고 인용이 겹쳤습니다. 병합 단계를 따로 두고 토큰 예산을 나눠 실패한 쪽만 다시 돌리게 했습니다. 난이도는 근거 코드 양과 추론 깊이를 더해 계산하고, 하드코딩 세 곳을 걷어 낸 뒤 회귀 테스트 6건을 붙였습니다.
+
+근거: 본편 17장 노트와 같음. ⛔ «12% → 78%» 금지, 품질 점수(QI) 개선 주장 금지.''')
+
+APX.append(shell('Appendix · A21', '분석한 저장소로 쓰는 <span class="purple">자기소개서와 포트폴리오</span>', f'''
+<div class="dv-cv">
+  <figure class="dv-cap"><img src="assets/dv-cap-coverletter.png" alt="AI 자기소개서 작성 화면"><figcaption>실서비스 캡쳐 (자기소개서 작성)</figcaption></figure>
+  <div class="dv-cv-r">
+    {li([('문항 입력과 프로젝트 선택', '문항 최대 8개, 문항마다 프로젝트 최대 3개 (내 저장소 또는 직접 적기)'),
+         ('저장소 근거로 전 문항 초안', '코드로 확인되지 않는 성과, 수치, 회사 정보는 [[빈칸]]으로 남기고 모델에 보내지 않음'),
+         ('문장 단위 다듬기', '글자 수 맞추기, AI 티 빼기, 두괄식. 적용 전 내용은 버전으로 남겨 되돌리기'),
+         ('포트폴리오 자동 작성', '저장소 최대 8개를 프로젝트 6개로 묶어 채움. 공개 링크와 PDF로 내보내기'),
+         ('면접 질문과 연결', '업로드한 이력서, 자기소개서 속 프로젝트명을 본인 저장소와 맞춰 질문 생성 근거로 사용')])}
+    <div class="dv-q">변경 사유: "직접 입력하고 고를 항목이 너무 많다"<small>문항만 넣으면 AI가 초안을 먼저 쓰고, 사용자는 확인과 수정만</small></div>
+  </div>
+</div>''', source='최종보고서 주요 기능 4 · 서비스 화면 10(포트폴리오와 자기소개서 작성 도우미, [그림 24]) · BE origin/prod studio/StudioContent(MAX_QUESTIONS 8, MAX_QUESTION_PROJECTS 3) · StudioMaterials(MAX_REPOSITORIES 8) · StudioRepositoryGroups(MAX_PROJECTS 6) · StudioAssistanceService · fe924cb(10-08)'))
+APX.note('''[≈15초] 개발의 마지막은 자기소개서와 포트폴리오 Assistant입니다. 질문을 만들려고 분석한 저장소를 서류 작성에도 씁니다. 자기소개서 문항을 붙여 넣고 문항마다 쓸 프로젝트를 고르면, 저장소 근거로 전 문항 초안을 한 번에 씁니다. 코드로 확인할 수 없는 성과나 수치, 회사 정보는 지어내지 않고 빈칸으로 남겨 직접 채우게 했습니다. 문장 단위로 다듬고 되돌릴 수 있고, 포트폴리오는 저장소를 고르면 자동으로 채워져 링크와 PDF로 나갑니다. 처음엔 직접 입력하고 고를 게 너무 많다는 피드백을 받아서, 지금처럼 AI가 먼저 쓰고 사람이 확인하는 흐름으로 바꿨습니다.
+
+근거(origin/prod): StudioAssistanceService:27(GENERATED_KINDS, 사용자만 아는 항목은 빈칸 양식으로 두고 모델에 보내지 않음) · :236(빈칸 [[...]] 표기) · ACTIONS GENERATE와 REWRITE, selection이 있으면 드래그한 부분만 수정 · 결과는 요청 당시 버전 그대로면 적용하고 적용 전 내용은 스냅샷, 그 사이 사용자가 고쳤으면 덮어쓰지 않고 제안으로만 반환 · HOURLY_LIMIT 30, INPUT_LIMIT 60,000자 · 프로젝트명 연결은 recruit/ApplicationDocumentProjectExtractor, AI 보안 장의 허위 프로젝트명 교차 검증과 같은 경로.
+요금(코드 기준): 자기소개서 AI 작성과 다듬기 1건 = 1회, Free는 월 한도 안에서, Plus는 무제한(a3e94c9, 10-17). 보고서는 "자기소개서 AI 작업은 Plus 요금제로 제공"이라 표현 → 장표에 요금 문구는 넣지 않음.
+⛔ «합격 자기소개서»·«AI가 대신 써 준다» 표현 금지, 초안과 확인 흐름까지. 캡처 속 계정은 팀원 테스트 계정.''')
 
 # ================= 부록 → s5_appendix.py (11-07 사용자: 부록은 ppt-start 전담) =================

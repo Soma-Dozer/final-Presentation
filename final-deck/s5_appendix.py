@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# 부록 전체 (A1~A14) — 담당: ppt-start (11-07 사용자 지시 «앞으로 어펜딕스는 니가 전담해»)
-# 원래 s1(A2·A3) · s2(A1·A6·A7·A8·A10·A12·A13·A14) · s3(A4·A5·A9·A11)에 있던 블록을 그대로 옮겼다.
+# 부록 전체 (A1~A12) — 담당: ppt-start (11-07 사용자 지시 «앞으로 어펜딕스는 니가 전담해»)
+# 원래 s1(A2·A3) · s2(A1·A18·A6·A7·A9·A11·A13·A12) · s3(A4·A5·A8·A10)에 있던 블록을 그대로 옮겼다.
 # 부록이 쓰는 CSS·헬퍼는 각 원래 파일(s2 dv-/a10 · s3 ef-)에 남아 있고 여기서 import한다 — 이름을 바꾸면 이 파일이 깨진다.
 # 장표 추가: APX.append(shell('Appendix · A<n>', ...)) 다음 줄에 APX.note('''…''') · 순서는 gen.py가 A번호로 정렬
 from core import *
@@ -26,7 +26,7 @@ APX.append(shell('Appendix · A3', '평가 하네스: <span class="purple">LLM �
 </div>'''))
 APX.note('''출처: collect/C-quality.md. 17.82점(n=91) = Kimi·DeepSeek 문항별 차 평균, 12.23점(n=24) = 같은 심판 재채점 차, «LLM 심판이 사람보다 약 1점 후함»(n=18).''')
 
-# ================= s2_dev 출신 (A1 · A6 · A7 · A8 · A10 · A12 · A13 · A14) =================
+# ================= s2_dev 출신 (A1 · A18 · A6 · A7 · A9 · A11 · A13 · A12) =================
 MID19 = [("1", "늦은 피봇을 범위 축소로 만회(긍정)", "완료", "B2C 주축, B2B 개발 완료. 운영 승격 PR 29 → 125"),
  ("2", "기능 확장보다 질문 품질과 기업 파일럿", "부분", "8축 평가 → 결함 31건 수정 → 난이도 분리 → v11~v13. 저난도 추론형 1/8 → 7/9. 파일럿 0건"),
  ("3", "커밋·diff 연결과 무근거 폐기(긍정)", "완료", "근거 대조·사유 코드 노출(10-19). 출처 353/353, 품질 필터 30일 84건"),
@@ -52,17 +52,7 @@ APX.note('''판정 기준(11-07 재분류): 완료 = 조언 핵심을 실행해 
 출처: collect/I-feedback-patterns.md (반영일·근거 커밋은 운영 브랜치 포함 여부 확인). 최종보고서 «중간점검 반영표»와 같은 내용.
 멘토 피드백 31행 표는 collect/I 원본 참조 — 필요 시 A1-2로 추가.''')
 
-APX.append(shell('Appendix · A6', '최소 권한으로 연결하고, <span class="purple">토큰은 암호화</span>', table(['우려', '조치'], [
- ['"GitHub 연동하면 내 코드 털리나"', '기본 로그인 권한은 read:user · user:email만. 비공개 레포는 사용자가 원할 때만 증분 동의'],
- ['분석 범위', '분석할 레포를 사용자가 직접 선택 (08-07 피드백 → 08-23 반영)'],
- ['토큰 유출', 'GitHub access token AES-256-GCM 암호화 저장'],
- ['세션 탈취', '세션 토큰 원문 대신 SHA-256 해시만 저장 → 즉시 폐기 가능 · HttpOnly 쿠키'],
- ['계정 선점', 'GitHub 신원 기준 키를 불변 numeric id로 (username 선점 차단)'],
- ['공고 수집 경로 악용 (SSRF)', '홉마다 허용 목록을 다시 검사하는 SafeFetcher · 응답 8MB 상한'],
- ['B2B 지원자 정보', '블라인드 평가 · 지원 시 동의 2건 필수']], 'sm left plain')))
-APX.note('''근거 코드: auth/GithubTokenCipher(AES-256-GCM) · user_session(SHA-256 해시) · V38 github_user_id · prep/corporate/SafeFetcher. 레포 범위 선택은 08-07 피드백 후 16일 만(08-23) 반영.''')
-
-APX.append(shell('Appendix · A7', '분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원', f'''
+APX.append(shell('Appendix · A6', '분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원', f'''
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px">{kpi('약 330원', '분석 1회 변동비 · 저장소 3개 기준 · 공고 구조화와 질문 생성 포함', '저장소 3개', 'soft', 'purple')}{kpi('약 1,404원', '저장소 20개 상한 기준 최대치', '저장소 20개')}{kpi('0원', '코드 변경 없는 재분석 · 최신 커밋 지문이 같으면 결과 재사용', '재분석')}</div>
 <div class="small-copy" style="margin-top:18px;font-size:23px">Plus 1인 월 7,900원 = 저장소 3개 기준 분석 약 24회분의 변동비</div>
 <div style="margin-top:26px">{table(['상품', '가격', '상태'], [['Free', '무료 (사용 한도 있음)', '운영 중'], ['추가 생성권 (공고 단위 단건)', '1,900원', '토스페이먼츠 단건 결제 승인 (2026-11-02)'], ['Plus', '월 7,900원', '출시 기념 3개월 무료 개방']], 'sm left plain')}</div>
@@ -70,7 +60,7 @@ APX.append(shell('Appendix · A7', '분석 1회 약 330원, 단건 <span class="
 APX.note('''출처: 최종보고서 단위 경제성 표 · docs/ops/llm-cost-model.md(330원 = 공고 1 + 레포 3 + 어필 + 퀴즈 10, 20개 1,404원).
 Q&A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분석 346회)으로 나누면 분석당 약 133원(미설정 호출 포함 추정 약 150원) — 기준이 다른 값이라 장표에는 보고서 기준 330원만 씀. ⛔ 330원과 133원을 이어 «60% 절감»으로 말하지 말 것.
 원가의 대부분이 LLM(인프라는 개발 DB·서버 정지 운영). Plus 정기결제는 심사 중 — «구독 매출» 금지.''')
-APX.append(shell('Appendix · A8', '기출은 <span class="purple">공개 출처</span>만, 출처 URL과 함께 보존', f'''
+APX.append(shell('Appendix · A7', '기출은 <span class="purple">공개 출처</span>만, 출처 URL과 함께 보존', f'''
 <div class="panel apx-lg" style="padding:44px 50px">{ul(['운영: 기출 1,880건 (1차 853건(41개사 · 출처 URL 304개) + 2차 1,027건) · 전부 임베딩', '2차 수집 1,073건 원문 대조 1,073/1,073 일치 → 1,027건 반영', '수집 규칙: robots 확인 · 도메인당 1.5초 간격 · 원문 1회 캐시 · robots가 막은 사이트와 AI 수집을 막은 블로그 제외', '출처 URL을 질문과 함께 보존 · (URL + 원문) 해시로 중복 방지', '생성 프롬프트에 넣지 않고, 학습실 질문 옆에 비슷한 실제 기출로 출처와 함께 표시'])}</div>'''))
 APX.note('''근거: interview-evidence-audit-2026-10-11 · production-upload-result-2026-10-11.json · Devfit/research/interview-evidence/reports/progress.md · docs/interview-question-evidence.md. 11-02 전략멘토링 대응 기록: «저작권·직업정보제공사업 문제로 공개 정보 위주로 간다».
 ⛔ «검증된 853건» 금지(REVIEWED 0 · NEEDS_REVIEW 158 · 302건은 주제 보고). 법률: 11-05 소마 법률 멘토링 구두 검토 의견(claims C7) — «법률의견서»·«합법 확인» 금지.
@@ -91,7 +81,7 @@ _cells = ''.join(f'<i class="d">{_KO[r["weekday"]]}</i>' + ''.join(
     f'<i style="background:rgba(108,92,231,{(0.06 + 0.94 * int(r[f"h{h:02d}"]) / _hmax) if int(r[f"h{h:02d}"]) else 0:.2f})" title="{int(r[f"h{h:02d}"])}"></i>' for h in range(24)) for r in _HM)
 _hours = '<i class="h"></i>' + ''.join(f'<i class="h">{h if h % 3 == 0 else ""}</i>' for h in range(24))
 heat = f'<div class="a10-hm"><div class="grid">{_cells}{_hours}</div></div>'
-APX.append(shell('Appendix · A10', '팀 구성과 역할: 3명 모두 <span class="purple">학교 병행</span>, 1명은 <span class="purple">고등학생</span>', f'''
+APX.append(shell('Appendix · A9', '팀 구성과 역할: 3명 모두 <span class="purple">학교 병행</span>, 1명은 <span class="purple">고등학생</span>', f'''
 <div class="a10">
   <div class="banner"><b>3명 모두 학교 병행 · 1명은 고등학생</b><span>수업이 끝난 저녁과 주말에 개발 · 14주 연속 매주 운영 배포</span></div>
   <div class="team">{tc}</div>
@@ -102,8 +92,8 @@ APX.note('''세 명 모두 학교를 다니면서 만들었고, 김건우는 고
 ⚠️ «평일 9~17시 밖»은 커밋 시각 기준일 뿐 작업 시간 전체가 아님. 나머지 2명의 학교 병행은 사용자 진술(claims.md 등록 요청).
 Q&A: PR 리뷰 0건·96% 작성자 병합 → «사람 승인 대신 CI와 승격 게이트로 막았다(운영 push 13건 차단, 운영 유출 0). PR 본문 72%에 검증 내역». ⛔ «공동대표» 금지.''')
 
-# --- A12 모델 라우팅 · 스택 ---
-APX.append(shell('Appendix · A12', '역할별 모델 라우팅과 <span class="purple">서비스 스택</span>', '''
+# --- A11 모델 라우팅 · 스택 ---
+APX.append(shell('Appendix · A11', '역할별 모델 라우팅과 <span class="purple">서비스 스택</span>', '''
 <div class="hero" style="grid-template-columns:1.1fr .9fr;margin:auto 0">
   <div class="panel" style="padding:30px 34px"><div class="infra-summary-title">LLM · 역할별 라우팅 (Bedrock 5종 + 외부 2종)</div>
     <div class="mchips">
@@ -117,29 +107,7 @@ APX.append(shell('Appendix · A12', '역할별 모델 라우팅과 <span class="
 APX.note('''출처: origin/prod application.yml:103-127(bedrock.models reasoning/code/extraction/vision/business-ocr) · :336-354(커밋 판정 gpt-6-luna, OpenAI) · :167-169(cohere.embed-multilingual-v3) · BedrockService evaluateAnswer=code 모델.
 🔴 OpenAI(커밋 판정 · 조건부 TTS) 호출이 개인정보처리방침 국외 이전에 미고지(R1) — 발표 전 정리. 음성 provider 운영값 확인 필요(s2 음성 장 노트).''')
 
-# --- A13 전체 타임라인 (간트) ---
-d0, d1 = dt.date(2026, 6, 29), dt.date(2026, 11, 6)
-def X(m, d): return (dt.date(2026, m, d) - d0).days / (d1 - d0).days * 100
-lanes = [('엔진·품질', 70), ('제품·인프라', 250), ('마케팅·사업', 430)]
-evs = [(0, 6, 29, '개발 착수', '06-25 피봇 승인'), (0, 9, 6, '평가 하네스 도입', ''), (0, 9, 9, '난이도·유형 분리', '← 09-07 한유일 멘토 (2일)', 82), (0, 10, 8, '실기업 기출 운영', '853건 → 11월 1,880건'),
-       (1, 8, 3, 'B2C 출시', '첫 운영 배포'), (1, 8, 23, '레포 범위 선택', '← 08-07 "연동하면 털리나"'), (1, 9, 16, '음성 모의면접', '운영 반영'), (1, 9, 22, '비동기 배포·Slack', '← 09-22 멘토링', 82), (1, 11, 2, '결제 LIVE · 기출 검색', '← 11-02 멘토링'),
-       (2, 8, 24, 'Google 광고 시작', ''), (2, 9, 3, '사업자등록', '도저랩스'), (2, 10, 15, '토스페이먼츠 TEST 결제 연동', ''), (2, 11, 1, '특허 3건 출원', '')]
-g = ['<div class="gantt dv-gantt">']
-for m, lab in [(7, '7월'), (8, '8월'), (9, '9월'), (10, '10월'), (11, '11월')]:
-    g.append(f'<div class="month" style="left:calc(220px + (100% - 300px) * {X(m,1)/100:.4f})">{lab}</div>')
-for name, top in lanes:
-    g.append(f'<div class="lane" style="top:{top}px"></div><div class="lane-name" style="top:{top+14}px">{name}</div>')
-for e in evs:
-    li_, m, d, t, c = e[:5]
-    top = lanes[li_][1] + 30 + (e[5] if len(e) > 5 else 0)
-    cc = f'<div class="c">{c}</div>' if c else ''
-    g.append(f'<div class="ev" style="left:calc(220px + (100% - 300px) * {X(m,d)/100:.4f});top:{top}px"><span class="d">{m:02d}-{d:02d}</span><div class="t">{t}</div>{cc}</div>')
-g.append(f'<div class="mid" style="left:calc(220px + (100% - 300px) * {X(8,20)/100:.4f});top:40px;bottom:0"><span>★ 08-20 중간평가 · 피드백 19건</span></div></div>')
-APX.append(shell('Appendix · A13', '전체 타임라인 (06-29 ~ <span class="purple">11-06</span>)', f'''
-<div class="panel" style="padding:30px 40px 20px;flex:1;display:flex;flex-direction:column;min-height:0">{''.join(g)}</div>''', source='2026-06-29 ~ 11-06 · 운영 반영일은 운영 브랜치 배포 기준 · 08-타임라인.md'))
-APX.note('''출처: 08-타임라인.md · collect/B. 사업자등록 푸터 고지 커밋 7050d0a. 기출 운영 반영 10-08 PR #89(10-11은 정제 갱신). ⛔ «공동대표» 금지.''')
-
-APX.append(shell('Appendix · A14', 'staging을 거치지 않은 변경은 <span class="purple">운영에 나가지 않음</span>', f'''
+APX.append(shell('Appendix · A12', 'staging을 거치지 않은 변경은 <span class="purple">운영에 나가지 않음</span>', f'''
 <div class="hero" style="grid-template-columns:1.25fr .75fr;margin:auto 0">
   <div class="panel dep">
     <div class="fb2-k">배포 경로 (숫자는 게이트가 실제로 막은 횟수)</div>
@@ -157,7 +125,7 @@ APX.note('''배포 경로마다 게이트가 있습니다. main에서 112번, pr
 출처: collect/B §6(scripts/gates.py). 배포 잡 429–488초 → 145–260초는 같은 기간 실측일 뿐 원인 단정 금지.
 SBOM 게이트는 11-05 운영 반영 → «HIGH·CRITICAL 1건 이상이면 배포 잡 중단 · 백엔드만»까지, ⛔ «취약점 0건 = 안전»·«FE 포함» 금지. Q&A: PR 리뷰 0건·96% 작성자 병합 → 사람 승인 대신 CI·승격 게이트, PR 본문 72%에 검증 내역.''')
 
-# ================= s3_effect 출신 (A4 · A5 · A9 · A11) =================
+# ================= s3_effect 출신 (A4 · A5 · A8 · A10) =================
 APX.append(shell('Appendix · A4', '측정 도구별 수치 차이 (<span class="purple">기준: 관리자 DB</span>)', f'''
 <div style="display:grid;grid-template-columns:1.25fr .75fr;gap:30px;flex:1;min-height:0">
   <div class="shot"><img src="assets/14_measurement_gap.png" alt="측정 도구별 수치 차이" style="object-fit:contain"></div>
@@ -170,7 +138,7 @@ APX.append(shell('Appendix · A5', '유료 광고 ₩347.5만: 클릭 1회 ₩11
 <div style="margin-top:26px">{table(['지표', 'Meta', 'Google'], [['지출', '₩2,338,208', '₩1,136,972'], ['노출', '666,197', '116,041'], ['클릭', '21,318 (링크 클릭)', '2,018'], ['클릭 1회', '₩110', '₩563'], ['랜딩 1회', '₩151 (Meta 랜딩 조회)', '—']], 'sm plain')}</div>''', source='Meta 광고 관리자(8/1~11/3) · Google Ads(8/24~11/3) · ₩4.2만 = 광고비 ÷ 전체 가입 83명(전원 광고 유입 가정)'))
 APX.note('''출처: collect/D §2. ₩4.2만은 하한(가입 전원이 광고로 들어왔다고 가정) — «상한»이라 쓰지 말 것. 상한 추정 ₩12.9만. Meta·Google의 «전환»과 DB «가입»은 정의가 다름.''')
 
-APX.append(shell('Appendix · A9', '특허 3건 출원: <span class="purple">선별 · 생성 · 음성</span>', f'''
+APX.append(shell('Appendix · A8', '특허 3건 출원: <span class="purple">선별 · 생성 · 음성</span>', f'''
 {table(['출원번호', '발명의 명칭', '보호하는 것 (요지)', '관련 장표'], [
  ['<span class="patent">10-2026-0214808</span>', '코드 저장소 기반 면접 질문 선별 방법 및 시스템', '본인 기여 커밋을 골라 가중(본인 1.0 · 공동 0.70 · 타인 제외)하고 질문 대상 지점을 선별', 'Key Features 경쟁사 비교(본인 커밋만) · Development 점수식'],
  ['<span class="patent">10-2026-0214809</span>', '코드 저장소 기반 면접 질문 생성 방법 및 시스템', '근거 코드 묶음에서 질문을 만들고, 질문 속 식별자를 코드와 대조해 유지·폐기·재질의하는 게이트', 'Key Features 반론(근거 대조)'],
@@ -180,7 +148,7 @@ APX.note('''출원인 김건우(개인), 발명자 김건우·박천웅·노재�
 «관련 장표» 열은 장 제목으로 표기(쪽번호 금지 규칙). 최종 표기는 Dev 슬림화 후 ppt-start와 맞춤 — 0214809는 Development 입력·출력 게이트 장이 남으면 덧붙임.
 청구항 요지 원문: Devfit/docs/patent/ 명세서 (⛔ 삭제 금지, 공지예외 12개월 시한 진행 중).''')
 
-APX.append(shell('Appendix · A11', '시장 규모: 개발 직군 구직자 <span class="purple">약 38.8만 명</span>', f'''
+APX.append(shell('Appendix · A10', '시장 규모: 개발 직군 구직자 <span class="purple">약 38.8만 명</span>', f'''
 {table(['구분', '값', '근거'], [
  ['연간 개발 직군 입사지원 (A)', '약 520만 건', '사람인·점핏 2025 상반기 약 260만 건 × 2 ⚙'],
  ['적극 구직자 1인 평균 입사지원 (B)', '13.4회', '한국경제인협회 2025 조사'],
