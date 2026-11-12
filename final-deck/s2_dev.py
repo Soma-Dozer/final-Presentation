@@ -514,6 +514,36 @@ CSS = r"""
 .dx-cc .gd li{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:center;background:#f6f5f9;border-radius:14px;padding:14px 16px;font-size:20px;font-weight:800;line-height:1.4;word-break:keep-all;flex:1}
 .dx-cc .gd li i{font-style:normal;width:38px;height:38px;border-radius:10px;background:var(--purple);color:#fff;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center}
 .dx-cc .kv{flex:1;justify-content:center}.dx-cc .kv p{font-size:20px}
+/* 18·19장 통합 (2026-11-12) */
+.dv-mq .q3p td{padding:14px 10px!important}.dv-mq .q3p table{font-size:16.5px!important}.dv-mq td b{font-size:20px!important}
+.dv-mq .kpis small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dv-mq .dfx .bd{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;flex:1;min-height:0}
+.dv-mq .dfx .mh{display:grid;grid-template-columns:118px repeat(5,1fr);gap:5px;background:#fdf0f1;border-radius:14px;padding:16px 16px;grid-template-rows:auto auto repeat(7,1fr);align-content:stretch}
+.dv-mq .dfx .mh .cap{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:900;color:var(--red);margin-bottom:4px}.dv-mq .dfx .mh .cap b{font-size:28px;letter-spacing:-.03em}
+.dv-mq .dfx .mh .c{font-size:12px;font-weight:900;color:var(--muted);text-align:center;white-space:nowrap}
+.dv-mq .dfx .mh .nm{font-size:14.5px;font-weight:800;display:flex;align-items:center;white-space:nowrap}
+.dv-mq .dfx .mh i{border-radius:6px;background:#fff;min-height:30px}.dv-mq .dfx .mh .nm{font-size:16px!important}.dv-mq .dfx .mh i.f{background:var(--red)}
+.dv-mq .dfx .eqs{display:flex;flex-direction:column;gap:10px;justify-content:center}
+.dv-mq .dfx .eq{background:#f6f5f9;border-radius:12px;padding:12px 16px}.dv-mq .dfx .eq small{display:block;font-size:13px;font-weight:900;color:var(--muted)}
+.dv-mq .dfx .eq code{display:block;font-family:inherit;font-size:21px;font-weight:900;letter-spacing:-.02em;line-height:1.35;margin-top:2px}.dv-mq .dfx .eq code s{text-decoration:none;color:var(--red)}
+.dv-mq .dfx .eq.on{background:var(--purple-pale)}.dv-mq .dfx .eq.on small{color:var(--purple)}.dv-mq .dfx .eq.on code em{font-style:normal;color:var(--purple)}
+.dv-mq .dfx .nt{font-size:14.5px;font-weight:700;color:#4a4552;line-height:1.45;word-break:keep-all}
+
+.dv-admm{display:flex;flex-direction:column;gap:22px;flex:1;min-height:0;margin-top:-8px}
+.dv-admm .dv-adm3{flex:1;min-height:0;margin:0;align-items:stretch}
+.dv-admm .dv-adm3 .shot{display:flex;flex-direction:column;justify-content:center}
+.dv-admm .dv-adm3 .shot img{width:auto;max-width:100%;max-height:560px;margin:0 auto}
+.dv-admm .dv-adm3 .grid{padding-bottom:0!important;gap:12px!important}
+.dv-admm .dv-adm3 .grid>div{padding:14px 22px!important;gap:4px!important}
+.dv-admm .dv-adm3 .grid b{font-size:24px!important}.dv-admm .dv-adm3 .grid span{font-size:15px!important}.dv-admm .dv-adm3 .grid em{font-size:18px!important;margin-top:2px!important}
+.dv-admm .tools{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.dv-admm .tools>div{background:#fff;border:2px solid #ece9f1;border-radius:16px;padding:12px 16px;display:grid;grid-template-columns:34px 1fr;column-gap:10px;row-gap:4px;align-items:center;min-width:0}
+.dv-admm .tools img{width:34px;height:34px;object-fit:contain}
+.dv-admm .tools b{font-size:18px;font-weight:900;letter-spacing:-.03em;white-space:nowrap}
+.dv-admm .tools span{grid-column:1/-1;font-size:14px;font-weight:700;color:#4a4552;line-height:1.35;word-break:keep-all}
+.dv-admm .tools .lb{display:flex;flex-direction:column;justify-content:center;gap:4px;background:var(--purple-pale);border-color:var(--purple-soft)}
+.dv-admm .tools .lb b{color:var(--purple);font-size:19px}.dv-admm .tools .lb span{font-size:14px}
+
 """
 
 PARTS = ['LLM 파이프라인', 'Decision Model 도입', '질문 품질 개선', '회사 기출 질문 연결', '모의면접과 음성 인식', '자기소개서와 포트폴리오 Assistant', '운영', '보안']
@@ -615,7 +645,7 @@ def li(rows): return '<div class="dv-li">' + ''.join(f'<div>{a}' + (f'<small>{b}
 
 # ================= Development =================
 S.append(divider('03 · 개발', 'Development', '개발, 운영, 보안과 수행과정'))
-S.note('''[구분] Development는 세 범주로 나눴습니다. 개발(LLM 파이프라인, Decision Model 도입, 질문 품질 개선, 회사 기출 질문 연결, 모의면접과 음성 인식, 자기소개서와 포트폴리오 Assistant), 운영(인프라, 관리자 페이지), 보안(AI 보안, SBOM), 그다음 수행과정입니다.''')
+S.note('''[구분] Development는 세 범주로 나눴습니다. 개발(LLM 파이프라인, Decision Model 도입, 질문 품질 개선, 회사 기출 질문 연결, 모의면접과 음성 인식), 운영(인프라, 관리자 페이지), 보안(AI 보안, SBOM), 그다음 수행과정입니다.''')
 
 # ───────────────── 개발 1. LLM 파이프라인 ─────────────────
 S.append(shell('Development · 개발', '1. LLM 파이프라인 <span class="purple">- 하네스 구조</span>', f'''
@@ -818,33 +848,22 @@ S.note('''[≈25초] 다음은 Decision Model 도입입니다. Decision Model은
 - 병렬: PatchBatch가 상세 수집 중에 판정을 미리 제출(overlapMs 로그) · 동시 6 · 레포 마감 25초 · 과금/인증 오류 시 15분 쿨다운 후 규칙만.
 모델 ID: gpt-6-luna(APP_COMMIT_DECISION_MODEL). 입력 단가 100만 토큰당 $0.1(보고서). 보고서 모델 표의 응답 최저 1.23초는 우리 실측, 70~500ms는 제공사 설명 — 장표에 응답 속도 숫자는 넣지 않음.
 Jev: 도입 검토 후 미채택 — 커밋 메시지·주석 대부분이 한국어라 다국어 판정 정확도가 검증된 OpenAI Decisions 채택. ⛔ Jev와의 성능 비교 수치 없음.
-⛔ «커밋 선별 LLM 0회» 금지. «점수 역전» 해소 정도를 수치로 말하지 말 것(전후 비교 측정 없음).''')
+⛔ «커밋 선별 LLM 0회» 금지. «점수 역전» 해소 정도를 수치로 말하지 말 것(전후 비교 측정 없음).
 
-S.append(shell('Development · 개발', '2. Decision Model(Jev) 도입 <span class="purple">- 발전과정</span>', '''<div class="dx dx-fx">
-  <div class="rw"><div class="dt"><small>06-29 · 1차</small><b>자체 점수식</b></div>
-    <code>점수 = 메시지 키워드 <em>× 2</em> + 로직 줄 수 <em>× 3</em> + 기술 키워드 <em>× 2</em></code>
-    <div class="why"><b>구현 방식</b>외부 라이브러리 없이 3항 선형식 · 계수는 손으로 정함</div></div>
-  <div class="rw"><div class="dt"><small>09-08 · 2차</small><b>순위 정규화</b></div>
-    <code>점수 = Σ 가중치 × <em>순위 백분위</em>(각 항)<br><s>효과 없던 항 제거</s></code>
-    <div class="why"><b>변경 사유</b>한 항이 순위를 지배해 짧은 메시지 커밋(fix bug · add pay)이 1순위 · 팀 저장소는 순위가 사라짐</div></div>
-  <div class="rw on"><div class="dt"><small>10-16 · 10-24 · 3차</small><img class="oai fx" src="assets/dv-logo-openai.svg" alt=""><b>Decision Model</b></div>
-    <code>순위 = 0.4 × 규칙 순위 + <em>0.6 × 모델 순위</em><br>품질 = 품질 × <em>(0.5 ~ 1.5)</em> ← 패치 판정</code>
-    <div class="why"><b>변경 사유</b>메시지만 보는 규칙식의 점수 역전 · OpenAI Decisions 채택(Jev는 검토 후 미채택) · 수집과 병렬</div></div>
-</div>''',
-    source='origin/prod: d7f9b98(06-29 초기 점수식) · e4d9ce8 → 9cf0e6e(09-08 midrank 정규화) · d20e5eb(10-16 Decisions 메시지·패치 판정) · b82467b(10-24 수집 중 병렬) · 최종보고서 수행 방법'))
-S.note('''[≈15초] 커밋 선별은 세 번 바뀌었습니다. 처음엔 외부 라이브러리 없이 메시지, 로직 줄 수, 기술 키워드를 더하는 자체 점수식으로 시작했습니다. 9월에는 한 항이 순위를 지배해 짧은 메시지 커밋이 1순위로 뽑히는 문제를 순위 정규화로 풀었습니다. 10월에는 메시지만 보는 한계를 넘으려고 Decision Model을 도입해, 패치를 다시 판정해 품질 점수를 0.5배에서 1.5배 사이로 보정합니다.
+[삭제한 발전과정 장 노트, 2026-11-12 Q&A용]
+[≈15초] 커밋 선별은 세 번 바뀌었습니다. 처음엔 외부 라이브러리 없이 메시지, 로직 줄 수, 기술 키워드를 더하는 자체 점수식으로 시작했습니다. 9월에는 한 항이 순위를 지배해 짧은 메시지 커밋이 1순위로 뽑히는 문제를 순위 정규화로 풀었습니다. 10월에는 메시지만 보는 한계를 넘으려고 Decision Model을 도입해, 패치를 다시 판정해 품질 점수를 0.5배에서 1.5배 사이로 보정합니다.
 
 근거: GithubService 커밋 점수식 score(message)×2 + logicLines×3 + codeInterest×2(CLAUDE.md·d7f9b98) · e4d9ce8 커밋 메시지 «uncertainty 항이 순위를 지배해 메시지가 짧은 커밋이 1순위로 조준됐다(fix bug·afooter·add pay) … 항의 값 대신 순위 백분위를 쓰면 명목 가중치가 곧 실효 가중치가 된다. 실효 0이던 temporalRarity·상수항은 제거 … 팀 저장소 랭킹 소멸의 직접 경로» · CommitProbeDiagnostics(항별 분산 기여 로그) · d20e5eb · b82467b · 최종보고서 «9월 순위 정규화로 저장소 규모에 따른 편향을 줄이고 10월에 Decision Model을 도입».
 ⛔ Jev는 «검토 후 미채택»까지(성능 비교 수치 없음). 각 단계 개선 폭은 전후 측정 없음 — 수치로 말하지 말 것. «커밋 선별 LLM 0회» 금지.''')
 
-# ───────────────── 개발 3. 질문 품질 개선 ─────────────────
-S.append(shell('Development · 개발', '3. 질문 품질 개선 <span class="purple">- 생성 단계</span>', '''
-<div class="dv-q3">
+# ───────────────── 개발 3. 질문 품질 개선 (18·19장 통합) ─────────────────
+S.append(shell('Development · 개발', '3. 질문 품질 개선 <span class="purple">- 생성 단계와 난이도</span>', '''
+<div class="dv-q3 dv-mq">
   <div class="kpis">
     <div><small>근거 도달</small><b>14 → 72줄</b><span>파일당 근거 줄 수, 기존엔 변경 줄의 8.4%만 도달</span></div>
-    <div><small>배치 실패율</small><b>52% → 22%</b><span>작업 1개당 호출 1번, 실패 시 근거 50%, 25%로 축소 재시도</span></div>
-    <div><small>부분 완료</small><b class="rd">77 / 96건</b><span>최근 30일 분석의 80.2%가 질문 일부만 생성, 원인 4개 해결</span></div>
-    <div class="on"><small>생성 시간</small><b>93.7 → 49.1초</b><span>−47.6%, 고정 사례 3건 질문 84개, 출력 잘림과 꼬리질문 누락 0</span></div>
+    <div><small>배치 실패율</small><b>52% → 22%</b><span>실패 시 근거를 50%, 25%로 줄여 재시도</span></div>
+    <div><small>생성 시간</small><b>93.7 → 49.1초</b><span>−47.6%, 호출 분할과 병합 단계, 고정 사례 3건 질문 84개</span></div>
+    <div class="on"><small>쉬운 질문 중 생각해서 답하는 질문</small><b>1/8 → 7/9</b><span>난이도를 유형에서 분리, 9/9 운영 반영, 같은 레포 1회 실행</span></div>
   </div>
   <div class="two">
     <div class="q3p">
@@ -853,52 +872,36 @@ S.append(shell('Development · 개발', '3. 질문 품질 개선 <span class="pu
       <table>
         <thead><tr><th>지표</th><th>원인</th><th>해결</th></tr></thead>
         <tbody>
-          <tr><td><b>41건</b> 첫 호출 실패<small>그중 39건이 출력 잘림</small></td><td>재시도 때 입력 근거만 줄이고 출력 요구량은 그대로</td><td>잘리면 요청을 최대 2회 분할해 재요청</td></tr>
-          <tr><td><b>249건</b> 꼬리질문 폐기<small>품질 검사 탈락</small></td><td>탈락한 꼬리질문을 다시 요청하지 않음</td><td>누락 꼬리질문은 주제당 1회 보충 생성</td></tr>
-          <tr><td><b>65건</b> 본 질문 폐기<small>유형 검사 탈락</small></td><td>시스템 프롬프트와 사용자 프롬프트의 허용 유형 정의 불일치</td><td>허용 유형 정의를 한 곳으로 통일</td></tr>
-          <tr><td><b>오탐</b> 정상 질문 폐기<small>근거 검사 탈락</small></td><td>Next.js, Node.js의 마침표를 파일 확장자로 오인</td><td>공개 기술 명칭 Allowlist, 1차 성공 결과 보존</td></tr>
+          <tr><td><b>41건</b> 첫 호출 실패<small>그중 39건이 출력 잘림</small></td><td>재시도 때 출력 요구량은 그대로</td><td>잘리면 최대 2회 분할 재요청</td></tr>
+          <tr><td><b>249건</b> 꼬리질문 폐기<small>품질 검사 탈락</small></td><td>탈락한 꼬리질문을 재요청하지 않음</td><td>주제당 1회 보충 생성</td></tr>
+          <tr><td><b>65건</b> 본 질문 폐기<small>유형 검사 탈락</small></td><td>프롬프트 두 곳의 허용 유형 불일치</td><td>허용 유형 정의 통일</td></tr>
+          <tr><td><b>오탐</b> 정상 질문 폐기<small>근거 검사 탈락</small></td><td>Next.js의 마침표를 확장자로 오인</td><td>기술 명칭 Allowlist</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="q3p">
-      <h4>호출 분할의 기술적 난관</h4>
-      <div class="flow"><span class="x">7유형 1회 호출<em>응답 잘림, 타임아웃</em></span><i>→</i><span>4유형 호출<br>3유형 호출<em>병렬</em></span><i>→</i><span class="on">병합 단계<em>코드 정규화</em></span><i>→</i><span>질문 세트</span></div>
-      <table>
-        <thead><tr><th>병렬로 나누자 생긴 문제</th><th>해결</th></tr></thead>
-        <tbody>
-          <tr><td>두 호출이 서로를 몰라 같은 개념 카드를 다른 이름으로 생성</td><td>병합 단계에서 코드 정규화로 중복 개념 통합</td></tr>
-          <tr><td>같은 코드 조각을 양쪽에서 중복 인용</td><td>병합 시 인용 중복 제거</td></tr>
-          <tr><td>질문이 참조하는 개념 코드가 호출 사이에서 어긋남</td><td>질문의 개념 참조를 병합된 코드로 재연결</td></tr>
-          <tr><td>한 세트가 잘리면 전체 재생성</td><td>출력 토큰 예산을 유형 수에 비례 배분, 실패한 세트만 재시도</td></tr>
-        </tbody>
-      </table>
+    <div class="q3p dfx">
+      <h4>면접관 피드백으로 바꾼 난이도 계산</h4>
+      <div class="sub">현직 면접관 멘토 지적: 쉬운 질문이 코드 사실 확인뿐이라 실제 면접에 안 나옴</div>
+      <div class="bd">
+        <div class="mh"><div class="cap"><span>원인 분석, 114문항 교차표</span><b>예외 0</b></div><div></div><div class="c">난이도 1</div><div class="c">2</div><div class="c">3</div><div class="c">4</div><div class="c">5</div><div class="nm">구현 흐름</div><i class=""></i><i class="f"></i><i class=""></i><i class=""></i><i class=""></i><div class="nm">기술 선택 이유</div><i class=""></i><i class=""></i><i class="f"></i><i class=""></i><i class=""></i><div class="nm">대안 비교</div><i class=""></i><i class=""></i><i class=""></i><i class="f"></i><i class=""></i><div class="nm">검증 방법</div><i class=""></i><i class=""></i><i class=""></i><i class="f"></i><i class=""></i><div class="nm">CS 개념</div><i class=""></i><i class=""></i><i class=""></i><i class="f"></i><i class=""></i><div class="nm">실패 대응</div><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="f"></i><div class="nm">확장 설계</div><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="f"></i></div>
+        <div class="eqs">
+          <div class="eq"><small>전</small><code>난이도 = <s>질문 유형</s></code></div>
+          <div class="eq on"><small>후 (9/9 운영 반영)</small><code>난이도 = <em>근거 코드 양</em><br>+ <em>추론 깊이</em></code></div>
+          <div class="nt">유형이 정해지면 난이도도 정해져 쉬운 질문은 전부 구현 흐름이었음. 프롬프트의 유형별 난이도 표시를 지우고 회귀 테스트 6건 추가</div>
+        </div>
+      </div>
     </div>
   </div>
-</div>''', source='최종보고서 품질 개선 결과 1(부분 완료 현상 해결), 품질 개선 결과 2(질문 생성 호출 분할) · collect/C §2 · results.md §6.2·§7.1 · REPOSITORY_ANALYSIS_PERFORMANCE.md:72-82 · question-generation-logic.md (v13, 10-16)'))
-S.note('''[≈25초] 다음은 질문 품질 개선입니다. 위 네 숫자가 생성 단계에서 고친 결과입니다. 그중 두 가지가 가장 까다로웠습니다. 왼쪽은 운영에서 찾은 문제입니다. 9월에 관리자 콘솔을 보니 최근 30일 분석 96건 중 77건이 질문 일부만 만든 상태로 끝나 있었습니다. 로그를 따라가 원인 네 개를 찾았습니다. 재시도할 때 입력만 줄이고 출력은 그대로 요구해서 응답이 잘렸고, 검사에서 떨어진 꼬리질문을 다시 요청하지 않았고, 프롬프트 두 곳의 허용 유형이 달랐고, Next.js 같은 이름의 점을 파일 확장자로 착각해 멀쩡한 질문을 버렸습니다. 오른쪽은 속도 문제입니다. 일곱 유형을 한 번에 만들면 잘려서 4개와 3개로 나눠 병렬로 불렀는데, 그러자 두 호출이 서로를 몰라 같은 개념을 다른 이름으로 만들고 인용이 겹쳤습니다. 그래서 병합 단계를 따로 두고, 토큰 예산을 나눠 실패한 쪽만 다시 돌리게 했습니다. 결과적으로 생성 시간이 93.7초에서 49.1초로 47.6% 줄었고, 잘림과 꼬리질문 누락이 사라졌습니다.
+</div>''', source='최종보고서 품질 개선 결과 1(부분 완료 현상 해결), 품질 개선 결과 2(질문 생성 호출 분할) · collect/C §2 · results.md §6.2·§7.1 · REPOSITORY_ANALYSIS_PERFORMANCE.md:72-82 · question-generation-logic.md (v13, 10-16) · mentor-4-final-report-2026-09-09.md(114문항 교차표 · H1 32e25e9 · H2 8aa7bfa · 재발 방지 QuestionDifficultyTest) · collect/C 검증표(1/8 → 7/9) · 단일 레포 각 1회 실행 · prod #47'))
+S.note('''[≈30초] 다음은 질문 품질 개선입니다. 위 네 숫자가 결과입니다. 왼쪽은 운영에서 찾은 문제입니다. 9월에 관리자 콘솔을 보니 최근 30일 분석 96건 중 77건이 질문 일부만 만든 채 끝나 있었고, 로그를 따라가 원인 네 개를 고쳤습니다. 호출을 유형별로 나눠 병렬로 부르고 병합 단계를 둬서 생성 시간도 93.7초에서 49.1초로 47.6% 줄였습니다. 오른쪽은 난이도입니다. 카카오에서 면접관을 하신 한유일 멘토님이 쉬운 질문이 코드 사실 확인 수준이라 실제 면접에선 안 나온다고 하셨습니다. 114문항을 유형과 난이도로 교차해 보니 예외가 하나도 없었습니다. 유형이 난이도를 정하는 설계였던 겁니다. 난이도를 근거 코드 양과 추론 깊이로 다시 계산하게 바꾸자, 쉬운 질문 중 생각해서 답해야 하는 질문이 8개 중 1개에서 9개 중 7개가 됐습니다.
+
+[18·19장 통합 2026-11-12: 호출 분할 표, 하드코딩 3곳, 1/8 → 7/9 점 그래프는 장표에서 빼고 아래 노트로. 호출 분할 문제(개념 중복, 인용 중복, 개념 참조 어긋남, 전체 재생성)와 해결(병합 단계 코드 정규화, 인용 중복 제거, 참조 재연결, 토큰 예산 비례 배분과 세트별 재시도)은 Q&A용]
 
 출처: 최종보고서 품질 개선 결과 1(9월 중순, 최근 30일 96건 중 77건 80.2% 부분 완료, 분석 상태 4/77/15, 꼬리질문 249건, 본 질문 65건, 첫 호출 실패 41건 중 39건 잘림, 원인 4개와 해결) · 품질 개선 결과 2(고정 사례 3건 질문 84개, 93.7초 → 49.1초 47.6%, 병합 단계, 토큰 예산 비례, 세트별 재시도, 수동 검수 후 사실 정확성 보강) · collect/C §2-1(14줄→72줄, 8.4% = 20,310줄 중 1,703줄, 개선 후 도달률은 재측정 안 함), §2-1(배치 52% → 22%, 34배치), §2-2(93.70s → 49.07s, 입력 토큰 +54.2%, 전체 분석 시간 아님).
 ⚠️ 부분 완료 문제의 수정 후 비율은 측정값이 없음 → «80.2% → 0%»처럼 말하지 말 것. 보고서 표현은 «주요 원인을 모두 해결», 이후 같은 지표로 회귀 점검.
-Q&A: v13 벤치마크에선 실행당 60.29 → 83.95초(다른 벤치마크라 직접 비교 불가).''')
+Q&A: v13 벤치마크에선 실행당 60.29 → 83.95초(다른 벤치마크라 직접 비교 불가).
 
-S.append(shell('Development · 개발', '3. 질문 품질 개선 <span class="purple">- 난이도</span>', '''<div class="dx dx-hx">
-  <div class="dg"><div class="mt1">현직 면접관으로 활동하신 멘토님들께 멘토링으로 피드백을 받아 <b>난이도 개선</b></div>
-    <div class="hd"><span class="lab rd">원인 분석 · 114문항 교차표</span><b class="rd">예외 0</b></div>
-    <div class="hm"><div></div><div class="c">난이도 1</div><div class="c">2</div><div class="c">3</div><div class="c">4</div><div class="c">5</div><div class="nm">구현 흐름</div><i class=""></i><i class="f"></i><i class=""></i><i class=""></i><i class=""></i><div class="nm">기술 선택 이유</div><i class=""></i><i class=""></i><i class="f"></i><i class=""></i><i class=""></i><div class="nm">대안 비교</div><i class=""></i><i class=""></i><i class=""></i><i class="f"></i><i class=""></i><div class="nm">검증 방법</div><i class=""></i><i class=""></i><i class=""></i><i class="f"></i><i class=""></i><div class="nm">CS 개념</div><i class=""></i><i class=""></i><i class=""></i><i class="f"></i><i class=""></i><div class="nm">실패 대응</div><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="f"></i><div class="nm">확장 설계</div><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="f"></i></div>
-    <div class="t">유형이 정해지면 난이도도 정해지는 구조라, 쉬운 질문은 전부 구현 흐름 질문</div>
-    <div class="hc"><span>하드코딩 3곳</span><em>질문 저장 switch</em><em>생성 프롬프트 L1~L5</em><em>기초 세트 = 난이도 ≤ 2</em></div></div>
-  <div class="fx">
-    <div class="lab pu">난이도 계산 방식 변경 · 9/9 운영 반영</div>
-    <div class="eq old"><small>전</small><code>난이도 = <s>질문 유형</s></code></div>
-    <div class="eq"><small>후</small><code>난이도 = <em>근거 코드 양</em> + <em>추론 깊이</em></code>
-      <div class="ax"><div><b>근거 코드 양</b><span>적음 1</span><span>보통 2</span><span>많음 3</span></div><div><b>추론 깊이</b><span>코드에 답이 있음 +0</span><span>다른 상황에 적용 +1</span><span>가정을 세워 답 +2</span></div></div></div>
-    <div class="pr"><div><b>프롬프트 수정</b>유형마다 붙어 있던 난이도 표시를 지우고, 유형은 무엇을 물을지만 정하게 함. 코드만 읽으면 답이 나오는 질문은 만들지 않음</div><div><b>회귀 테스트 6건</b>같은 유형에서 여러 난이도가 나오는지 확인. 쉬운 질문이 한 유형에 몰리면 옆 난이도에서 절반까지 채움</div></div>
-    <div class="rs"><div class="v"><span>쉬운 질문(난이도 2 이하) 중 생각해서 답해야 하는 질문 <small class="cp2">같은 레포 1회 실행 기준</small></span><div class="dd"><div class="g0"><div class="dt"><i class="f0"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div><b><s>1/8</s></b><small class="cp">개선 전 (9/7)</small></div><em>→</em><div class="g1"><div class="dt"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class=""></i><i class=""></i></div><b>7/9</b><small class="cp">개선 후 (9/9 운영 반영)</small></div></div></div></div>
-  </div>
-</div>''',
-    source='mentor-4-final-report-2026-09-09.md(114문항 교차표 · H1 32e25e9 · H2 8aa7bfa · 재발 방지 QuestionDifficultyTest) · collect/C 검증표(1/8 → 7/9) · 단일 레포 각 1회 실행 · prod #47'))
-S.note('''[≈20초] 난이도는 현직 면접관이셨던 멘토님들 피드백으로 다시 잡았습니다. 카카오에서 면접관을 하신 한유일 멘토님은 쉬운 질문이 코드 사실 확인 수준이라 실제 면접에선 안 나온다고 하셨고, 바삭한소프트 김준엽 대표님은 포트폴리오 면접에서는 왜 그 기술을 골랐는지, 그게 최선이었는지를 묻는다고 하셨습니다. 담당이신 김한빛 멘토님과는 매주 품질 평가 결과를 같이 봤습니다. 그래서 원인을 찾아보니, 114문항을 유형과 난이도로 교차해 보니 예외가 하나도 없었습니다. 유형이 정해지면 난이도가 자동으로 정해졌고, 쉬운 구간은 전부 구현 흐름 질문이었습니다. 원인은 버그가 아니라 설계였고, 이 매핑이 코드 세 곳에 하드코딩돼 있었습니다. 그래서 난이도를 유형에서 떼어 냈습니다. 이제 난이도는 근거 코드가 얼마나 많은지와 답할 때 얼마나 깊이 추론해야 하는지를 더해서 계산합니다. 프롬프트에서도 유형별 난이도 라벨을 지우고 답이 코드에 그대로 적힌 질문을 금지했고, 같은 일이 다시 생기지 않게 테스트를 붙였습니다. 운영에 반영한 뒤 쉬운 질문 중 생각해서 답해야 하는 질문이 8개 중 1개에서 9개 중 7개가 됐습니다.
-
+[이전 난이도 장 노트]
 멘토 피드백 근거는 Effect «현업 면접관·게임사 대표의 서비스 검토와 반영» 장과 같음: 한유일 09-07 녹취(68분), 김준엽 10-26 이메일 회신 요지(최근 1년은 기술면접을 직접 주도하지 않음 → 질문 품질 근거가 아니라 현업 평가 방식으로만), 김한빛 정기 멘토링. 난이도 변경(09-09)의 직접 계기는 한유일 멘토 지적이고 김준엽 회신(10-26)은 그 뒤라, «김준엽 대표 피드백으로 난이도를 바꿨다»고 말하지 말 것.
 근거(mentor-4-final-report-2026-09-09): 하드코딩 3곳 — QuestionBankService:1338 `case CODE_FLOW -> 1` · BedrockService:475 프롬프트 `CODE_FLOW L1 … EXTENSION_TRANSFER L5` · StudySetService:1779 `FOUNDATION → difficulty ≤ 2`. H1 32e25e9(09-08) 프롬프트 라벨 제거 · CODE_FLOW 정의를 «결과가 갈리는 조건과 그 조건이 없었다면»으로. H2 8aa7bfa(09-08) 난이도 = 근거 코드 양(THIN 1 / MODERATE 2 / THICK 3) + 추론 깊이(GROUNDED 0 / PROJECTIVE +1 / SPECULATIVE +2). 장표 표기는 GROUNDED=코드에 답이 있음, PROJECTIVE=다른 상황에 적용, SPECULATIVE=가정을 세워 답, 모델이 준 난이도는 안 씀. H6 기초 세트가 한 유형뿐이면 인접 난이도에서 절반까지 빌림. QuestionDifficultyTest 6건(«한 유형이 두 개 이상의 난이도»가 재발 방지선). 세 커밋 모두 origin/prod 포함 확인.
 교차표 유형명은 최종보고서 용어: 구현 흐름 CODE_FLOW · 기술 선택 이유 WHY_DECISION · 대안 비교 TRADE_OFF · 검증 방법 VALIDATION · CS 개념 CS_BRIDGE · 실패 대응 FAILURE_CASE · 확장 설계 EXTENSION_TRANSFER. 난이도 1은 0건.
@@ -917,27 +920,6 @@ GI_DG = dg(430, {
    ('rv.r', 'sc.l', '', '', [(435, 325), (435, 115)]), ('sc.b', 'db.t')],
   [(0, 0, 210, 430, '웹 접근은 여기서만', ''), (220, 0, 210, 430, '에이전트: 캐시만 읽음', 'g'), (440, 0, 210, 430, '검증 · 적재', 'g')]).replace('viewBox="0 0 1500 ', 'viewBox="0 0 650 ')
 S.append(shell('Development · 개발', '4. 회사 기출 질문 연결', f'''
-<div class="ef-law dv-gi">
-  <div class="ef-law-l">
-    <div class="ef-law-h"><b>공개 후기를 직접 수집하고 가공</b></div>
-    <div class="dv-gi-n"><b>1,880건</b><span>106개 회사</span></div>
-    {GI_DG}
-  </div>
-  <div class="ef-law-r">
-    <div class="ef-law-h"><b>변호사 검토</b></div>
-    <div class="ef-law-who"><span>⚖</span><div><b>법무법인 백상 김재철 변호사</b><small>소마 법률 멘토링 · 저작권 · 개인정보 · 특허·상표 · 직업정보 · 결제</small></div></div>
-    <div class="ef-law-ops">
-      <div class="ef-law-key"><small>법률 멘토 검토 의견 · 저작권</small>기출문제 크롤링·가공의 <span class="purple">저작권 침해 해당 없음</span></div>
-    </div>
-    <div class="ef-law-etc"><small>수집에서 지킨 기준</small><ul><li>공개된 후기만</li><li>robots가 막은 사이트 제외</li><li>AI 수집을 막은 블로그 제외</li></ul></div>
-  </div>
-</div>''', source='최종보고서 주요 기능 5와 회사 기출 질문 연결(1,880건, 106개 회사, 소마 법률 멘토링 검토 의견) · Devfit/research/interview-evidence/reports/progress.md Wave 3 (fetch_cache.py · source_check.py) · 법률 멘토링: 소마 공식 멘토링 게시판 기록(2026-11-05)'))
-S.note('''[≈15초] 다음은 회사 기출 질문 연결입니다. 기업 면접 질문을 받아 올 공식 경로가 없어서, 공개된 면접 후기를 직접 모아 질문 단위로 가공했습니다. robots.txt를 지키고, 원문은 한 번만 받아 캐시하고, 추출한 질문의 근거 문장이 원문에 그대로 있는지 전부 대조해서 1,880건, 106개 회사를 확보했습니다. 그리고 소마 법률 멘토링에서 법무법인 백상 김재철 변호사님께 이렇게 크롤링하고 가공하는 것이 저작권 침해에 해당하지 않는다는 검토 의견을 받았습니다.
-
-출처: 최종보고서 «기출문제»(velog, 링커리어, 사람인 등 공개 후기, robots.txt 준수, 원문 대조 전수 가공, 총 1,880건) · 주요 기능 5(106개 회사) · 운영 DB 11-08 기출 1,880 / 벡터 1,880 · 1차 853건(41개사, 출처 URL 304) + 2차 1,027건(원문 대조 1,073/1,073 일치 중 반영) · 수집 워크플로 progress.md Wave 3 · 제외: robots가 Claude 수집을 명시 차단한 채용 사이트, AI 수집을 막은 블로그, 해외 후기, 필기·코테.
-법률: Effect «직업정보제공사업 신고와 법률 검토» 장의 오른쪽 검토 의견과 같은 내용. 2026-11-05 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링», 구두 검토 의견(서면 법률의견서와 녹취 없음), 법무법인과의 자문 계약 아님.
-⛔ «법률의견서», «합법 확인», «법률 검토 통과», «검증된 기출» 금지. Q&A에서는 «법률 멘토 검토 의견»으로 답할 것.''')
-S.append(shell('Development · 개발', '4. 회사 기출 질문 연결', f'''
 {dg(520, {
   'doc':(120, 28, 270, 150, 'db', '공개 기출 1,880건', '전부 임베딩 완료 · 바뀐 것만 다시', '', ''),
   'emb':(500, 28, 420, 150, 'L:cohere-color', 'Cohere Embed v3 Multilingual', '기출은 문서용 · 질문은 검색어용<br>워커가 96개씩 · 1024차원', '', 'on', True),
@@ -955,7 +937,7 @@ S.append(shell('Development · 개발', '4. 회사 기출 질문 연결', f'''
 <div class="dv-gx"><div class="dv-q">기출문제는 미리 임베딩해 두고 <strong>질문 생성이 끝난 뒤에만 연결</strong>해,<br>질문이 기출 쪽으로 편향되지 않게 설계</div>
 <figure class="dv-cap"><img src="assets/dv-cap-kichul.png" alt="학습실 질문 옆 실제 면접 출제 사례 표시"><figcaption>실서비스 캡쳐</figcaption></figure></div>''',
     source='origin/prod InterviewQuestionEmbeddingClient(multilingual-v3 · 1024) · VectorWorker(96) · VectorSearch(100) · Similarity(0.72) · V87 33e7b0c · BE#159 c680990 · 운영 DB 11-08 기출 1,880 / 벡터 1,880'))
-S.note('''[≈20초] 모은 기출은 이렇게 찾습니다. 핵심은 임베딩입니다. 모아 둔 공개 기출 1,880건을 Cohere의 다국어 임베딩 모델로 전부 벡터로 바꿔 pgvector에 넣어 두었습니다. 기출은 문서용, 생성된 질문은 검색어용으로 따로 임베딩해서, 표현이 달라도 의미가 가까운 기출 100개를 먼저 넓게 뽑습니다. 예를 들어 "TCP/UDP 등 기본 네트워크 지식"과 "TCP와 UDP의 차이"는 단어가 거의 안 겹쳐도 유사도 0.9 근처로 붙습니다. 최종 판정은 어휘 점수로 해서 엉뚱한 매칭을 거릅니다. 그리고 남의 질문을 생성 프롬프트에 넣지 않습니다. 질문 옆에 출처와 함께 보여 줄 뿐입니다.
+S.note('''[≈20초] 다음은 회사 기출 질문 연결입니다. 핵심은 임베딩입니다. 공개 면접 후기에서 모은 기출 1,880건을 Cohere의 다국어 임베딩 모델로 전부 벡터로 바꿔 pgvector에 넣어 두었습니다. 기출은 문서용, 생성된 질문은 검색어용으로 따로 임베딩해서, 표현이 달라도 의미가 가까운 기출 100개를 먼저 넓게 뽑습니다. 예를 들어 "TCP/UDP 등 기본 네트워크 지식"과 "TCP와 UDP의 차이"는 단어가 거의 안 겹쳐도 유사도 0.9 근처로 붙습니다. 최종 판정은 어휘 점수로 해서 엉뚱한 매칭을 거릅니다. 그리고 남의 질문을 생성 프롬프트에 넣지 않습니다. 질문 옆에 출처와 함께 보여 줄 뿐입니다.
 
 근거(origin/prod d84cb1c, codereviewer·gichul 11-08 확인): InterviewQuestionEmbeddingClient.java:27(1024)·40-41(cohere.embed-multilingual-v3, us-east-1)·59-61(search_document / search_query) · VectorStore.java:29-30(기출 입력 = 정규화 질문, 회사·직군 미포함)·113(<=> 코사인, 정확 검색) · VectorSearch.java:21(100)·58-59(질의 = 제목+질문) · VectorWorker(10초 후 60초 주기, 96건×최대 10배치, content_sha256 바뀐 행만) · Similarity.java:29·93-105(0.72, 길이비 2.5↑면 0.2J+0.8C) · V87 33e7b0c(vector(1024), HNSW 없음) · BE#159 c680990 둘 다 prod 조상.
 운영 실측(gichul, 11-08 01:24 읽기 전용): 기출 1,880 / 벡터 1,880 · 누락 0 · 생성 질문 벡터 캐시 104 · ECS devfit-prod-backend:92 APP_INTERVIEW_EVIDENCE_VECTOR_ENABLED=true.
@@ -963,6 +945,28 @@ S.note('''[≈20초] 모은 기출은 이렇게 찾습니다. 핵심은 임베�
 예시는 기출↔기출 이웃(dev DB 코사인 0.89~0.905, React 사용 이유↔import React 0.83)이지 생성 질문↔기출 측정이 아님.
 ⛔ «RAG로 질문을 생성» · «임베딩이 같은 질문을 판정» · «HNSW/ANN» · «회사·직군별 의미 검색» · «정확도 N% 향상» · «공식 출제 문제» 금지. 매칭 57건은 벡터/어휘 경로 구분 불가.
 Q&A: 11-05 감사에서 엉뚱한 매칭 사례(회사 필터 없음) → 개선 과제.''')
+
+S.append(shell('Development · 개발', '4. 회사 기출 질문 연결', f'''
+<div class="ef-law dv-gi">
+  <div class="ef-law-l">
+    <div class="ef-law-h"><b>공개 후기를 직접 수집하고 가공</b></div>
+    <div class="dv-gi-n"><b>1,880건</b><span>106개 회사</span></div>
+    {GI_DG}
+  </div>
+  <div class="ef-law-r">
+    <div class="ef-law-h"><b>변호사 검토</b></div>
+    <div class="ef-law-who"><span>⚖</span><div><b>법무법인 백상 김재철 변호사</b><small>소마 법률 멘토링 · 저작권 · 개인정보 · 특허·상표 · 직업정보 · 결제</small></div></div>
+    <div class="ef-law-ops">
+      <div class="ef-law-key"><small>법률 멘토 검토 의견 · 저작권</small>기출문제 크롤링·가공의 <span class="purple">저작권 침해 해당 없음</span></div>
+    </div>
+    <div class="ef-law-etc"><small>수집에서 지킨 기준</small><ul><li>공개된 후기만</li><li>robots가 막은 사이트 제외</li><li>AI 수집을 막은 블로그 제외</li></ul></div>
+  </div>
+</div>''', source='최종보고서 주요 기능 5와 회사 기출 질문 연결(1,880건, 106개 회사, 소마 법률 멘토링 검토 의견) · Devfit/research/interview-evidence/reports/progress.md Wave 3 (fetch_cache.py · source_check.py) · 법률 멘토링: 소마 공식 멘토링 게시판 기록(2026-11-05)'))
+S.note('''[≈15초] 이 기출은 이렇게 모았습니다. 기업 면접 질문을 받아 올 공식 경로가 없어서, 공개된 면접 후기를 직접 모아 질문 단위로 가공했습니다. robots.txt를 지키고, 원문은 한 번만 받아 캐시하고, 추출한 질문의 근거 문장이 원문에 그대로 있는지 전부 대조해서 1,880건, 106개 회사를 확보했습니다. 그리고 소마 법률 멘토링에서 법무법인 백상 김재철 변호사님께 이렇게 크롤링하고 가공하는 것이 저작권 침해에 해당하지 않는다는 검토 의견을 받았습니다.
+
+출처: 최종보고서 «기출문제»(velog, 링커리어, 사람인 등 공개 후기, robots.txt 준수, 원문 대조 전수 가공, 총 1,880건) · 주요 기능 5(106개 회사) · 운영 DB 11-08 기출 1,880 / 벡터 1,880 · 1차 853건(41개사, 출처 URL 304) + 2차 1,027건(원문 대조 1,073/1,073 일치 중 반영) · 수집 워크플로 progress.md Wave 3 · 제외: robots가 Claude 수집을 명시 차단한 채용 사이트, AI 수집을 막은 블로그, 해외 후기, 필기·코테.
+법률: Effect «직업정보제공사업 신고와 법률 검토» 장의 오른쪽 검토 의견과 같은 내용. 2026-11-05 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링», 구두 검토 의견(서면 법률의견서와 녹취 없음), 법무법인과의 자문 계약 아님.
+⛔ «법률의견서», «합법 확인», «법률 검토 통과», «검증된 기출» 금지. Q&A에서는 «법률 멘토 검토 의견»으로 답할 것.''')
 
 
 # (11-11 사용자: 수집 원칙, 수집 워크플로, 기출 발전과정 장은 덱에서 뺌. 수집 과정은 위 장 왼쪽으로 합침)
@@ -1070,25 +1074,6 @@ S.note('''[≈10초] 음성은 출시하고 세 번 더 고쳤습니다. 말을 
 음성 수치(최종보고서 기준): 문자 오류율(CER) 14.7% → 5.6%(-9.1%p, 합성 음성 4가지 문장 구조 벤치마크) · 이중 구조 비교 — 자막 Whisper small 음성 1분당 6.64초 · 오류율 9.75% / 최종 답변 large-v3-turbo 13.72초 · 5.82%. 자막 갱신 간격 약 0.9초는 설정값.
 ⛔ 1/4 → 4/4는 운영 성공률이 아님(fixture). 오류율은 합성 음성 벤치마크 값 — 실사용 녹음 정확도라 말하지 말 것. 자체 음성 모델 주장 금지.''')
 
-# ───────────────── 개발 6. 자기소개서와 포트폴리오 Assistant ─────────────────
-S.append(shell('Development · 개발', '6. 자기소개서와 포트폴리오 Assistant', f'''
-<div class="dv-cv">
-  <figure class="dv-cap"><img src="assets/dv-cap-coverletter.png" alt="AI 자기소개서 작성 화면"><figcaption>실서비스 캡쳐 (자기소개서 작성)</figcaption></figure>
-  <div class="dv-cv-r">
-    {li([('문항 입력과 프로젝트 선택', '문항 최대 8개, 문항마다 프로젝트 최대 3개 (내 저장소 또는 직접 적기)'),
-         ('저장소 근거로 전 문항 초안', '코드로 확인되지 않는 성과, 수치, 회사 정보는 [[빈칸]]으로 남기고 모델에 보내지 않음'),
-         ('문장 단위 다듬기', '글자 수 맞추기, AI 티 빼기, 두괄식. 적용 전 내용은 버전으로 남겨 되돌리기'),
-         ('포트폴리오 자동 작성', '저장소 최대 8개를 프로젝트 6개로 묶어 채움. 공개 링크와 PDF로 내보내기'),
-         ('면접 질문과 연결', '업로드한 이력서, 자기소개서 속 프로젝트명을 본인 저장소와 맞춰 질문 생성 근거로 사용')])}
-    <div class="dv-q">변경 사유: "직접 입력하고 고를 항목이 너무 많다"<small>문항만 넣으면 AI가 초안을 먼저 쓰고, 사용자는 확인과 수정만</small></div>
-  </div>
-</div>''', source='최종보고서 주요 기능 4 · 서비스 화면 10(포트폴리오와 자기소개서 작성 도우미, [그림 24]) · BE origin/prod studio/StudioContent(MAX_QUESTIONS 8, MAX_QUESTION_PROJECTS 3) · StudioMaterials(MAX_REPOSITORIES 8) · StudioRepositoryGroups(MAX_PROJECTS 6) · StudioAssistanceService · fe924cb(10-08)'))
-S.note('''[≈15초] 개발의 마지막은 자기소개서와 포트폴리오 Assistant입니다. 질문을 만들려고 분석한 저장소를 서류 작성에도 씁니다. 자기소개서 문항을 붙여 넣고 문항마다 쓸 프로젝트를 고르면, 저장소 근거로 전 문항 초안을 한 번에 씁니다. 코드로 확인할 수 없는 성과나 수치, 회사 정보는 지어내지 않고 빈칸으로 남겨 직접 채우게 했습니다. 문장 단위로 다듬고 되돌릴 수 있고, 포트폴리오는 저장소를 고르면 자동으로 채워져 링크와 PDF로 나갑니다. 처음엔 직접 입력하고 고를 게 너무 많다는 피드백을 받아서, 지금처럼 AI가 먼저 쓰고 사람이 확인하는 흐름으로 바꿨습니다.
-
-근거(origin/prod): StudioAssistanceService:27(GENERATED_KINDS, 사용자만 아는 항목은 빈칸 양식으로 두고 모델에 보내지 않음) · :236(빈칸 [[...]] 표기) · ACTIONS GENERATE와 REWRITE, selection이 있으면 드래그한 부분만 수정 · 결과는 요청 당시 버전 그대로면 적용하고 적용 전 내용은 스냅샷, 그 사이 사용자가 고쳤으면 덮어쓰지 않고 제안으로만 반환 · HOURLY_LIMIT 30, INPUT_LIMIT 60,000자 · 프로젝트명 연결은 recruit/ApplicationDocumentProjectExtractor, AI 보안 장의 허위 프로젝트명 교차 검증과 같은 경로.
-요금(코드 기준): 자기소개서 AI 작성과 다듬기 1건 = 1회, Free는 월 한도 안에서, Plus는 무제한(a3e94c9, 10-17). 보고서는 "자기소개서 AI 작업은 Plus 요금제로 제공"이라 표현 → 장표에 요금 문구는 넣지 않음.
-⛔ «합격 자기소개서»·«AI가 대신 써 준다» 표현 금지, 초안과 확인 흐름까지. 캡처 속 계정은 팀원 테스트 계정.''')
-
 # ───────────────── 운영 1. 인프라 ─────────────────
 S.append(shell('Development · 운영', '1. 인프라', f'''
 <div class="dv-inf">
@@ -1110,27 +1095,28 @@ Q&A: PR 리뷰 0건, 96% 작성자 병합 → 사람 승인 대신 CI와 승격 
 
 
 # ───────────────── 운영 2. 관리자 페이지 (운영 도구, 유저 트래킹) ─────────────────
-S.append(shell('Development · 운영', '2. 관리자 페이지', '''
+S.append(shell('Development · 운영', '2. 관리자 페이지 <span class="purple">- 운영 도구, 유저 트래킹</span>', '''
+<div class="dv-admm">
 <div class="dv-adm dv-adm3">
   <figure class="shot"><img src="assets/dv-adm-monitor.png" alt="관리자 콘솔 운영 모니터링 화면"><figcaption>실서비스 캡쳐 · 운영 모니터링 (2026-11-11)</figcaption></figure>
   <div class="grid"><div><b>서비스 상태</b><span>운영 모니터링 · Sentry 운영 오류</span><em>서비스 정상 여부 확인</em></div><div><b>사용 흐름</b><span>B2C 대시보드 · 사용자 행동 분석 · 면접 리뷰 KPI</span><em>사용자별 이용 단계 확인</em></div><div><b>비용</b><span>사용량 · 모델 단가</span><em>LLM 호출마다 원가를 원장에 기록</em></div><div><b>실패</b><span>오류 관리</span><em>분석 실패를 사유 코드로 분류</em></div><div><b>데이터</b><span>캐싱 공고 · 면접 기출문제</span><em>미리 받은 공고와 기출을 한 곳에서 관리</em></div><div><b>회원 · B2B</b><span>회원 관리 · 콜백 메일 · 메일 발송 · B2B 대시보드</span><em>내부 계정을 빼고 세는 곳은 회원 관리</em></div></div>
-</div>''', source='admin.devfit.app 운영 모니터링 (2026-11-11 02:03 캡처, 최근 14일) · 메뉴 (2026-11-04 캡처) · Devfit_FE/admin (별도 Next 앱) · BE com.devfit.admin · collect/A-admin-usage.md'))
-S.note('''[≈12초] 두 번째는 관리자 페이지입니다. 운영은 직접 만든 관리자 콘솔로 봅니다. 화면은 운영 모니터링으로, 최근 14일 LLM 호출 2,290건, 성공률 99.9%, 추정 비용과 Sentry 운영 오류를 한 화면에서 봅니다. 서비스 상태, 사용자가 어디까지 쓰는지, LLM 호출 원가, 분석 실패 사유, 미리 받아 둔 공고와 기출까지 한 곳에 있습니다.
+</div>
+<div class="tools">
+  <div><img src="assets/dv-logo-ga4.svg" alt="GA4"><b>GA4</b><span>동의한 방문자 퍼널, Consent Mode v2</span></div>
+  <div><img src="assets/dv-logo-gsc.svg" alt="Google Search Console"><b>Search Console</b><span>구글 검색어, 노출, 색인</span></div>
+  <div><img src="assets/dv-logo-naver.svg" alt="네이버 서치어드바이저"><b>서치어드바이저</b><span>네이버 수집 요청, sitemap</span></div>
+  <div><img src="assets/dv-logo-clarity.png" alt="Microsoft Clarity"><b>Clarity</b><span>이탈 지점 확인, 화면 마스킹</span></div>
+  <div><img src="assets/dv-logo-sentry.svg" alt="Sentry"><b>Sentry</b><span>FE, BE, 워커 오류 알림</span></div>
+</div>
+</div>''', source='admin.devfit.app 운영 모니터링 (2026-11-11 02:03 캡처, 최근 14일) · 메뉴 (2026-11-04 캡처) · Devfit_FE/admin (별도 Next 앱) · BE com.devfit.admin · collect/A-admin-usage.md · FE 3255a69 · 3372511 · fff2768(네이버 소유 확인 08-21) · 7aa25dc · f42c9e7 · 67e5238 / BE 00a4c31 · 56c55b7 (운영 반영일 기준) · 도구별 숫자 차이는 부록 A4'))
+S.note('''[≈15초] 두 번째는 관리자 페이지입니다. 운영은 직접 만든 관리자 콘솔로 봅니다. 화면은 운영 모니터링으로, 최근 14일 LLM 호출 2,290건, 성공률 99.9%, 추정 비용과 Sentry 운영 오류를 한 화면에서 봅니다. 서비스 상태, 사용자가 어디까지 쓰는지, LLM 호출 원가, 분석 실패 사유, 미리 받아 둔 공고와 기출까지 한 곳에 있습니다. 콘솔 밖에서는 GA4, Search Console, 네이버 서치어드바이저, Clarity, Sentry를 함께 쓰고, 도구마다 숫자가 달라 집계 기준은 콘솔 DB로 정했습니다.
+
+[관리자 페이지 두 장 통합 2026-11-12]
 
 출처: collect/A-admin-usage.md(§0~§9, GET /api/admin/**만 호출) · 메뉴 캡처 assets/admin_menu.png.
-⚠️ 회원 목록 화면은 개인정보라 캡처·노출 금지. 내부 계정 제외가 되는 화면은 회원 관리 하나뿐(대시보드·행동분석·사용량은 전체 값).''')
+⚠️ 회원 목록 화면은 개인정보라 캡처·노출 금지. 내부 계정 제외가 되는 화면은 회원 관리 하나뿐(대시보드·행동분석·사용량은 전체 값).
 
-S.append(shell('Development · 운영', '2. 관리자 페이지 <span class="purple">- 운영 도구, 유저 트래킹</span>', '''
-<div class="dv-tl">
-  <div><img src="assets/dv-logo-ga4.svg" alt="GA4"><b>GA4</b><span>동의한 방문자의 퍼널 측정: 로그인 → 공고 → 분석 → 완료 · Consent Mode v2</span></div>
-  <div><img src="assets/dv-logo-gsc.svg" alt="Google Search Console"><b>Google Search Console</b><span>구글 검색어·노출·색인 상태 확인 · sitemap 제출</span></div>
-  <div><img src="assets/dv-logo-naver.svg" alt="네이버 서치어드바이저"><b>네이버 서치어드바이저</b><span>네이버 검색 소유 확인 · 수집 요청 · sitemap·RSS 제출</span></div>
-  <div><img src="assets/dv-logo-clarity.png" alt="Microsoft Clarity"><b>Microsoft Clarity</b><span>세션·유입 경로로 이탈 지점 확인 · 화면 전체 마스킹 · 운영 B2C만</span></div>
-  <div><img src="assets/dv-logo-sentry.svg" alt="Sentry"><b>Sentry</b><span>FE·BE·분석 워커 오류 수집과 알림 · Replay 끔</span></div>
-  <div class="on"><img src="assets/icon.svg" alt="DevFit 관리자 콘솔"><b>관리자 콘솔 (자체 개발)</b><span>회원·B2C 지표·LLM 원가 원장·실패·공고 캐시·기출 · 18화면</span></div>
-</div>''', source='FE 3255a69 · 3372511 · fff2768(네이버 소유 확인 08-21) · 7aa25dc · f42c9e7 · 67e5238 / BE 00a4c31 · 56c55b7 (운영 반영일 기준) · 도구별 숫자 차이는 부록 A4'))
-S.note('''[≈12초] 관리자 콘솔 밖에서는 운영 도구 여섯 개를 함께 씁니다. GA4는 동의를 받은 사람의 퍼널, 구글 Search Console과 네이버 서치어드바이저는 각 검색엔진의 노출과 색인, Clarity는 행동, Sentry는 오류를 봅니다. 도구마다 숫자가 달라서, 숫자의 정본은 직접 만든 관리자 콘솔의 DB로 정했습니다.
-
+[이전 운영 도구 장 노트]
 출처: collect/A·metrics/README · GA4 동의 배너·처리방침 고지 3255a69(08-12) → Consent Mode v2 기본 denied 2ab4773(09-01 운영) · Clarity 7aa25dc(08-12, data-clarity-mask) · Sentry FE f42c9e7 → 1470a36(10-08) · 관리자 콘솔 FE 67e5238(08-28) · BE V45 llm_usage_event(56c55b7).
 Q&A: GA는 하한(가입 이벤트 40 vs DB 83명) · GA 설정 감사 10항목은 제안 단계.''')
 
