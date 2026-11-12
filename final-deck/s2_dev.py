@@ -1329,7 +1329,7 @@ APX.note('''[≈15초] 처음 받은 질문이 "GitHub 연동하면 내 코드 �
 🔴 확인 필요: 커밋 판정(OpenAI)과 조건부 TTS 호출이 개인정보처리방침 국외 이전 항목에 고지됐는지(부록 A11 노트 R1). 보안을 앞세우면 Q&A에서 물을 수 있음.''')
 
 # ───────────────── 부록: 본편에서 뺀 기술 내용 (2026-11-12) ─────────────────
-APX.append(shell('Appendix · A19', '커밋 선별 방식은 <span class="purple">세 번 바뀌어</span> Decision Model까지', '''<div class="dx dx-fx">
+APX.append(shell('Appendix · A20', '커밋 선별 방식은 <span class="purple">세 번 바뀌어</span> Decision Model까지', '''<div class="dx dx-fx">
   <div class="rw"><div class="dt"><small>06-29 · 1차</small><b>자체 점수식</b></div>
     <code>점수 = 메시지 키워드 <em>× 2</em> + 로직 줄 수 <em>× 3</em> + 기술 키워드 <em>× 2</em></code>
     <div class="why"><b>구현 방식</b>외부 라이브러리 없이 3항 선형식 · 계수는 손으로 정함</div></div>
@@ -1346,7 +1346,7 @@ APX.note('''[≈15초] 커밋 선별은 세 번 바뀌었습니다. 처음엔 �
 근거: GithubService 커밋 점수식 score(message)×2 + logicLines×3 + codeInterest×2(CLAUDE.md·d7f9b98) · e4d9ce8 커밋 메시지 «uncertainty 항이 순위를 지배해 메시지가 짧은 커밋이 1순위로 조준됐다(fix bug·afooter·add pay) … 항의 값 대신 순위 백분위를 쓰면 명목 가중치가 곧 실효 가중치가 된다. 실효 0이던 temporalRarity·상수항은 제거 … 팀 저장소 랭킹 소멸의 직접 경로» · CommitProbeDiagnostics(항별 분산 기여 로그) · d20e5eb · b82467b · 최종보고서 «9월 순위 정규화로 저장소 규모에 따른 편향을 줄이고 10월에 Decision Model을 도입».
 ⛔ Jev는 «검토 후 미채택»까지(성능 비교 수치 없음). 각 단계 개선 폭은 전후 측정 없음 — 수치로 말하지 말 것. «커밋 선별 LLM 0회» 금지.''')
 
-APX.append(shell('Appendix · A20', '질문 생성 <span class="purple">호출 분할</span>과 난이도 계산 세부', '''
+APX.append(shell('Appendix · A21', '질문 생성 <span class="purple">호출 분할</span>과 난이도 계산 세부', '''
 <div class="dv-q3 dv-mq">
   <div class="two">
     <div class="q3p">
@@ -1382,7 +1382,7 @@ APX.note('''[부록 · 2026-11-12 본편 17장에서 뺀 내용] 일곱 유형�
 
 근거: 본편 17장 노트와 같음. ⛔ «12% → 78%» 금지, 품질 점수(QI) 개선 주장 금지.''')
 
-APX.append(shell('Appendix · A21', '분석한 저장소로 쓰는 <span class="purple">자기소개서와 포트폴리오</span>', f'''
+APX.append(shell('Appendix · A22', '분석한 저장소로 쓰는 <span class="purple">자기소개서와 포트폴리오</span>', f'''
 <div class="dv-cv">
   <figure class="dv-cap"><img src="assets/dv-cap-coverletter.png" alt="AI 자기소개서 작성 화면"><figcaption>실서비스 캡쳐 (자기소개서 작성)</figcaption></figure>
   <div class="dv-cv-r">

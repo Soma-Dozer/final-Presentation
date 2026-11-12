@@ -52,6 +52,16 @@ APX.note('''판정 기준(11-07 재분류): 완료 = 조언 핵심을 실행해 
 출처: collect/I-feedback-patterns.md (반영일·근거 커밋은 운영 브랜치 포함 여부 확인). 최종보고서 «중간점검 반영표»와 같은 내용.
 멘토 피드백 31행 표는 collect/I 원본 참조 — 필요 시 A1-2로 추가.''')
 
+APX.append(shell('Appendix · A19', '최소 권한으로 연결하고, <span class="purple">토큰은 암호화</span>', table(['우려', '조치'], [
+ ['"GitHub 연동하면 내 코드 털리나"', '기본 로그인 권한은 read:user · user:email만. 비공개 레포는 사용자가 원할 때만 증분 동의'],
+ ['분석 범위', '분석할 레포를 사용자가 직접 선택 (08-07 피드백 → 08-23 반영)'],
+ ['토큰 유출', 'GitHub access token AES-256-GCM 암호화 저장'],
+ ['세션 탈취', '세션 토큰 원문 대신 SHA-256 해시만 저장 → 즉시 폐기 가능 · HttpOnly 쿠키'],
+ ['계정 선점', 'GitHub 신원 기준 키를 불변 numeric id로 (username 선점 차단)'],
+ ['공고 수집 경로 악용 (SSRF)', '홉마다 허용 목록을 다시 검사하는 SafeFetcher · 응답 8MB 상한'],
+ ['B2B 지원자 정보', '블라인드 평가 · 지원 시 동의 2건 필수']], 'sm left plain')))
+APX.note('''근거 코드: auth/GithubTokenCipher(AES-256-GCM) · user_session(SHA-256 해시) · V38 github_user_id · prep/corporate/SafeFetcher. 레포 범위 선택은 08-07 피드백 후 16일 만(08-23) 반영.''')
+
 APX.append(shell('Appendix · A6', '분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원', f'''
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px">{kpi('약 330원', '분석 1회 변동비 · 저장소 3개 기준 · 공고 구조화와 질문 생성 포함', '저장소 3개', 'soft', 'purple')}{kpi('약 1,404원', '저장소 20개 상한 기준 최대치', '저장소 20개')}{kpi('0원', '코드 변경 없는 재분석 · 최신 커밋 지문이 같으면 결과 재사용', '재분석')}</div>
 <div class="small-copy" style="margin-top:18px;font-size:23px">Plus 1인 월 7,900원 = 저장소 3개 기준 분석 약 24회분의 변동비</div>
