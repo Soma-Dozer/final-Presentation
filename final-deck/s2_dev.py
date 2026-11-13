@@ -169,6 +169,12 @@ CSS = r"""
 .dv-vtl b{font-size:21px;font-weight:900;letter-spacing:-.03em;line-height:1.3}
 .dv-vtl span{font-size:15.5px;font-weight:700;line-height:1.4;color:#4a4552;word-break:keep-all}
 .dv-vtl span em{font-style:normal;font-weight:900;color:var(--purple)}
+.dv-rv{background:#fff;border:2px solid #ece9f1;border-radius:22px;padding:22px 28px}
+.dv-rv-h{font-size:20px;font-weight:900;color:var(--muted);margin-bottom:14px}
+.dv-rv-bar{display:flex;gap:6px;height:92px}
+.dv-rv-bar>div{background:#eeecf3;border-radius:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;min-width:0}
+.dv-rv-bar>div.m{background:#ddd8f7}.dv-rv-bar>div.on{background:var(--purple);color:#fff}
+.dv-rv-bar b{font-size:30px;font-weight:900;letter-spacing:-.04em;line-height:1.1}.dv-rv-bar span{font-size:17px;font-weight:800;opacity:.85;white-space:nowrap}
 .dv-sp{margin:16px auto auto;width:1500px;max-width:100%;font-size:21px;padding:16px 26px}.dv-sp strong{color:var(--purple)}.dv-dm .new li{grid-template-columns:32px 186px 1fr!important;column-gap:10px!important}.dv-dm .new li span{font-size:16px!important}.dv-dm .new{padding-left:24px!important;padding-right:22px!important}
 .dv-p11{display:grid;grid-template-columns:1200px 1fr;gap:26px;align-items:center;margin:auto 0}.dv-p11 .l{display:flex;flex-direction:column}.dv-p11 .dv-lg{justify-content:flex-start;margin-top:12px}
 .dv-models{background:var(--purple-pale);border-radius:22px;padding:20px 20px 16px;display:flex;flex-direction:column;gap:8px}.dv-models h4{margin:0 0 4px;font-size:22px;font-weight:900;letter-spacing:-.03em}
@@ -1430,5 +1436,29 @@ APX.note('''[≈15초] 개발의 마지막은 자기소개서와 포트폴리오
 근거(origin/prod): StudioAssistanceService:27(GENERATED_KINDS, 사용자만 아는 항목은 빈칸 양식으로 두고 모델에 보내지 않음) · :236(빈칸 [[...]] 표기) · ACTIONS GENERATE와 REWRITE, selection이 있으면 드래그한 부분만 수정 · 결과는 요청 당시 버전 그대로면 적용하고 적용 전 내용은 스냅샷, 그 사이 사용자가 고쳤으면 덮어쓰지 않고 제안으로만 반환 · HOURLY_LIMIT 30, INPUT_LIMIT 60,000자 · 프로젝트명 연결은 recruit/ApplicationDocumentProjectExtractor, AI 보안 장의 허위 프로젝트명 교차 검증과 같은 경로.
 요금(코드 기준): 자기소개서 AI 작성과 다듬기 1건 = 1회, Free는 월 한도 안에서, Plus는 무제한(a3e94c9, 10-17). 보고서는 "자기소개서 AI 작업은 Plus 요금제로 제공"이라 표현 → 장표에 요금 문구는 넣지 않음.
 ⛔ «합격 자기소개서»·«AI가 대신 써 준다» 표현 금지, 초안과 확인 흐름까지. 캡처 속 계정은 팀원 테스트 계정.''')
+
+# ---------- 부록 A28: 재방문 회원의 AI 비용 (2026-11-13 사용자: Q&A «자주 쓰면 AI 비용이 계속 늘지 않나» 대비) ----------
+APX.append(shell('Appendix · A28', '재방문 비용: AI 비용은 <span class="purple">분석하는 날에만</span> 발생', f"""
+<div style="display:flex;flex-direction:column;justify-content:center;gap:30px;flex:1;min-height:0;padding-bottom:20px">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px">{kpi('49일 중 33일', '자주 들어온 회원 11명의 방문일 가운데<br>AI 비용이 14원 미만인 날 (67%)', '방문일')}{kpi('75%', '이 회원들 AI 비용 중 첫 분석일 하루에 쓰인 비중<br>이후 방문 35일은 하루 평균 약 98원', '첫 분석일', 'soft', 'purple')}{kpi('약 1.7원', '답변 피드백 1회 비용<br>외부 회원 34회 호출 합계 약 58원', '학습 1회')}</div>
+<div class="dv-rv"><div class="dv-rv-h">자주 들어온 회원의 방문일 49일, 하루 AI 비용별 분포</div><div class="dv-rv-bar"><div style="flex:22"><b>22일</b><span>0원</span></div><div class="m" style="flex:11"><b>11일</b><span>14원 미만</span></div><div class="on" style="flex:16"><b>16일</b><span>14원 이상 (분석 15일, 서류 작성 1일)</span></div></div></div>
+<div style="background:var(--purple-pale);border-radius:18px;padding:20px 30px;font-size:25px;font-weight:800;letter-spacing:-.03em;line-height:1.45;word-break:keep-all">외부 회원 전체 AI 비용의 <strong style="color:var(--purple)">99%가 공고와 저장소 분석</strong>, 답변 피드백과 꼬리질문은 0.2%. 분석 결과를 저장해 두고 다시 읽는 구조라 재방문에는 비용이 거의 붙지 않음</div>
+</div>""", source='운영 DB llm_usage_event, 2026-09-02~11-13, 내부 계정 4개와 체험 계정 제외, 1 USD = 1,400원 가정'))
+APX.note("""[Q&A: 자주 쓰는 사람이 늘면 AI 비용이 계속 늘지 않나]
+[≈20초] AI 비용은 공고와 저장소를 분석하는 날에만 듭니다. 3일 이상 들어온 회원 11명의 방문일 49일을 보면 33일은 AI 비용이 14원 미만이었고, 이 회원들 비용의 75%는 첫 분석을 돌린 하루에 쓰였습니다. 분석 결과를 저장해 두고 다시 읽으면서 학습하기 때문입니다. 답변 피드백은 한 번에 2원이 안 됩니다.
+
+집계(2026-11-13 운영 DB 읽기 전용 조회, SQL과 결과는 collect/data/revisit_llm_cost_20261113.sql.txt):
+- 대상: role CANDIDATE, guest=false, 내부 계정(user id 1, 5, 7, 11) 제외. 기간은 LLM 호출 기록이 시작된 2026-09-02부터 11-13까지. 환율 1 USD = 1,400원 가정(collect/A와 같음).
+- 자주 들어온 회원 = 활동일 3일 이상 11명(5일 이상 4명, 3~4일 7명). 활동일은 로그인 갱신, 공고 등록, 세트 생성, 답변, LLM 호출, 방문 세션 중 하나라도 있는 날.
+- 회원-일 49일: 비용 0인 날 22, 0 초과 1센트 미만 11, 그 밖 16(생성 비용 1센트 이상 15). 합계 9.913달러(약 13,900원), 1인당 약 1,260원. 하루 평균 0.20달러, 중앙값 0.0002달러. 비용 상위 10% 날(5일)이 6.653달러로 67%.
+- 첫 분석일 비용 7.464달러(75.3%), 이후 2.448달러(활동일 35일, 하루 평균 약 98원).
+- 외부 회원 전체: 생성(공고 구조화, 질문 생성, 어필 포인트 등) 26.33달러 99.0%, 서류 작성 0.21달러 0.8%, 학습(답변 피드백, 꼬리질문 피드백, 음성) 0.041달러 0.2%, 34회라 1회 약 1.7원.
+
+주의:
+- «공고 분석을 한 번만 돌린다»고 말하지 말 것. 이 11명이 등록한 공고는 23건(1인당 중앙값 2건, 1건만 등록한 회원은 5명)이다. 말할 수 있는 것은 «비용은 분석하는 날에만 든다»까지.
+- 표본이 11명, 49일로 작다. 비율보다 건수로 말할 것.
+- 커밋 판정 모델(commit_decision) 호출은 단가가 기록되지 않아 비용 합계에서 빠져 있다(외부와 내부 합계 3,050회). 입력 100만 토큰당 0.1달러 수준이라 영향은 작지만 0은 아니다.
+- 한 회원은 저장소 분석 32건으로 3.13달러를 썼다(11명 합계의 32%). 분석을 많이 돌리면 비용은 그만큼 든다. 그래서 요금제가 분석 횟수 기준이다(A5).
+- 내부 계정을 포함하면 활동일 3일 이상 15명, 131일 중 84일이 14원 미만(64%)으로 비슷하다.""")
 
 # ================= 부록 → s5_appendix.py (11-07 사용자: 부록은 ppt-start 전담) =================

@@ -1,0 +1,49 @@
+-- 2026-11-13 운영 DB 읽기 전용 조회 (devfit-prod-adhoc-readonly-sql). 외부 회원 = role CANDIDATE, guest=false, 내부 계정 id 1,5,7,11 제외. 기간 2026-09-02(LLM 호출 기록 시작)~2026-11-13.
+\set ON_ERROR_STOP off
+\pset footer off
+\pset format unaligned
+\pset fieldsep ','
+SET default_transaction_read_only = on;
+SET statement_timeout = '170s';
+SET TIME ZONE 'Asia/Seoul';
+\set mem 'SELECT u.id AS user_id FROM users u WHERE u.role = ''CANDIDATE'' AND u.guest = false AND u.email NOT LIKE ''%@guest.devfit.invalid'' AND u.id NOT IN (1,5,7,11)'
+\set act 'SELECT e.user_id, (e.ts AT TIME ZONE ''UTC'')::date AS day FROM (SELECT user_id, created_at AS ts FROM user_refresh_session UNION ALL SELECT user_id, rotated_at FROM user_refresh_session UNION ALL SELECT user_id, created_at FROM user_session UNION ALL SELECT user_id, created_at FROM interview_preparation UNION ALL SELECT user_id, created_at FROM study_set UNION ALL SELECT user_id, created_at FROM question_attempt UNION ALL SELECT user_id, created_at FROM follow_up_attempt UNION ALL SELECT user_id, created_at FROM llm_usage_event WHERE user_id IS NOT NULL UNION ALL SELECT user_id, last_seen_at FROM web_visit_session WHERE user_id IS NOT NULL) e WHERE e.ts IS NOT NULL AND e.user_id IN (SELECT user_id FROM cand) GROUP BY e.user_id, (e.ts AT TIME ZONE ''UTC'')::date HAVING (e.ts AT TIME ZONE ''UTC'')::date >= ''2026-09-02'''
+\set llm 'SELECT l.user_id, (l.created_at AT TIME ZONE ''UTC'')::date AS day, CASE WHEN l.operation IN (''answer_feedback'',''follow_up_feedback'',''voice_follow_up_review'',''voice_follow_up'',''voice_dialogue_feedback'') THEN ''study'' WHEN l.operation = ''career_document_writing'' THEN ''doc'' ELSE ''gen'' END AS cls, count(*) AS calls, coalesce(sum(l.estimated_cost_usd),0) AS usd FROM llm_usage_event l WHERE l.user_id IN (SELECT user_id FROM cand) GROUP BY 1,2,3'
+\set pu 'SELECT c.user_id, (SELECT count(*) FROM activity a WHERE a.user_id=c.user_id) AS active_days, (SELECT count(DISTINCT day) FROM llm WHERE llm.user_id=c.user_id AND cls=''gen'') AS gen_days, (SELECT count(DISTINCT day) FROM llm WHERE llm.user_id=c.user_id) AS llm_days, (SELECT coalesce(sum(usd),0) FROM llm WHERE llm.user_id=c.user_id AND cls=''gen'') AS usd_gen, (SELECT coalesce(sum(usd),0) FROM llm WHERE llm.user_id=c.user_id AND cls=''study'') AS usd_study, (SELECT coalesce(sum(usd),0) FROM llm WHERE llm.user_id=c.user_id AND cls=''doc'') AS usd_doc, (SELECT count(*) FROM interview_preparation p WHERE p.user_id=c.user_id) AS preps, (SELECT count(*) FROM prep_analysis p WHERE p.user_id=c.user_id) AS analyses, (SELECT count(*) FROM question_attempt q WHERE q.user_id=c.user_id) + (SELECT count(*) FROM follow_up_attempt f WHERE f.user_id=c.user_id) AS answers FROM cand c'
+\echo ===CLS===
+WITH cand AS (:mem), llm AS (:llm)
+SELECT cls, sum(calls) AS calls, round(sum(usd)::numeric,4) AS usd, count(DISTINCT user_id) AS users FROM llm GROUP BY 1 ORDER BY 3 DESC;
+\echo ===SEG===
+WITH cand AS (:mem), activity AS (:act), llm AS (:llm), pu AS (:pu)
+SELECT CASE WHEN active_days >= 5 THEN 'a5+' WHEN active_days >= 3 THEN 'b3-4' WHEN active_days = 2 THEN 'c2' WHEN active_days = 1 THEN 'd1' ELSE 'e0' END AS seg,
+ count(*) AS members, sum(active_days) AS active_days, sum(gen_days) AS gen_days, sum(llm_days) AS llm_days,
+ round(sum(usd_gen)::numeric,3) AS usd_gen, round(sum(usd_study)::numeric,4) AS usd_study, round(sum(usd_doc)::numeric,4) AS usd_doc,
+ sum(preps) AS preps, sum(analyses) AS analyses, sum(answers) AS answers,
+ round((percentile_cont(0.5) WITHIN GROUP (ORDER BY usd_gen+usd_study+usd_doc))::numeric,3) AS med_usd,
+ round((percentile_cont(0.5) WITHIN GROUP (ORDER BY active_days))::numeric,1) AS med_days
+FROM pu GROUP BY 1 ORDER BY 1;
+\echo ===TOP===
+WITH cand AS (:mem), activity AS (:act), llm AS (:llm), pu AS (:pu)
+SELECT row_number() OVER (ORDER BY active_days DESC, usd_gen DESC) AS rk, active_days, gen_days, llm_days, round(usd_gen::numeric,3) AS usd_gen, round(usd_study::numeric,4) AS usd_study, round(usd_doc::numeric,4) AS usd_doc, preps, analyses, answers,
+ (SELECT min(day) FROM activity a WHERE a.user_id=pu.user_id) AS first_day, (SELECT max(day) FROM activity a WHERE a.user_id=pu.user_id) AS last_day
+FROM pu WHERE active_days >= 3 ORDER BY active_days DESC, usd_gen DESC LIMIT 25;
+\echo ===DAYCOST===
+WITH cand AS (:mem), activity AS (:act), llm AS (:llm), pu AS (:pu), f AS (SELECT user_id FROM pu WHERE active_days >= 3),
+ d AS (SELECT a.user_id, a.day, coalesce((SELECT sum(usd) FROM llm WHERE llm.user_id=a.user_id AND llm.day=a.day),0) AS usd, coalesce((SELECT sum(usd) FROM llm WHERE llm.user_id=a.user_id AND llm.day=a.day AND cls='gen'),0) AS usd_gen FROM activity a WHERE a.user_id IN (SELECT user_id FROM f))
+SELECT count(*) AS member_days, count(*) FILTER (WHERE usd = 0) AS zero_cost_days, count(*) FILTER (WHERE usd > 0 AND usd < 0.01) AS under_1cent, count(*) FILTER (WHERE usd_gen >= 0.01) AS gen_days_1cent, round(sum(usd)::numeric,3) AS total_usd,
+ round((SELECT sum(usd) FROM (SELECT usd FROM d ORDER BY usd DESC LIMIT (SELECT ceil(count(*)*0.1) FROM d)) t)::numeric,3) AS top10pct_days_usd,
+ round(avg(usd)::numeric,4) AS avg_usd_per_day, round((percentile_cont(0.5) WITHIN GROUP (ORDER BY usd))::numeric,4) AS med_usd_per_day
+FROM d;
+\echo ===FIRSTDAY===
+WITH cand AS (:mem), activity AS (:act), llm AS (:llm), pu AS (:pu), f AS (SELECT user_id FROM pu WHERE active_days >= 3),
+ fd AS (SELECT user_id, min(day) AS d0 FROM llm WHERE cls='gen' AND usd > 0 GROUP BY 1)
+SELECT count(DISTINCT l.user_id) AS users, round(sum(l.usd) FILTER (WHERE l.day = fd.d0)::numeric,3) AS usd_first_gen_day, round(sum(l.usd) FILTER (WHERE l.day > fd.d0)::numeric,3) AS usd_after,
+ (SELECT count(*) FROM activity a JOIN fd USING (user_id) WHERE a.user_id IN (SELECT user_id FROM f) AND a.day > fd.d0) AS active_days_after
+FROM llm l JOIN fd USING (user_id) WHERE l.user_id IN (SELECT user_id FROM f);
+\echo ===END===
+
+-- ===== 결과 (내부 계정 제외) =====
+CLS: gen 4707회 26.3314 USD(54명) / doc 9회 0.2139(5명) / study 34회 0.0412(6명)
+SEG(활동일 구간, 회원 수, 활동일 합, 생성 비용 USD, 학습 비용 USD, 공고 수): 5일+ 4명 26일 3.230 0.0000 11 / 3~4일 7명 23일 6.526 0.0228 12 / 2일 10명 20일 2.681 0 17 / 1일 50명 50일 13.895 0.0184 56 / 0일 25명
+DAYCOST(활동일 3일 이상 11명): 회원-일 49, 비용 0인 날 22, 0 초과 1센트 미만 11, 생성 비용 1센트 이상 15, 합계 9.913 USD, 상위 10% 날 합계 6.653, 하루 평균 0.2023, 중앙값 0.0002
+FIRSTDAY(같은 11명): 첫 분석일 비용 7.464 USD, 이후 2.448 USD, 이후 활동일 35일
