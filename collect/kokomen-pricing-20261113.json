@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-11-13T19:06:42.503240+09:00",
+  "service": "꼬꼬면",
+  "purchase_url": "https://kokomen.kr/purchase",
+  "public_product_api": "https://api.kokomen.kr/api/v1/products",
+  "api_response": [
+    {
+      "order_name": "토큰 10개",
+      "product_name": "TOKEN_10",
+      "price": 500
+    },
+    {
+      "order_name": "토큰 20개",
+      "product_name": "TOKEN_20",
+      "price": 1000
+    },
+    {
+      "order_name": "토큰 50개",
+      "product_name": "TOKEN_50",
+      "price": 2500
+    },
+    {
+      "order_name": "토큰 100개",
+      "product_name": "TOKEN_100",
+      "price": 5000
+    },
+    {
+      "order_name": "토큰 200개",
+      "product_name": "TOKEN_200",
+      "price": 10000
+    }
+  ],
+  "price_per_token_krw": 50,
+  "deployed_purchase_script": "https://kokomen.kr/_next/static/chunks/pages/purchase-e1b0ad15d78dfd23.js",
+  "deployed_script_sha256": "33c8a37bb818705530c637d231e7a50168cb6faf7296bbcf344286cd735a9c17",
+  "usage_rules": {
+    "text_tokens_per_question": 1,
+    "voice_tokens_per_question": 2
+  },
+  "derived_cost_per_question_krw": {
+    "text": 50,
+    "voice": 100
+  },
+  "developer_source": "https://github.com/samhap-soft/kokomen-client/blob/development/apps/client/src/domains/purchase/components/PurchaseSection.tsx",
+  "method": "Read-only GET requests to public official product catalog and public deployed client asset. No login, account creation or purchase.",
+  "displayed_price": "500원 / 10토큰",
+  "caveat": "토큰 충전 상품 가격이며 면접 1회 가격이 아님. 면접 총 문항 수에 따라 차감량이 달라짐."
+}
