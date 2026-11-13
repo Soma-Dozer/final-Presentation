@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="devfit-deck-revision" content="df0bf2986515">
+<meta name="devfit-deck-revision" content="0fa7148362ac">
 <meta name="theme-color" content="#121016"><title>DevFit 최종발표 — Team Dozer</title>
 <style>
 @font-face {
@@ -2034,6 +2034,12 @@ img{display:block}
 .dv-vtl b{font-size:21px;font-weight:900;letter-spacing:-.03em;line-height:1.3}
 .dv-vtl span{font-size:15.5px;font-weight:700;line-height:1.4;color:#4a4552;word-break:keep-all}
 .dv-vtl span em{font-style:normal;font-weight:900;color:var(--purple)}
+.dv-rv{background:#fff;border:2px solid #ece9f1;border-radius:22px;padding:22px 28px}
+.dv-rv-h{font-size:20px;font-weight:900;color:var(--muted);margin-bottom:14px}
+.dv-rv-bar{display:flex;gap:6px;height:92px}
+.dv-rv-bar>div{background:#eeecf3;border-radius:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;min-width:0}
+.dv-rv-bar>div.m{background:#ddd8f7}.dv-rv-bar>div.on{background:var(--purple);color:#fff}
+.dv-rv-bar b{font-size:30px;font-weight:900;letter-spacing:-.04em;line-height:1.1}.dv-rv-bar span{font-size:17px;font-weight:800;opacity:.85;white-space:nowrap}
 .dv-sp{margin:16px auto auto;width:1500px;max-width:100%;font-size:21px;padding:16px 26px}.dv-sp strong{color:var(--purple)}.dv-dm .new li{grid-template-columns:32px 186px 1fr!important;column-gap:10px!important}.dv-dm .new li span{font-size:16px!important}.dv-dm .new{padding-left:24px!important;padding-right:22px!important}
 .dv-p11{display:grid;grid-template-columns:1200px 1fr;gap:26px;align-items:center;margin:auto 0}.dv-p11 .l{display:flex;flex-direction:column}.dv-p11 .dv-lg{justify-content:flex-start;margin-top:12px}
 .dv-models{background:var(--purple-pale);border-radius:22px;padding:20px 20px 16px;display:flex;flex-direction:column;gap:8px}.dv-models h4{margin:0 0 4px;font-size:22px;font-weight:900;letter-spacing:-.03em}
@@ -3221,6 +3227,17 @@ img{display:block}
 .ef-platform-milestones small{font-size:18px;line-height:1.3;font-weight:750;color:var(--purple-deep)}
 .ef-platform-milestones b{font-size:20px;line-height:1.3;font-weight:850;white-space:nowrap}
 .ef-platform-milestones i{font-size:25px;line-height:1;font-style:normal;color:var(--purple);text-align:center}
+/* 2026-11-13: six-month goal band under the vision picture (replaces ef-chips + ef-platform-summary on this slide). */
+.ef-goal{width:100%;flex:none;display:grid;grid-template-columns:230px 1fr 1fr 1.25fr;align-items:stretch;background:linear-gradient(100deg,var(--purple-deep),var(--purple));color:#fff;border-radius:20px;padding:17px 10px 17px 34px;box-shadow:0 14px 34px rgba(108,92,231,.28)}
+.ef-goal-head{display:flex;align-items:center;font-size:27px;line-height:1.3;font-weight:900;letter-spacing:-.04em}
+.ef-goal-item{display:flex;flex-direction:column;justify-content:center;gap:2px;padding:0 34px;border-left:1.5px solid rgba(255,255,255,.28);min-width:0}
+.ef-goal-item small{font-size:18px;font-weight:800;color:#e3deff}
+.ef-goal-item p{margin:2px 0 0;font-size:17.5px;line-height:1.35;font-weight:700;color:#e3deff;letter-spacing:-.03em;white-space:nowrap}
+.ef-goal-num{font-size:62px;line-height:1;font-weight:900;letter-spacing:-.05em}
+.ef-goal-num span{font-size:29px;margin-left:5px;letter-spacing:-.03em}
+.ef-goal-text{font-size:33px;line-height:1.25;font-weight:900;letter-spacing:-.045em;white-space:nowrap;margin:6px 0 4px}
+.ef-goal-item p.ef-goal-road{color:#fff}
+.ef-goal-road span{font-weight:900;color:#e3deff}.ef-goal-road i{font-style:normal;margin:0 4px}
 
 /* ---- s4_closing ---- */
 .cl-idx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.cl-idx table{font-size:21px}.cl-idx td{padding-top:3px;padding-bottom:3px;line-height:1.2}.cl-idx th{padding-top:6px;padding-bottom:6px}.cl-q{color:var(--muted,#777);font-size:.85em}
@@ -4347,70 +4364,78 @@ InterviewQuestionVectorSearch/InterviewQuestionEvidenceMatchService: 의미 검�
 
 
 [장표 출처 — 화면에서는 뺌] 11/02 사용자 이메일 인터뷰 · DevFit FE/BE 운영 브랜치(2026-11-13 확인)</template></section>
-<section class="slide ef-foundation-slide" data-order="37" data-title="사업 운영 기반을 갖추고, 상표·핵심 기술을 출원했습니다">
+<section class="slide " data-order="37" data-title="사업자등록 · 통신판매업 신고 · 상표 출원">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
-    <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">사업 운영 기반을 갖추고, <span class="purple">상표·핵심 기술을 출원</span>했습니다</h1></header>
+    <header class="topline"><div class="eyebrow">Effect</div><h1 class="title"><span class="purple">사업자등록 · 통신판매업 신고 · 상표 출원</span></h1></header>
     <div class="slide-content">
-<div class="ef-foundation-grid">
-  <article class="ef-foundation-card">
-    <div class="ef-foundation-kicker">사업 운영</div>
-    <h3>사업자등록·통신판매업<br>신고 완료</h3>
-    <div class="ef-foundation-docs">
-      <figure><img src="assets/cert-biz.png?v=e43e8ed0d003" alt="사업자등록증 전체"><figcaption><b>사업자등록</b><span>도저랩스 · 09/02 개업</span></figcaption></figure>
-      <figure><img src="assets/cert-mail.png?v=56fb53f43d8a" alt="통신판매업 신고증 전체"><figcaption><b>통신판매업 신고</b><span>11/02 신고</span></figcaption></figure>
-    </div>
-    <div class="ef-foundation-result">서비스 운영·결제를 위한 사업 기반</div>
-  </article>
-  <article class="ef-foundation-card">
-    <div class="ef-foundation-kicker">채용 정보 제공</div>
-    <h3>직업정보제공사업<br>신고 완료</h3>
-    <div class="ef-foundation-docs single">
-      <figure><img src="assets/cert-job.png?v=74013f04c1c1" alt="직업정보제공사업 신고확인증 전체"><figcaption><b>서울청 제2026-31호</b><span>10/19 신고</span></figcaption></figure>
-    </div>
-    <div class="ef-foundation-result">직업정보제공사업자로 신고</div>
-  </article>
-  <article class="ef-foundation-card ef-foundation-ip">
-    <div class="ef-foundation-kicker">브랜드·기술 보호</div>
-    <div class="ef-foundation-trademark">
-      <img src="assets/ef-trademark.png?v=7bee1de4f738" alt="DevFit 상표 출원공고결정서 전체">
-      <div><h3>DevFit 상표<br>출원공고 결정</h3><p>제42류 · 11/06</p></div>
-    </div>
-    <div class="ef-foundation-patents">
-      <h3>핵심 기술 <strong>3건</strong> 특허 출원</h3>
-      <div class="ef-foundation-patent-docs">
-        <figure><img src="assets/patent-a.png?v=ca542d03b9f1" alt="질문 선별 특허 출원번호통지서 10-2026-0214808"><figcaption>질문 선별</figcaption></figure>
-        <figure><img src="assets/patent-b.png?v=6154597fd91b" alt="질문 생성 특허 출원번호통지서 10-2026-0214809"><figcaption>질문 생성</figcaption></figure>
-        <figure><img src="assets/patent-c.png?v=9e91ecd014d8" alt="음성 답변 평가 특허 출원번호통지서 10-2026-0214811"><figcaption>음성 답변 평가</figcaption></figure>
-      </div>
-    </div>
-    <div class="ef-foundation-result">상표 출원공고 결정 · 특허 3건 출원</div>
-  </article>
+<div class="ef-d3">
+  <figure><img src="assets/cert-biz.png?v=e43e8ed0d003" alt="사업자등록증"><figcaption><b>사업자등록증</b>도저랩스 · 개업 2026-09-02</figcaption></figure>
+  <figure><img src="assets/cert-mail.png?v=56fb53f43d8a" alt="통신판매업 신고증"><figcaption><b>통신판매업 신고증</b>제2026-서울서초-3702호 · 11-02</figcaption></figure>
+  <figure><img src="assets/ef-trademark.png?v=7bee1de4f738" alt="DevFit 상표 출원공고결정서 (제42류, 출원번호 40-2026-0177374)"><figcaption><b>상표 출원공고 결정</b>DevFit · 제42류 · 40-2026-0177374</figcaption></figure>
 </div></div>
     <div class="folio"></div>
-
+    
   </div>
-<template class="notes">[약 13초] 사업자등록과 통신판매업·직업정보제공사업 신고를 마쳤습니다. DevFit 상표는 출원공고 결정을 받았고, 질문 선별·질문 생성·음성 답변 평가의 핵심 기술은 특허 3건으로 출원했습니다.
+<template class="notes">[≈10초] 결제를 받으려면 서류가 필요했습니다. 사업자등록과 통신판매업 신고를 마쳤고, DevFit이라는 이름은 상표로 출원해 출원공고 결정까지 받았습니다.
 
-[기존 33~35쪽 통합 · 증빙 및 질의응답 근거 보존]
-[사업자등록 · 통신판매업 신고 · 상표 출원]
 [증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서) · 통신판매업 신고증(제2026-서울서초-3702호, 11-02) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).
 상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지. ⛔ «매출» · «공동대표» 금지.
 
-[직업정보제공사업 신고]
+[장표 출처 — 화면에서는 뺌] 증빙 원본 스캔·캡처 그대로 (자르거나 가리지 않음) · 상표는 출원공고 결정 단계</template></section>
+<section class="slide " data-order="38" data-title="직업정보제공사업 신고">
+  <div class="slide-shell">
+    <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
+    <header class="topline"><div class="eyebrow">Effect</div><h1 class="title"><span class="purple">직업정보제공사업</span> 신고</h1></header>
+    <div class="slide-content">
+<div class="ef-dj">
+  <div class="ef-law-doc"><img src="assets/cert-job.png?v=74013f04c1c1" alt="직업정보제공사업 신고확인증"><span class="tag">신고확인증 · 서울청 제2026-31호 · 2026-10-19</span></div>
+  <div class="r">
+    <div class="ef-law-act">
+      <h4>직업안정법</h4>
+      <p><b>제2조의2(정의)</b> 8. "직업정보제공사업"이란 신문, 잡지, 그 밖의 간행물 또는 유선ㆍ무선방송이나 컴퓨터통신 등으로 구인ㆍ구직 정보 등 직업정보를 제공하는 사업을 말한다.</p>
+      <p><b>제23조(직업정보제공사업의 신고)</b> ① 직업정보제공사업을 하려는 자(제18조에 따라 무료직업소개사업을 하는 자와 제19조에 따라 유료직업소개사업을 하는 자는 제외한다)는 고용노동부장관에게 신고하여야 한다. 신고 사항을 변경하는 경우에도 또한 같다.</p>
+      <span class="src">법률 제20121호, 2024. 1. 23., 일부개정 · 국가법령정보센터 원문</span>
+    </div>
+    <div class="why">서울노동청에 <b>정식 신고된 직업정보제공사업자</b>로서 보다 정확하고 다양한 직업 정보를 제공</div>
+  </div>
+</div></div>
+    <div class="folio"></div>
+    
+  </div>
+<template class="notes">[≈10초] 채용공고를 모아 보여 주는 서비스는 직업안정법상 직업정보제공사업입니다. 10월 19일에 서울고용노동청에 신고를 마쳤고, 그래서 여러 채용 플랫폼과 기업 사이트의 공고를 정식 사업자로서 한곳에 모아, 출처가 분명한 최신 원문으로 보여 줄 수 있습니다.
+
 [직업정보제공사업 신고 · 법률 멘토링 메모 — Q&amp;A용]
 직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.
 법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).
 개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).
-순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 Effect 직업정보제공사업 장.
+순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 부록 A16.
 
-[핵심 기술 3건 특허 출원: 질문 선별 · 질문 생성 · 음성 답변 평가]
+[장표 출처 — 화면에서는 뺌] 신고확인증 원본 그대로 (자르거나 가리지 않음) · 직업안정법 [법률 제20121호, 2024. 1. 23., 일부개정] 국가법령정보센터 원문</template></section>
+<section class="slide " data-order="39" data-title="핵심 기술 3건 특허 출원: 질문 선별 · 질문 생성 · 음성 답변 평가">
+  <div class="slide-shell">
+    <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
+    <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">핵심 기술 3건 <span class="purple">특허 출원</span>: 질문 선별 · 질문 생성 · 음성 답변 평가</h1></header>
+    <div class="slide-content">
+<div class="ef-dp">
+  <div class="l"><div class="hd">출원번호통지서 (2026-11-01)</div>
+    <div class="nt" style="left:0px;top:38px;z-index:1"><img src="assets/patent-a.png?v=ca542d03b9f1" alt="10-2026-0214808 출원번호통지서"><span class="tag">선별 · 10-2026-0214808</span></div><div class="nt" style="left:34px;top:206px;z-index:2"><img src="assets/patent-b.png?v=6154597fd91b" alt="10-2026-0214809 출원번호통지서"><span class="tag">생성 · 10-2026-0214809</span></div><div class="nt" style="left:68px;top:374px;z-index:3"><img src="assets/patent-c.png?v=9e91ecd014d8" alt="10-2026-0214811 출원번호통지서"><span class="tag">음성 · 10-2026-0214811</span></div>
+  </div>
+  <div class="r"><div class="hd">특허 명세서</div>
+    <div class="sp" style="left:0px;top:38px;z-index:1;transform:rotate(-1.6deg)"><img src="assets/patent-spec-a.png?v=637ea33252cc" alt="선별 특허 명세서 첫 장"><span class="tag">선별</span></div><div class="sp" style="left:120px;top:60px;z-index:2;transform:rotate(0.0deg)"><img src="assets/patent-spec-b.png?v=07594e50af90" alt="생성 특허 명세서 첫 장"><span class="tag">생성</span></div><div class="sp" style="left:240px;top:82px;z-index:3;transform:rotate(1.6deg)"><img src="assets/patent-spec-c.png?v=165a0b63c6ed" alt="음성 특허 명세서 첫 장"><span class="tag">음성</span></div>
+  </div>
+</div></div>
+    <div class="folio"></div>
+    
+  </div>
+<template class="notes">[≈10초] 핵심 기술은 특허 3건으로 출원했습니다. 커밋에서 면접 질문을 고르는 방법, 근거를 대조해 질문을 만드는 방법, 음성 대화로 답변을 평가하는 방법입니다. 왼쪽이 출원번호통지서, 오른쪽이 명세서입니다.
+
 [증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).
 명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.
-⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A8.
+⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A9.
 
-[장표 출처 — 화면에서는 뺌] 사업자등록증·통신판매업 신고증·직업정보제공사업 신고확인증·상표 출원공고결정서·특허 출원번호통지서 3건</template></section>
-<section class="slide ef-market-slide" data-order="38" data-title="시장 규모와 가격 선정 근거">
+[장표 출처 — 화면에서는 뺌] 출원번호통지서 원본 캡처 · 명세서는 출원 제출본 docx 첫 장 렌더링 (특허/A_면접질문선별, B_면접질문생성, C_음성모의면접) · 출원 단계</template></section>
+<section class="slide ef-market-slide" data-order="40" data-title="시장 규모와 가격 선정 근거">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title"><span class="purple">시장 규모</span>와 가격 선정 근거</h1></header>
@@ -4468,7 +4493,7 @@ Q&amp;A: «결제는 열려 있고 매출은 아직 0» (claims.md C3).
 
 
 [장표 출처 — 화면에서는 뺌] 점핏 2025 개발자 채용 리포트 · 한경협 2025 구직자 조사 · 구직자 인터뷰 · 최종보고서 요금·단위 경제성 · B2B 가격은 내부 가정</template></section>
-<section class="slide " data-order="39" data-title="개발자 대상 경쟁 서비스 비교">
+<section class="slide " data-order="41" data-title="개발자 대상 경쟁 서비스 비교">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">개발자 대상 <span class="purple">경쟁 서비스 비교</span></h1></header>
@@ -4524,7 +4549,7 @@ Q&amp;A: «결제는 열려 있고 매출은 아직 0» (claims.md C3).
 
 
 [장표 출처 — 화면에서는 뺌] 각 서비스 공개 페이지 기준 (2026-11-05 · 인프런 11-07 확인 · 티오 최종보고서 경쟁 표) · DevFit 칸은 운영 코드 기준</template></section>
-<section class="slide ef-enterprise-slide" data-order="40" data-title="DevFit Enterprise: B2C와 분리된 면접관 전용 지원자 검">
+<section class="slide ef-enterprise-slide" data-order="42" data-title="DevFit Enterprise: B2C와 분리된 면접관 전용 지원자 검">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">DevFit Enterprise: B2C와 분리된 <span class="purple">면접관 전용 지원자 검증 도구</span></h1></header>
@@ -4574,29 +4599,27 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11, devfit.app/enterprise.pdf) 6·10·12쪽 · 화면: 서비스 소개서(가상 데이터) · 분리 구조: BE recruit 패키지 · 공개 지원 API(/apply) 응답</template></section>
-<section class="slide ef-platform-plan-slide" data-order="41" data-title="B2C와 B2B를 잇는 하나의 채용 플랫폼">
+<section class="slide ef-platform-plan-slide" data-order="43" data-title="B2C와 B2B를 잇는 하나의 채용 플랫폼">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">B2C와 B2B를 잇는 <span class="purple">하나의 채용 플랫폼</span></h1></header>
     <div class="slide-content"><div class="ef-platform-original">
-  <div class="ef-platform-picture"><img src="assets/vision-diagram.png?v=a62e0eedd6dc" alt="DevFit Platform 비전 — B2C 준비와 B2B 검증을 하나의 개발자 채용 플랫폼으로"></div>
-  <div class="ef-chips"><span>① B2C 준비 · 운영 중 · 결제 LIVE</span><span class="dev">② B2B Enterprise · 개발 완료</span><span>③ 공고 29곳 수집 · 지원 여정 트래커</span></div>
-  <div class="ef-platform-summary">
-    <h3>향후 6개월 목표: <span>B2C 가입 275명, B2B 계약 1곳</span></h3>
-    <div class="ef-platform-summary-detail">
-      <div class="ef-platform-estimate"><b>B2C 가입 목표</b><span>6개월 후 총 275명</span></div>
-      <div class="ef-platform-milestones">
-        <div><small>2026-11</small><b>회고형 파일럿 2곳</b></div><i aria-hidden="true">→</i>
-        <div><small>2027-03</small><b>B2B 계약 1곳</b></div>
-      </div>
-      <div class="ef-platform-measure"><span>검증 지표</span><b>면접관 질문 채택률</b></div>
-    </div>
+  <div class="ef-platform-picture"><img src="assets/vision-diagram-notitle.png?v=56e48ac4bbf7" alt="DevFit Platform 비전: B2C 준비와 B2B 검증을 하나의 개발자 채용 플랫폼으로"></div>
+  <div class="ef-goal">
+    <div class="ef-goal-head">향후<br>6개월 목표</div>
+    <div class="ef-goal-item"><small>B2C 가입</small><div class="ef-goal-num">275<span>명</span></div><p>6개월 후 총 가입 목표</p></div>
+    <div class="ef-goal-item"><small>B2B 계약</small><div class="ef-goal-num">1<span>곳</span></div><p>2027-03 목표</p></div>
+    <div class="ef-goal-item"><small>검증 지표</small><div class="ef-goal-text">면접관 질문 채택률</div><p>면접관이 질문을 실제로 채택하는 비율</p></div>
   </div>
 </div></div>
     <div class="folio"></div>
     
   </div>
-<template class="notes">[통합 장표] 원본 플랫폼 비전 그림 아래에 6개월 목표를 간략히 제시합니다. 사용자 요청에 따라 화면에는 B2C 가입 목표 275명만 표시하며, 예측 범위를 임의로 좁힌 수치를 만들지 않습니다. B2B 일정은 회고형 파일럿과 계약 목표 두 단계만 표시합니다. 기존 예상 범위와 세부 실행 계획은 참고 근거로 아래 노트에 보존합니다. 목표는 B2C 가입 275명, B2B 계약 1곳입니다. 현재 계약 성과를 뜻하지 않습니다.
+<template class="notes">[2026-11-13] 11월 파일럿 2곳 단계는 장표에서 빼고 B2B는 2027-03 계약 1곳 목표만 표시합니다. 파일럿 계획은 아래 노트와 collect/J에 있습니다(Q&amp;A용).
+
+[2026-11-13 수정] 그림 안 제목 줄이 장표 제목과 겹쳐 제목 없는 그림(assets/vision-diagram-notitle.png)으로 바꾸고, 그림 아래 상태 표시 세 개(B2C 운영 중, B2B 개발 완료, 공고 29곳 수집)는 뺐습니다. 6개월 목표는 네 칸 띠로 다시 그렸습니다.
+
+[통합 장표] 원본 플랫폼 비전 그림 아래에 6개월 목표를 간략히 제시합니다. 사용자 요청에 따라 화면에는 B2C 가입 목표 275명만 표시하며, 예측 범위를 임의로 좁힌 수치를 만들지 않습니다. B2B 일정은 회고형 파일럿과 계약 목표 두 단계만 표시합니다. 기존 예상 범위와 세부 실행 계획은 참고 근거로 아래 노트에 보존합니다. 목표는 B2C 가입 275명, B2B 계약 1곳입니다. 현재 계약 성과를 뜻하지 않습니다.
 
 [≈15초] 중간발표에서 말한 비전입니다. 지원자가 자기 코드로 준비하는 B2C와, 면접관이 근거로 검증하는 B2B를 같은 분석 엔진 위에서 하나의 개발자 채용 플랫폼으로 잇습니다. 엔진은 같지만 면접관 질문과 지원자 질문은 서로 공유하지 않습니다. B2C는 공고 수집과 지원 일정 관리까지 운영 중이고, B2B는 개발을 마쳤습니다.
 
@@ -4609,8 +4632,8 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 11/10 18시까지 의향서가 오면 «파일럿 의향서 1건(비구속)»으로 교체.
 ⛔ «고객 확보»·«파일럿 진행 중»·«MOU» 금지 (현재 LOI·MOU·계약 0).
 
-[장표 출처 — 화면에서는 뺌] 중간발표 비전 그림 원본 · 6개월 목표는 추정 및 계획</template></section>
-<section class="slide dark-slide" data-order="42" data-title="마무리"><div class="dark-grid"></div><div class="slide-shell" style="padding:0">
+[장표 출처 — 화면에서는 뺌] 중간발표 비전 그림(제목 줄만 잘라 냄) · 6개월 목표는 추정 및 계획</template></section>
+<section class="slide dark-slide" data-order="44" data-title="마무리"><div class="dark-grid"></div><div class="slide-shell" style="padding:0">
 <div style="position:absolute;inset:0;display:grid;grid-template-columns:58% 42%">
   <div style="padding:0 0 0 118px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2">
     <h1 class="cl-service-message" style="margin:0;color:#fff;font-size:60px;font-weight:900;line-height:1.35;letter-spacing:-.055em">지원자는 <span style="color:#b9b0ff">내 코드</span>로<br>면접을 준비하고,<br>기업은 <span style="color:#b9b0ff">코드 근거</span>로<br>개발 경험을 확인합니다.</h1>
@@ -4628,20 +4651,20 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 <div class="folio" style="left:auto;right:88px;color:#6d6774"></div></div><template class="notes">[14:50–15:00] DevFit에서 지원자는 내 코드로 면접을 준비하고, 기업은 코드 근거로 개발 경험을 확인합니다. 감사합니다.
 
 테스트 계정은 GitHub OAuth 전용이라 심사위원용 계정 필요 — 제출 전 시크릿 창에서 로그인 재확인.</template></section>
-<section class="slide " data-order="43" data-title="감사합니다"><div class="slide-shell"><div class="slide-content" style="margin:0;align-items:center;justify-content:center">
+<section class="slide " data-order="45" data-title="감사합니다"><div class="slide-shell"><div class="slide-content" style="margin:0;align-items:center;justify-content:center">
 <img src="assets/Dozer_일러스트.png?v=b83a370c1470" alt="팀 Dozer" style="width:980px;max-width:74%;display:block;margin-top:-40px">
 <div style="font-size:48px;font-weight:900;letter-spacing:-.045em;margin-top:-150px">감사합니다</div>
 <div class="small-copy" style="font-size:22px;margin-top:14px">팀 Dozer, 박천웅, 김건우, 노재원 · Q&amp;A</div></div><div class="folio"></div></div><template class="notes">Q&amp;A로 넘어갑니다. 부록은 쪽번호로 바로 엽니다(맨 뒤 부록 목차).</template></section>
-<section class="slide " data-order="44" data-title="부록 목차">
+<section class="slide " data-order="46" data-title="부록 목차">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix</div><h1 class="title">부록 목차</h1></header>
-    <div class="slide-content"><div class="cl-idx"><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p45</b> <span class="cl-q">A1</span></td><td>중간평가 심사의견 19건 반영표<br><span class="cl-q">멘토·심사 의견을 어떻게 반영했나</span></td></tr><tr><td><b style="color:var(--purple)">p46</b> <span class="cl-q">A2</span></td><td>평가 하네스 상세<br><span class="cl-q">품질을 어떻게 믿나</span></td></tr><tr><td><b style="color:var(--purple)">p47</b> <span class="cl-q">A3</span></td><td>측정 도구별 수치 차이<br><span class="cl-q">GA는 235명인데 왜 2.2만인가</span></td></tr><tr><td><b style="color:var(--purple)">p48</b> <span class="cl-q">A4</span></td><td>유료 광고 집행과 효율<br><span class="cl-q">마케팅 효율은</span></td></tr><tr><td><b style="color:var(--purple)">p49</b> <span class="cl-q">A5</span></td><td>원가와 가격<br><span class="cl-q">돈은 어떻게 버나</span></td></tr><tr><td><b style="color:var(--purple)">p50</b> <span class="cl-q">A6</span></td><td>기출 수집과 가공<br><span class="cl-q">크롤링 문제없나</span></td></tr><tr><td><b style="color:var(--purple)">p51</b> <span class="cl-q">A7</span></td><td>특허 3건<br><span class="cl-q">특허는 뭘 보호하나</span></td></tr><tr><td><b style="color:var(--purple)">p52</b> <span class="cl-q">A9</span></td><td>시장 규모 상향식 계산<br><span class="cl-q">시장 숫자는 어떻게 나왔나</span></td></tr><tr><td><b style="color:var(--purple)">p53</b> <span class="cl-q">A10</span></td><td>모델 라우팅 · 서비스 스택<br><span class="cl-q">어떤 모델을 왜 쓰나</span></td></tr><tr><td><b style="color:var(--purple)">p54</b> <span class="cl-q">A11</span></td><td>현업 검토 · 멘토 피드백 반영<br><span class="cl-q">현업은 써 보고 뭐라 했나</span></td></tr><tr><td><b style="color:var(--purple)">p55</b> <span class="cl-q">A12</span></td><td>공고 수집과 캐시 구조<br><span class="cl-q">공고는 어떻게 가져오나</span></td></tr><tr><td><b style="color:var(--purple)">p56</b> <span class="cl-q">A13</span></td><td>공고 캐시 발전과정<br><span class="cl-q">같은 공고를 매번 다시 분석하나</span></td></tr><tr><td><b style="color:var(--purple)">p57</b> <span class="cl-q">A14</span></td><td>오류 수집 (Sentry)<br><span class="cl-q">오류는 어떻게 아나</span></td></tr></tbody></table><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p58</b> <span class="cl-q">A15</span></td><td>검색 노출 (SEO)<br><span class="cl-q">검색 유입은 어떻게 만드나</span></td></tr><tr><td><b style="color:var(--purple)">p59</b> <span class="cl-q">A16</span></td><td>서비스 보안<br><span class="cl-q">GitHub 토큰과 세션은 안전한가</span></td></tr><tr><td><b style="color:var(--purple)">p60</b> <span class="cl-q">A17</span></td><td>보안<br><span class="cl-q">내 코드 털리는 거 아닌가</span></td></tr><tr><td><b style="color:var(--purple)">p61</b> <span class="cl-q">A18</span></td><td>커밋 선별 발전과정<br><span class="cl-q">커밋 선별은 어떻게 바뀌었나</span></td></tr><tr><td><b style="color:var(--purple)">p62</b> <span class="cl-q">A19</span></td><td>질문 생성 호출 분할 · 난이도 세부<br><span class="cl-q">질문 생성은 어떻게 나눠 부르나</span></td></tr><tr><td><b style="color:var(--purple)">p63</b> <span class="cl-q">A20</span></td><td>자기소개서와 포트폴리오<br><span class="cl-q">면접 말고 또 뭘 하나</span></td></tr><tr><td><b style="color:var(--purple)">p64</b> <span class="cl-q">A21</span></td><td>소마 이후 인프라 이전<br><span class="cl-q">지원 끝나면 서버비는</span></td></tr></tbody></table></div></div>
+    <div class="slide-content"><div class="cl-idx"><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p47</b> <span class="cl-q">A1</span></td><td>중간평가 심사의견 19건 반영표<br><span class="cl-q">멘토·심사 의견을 어떻게 반영했나</span></td></tr><tr><td><b style="color:var(--purple)">p48</b> <span class="cl-q">A2</span></td><td>평가 하네스 상세<br><span class="cl-q">품질을 어떻게 믿나</span></td></tr><tr><td><b style="color:var(--purple)">p49</b> <span class="cl-q">A3</span></td><td>측정 도구별 수치 차이<br><span class="cl-q">GA는 235명인데 왜 2.2만인가</span></td></tr><tr><td><b style="color:var(--purple)">p50</b> <span class="cl-q">A4</span></td><td>유료 광고 집행과 효율<br><span class="cl-q">마케팅 효율은</span></td></tr><tr><td><b style="color:var(--purple)">p51</b> <span class="cl-q">A5</span></td><td>원가와 가격<br><span class="cl-q">돈은 어떻게 버나</span></td></tr><tr><td><b style="color:var(--purple)">p52</b> <span class="cl-q">A6</span></td><td>기출 수집과 가공<br><span class="cl-q">크롤링 문제없나</span></td></tr><tr><td><b style="color:var(--purple)">p53</b> <span class="cl-q">A7</span></td><td>특허 3건<br><span class="cl-q">특허는 뭘 보호하나</span></td></tr><tr><td><b style="color:var(--purple)">p54</b> <span class="cl-q">A9</span></td><td>시장 규모 상향식 계산<br><span class="cl-q">시장 숫자는 어떻게 나왔나</span></td></tr><tr><td><b style="color:var(--purple)">p55</b> <span class="cl-q">A10</span></td><td>모델 라우팅 · 서비스 스택<br><span class="cl-q">어떤 모델을 왜 쓰나</span></td></tr><tr><td><b style="color:var(--purple)">p56</b> <span class="cl-q">A11</span></td><td>현업 검토 · 멘토 피드백 반영<br><span class="cl-q">현업은 써 보고 뭐라 했나</span></td></tr><tr><td><b style="color:var(--purple)">p57</b> <span class="cl-q">A12</span></td><td>공고 수집과 캐시 구조<br><span class="cl-q">공고는 어떻게 가져오나</span></td></tr><tr><td><b style="color:var(--purple)">p58</b> <span class="cl-q">A13</span></td><td>공고 캐시 발전과정<br><span class="cl-q">같은 공고를 매번 다시 분석하나</span></td></tr><tr><td><b style="color:var(--purple)">p59</b> <span class="cl-q">A14</span></td><td>오류 수집 (Sentry)<br><span class="cl-q">오류는 어떻게 아나</span></td></tr></tbody></table><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p60</b> <span class="cl-q">A15</span></td><td>검색 노출 (SEO)<br><span class="cl-q">검색 유입은 어떻게 만드나</span></td></tr><tr><td><b style="color:var(--purple)">p61</b> <span class="cl-q">A16</span></td><td>서비스 보안<br><span class="cl-q">GitHub 토큰과 세션은 안전한가</span></td></tr><tr><td><b style="color:var(--purple)">p62</b> <span class="cl-q">A17</span></td><td>보안<br><span class="cl-q">내 코드 털리는 거 아닌가</span></td></tr><tr><td><b style="color:var(--purple)">p63</b> <span class="cl-q">A18</span></td><td>커밋 선별 발전과정<br><span class="cl-q">커밋 선별은 어떻게 바뀌었나</span></td></tr><tr><td><b style="color:var(--purple)">p64</b> <span class="cl-q">A19</span></td><td>질문 생성 호출 분할 · 난이도 세부<br><span class="cl-q">질문 생성은 어떻게 나눠 부르나</span></td></tr><tr><td><b style="color:var(--purple)">p65</b> <span class="cl-q">A20</span></td><td>자기소개서와 포트폴리오<br><span class="cl-q">면접 말고 또 뭘 하나</span></td></tr><tr><td><b style="color:var(--purple)">p66</b> <span class="cl-q">A21</span></td><td>소마 이후 인프라 이전<br><span class="cl-q">지원 끝나면 서버비는</span></td></tr><tr><td><b style="color:var(--purple)">p72</b> <span class="cl-q">A27</span></td><td>비성수기 대응: 상시와 수시 채용 지표<br><span class="cl-q">채용 비성수기에는 어떻게 하나</span></td></tr><tr><td><b style="color:var(--purple)">p73</b> <span class="cl-q">A28</span></td><td>재방문 회원의 AI 비용<br><span class="cl-q">자주 쓰면 AI 비용이 계속 늘지 않나</span></td></tr></tbody></table></div></div>
     <div class="folio"></div>
     
   </div>
 <template class="notes">Q&amp;A 때 쪽번호로 이동. 답변 원고: collect/00-통합보고.md §3.</template></section>
-<section class="slide " data-order="45" data-title="중간평가 심사의견 19건: 완료 10 · 부분 5 · 소명 3 · 미반영">
+<section class="slide " data-order="47" data-title="중간평가 심사의견 19건: 완료 10 · 부분 5 · 소명 3 · 미반영">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A1</div><h1 class="title">중간평가 심사의견 19건: 완료 10 · 부분 5 · 소명 3 · 미반영 1</h1></header>
@@ -4654,7 +4677,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 멘토 피드백 31행 표는 collect/I 원본 참조 — 필요 시 A1-2로 추가.
 
 [장표 출처 — 화면에서는 뺌] 반영일·근거 커밋은 운영 브랜치 포함 여부 확인</template></section>
-<section class="slide " data-order="46" data-title="평가 하네스: LLM 심판 점수의 편차와 보완 지표">
+<section class="slide " data-order="48" data-title="평가 하네스: LLM 심판 점수의 편차와 보완 지표">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A2</div><h1 class="title">평가 하네스: <span class="purple">LLM 심판 점수의 편차</span>와 보완 지표</h1></header>
@@ -4667,7 +4690,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
     
   </div>
 <template class="notes">출처: collect/C-quality.md. 17.82점(n=91) = Kimi·DeepSeek 문항별 차 평균, 12.23점(n=24) = 같은 심판 재채점 차, «LLM 심판이 사람보다 약 1점 후함»(n=18).</template></section>
-<section class="slide " data-order="47" data-title="측정 도구별 수치 차이 (기준: 관리자 DB)">
+<section class="slide " data-order="49" data-title="측정 도구별 수치 차이 (기준: 관리자 DB)">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A3</div><h1 class="title">측정 도구별 수치 차이 (<span class="purple">기준: 관리자 DB</span>)</h1></header>
@@ -4682,7 +4705,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 <template class="notes">출처: metrics/charts/14_measurement_gap.png · collect/D §1. GA4는 쿠키 동의 게이트 때문에 하한(가입 이벤트가 실제 가입의 약 절반만 잡힘). 정본 우선순위: 관리자 DB &gt; Clarity &gt; 광고 관리자 &gt; GA4.
 
 [장표 출처 — 화면에서는 뺌] 기간 2026-08-01 ~ 11-04 · 정본 우선순위: 관리자 DB &gt; Clarity &gt; 광고 관리자 &gt; GA4</template></section>
-<section class="slide " data-order="48" data-title="유료 광고 ₩347.5만: 클릭 1회 ₩110~563, 가입 1명당 최소">
+<section class="slide " data-order="50" data-title="유료 광고 ₩347.5만: 클릭 1회 ₩110~563, 가입 1명당 최소">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A4</div><h1 class="title">유료 광고 ₩347.5만: 클릭 1회 ₩110~563, <span class="red">가입 1명당 최소 ₩4.2만</span></h1></header>
@@ -4695,7 +4718,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 <template class="notes">출처: collect/D §2. ₩4.2만은 하한(가입 전원이 광고로 들어왔다고 가정) — «상한»이라 쓰지 말 것. 상한 추정 ₩12.9만. Meta·Google의 «전환»과 DB «가입»은 정의가 다름.
 
 [장표 출처 — 화면에서는 뺌] Meta 광고 관리자(8/1~11/3) · Google Ads(8/24~11/3) · ₩4.2만 = 광고비 ÷ 전체 가입 83명(전원 광고 유입 가정)</template></section>
-<section class="slide " data-order="49" data-title="분석 1회 약 330원, 단건 1,900원 · Plus 월 7,900원">
+<section class="slide " data-order="51" data-title="분석 1회 약 330원, 단건 1,900원 · Plus 월 7,900원">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A5</div><h1 class="title">분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원</h1></header>
@@ -4712,7 +4735,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 원가의 대부분이 LLM(인프라는 개발 DB·서버 정지 운영). Plus 정기결제는 심사 중 — «구독 매출» 금지.
 
 [장표 출처 — 화면에서는 뺌] CloudWatch 실측 · 운영 요금표 · 최종보고서 「단위 경제성」 표와 같은 기준</template></section>
-<section class="slide " data-order="50" data-title="공개된 면접 후기에서 내용만 뽑아 직접 가공">
+<section class="slide " data-order="52" data-title="공개된 면접 후기에서 내용만 뽑아 직접 가공">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A6</div><h1 class="title">공개된 면접 후기에서 내용만 뽑아 <span class="purple">직접 가공</span></h1></header>
@@ -4747,7 +4770,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 11-08 운영 DB 실측(gichul): 기출 1,880 / 벡터 1,880 · 누락 0 (853 + 2차 1,027).
 
 [장표 출처 — 화면에서는 뺌] 저작권법 제2조 제1호 · 대법원 2000. 10. 24. 선고 99다10813 판결 · cho.sh, 「Mini R&amp;D Engineer Job Interview」, 2022 · Devfit_BE interview-question-evidence.csv 운영 적재본</template></section>
-<section class="slide " data-order="51" data-title="특허 3건 출원: 선별 · 생성 · 음성">
+<section class="slide " data-order="53" data-title="특허 3건 출원: 선별 · 생성 · 음성">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A7</div><h1 class="title">특허 3건 출원: <span class="purple">선별 · 생성 · 음성</span></h1></header>
@@ -4760,7 +4783,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 <template class="notes">출원인 김건우(개인), 발명자 김건우·박천웅·노재원. 심사청구 무 · 공개신청 무(통지서 기준). ⛔ «등록»·«회사 특허» 금지.
 «관련 장표» 열은 장 제목으로 표기(쪽번호 금지 규칙). 최종 표기는 Dev 슬림화 후 ppt-start와 맞춤 — 0214809는 Development 입력·출력 게이트 장이 남으면 덧붙임.
 청구항 요지 원문: Devfit/docs/patent/ 명세서 (⛔ 삭제 금지, 공지예외 12개월 시한 진행 중).</template></section>
-<section class="slide " data-order="52" data-title="시장 규모 계산 근거: 입력값 8개의 출처와 가정">
+<section class="slide " data-order="54" data-title="시장 규모 계산 근거: 입력값 8개의 출처와 가정">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A9</div><h1 class="title">시장 규모 계산 근거: <span class="purple">입력값 8개의 출처와 가정</span></h1></header>
@@ -4779,7 +4802,7 @@ URL: 점핏 https://jumpit.saramin.co.kr/report/2025/recruit · 한경협 13.4�
 ⛔ «매출»은 시나리오 표의 가정값으로만, 실적처럼 말하지 말 것. 5년 SOM 27억 · TAM $2.8B 금지.
 
 [장표 출처 — 화면에서는 뺌] 점핏 2025 상반기 개발자 채용 리포트(jumpit.saramin.co.kr/report/2025/recruit) · 한국경제인협회 2025 대학생 취업인식도 조사(머니투데이 2025-12-09 보도) · 잡코리아 콘텐츠LAB 2025(아시아경제 2025-09-12 보도) · 프로그래머스·CodeSignal·Codility 가격 페이지</template></section>
-<section class="slide " data-order="53" data-title="역할별 모델 라우팅과 서비스 스택">
+<section class="slide " data-order="55" data-title="역할별 모델 라우팅과 서비스 스택">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A10</div><h1 class="title">역할별 모델 라우팅과 <span class="purple">서비스 스택</span></h1></header>
@@ -4801,7 +4824,7 @@ URL: 점핏 https://jumpit.saramin.co.kr/report/2025/recruit · 한경협 13.4�
 🔴 OpenAI(커밋 판정 · 조건부 TTS) 호출이 개인정보처리방침 국외 이전에 미고지(R1) — 발표 전 정리. 음성 provider 운영값 확인 필요(s2 음성 장 노트).
 
 [장표 출처 — 화면에서는 뺌] origin/prod application.yml bedrock.models.* · app.commit-decision · interview-evidence.vector (2026-11-06)</template></section>
-<section class="slide " data-order="54" data-title="현업 면접관·게임사 대표의 서비스 검토와 반영">
+<section class="slide " data-order="56" data-title="현업 면접관·게임사 대표의 서비스 검토와 반영">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A11</div><h1 class="title">현업 면접관·게임사 대표의 <span class="purple">서비스 검토와 반영</span></h1></header>
@@ -4844,7 +4867,7 @@ URL: 점핏 https://jumpit.saramin.co.kr/report/2025/recruit · 한경협 13.4�
 추가 반영 항목 근거(collect/I-feedback-patterns.md §1-2): 한유일 09-07 → AI 코치 출력 상한 1280→8192 BE c5a3ac7(당일) · 음성 STT·TTS·음성 꼬리질문 BE 98ebb0f 등(09-16 운영) · private scope 보존 FE 61fbe10·BE 7399ff1(09-09·09-16). 김준엽 «CS·프로젝트 비중은 인재상 따라 상이»·«자사는 GitHub를 AI로 검토» = 10-26 회신 요지(05-현장검증.md §3). 김한빛 «주간 개선 루프»는 매주 멘토링 + 하네스 개선 이력(사용자 진술 11-06) 기반 서술.
 
 [장표 출처 — 화면에서는 뺌] 한유일 멘토 09-07 녹취(68분) · 김한빛 멘토 정기 멘토링 · 김종욱 멘토 10-25 Webex · 바삭한소프트 대표 10-26 이메일 회신</template></section>
-<section class="slide " data-order="55" data-title="공고 URL 하나로 29곳에서 본문을 받고, 두 층으로 캐시">
+<section class="slide " data-order="57" data-title="공고 URL 하나로 29곳에서 본문을 받고, 두 층으로 캐시">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A12</div><h1 class="title">공고 URL 하나로 <span class="purple">29곳</span>에서 본문을 받고, <span class="purple">두 층으로 캐시</span></h1></header>
@@ -4860,7 +4883,7 @@ URL: 점핏 https://jumpit.saramin.co.kr/report/2025/recruit · 한경협 13.4�
 ⛔ 회사명·로고·«제휴» 금지. «공고 1,450건 사전 수집» 본편 금지(직업안정법 표현 리스크, K-compliance O5).
 
 [장표 출처 — 화면에서는 뺌] origin/prod prep/corporate (CorporateSite · CorporateSiteRegistry · SafeFetcher · CorporateParsing.withOcrFallback) · prep/cache (V59·V60, TTL 30일) · 22곳 중 10곳: corporate-boards-2/STATUS.md</template></section>
-<section class="slide " data-order="56" data-title="본문과 LLM 결과를 2층으로 캐시해 같은 공고는 한 번만 수집 · 분석">
+<section class="slide " data-order="58" data-title="본문과 LLM 결과를 2층으로 캐시해 같은 공고는 한 번만 수집 · 분석">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A13</div><h1 class="title">본문과 LLM 결과를 2층으로 캐시해 같은 공고는 <span class="purple">한 번만 수집 · 분석</span></h1></header>
@@ -4895,7 +4918,7 @@ Q&amp;A: 캐시 공고 카드 1.0초 vs 미스 17~34초(운영 11-05 · 공고 4
 ⛔ 미리 받은 공고 건수(«1,450건 사전 수집») 본편 금지(직업안정법 표현 리스크, K-compliance O5). 회사명·로고 금지.
 
 [장표 출처 — 화면에서는 뺌] origin/prod prep/cache: job_posting_cache(키 = site.key + canonicalKey) · job_posting_insight(키 = sha256(normalizeForHash) + insight-version) · Flyway V59·V60 · 일일 예산 posting_cache_daily_budget · skip_reason · TTL 30일 · 커밋 74b9f18(07-19) · ee304b2·b7cd360(09-15) · 5b45b2d·0794272(09-18) · 8250405(09-21)</template></section>
-<section class="slide " data-order="57" data-title="오류는 Sentry로 모으고, 그 SDK로 무거워진 랜딩은 다시 경량화">
+<section class="slide " data-order="59" data-title="오류는 Sentry로 모으고, 그 SDK로 무거워진 랜딩은 다시 경량화">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A14</div><h1 class="title">오류는 Sentry로 모으고, <span class="purple">그 SDK로 무거워진 랜딩은 다시 경량화</span></h1></header>
@@ -4915,7 +4938,7 @@ Q&amp;A: 캐시 공고 카드 1.0초 vs 미스 17~34초(운영 11-05 · 공고 4
 Q&amp;A: 14일 미해결 이슈 25개(BE 22 · FE 3), 대부분 10-28·11-04 두 번의 DB 연결 장애 — 원인 미확인(비밀번호 회전 추정). 10-08 이전은 오류 수집 공백.
 
 [장표 출처 — 화면에서는 뺌] FE f42c9e7 → prod 1470a36 (10-08) · 47e660b (10-12) · BE 00a4c31 · 5985868 · 관리자 조회 BE 6629aee · FE 5d17f02</template></section>
-<section class="slide " data-order="58" data-title="구글 검색 결과 0건에서 검색엔진 등록부터 시작">
+<section class="slide " data-order="60" data-title="구글 검색 결과 0건에서 검색엔진 등록부터 시작">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A15</div><h1 class="title">구글 검색 결과 <span class="red">0건</span>에서 <span class="purple">검색엔진 등록</span>부터 시작</h1></header>
@@ -4931,7 +4954,7 @@ Q&amp;A: 14일 미해결 이슈 25개(BE 22 · FE 3), 대부분 10-28·11-04 두
 Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구글이 색인하지 않아 55편으로 줄이고 나머지는 noindex. 효과는 11월 말 재측정. · 운영 404가 아직 403(CloudFront 설정이 레포 밖 Terraform) · 네이버 서치어드바이저 새 sitemap 미재제출 · 명조 웹폰트 433KB(라이선스로 못 줄임) · 중복 주제 8쌍 301 미처리.
 
 [장표 출처 — 화면에서는 뺌] GSC·curl 실측 (11-06) · FE 1891ad2 · fdcdd87 · 3832cea · 11505c1 · a4cda5a · 4f5aaf6 · #212→#218 (모두 origin/prod) · GSC 11-04 색인 1 / 미색인 224</template></section>
-<section class="slide " data-order="59" data-title="GitHub는 최소 권한으로 연결하고, 토큰과 세션은 원문을 남기지 않음">
+<section class="slide " data-order="61" data-title="GitHub는 최소 권한으로 연결하고, 토큰과 세션은 원문을 남기지 않음">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A16</div><h1 class="title">GitHub는 <span class="purple">최소 권한</span>으로 연결하고, 토큰과 세션은 원문을 남기지 않음</h1></header>
@@ -4955,7 +4978,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
 🔴 확인 필요: 커밋 판정(OpenAI)과 조건부 TTS 호출이 개인정보처리방침 국외 이전 항목에 고지됐는지(부록 A10 노트 R1). 보안을 앞세우면 Q&amp;A에서 물을 수 있음.
 
 [장표 출처 — 화면에서는 뺌] BE origin/prod: auth/GithubTokenCipher(AES-256-GCM, application-prod.yml require-token-encryption: true) · user_session(SHA-256) · prep/corporate/SafeFetcher · admin/AdminAuditService · infra/terraform prod admin.tf(mfa_configuration ON, software_token_mfa) · 최종보고서 개발 타당성과 위험 요소 · 부록 A16</template></section>
-<section class="slide " data-order="60" data-title="최소 권한으로 연결하고, 토큰은 암호화">
+<section class="slide " data-order="62" data-title="최소 권한으로 연결하고, 토큰은 암호화">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A17</div><h1 class="title">최소 권한으로 연결하고, <span class="purple">토큰은 암호화</span></h1></header>
@@ -4964,7 +4987,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
     
   </div>
 <template class="notes">근거 코드: auth/GithubTokenCipher(AES-256-GCM) · user_session(SHA-256 해시) · V38 github_user_id · prep/corporate/SafeFetcher. 레포 범위 선택은 08-07 피드백 후 16일 만(08-23) 반영.</template></section>
-<section class="slide " data-order="61" data-title="커밋 선별 방식은 세 번 바뀌어 Decision Model까지">
+<section class="slide " data-order="63" data-title="커밋 선별 방식은 세 번 바뀌어 Decision Model까지">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A18</div><h1 class="title">커밋 선별 방식은 <span class="purple">세 번 바뀌어</span> Decision Model까지</h1></header>
@@ -4988,7 +5011,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
 ⛔ Jev는 «검토 후 미채택»까지(성능 비교 수치 없음). 각 단계 개선 폭은 전후 측정 없음 — 수치로 말하지 말 것. «커밋 선별 LLM 0회» 금지.
 
 [장표 출처 — 화면에서는 뺌] origin/prod: d7f9b98(06-29 초기 점수식) · e4d9ce8 → 9cf0e6e(09-08 midrank 정규화) · d20e5eb(10-16 Decisions 메시지·패치 판정) · b82467b(10-24 수집 중 병렬) · 최종보고서 수행 방법</template></section>
-<section class="slide " data-order="62" data-title="질문 생성 호출 분할과 난이도 계산 세부">
+<section class="slide " data-order="64" data-title="질문 생성 호출 분할과 난이도 계산 세부">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A19</div><h1 class="title">질문 생성 <span class="purple">호출 분할</span>과 난이도 계산 세부</h1></header>
@@ -5032,7 +5055,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
 근거: 본편 17장 노트와 같음. ⛔ «12% → 78%» 금지, 품질 점수(QI) 개선 주장 금지.
 
 [장표 출처 — 화면에서는 뺌] 최종보고서 품질 개선 결과 2(질문 생성 호출 분할) · question-generation-logic.md (v13, 10-16) · mentor-4-final-report-2026-09-09.md(하드코딩 3곳 · H1 · H2 · QuestionDifficultyTest)</template></section>
-<section class="slide " data-order="63" data-title="분석한 저장소로 쓰는 자기소개서와 포트폴리오">
+<section class="slide " data-order="65" data-title="분석한 저장소로 쓰는 자기소개서와 포트폴리오">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A20</div><h1 class="title">분석한 저장소로 쓰는 <span class="purple">자기소개서와 포트폴리오</span></h1></header>
@@ -5054,7 +5077,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
 ⛔ «합격 자기소개서»·«AI가 대신 써 준다» 표현 금지, 초안과 확인 흐름까지. 캡처 속 계정은 팀원 테스트 계정.
 
 [장표 출처 — 화면에서는 뺌] 최종보고서 주요 기능 4 · 서비스 화면 10(포트폴리오와 자기소개서 작성 도우미, [그림 24]) · BE origin/prod studio/StudioContent(MAX_QUESTIONS 8, MAX_QUESTION_PROJECTS 3) · StudioMaterials(MAX_REPOSITORIES 8) · StudioRepositoryGroups(MAX_PROJECTS 6) · StudioAssistanceService · fe924cb(10-08)</template></section>
-<section class="slide " data-order="64" data-title="소마 이후 B2C 인프라: AWS에서 Vercel과 Oracle Clou">
+<section class="slide " data-order="66" data-title="소마 이후 B2C 인프라: AWS에서 Vercel과 Oracle Clou">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A21</div><h1 class="title">소마 이후 B2C 인프라: <span class="purple">AWS에서 Vercel과 Oracle Cloud로</span></h1></header>
@@ -5090,7 +5113,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 ⛔ 아직 실행하지 않은 계획. «이전 완료»·«비용 0원» 금지(Vercel Pro와 LLM 사용량은 계속 나감). 현재 AWS 월 청구액은 근거 자료가 없어 장표에 비교 수치를 쓰지 않음. B2B 콘솔은 이 장의 범위 밖.
 
 [장표 출처 — 화면에서는 뺌] infra/terraform/prod terraform.tfvars, speech.tf (2026-11-13) · Oracle Cloud Free Tier, Vercel Pricing 공개 요금표</template></section>
-<section class="slide " data-order="65" data-title="DevFit Enterprise 사용 설명서 1: ATS + GitHub">
+<section class="slide " data-order="67" data-title="DevFit Enterprise 사용 설명서 1: ATS + GitHub">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A22</div><h1 class="title">DevFit Enterprise 사용 설명서 1: <span class="purple">ATS + GitHub</span> 구성과 분석 범위</h1></header>
@@ -5103,7 +5126,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
-<section class="slide " data-order="66" data-title="DevFit Enterprise 사용 설명서 2: 코드 면접 (브리프 ·">
+<section class="slide " data-order="68" data-title="DevFit Enterprise 사용 설명서 2: 코드 면접 (브리프 ·">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A23</div><h1 class="title">DevFit Enterprise 사용 설명서 2: <span class="purple">코드 면접</span> (브리프 · 질문 가이드 · 커밋 근거)</h1></header>
@@ -5116,7 +5139,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
-<section class="slide " data-order="67" data-title="DevFit Enterprise 사용 설명서 3: 채용 관리(ATS) 대">
+<section class="slide " data-order="69" data-title="DevFit Enterprise 사용 설명서 3: 채용 관리(ATS) 대">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A24</div><h1 class="title">DevFit Enterprise 사용 설명서 3: <span class="purple">채용 관리(ATS)</span> 대시보드 · 지원 접수 · 전형 단계</h1></header>
@@ -5129,7 +5152,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
-<section class="slide " data-order="68" data-title="DevFit Enterprise 사용 설명서 4: 협업 평가 코멘트 · ">
+<section class="slide " data-order="70" data-title="DevFit Enterprise 사용 설명서 4: 협업 평가 코멘트 · ">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A25</div><h1 class="title">DevFit Enterprise 사용 설명서 4: <span class="purple">협업 평가</span> 코멘트 · 평가표 · 일정 · 메일</h1></header>
@@ -5142,7 +5165,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
-<section class="slide " data-order="69" data-title="DevFit Enterprise 사용 설명서 5: 블라인드 채용과 기존 ">
+<section class="slide " data-order="71" data-title="DevFit Enterprise 사용 설명서 5: 블라인드 채용과 기존 ">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A26</div><h1 class="title">DevFit Enterprise 사용 설명서 5: <span class="purple">블라인드 채용</span>과 기존 ATS 비교</h1></header>
@@ -5155,6 +5178,66 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
+<section class="slide " data-order="72" data-title="비성수기 대응: 기업 채용은 상시와 수시 중심">
+  <div class="slide-shell">
+    <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
+    <header class="topline"><div class="eyebrow">Appendix · A27</div><h1 class="title">비성수기 대응: 기업 채용은 <span class="purple">상시와 수시 중심</span></h1></header>
+    <div class="slide-content">
+<div style="display:flex;flex-direction:column;justify-content:center;gap:34px;flex:1;min-height:0;padding-bottom:24px"><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px"><div class="panel kpi " style=""><div class="kpi-k">채용 시기</div><div class="metric ">42.6%</div><div class="metric-label">하반기 채용 시기 응답 1위가 "상시 채용"<br>인사담당자 569명 (7~9월 29.2%, 10~12월 17.4%)</div></div><div class="panel kpi " style=""><div class="kpi-k">채용 방식</div><div class="metric ">54.8%</div><div class="metric-label">"수시채용만 실시" 응답<br>100인 이상 기업 500곳 (공채 병행 35%)</div></div><div class="panel kpi " style=""><div class="kpi-k">개발 공고</div><div class="metric ">0.8%</div><div class="metric-label">개발자 공고 10만여 건 중 신입 대상 비중<br>나머지는 연중 열리는 경력 채용</div></div></div>
+<div><table class="matrix plain"><thead><tr><th>조사</th><th>표본</th><th>결과</th></tr></thead><tbody><tr><td>한경협 하반기 신규채용 계획 (2026)</td><td>매출 500대 기업 중 121곳</td><td>공채와 수시 병행 54.9%, 수시만 14.5%, 공채만 30.6%</td></tr><tr><td>고용노동부 기업 채용동향조사 (2023 하반기)</td><td>매출 500대 기업 중 315곳</td><td>정기 공채만 1%, 수시 특채만 20%, 병행 79%</td></tr><tr><td>대한상의 상반기 채용시장 분석 (2025)</td><td>채용 공고 14만 4,181건</td><td>경력만 82%, 신입 전용 2.6%</td></tr></tbody></table></div>
+<div style="background:var(--purple-pale);border-radius:18px;padding:22px 30px;font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1.45;word-break:keep-all">B2C는 연중 이어지는 <strong style="color:var(--purple)">이직 준비 수요</strong>, B2B는 수시 채용에 맞춘 <strong style="color:var(--purple)">지원자 수 종량 요금</strong>으로 대응</div></div></div>
+    <div class="folio"></div>
+    
+  </div>
+<template class="notes">[Q&amp;A: 채용은 상하반기에 몰리는데 비성수기는 어떻게 하나]
+[≈20초] 채용 시즌 쏠림은 신입 공채 이야기입니다. 올해 잡코리아 조사에서 인사담당자 569명 중 가장 많은 42.6%가 하반기에 시기를 정하지 않고 상시로 뽑는다고 답했고, 경총 조사에서는 100인 이상 기업 500곳 중 54.8%가 수시채용만 한다고 답했습니다. 개발 직군은 공고 10만여 건 중 신입 대상이 0.8%뿐이라 대부분이 연중 열리는 경력 채용입니다. 그래서 B2C는 이직 준비 수요가 연중 이어지고, 기업용은 수시 채용에 맞춰 지원자 수 종량으로 갑니다.
+
+출처(2026-11-13 기사 원문 대조, 보도자료 원문은 미열람):
+- 잡코리아 2026 하반기 채용 동향: 인사담당자 569명, 7/14~7/31 조사, 8/10 발표. 하반기 상시 42.6%, 7~9월 29.2%, 10~12월 17.4%, 미정 10.8%. https://ditoday.com/?p=150552
+- 경총 2026년 신규채용 실태조사: 100인 이상 500곳, 2026-03-12 보도. 수시채용만 54.8%, 정기공채와 수시 병행 35%(전년 22.6%). https://www.hankyung.com/article/2026031266707
+- 사람인, 점핏 2025 상반기: 개발자 공고 10만여 건, 신입 0.8%, 5~10년차 39.7%. https://www.etoday.co.kr/news/view/2500510 (research/R4 E4와 같은 자료)
+- 한경협 2026 하반기 신규채용 계획: 매출 500대 중 121곳 응답, 채용계획 수립 기업 기준, 2026-09-29 발표. https://www.dailian.co.kr/news/view/1695135
+- 고용노동부, 한국고용정보원 2023 하반기 기업 채용동향조사: 매출 500대 중 315곳, 2024-03-24 발표. https://m.seoul.co.kr/news/2024/03/24/20240324500040
+- 대한상의 상반기 채용시장 특징과 시사점: 공고 14만 4,181건, 2025-06-24 발표. https://biz.newdaily.co.kr/site/data/html/2025/06/24/2025062400041.html
+
+주의:
+- 한경협 수치는 방향이 반대다. 2026년 500대 기업에서 수시만은 9.9%p 줄고 공채 병행이 17.1%p 늘었다. 대기업 열 곳 중 일곱 곳이 수시채용을 쓴다까지만 말하고, 수시가 늘고 있다고 말하지 말 것.
+- 채용 방식 수치는 전 직군 기준이다. 개발 직군만의 수시 비중이나 월별 공고 추이 통계는 찾지 못했다.
+- DevFit 자체 사용량의 계절성은 운영 4개월이라 실측이 없다(claims.md C12). 우리 수치로 말하지 말 것.
+- 한국노동연구원 수치(대기업 공채 35.8%, 수시 48.3%, 상시 15.9%, 2023)는 보고서명과 표본을 확인하지 못해 쓰지 않았다.
+
+[장표 출처 — 화면에서는 뺌] 잡코리아, 「2026 하반기 채용 동향」, 2026. 경총, 「2026년 신규채용 실태조사」, 2026. 사람인, 「2025 상반기 개발자 채용 리포트」, 2025. 한경협, 고용노동부, 대한상의 각 조사.</template></section>
+<section class="slide " data-order="73" data-title="재방문 비용: AI 비용은 분석하는 날에만 발생">
+  <div class="slide-shell">
+    <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
+    <header class="topline"><div class="eyebrow">Appendix · A28</div><h1 class="title">재방문 비용: AI 비용은 <span class="purple">분석하는 날에만</span> 발생</h1></header>
+    <div class="slide-content">
+<div style="display:flex;flex-direction:column;justify-content:center;gap:30px;flex:1;min-height:0;padding-bottom:20px">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px"><div class="panel kpi " style=""><div class="kpi-k">방문일</div><div class="metric ">49일 중 33일</div><div class="metric-label">자주 들어온 회원 11명의 방문일 가운데<br>AI 비용이 14원 미만인 날 (67%)</div></div><div class="panel kpi soft" style=""><div class="kpi-k">첫 분석일</div><div class="metric purple">75%</div><div class="metric-label">이 회원들 AI 비용 중 첫 분석일 하루에 쓰인 비중<br>이후 방문 35일은 하루 평균 약 98원</div></div><div class="panel kpi " style=""><div class="kpi-k">학습 1회</div><div class="metric ">약 1.7원</div><div class="metric-label">답변 피드백 1회 비용<br>외부 회원 34회 호출 합계 약 58원</div></div></div>
+<div class="dv-rv"><div class="dv-rv-h">자주 들어온 회원의 방문일 49일, 하루 AI 비용별 분포</div><div class="dv-rv-bar"><div style="flex:22"><b>22일</b><span>0원</span></div><div class="m" style="flex:11"><b>11일</b><span>14원 미만</span></div><div class="on" style="flex:16"><b>16일</b><span>14원 이상 (분석 15일, 서류 작성 1일)</span></div></div></div>
+<div style="background:var(--purple-pale);border-radius:18px;padding:20px 30px;font-size:25px;font-weight:800;letter-spacing:-.03em;line-height:1.45;word-break:keep-all">외부 회원 전체 AI 비용의 <strong style="color:var(--purple)">99%가 공고와 저장소 분석</strong>, 답변 피드백과 꼬리질문은 0.2%. 분석 결과를 저장해 두고 다시 읽는 구조라 재방문에는 비용이 거의 붙지 않음</div>
+</div></div>
+    <div class="folio"></div>
+    
+  </div>
+<template class="notes">[Q&amp;A: 자주 쓰는 사람이 늘면 AI 비용이 계속 늘지 않나]
+[≈20초] AI 비용은 공고와 저장소를 분석하는 날에만 듭니다. 3일 이상 들어온 회원 11명의 방문일 49일을 보면 33일은 AI 비용이 14원 미만이었고, 이 회원들 비용의 75%는 첫 분석을 돌린 하루에 쓰였습니다. 분석 결과를 저장해 두고 다시 읽으면서 학습하기 때문입니다. 답변 피드백은 한 번에 2원이 안 됩니다.
+
+집계(2026-11-13 운영 DB 읽기 전용 조회, SQL과 결과는 collect/data/revisit_llm_cost_20261113.sql.txt):
+- 대상: role CANDIDATE, guest=false, 내부 계정(user id 1, 5, 7, 11) 제외. 기간은 LLM 호출 기록이 시작된 2026-09-02부터 11-13까지. 환율 1 USD = 1,400원 가정(collect/A와 같음).
+- 자주 들어온 회원 = 활동일 3일 이상 11명(5일 이상 4명, 3~4일 7명). 활동일은 로그인 갱신, 공고 등록, 세트 생성, 답변, LLM 호출, 방문 세션 중 하나라도 있는 날.
+- 회원-일 49일: 비용 0인 날 22, 0 초과 1센트 미만 11, 그 밖 16(생성 비용 1센트 이상 15). 합계 9.913달러(약 13,900원), 1인당 약 1,260원. 하루 평균 0.20달러, 중앙값 0.0002달러. 비용 상위 10% 날(5일)이 6.653달러로 67%.
+- 첫 분석일 비용 7.464달러(75.3%), 이후 2.448달러(활동일 35일, 하루 평균 약 98원).
+- 외부 회원 전체: 생성(공고 구조화, 질문 생성, 어필 포인트 등) 26.33달러 99.0%, 서류 작성 0.21달러 0.8%, 학습(답변 피드백, 꼬리질문 피드백, 음성) 0.041달러 0.2%, 34회라 1회 약 1.7원.
+
+주의:
+- «공고 분석을 한 번만 돌린다»고 말하지 말 것. 이 11명이 등록한 공고는 23건(1인당 중앙값 2건, 1건만 등록한 회원은 5명)이다. 말할 수 있는 것은 «비용은 분석하는 날에만 든다»까지.
+- 표본이 11명, 49일로 작다. 비율보다 건수로 말할 것.
+- 커밋 판정 모델(commit_decision) 호출은 단가가 기록되지 않아 비용 합계에서 빠져 있다(외부와 내부 합계 3,050회). 입력 100만 토큰당 0.1달러 수준이라 영향은 작지만 0은 아니다.
+- 한 회원은 저장소 분석 32건으로 3.13달러를 썼다(11명 합계의 32%). 분석을 많이 돌리면 비용은 그만큼 든다. 그래서 요금제가 분석 횟수 기준이다(A5).
+- 내부 계정을 포함하면 활동일 3일 이상 15명, 131일 중 84일이 14원 미만(64%)으로 비슷하다.
+
+[장표 출처 — 화면에서는 뺌] 운영 DB llm_usage_event, 2026-09-02~11-13, 내부 계정 4개와 체험 계정 제외, 1 USD = 1,400원 가정</template></section>
 </main>
 <nav id="hud" aria-label="슬라이드 탐색"><button id="prev" type="button" aria-label="이전 슬라이드">‹</button><span id="counter">1 / 1</span><button id="next" type="button" aria-label="다음 슬라이드">›</button><button id="fullscreen" type="button" aria-label="전체 화면">⛶</button></nav>
 <script>
