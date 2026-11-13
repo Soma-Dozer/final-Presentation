@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="devfit-deck-revision" content="79180faed102">
+<meta name="devfit-deck-revision" content="f20f0f91d0b6">
 <meta name="theme-color" content="#121016"><title>DevFit 최종발표 — Team Dozer</title>
 <style>
 @font-face {
@@ -1840,26 +1840,27 @@ img{display:block}
 .in-midterm-punchline{margin:0;text-align:center;font-size:56px;font-weight:900;line-height:1.3;letter-spacing:-.045em;color:var(--purple-deep)}
 
 .in-profile-slide .topline{min-height:132px}
-.in-profile-wrap{display:flex;flex-direction:column;gap:14px;flex:1;min-height:0;padding:4px 0 8px}
-.in-profile-banner{display:flex;align-items:baseline;justify-content:space-between;gap:24px;background:var(--purple);color:#fff;border-radius:16px;padding:10px 24px}
-.in-profile-banner b{font-size:31px;line-height:1.25;font-weight:900;letter-spacing:-.04em}
-.in-profile-banner span{font-size:21px;font-weight:750}
-.in-profile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;flex:1;min-height:0}
-.in-profile-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.in-profile-head{display:flex;align-items:center;gap:16px;min-height:60px}
-.in-profile-head img{width:60px;height:60px;border-radius:50%;object-fit:cover;flex:none}
-.in-profile-head h3{font-size:36px;line-height:1.15;font-weight:900;margin:0 0 5px;letter-spacing:-.04em}
-.in-profile-role{font-size:20px;font-weight:850;line-height:1.3;color:var(--purple-deep);letter-spacing:-.025em}
-.in-profile-bio,.in-profile-work{padding:12px 14px;border:1px solid var(--line);border-radius:13px;min-width:0}
-.in-profile-bio{background:#f6f4ff;min-height:300px}
-.in-profile-work{background:#fff;flex:1}
-.in-profile-card h4{font-size:21px;line-height:1.25;color:var(--purple-deep);font-weight:900;margin:0 0 7px}
-.in-profile-rows{display:flex;flex-direction:column;gap:4px}
-.in-profile-row{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:8px;align-items:baseline}
-.in-profile-row>b{font-size:19px;line-height:1.32;color:var(--purple-deep);font-weight:850}
-.in-profile-card p{font-size:20px;line-height:1.32;font-weight:650;letter-spacing:-.045em;margin:0;word-break:keep-all;overflow-wrap:break-word}
-.in-profile-work .in-profile-row{grid-template-columns:58px minmax(0,1fr)}
-.in-profile-work .in-profile-rows{gap:5px}
+.in-profile-wrap{display:flex;flex-direction:column;gap:16px;flex:1;min-height:0;padding:4px 0 8px}
+.in-profile-summary{display:flex;align-items:baseline;justify-content:space-between;gap:24px;font-size:25px;line-height:1.3;font-weight:750;color:var(--ink)}
+.in-profile-summary span{font-size:20px;font-weight:600}
+.in-profile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;flex:1;min-height:0}
+.in-profile-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.in-profile-head{display:flex;align-items:center;gap:18px;min-height:64px}
+.in-profile-head img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none}
+.in-profile-head h3{font-size:36px;line-height:1.15;font-weight:900;margin:0 0 6px;letter-spacing:-.04em}
+.in-profile-role{font-size:21px;font-weight:750;line-height:1.3;color:var(--purple-deep);letter-spacing:-.025em}
+.in-profile-card p{font-size:21px;line-height:1.35;font-weight:550;letter-spacing:-.035em;margin:0;word-break:keep-all}
+.in-profile-card .in-profile-education{font-size:22px;line-height:1.4;font-weight:650;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.in-profile-bio{flex:1;min-width:0}
+.in-profile-card h4{font-size:21px;line-height:1.3;color:var(--ink);font-weight:850;margin:0 0 12px}
+.in-profile-bio ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.in-profile-bio li{position:relative;padding-left:14px;font-size:21px;line-height:1.35;font-weight:550;letter-spacing:-.035em;word-break:keep-all}
+.in-profile-bio li::before{content:"";position:absolute;left:0;top:.56em;width:4px;height:4px;border-radius:50%;background:#8a819c}
+.in-profile-work{background:#f6f4ff;border-radius:14px;padding:14px;min-width:0}
+.in-profile-work h4{color:var(--purple-deep);margin-bottom:14px}
+.in-profile-tasks{display:flex;flex-direction:column;gap:9px}
+.in-profile-task b{font-weight:800;color:var(--ink)}
+.in-profile-task p{font-size:21px;line-height:1.35}
 
 /* ---- s2_dev ---- */
 
@@ -3918,7 +3919,7 @@ Q&amp;A: 침투 테스트와 외부 보안 감사 없음 · 세부 조치는 부
  <div class="slide-shell">
   <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
   <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">역할을 나누고 <span class="purple">핵심 기능을 함께</span> 만들었습니다</h1></header>
-  <div class="slide-content"><div class="in-profile-wrap"><div class="in-profile-banner"><b>3명 모두 학교 병행 · 1명은 고등학생</b><span>AI·SW마에스트로 17기 · Team Dozer</span></div><div class="in-profile-grid"><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-park-cheonwoong.jpg?v=023fce514542" alt="박천웅"><div><h3>박천웅</h3><div class="in-profile-role">팀장 · 인프라·분석 엔진</div></div></div><section class="in-profile-bio"><h4>이력 · 수상 · 활동</h4><div class="in-profile-rows"><div class="in-profile-row"><b>학력</b><p>숭실대학교 소프트웨어학부<br>화이트햇 스쿨 1기</p></div><div class="in-profile-row"><b>보안</b><p>공군작전사령부 정보보호병 복무<br>화이트햇 콘테스트 합참의장상 (2025)</p></div><div class="in-profile-row"><b>창업</b><p>국방부 창업경진대회 우수상 (2025)<br>공군 창업경진대회 최우수상 (2025)</p></div><div class="in-profile-row"><b>활동</b><p>NASA·Naver·Google 명예의 전당<br>UMC 숭실대 부회장 (2023)</p></div><div class="in-profile-row"><b>자격</b><p>AWS SAA · SQLD · TOPCIT 수준 4</p></div></div></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-rows"><div class="in-profile-row"><b>인프라</b><p>AWS ECS·RDS·CloudFront 구성<br>GitHub Actions·Step Functions 배포 자동화</p></div><div class="in-profile-row"><b>AI 분석</b><p>Bedrock·Decision 연동<br>본인 커밋 판정·코드 근거 질문 생성</p></div><div class="in-profile-row"><b>보안</b><p>GitHub 토큰 암호화·해시 인증<br>의존성 취약점 감사·SBOM 생성</p></div><div class="in-profile-row"><b>운영</b><p>Sentry 오류 수집·관리자 모니터링<br>모델별 LLM 호출 비용 기록</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-kim-gunwoo.jpg?v=5519338b2b4b" alt="김건우"><div><h3>김건우</h3><div class="in-profile-role">PM · 제품 기획·풀스택</div></div></div><section class="in-profile-bio"><h4>이력 · 수상 · 활동</h4><div class="in-profile-rows"><div class="in-profile-row"><b>학력</b><p>단국대부속소프트웨어고등학교<br>KAIST IP 영재기업인교육원 14기 수료</p></div><div class="in-profile-row"><b>AI</b><p>중앙대 고교AI 경진대회 대상 (2026)<br>강남구 AI 문제해결 해커톤 우수상 (2026)</p></div><div class="in-profile-row"><b>창업</b><p>아산유스프러너 피칭 우수상 (2025)<br>KAIST IP-CEO 글로벌 기업가정신 연수</p></div><div class="in-profile-row"><b>발명</b><p>특허 등록 1건 · 특허 출원 12건<br>과학의 날 과기정통부 장관상 표창</p></div><div class="in-profile-row"><b>자격</b><p>COS Pro Python 1급 · 트리즈 1수준</p></div></div></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-rows"><div class="in-profile-row"><b>제품</b><p>랜딩·체험 데모·대시보드·학습실<br>기능 우선순위 결정·풀스택 구현</p></div><div class="in-profile-row"><b>공고</b><p>기업 채용 사이트 공고 수집·캐시<br>회사 기출 수집·연결, 면접 리뷰·KPI</p></div><div class="in-profile-row"><b>결제</b><p>Plus 요금제·토스페이먼츠 연동<br>지원 일정·알림 메일 구현</p></div><div class="in-profile-row"><b>유입</b><p>CS 지식백과 SEO·광고 전환 추적<br>캠페인 유입 추적·질문 분석 하네스</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-noh-jaewon.jpg?v=0e48fb62fde3" alt="노재원"><div><h3>노재원</h3><div class="in-profile-role">모의면접·음성 · B2C·마케팅</div></div></div><section class="in-profile-bio"><h4>이력 · 수상 · 활동</h4><div class="in-profile-rows"><div class="in-profile-row"><b>학력</b><p>숭실대학교 컴퓨터학부<br>한국디지털미디어고 웹프로그래밍과 졸업</p></div><div class="in-profile-row"><b>수상</b><p>한국정보올림피아드 1차 고등부 은상 (2025)<br>전국 창의문제 해결능력 경진대회 금상 (2024)</p></div><div class="in-profile-row"><b>PS</b><p>Codeforces Expert · BOJ 1,300문제 이상<br>경기대 프로그래밍 경진대회 장려상 (2026)</p></div><div class="in-profile-row"><b>활동</b><p>숭실대 알고리즘 소모임 SCCC<br>알고리즘 대회 문제 출제·검토</p></div><div class="in-profile-row"><b>운영</b><p>한국디지털미디어고 제1회 프로그래밍 대회 개최</p></div></div></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-rows"><div class="in-profile-row"><b>음성</b><p>STT·TTS·CPU 음성 사이드카 구현<br>문항 음성 캐싱·대화형 모의면접 화면</p></div><div class="in-profile-row"><b>개선</b><p>음성 수신·전사 분리로 종료 지연 개선<br>모의면접 문항 구성·퀴즈 화면 개선</p></div><div class="in-profile-row"><b>체험</b><p>비로그인 CS 체험·분석 대기 미니게임<br>포트폴리오·자기소개서 Assistant 화면</p></div><div class="in-profile-row"><b>마케팅</b><p>Meta·Google 광고 운영<br>유입·사용 지표 분석, B2C 개선</p></div></div></section></article></div></div></div>
+  <div class="slide-content"><div class="in-profile-wrap"><div class="in-profile-summary">3명 모두 학교 병행 · 1명은 고등학생<span>AI·SW마에스트로 17기 · Team Dozer</span></div><div class="in-profile-grid"><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-park-cheonwoong.jpg?v=023fce514542" alt="박천웅"><div><h3>박천웅</h3><div class="in-profile-role">팀장 · 인프라·분석 엔진</div></div></div><p class="in-profile-education">숭실대학교 소프트웨어학부<br>화이트햇 스쿨 1기</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>공군작전사령부 정보보호병 복무</li><li>화이트햇 콘테스트 합참의장상 (2025)<br>국방부 창업경진대회 우수상 (2025)</li><li>NASA·Naver·Google 명예의 전당</li><li>대학연합 개발동아리 UMC 숭실대 부회장</li><li>AWS SAA · SQLD · TOPCIT 수준 4</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>인프라·운영</b> · AWS ECS·RDS·CloudFront 구성<br>배포 자동화·모니터링·LLM 비용 기록</p></div><div class="in-profile-task"><p><b>AI 분석</b> · Bedrock·Decision 연동<br>본인 커밋 판정·코드 근거 질문 생성</p></div><div class="in-profile-task"><p><b>인증·보안</b> · GitHub 토큰 암호화<br>해시 인증·취약점 감사·SBOM 생성</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-kim-gunwoo.jpg?v=5519338b2b4b" alt="김건우"><div><h3>김건우</h3><div class="in-profile-role">PM · 제품 기획·풀스택</div></div></div><p class="in-profile-education">단국대부속소프트웨어고등학교<br>KAIST IP 영재기업인교육원 14기 수료</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>중앙대 고교AI 경진대회 대상 (2026)<br>강남구 AI 문제해결 해커톤 우수상 (2026)</li><li>아산유스프러너 피칭 우수상 (2025)</li><li>KAIST IP-CEO 글로벌 기업가정신 연수</li><li>특허 등록 1건·출원 12건<br>과학의 날 과기정통부 장관상 표창</li><li>COS Pro Python 1급 · 트리즈 1수준</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>제품·공고</b> · 랜딩·대시보드·학습실 구현<br>체험 데모·기업 공고 수집·캐시</p></div><div class="in-profile-task"><p><b>기출·결제</b> · 기출 연결·면접 리뷰·KPI<br>Plus·토스 결제·지원 일정 알림</p></div><div class="in-profile-task"><p><b>유입·검증</b> · SEO·광고 전환·유입 추적<br>질문 문항 분석 하네스</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-noh-jaewon.jpg?v=0e48fb62fde3" alt="노재원"><div><h3>노재원</h3><div class="in-profile-role">모의면접·음성 · B2C·마케팅</div></div></div><p class="in-profile-education">숭실대학교 컴퓨터학부<br>한국디지털미디어고 웹프로그래밍과 졸업</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>한국정보올림피아드 1차 고등부 은상 (2025)<br>전국 창의문제 해결능력 경진대회 금상 (2024)</li><li>경기대 프로그래밍 경진대회 장려상 (2026)</li><li>Codeforces Expert · BOJ 1,300문제 이상</li><li>숭실대 SCCC · 알고리즘 대회 출제·검토</li><li>한국디지털미디어고 제1회<br>프로그래밍 대회 개최</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>음성</b> · STT·TTS·CPU 사이드카·음성 캐싱<br>음성 수신·전사 분리로 종료 지연 개선</p></div><div class="in-profile-task"><p><b>체험·서류</b> · 비로그인 CS·퀴즈·미니게임<br>포트폴리오·자기소개서 Assistant 화면</p></div><div class="in-profile-task"><p><b>마케팅</b> · Meta·Google 광고 운영<br>유입·사용 지표 분석, B2C 개선</p></div></div></section></article></div></div></div>
   <div class="folio"></div>
  </div>
 <template class="notes">[장 연결] 지금까지 소개한 DevFit을 함께 만든 팀의 협업 과정을 말씀드리겠습니다.
