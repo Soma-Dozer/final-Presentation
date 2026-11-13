@@ -631,6 +631,28 @@ APX.note('''[부록 · 11-10 사용자 지시로 본편에서 이동] 현업 면
 로고: 회사 로고는 소속 표시로만 — 회사가 DevFit을 쓰거나 후원한다는 뜻이 아님. «각 회사에서 면접관 경험» · «전체 검토»는 claims.md C4. «기술면접이 까다로운 게임 개발» = C5 («가장» 금지).
 추가 반영 항목 근거(collect/I-feedback-patterns.md §1-2): 한유일 09-07 → AI 코치 출력 상한 1280→8192 BE c5a3ac7(당일) · 음성 STT·TTS·음성 꼬리질문 BE 98ebb0f 등(09-16 운영) · private scope 보존 FE 61fbe10·BE 7399ff1(09-09·09-16). 김준엽 «CS·프로젝트 비중은 인재상 따라 상이»·«자사는 GitHub를 AI로 검토» = 10-26 회신 요지(05-현장검증.md §3). 김한빛 «주간 개선 루프»는 매주 멘토링 + 하네스 개선 이력(사용자 진술 11-06) 기반 서술.''')
 
+# ---------- 부록 A27: 비성수기 대응 (2026-11-13 사용자: Q&A «비성수기는 어떻게 하나» 대비) ----------
+APX.append(shell('Appendix · A27', '비성수기 대응: 기업 채용은 <span class="purple">상시와 수시 중심</span>', f"""
+<div style="display:flex;flex-direction:column;justify-content:center;gap:34px;flex:1;min-height:0;padding-bottom:24px"><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px">{kpi('42.6%', '하반기 채용 시기 응답 1위가 "상시 채용"<br>인사담당자 569명 (7~9월 29.2%, 10~12월 17.4%)', '채용 시기')}{kpi('54.8%', '"수시채용만 실시" 응답<br>100인 이상 기업 500곳 (공채 병행 35%)', '채용 방식')}{kpi('0.8%', '개발자 공고 10만여 건 중 신입 대상 비중<br>나머지는 연중 열리는 경력 채용', '개발 공고')}</div>
+<div>{table(['조사', '표본', '결과'], [['한경협 하반기 신규채용 계획 (2026)', '매출 500대 기업 중 121곳', '공채와 수시 병행 54.9%, 수시만 14.5%, 공채만 30.6%'], ['고용노동부 기업 채용동향조사 (2023 하반기)', '매출 500대 기업 중 315곳', '정기 공채만 1%, 수시 특채만 20%, 병행 79%'], ['대한상의 상반기 채용시장 분석 (2025)', '채용 공고 14만 4,181건', '경력만 82%, 신입 전용 2.6%']], 'plain')}</div>
+<div style="background:var(--purple-pale);border-radius:18px;padding:22px 30px;font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1.45;word-break:keep-all">B2C는 연중 이어지는 <strong style="color:var(--purple)">이직 준비 수요</strong>, B2B는 수시 채용에 맞춘 <strong style="color:var(--purple)">지원자 수 종량 요금</strong>으로 대응</div></div>""", source='잡코리아, 「2026 하반기 채용 동향」, 2026. 경총, 「2026년 신규채용 실태조사」, 2026. 사람인, 「2025 상반기 개발자 채용 리포트」, 2025. 한경협, 고용노동부, 대한상의 각 조사.'))
+APX.note("""[Q&A: 채용은 상하반기에 몰리는데 비성수기는 어떻게 하나]
+[≈20초] 채용 시즌 쏠림은 신입 공채 이야기입니다. 올해 잡코리아 조사에서 인사담당자 569명 중 가장 많은 42.6%가 하반기에 시기를 정하지 않고 상시로 뽑는다고 답했고, 경총 조사에서는 100인 이상 기업 500곳 중 54.8%가 수시채용만 한다고 답했습니다. 개발 직군은 공고 10만여 건 중 신입 대상이 0.8%뿐이라 대부분이 연중 열리는 경력 채용입니다. 그래서 B2C는 이직 준비 수요가 연중 이어지고, 기업용은 수시 채용에 맞춰 지원자 수 종량으로 갑니다.
+
+출처(2026-11-13 기사 원문 대조, 보도자료 원문은 미열람):
+- 잡코리아 2026 하반기 채용 동향: 인사담당자 569명, 7/14~7/31 조사, 8/10 발표. 하반기 상시 42.6%, 7~9월 29.2%, 10~12월 17.4%, 미정 10.8%. https://ditoday.com/?p=150552
+- 경총 2026년 신규채용 실태조사: 100인 이상 500곳, 2026-03-12 보도. 수시채용만 54.8%, 정기공채와 수시 병행 35%(전년 22.6%). https://www.hankyung.com/article/2026031266707
+- 사람인, 점핏 2025 상반기: 개발자 공고 10만여 건, 신입 0.8%, 5~10년차 39.7%. https://www.etoday.co.kr/news/view/2500510 (research/R4 E4와 같은 자료)
+- 한경협 2026 하반기 신규채용 계획: 매출 500대 중 121곳 응답, 채용계획 수립 기업 기준, 2026-09-29 발표. https://www.dailian.co.kr/news/view/1695135
+- 고용노동부, 한국고용정보원 2023 하반기 기업 채용동향조사: 매출 500대 중 315곳, 2024-03-24 발표. https://m.seoul.co.kr/news/2024/03/24/20240324500040
+- 대한상의 상반기 채용시장 특징과 시사점: 공고 14만 4,181건, 2025-06-24 발표. https://biz.newdaily.co.kr/site/data/html/2025/06/24/2025062400041.html
+
+주의:
+- 한경협 수치는 방향이 반대다. 2026년 500대 기업에서 수시만은 9.9%p 줄고 공채 병행이 17.1%p 늘었다. 대기업 열 곳 중 일곱 곳이 수시채용을 쓴다까지만 말하고, 수시가 늘고 있다고 말하지 말 것.
+- 채용 방식 수치는 전 직군 기준이다. 개발 직군만의 수시 비중이나 월별 공고 추이 통계는 찾지 못했다.
+- DevFit 자체 사용량의 계절성은 운영 4개월이라 실측이 없다(claims.md C12). 우리 수치로 말하지 말 것.
+- 한국노동연구원 수치(대기업 공채 35.8%, 수시 48.3%, 상시 15.9%, 2023)는 보고서명과 표본을 확인하지 못해 쓰지 않았다.""")
+
 def docimg(src, alt, ratio, cap=''):
     c = f'<div class="cap">{cap}</div>' if cap else ''
     return f'<div class="docimg" style="aspect-ratio:{ratio}"><img src="assets/{src}" alt="{alt}">{c}</div>'
@@ -640,6 +662,64 @@ BIZ_SRC = 'cert-biz.png' if _os.path.exists(_os.path.join(_os.path.dirname(OUT),
 def stackdoc(src, alt, cap, left, top, rot, z):
     return f'<div class="sd" style="left:{left}px;top:{top}px;transform:rotate({rot}deg);z-index:{z}"><img src="assets/{src}" alt="{alt}"><span class="tag">{cap}</span></div>'
 pat = [('patent-a.png', '10-2026-0214808', '선별'), ('patent-b.png', '10-2026-0214809', '생성'), ('patent-c.png', '10-2026-0214811', '음성')]
+
+# ---------- 사업 운영 기반 · 이전 통합 장표 복원 (2026-11-13) ----------
+# (2026-11-13 사용자: 합친 장 대신 사업자, 직업정보, 특허 3장으로 되돌림. 합친 장은 보류)
+class _Park(list):
+    def note(self, t): pass
+PARK = _Park()  # 보류: 덱에 안 들어감
+PARK.append(shell('Effect', '사업 운영 기반을 갖추고, <span class="purple">상표·핵심 기술을 출원</span>했습니다', '\n<div class="ef-foundation-grid">\n  <article class="ef-foundation-card">\n    <div class="ef-foundation-kicker">사업 운영</div>\n    <h3>사업자등록·통신판매업<br>신고 완료</h3>\n    <div class="ef-foundation-docs">\n      <figure><img src="assets/cert-biz.png" alt="사업자등록증 전체"><figcaption><b>사업자등록</b><span>도저랩스 · 09/02 개업</span></figcaption></figure>\n      <figure><img src="assets/cert-mail.png" alt="통신판매업 신고증 전체"><figcaption><b>통신판매업 신고</b><span>11/02 신고</span></figcaption></figure>\n    </div>\n    <div class="ef-foundation-result">서비스 운영·결제를 위한 사업 기반</div>\n  </article>\n  <article class="ef-foundation-card">\n    <div class="ef-foundation-kicker">채용 정보 제공</div>\n    <h3>직업정보제공사업<br>신고 완료</h3>\n    <div class="ef-foundation-docs single">\n      <figure><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증 전체"><figcaption><b>서울청 제2026-31호</b><span>10/19 신고</span></figcaption></figure>\n    </div>\n    <div class="ef-foundation-result">직업정보제공사업자로 신고</div>\n  </article>\n  <article class="ef-foundation-card ef-foundation-ip">\n    <div class="ef-foundation-kicker">브랜드·기술 보호</div>\n    <div class="ef-foundation-trademark">\n      <img src="assets/ef-trademark.png" alt="DevFit 상표 출원공고결정서 전체">\n      <div><h3>DevFit 상표<br>출원공고 결정</h3><p>제42류 · 11/06</p></div>\n    </div>\n    <div class="ef-foundation-patents">\n      <h3>핵심 기술 <strong>3건</strong> 특허 출원</h3>\n      <div class="ef-foundation-patent-docs">\n        <figure><img src="assets/patent-a.png" alt="질문 선별 특허 출원번호통지서 10-2026-0214808"><figcaption>질문 선별</figcaption></figure>\n        <figure><img src="assets/patent-b.png" alt="질문 생성 특허 출원번호통지서 10-2026-0214809"><figcaption>질문 생성</figcaption></figure>\n        <figure><img src="assets/patent-c.png" alt="음성 답변 평가 특허 출원번호통지서 10-2026-0214811"><figcaption>음성 답변 평가</figcaption></figure>\n      </div>\n    </div>\n    <div class="ef-foundation-result">상표 출원공고 결정 · 특허 3건 출원</div>\n  </article>\n</div>', cls='ef-foundation-slide', source='사업자등록증·통신판매업 신고증·직업정보제공사업 신고확인증·상표 출원공고결정서·특허 출원번호통지서 3건'))
+PARK.note('[약 13초] 사업자등록과 통신판매업·직업정보제공사업 신고를 마쳤습니다. DevFit 상표는 출원공고 결정을 받았고, 질문 선별·질문 생성·음성 답변 평가의 핵심 기술은 특허 3건으로 출원했습니다.\n\n[기존 33~35쪽 통합 · 증빙 및 질의응답 근거 보존]\n[사업자등록 · 통신판매업 신고 · 상표 출원]\n[증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서) · 통신판매업 신고증(제2026-서울서초-3702호, 11-02) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).\n상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지. ⛔ «매출» · «공동대표» 금지.\n\n[직업정보제공사업 신고]\n[직업정보제공사업 신고 · 법률 멘토링 메모 — Q&A용]\n직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.\n법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).\n개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).\n순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 Effect 직업정보제공사업 장.\n\n[핵심 기술 3건 특허 출원: 질문 선별 · 질문 생성 · 음성 답변 평가]\n[증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).\n명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.\n⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A8.')
+
+S.append(shell('Effect', '<span class="purple">사업자등록 · 통신판매업 신고 · 상표 출원</span>', f'''
+<div class="ef-d3">
+  <figure><img src="assets/{BIZ_SRC}" alt="사업자등록증"><figcaption><b>사업자등록증</b>도저랩스 · 개업 2026-09-02</figcaption></figure>
+  <figure><img src="assets/cert-mail.png" alt="통신판매업 신고증"><figcaption><b>통신판매업 신고증</b>제2026-서울서초-3702호 · 11-02</figcaption></figure>
+  <figure><img src="assets/ef-trademark.png" alt="DevFit 상표 출원공고결정서 (제42류, 출원번호 40-2026-0177374)"><figcaption><b>상표 출원공고 결정</b>DevFit · 제42류 · 40-2026-0177374</figcaption></figure>
+</div>''', source='증빙 원본 스캔·캡처 그대로 (자르거나 가리지 않음) · 상표는 출원공고 결정 단계'))
+S.note('''[≈10초] 결제를 받으려면 서류가 필요했습니다. 사업자등록과 통신판매업 신고를 마쳤고, DevFit이라는 이름은 상표로 출원해 출원공고 결정까지 받았습니다.
+
+[증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서) · 통신판매업 신고증(제2026-서울서초-3702호, 11-02) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).
+상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지. ⛔ «매출» · «공동대표» 금지.''')
+
+S.append(shell('Effect', '<span class="purple">직업정보제공사업</span> 신고', '''
+<div class="ef-dj">
+  <div class="ef-law-doc"><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증"><span class="tag">신고확인증 · 서울청 제2026-31호 · 2026-10-19</span></div>
+  <div class="r">
+    <div class="ef-law-act">
+      <h4>직업안정법</h4>
+      <p><b>제2조의2(정의)</b> 8. "직업정보제공사업"이란 신문, 잡지, 그 밖의 간행물 또는 유선ㆍ무선방송이나 컴퓨터통신 등으로 구인ㆍ구직 정보 등 직업정보를 제공하는 사업을 말한다.</p>
+      <p><b>제23조(직업정보제공사업의 신고)</b> ① 직업정보제공사업을 하려는 자(제18조에 따라 무료직업소개사업을 하는 자와 제19조에 따라 유료직업소개사업을 하는 자는 제외한다)는 고용노동부장관에게 신고하여야 한다. 신고 사항을 변경하는 경우에도 또한 같다.</p>
+      <span class="src">법률 제20121호, 2024. 1. 23., 일부개정 · 국가법령정보센터 원문</span>
+    </div>
+    <div class="why">서울노동청에 <b>정식 신고된 직업정보제공사업자</b>로서 보다 정확하고 다양한 직업 정보를 제공</div>
+  </div>
+</div>''', source='신고확인증 원본 그대로 (자르거나 가리지 않음) · 직업안정법 [법률 제20121호, 2024. 1. 23., 일부개정] 국가법령정보센터 원문'))
+S.note('''[≈10초] 채용공고를 모아 보여 주는 서비스는 직업안정법상 직업정보제공사업입니다. 10월 19일에 서울고용노동청에 신고를 마쳤고, 그래서 여러 채용 플랫폼과 기업 사이트의 공고를 정식 사업자로서 한곳에 모아, 출처가 분명한 최신 원문으로 보여 줄 수 있습니다.
+
+[직업정보제공사업 신고 · 법률 멘토링 메모 — Q&A용]
+직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.
+법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).
+개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).
+순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 부록 A16.''')
+
+spec = [('patent-spec-a.png', '선별'), ('patent-spec-b.png', '생성'), ('patent-spec-c.png', '음성')]
+
+spec = [('patent-spec-a.png', '선별'), ('patent-spec-b.png', '생성'), ('patent-spec-c.png', '음성')]
+S.append(shell('Effect', '핵심 기술 3건 <span class="purple">특허 출원</span>: 질문 선별 · 질문 생성 · 음성 답변 평가', f'''
+<div class="ef-dp">
+  <div class="l"><div class="hd">출원번호통지서 (2026-11-01)</div>
+    {''.join(f"""<div class="nt" style="left:{i*34}px;top:{38+i*168}px;z-index:{i+1}"><img src="assets/{f}" alt="{n} 출원번호통지서"><span class="tag">{k} · {n}</span></div>""" for i, (f, n, k) in enumerate(pat))}
+  </div>
+  <div class="r"><div class="hd">특허 명세서</div>
+    {''.join(f"""<div class="sp" style="left:{i*120}px;top:{38+i*22}px;z-index:{i+1};transform:rotate({(i-1)*1.6}deg)"><img src="assets/{f}" alt="{k} 특허 명세서 첫 장"><span class="tag">{k}</span></div>""" for i, (f, k) in enumerate(spec))}
+  </div>
+</div>''', source='출원번호통지서 원본 캡처 · 명세서는 출원 제출본 docx 첫 장 렌더링 (특허/A_면접질문선별, B_면접질문생성, C_음성모의면접) · 출원 단계'))
+S.note('''[≈10초] 핵심 기술은 특허 3건으로 출원했습니다. 커밋에서 면접 질문을 고르는 방법, 근거를 대조해 질문을 만드는 방법, 음성 대화로 답변을 평가하는 방법입니다. 왼쪽이 출원번호통지서, 오른쪽이 명세서입니다.
+
+[증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).
+명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.
+⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A9.''')
 
 # ---------- 시장 규모 (11-11 사용자 지시: TAM·SAM·SOM 표, B2C·B2B 하이브리드) ----------
 S.append(shell("Effect", '<span class="purple">시장 규모</span>와 가격 선정 근거', '\n<div class="ef-one ef-market-pricing">\n  <div class="ef-mk-left"><div class="ef-circ">\n    <div class="c tam"><em>TAM</em><b>약 66조 원</b><span>글로벌 개발자 채용·인력공급 + 코딩면접 준비</span><code>인력공급 61.1조<br>+ 면접 준비 5.1조</code></div>\n    <div class="c sam"><em>SAM</em><b>약 6,600억 원</b><span>국내 개발자 채용매칭 + 취업·면접 준비</span><code>채용매칭 6,500억<br>+ 면접 준비 100억</code></div>\n    <div class="c som"><em>SOM</em><b>연 3.3억 원</b><span>3년 차 목표 매출</span><code>B2C 0.9억<br>+ B2B 2.3억</code></div>\n  </div><div class="ef-mk-src"><p><b>TAM</b> 61.1조 = Mordor Intelligence 글로벌 IT 인력공급 2025년 1,233억 달러 × SW 개발자 비중 37.05% · 5.1조 = DataIntelo 글로벌 코딩면접 준비 2025년 38억 달러 · 환율 1,337원/달러(2026-11-13)</p><p><b>SAM</b> 6,500억 = 대신증권 원티드랩 리포트(2022-11)의 2025년 개발자 매칭 이직 시장 전망 · 100억 = 개발자 구직·이직 준비자 20만 명 × 1인 5만 원(내부 가정)</p><p><b>SOM</b> B2C = 구직자 38.8만 명 × 유료 1% × 23,700원(최종보고서 시나리오) · B2B = 고객사 15곳(가정) × 월 13만 원 × 12개월</p></div></div>\n  <div class="ef-one-r">\n    <div class="ef-one-k">\n      <div><small>연간 개발 직군 입사지원</small><b>약 520만 건</b><i>사람인 · 점핏 2025 상반기 260만 건 × 2</i><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 점핏 「2025 개발자 채용 리포트」 jumpit.saramin.co.kr/report/2025/recruit · ×2는 하반기 동일 가정</small></div>\n      <div class="op">÷ 13.4회</div>\n      <div class="hi"><small>면접을 준비하는 개발자 구직자</small><b>약 38.8만 명</b><i>1인 평균 입사지원 13.4회 (한경협 2025)</i><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 한국경제인협회 2025 대학생 취업인식 조사(머니투데이 2025-12-09 보도)</small></div>\n    </div>\n    <div class="ef-price-basis">\n      <article class="ef-price-card">\n        <div class="ef-price-label">B2C · 구직자의 지불 의향을 참고한 가격</div>\n        <div class="ef-price-amount">월 <b>7,900원</b><span>× 유료 이용 3개월 = 23,700원</span></div>\n        <p>구직자 인터뷰: 면접 1회 <strong>1만 원</strong>, 준비 기간 <strong>2만 원</strong> 지불 의향<br>SOM: 구직자 38.8만 명 중 1% 유료 × 23,700원 = 약 0.9억 원</p><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 구직자 1명 1:1 인터뷰(20세, 프론트엔드 인턴 지원 경험, 중간평가 덱 수록) · 7,900원 = DevFit Plus 실제 요금 · 3개월 = 내부 가정</small>\n      </article>\n      <article class="ef-price-card">\n        <div class="ef-price-label">B2B · 기업 구독 (기획 요금)</div>\n        <div class="ef-price-amount">고객사당 월 <b>13만 원</b><span>Team 플랜 평균 가정</span></div>\n        <p>지원자 수 기준 과금, 월 구독은 보조<br>SOM: 3년 차 고객사 15곳 × 13만 원 × 12개월 = 약 2.3억 원</p><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 기획 문서 B2B 요금 티어(Team 월 12만 원·지원자 20명 포함, 고객사 평균 매출 13만 원, 미배포) · 고객사 15곳은 내부 가정</small>\n      </article>\n      <div class="ef-price-cost"><b>분석 1회 변동비 약 330원</b><span>저장소 3개 기준 · B2C와 B2B가 분석 엔진 공유</span><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 최종보고서 단위 경제성, AWS CloudWatch 실측(LLM 호출 비용, 인건비·고정비 제외)</small></div>\n    </div>\n  </div>\n</div>', cls='ef-market-slide', source='Mordor Intelligence IT Staffing · DataIntelo Coding Interview Preparation · 대신증권 원티드랩 리포트(2022-11) · 점핏 2025 · 한경협 2025 · 최종보고서 · 기획 문서 B2B 요금 티어'))
@@ -691,8 +771,8 @@ Q&A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비공개
 ''')
 
 
-S.append(shell('Effect', 'B2C와 B2B를 잇는 <span class="purple">하나의 채용 플랫폼</span>', '<div class="ef-platform-original">\n  <div class="ef-platform-picture"><img src="assets/vision-diagram.png" alt="DevFit Platform 비전 — B2C 준비와 B2B 검증을 하나의 개발자 채용 플랫폼으로"></div>\n  <div class="ef-chips"><span>① B2C 준비 · 운영 중 · 결제 LIVE</span><span class="dev">② B2B Enterprise · 개발 완료</span><span>③ 공고 29곳 수집 · 지원 여정 트래커</span></div>\n  <div class="ef-platform-summary">\n    <h3>향후 6개월 목표: <span>B2C 가입 275명, B2B 계약 1곳</span></h3>\n    <div class="ef-platform-summary-detail">\n      <div class="ef-platform-estimate"><b>B2C 가입 목표</b><span>6개월 후 총 275명</span></div>\n      <div class="ef-platform-milestones">\n        <div><small>2026-11</small><b>회고형 파일럿 2곳</b></div><i aria-hidden="true">→</i>\n        <div><small>2027-03</small><b>B2B 계약 1곳</b></div>\n      </div>\n      <div class="ef-platform-measure"><span>검증 지표</span><b>면접관 질문 채택률</b></div>\n    </div>\n  </div>\n</div>', source='중간발표 비전 그림 원본 · 6개월 목표는 추정 및 계획', cls='ef-platform-plan-slide'))
-S.note('[통합 장표] 원본 플랫폼 비전 그림 아래에 6개월 목표를 간략히 제시합니다. 사용자 요청에 따라 화면에는 B2C 가입 목표 275명만 표시하며, 예측 범위를 임의로 좁힌 수치를 만들지 않습니다. B2B 일정은 회고형 파일럿과 계약 목표 두 단계만 표시합니다. 기존 예상 범위와 세부 실행 계획은 참고 근거로 아래 노트에 보존합니다. 목표는 B2C 가입 275명, B2B 계약 1곳입니다. 현재 계약 성과를 뜻하지 않습니다.\n\n[≈15초] 중간발표에서 말한 비전입니다. 지원자가 자기 코드로 준비하는 B2C와, 면접관이 근거로 검증하는 B2B를 같은 분석 엔진 위에서 하나의 개발자 채용 플랫폼으로 잇습니다. 엔진은 같지만 면접관 질문과 지원자 질문은 서로 공유하지 않습니다. B2C는 공고 수집과 지원 일정 관리까지 운영 중이고, B2B는 개발을 마쳤습니다.\n\n출처: Devfit/brand/platform/vision-diagram.png (중간발표와 같은 원본 그림을 그대로 사용, 하단에 6개월 목표와 계획 추가). B2B는 «면접관이 빠뜨린 확인 관점을 알려 주는 커버리지 어시스턴트»로 재정의(중간평가 #17 질문 유출 우려 대응 + 11-02 멘토링 제안).\n\n[6개월 목표의 산정 근거와 계획]\n[≈15초] 앞으로 6개월 목표입니다. B2C는 지금 속도면 가입 275명이고, 범위는 135명에서 382명입니다. B2B는 개발을 마쳤고, 11월 회고형 파일럿 2곳에서 시작해 내년 3월 계약 1곳까지 가고, 면접관이 우리 질문을 실제로 채택하는 비율을 잽니다.\n\n출처: 275명 = 최근 주 7.4명 × 26주 + 83명, 범위 135~382, 현 수준 광고비 전제 · B2B 로드맵 collect/J. 가입자 답변률 목표 25% (Q&A용).\n11/10 18시까지 의향서가 오면 «파일럿 의향서 1건(비구속)»으로 교체.\n⛔ «고객 확보»·«파일럿 진행 중»·«MOU» 금지 (현재 LOI·MOU·계약 0).')
+S.append(shell('Effect', 'B2C와 B2B를 잇는 <span class="purple">하나의 채용 플랫폼</span>', '<div class="ef-platform-original">\n  <div class="ef-platform-picture"><img src="assets/vision-diagram-notitle.png" alt="DevFit Platform 비전: B2C 준비와 B2B 검증을 하나의 개발자 채용 플랫폼으로"></div>\n  <div class="ef-goal">\n    <div class="ef-goal-head">향후<br>6개월 목표</div>\n    <div class="ef-goal-item"><small>B2C 가입</small><div class="ef-goal-num">275<span>명</span></div><p>6개월 후 총 가입 목표</p></div>\n    <div class="ef-goal-item"><small>B2B 계약</small><div class="ef-goal-num">1<span>곳</span></div><p>2027-03 목표</p></div>\n    <div class="ef-goal-item"><small>검증 지표</small><div class="ef-goal-text">면접관 질문 채택률</div><p>면접관이 질문을 실제로 채택하는 비율</p></div>\n  </div>\n</div>', source='중간발표 비전 그림(제목 줄만 잘라 냄) · 6개월 목표는 추정 및 계획', cls='ef-platform-plan-slide'))
+S.note('[2026-11-13] 11월 파일럿 2곳 단계는 장표에서 빼고 B2B는 2027-03 계약 1곳 목표만 표시합니다. 파일럿 계획은 아래 노트와 collect/J에 있습니다(Q&A용).\n\n[2026-11-13 수정] 그림 안 제목 줄이 장표 제목과 겹쳐 제목 없는 그림(assets/vision-diagram-notitle.png)으로 바꾸고, 그림 아래 상태 표시 세 개(B2C 운영 중, B2B 개발 완료, 공고 29곳 수집)는 뺐습니다. 6개월 목표는 네 칸 띠로 다시 그렸습니다.\n\n[통합 장표] 원본 플랫폼 비전 그림 아래에 6개월 목표를 간략히 제시합니다. 사용자 요청에 따라 화면에는 B2C 가입 목표 275명만 표시하며, 예측 범위를 임의로 좁힌 수치를 만들지 않습니다. B2B 일정은 회고형 파일럿과 계약 목표 두 단계만 표시합니다. 기존 예상 범위와 세부 실행 계획은 참고 근거로 아래 노트에 보존합니다. 목표는 B2C 가입 275명, B2B 계약 1곳입니다. 현재 계약 성과를 뜻하지 않습니다.\n\n[≈15초] 중간발표에서 말한 비전입니다. 지원자가 자기 코드로 준비하는 B2C와, 면접관이 근거로 검증하는 B2B를 같은 분석 엔진 위에서 하나의 개발자 채용 플랫폼으로 잇습니다. 엔진은 같지만 면접관 질문과 지원자 질문은 서로 공유하지 않습니다. B2C는 공고 수집과 지원 일정 관리까지 운영 중이고, B2B는 개발을 마쳤습니다.\n\n출처: Devfit/brand/platform/vision-diagram.png (중간발표와 같은 원본 그림을 그대로 사용, 하단에 6개월 목표와 계획 추가). B2B는 «면접관이 빠뜨린 확인 관점을 알려 주는 커버리지 어시스턴트»로 재정의(중간평가 #17 질문 유출 우려 대응 + 11-02 멘토링 제안).\n\n[6개월 목표의 산정 근거와 계획]\n[≈15초] 앞으로 6개월 목표입니다. B2C는 지금 속도면 가입 275명이고, 범위는 135명에서 382명입니다. B2B는 개발을 마쳤고, 11월 회고형 파일럿 2곳에서 시작해 내년 3월 계약 1곳까지 가고, 면접관이 우리 질문을 실제로 채택하는 비율을 잽니다.\n\n출처: 275명 = 최근 주 7.4명 × 26주 + 83명, 범위 135~382, 현 수준 광고비 전제 · B2B 로드맵 collect/J. 가입자 답변률 목표 25% (Q&A용).\n11/10 18시까지 의향서가 오면 «파일럿 의향서 1건(비구속)»으로 교체.\n⛔ «고객 확보»·«파일럿 진행 중»·«MOU» 금지 (현재 LOI·MOU·계약 0).')
 
 # ---------- 부록 A22~A26: DevFit Enterprise 사용 설명서 (11-11 사용자 지시 «b2b 상세 내용을 어펜딕스에 사용설명서처럼») ----------
 def entm(pages, cols):
@@ -832,4 +912,15 @@ CSS += r"""
 .ef-platform-milestones small{font-size:18px;line-height:1.3;font-weight:750;color:var(--purple-deep)}
 .ef-platform-milestones b{font-size:20px;line-height:1.3;font-weight:850;white-space:nowrap}
 .ef-platform-milestones i{font-size:25px;line-height:1;font-style:normal;color:var(--purple);text-align:center}
+/* 2026-11-13: six-month goal band under the vision picture (replaces ef-chips + ef-platform-summary on this slide). */
+.ef-goal{width:100%;flex:none;display:grid;grid-template-columns:230px 1fr 1fr 1.25fr;align-items:stretch;background:linear-gradient(100deg,var(--purple-deep),var(--purple));color:#fff;border-radius:20px;padding:17px 10px 17px 34px;box-shadow:0 14px 34px rgba(108,92,231,.28)}
+.ef-goal-head{display:flex;align-items:center;font-size:27px;line-height:1.3;font-weight:900;letter-spacing:-.04em}
+.ef-goal-item{display:flex;flex-direction:column;justify-content:center;gap:2px;padding:0 34px;border-left:1.5px solid rgba(255,255,255,.28);min-width:0}
+.ef-goal-item small{font-size:18px;font-weight:800;color:#e3deff}
+.ef-goal-item p{margin:2px 0 0;font-size:17.5px;line-height:1.35;font-weight:700;color:#e3deff;letter-spacing:-.03em;white-space:nowrap}
+.ef-goal-num{font-size:62px;line-height:1;font-weight:900;letter-spacing:-.05em}
+.ef-goal-num span{font-size:29px;margin-left:5px;letter-spacing:-.03em}
+.ef-goal-text{font-size:33px;line-height:1.25;font-weight:900;letter-spacing:-.045em;white-space:nowrap;margin:6px 0 4px}
+.ef-goal-item p.ef-goal-road{color:#fff}
+.ef-goal-road span{font-weight:900;color:#e3deff}.ef-goal-road i{font-style:normal;margin:0 4px}
 """
