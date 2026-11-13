@@ -525,6 +525,9 @@ CSS += r"""
 .in-midterm-highlight{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;font-family:inherit}
 .in-midterm-grade{align-self:center;width:640px;margin:0;padding:16px 22px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(45,30,90,.04)}
 .in-midterm-grade img{display:block;width:100%;height:auto;object-fit:contain}
+.in-midterm-grades{display:flex;justify-content:center;align-items:center;gap:24px}
+.in-midterm-grades .in-midterm-grade{align-self:auto;width:540px}
+.in-midterm-grades .in-midterm-grade-lit{width:820px}
 .in-midterm-punchline{margin:0;text-align:center;font-size:56px;font-weight:900;line-height:1.3;letter-spacing:-.045em;color:var(--purple-deep)}
 """
 S.append(shell('Teamwork', '학업도 병행했습니다. <span class="purple">다만…</span>', '''
@@ -537,9 +540,12 @@ S.append(shell('Teamwork', '학업도 병행했습니다. <span class="purple">�
       <text x="1065" y="94" text-anchor="middle" font-size="86" font-weight="900" fill="#c72c3d">31</text>
     </svg>
   </div></figure>
-  <figure class="in-midterm-grade"><img src="assets/teamwork-psychology-grade-original.png" alt="추가 성적 화면 원본: D+, 심리학의이해"></figure>
+  <div class="in-midterm-grades">
+    <figure class="in-midterm-grade"><img src="assets/teamwork-psychology-grade-original.png" alt="추가 성적 화면 원본: D+, 심리학의이해"></figure>
+    <figure class="in-midterm-grade in-midterm-grade-lit"><img src="assets/teamwork-literature-grade-original.png" alt="성적 화면 원본: 문학(3) 중간고사 100점 만점 44.10점"></figure>
+  </div>
   <p class="in-midterm-punchline">DevFit에는 진심이었습니다.</p>
-</div>''', cls='in-midterm-slide', source='사용자 제공 중간고사 결과 및 심리학의이해 D+ 화면 원본, 2026-11-13.'))
+</div>''', cls='in-midterm-slide', source='사용자 제공 중간고사 결과 · 심리학의이해 D+ · 문학(3) 중간고사 44.10점 화면 원본, 2026-11-13.'))
 S.note('''[짧은 에피소드 · 약 5초]
 앞 장의 학업 병행 설명을 이어 "학업도 병행했습니다. 다만… DevFit에는 진심이었습니다."라고 짧게 말한 뒤 수행 과정으로 넘어갑니다.
 사용자 제공 성적표 위에 "나의 점수 : 31"만 크게 표시해 짧은 웃음 포인트로 활용합니다. 원본의 점수는 31/100이며 평균 비교 설명은 생략합니다.
