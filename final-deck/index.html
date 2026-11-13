@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="devfit-deck-revision" content="27c763a53037">
+<meta name="devfit-deck-revision" content="dbe477a8b478">
 <meta name="theme-color" content="#121016"><title>DevFit 최종발표 — Team Dozer</title>
 <style>
 @font-face {
@@ -1996,6 +1996,12 @@ img{display:block}
 .dx-hx .mt{display:flex;flex-direction:column;gap:8px}.dx-hx .mt .lab{font-size:17px;font-weight:900;color:var(--purple)}.dx-hx .ms{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.dx-hx .ms>div{background:#fff;border-radius:12px;padding:10px 12px}.dx-hx .ms b{font-size:16px;font-weight:900}.dx-hx .ms small{display:block;font-size:11.5px;font-weight:800;color:var(--muted);margin-top:1px}.dx-hx .ms p{margin:6px 0 0;font-size:13px;font-weight:700;line-height:1.4;color:#3d3846;word-break:keep-all}.dx-hx .dg{gap:10px!important}.dx-hx .hm{grid-auto-rows:auto!important;row-gap:5px}.dx-hx .hm i{min-height:30px}.dx-hx .hm .nm{font-size:15.5px!important}.dx-hx .dg .t{font-size:17px}.dx-hx .dg .hd b{font-size:38px}
 .dv-q3 .two{align-items:stretch}.dv-q3 .q3p{justify-content:flex-start!important;gap:16px!important}.dv-q3 .q3p table{font-size:18px!important}.dv-q3 .q3p td{padding:20px 12px!important}.dv-q3 td b{font-size:22px!important}.dv-q3 .warn{margin-top:0!important}.dv-q3 .loop{font-size:14.5px;font-weight:800;color:var(--purple);background:var(--purple-pale);border-radius:10px;padding:10px 14px;line-height:1.4}
 .dx-hx .dd .cp{display:block;font-size:15px;font-weight:800;color:var(--muted);margin-top:6px}.dx-hx .hm .nm{font-size:17px}.dx-hx .hm{grid-template-columns:140px repeat(5,1fr)}.dx-hx .rs{flex:none}.dx-hx .rs .v{padding:18px 26px}.dx-hx .fx{justify-content:space-between}.dx-hx .pr div{font-size:17px}
+/* 모델 벤치마크의 단가 열, 단위는 표별 설명에 표시 */
+.dv-pp4 > .tb{min-width:0}
+.dv-pp4 .dv-price{white-space:nowrap;text-align:right!important;font-size:10.5px!important;font-variant-numeric:tabular-nums}
+.dv-pp4 .t4 td:nth-child(4){font-size:10.5px!important;color:#55505e}
+.dv-pp4 .dv-price-note{font-size:10.5px;line-height:1.35;margin-top:5px}
+
 .dv-pp4{grid-template-columns:1fr 1fr!important;grid-template-rows:auto auto;align-content:center;gap:34px 22px!important;margin-top:-14px!important}.dv-pp4 table{font-size:12.5px!important}.dv-pp4 td{padding:3.5px 5px!important}.dv-pp4 table{font-size:11.5px!important}.dv-pp4 th{font-size:10.5px!important;padding:3px 4px!important}.dv-pp4 td{padding:2.5px 4px!important;line-height:1.22!important}.dv-pp4 .cap{font-size:12px!important;margin-bottom:3px!important}.dv-pp4 .t4 td:nth-child(3){font-size:10.5px!important}.dv-pp4 td:last-child{font-size:10.5px}.dv-pp4 .t3 td:nth-child(2){font-size:10px}
 .dv-q3{display:flex;flex-direction:column;gap:18px;flex:1;min-height:0;margin-top:-6px}
 .dv-q3 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.dv-q3 .kpis>div{background:#fff;border:2px solid #ece9f1;border-radius:16px;padding:14px 18px}.dv-q3 .kpis>div.on{border-color:var(--purple);background:var(--purple-pale)}
@@ -3580,77 +3586,81 @@ Q&amp;A 외부 근거(research/R2): 같은 GPT-4 Turbo로 하네스만 바꿔 SW
     <div class="tb">
       <div class="cap"><b>Table 1.</b> 역할 선정 벤치마크. 2026-07-27 프로토콜(합성 Task 3종, Task당 3회, 정답 조건 채점)을 후보 13개 모델로 확장해 재측정</div>
       <table class="t1">
-        <thead><tr><th rowspan="2">Model</th><th rowspan="2">Structured<br>Outputs</th><th rowspan="2">Valid<br>JSON</th><th colspan="2">공고 추출</th><th colspan="2">복합 채용 판단</th><th colspan="2">코드 위험 분석</th><th rowspan="2">Total</th><th rowspan="2">Output<br>tokens</th><th rowspan="2">채택 역할</th></tr>
+        <thead><tr><th rowspan="2">Model</th><th rowspan="2" class="dv-price">단가<br>입력 / 출력</th><th rowspan="2">Structured<br>Outputs</th><th rowspan="2">Valid<br>JSON</th><th colspan="2">공고 추출</th><th colspan="2">복합 채용 판단</th><th colspan="2">코드 위험 분석</th><th rowspan="2">Total</th><th rowspan="2">Output<br>tokens</th><th rowspan="2">채택 역할</th></tr>
         <tr><th>Score</th><th>p50 (s)</th><th>Score</th><th>p50 (s)</th><th>Score</th><th>p50 (s)</th></tr></thead>
         <tbody>
-          <tr><td>Kimi K2.5</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td><b class="pu">0.69</b></td><td><b>18/18</b></td><td>1.88</td><td><b>9/9</b></td><td>5.92</td><td><b>39/39</b></td><td>216</td><td></td></tr>
-          <tr><td>GLM 4.7</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.12</td><td><b>18/18</b></td><td>2.59</td><td><b>9/9</b></td><td>6.04</td><td><b>39/39</b></td><td>261</td><td></td></tr>
-          <tr class="on"><td><b>Qwen3 Coder Next</b></td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>0.84</td><td><b>18/18</b></td><td>2.60</td><td><b>9/9</b></td><td>5.27</td><td><b>39/39</b></td><td>280</td><td><b class=pu>코드 판단</b></td></tr>
-          <tr><td>Mistral Large 3</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.12</td><td><b>18/18</b></td><td>2.95</td><td><b>9/9</b></td><td><b class="pu">3.68</b></td><td><b>39/39</b></td><td>217</td><td></td></tr>
-          <tr class="on"><td><b>GLM 5</b></td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.31</td><td><b>18/18</b></td><td>3.20</td><td><b>9/9</b></td><td>5.41</td><td><b>39/39</b></td><td>257</td><td><b class=pu>복합 추론</b></td></tr>
-          <tr><td>Qwen3 Next 80B</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.29</td><td><b>18/18</b></td><td>4.04</td><td><b>9/9</b></td><td>6.63</td><td><b>39/39</b></td><td>242</td><td></td></tr>
-          <tr><td>DeepSeek V3.2</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.52</td><td><b>18/18</b></td><td>4.31</td><td><b>9/9</b></td><td>6.45</td><td><b>39/39</b></td><td>196</td><td></td></tr>
-          <tr><td>Nova Pro</td><td><span class="lo">X</span></td><td>9/9</td><td><span class="lo">9/12</span></td><td>1.22</td><td><b>18/18</b></td><td>3.40</td><td><span class="lo">8/9</span></td><td>1.84</td><td><span class="lo">35/39</span></td><td>180</td><td>스키마를 프롬프트로</td></tr>
-          <tr class="on"><td><b>Nova 2 Lite</b></td><td><span class="lo">X</span></td><td>9/9</td><td><b>12/12</b></td><td>0.83</td><td><b>18/18</b></td><td>1.43</td><td><span class="lo">4/9</span></td><td>1.93</td><td><span class="lo">34/39</span></td><td>141</td><td><b class=pu>비전 OCR</b></td></tr>
-          <tr class="on"><td><b>GLM 4.7 Flash</b></td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.30</td><td><b>18/18</b></td><td>2.61</td><td><span class="lo">4/9</span></td><td>4.96</td><td><span class="lo">34/39</span></td><td>196</td><td><b class=pu>추출, 단문</b></td></tr>
-          <tr><td>Llama 4 Maverick</td><td><span class="lo">X</span></td><td>9/9</td><td><span class="lo">9/12</span></td><td>0.92</td><td><b>18/18</b></td><td><b class="pu">1.20</b></td><td><span class="lo">6/9</span></td><td>1.16</td><td><span class="lo">33/39</span></td><td>81</td><td>스키마를 프롬프트로</td></tr>
-          <tr><td>MiniMax M2.5</td><td>O</td><td><span class="lo">6/9</span></td><td><b>12/12</b></td><td>3.39</td><td><span class="lo">12/18</span></td><td>5.76</td><td><span class="lo">3/9</span></td><td>9.81</td><td><span class="lo">27/39</span></td><td>663</td><td>토큰 한도 초과 3회</td></tr>
-          <tr><td>gpt-oss-120b</td><td>O</td><td><span class="lo">1/9</span></td><td><span class="lo">4/12</span></td><td>1.64</td><td><span class="lo">0/18</span></td><td>4.42</td><td><span class="lo">0/9</span></td><td>7.13</td><td><span class="lo">4/39</span></td><td>666</td><td>깨진 JSON 출력</td></tr>
+          <tr><td>Kimi K2.5</td><td class="dv-price">0.60 / 3.00</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td><b class="pu">0.69</b></td><td><b>18/18</b></td><td>1.88</td><td><b>9/9</b></td><td>5.92</td><td><b>39/39</b></td><td>216</td><td></td></tr>
+          <tr><td>GLM 4.7</td><td class="dv-price">0.60 / 2.20</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.12</td><td><b>18/18</b></td><td>2.59</td><td><b>9/9</b></td><td>6.04</td><td><b>39/39</b></td><td>261</td><td></td></tr>
+          <tr class="on"><td><b>Qwen3 Coder Next</b></td><td class="dv-price">0.50 / 1.20</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>0.84</td><td><b>18/18</b></td><td>2.60</td><td><b>9/9</b></td><td>5.27</td><td><b>39/39</b></td><td>280</td><td><b class=pu>코드 판단</b></td></tr>
+          <tr><td>Mistral Large 3</td><td class="dv-price">0.50 / 1.50</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.12</td><td><b>18/18</b></td><td>2.95</td><td><b>9/9</b></td><td><b class="pu">3.68</b></td><td><b>39/39</b></td><td>217</td><td></td></tr>
+          <tr class="on"><td><b>GLM 5</b></td><td class="dv-price">1.00 / 3.20</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.31</td><td><b>18/18</b></td><td>3.20</td><td><b>9/9</b></td><td>5.41</td><td><b>39/39</b></td><td>257</td><td><b class=pu>복합 추론</b></td></tr>
+          <tr><td>Qwen3 Next 80B</td><td class="dv-price">0.15 / 1.20</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.29</td><td><b>18/18</b></td><td>4.04</td><td><b>9/9</b></td><td>6.63</td><td><b>39/39</b></td><td>242</td><td></td></tr>
+          <tr><td>DeepSeek V3.2</td><td class="dv-price">0.62 / 1.85</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.52</td><td><b>18/18</b></td><td>4.31</td><td><b>9/9</b></td><td>6.45</td><td><b>39/39</b></td><td>196</td><td></td></tr>
+          <tr><td>Nova Pro</td><td class="dv-price">0.80 / 3.20</td><td><span class="lo">X</span></td><td>9/9</td><td><span class="lo">9/12</span></td><td>1.22</td><td><b>18/18</b></td><td>3.40</td><td><span class="lo">8/9</span></td><td>1.84</td><td><span class="lo">35/39</span></td><td>180</td><td>스키마를 프롬프트로</td></tr>
+          <tr class="on"><td><b>Nova 2 Lite</b></td><td class="dv-price">0.33 / 2.75</td><td><span class="lo">X</span></td><td>9/9</td><td><b>12/12</b></td><td>0.83</td><td><b>18/18</b></td><td>1.43</td><td><span class="lo">4/9</span></td><td>1.93</td><td><span class="lo">34/39</span></td><td>141</td><td><b class=pu>비전 OCR</b></td></tr>
+          <tr class="on"><td><b>GLM 4.7 Flash</b></td><td class="dv-price">0.07 / 0.40</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.30</td><td><b>18/18</b></td><td>2.61</td><td><span class="lo">4/9</span></td><td>4.96</td><td><span class="lo">34/39</span></td><td>196</td><td><b class=pu>추출, 단문</b></td></tr>
+          <tr><td>Llama 4 Maverick</td><td class="dv-price">0.24 / 0.97</td><td><span class="lo">X</span></td><td>9/9</td><td><span class="lo">9/12</span></td><td>0.92</td><td><b>18/18</b></td><td><b class="pu">1.20</b></td><td><span class="lo">6/9</span></td><td>1.16</td><td><span class="lo">33/39</span></td><td>81</td><td>스키마를 프롬프트로</td></tr>
+          <tr><td>MiniMax M2.5</td><td class="dv-price">0.30 / 1.20</td><td>O</td><td><span class="lo">6/9</span></td><td><b>12/12</b></td><td>3.39</td><td><span class="lo">12/18</span></td><td>5.76</td><td><span class="lo">3/9</span></td><td>9.81</td><td><span class="lo">27/39</span></td><td>663</td><td>토큰 한도 초과 3회</td></tr>
+          <tr><td>gpt-oss-120b</td><td class="dv-price">0.15 / 0.60</td><td>O</td><td><span class="lo">1/9</span></td><td><span class="lo">4/12</span></td><td>1.64</td><td><span class="lo">0/18</span></td><td>4.42</td><td><span class="lo">0/9</span></td><td>7.13</td><td><span class="lo">4/39</span></td><td>666</td><td>깨진 JSON 출력</td></tr>
         </tbody>
       </table>
+      <div class="fn dv-price-note">단가: 입력 / 출력, USD / 100만 토큰. Bedrock Standard, us-east-1, 2026-11-13 확인.</div>
     </div>
     <div class="tb">
       <div class="cap"><b>Table 2.</b> 채용공고 이미지 OCR 벤치마크 (2026-11-11). 정답 텍스트가 있는 합성 공고 이미지 6장 × 2회, 오픈소스 OCR 3종과 비전 모델 10종</div>
       <table class="t1 t3">
-        <thead><tr><th rowspan="2">Engine</th><th rowspan="2">실행</th><th rowspan="2">CER</th><th colspan="3">어려운 이미지 CER</th><th rowspan="2">핵심 필드<br>재현율</th><th rowspan="2">p50 (s)</th><th rowspan="2">비고</th></tr>
+        <thead><tr><th rowspan="2">Engine</th><th rowspan="2" class="dv-price">단가<br>입력 / 출력</th><th rowspan="2">실행</th><th rowspan="2">CER</th><th colspan="3">어려운 이미지 CER</th><th rowspan="2">핵심 필드<br>재현율</th><th rowspan="2">p50 (s)</th><th rowspan="2">비고</th></tr>
         <tr><th>표</th><th>고밀도</th><th>저해상도</th></tr></thead>
         <tbody>
-          <tr><td><b>Kimi K2.5</b></td><td>Bedrock</td><td><b class="pu">0.0%</b></td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>2.26</td><td>전 이미지 CER 0</td></tr>
-          <tr><td>Gemma 3 27B</td><td>Bedrock</td><td>0.1%</td><td>0.5%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>4.14</td><td></td></tr>
-          <tr><td>Qwen3-VL 235B</td><td>Bedrock</td><td>0.2%</td><td>0.5%</td><td>0.0%</td><td>0.5%</td><td>100.0%</td><td>3.41</td><td></td></tr>
-          <tr><td>PaddleOCR (korean)</td><td>오픈소스 (로컬 CPU)</td><td>0.3%</td><td>0.0%</td><td>0.7%</td><td>0.5%</td><td>100.0%</td><td>6.63</td><td>오픈소스 최고, 첫 로드 74초</td></tr>
-          <tr><td>Llama 4 Scout</td><td>Bedrock</td><td>0.4%</td><td>0.0%</td><td>0.4%</td><td>1.5%</td><td>100.0%</td><td>2.01</td><td></td></tr>
-          <tr><td>Llama 4 Maverick</td><td>Bedrock</td><td>0.6%</td><td>0.0%</td><td>1.1%</td><td>0.5%</td><td>98.6%</td><td>1.72</td><td></td></tr>
-          <tr><td>Mistral Large 3</td><td>Bedrock</td><td>0.7%</td><td>1.3%</td><td>0.7%</td><td>0.5%</td><td>98.6%</td><td>2.37</td><td></td></tr>
-          <tr><td>EasyOCR (ko+en)</td><td>오픈소스 (로컬 CPU)</td><td><span class="lo">6.3%</span></td><td><span class="lo">7.6%</span></td><td><span class="lo">8.0%</span></td><td><span class="lo">12.1%</span></td><td><span class="lo">81.9%</span></td><td>1.14</td><td>가장 빠른 축</td></tr>
-          <tr class="on"><td><b>Nova 2 Lite</b></td><td>Bedrock</td><td><span class="lo">8.6%</span></td><td>2.0%</td><td><span class="lo">9.1%</span></td><td><span class="lo">18.7%</span></td><td>98.6%</td><td>2.32</td><td><b class="pu">운영 사용 중</b> (서울 리전)</td></tr>
-          <tr><td>Pixtral Large</td><td>Bedrock</td><td><span class="lo">8.9%</span></td><td>4.3%</td><td><span class="lo">9.8%</span></td><td><span class="lo">10.6%</span></td><td><span class="lo">91.0%</span></td><td>3.66</td><td></td></tr>
-          <tr><td>Tesseract 5 (kor+eng)</td><td>오픈소스 (로컬 CPU)</td><td><span class="lo">17.4%</span></td><td><span class="lo">29.8%</span></td><td><span class="lo">12.0%</span></td><td><span class="lo">29.3%</span></td><td><span class="lo">80.6%</span></td><td>0.47</td><td>표, 저해상도에 약함</td></tr>
-          <tr><td>Nova Pro</td><td>Bedrock</td><td><span class="lo">48.9%</span></td><td><span class="lo">59.1%</span></td><td><span class="lo">48.9%</span></td><td><span class="lo">52.3%</span></td><td><span class="lo">81.9%</span></td><td>2.80</td><td><span class="lo">없는 내용 생성</span></td></tr>
-          <tr><td>Nova Lite</td><td>Bedrock</td><td><span class="lo">57.1%</span></td><td><span class="lo">57.1%</span></td><td><span class="lo">55.8%</span></td><td><span class="lo">55.8%</span></td><td><span class="lo">85.4%</span></td><td>2.43</td><td><span class="lo">없는 내용 생성</span></td></tr>
+          <tr><td><b>Kimi K2.5</b></td><td class="dv-price">0.60 / 3.00</td><td>Bedrock</td><td><b class="pu">0.0%</b></td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>2.26</td><td>전 이미지 CER 0</td></tr>
+          <tr><td>Gemma 3 27B</td><td class="dv-price">0.23 / 0.38</td><td>Bedrock</td><td>0.1%</td><td>0.5%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>4.14</td><td></td></tr>
+          <tr><td>Qwen3-VL 235B</td><td class="dv-price">0.53 / 2.66</td><td>Bedrock</td><td>0.2%</td><td>0.5%</td><td>0.0%</td><td>0.5%</td><td>100.0%</td><td>3.41</td><td></td></tr>
+          <tr><td>PaddleOCR (korean)</td><td class="dv-price">API 과금 없음</td><td>오픈소스 (로컬 CPU)</td><td>0.3%</td><td>0.0%</td><td>0.7%</td><td>0.5%</td><td>100.0%</td><td>6.63</td><td>오픈소스 최고, 첫 로드 74초</td></tr>
+          <tr><td>Llama 4 Scout</td><td class="dv-price">0.17 / 0.66</td><td>Bedrock</td><td>0.4%</td><td>0.0%</td><td>0.4%</td><td>1.5%</td><td>100.0%</td><td>2.01</td><td></td></tr>
+          <tr><td>Llama 4 Maverick</td><td class="dv-price">0.24 / 0.97</td><td>Bedrock</td><td>0.6%</td><td>0.0%</td><td>1.1%</td><td>0.5%</td><td>98.6%</td><td>1.72</td><td></td></tr>
+          <tr><td>Mistral Large 3</td><td class="dv-price">0.50 / 1.50</td><td>Bedrock</td><td>0.7%</td><td>1.3%</td><td>0.7%</td><td>0.5%</td><td>98.6%</td><td>2.37</td><td></td></tr>
+          <tr><td>EasyOCR (ko+en)</td><td class="dv-price">API 과금 없음</td><td>오픈소스 (로컬 CPU)</td><td><span class="lo">6.3%</span></td><td><span class="lo">7.6%</span></td><td><span class="lo">8.0%</span></td><td><span class="lo">12.1%</span></td><td><span class="lo">81.9%</span></td><td>1.14</td><td>가장 빠른 축</td></tr>
+          <tr class="on"><td><b>Nova 2 Lite</b></td><td class="dv-price">0.33 / 2.75</td><td>Bedrock</td><td><span class="lo">8.6%</span></td><td>2.0%</td><td><span class="lo">9.1%</span></td><td><span class="lo">18.7%</span></td><td>98.6%</td><td>2.32</td><td><b class="pu">운영 사용 중</b> (서울 리전)</td></tr>
+          <tr><td>Pixtral Large</td><td class="dv-price">2.00 / 6.00</td><td>Bedrock</td><td><span class="lo">8.9%</span></td><td>4.3%</td><td><span class="lo">9.8%</span></td><td><span class="lo">10.6%</span></td><td><span class="lo">91.0%</span></td><td>3.66</td><td></td></tr>
+          <tr><td>Tesseract 5 (kor+eng)</td><td class="dv-price">API 과금 없음</td><td>오픈소스 (로컬 CPU)</td><td><span class="lo">17.4%</span></td><td><span class="lo">29.8%</span></td><td><span class="lo">12.0%</span></td><td><span class="lo">29.3%</span></td><td><span class="lo">80.6%</span></td><td>0.47</td><td>표, 저해상도에 약함</td></tr>
+          <tr><td>Nova Pro</td><td class="dv-price">0.80 / 3.20</td><td>Bedrock</td><td><span class="lo">48.9%</span></td><td><span class="lo">59.1%</span></td><td><span class="lo">48.9%</span></td><td><span class="lo">52.3%</span></td><td><span class="lo">81.9%</span></td><td>2.80</td><td><span class="lo">없는 내용 생성</span></td></tr>
+          <tr><td>Nova Lite</td><td class="dv-price">0.06 / 0.24</td><td>Bedrock</td><td><span class="lo">57.1%</span></td><td><span class="lo">57.1%</span></td><td><span class="lo">55.8%</span></td><td><span class="lo">55.8%</span></td><td><span class="lo">85.4%</span></td><td>2.43</td><td><span class="lo">없는 내용 생성</span></td></tr>
         </tbody>
       </table>
+      <div class="fn dv-price-note">단가: 입력 / 출력, USD / 100만 토큰. Bedrock Standard, us-east-1, 2026-11-13 확인. 로컬 OCR은 API 과금 없음, 실행 서버 비용 별도.</div>
     </div>
     <div class="tb">
       <div class="cap"><b>Table 3.</b> 2차 운영 데이터 비교 (2026-10-24). 운영 저장소 4개에서 뽑은 Episode 15개 × 2회, 질문 유형 7개를 4 + 3으로 나눠 호출</div>
       <table>
-        <thead><tr><th>Model + Prompt</th><th>완성 호출</th><th>Questions</th><th>Parse fail</th><th>근거 부합률</th><th>Judge 불일치</th><th>Latency p50 / p95 (s)</th><th>Tokens in / out</th><th>Cost / 28Q ($)</th></tr></thead>
+        <thead><tr><th>Model + Prompt</th><th class="dv-price">단가<br>입력 / 출력</th><th>완성 호출</th><th>Questions</th><th>Parse fail</th><th>근거 부합률</th><th>Judge 불일치</th><th>Latency p50 / p95 (s)</th><th>Tokens in / out</th><th>Cost / 28Q ($)</th></tr></thead>
         <tbody>
-          <tr><td>GLM 5 + 기존 프롬프트</td><td>55/60</td><td>192/210</td><td>3</td><td>161/192 (83.9%)</td><td>15.1%</td><td>22.80 / 59.10</td><td>479K / 167K</td><td>0.135</td></tr>
-          <tr class="on"><td><b>GLM 5 + 근거 분리 프롬프트 (채택)</b></td><td>55/60</td><td>192/210</td><td>3</td><td><b>169/192 (88.0%)</b></td><td><b>10.9%</b></td><td>27.89 / 68.59</td><td>548K / 204K</td><td>0.160</td></tr>
-          <tr><td>Kimi K2.5 + 기존 프롬프트</td><td>50/60</td><td>172/210</td><td>8</td><td>137/172 (79.7%)</td><td>18.0%</td><td>32.67 / 103.97</td><td>488K / 217K</td><td>0.126</td></tr>
-          <tr><td>Kimi K2.5 + 근거 분리 프롬프트</td><td>47/60</td><td>170/210</td><td>7</td><td>143/170 (84.1%)</td><td>15.9%</td><td>38.87 / 114.73</td><td>556K / 258K</td><td>0.148</td></tr>
-          <tr class="sub"><td colspan="9">미리 정한 Episode 6개 부분 표본 (Kimi K3 비교용, 위 15개 결과와 직접 순위를 매기지 않음)</td></tr>
-          <tr><td>GLM 5 + 근거 분리 프롬프트</td><td>21/24</td><td>73/84</td><td>-</td><td>66/73 (90.4%)</td><td>-</td><td>30.93 / 80.68</td><td>-</td><td>0.166</td></tr>
-          <tr><td>Kimi K3 + 기존 프롬프트</td><td>22/24</td><td>77/84</td><td>1</td><td>70/77 (90.9%)</td><td>7.8%</td><td>20.24 / 43.11</td><td>211K / 71K</td><td>0.469</td></tr>
-          <tr><td>Kimi K3 + 근거 분리 프롬프트</td><td>20/24</td><td>70/84</td><td>4</td><td>67/70 (95.7%)</td><td>4.3%</td><td>29.16 / <b class="r">144.77</b></td><td>232K / 109K</td><td><b class="r">0.700</b></td></tr>
+          <tr><td>GLM 5 + 기존 프롬프트</td><td class="dv-price">1.00 / 3.20</td><td>55/60</td><td>192/210</td><td>3</td><td>161/192 (83.9%)</td><td>15.1%</td><td>22.80 / 59.10</td><td>479K / 167K</td><td>0.135</td></tr>
+          <tr class="on"><td><b>GLM 5 + 근거 분리 프롬프트 (채택)</b></td><td class="dv-price">1.00 / 3.20</td><td>55/60</td><td>192/210</td><td>3</td><td><b>169/192 (88.0%)</b></td><td><b>10.9%</b></td><td>27.89 / 68.59</td><td>548K / 204K</td><td>0.160</td></tr>
+          <tr><td>Kimi K2.5 + 기존 프롬프트</td><td class="dv-price">0.60 / 3.00</td><td>50/60</td><td>172/210</td><td>8</td><td>137/172 (79.7%)</td><td>18.0%</td><td>32.67 / 103.97</td><td>488K / 217K</td><td>0.126</td></tr>
+          <tr><td>Kimi K2.5 + 근거 분리 프롬프트</td><td class="dv-price">0.60 / 3.00</td><td>47/60</td><td>170/210</td><td>7</td><td>143/170 (84.1%)</td><td>15.9%</td><td>38.87 / 114.73</td><td>556K / 258K</td><td>0.148</td></tr>
+          <tr class="sub"><td colspan="10">미리 정한 Episode 6개 부분 표본 (Kimi K3 비교용, 위 15개 결과와 직접 순위를 매기지 않음)</td></tr>
+          <tr><td>GLM 5 + 근거 분리 프롬프트</td><td class="dv-price">1.00 / 3.20</td><td>21/24</td><td>73/84</td><td>-</td><td>66/73 (90.4%)</td><td>-</td><td>30.93 / 80.68</td><td>-</td><td>0.166</td></tr>
+          <tr><td>Kimi K3 + 기존 프롬프트</td><td class="dv-price">3.30 / 16.50</td><td>22/24</td><td>77/84</td><td>1</td><td>70/77 (90.9%)</td><td>7.8%</td><td>20.24 / 43.11</td><td>211K / 71K</td><td>0.469</td></tr>
+          <tr><td>Kimi K3 + 근거 분리 프롬프트</td><td class="dv-price">3.30 / 16.50</td><td>20/24</td><td>70/84</td><td>4</td><td>67/70 (95.7%)</td><td>4.3%</td><td>29.16 / <b class="r">144.77</b></td><td>232K / 109K</td><td><b class="r">0.700</b></td></tr>
         </tbody>
       </table>
+      <div class="fn dv-price-note">단가: 입력 / 출력, USD / 100만 토큰. 실험 당시 적용값, Kimi K3는 US CRIS. Cost / 28Q는 28문항 생성 추정 비용.</div>
     </div>
     <div class="tb">
       <div class="cap"><b>Table 4.</b> 역할별 채택 모델과 검토 후보</div>
       <table class="t4">
-        <thead><tr><th>역할</th><th>채택 모델</th><th>검토 후보</th><th>선정 근거</th></tr></thead>
+        <thead><tr><th>역할</th><th>채택 모델</th><th class="dv-price">단가<br>입력 / 출력</th><th>검토 후보</th><th>선정 근거</th></tr></thead>
         <tbody>
-          <tr><td>복합 추론</td><td><b>GLM 5</b></td><td>Qwen3 Coder Next, GLM 4.7 Flash, Kimi K2.5, Kimi K3, Claude Sonnet 4.5, DeepSeek-V3.1, Llama 4 Maverick, gpt-oss-120b</td><td>근거 부합률 88.0%, parse fail과 judge 불일치 최저 (Table 3)</td></tr>
-          <tr><td>코드 판단</td><td><b>Qwen3 Coder Next</b></td><td>GLM 5, GLM 4.7 Flash, Claude Sonnet 4.5, DeepSeek-V3.1, Qwen3 235B, gpt-oss-120b</td><td>Total 39/39, 코드 Task p50 5.27초, 단가 $0.50 / $1.20 (1M 토큰, GLM 5의 절반 이하)</td></tr>
-          <tr><td>추출, 단문</td><td><b>GLM 4.7 Flash</b></td><td>Amazon Nova Micro, Claude Haiku 4.5, Llama 4 Scout, Mistral Small</td><td>공고 추출 12/12, 단가 최저 $0.07 / $0.40 (1M 토큰). 코드 판단에는 쓰지 않음 (코드 4/9)</td></tr>
-          <tr><td>비전 OCR</td><td><b>Nova 2 Lite</b></td><td>Qwen3-VL 235B, Kimi K2.5, Gemma 3 27B, Llama 4, Pixtral Large, Nova Pro, PaddleOCR, EasyOCR, Tesseract</td><td>서울 리전 처리, 핵심 필드 98.6% (Table 2). OCR CER 8.6%로 Qwen3-VL(0.2%) 교체 검토</td></tr>
-          <tr><td>커밋 판정</td><td><b>OpenAI Decisions</b></td><td>Jev</td><td>입력 토큰만 과금, 다국어 판정, 실패 시 규칙 점수</td></tr>
-          <tr><td>임베딩</td><td><b>Cohere Embed Multilingual v3</b></td><td>Amazon Titan Text Embeddings v2, Amazon Nova Multimodal Embeddings</td><td>한국어와 영어 혼용 질문, 1024차원</td></tr>
-          <tr><td>음성</td><td><b>faster-whisper small, Supertonic</b></td><td>Raon-Speech-9B, Raon-SpeechChat, Amazon Transcribe, OpenAI Whisper API</td><td>CPU 실행으로 GPU 비용 0, CER 5.6%</td></tr>
+          <tr><td>복합 추론</td><td><b>GLM 5</b></td><td class="dv-price">1.00 / 3.20</td><td>Qwen3 Coder Next, GLM 4.7 Flash, Kimi K2.5, Kimi K3, Claude Sonnet 4.5, DeepSeek-V3.1, Llama 4 Maverick, gpt-oss-120b</td><td>근거 부합률 88.0%, parse fail과 judge 불일치 최저 (Table 3)</td></tr>
+          <tr><td>코드 판단</td><td><b>Qwen3 Coder Next</b></td><td class="dv-price">0.50 / 1.20</td><td>GLM 5, GLM 4.7 Flash, Claude Sonnet 4.5, DeepSeek-V3.1, Qwen3 235B, gpt-oss-120b</td><td>Total 39/39, 코드 Task p50 5.27초, GLM 5의 절반 이하 단가</td></tr>
+          <tr><td>추출, 단문</td><td><b>GLM 4.7 Flash</b></td><td class="dv-price">0.07 / 0.40</td><td>Amazon Nova Micro, Claude Haiku 4.5, Llama 4 Scout, Mistral Small</td><td>공고 추출 12/12, 단가 최저. 코드 판단에는 쓰지 않음 (코드 4/9)</td></tr>
+          <tr><td>비전 OCR</td><td><b>Nova 2 Lite</b></td><td class="dv-price">0.36 / 2.96</td><td>Qwen3-VL 235B, Kimi K2.5, Gemma 3 27B, Llama 4, Pixtral Large, Nova Pro, PaddleOCR, EasyOCR, Tesseract</td><td>서울 리전 처리, 핵심 필드 98.6% (Table 2). OCR CER 8.6%로 Qwen3-VL(0.2%) 교체 검토</td></tr>
+          <tr><td>커밋 판정</td><td><b>OpenAI Decisions</b></td><td class="dv-price">0.10 / 비과금</td><td>Jev</td><td>입력 토큰만 과금, 다국어 판정, 실패 시 규칙 점수</td></tr>
+          <tr><td>임베딩</td><td><b>Cohere Embed Multilingual v3</b></td><td class="dv-price">0.10 / 비과금</td><td>Amazon Titan Text Embeddings v2, Amazon Nova Multimodal Embeddings</td><td>한국어와 영어 혼용 질문, 1024차원</td></tr>
+          <tr><td>음성</td><td><b>faster-whisper small, Supertonic</b></td><td class="dv-price">API 과금 없음</td><td>Raon-Speech-9B, Raon-SpeechChat, Amazon Transcribe, OpenAI Whisper API</td><td>CPU 실행으로 GPU 비용 0, CER 5.6%</td></tr>
         </tbody>
       </table>
+      <div class="fn dv-price-note">단가: 입력 / 출력, USD / 100만 토큰. Nova 2 Lite는 서울 운영 단가, Decisions는 보고서 단가. 로컬 음성은 API 과금 없음, 서버 비용 별도.</div>
     </div>
 </div></div>
     <div class="folio"></div>
@@ -3669,6 +3679,9 @@ Table 4 검토 후보와 선정 근거는 최종보고서 «역할별 모델 최
 [Table 3, 4] [≈12초] 상위권 모델의 우열은 실제 운영 데이터로 가렸습니다. 운영 저장소 4개에서 뽑은 묶음 15개를 두 번씩, 호출 288번으로 비교했고, 질문과 근거를 분리한 프롬프트의 GLM 5가 근거 부합률 88.0%로 가장 높고 judge 불일치도 10.9%로 가장 낮았습니다. Kimi K3는 부분 표본에서 지지율이 더 높았지만 비용이 약 4.2배, p95가 145초라 운영 조건을 못 맞췄습니다. 오른쪽은 그 결과로 정한 역할별 모델입니다.
 
 출처: reports/grounding-model-2026-10-24 (model-comparison.csv, metrics.json, report.html, verdict.json) · 최종보고서 역할별 모델 최적화 표.
+
+모델 단가 추가(2026-11-13): Table 1과 Table 2는 벤치마크 실행 리전 us-east-1의 Bedrock Standard 입력 / 출력 가격(USD / 100만 토큰). Nova 2 Lite는 us.amazon.nova-2-lite-v1:0의 미국 리전 가격 $0.33 / $2.75, Table 4는 기존 운영 원장과 서울 Global CRIS 가격 $0.36 / $2.96을 표기했다. Table 3은 scripts/bedrock_client.py의 실험 적용값(GLM 5 $1.00 / $3.20, Kimi K2.5 $0.60 / $3.00, Kimi K3 US CRIS $3.30 / $16.50)을 그대로 표기했고, 기존 Cost / 28Q는 바꾸지 않았다. 캐시 할인과 Batch 할인 제외. Table 4 Decisions의 $0.10은 기존 최종보고서 입력 단가이며, Cohere Embed v3는 입력 1,000토큰당 $0.0001을 100만 토큰 단위로 환산했다. 로컬 OCR과 음성 모델의 API 과금 없음은 서버 운영비 0이라는 뜻이 아니다.
+가격 출처: https://aws.amazon.com/bedrock/pricing/ (Cohere 포함), https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json , https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/ap-northeast-2/index.json (publicationDate 2026-11-11T01:30:37Z, 2026-11-13 조회), https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k3.html , reports/grounding-model-2026-10-24/scripts/bedrock_client.py , collect/A-admin-usage.md(서울 운영 단가), 기존 최종보고서 커밋 판정 모델 표(Decisions 입력 단가).
 
 [장표 출처 — 화면에서는 뺌] reports/grounding-model-2026-10-24 (Table 3) · reports/ocr-bench-2026-11-11 (Table 2) · Devfit_BE docs/BEDROCK_MODEL_SELECTION.md (2026-07-27 재현 벤치마크) · reports/grounding-model-2026-10-24 (model-comparison.csv, metrics.json, bounded-metrics.json, verdict.json, report.html) · 최종보고서 역할별 모델 최적화 표, 품질 개선 결과 3</template></section>
 <section class="slide " data-order="13" data-title="1. LLM 파이프라인 - 근거 대조를 통한 환각 검사">
