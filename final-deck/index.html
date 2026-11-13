@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="devfit-deck-revision" content="381138c74ced">
+<meta name="devfit-deck-revision" content="22530ed2e228">
 <meta name="theme-color" content="#121016"><title>DevFit 최종발표 — Team Dozer</title>
 <style>
 @font-face {
@@ -2418,6 +2418,20 @@ img{display:block}
 
 /* ---- s3_effect ---- */
 
+.ef-market-slide .ef-mk-left{display:flex;flex-direction:column;align-items:center}
+.ef-market-slide .ef-mk-left .ef-circ{transform:scale(.86);transform-origin:top center;margin-bottom:-90px}
+.ef-market-slide .ef-mk-src{width:660px;font-size:12px;line-height:1.4;color:#8a8794;margin-top:8px}
+.ef-market-slide .ef-mk-src p{margin:0 0 2px;word-break:keep-all}.ef-market-slide .ef-mk-src b{color:var(--purple-deep);margin-right:4px}
+.ef-market-slide .ef-one-r{gap:12px}
+.ef-market-slide .ef-one-k{padding-bottom:0}
+.ef-market-slide .ef-one-k>div{padding:14px 20px}
+.ef-market-slide .ef-price-basis{gap:12px}
+.ef-market-slide .ef-price-card{padding:16px 24px}
+.ef-market-slide .ef-price-amount{margin:4px 0}
+.ef-market-slide .ef-price-card p{font-size:19px;line-height:1.45}
+.ef-market-slide .ef-price-cost{padding:14px 24px;gap:3px}
+.ef-market-slide .ef-price-cost span{font-size:19px}
+
 /* BM · 시장 (11-11 보강) */
 .ef-bm2{flex:1;min-height:0;display:grid;grid-template-columns:1fr 560px;grid-template-rows:auto auto 1fr;gap:20px 48px;margin-top:6px}
 .ef-tiers{grid-column:1;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -4318,29 +4332,29 @@ InterviewQuestionVectorSearch/InterviewQuestionEvidenceMatchService: 의미 검�
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title"><span class="purple">시장 규모</span>와 가격 선정 근거</h1></header>
     <div class="slide-content">
 <div class="ef-one ef-market-pricing">
-  <div class="ef-circ">
+  <div class="ef-mk-left"><div class="ef-circ">
     <div class="c tam"><em>TAM</em><b>약 1,132억 원</b><span>개발자 채용 전체 · 구직자 준비 + 기업 검증</span><code>구직자 38.8만 명 × 23,700원<br>+ 입사지원 520만 건 × 2만 원</code></div>
     <div class="c sam"><em>SAM</em><b>약 143억 원</b><span>돈을 쓰는 구간</span><code>취업 준비 지출 42.9% × 92억<br>+ 면접 단계 10% × 1,040억</code></div>
     <div class="c som"><em>SOM</em><b>약 4억 원</b><span>3년 내 목표</span><code>B2C 전환 1%<br>+ B2B SAM 3%</code></div>
-  </div>
+  </div><div class="ef-mk-src"><p><b>TAM</b> 38.8만 명 = 점핏 2025 리포트 ÷ 한경협 2025 · 23,700원 = DevFit Plus 월 7,900원 × 3개월(가정) · 520만 건 = 점핏 2025 상반기 2,601,390건 × 2(하반기 동일 가정) · 2만 원 = 내부 가정(기획 B2B 티어 1인 1만~3만 원)</p><p><b>SAM</b> 42.9% = 잡코리아 콘텐츠LAB 2025 대졸 취준생 조사(N=485, 아시아경제 2025-09-12) · 10% = 내부 가정(서류 통과율)</p><p><b>SOM</b> 1% = 최종보고서 전환 시나리오(가정) · 3% = 내부 가정(3년 목표)</p></div></div>
   <div class="ef-one-r">
     <div class="ef-one-k">
-      <div><small>연간 개발 직군 입사지원</small><b>약 520만 건</b><i>사람인 · 점핏 2025 상반기 260만 건 × 2</i></div>
+      <div><small>연간 개발 직군 입사지원</small><b>약 520만 건</b><i>사람인 · 점핏 2025 상반기 260만 건 × 2</i><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 점핏 「2025 개발자 채용 리포트」 jumpit.saramin.co.kr/report/2025/recruit · ×2는 하반기 동일 가정</small></div>
       <div class="op">÷ 13.4회</div>
-      <div class="hi"><small>면접을 준비하는 개발자 구직자</small><b>약 38.8만 명</b><i>1인 평균 입사지원 13.4회 (한경협 2025)</i></div>
+      <div class="hi"><small>면접을 준비하는 개발자 구직자</small><b>약 38.8만 명</b><i>1인 평균 입사지원 13.4회 (한경협 2025)</i><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 한국경제인협회 2025 대학생 취업인식 조사(머니투데이 2025-12-09 보도)</small></div>
     </div>
     <div class="ef-price-basis">
       <article class="ef-price-card">
         <div class="ef-price-label">B2C · 구직자의 지불 의향을 참고한 가격</div>
         <div class="ef-price-amount">월 <b>7,900원</b><span>× 유료 이용 3개월 = 23,700원</span></div>
-        <p>구직자 인터뷰: 면접 1회 <strong>1만 원</strong>, 준비 기간 <strong>2만 원</strong> 지불 의향<br>월 구독으로 이용 부담을 낮추고, 시장 계산에는 유료 3개월을 가정</p>
+        <p>구직자 인터뷰: 면접 1회 <strong>1만 원</strong>, 준비 기간 <strong>2만 원</strong> 지불 의향<br>월 구독으로 이용 부담을 낮추고, 시장 계산에는 유료 3개월을 가정</p><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 구직자 1명 1:1 인터뷰(20세, 프론트엔드 인턴 지원 경험, 중간평가 덱 수록) · 7,900원 = DevFit Plus 실제 요금 · 3개월 = 내부 가정</small>
       </article>
       <article class="ef-price-card">
         <div class="ef-price-label">B2B · 지원자 단위 과금 모델</div>
         <div class="ef-price-amount">지원자 1명당 <b>2만 원</b><span>시장 계산용 가정</span></div>
-        <p>코드 분석·면접 질문 준비를 지원자 단위로 제공<br>실제 기업 요금은 파일럿에서 이용 가치와 원가를 검증한 뒤 확정</p>
+        <p>코드 분석·면접 질문 준비를 지원자 단위로 제공<br>실제 기업 요금은 파일럿에서 이용 가치와 원가를 검증한 뒤 확정</p><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 내부 가정(기획 B2B 티어 1인 1만~3만 원) · 비교 공개가(11-06 확인): 프로그래머스 16,500원 · CodeSignal 약 1.9만~2.2만 원 · Codility 약 3.4만 원</small>
       </article>
-      <div class="ef-price-cost"><b>분석 1회 변동비 약 330원</b><span>저장소 3개 기준 · B2C와 B2B가 분석 엔진 공유</span></div>
+      <div class="ef-price-cost"><b>분석 1회 변동비 약 330원</b><span>저장소 3개 기준 · B2C와 B2B가 분석 엔진 공유</span><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 최종보고서 단위 경제성, AWS CloudWatch 실측(LLM 호출 비용, 인건비·고정비 제외)</small></div>
     </div>
   </div>
 </div></div>
