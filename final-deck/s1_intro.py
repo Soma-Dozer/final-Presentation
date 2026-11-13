@@ -371,7 +371,7 @@ S.append(shell('Problem', '4. 기억나지 않는 <span class="red">과거의 �
 <div class="in-col" style="justify-content:flex-start">{_flow(4)}
   <div class="in-p5">
     <div class="st">
-      <div class="row"><b class="r">30일</b><div><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간 (중앙값)</span><small>Krüger et al., 「Do You Remember This Source Code?」, 2018.</small></div></div>
+      <div class="row"><b class="r">30일</b><div><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간</span><small>Krüger et al., 「Do You Remember This Source Code?」, 2018.</small></div></div>
       <div class="row"><b><i class="pre">8시간 중</i>5시간</b><div><span>경력 3년 미만 개발자가<br>코드를 읽고 이해하는 데 쓰는 시간</span><small>Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, 2018.</small></div></div>
     </div>
     <div class="qt"><div class="mk">"</div><blockquote>스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다</blockquote><small>바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.</small></div>
