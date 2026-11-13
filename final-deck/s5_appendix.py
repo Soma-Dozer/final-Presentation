@@ -139,32 +139,6 @@ APX.note('''공개 면접 후기에는 면접 시간, 분위기, 본인 감상 �
 ⛔ «검증된 853건» 금지(REVIEWED 0 · NEEDS_REVIEW 158 · 302건은 주제 보고). 법률: 11-05 소마 법률 멘토링 구두 검토 의견(claims C7) — «법률의견서»·«합법 확인» 금지.
 11-08 운영 DB 실측(gichul): 기출 1,880 / 벡터 1,880 · 누락 0 (853 + 2차 1,027).''')
 
-team = [('박천웅', '팀장 · 인프라·분석 엔진', 'AWS 인프라·CI/CD, LLM 연동·코드 근거 질문 생성, GitHub 인증·보안', 'team-park-cheonwoong.jpg'),
-        ('김건우', 'PM · 제품 기획·풀스택', '랜딩·대시보드·학습실, 기업 공고 수집·기출 연결, Plus 요금제·토스 결제', 'team-kim-gunwoo.jpg'),
-        ('노재원', '모의면접·음성 · B2C·마케팅', '음성 인식·합성·대화형 면접, 비로그인 CS 체험, 분석 대기·서류 작성 화면', 'team-noh-jaewon.jpg')]
-tc = ''.join(f'<div class="a10-m"><img src="assets/{p}" alt="{n}"><div><b>{n}</b><span class="badge">{r}</span><em class="{"hs" if n == "김건우" else ""}">{"고등학생 · 학교 병행" if n == "김건우" else "학교 병행"}</em><small>{d}</small></div></div>' for n, r, d, p in team)
-import csv as _csv
-_HM = list(_csv.DictReader(open(__import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)),'..','collect','data','commit_heatmap_weekday_hour_kst.csv'), encoding='utf8')))
-_KO = {'Mon': '월', 'Tue': '화', 'Wed': '수', 'Thu': '목', 'Fri': '금', 'Sat': '토', 'Sun': '일'}
-_hmax = max(int(r[f'h{h:02d}']) for r in _HM for h in range(24))
-_hm_total = sum(int(r['total']) for r in _HM)
-_hm_class = sum(int(r[f'h{h:02d}']) for r in _HM if r['weekday'] not in ('Sat', 'Sun') for h in range(9, 17))
-_hm_off = round((1 - _hm_class / _hm_total) * 100)
-_cells = ''.join(f'<i class="d">{_KO[r["weekday"]]}</i>' + ''.join(
-    f'<i style="background:rgba(108,92,231,{(0.06 + 0.94 * int(r[f"h{h:02d}"]) / _hmax) if int(r[f"h{h:02d}"]) else 0:.2f})" title="{int(r[f"h{h:02d}"])}"></i>' for h in range(24)) for r in _HM)
-_hours = '<i class="h"></i>' + ''.join(f'<i class="h">{h if h % 3 == 0 else ""}</i>' for h in range(24))
-heat = f'<div class="a10-hm"><div class="grid">{_cells}{_hours}</div></div>'
-APX.append(shell('Appendix · A8', '팀 구성과 역할: 3명 모두 <span class="purple">학교 병행</span>, 1명은 <span class="purple">고등학생</span>', f'''
-<div class="a10">
-  <div class="banner"><b>3명 모두 학교 병행 · 1명은 고등학생</b><span>수업이 끝난 저녁과 주말에 개발 · 14주 연속 매주 운영 배포</span></div>
-  <div class="team">{tc}</div>
-  <div class="panel a10-hp"><div class="hd"><b>커밋 기록: 요일 × 시간 (KST)</b><span>커밋 {_hm_total:,}개 중 <strong>{_hm_off}%</strong>가 평일 9~17시 밖</span></div>{heat}</div>
-</div>''', source='collect/data/commit_heatmap_weekday_hour_kst.csv (BE+FE 원격 브랜치 전체, 병합 커밋 506개 제외 · scripts/pattern.py) · 학교 병행은 팀 진술(claims.md)'))
-APX.note('''세 명 모두 학교를 다니면서 만들었고, 김건우는 고등학생(단국대 SW고 6기, 소마 17기 최연소)입니다. 커밋 961개 중 약 61%가 평일 낮 9~17시 밖, 수업이 끝난 저녁과 주말에 찍혔습니다. 그래도 출시 후 14주 연속 매주 운영에 배포했습니다.
-뺀 수치(필요하면 말로): CI 자동 테스트 2,890개(BE 2,000 · FE 807 · E2E 83) · staging → prod 승격 게이트가 막은 운영 push 13건 · 유출 0 · PR 본문 검증 내역 72%.
-⚠️ «평일 9~17시 밖»은 커밋 시각 기준일 뿐 작업 시간 전체가 아님. 나머지 2명의 학교 병행은 사용자 진술(claims.md 등록 요청).
-Q&A: PR 리뷰 0건·96% 작성자 병합 → «사람 승인 대신 CI와 승격 게이트로 막았다(운영 push 13건 차단, 운영 유출 0). PR 본문 72%에 검증 내역». ⛔ «공동대표» 금지.''')
-
 # --- A11 모델 라우팅 · 스택 ---
 APX.append(shell('Appendix · A10', '역할별 모델 라우팅과 <span class="purple">서비스 스택</span>', '''
 <div class="hero" style="grid-template-columns:1.1fr .9fr;margin:auto 0">
