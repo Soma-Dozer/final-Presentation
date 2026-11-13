@@ -12,14 +12,7 @@ APX = Slides()
 CSS = ''
 
 # ================= s1_intro 출신 (A2 · A3) =================
-APX.append(shell('Appendix · A2', '범용 AI 비교: 레포를 clone하면 범용 에이전트도 <span class="purple">근거를 찾음</span>', f'''
-{table(['군', 'n', 'SHA 실존', '파일 실존', '근거 3종 모두 실존', '본인 커밋'], [['DevFit (운영 prod)', '28', '28 (100%)', '28 (100%)', '28 (100%)', '28 (100%)'], ['Claude Code + 레포 clone', '32', '32 (100%)', '32 (100%)', '30 (94%)', '32 (100%)'], ['범용 AI, 레포 링크만', '18', '0 (0%)', '0 (0%)', '0 (0%)', '0 (0%)']], 'sm plain')}
-<div class="body-copy" style="margin:16px 0">DevFit은 레포를 읽고 대조하는 절차를 사용자가 프롬프트를 짜지 않아도 서버가 매번 강제하고, 공고 단위 흐름과 본인 커밋 필터를 더함</div>
-{table(['서비스', '입력', '본인 코드·커밋 분석', '질문 근거 표시', '특정 공고 맞춤', '음성', '한국어'], [['DevFit', '공고 URL/이미지 + GitHub', '본인 커밋·PR만', '질문마다 diff + 원문 링크', '플랫폼 5 + 기업 24곳', 'O', 'O'], ['Greenroom (해외)', 'GitHub 레포 · 목표 직무', '레포 단위 O (Pro) · 본인 커밋 구분 확인 안 됨', '확인 안 됨', '확인 안 됨', 'O', '확인 안 됨'], ['Final Round AI (해외)', '이력서 + JD', 'X', '–', 'O', 'O', '명시 없음'], ['사람인 AI 모의면접', '이력서 + 사람인 공고', 'X', '–', '사람인 공고 한정', 'O', 'O'], ['꼬꼬면', '이력서 · 포트폴리오', '언급 없음', '문항 은행 기반', '–', 'O', 'O'], ['범용 AI', '사용자 지시', '연동 시 열람 가능', '사용자가 검증', '사용자가 지시', '일부', 'O']], 'xs')}''', source='실험: 2026-11-05 파일럿, 공개 레포 4개 · 군별 1회 · 결정론 채점 · 기능 비교: 각 서비스 공개 페이지(2026-11-05 확인)'))
-APX.note('''출처: collect/E-compare.md (2026-11-05, 레포 4개, 군별 1회, 결정론 채점 LLM 0회). 파일럿이므로 승률로 말하지 말고 비율과 n을 같이.
-B1 실패 2건은 API 키를 일부러 가린 인용(지어낸 인용 0). 구체성 proxy(레포 고유 앵커)는 Claude Code 30/32 > DevFit 16/28 — «DevFit이 더 정확하다»는 말하지 않음.''')
-
-APX.append(shell('Appendix · A3', '평가 하네스: <span class="purple">LLM 심판 점수의 편차</span>와 보완 지표', f'''
+APX.append(shell('Appendix · A2', '평가 하네스: <span class="purple">LLM 심판 점수의 편차</span>와 보완 지표', f'''
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;flex:1;min-height:0">
   <div class="panel" style="padding:30px 36px"><div class="section-line"><span class="num">1</span><span>평가 하네스 구성</span></div>{ul(['운영 파이프라인을 직접 호출해 질문 생성', '8축 루브릭 (LLM 심판)', '결정적 지표 13개: 출처 연결 · 공고별 중복 · 식별자 실존 등', '회귀 게이트: 질문 로직 버전(v1 → v13)마다 측정'])}</div>
   <div class="panel" style="padding:30px 36px"><div class="section-line"><span class="num">2</span><span>LLM 심판 점수의 편차</span></div>{table(['측정', '값', 'n'], [['심판 2종 간 문항별 점수 차', '17.8점', '91'], ['같은 심판 재채점 차', '12.2점', '24'], ['LLM 심판 vs 사람', '사람보다 약 1점 후함', '18'], ['근거 특정성 (우연 25%)', '81.9%', '177'], ['질문 출처 연결', '353/353', '전수']], 'sm')}</div>
@@ -52,7 +45,7 @@ APX.note('''판정 기준(11-07 재분류): 완료 = 조언 핵심을 실행해 
 출처: collect/I-feedback-patterns.md (반영일·근거 커밋은 운영 브랜치 포함 여부 확인). 최종보고서 «중간점검 반영표»와 같은 내용.
 멘토 피드백 31행 표는 collect/I 원본 참조 — 필요 시 A1-2로 추가.''')
 
-APX.append(shell('Appendix · A19', '최소 권한으로 연결하고, <span class="purple">토큰은 암호화</span>', table(['우려', '조치'], [
+APX.append(shell('Appendix · A17', '최소 권한으로 연결하고, <span class="purple">토큰은 암호화</span>', table(['우려', '조치'], [
  ['"GitHub 연동하면 내 코드 털리나"', '기본 로그인 권한은 read:user · user:email만. 비공개 레포는 사용자가 원할 때만 증분 동의'],
  ['분석 범위', '분석할 레포를 사용자가 직접 선택 (08-07 피드백 → 08-23 반영)'],
  ['토큰 유출', 'GitHub access token AES-256-GCM 암호화 저장'],
@@ -62,7 +55,7 @@ APX.append(shell('Appendix · A19', '최소 권한으로 연결하고, <span cla
  ['B2B 지원자 정보', '블라인드 평가 · 지원 시 동의 2건 필수']], 'sm left plain')))
 APX.note('''근거 코드: auth/GithubTokenCipher(AES-256-GCM) · user_session(SHA-256 해시) · V38 github_user_id · prep/corporate/SafeFetcher. 레포 범위 선택은 08-07 피드백 후 16일 만(08-23) 반영.''')
 
-APX.append(shell('Appendix · A6', '분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원', f'''
+APX.append(shell('Appendix · A5', '분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원', f'''
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px">{kpi('약 330원', '분석 1회 변동비 · 저장소 3개 기준 · 공고 구조화와 질문 생성 포함', '저장소 3개', 'soft', 'purple')}{kpi('약 1,404원', '저장소 20개 상한 기준 최대치', '저장소 20개')}{kpi('0원', '코드 변경 없는 재분석 · 최신 커밋 지문이 같으면 결과 재사용', '재분석')}</div>
 <div class="small-copy" style="margin-top:18px;font-size:23px">Plus 1인 월 7,900원 = 저장소 3개 기준 분석 약 24회분의 변동비</div>
 <div style="margin-top:26px">{table(['상품', '가격', '상태'], [['Free', '무료 (사용 한도 있음)', '운영 중'], ['추가 생성권 (공고 단위 단건)', '1,900원', '토스페이먼츠 단건 결제 승인 (2026-11-02)'], ['Plus', '월 7,900원', '출시 기념 3개월 무료 개방']], 'sm left plain')}</div>
@@ -70,9 +63,79 @@ APX.append(shell('Appendix · A6', '분석 1회 약 330원, 단건 <span class="
 APX.note('''출처: 최종보고서 단위 경제성 표 · docs/ops/llm-cost-model.md(330원 = 공고 1 + 레포 3 + 어필 + 퀴즈 10, 20개 1,404원).
 Q&A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분석 346회)으로 나누면 분석당 약 133원(미설정 호출 포함 추정 약 150원) — 기준이 다른 값이라 장표에는 보고서 기준 330원만 씀. ⛔ 330원과 133원을 이어 «60% 절감»으로 말하지 말 것.
 원가의 대부분이 LLM(인프라는 개발 DB·서버 정지 운영). Plus 정기결제는 심사 중 — «구독 매출» 금지.''')
-APX.append(shell('Appendix · A7', '기출은 <span class="purple">공개 출처</span>만, 출처 URL과 함께 보존', f'''
-<div class="panel apx-lg" style="padding:44px 50px">{ul(['운영: 기출 1,880건 (1차 853건(41개사 · 출처 URL 304개) + 2차 1,027건) · 전부 임베딩', '2차 수집 1,073건 원문 대조 1,073/1,073 일치 → 1,027건 반영', '수집 규칙: robots 확인 · 도메인당 1.5초 간격 · 원문 1회 캐시 · robots가 막은 사이트와 AI 수집을 막은 블로그 제외', '출처 URL을 질문과 함께 보존 · (URL + 원문) 해시로 중복 방지', '생성 프롬프트에 넣지 않고, 학습실 질문 옆에 비슷한 실제 기출로 출처와 함께 표시'])}</div>'''))
-APX.note('''근거: interview-evidence-audit-2026-10-11 · production-upload-result-2026-10-11.json · Devfit/research/interview-evidence/reports/progress.md · docs/interview-question-evidence.md. 11-02 전략멘토링 대응 기록: «저작권·직업정보제공사업 문제로 공개 정보 위주로 간다».
+CSS += r"""
+.apx-gc{margin:auto 0;word-break:keep-all;width:100%}
+.apx-gc .col{display:flex;flex-direction:column;gap:14px}
+.apx-gc .ar{display:flex;align-items:center;justify-content:center;width:46px;font-size:34px;color:var(--purple);font-weight:700}
+.apx-gc .wrap{display:grid;grid-template-columns:1.15fr 46px 1fr 46px 1.05fr;align-items:stretch}
+.apx-gc .col>.panel{flex:1}
+.apx-gc .k{font-size:24px;font-weight:700;color:var(--purple);margin-bottom:2px}
+.apx-gc .panel{padding:30px 30px}
+.apx-gc .raw{font-size:22px;line-height:1.5;color:var(--body)}
+.apx-gc .raw small{display:block;font-size:19px;color:var(--muted);margin-top:8px}
+.apx-gc .raw q{display:block;margin:10px 0;padding:10px 14px;background:#f3f1fa;border-radius:8px;font-size:21px;line-height:1.6;color:var(--ink);quotes:none}
+.apx-gc .raw mark{background:#e4defb;color:var(--purple-deep);font-weight:700;padding:0 3px;border-radius:3px}
+.apx-gc .st{display:grid;grid-template-columns:38px 1fr;gap:6px 12px;font-size:22px;line-height:1.42;color:var(--body)}
+.apx-gc .st i{font-style:normal;font-weight:700;color:#fff;background:var(--purple);width:32px;height:32px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:18px;margin-top:2px}
+.apx-gc .st b,.apx-gc .raw b{color:var(--ink);font-size:inherit;display:inline}
+.apx-gc .st div{margin-bottom:12px}
+.apx-gc .ui{border:1.5px solid #ddd6f6;border-radius:12px;padding:16px 18px;background:#faf9ff;font-size:21px;line-height:1.45;color:var(--body)}
+.apx-gc .ui h4{margin:0 0 8px;font-size:18px;color:var(--purple);font-weight:700}
+.apx-gc .ui p{margin:0}
+.apx-gc .ui .q{margin-top:6px;padding-left:10px;border-left:3px solid #cfc6f3;color:var(--ink)}
+.apx-gc .ui .meta{margin-top:6px;font-size:18px;color:var(--muted)}
+.apx-gc .sm{font-size:18px;line-height:1.45;color:var(--muted);margin-top:6px}
+.apx-gc-law{margin-top:22px;padding:18px 26px;border-left:6px solid var(--purple);background:#f6f4fd;border-radius:10px;font-size:21px;line-height:1.5;color:var(--body);word-break:keep-all}
+.apx-gc-law b{color:var(--ink)}
+.apx-gc code{font-size:.85em;background:#ece8fa;padding:0 4px;border-radius:4px}
+.apx-gc-foot{margin-top:22px;font-size:21px;color:var(--muted);text-align:center;word-break:keep-all}
+.apx-gc-foot b{color:var(--ink)}
+"""
+CSS += r"""
+.apx-g2{display:grid;grid-template-columns:1.55fr .65fr;gap:26px;margin:auto 0;word-break:keep-all}
+.apx-g2 table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 0 #e9e6f3}
+.apx-g2 th{font-size:20px;text-align:left;padding:12px 16px;background:#f3f1fa;color:var(--purple-deep)}
+.apx-g2 td{font-size:20px;line-height:1.42;padding:11px 16px;border-top:1px solid #eeebf6;vertical-align:top}
+.apx-g2 td.n{width:30px;font-weight:700;color:var(--purple);text-align:center}
+.apx-g2 td.o{width:40%;color:var(--muted);font-size:18px}
+.apx-g2 td.ko{color:var(--ink)}
+.apx-g2 code{font-size:16px;background:#f3f1fa;padding:0 4px;border-radius:4px}
+.apx-g2 .side{display:flex;flex-direction:column;gap:14px}
+.apx-g2 .panel{padding:24px 26px}
+.apx-g2 .k{font-size:22px;font-weight:700;color:var(--purple);margin-bottom:10px}
+.apx-g2 .st{display:grid;grid-template-columns:28px 1fr;gap:6px 10px;font-size:19px;line-height:1.42;color:var(--body)}
+.apx-g2 .st i{font-style:normal;font-weight:700;color:#fff;background:var(--purple);width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:1px}
+.apx-g2 .st b{color:var(--ink);font-size:inherit;display:inline}
+.apx-g2 .st div{margin-bottom:6px}
+.apx-g2 .ui{border:1.5px solid #ddd6f6;border-radius:12px;padding:14px 16px;background:#faf9ff;font-size:19px;line-height:1.45;color:var(--ink)}
+.apx-g2 .ui h4{margin:0 0 6px;font-size:16px;color:var(--purple);font-weight:700}
+.apx-g2-meta{font-size:20px;color:var(--muted);margin:0 0 10px}
+.apx-g2-meta b{color:var(--ink)}
+"""
+APX.append(shell('Appendix · A6', '공개된 면접 후기에서 내용만 뽑아 <span class="purple">직접 가공</span>', f'''
+<div class="apx-gc"><div class="wrap">
+  <div class="col"><div class="panel raw"><div class="k">1. 원문 (공개 면접 후기)</div>
+    당근 Mini R&amp;D Engineer 인턴 기술 면접 (2022) 꼬리질문 중 하나
+    <q>With Web Worker, it is possible to separate the mini app and the client app into separate threads. However, the Web Worker cannot access the DOM API if you do this. For example, you cannot use the DOM API called <code>getClientBoundingRect</code>. What should I do to solve this?</q>
+    <small>출처 URL과 페이지 제목은 근거로 따로 보관</small></div></div>
+  <div class="ar">→</div>
+  <div class="col"><div class="panel"><div class="k">2. 직접 가공</div><div class="st">
+    <i>1</i><div><b>질문 단위로 분리</b> · 한 단락에 이어진 꼬리질문 6개를 각각 한 건으로</div>
+    <i>2</i><div><b>맥락 보강</b> · 앞 질문의 전제를 붙여 이 질문만 봐도 뜻이 통하게</div>
+    <i>3</i><div><b>새 문장으로 작성</b> · 원문 문장을 옮기지 않고 한국어 면접관 말투로</div>
+    <i>4</i><div><b>필드 정리와 대조</b> · 회사, 채용명, 연도를 나누고 출처와 비교</div></div></div></div>
+  <div class="ar">→</div>
+  <div class="col"><div class="panel"><div class="k">3. 서비스에 들어간 문장</div>
+    <div class="ui"><p class="q">Web Worker를 사용하면 미니 앱과 클라이언트 앱을 각각 다른 스레드로 분리할 수 있습니다. 하지만 이렇게 하면 Web Worker에서 DOM API에 접근할 수 없습니다. 예를 들어 <code>getClientBoundingRect</code>라는 DOM API를 사용할 수 없습니다. 이를 해결하려면 어떻게 해야 하나요?</p></div>
+    <div class="ui" style="margin-top:14px"><h4>학습실 카드</h4><p>실제 2022년 당근 Karrot Mini R&amp;D Engineer Intern 채용에서 비슷한 면접 질문이 출제되었어요.</p></div>
+  </div></div>
+</div>
+<div class="apx-gc-law"><b>저작권법 제2조 제1호</b> "저작물"은 인간의 사상 또는 감정을 <b>표현한</b> 창작물을 말한다.<br><b>대법원 2000. 10. 24. 선고 99다10813 판결</b> 표현되어 있는 내용 즉 아이디어나 이론 등의 사상 및 감정 그 자체는 설사 그것이 독창성, 신규성이 있다 하더라도 원칙적으로 저작권의 보호 대상이 되지 않는다.</div></div>''', source='저작권법 제2조 제1호 · 대법원 2000. 10. 24. 선고 99다10813 판결 · cho.sh, 「Mini R&amp;D Engineer Job Interview」, 2022 · Devfit_BE interview-question-evidence.csv 운영 적재본'))
+APX.note('''공개 면접 후기에는 면접 시간, 분위기, 본인 감상 같은 경험담이 섞여 있습니다. 여기서 어떤 질문을 받았는지라는 사실만 사람이 뽑아내고, 후기의 문장은 옮기지 않고 질문의 뜻만 남겨 새 문장으로 씁니다. 다시 쓴 질문이 원문 내용을 벗어나지 않았는지는 출처와 대조합니다.
+장표 예시는 1차 기출 CSV의 실제 행(당근, source https://cho.sh/w/98410A, Karrot Mini R&D Engineer Intern, 2022, 같은 후기에서 6행 중 4번째 꼬리질문). 왼쪽은 question_original, 오른쪽은 normalized_question 전문 그대로. 카드 문구는 InterviewEvidenceCard.attribution 출력.
+저작권 문구: 아이디어와 표현 이분법(저작권법은 표현을 보호하고 아이디어 자체는 보호하지 않으며, 이 점에서 산업재산권과 구분됨). 보조 출처: 문화체육관광부 저작권 상식 페이지("저작권법은 표현된 것을 보호하는 것이지 그 아이디어 자체를 보호하는 것은 아니며, 이 점에서도 산업재산권과 구분된다.")(https://www.mcst.go.kr/site/s_policy/copyright/knowledge/know03.jsp), 2026-11-13 검색 확인. 운영 기출 1,880건. 법률 판단은 11-05 소마 법률 멘토링 구두 의견 수준이므로 «합법 확인» 금지.
+사람 가공 표시는 사용자 지시(2026-11-13). 수집 기록(progress.md)에는 2차 수집에 추출 에이전트 단계와 1차 LLM 보조 정제가 있으니, Q&A에서 범위를 물으면 기록대로 답할 것.
+근거: interview-evidence-audit-2026-10-11 · production-upload-result-2026-10-11.json · Devfit/research/interview-evidence/reports/progress.md · docs/interview-question-evidence.md. 11-02 전략멘토링 대응 기록: «저작권·직업정보제공사업 문제로 공개 정보 위주로 간다».
 ⛔ «검증된 853건» 금지(REVIEWED 0 · NEEDS_REVIEW 158 · 302건은 주제 보고). 법률: 11-05 소마 법률 멘토링 구두 검토 의견(claims C7) — «법률의견서»·«합법 확인» 금지.
 11-08 운영 DB 실측(gichul): 기출 1,880 / 벡터 1,880 · 누락 0 (853 + 2차 1,027).''')
 
@@ -91,7 +154,7 @@ _cells = ''.join(f'<i class="d">{_KO[r["weekday"]]}</i>' + ''.join(
     f'<i style="background:rgba(108,92,231,{(0.06 + 0.94 * int(r[f"h{h:02d}"]) / _hmax) if int(r[f"h{h:02d}"]) else 0:.2f})" title="{int(r[f"h{h:02d}"])}"></i>' for h in range(24)) for r in _HM)
 _hours = '<i class="h"></i>' + ''.join(f'<i class="h">{h if h % 3 == 0 else ""}</i>' for h in range(24))
 heat = f'<div class="a10-hm"><div class="grid">{_cells}{_hours}</div></div>'
-APX.append(shell('Appendix · A9', '팀 구성과 역할: 3명 모두 <span class="purple">학교 병행</span>, 1명은 <span class="purple">고등학생</span>', f'''
+APX.append(shell('Appendix · A8', '팀 구성과 역할: 3명 모두 <span class="purple">학교 병행</span>, 1명은 <span class="purple">고등학생</span>', f'''
 <div class="a10">
   <div class="banner"><b>3명 모두 학교 병행 · 1명은 고등학생</b><span>수업이 끝난 저녁과 주말에 개발 · 14주 연속 매주 운영 배포</span></div>
   <div class="team">{tc}</div>
@@ -103,7 +166,7 @@ APX.note('''세 명 모두 학교를 다니면서 만들었고, 김건우는 고
 Q&A: PR 리뷰 0건·96% 작성자 병합 → «사람 승인 대신 CI와 승격 게이트로 막았다(운영 push 13건 차단, 운영 유출 0). PR 본문 72%에 검증 내역». ⛔ «공동대표» 금지.''')
 
 # --- A11 모델 라우팅 · 스택 ---
-APX.append(shell('Appendix · A11', '역할별 모델 라우팅과 <span class="purple">서비스 스택</span>', '''
+APX.append(shell('Appendix · A10', '역할별 모델 라우팅과 <span class="purple">서비스 스택</span>', '''
 <div class="hero" style="grid-template-columns:1.1fr .9fr;margin:auto 0">
   <div class="panel" style="padding:30px 34px"><div class="infra-summary-title">LLM · 역할별 라우팅 (Bedrock 5종 + 외부 2종)</div>
     <div class="mchips">
@@ -117,38 +180,20 @@ APX.append(shell('Appendix · A11', '역할별 모델 라우팅과 <span class="
 APX.note('''출처: origin/prod application.yml:103-127(bedrock.models reasoning/code/extraction/vision/business-ocr) · :336-354(커밋 판정 gpt-6-luna, OpenAI) · :167-169(cohere.embed-multilingual-v3) · BedrockService evaluateAnswer=code 모델.
 🔴 OpenAI(커밋 판정 · 조건부 TTS) 호출이 개인정보처리방침 국외 이전에 미고지(R1) — 발표 전 정리. 음성 provider 운영값 확인 필요(s2 음성 장 노트).''')
 
-APX.append(shell('Appendix · A12', 'staging을 거치지 않은 변경은 <span class="purple">운영에 나가지 않음</span>', f'''
-<div class="hero" style="grid-template-columns:1.25fr .75fr;margin:auto 0">
-  <div class="panel dep">
-    <div class="fb2-k">배포 경로 (숫자는 게이트가 실제로 막은 횟수)</div>
-    <div class="dp">
-      <div><b>기능 브랜치 → main</b><span>테스트 · FE↔BE API 계약 대조</span><em>112회</em></div><i>↓</i>
-      <div><b>staging → prod PR</b><span>head가 staging인가</span><em>18회</em></div><i>↓</i>
-      <div class="on"><b>prod push</b><span>병합된 승격 PR 확인 · 개발 문서 유출 차단</span><em>13회</em></div><i>↓</i>
-      <div><b>운영 배포</b><span>GitHub Actions(OIDC) → AWS · Slack 알림</span></div>
-    </div>
-  </div>
-  <div class="dv-big-one" style="margin:auto 0"><b style="font-size:130px">0건</b><span>막힌 13건 중 운영에 나간 변경</span></div>
-</div>''', source='GitHub Actions 실패 실행 140건 jobs API 집계 (collect/B §6) · 13건 = 승격 11 · 유출 1 · 테스트 1 · 테스트 112회는 FE·BE 합산'))
-APX.note('''배포 경로마다 게이트가 있습니다. main에서 112번, prod PR에서 18번, 운영 push 직전에 13번 막았고, 그 13건 중 운영에 나간 변경은 0건입니다.
-
-출처: collect/B §6(scripts/gates.py). 배포 잡 429–488초 → 145–260초는 같은 기간 실측일 뿐 원인 단정 금지.
-SBOM 게이트는 11-05 운영 반영 → «HIGH·CRITICAL 1건 이상이면 배포 잡 중단 · 백엔드만»까지, ⛔ «취약점 0건 = 안전»·«FE 포함» 금지. Q&A: PR 리뷰 0건·96% 작성자 병합 → 사람 승인 대신 CI·승격 게이트, PR 본문 72%에 검증 내역.''')
-
 # ================= s3_effect 출신 (A4 · A5 · A8 · A10) =================
-APX.append(shell('Appendix · A4', '측정 도구별 수치 차이 (<span class="purple">기준: 관리자 DB</span>)', f'''
+APX.append(shell('Appendix · A3', '측정 도구별 수치 차이 (<span class="purple">기준: 관리자 DB</span>)', f'''
 <div style="display:grid;grid-template-columns:1.25fr .75fr;gap:30px;flex:1;min-height:0">
   <div class="shot"><img src="assets/14_measurement_gap.png" alt="측정 도구별 수치 차이" style="object-fit:contain"></div>
   <div style="display:flex;flex-direction:column;gap:20px">{kpi('22,360명', 'Microsoft Clarity 방문자 · 동의와 무관하게 수집, 봇 제외', 'Clarity')}{kpi('235명', 'GA4 사용자 · 쿠키 동의한 사람만 → 하한', 'GA4', 'red-soft', 'red')}{kpi('83명', '관리자 DB 가입 · 기준 수치 (내부 4명 포함)', '관리자 DB', 'soft', 'purple')}</div>
 </div>''', source='기간 2026-08-01 ~ 11-04 · 정본 우선순위: 관리자 DB > Clarity > 광고 관리자 > GA4'))
 APX.note('''출처: metrics/charts/14_measurement_gap.png · collect/D §1. GA4는 쿠키 동의 게이트 때문에 하한(가입 이벤트가 실제 가입의 약 절반만 잡힘). 정본 우선순위: 관리자 DB > Clarity > 광고 관리자 > GA4.''')
 
-APX.append(shell('Appendix · A5', '유료 광고 ₩347.5만: 클릭 1회 ₩110~563, <span class="red">가입 1명당 최소 ₩4.2만</span>', f'''
+APX.append(shell('Appendix · A4', '유료 광고 ₩347.5만: 클릭 1회 ₩110~563, <span class="red">가입 1명당 최소 ₩4.2만</span>', f'''
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px">{kpi('₩347.5만', 'Meta ₩233.8만 + Google ₩113.7만', '유료 광고 합계')}{kpi('최소 ₩4.2만', '가입 1명당 광고비 (하한, 상한 추정 ₩12.9만)', '가입 단가', 'red-soft', 'red')}{kpi('브랜드 검색뿐', 'Search Console 클릭 37건, 대부분 "devfit"', '자연 검색')}</div>
 <div style="margin-top:26px">{table(['지표', 'Meta', 'Google'], [['지출', '₩2,338,208', '₩1,136,972'], ['노출', '666,197', '116,041'], ['클릭', '21,318 (링크 클릭)', '2,018'], ['클릭 1회', '₩110', '₩563'], ['랜딩 1회', '₩151 (Meta 랜딩 조회)', '—']], 'sm plain')}</div>''', source='Meta 광고 관리자(8/1~11/3) · Google Ads(8/24~11/3) · ₩4.2만 = 광고비 ÷ 전체 가입 83명(전원 광고 유입 가정)'))
 APX.note('''출처: collect/D §2. ₩4.2만은 하한(가입 전원이 광고로 들어왔다고 가정) — «상한»이라 쓰지 말 것. 상한 추정 ₩12.9만. Meta·Google의 «전환»과 DB «가입»은 정의가 다름.''')
 
-APX.append(shell('Appendix · A8', '특허 3건 출원: <span class="purple">선별 · 생성 · 음성</span>', f'''
+APX.append(shell('Appendix · A7', '특허 3건 출원: <span class="purple">선별 · 생성 · 음성</span>', f'''
 {table(['출원번호', '발명의 명칭', '보호하는 것 (요지)', '관련 장표'], [
  ['<span class="patent">10-2026-0214808</span>', '코드 저장소 기반 면접 질문 선별 방법 및 시스템', '본인 기여 커밋을 골라 가중(본인 1.0 · 공동 0.70 · 타인 제외)하고 질문 대상 지점을 선별', 'Key Features 경쟁사 비교(본인 커밋만) · Development 점수식'],
  ['<span class="patent">10-2026-0214809</span>', '코드 저장소 기반 면접 질문 생성 방법 및 시스템', '근거 코드 묶음에서 질문을 만들고, 질문 속 식별자를 코드와 대조해 유지·폐기·재질의하는 게이트', 'Key Features 반론(근거 대조)'],
@@ -158,7 +203,7 @@ APX.note('''출원인 김건우(개인), 발명자 김건우·박천웅·노재�
 «관련 장표» 열은 장 제목으로 표기(쪽번호 금지 규칙). 최종 표기는 Dev 슬림화 후 ppt-start와 맞춤 — 0214809는 Development 입력·출력 게이트 장이 남으면 덧붙임.
 청구항 요지 원문: Devfit/docs/patent/ 명세서 (⛔ 삭제 금지, 공지예외 12개월 시한 진행 중).''')
 
-APX.append(shell('Appendix · A10', '시장 규모: 개발 직군 구직자 <span class="purple">약 38.8만 명</span>', f'''
+APX.append(shell('Appendix · A9', '시장 규모: 개발 직군 구직자 <span class="purple">약 38.8만 명</span>', f'''
 {table(['구분', '값', '근거'], [
  ['연간 개발 직군 입사지원 (A)', '약 520만 건', '사람인·점핏 2025 상반기 약 260만 건 × 2 ⚙'],
  ['적극 구직자 1인 평균 입사지원 (B)', '13.4회', '한국경제인협회 2025 조사'],
@@ -176,3 +221,61 @@ APX.note('''예상 질문: «시장 크기는?»
 ⛔ «매출»은 시나리오 표의 가정값으로만, 실적처럼 말하지 말 것. 5년 SOM 27억 · TAM $2.8B 금지.''')
 
 
+
+# ================= A23: 소마 이후 B2C 인프라 이전 계획 (11-13 사용자 지시) =================
+CSS += r"""
+.apx-mig{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;word-break:keep-all;margin:auto 0;align-items:stretch}
+.apx-mig .matrix{font-size:23px}
+.apx-mig .matrix td,.apx-mig .matrix th{padding:12px 16px;line-height:1.38}
+.apx-mig .matrix td:first-child{font-weight:700;color:var(--ink);white-space:nowrap}
+.apx-mig .matrix td:nth-child(2){color:var(--muted)}
+.apx-mig .matrix td:nth-child(3) b{color:var(--purple-deep)}
+.apx-mig .matrix tr.keep td{background:#f6f4fd}
+.apx-mig .side{display:flex;flex-direction:column;gap:18px}
+.apx-mig .panel{padding:26px 30px}
+.apx-mig .k{font-size:21px;font-weight:700;color:var(--purple);margin-bottom:10px}
+.apx-mig ol{margin:0;padding-left:28px;font-size:22px;line-height:1.45;color:var(--body)}
+.apx-mig ol li{margin-bottom:6px}
+.apx-mig ol b{color:var(--ink)}
+.apx-mig .fix{display:flex;align-items:baseline;gap:12px}
+.apx-mig .fix b{font-size:58px;color:var(--purple-deep);line-height:1}
+.apx-mig .fix span{font-size:22px;color:var(--body)}
+.apx-mig .sm{font-size:20px;line-height:1.45;color:var(--muted);margin-top:8px}
+"""
+_MIG = [
+    ['프런트', 'S3 + CloudFront, CloudFront Function 라우팅', '<b>Vercel</b> · Next.js 정적 export 그대로, 라우팅과 보안 헤더는 vercel.json'],
+    ['API 진입', 'CloudFront /api → VPC Origin → 내부 ALB', '<b>Vercel rewrite /api</b> → Cloudflare Tunnel, VM 인바운드 포트 0'],
+    ['API · 분석 worker · 음성', 'ECS Fargate x86 (0.5 + 1×2 + 4 vCPU)', '<b>Oracle Ampere A1 VM 1대</b> (4 OCPU, 24GB) · docker compose · arm64 이미지'],
+    ['DB', 'RDS PostgreSQL db.t4g.small, 30GiB', '<b>같은 VM의 PostgreSQL + pgvector</b> · 블록 볼륨, Flyway 그대로'],
+    ['업로드 · 백업', 'EFS, RDS 자동 백업', '<b>블록 볼륨</b> + 매일 pg_dump → <b>OCI Object Storage</b>'],
+    ['비밀값', 'Secrets Manager', '<b>OCI Vault</b> · 컨테이너 기동 시 주입'],
+    ['배포', 'GitHub Actions OIDC → ECR → ECS', '<b>GitHub Actions → GHCR</b> → compose pull, staging → prod 게이트 유지'],
+    ['유지', 'Bedrock LLM, SES 메일, Cloudflare DNS, Sentry', '사용량 과금이라 그대로 · Bedrock은 API 키 방식(코드 지원)'],
+]
+APX.append(shell('Appendix · A21', '소마 이후 B2C 인프라: <span class="purple">AWS에서 Vercel과 Oracle Cloud로</span>', f'''
+<div class="apx-mig">
+  <div>{table(['구성', '현재 (AWS)', '이전 후'], _MIG, 'left plain').replace('<tr><td>유지<', '<tr class="keep"><td>유지<')}</div>
+  <div class="side">
+    <div class="panel"><div class="k">고정비</div>
+      <div class="fix"><b>월 $20</b><span>Vercel Pro 1석</span></div>
+      <div class="sm">유료 상품이 있어 비상업 한정인 Hobby 대신 Pro. Oracle VM, 블록 볼륨 200GB, Object Storage 20GB는 Always Free 범위</div></div>
+    <div class="panel"><div class="k">전환 순서</div><ol>
+      <li><b>병행 구축</b> · arm64 이미지 빌드, 음성 CER 재측정</li>
+      <li><b>DB 이전</b> · 쓰기 중지 후 pg_dump → 복원, 행 수 대조</li>
+      <li><b>트래픽 전환</b> · DNS를 Vercel로, AWS는 1주 대기</li>
+      <li><b>AWS 정리</b> · RDS 최종 스냅샷 보관 후 삭제</li></ol>
+      <div class="sm">되돌리기: DNS를 CloudFront로 복귀</div></div>
+    <div class="panel"><div class="k">지금까지 AWS를 쓴 이유</div>
+      <div class="sm" style="margin-top:0">소마 예산으로 쓸 수 있는 클라우드 중 서비스 폭이 가장 넓었고, 모델 비교 실험이 잦은 서비스라 여러 모델을 한 계정에서 바로 바꿔 부를 수 있는 Bedrock이 맞았음</div></div>
+  </div>
+</div>''', source='infra/terraform/prod terraform.tfvars, speech.tf (2026-11-13) · Oracle Cloud Free Tier, Vercel Pricing 공개 요금표'))
+APX.note('''소마 지원(AWS 크레딧)이 끝나면 B2C를 Vercel과 Oracle Cloud Always Free로 옮기는 계획입니다. 프런트는 이미 정적 export라 Vercel에 그대로 올리고, API, 분석 worker, 음성 서버, DB를 Oracle Ampere VM 한 대에 compose로 모읍니다. 고정비는 Vercel Pro 월 20달러이고, LLM과 메일은 지금처럼 쓴 만큼 냅니다.
+
+근거(현재 구성): infra/terraform/prod/terraform.tfvars = API 512 CPU/2048MB ×1, 분석 worker 1024/3072 ×2, RDS db.t4g.small 30GiB · speech.tf 기본값 4096/8192 ×1 · foundation nat_gateway_mode single · 전 컨테이너 X86_64. FE next.config.mjs 운영 빌드 output: "export". BE application.yml bedrock.api-key(BEDROCK_API_KEY) 지원 → IAM 역할 없이 호출 가능.
+메모리 합계 API 2 + worker 3×2 + 음성 8 = 16GB, DB 포함 약 18GB로 A1 24GB 안. CPU는 4 OCPU라 worker를 1개로 줄이고 운영 지표 보고 조정.
+Oracle Always Free: Ampere A1 합계 4 OCPU / 24GB, 블록 볼륨 200GB, Object Storage 20GB, Vault 비밀값 포함, 아웃바운드 월 10TB. 유휴 인스턴스 회수 정책과 A1 용량 부족 때문에 계정은 PAYG로 전환(무료 범위 안이면 0원).
+Vercel: Hobby는 비상업 용도 한정, Pro 월 $20/석. /api rewrite로 same-origin 쿠키 유지.
+Cloudflare Tunnel: VM이 바깥으로 연결을 열어 인바운드 포트를 열지 않음. 기존 X-Devfit-Origin-Verify 헤더 검사 대신 터널 인증으로 대체.
+AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비스가 가장 많았고, 역할별 모델 비교 실험(A10, Table 1 13개 모델)을 한 계정에서 바로 돌릴 수 있는 Bedrock이 서비스 특성에 맞았음.
+이전 후 감수하는 것(Q&A용, 장표에서 뺌): VM 1대라 장애 시 전체 중단 · CPU가 Fargate 합계(6.5 vCPU)보다 작아 분석 worker 동시 실행 2 → 1.
+⛔ 아직 실행하지 않은 계획. «이전 완료»·«비용 0원» 금지(Vercel Pro와 LLM 사용량은 계속 나감). 현재 AWS 월 청구액은 근거 자료가 없어 장표에 비교 수치를 쓰지 않음. B2B 콘솔은 이 장의 범위 밖.''')

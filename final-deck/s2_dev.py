@@ -677,7 +677,7 @@ S.append(shell('Development · 개발', '1. LLM 파이프라인 <span class="pur
   <div><img src="assets/dv-logo-cohere-color.svg" alt=""><small>임베딩</small><b>Cohere Embed v3</b><span>기출 검색, 1024차원</span></div>
   <div>{ic('mic', 26)}<small>음성</small><b>faster-whisper, Supertonic</b><span>CPU 사이드카 STT, TTS</span></div>
 </aside></div>''',
-    source='최종보고서 [그림 4] 채용공고 기반 면접 준비 파이프라인 · 운영 브랜치 origin/prod (2026-11-06) · 모델과 스택 전체는 부록 A11'))
+    source='최종보고서 [그림 4] 채용공고 기반 면접 준비 파이프라인 · 운영 브랜치 origin/prod (2026-11-06) · 모델과 스택 전체는 부록 A10'))
 S.note('''[≈25초] 첫 번째 범주, 개발입니다. 먼저 LLM 파이프라인입니다. 전체는 열 단계입니다. 위쪽은 공고입니다. URL, 이미지, PDF 어떤 형태로 넣어도 OCR과 구조화를 거쳐 요구 항목이 됩니다. 아래쪽은 내 저장소입니다. 본인 커밋 최대 1,000개를 받아 Decision Model로 선별하고, 레포마다 작업 단위 4~10개로 묶은 뒤, 근거가 충분한지 게이트에서 거릅니다. 두 줄이 질문 생성에서 만나고, 질문이 인용한 코드는 서버가 원문과 대조해서 맞으면 내보내고, 틀리면 한 번 다시 묻거나 버립니다. 공고 요구 항목은 어필 포인트로도 만들어집니다. LLM은 공고 구조화, 질문 생성, 어필 포인트에서 부르고, 커밋 판정은 경량 판정 모델, 나머지는 규칙으로 처리합니다.
 
 근거(origin/prod d84cb1c): ContributionOwnershipService(LEAD 1.0 / PARTIAL 0.70 / NOT_MINE 0.0) · QuestionBankService MAX_QUESTIONS_PER_EPISODE=4 · application.yml evidence-patch-lines 72, reasoning=zai.glm-5(temperature 0.2) · 커밋 판정 gpt-6-luna(application.yml:336-354).
@@ -977,7 +977,7 @@ PARK.append(shell('Development · 개발', '회사 기출 질문 연결', '''<di
   <div class="bx syes"><div><div class="lab pu">선택한 방법</div><div class="big pu" style="margin-top:10px">공개 출처<br>+ URL</div></div>
     <ul><li><i>✓</i>공개된 후기만 수집</li><li><i>✓</i>출처 URL과 함께 보존</li><li><i>✓</i>robots가 막은 곳 제외</li><li><i>✓</i>AI 수집을 막은 블로그 제외</li></ul></div>
 </div>''',
-    source='collect/D VOC · Devfit/docs/interview-data-sourcing/00_executive_summary.md (2026-08-16) · 수집 원칙 상세는 부록 A7'))
+    source='collect/D VOC · Devfit/docs/interview-data-sourcing/00_executive_summary.md (2026-08-16) · 수집 원칙 상세는 부록 A6'))
 PARK.note('''[≈10초] 다음은 회사 기출 질문 연결입니다. 사용자는 그 회사의 실제 면접 후기를 원했습니다. 그런데 기업 면접 질문을 사 오거나 받아 올 공식 경로는 없었습니다. 그래서 공개된 후기만, 출처 URL과 함께 모으기로 했습니다.
 
 출처: collect/D-growth-voc.md:167(요청 6건 중 1건) · interview-data-sourcing/00_executive_summary.md(공식 API 0건, 판례·약관 검토).
@@ -1091,7 +1091,7 @@ S.note('''[≈18초] 두 번째 범주, 운영입니다. 화면은 S3에 올려 
 출처: 최종보고서 시스템 구성도(그림 2)와 수행 방법 «운영 측면» 표(Step Functions 상태 머신, DynamoDB 환경 잠금, 1분 주기 복구 스윕, 30분 만료, 실패와 주의와 거부 상태를 Slack으로 구분) · 게이트 횟수 collect/B §6(scripts/gates.py) · BE·FE ci.yml origin/prod: id-token: write, role-to-assume, AWS 액세스 키 시크릿 없음, deploy-production needs test와 verify-production-promotion.
 사양(구성도): API 0.5 vCPU 2GB(오토스케일 1~3), 분석 워커 1 vCPU 3GB 2태스크, 음성 4 vCPU 8GB, 운영 RDS db.t4g.small. 개발 환경은 EC2 t3.micro 모놀리식, 개발 화면은 Cognito 게이트 뒤.
 ⚠️ 13분 9초 → 2분 22초는 최종보고서 값(Actions 단계 시간). 이전 덱의 «운영 배포 잡 429–488초 → 145–260초»는 집계 기준이 달라 섞지 말 것. 배포 실패율 14.3% → 1.7%는 본편에서 뺀 수치(Q&A용).
-Q&A: PR 리뷰 0건, 96% 작성자 병합 → 사람 승인 대신 CI와 승격 게이트로 보증, PR 본문 72%에 검증 내역. 부록 A12와 내용이 겹침.''')
+Q&A: PR 리뷰 0건, 96% 작성자 병합 → 사람 승인 대신 CI와 승격 게이트로 보증, PR 본문 72%에 검증 내역.''')
 
 
 # ───────────────── 운영 2. 관리자 페이지 (운영 도구, 유저 트래킹) ─────────────────
@@ -1108,7 +1108,7 @@ S.append(shell('Development · 운영', '2. 관리자 페이지 <span class="pur
   <div><img src="assets/dv-logo-clarity.png" alt="Microsoft Clarity"><b>Clarity</b><span>이탈 지점 확인, 화면 마스킹</span></div>
   <div><img src="assets/dv-logo-sentry.svg" alt="Sentry"><b>Sentry</b><span>FE, BE, 워커 오류 알림</span></div>
 </div>
-</div>''', source='admin.devfit.app 운영 모니터링 (2026-11-11 02:03 캡처, 최근 14일) · 메뉴 (2026-11-04 캡처) · Devfit_FE/admin (별도 Next 앱) · BE com.devfit.admin · collect/A-admin-usage.md · FE 3255a69 · 3372511 · fff2768(네이버 소유 확인 08-21) · 7aa25dc · f42c9e7 · 67e5238 / BE 00a4c31 · 56c55b7 (운영 반영일 기준) · 도구별 숫자 차이는 부록 A4'))
+</div>''', source='admin.devfit.app 운영 모니터링 (2026-11-11 02:03 캡처, 최근 14일) · 메뉴 (2026-11-04 캡처) · Devfit_FE/admin (별도 Next 앱) · BE com.devfit.admin · collect/A-admin-usage.md · FE 3255a69 · 3372511 · fff2768(네이버 소유 확인 08-21) · 7aa25dc · f42c9e7 · 67e5238 / BE 00a4c31 · 56c55b7 (운영 반영일 기준) · 도구별 숫자 차이는 부록 A3'))
 S.note('''[≈15초] 두 번째는 관리자 페이지입니다. 운영은 직접 만든 관리자 콘솔로 봅니다. 화면은 운영 모니터링으로, 최근 14일 LLM 호출 2,290건, 성공률 99.9%, 추정 비용과 Sentry 운영 오류를 한 화면에서 봅니다. 서비스 상태, 사용자가 어디까지 쓰는지, LLM 호출 원가, 분석 실패 사유, 미리 받아 둔 공고와 기출까지 한 곳에 있습니다. 콘솔 밖에서는 GA4, Search Console, 네이버 서치어드바이저, Clarity, Sentry를 함께 쓰고, 도구마다 숫자가 달라 집계 기준은 콘솔 DB로 정했습니다.
 
 [관리자 페이지 두 장 통합 2026-11-12]
@@ -1131,7 +1131,7 @@ PARK.note('''[≈10초] 실제 화면입니다. 위는 B2C 대시보드의 제�
 
 출처: metrics/screenshots/admin_b2c_product_metrics_90d_20261104-1225.png(브라우저·사이드바·계정 영역 잘라냄) · admin_llm_usage_90d_20261105-0043.png.
 ⛔ 캡처 속 76 · 61 · 75.0% · 11.8% 등은 내부 포함 값 — 말로 성과처럼 읽지 말 것. «매출» 금지.
-Q&A: «$32.77+»의 +는 2,472건 모델 단가 미설정(단가 설정 전 호출) 때문. 원장은 08-30 15:31부터라 그 전 호출 없음. 분석 1회 변동비 약 330원(저장소 3개, 보고서 기준)은 부록 A6. 원장 단순 평균 약 133원은 Q&A용 참고값으로만 — 330원과 비교해 «절감»이라 말하지 말 것(«60% 절감» 금지).''')
+Q&A: «$32.77+»의 +는 2,472건 모델 단가 미설정(단가 설정 전 호출) 때문. 원장은 08-30 15:31부터라 그 전 호출 없음. 분석 1회 변동비 약 330원(저장소 3개, 보고서 기준)은 부록 A5. 원장 단순 평균 약 133원은 Q&A용 참고값으로만 — 330원과 비교해 «절감»이라 말하지 말 것(«60% 절감» 금지).''')
 
 PARK.append(shell('Development · 운영', 'Clarity로 <span class="red">가장 큰 이탈</span> 발견 — Instagram 인앱', f'''
 <div class="panel" style="padding:26px 34px;flex:1;display:flex;flex-direction:column;min-height:0"><div class="small-copy" style="font-weight:900;color:var(--ink)">세션 1,000개당 가입 수 (괄호: Instagram 인앱 비중)</div>
@@ -1210,7 +1210,7 @@ S.note('''[≈15초] 마지막은 SBOM입니다. 백엔드를 빌드할 때 배�
 
 근거(origin/prod): build.gradle:5-6, 69-72(cyclonedx, bootJar 내장 META-INF/sbom/application.cdx.json) · ci.yml:54-98(SBOM 추출 → grype 0.121.0, 바이너리 sha256 검증 → vulnerability-gate.py, BLOCKING={critical, high}, MAX_EXCEPTION_DAYS=90) · ci.yml:132, 477(개발과 운영 배포 잡 needs에 vulnerability-scan) · exceptions 빈 목록 · 관리자 SBOM 화면 FE 4b9608a(11-01) · FE ci.yml:90, 96(npm audit --omit=dev --audit-level=high, test 잡 → 배포 잡 needs) · uses 줄 BE 16, FE 17 모두 40자 SHA · 최종보고서 SBOM 표(BE CycloneDX 1.6, 웹 1.5)와 기타(개인정보, 보안) 표(치명 1, 높음 6 → 4개 감사 대상 0건).
 ⛔ «취약점 0건 = 안전» 금지(알려진 HIGH와 CRITICAL만 보는 게이트). ⛔ SBOM + grype 게이트는 백엔드만. 프론트는 npm audit 게이트라 «SBOM 게이트가 전체 서비스에 있다»고 말하지 말 것.
-Q&A: 침투 테스트와 외부 보안 감사 없음 · 세부 조치는 부록 A18.''')
+Q&A: 침투 테스트와 외부 보안 감사 없음 · 세부 조치는 부록 A16.''')
 
 
 # ───────────────── 수행과정 ─────────────────
@@ -1240,7 +1240,7 @@ S.note('''[≈20초] 멘토 피드백을 받은 날과 운영에 반영한 날�
 
 
 # ───────────────── 부록으로 뺀 Dev 장표 (11-10 사용자: 본편은 개발 5, 운영 2, 보안 2 주제만) ─────────────────
-APX.append(shell('Appendix · A14', '공고 URL 하나로 <span class="purple">29곳</span>에서 본문을 받고, <span class="purple">두 층으로 캐시</span>', f'''
+APX.append(shell('Appendix · A12', '공고 URL 하나로 <span class="purple">29곳</span>에서 본문을 받고, <span class="purple">두 층으로 캐시</span>', f'''
 {dg(560, {
   'url': (20, 60, 230, 160, 'link', '공고 URL', '채용 플랫폼 5 + 기업 채용 사이트 24', '', ''),
   'ca':  (340, 60, 260, 160, 'L:postgresql', '캐시 조회', '본문(사이트·공고 키) + LLM 결과(본문 해시 키) · 30일', '', 'on'),
@@ -1258,7 +1258,7 @@ APX.note('''[≈15초] 다음은 공고 캐싱입니다. 공고 URL 하나를 �
 근거(origin/prod): CorporateSite 인터페이스 · sites/*Site.java 24개 · CorporateSiteRegistry · SafeFetcher(CorporateSiteSourceRulesTest가 Jsoup.connect 0건 잠금) · CorporateParsing.withOcrFallback(200자 미만 · OCR이 더 길 때만) · JobPostingReadThroughService · InterviewPreparationInsightCacheTest · 크롤 일일 예산 LLM 1,000 · OCR 300, 응답 못 받은 호출은 예산 환급, 비개발 공고는 skip_reason으로 재과금 안 함.
 ⛔ 회사명·로고·«제휴» 금지. «공고 1,450건 사전 수집» 본편 금지(직업안정법 표현 리스크, K-compliance O5).''')
 
-APX.append(shell('Appendix · A15', '본문과 LLM 결과를 2층으로 캐시해 같은 공고는 <span class="purple">한 번만 수집 · 분석</span>', '''<div class="dx dx-cc">
+APX.append(shell('Appendix · A13', '본문과 LLM 결과를 2층으로 캐시해 같은 공고는 <span class="purple">한 번만 수집 · 분석</span>', '''<div class="dx dx-cc">
   <div class="tl"><div><small>1차 · 07-19</small><b>공고 URL · 이미지 입력</b></div><i>→</i><div><small>2차 · 09-15</small><b>기업 채용 사이트 · 29곳</b></div><i>→</i><div class="on"><small>3차 · 09-18</small><b>공고 캐시 2층</b></div></div>
   <div class="why"><b>변경 사유</b>지원자마다 같은 공고를 다시 받고, 다시 OCR하고, 다시 LLM으로 분석</div>
   <div class="ly l1"><div class="hd"><span>1층</span><b>공고 본문</b></div>
@@ -1286,7 +1286,7 @@ APX.note('''[≈15초] 공고 처리는 세 번 바뀌었고, 마지막이 캐�
 Q&A: 캐시 공고 카드 1.0초 vs 미스 17~34초(운영 11-05 · 공고 4건 · 내부 계정, collect/F §2·§3) — 표본 4건이라 장표에서는 뺌. 캐시 적중 20건(1건에 39회 몰림)·마지막 크롤 9/30 → 적중률은 쓰지 않음.
 ⛔ 미리 받은 공고 건수(«1,450건 사전 수집») 본편 금지(직업안정법 표현 리스크, K-compliance O5). 회사명·로고 금지.''')
 
-APX.append(shell('Appendix · A16', '오류는 Sentry로 모으고, <span class="purple">그 SDK로 무거워진 랜딩은 다시 경량화</span>', f'''
+APX.append(shell('Appendix · A14', '오류는 Sentry로 모으고, <span class="purple">그 SDK로 무거워진 랜딩은 다시 경량화</span>', f'''
 <div class="dv-vs">
   <div class="v before"><b>377KB</b><span>Sentry 도입 직후 랜딩 초기 JS (gzip)</span></div>
   <div class="arr">→</div>
@@ -1300,7 +1300,7 @@ APX.note('''[≈8초] 10월 8일에 FE와 BE, 분석 워커까지 Sentry를 붙�
 Q&A: 14일 미해결 이슈 25개(BE 22 · FE 3), 대부분 10-28·11-04 두 번의 DB 연결 장애 — 원인 미확인(비밀번호 회전 추정). 10-08 이전은 오류 수집 공백.''')
 
 
-APX.append(shell('Appendix · A17', '구글 검색 결과 <span class="red">0건</span>에서 <span class="purple">검색엔진 등록</span>부터 시작', psr(
+APX.append(shell('Appendix · A15', '구글 검색 결과 <span class="red">0건</span>에서 <span class="purple">검색엔진 등록</span>부터 시작', psr(
     '<div class="dv-big rd">site: 0건</div><div class="dv-t">09-17 Google site:devfit.app 결과 0 · 브랜드 검색에도 미노출 · 원인은 검색엔진 미등록</div>',
     li([('기술 SEO 기반', 'metadata · sitemap · robots · JSON-LD · llms.txt (07-27~)'), ('CS 지식백과 + 질문 색인', '「개발자 기술면접」 검색어 공략 · 875문항'), ('Search Console · 네이버 · IndexNow 제출', '08-21 네이버 소유 확인 · 09-17 IndexNow 209 URL · 09-18 sitemap 4종'), ('색인 대상 172편 → 55편', '11-05 본문 보강 · 나머지는 noindex · 11-06 재제출')]),
     '<div class="dv-big pu">SEO 100</div><div class="dv-t">Lighthouse 모바일 (Perf 99) · 09-17</div><div class="dv-big" style="margin-top:14px">색인 1 → 재측정</div><div class="dv-t">지금 색인은 홈 1페이지 · 11-05 재정비 효과는 2~3주 뒤 GSC로</div>') + '<div class="dv-q" style="margin-top:18px">09-16 자유 멘토링 "1,000명 사용자 모으기 — 개발자가 할 수 있는 최고의 마케팅, SEO" (강준혁 멘토) <strong>참여 후 개선</strong><small>당일 밤 타깃 메타 · 다음 날 질문 색인 · IndexNow 제출 · sitemap 4종</small></div>',
@@ -1312,7 +1312,7 @@ APX.note('''[≈14초] 9월 16일 강준혁 멘토의 SEO 자유 멘토링에 �
 ⛔ «devfit 검색 1위»·순위·노출 증가 주장 금지 — 측정값 없음. devfit.co가 같은 카테고리를 점유(동명). sameAs에 미확인 URL 금지.
 Q&A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구글이 색인하지 않아 55편으로 줄이고 나머지는 noindex. 효과는 11월 말 재측정. · 운영 404가 아직 403(CloudFront 설정이 레포 밖 Terraform) · 네이버 서치어드바이저 새 sitemap 미재제출 · 명조 웹폰트 433KB(라이선스로 못 줄임) · 중복 주제 8쌍 301 미처리.''')
 
-APX.append(shell('Appendix · A18', 'GitHub는 <span class="purple">최소 권한</span>으로 연결하고, 토큰과 세션은 원문을 남기지 않음', f'''
+APX.append(shell('Appendix · A16', 'GitHub는 <span class="purple">최소 권한</span>으로 연결하고, 토큰과 세션은 원문을 남기지 않음', f'''
 <div class="dv-tl dv-tl-sec">
   <div><img src="assets/dv-logo-github.svg" alt="GitHub"><b>최소 권한 연동</b><span>기본 권한은 read:user, user:email뿐. 비공개 레포는 원할 때만 추가 동의, 분석할 레포는 사용자가 선택</span></div>
   <div class="on">{ic('shield', 52)}<b>토큰 암호화</b><span>GitHub access token은 AES-256-GCM으로 저장. 운영은 키가 없으면 서버가 기동하지 않음</span></div>
@@ -1320,16 +1320,16 @@ APX.append(shell('Appendix · A18', 'GitHub는 <span class="purple">최소 권�
   <div>{ic('link', 52)}<b>SSRF 차단</b><span>공고 수집은 SafeFetcher로만. 리다이렉트마다 허용 호스트를 다시 검사, 응답 8MB 상한</span></div>
   <div>{ic('search', 52)}<b>분석 도구 마스킹</b><span>Clarity는 화면 전체 마스킹, Sentry는 개인정보 전송과 Replay를 끔</span></div>
   <div>{ic('db', 52)}<b>관리자 접근 통제</b><span>관리자 콘솔은 Cognito TOTP MFA 필수. 관리자의 조회와 변경은 모두 감사 로그로 기록</span></div>
-</div>''', source='BE origin/prod: auth/GithubTokenCipher(AES-256-GCM, application-prod.yml require-token-encryption: true) · user_session(SHA-256) · prep/corporate/SafeFetcher · admin/AdminAuditService · infra/terraform prod admin.tf(mfa_configuration ON, software_token_mfa) · 최종보고서 개발 타당성과 위험 요소 · 부록 A18'))
+</div>''', source='BE origin/prod: auth/GithubTokenCipher(AES-256-GCM, application-prod.yml require-token-encryption: true) · user_session(SHA-256) · prep/corporate/SafeFetcher · admin/AdminAuditService · infra/terraform prod admin.tf(mfa_configuration ON, software_token_mfa) · 최종보고서 개발 타당성과 위험 요소 · 부록 A16'))
 APX.note('''[≈15초] 처음 받은 질문이 "GitHub 연동하면 내 코드 털리는 거 아니냐"였습니다. 그래서 GitHub는 프로필과 이메일 권한만으로 연결하고, 비공개 레포는 사용자가 원할 때만 추가로 동의받습니다. 토큰은 AES-256-GCM으로 암호화하고, 운영에서는 암호화 키가 없으면 서버가 아예 뜨지 않게 했습니다. 세션은 해시만 저장하고, 공고 URL로 내부망을 찌르는 SSRF는 수집기 한 곳에서 막습니다. 관리자 콘솔은 MFA를 거쳐야 들어가고, 관리자가 본 것과 바꾼 것은 모두 기록됩니다.
 
-근거(origin/prod): GithubTokenCipher 생성자(키 없음 + require-token-encryption=true면 IllegalStateException) · application-prod.yml:69-70 · CI가 배포 전에 APP_GITHUB_TOKEN_ENCRYPTION_KEY의 Base64와 32바이트를 검사(ci.yml:323-351, 755-784) · V38 github_user_id(username 선점 차단, 부록 A18) · Cognito 운영자 풀 TOTP MFA(terraform prod admin.tf:24, 54) · AdminAuditLog · Clarity data-clarity-mask(7aa25dc) · docs/SENTRY.md(Replay 끔) · 최종보고서 OWASP 표 5번(Sentry PII 전송 금지).
+근거(origin/prod): GithubTokenCipher 생성자(키 없음 + require-token-encryption=true면 IllegalStateException) · application-prod.yml:69-70 · CI가 배포 전에 APP_GITHUB_TOKEN_ENCRYPTION_KEY의 Base64와 32바이트를 검사(ci.yml:323-351, 755-784) · V38 github_user_id(username 선점 차단, 부록 A16) · Cognito 운영자 풀 TOTP MFA(terraform prod admin.tf:24, 54) · AdminAuditLog · Clarity data-clarity-mask(7aa25dc) · docs/SENTRY.md(Replay 끔) · 최종보고서 OWASP 표 5번(Sentry PII 전송 금지).
 레포 범위 선택은 08-07 자유멘토링 피드백 반영(반영 기간은 수행과정 장에서만 말함).
 ⛔ 침투 테스트와 외부 보안 감사는 없음. «완벽한 보안», «해킹 불가» 금지.
-🔴 확인 필요: 커밋 판정(OpenAI)과 조건부 TTS 호출이 개인정보처리방침 국외 이전 항목에 고지됐는지(부록 A11 노트 R1). 보안을 앞세우면 Q&A에서 물을 수 있음.''')
+🔴 확인 필요: 커밋 판정(OpenAI)과 조건부 TTS 호출이 개인정보처리방침 국외 이전 항목에 고지됐는지(부록 A10 노트 R1). 보안을 앞세우면 Q&A에서 물을 수 있음.''')
 
 # ───────────────── 부록: 본편에서 뺀 기술 내용 (2026-11-12) ─────────────────
-APX.append(shell('Appendix · A20', '커밋 선별 방식은 <span class="purple">세 번 바뀌어</span> Decision Model까지', '''<div class="dx dx-fx">
+APX.append(shell('Appendix · A18', '커밋 선별 방식은 <span class="purple">세 번 바뀌어</span> Decision Model까지', '''<div class="dx dx-fx">
   <div class="rw"><div class="dt"><small>06-29 · 1차</small><b>자체 점수식</b></div>
     <code>점수 = 메시지 키워드 <em>× 2</em> + 로직 줄 수 <em>× 3</em> + 기술 키워드 <em>× 2</em></code>
     <div class="why"><b>구현 방식</b>외부 라이브러리 없이 3항 선형식 · 계수는 손으로 정함</div></div>
@@ -1346,7 +1346,7 @@ APX.note('''[≈15초] 커밋 선별은 세 번 바뀌었습니다. 처음엔 �
 근거: GithubService 커밋 점수식 score(message)×2 + logicLines×3 + codeInterest×2(CLAUDE.md·d7f9b98) · e4d9ce8 커밋 메시지 «uncertainty 항이 순위를 지배해 메시지가 짧은 커밋이 1순위로 조준됐다(fix bug·afooter·add pay) … 항의 값 대신 순위 백분위를 쓰면 명목 가중치가 곧 실효 가중치가 된다. 실효 0이던 temporalRarity·상수항은 제거 … 팀 저장소 랭킹 소멸의 직접 경로» · CommitProbeDiagnostics(항별 분산 기여 로그) · d20e5eb · b82467b · 최종보고서 «9월 순위 정규화로 저장소 규모에 따른 편향을 줄이고 10월에 Decision Model을 도입».
 ⛔ Jev는 «검토 후 미채택»까지(성능 비교 수치 없음). 각 단계 개선 폭은 전후 측정 없음 — 수치로 말하지 말 것. «커밋 선별 LLM 0회» 금지.''')
 
-APX.append(shell('Appendix · A21', '질문 생성 <span class="purple">호출 분할</span>과 난이도 계산 세부', '''
+APX.append(shell('Appendix · A19', '질문 생성 <span class="purple">호출 분할</span>과 난이도 계산 세부', '''
 <div class="dv-q3 dv-mq">
   <div class="two">
     <div class="q3p">
@@ -1382,7 +1382,7 @@ APX.note('''[부록 · 2026-11-12 본편 17장에서 뺀 내용] 일곱 유형�
 
 근거: 본편 17장 노트와 같음. ⛔ «12% → 78%» 금지, 품질 점수(QI) 개선 주장 금지.''')
 
-APX.append(shell('Appendix · A22', '분석한 저장소로 쓰는 <span class="purple">자기소개서와 포트폴리오</span>', f'''
+APX.append(shell('Appendix · A20', '분석한 저장소로 쓰는 <span class="purple">자기소개서와 포트폴리오</span>', f'''
 <div class="dv-cv">
   <figure class="dv-cap"><img src="assets/dv-cap-coverletter.png" alt="AI 자기소개서 작성 화면"><figcaption>실서비스 캡쳐 (자기소개서 작성)</figcaption></figure>
   <div class="dv-cv-r">

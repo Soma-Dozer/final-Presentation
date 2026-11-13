@@ -446,7 +446,7 @@ S.append(shell('Key Features', '"Claude Code에 GitHub 링크 주면 <span class
     <div class="in-hnc">같은 LLM이라도,<br>차이는 <em>하네스</em><small>DevFit은 같은 절차를 서버에서 매번 실행해 질문 품질을 일정하게 유지합니다</small></div>
     <div class="in-hne"><div class="in-hnek">외부 근거 · 같은 GPT-4 Turbo</div><div class="in-hnen"><b>11.0%</b><i>→</i><b class="p">18.0%</b></div><small>하네스만 바꾼 SWE-bench Lite 해결률<br>SWE-agent, NeurIPS 2024</small></div>
   </div>
-</div>''', source='범용 AI 비교 파일럿 (2026-11-05, 공개 레포 4개, 결정론 채점) · 부록 A2 · Yang et al., SWE-agent, NeurIPS 2024, Table 1 (Shell-only vs SWE-agent)'))
+</div>''', source='범용 AI 비교 파일럿 (2026-11-05, 공개 레포 4개, 결정론 채점) · Yang et al., SWE-agent, NeurIPS 2024, Table 1 (Shell-only vs SWE-agent)'))
 S.note('''[1:45–2:25] 가장 많이 들은 반론입니다. «Claude Code에 GitHub 링크 주면 되지 않나요?» 저희 답은 이렇습니다. 같은 LLM이라도 차이는 하네스입니다. DevFit은 공고를 정리하고, 내 커밋만 고르고, 근거 diff를 묶고, 질문을 만든 뒤, 질문 속 코드 이름을 실제 diff와 대조해 없으면 버립니다. 이 절차를 사용자가 매번 프롬프트로 짜는 게 아니라 서버가 매번 강제합니다. 이건 저희만의 얘기가 아닙니다. 같은 GPT-4 Turbo로도 하네스만 바꾸면 SWE-bench 해결률이 11%에서 18%로 오릅니다. 실제로 같은 레포·같은 공고·같은 지시로 비교했더니, 레포 링크만 받은 채팅형 AI는 «레포를 확인해 보니»라고 쓰고는 근거 18개를 전부 지어냈고, DevFit은 28개 모두 실존했습니다. 그럼 직접 보여 드리겠습니다.
 
 주장: claims.md C2 «범용 LLM과의 차이는 모델이 아니라 하네스» — 팀 주장으로 말한다(장표에 멘토 인용 넣지 않음, 사용자 지시 2026-11-06). Q&A에서 «누가 그러냐»가 나오면: 11-02 김동현 멘토 멘토링에서 같은 지적을 받음.
@@ -456,10 +456,10 @@ S.note('''[1:45–2:25] 가장 많이 들은 반론입니다. «Claude Code에 G
 
 출처: collect/E-compare.md (2026-11-05 파일럿, 결정론 채점·LLM 0회). 게이트: 모든 질문 출처 353/353(collect/C 평가 세트 전수) · 운영 최근 30일 84건 차단(관리자 콘솔, collect/A §7) · 실행 1회 63개 중 5개 폐기. 특허 출원 10-2026-0214809(생성·게이트).
 외부 근거(R2, last-dance/research/R2-harness-and-stats.md): SWE-agent arXiv:2405.15793 Table 1 — GPT-4 Turbo · SWE-bench Lite, Shell-only 11.00% vs SWE-agent 18.00%. Anthropic «swe-bench-sonnet»: «can vary significantly based on this scaffolding, even when using the same underlying AI model». Epoch AI(2025-12-23): scaffold만으로 GPT-5 최대 11%p 차. ⚠ 반대 근거: 같은 Anthropic 글에서 스캐폴드 고정·모델만 교체 시 22%→33%→49% → «모델보다 하네스가 중요» 단정 금지. Q&A «모델이 더 중요하지 않나?» → «모델도 중요합니다. 다만 모델이 같아도 하네스에 따라 크게 달라지고, 모델은 저희가 바꿔 끼울 수 있지만 하네스는 저희가 만든 것입니다».
-Q&A 대비: clone한 Claude Code는 30/32 실존 → «잘 지시하면 찾는다. 그 지시와 대조를 사용자가 매번 해야 한다. DevFit은 서버가 매번 강제 + 공고 단위 흐름 + 본인 커밋 필터 + 음성 모의면접». Greenroom(GitHub 레포 분석 모의면접) 존재 — 부록 A2.
+Q&A 대비: clone한 Claude Code는 30/32 실존 → «잘 지시하면 찾는다. 그 지시와 대조를 사용자가 매번 해야 한다. DevFit은 서버가 매번 강제 + 공고 단위 흐름 + 본인 커밋 필터 + 음성 모의면접». Greenroom(GitHub 레포 분석 모의면접) 존재 — collect/E-compare.md(범용 AI 비교 부록은 11-13 삭제).
 ⛔ «유일»·«최초»·«AI는 레포를 못 읽는다»·«Claude보다 정확» 금지. ⛔ «46/46 일치» 금지.
 🔴 인용 실명은 동의 후에만 — 현재 역할만 표기.
-(11-10 삭제한 장표 2개 → Q&A용) 질문 귀속 4지선다 81.9% vs 우연 25%, n=177 — 부록 A3 · AI 모의면접 비교(이력서 vs 내 커밋, 본인 1.0/공동 0.70/타인 제외, 공고 29곳) — 부록 A2.''')
+(11-10 삭제한 장표 2개 → Q&A용) 질문 귀속 4지선다 81.9% vs 우연 25%, n=177 — 부록 A2 · AI 모의면접 비교(이력서 vs 내 커밋, 본인 1.0/공동 0.70/타인 제외, 공고 29곳) — collect/E-compare.md.''')
 
 # ================= 2. 시연 =================
 S.append(raw('dark-slide', f'''<div class="dark-grid"></div><div class="slide-shell" style="padding:0">
