@@ -519,6 +519,76 @@ CSS += '\n/* 2026-11-13: account growth and returning users on one slide. */\n.e
 S.append(divider('05 · Effect', 'Effect', '사용자 유입, 운영 지표, 비즈니스 모델과 비전'))
 S.note('''[구분] 협업과 수행 과정을 바탕으로 만든 서비스에서 어떤 성과를 확인했는지 소개합니다. 사용자 유입과 운영 지표, 비즈니스 모델, 비전으로 이어집니다.''')
 
+# (2026-11-13 사용자: 사업자, 직업정보, 특허 3장을 Effect 구분 장 바로 뒤로 이동)
+def docimg(src, alt, ratio, cap=''):
+    c = f'<div class="cap">{cap}</div>' if cap else ''
+    return f'<div class="docimg" style="aspect-ratio:{ratio}"><img src="assets/{src}" alt="{alt}">{c}</div>'
+
+import os as _os
+BIZ_SRC = 'cert-biz.png' if _os.path.exists(_os.path.join(_os.path.dirname(OUT), 'assets', 'cert-biz.png')) else ''
+def stackdoc(src, alt, cap, left, top, rot, z):
+    return f'<div class="sd" style="left:{left}px;top:{top}px;transform:rotate({rot}deg);z-index:{z}"><img src="assets/{src}" alt="{alt}"><span class="tag">{cap}</span></div>'
+pat = [('patent-a.png', '10-2026-0214808', '선별'), ('patent-b.png', '10-2026-0214809', '생성'), ('patent-c.png', '10-2026-0214811', '음성')]
+
+# ---------- 사업 운영 기반 · 이전 통합 장표 복원 (2026-11-13) ----------
+# (2026-11-13 사용자: 합친 장 대신 사업자, 직업정보, 특허 3장으로 되돌림. 합친 장은 보류)
+class _Park(list):
+    def note(self, t): pass
+PARK = _Park()  # 보류: 덱에 안 들어감
+PARK.append(shell('Effect', '사업 운영 기반을 갖추고, <span class="purple">상표·핵심 기술을 출원</span>했습니다', '\n<div class="ef-foundation-grid">\n  <article class="ef-foundation-card">\n    <div class="ef-foundation-kicker">사업 운영</div>\n    <h3>사업자등록·통신판매업<br>신고 완료</h3>\n    <div class="ef-foundation-docs">\n      <figure><img src="assets/cert-biz.png" alt="사업자등록증 전체"><figcaption><b>사업자등록</b><span>도저랩스 · 09/02 개업</span></figcaption></figure>\n      <figure><img src="assets/cert-mail.png" alt="통신판매업 신고증 전체"><figcaption><b>통신판매업 신고</b><span>11/02 신고</span></figcaption></figure>\n    </div>\n    <div class="ef-foundation-result">서비스 운영·결제를 위한 사업 기반</div>\n  </article>\n  <article class="ef-foundation-card">\n    <div class="ef-foundation-kicker">채용 정보 제공</div>\n    <h3>직업정보제공사업<br>신고 완료</h3>\n    <div class="ef-foundation-docs single">\n      <figure><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증 전체"><figcaption><b>서울청 제2026-31호</b><span>10/19 신고</span></figcaption></figure>\n    </div>\n    <div class="ef-foundation-result">직업정보제공사업자로 신고</div>\n  </article>\n  <article class="ef-foundation-card ef-foundation-ip">\n    <div class="ef-foundation-kicker">브랜드·기술 보호</div>\n    <div class="ef-foundation-trademark">\n      <img src="assets/ef-trademark.png" alt="DevFit 상표 출원공고결정서 전체">\n      <div><h3>DevFit 상표<br>출원공고 결정</h3><p>제42류 · 11/06</p></div>\n    </div>\n    <div class="ef-foundation-patents">\n      <h3>핵심 기술 <strong>3건</strong> 특허 출원</h3>\n      <div class="ef-foundation-patent-docs">\n        <figure><img src="assets/patent-a.png" alt="질문 선별 특허 출원번호통지서 10-2026-0214808"><figcaption>질문 선별</figcaption></figure>\n        <figure><img src="assets/patent-b.png" alt="질문 생성 특허 출원번호통지서 10-2026-0214809"><figcaption>질문 생성</figcaption></figure>\n        <figure><img src="assets/patent-c.png" alt="음성 답변 평가 특허 출원번호통지서 10-2026-0214811"><figcaption>음성 답변 평가</figcaption></figure>\n      </div>\n    </div>\n    <div class="ef-foundation-result">상표 출원공고 결정 · 특허 3건 출원</div>\n  </article>\n</div>', cls='ef-foundation-slide', source='사업자등록증·통신판매업 신고증·직업정보제공사업 신고확인증·상표 출원공고결정서·특허 출원번호통지서 3건'))
+PARK.note('[약 13초] 사업자등록과 통신판매업·직업정보제공사업 신고를 마쳤습니다. DevFit 상표는 출원공고 결정을 받았고, 질문 선별·질문 생성·음성 답변 평가의 핵심 기술은 특허 3건으로 출원했습니다.\n\n[기존 33~35쪽 통합 · 증빙 및 질의응답 근거 보존]\n[사업자등록 · 통신판매업 신고 · 상표 출원]\n[증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서) · 통신판매업 신고증(제2026-서울서초-3702호, 11-02) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).\n상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지. ⛔ «매출» · «공동대표» 금지.\n\n[직업정보제공사업 신고]\n[직업정보제공사업 신고 · 법률 멘토링 메모 — Q&A용]\n직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.\n법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).\n개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).\n순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 Effect 직업정보제공사업 장.\n\n[핵심 기술 3건 특허 출원: 질문 선별 · 질문 생성 · 음성 답변 평가]\n[증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).\n명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.\n⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A8.')
+
+S.append(shell('Effect', '<span class="purple">사업자등록 · 통신판매업 신고 · 상표 출원</span>', f'''
+<div class="ef-d3">
+  <figure><img src="assets/{BIZ_SRC}" alt="사업자등록증"><figcaption><b>사업자등록증</b>도저랩스 · 개업 2026-09-02</figcaption></figure>
+  <figure><img src="assets/cert-mail.png" alt="통신판매업 신고증"><figcaption><b>통신판매업 신고증</b>제2026-서울서초-3702호 · 11-02</figcaption></figure>
+  <figure><img src="assets/ef-trademark.png" alt="DevFit 상표 출원공고결정서 (제42류, 출원번호 40-2026-0177374)"><figcaption><b>상표 출원공고 결정</b>DevFit · 제42류 · 40-2026-0177374</figcaption></figure>
+</div>''', source='증빙 원본 스캔·캡처 그대로 (자르거나 가리지 않음) · 상표는 출원공고 결정 단계'))
+S.note('''[≈10초] 결제를 받으려면 서류가 필요했습니다. 사업자등록과 통신판매업 신고를 마쳤고, DevFit이라는 이름은 상표로 출원해 출원공고 결정까지 받았습니다.
+
+[증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서) · 통신판매업 신고증(제2026-서울서초-3702호, 11-02) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).
+상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지. ⛔ «매출» · «공동대표» 금지.''')
+
+S.append(shell('Effect', '<span class="purple">직업정보제공사업</span> 신고', '''
+<div class="ef-dj">
+  <div class="ef-law-doc"><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증"><span class="tag">신고확인증 · 서울청 제2026-31호 · 2026-10-19</span></div>
+  <div class="r">
+    <div class="ef-law-act">
+      <h4>직업안정법</h4>
+      <p><b>제2조의2(정의)</b> 8. "직업정보제공사업"이란 신문, 잡지, 그 밖의 간행물 또는 유선ㆍ무선방송이나 컴퓨터통신 등으로 구인ㆍ구직 정보 등 직업정보를 제공하는 사업을 말한다.</p>
+      <p><b>제23조(직업정보제공사업의 신고)</b> ① 직업정보제공사업을 하려는 자(제18조에 따라 무료직업소개사업을 하는 자와 제19조에 따라 유료직업소개사업을 하는 자는 제외한다)는 고용노동부장관에게 신고하여야 한다. 신고 사항을 변경하는 경우에도 또한 같다.</p>
+      <span class="src">법률 제20121호, 2024. 1. 23., 일부개정 · 국가법령정보센터 원문</span>
+    </div>
+    <div class="why">서울노동청에 <b>정식 신고된 직업정보제공사업자</b>로서 보다 정확하고 다양한 직업 정보를 제공</div>
+  </div>
+</div>''', source='신고확인증 원본 그대로 (자르거나 가리지 않음) · 직업안정법 [법률 제20121호, 2024. 1. 23., 일부개정] 국가법령정보센터 원문'))
+S.note('''[≈10초] 채용공고를 모아 보여 주는 서비스는 직업안정법상 직업정보제공사업입니다. 10월 19일에 서울고용노동청에 신고를 마쳤고, 그래서 여러 채용 플랫폼과 기업 사이트의 공고를 정식 사업자로서 한곳에 모아, 출처가 분명한 최신 원문으로 보여 줄 수 있습니다.
+
+[직업정보제공사업 신고 · 법률 멘토링 메모 — Q&A용]
+직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.
+법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).
+개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).
+순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 부록 A16.''')
+
+spec = [('patent-spec-a.png', '선별'), ('patent-spec-b.png', '생성'), ('patent-spec-c.png', '음성')]
+
+spec = [('patent-spec-a.png', '선별'), ('patent-spec-b.png', '생성'), ('patent-spec-c.png', '음성')]
+S.append(shell('Effect', '핵심 기술 3건 <span class="purple">특허 출원</span>: 질문 선별 · 질문 생성 · 음성 답변 평가', f'''
+<div class="ef-dp">
+  <div class="l"><div class="hd">출원번호통지서 (2026-11-01)</div>
+    {''.join(f"""<div class="nt" style="left:{i*34}px;top:{38+i*168}px;z-index:{i+1}"><img src="assets/{f}" alt="{n} 출원번호통지서"><span class="tag">{k} · {n}</span></div>""" for i, (f, n, k) in enumerate(pat))}
+  </div>
+  <div class="r"><div class="hd">특허 명세서</div>
+    {''.join(f"""<div class="sp" style="left:{i*120}px;top:{38+i*22}px;z-index:{i+1};transform:rotate({(i-1)*1.6}deg)"><img src="assets/{f}" alt="{k} 특허 명세서 첫 장"><span class="tag">{k}</span></div>""" for i, (f, k) in enumerate(spec))}
+  </div>
+</div>''', source='출원번호통지서 원본 캡처 · 명세서는 출원 제출본 docx 첫 장 렌더링 (특허/A_면접질문선별, B_면접질문생성, C_음성모의면접) · 출원 단계'))
+S.note('''[≈10초] 핵심 기술은 특허 3건으로 출원했습니다. 커밋에서 면접 질문을 고르는 방법, 근거를 대조해 질문을 만드는 방법, 음성 대화로 답변을 평가하는 방법입니다. 왼쪽이 출원번호통지서, 오른쪽이 명세서입니다.
+
+[증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).
+명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.
+⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A9.''')
+
+
 
 # ---------- 마케팅: 2026-11-11 검증 집계, Effect 시작부 ----------
 S.append(shell('Effect', '검색 · 광고 · SNS · 현장을 통한 <span class="purple">사용자 유입</span>', '''
@@ -652,74 +722,6 @@ APX.note("""[Q&A: 채용은 상하반기에 몰리는데 비성수기는 어떻�
 - 채용 방식 수치는 전 직군 기준이다. 개발 직군만의 수시 비중이나 월별 공고 추이 통계는 찾지 못했다.
 - DevFit 자체 사용량의 계절성은 운영 4개월이라 실측이 없다(claims.md C12). 우리 수치로 말하지 말 것.
 - 한국노동연구원 수치(대기업 공채 35.8%, 수시 48.3%, 상시 15.9%, 2023)는 보고서명과 표본을 확인하지 못해 쓰지 않았다.""")
-
-def docimg(src, alt, ratio, cap=''):
-    c = f'<div class="cap">{cap}</div>' if cap else ''
-    return f'<div class="docimg" style="aspect-ratio:{ratio}"><img src="assets/{src}" alt="{alt}">{c}</div>'
-
-import os as _os
-BIZ_SRC = 'cert-biz.png' if _os.path.exists(_os.path.join(_os.path.dirname(OUT), 'assets', 'cert-biz.png')) else ''
-def stackdoc(src, alt, cap, left, top, rot, z):
-    return f'<div class="sd" style="left:{left}px;top:{top}px;transform:rotate({rot}deg);z-index:{z}"><img src="assets/{src}" alt="{alt}"><span class="tag">{cap}</span></div>'
-pat = [('patent-a.png', '10-2026-0214808', '선별'), ('patent-b.png', '10-2026-0214809', '생성'), ('patent-c.png', '10-2026-0214811', '음성')]
-
-# ---------- 사업 운영 기반 · 이전 통합 장표 복원 (2026-11-13) ----------
-# (2026-11-13 사용자: 합친 장 대신 사업자, 직업정보, 특허 3장으로 되돌림. 합친 장은 보류)
-class _Park(list):
-    def note(self, t): pass
-PARK = _Park()  # 보류: 덱에 안 들어감
-PARK.append(shell('Effect', '사업 운영 기반을 갖추고, <span class="purple">상표·핵심 기술을 출원</span>했습니다', '\n<div class="ef-foundation-grid">\n  <article class="ef-foundation-card">\n    <div class="ef-foundation-kicker">사업 운영</div>\n    <h3>사업자등록·통신판매업<br>신고 완료</h3>\n    <div class="ef-foundation-docs">\n      <figure><img src="assets/cert-biz.png" alt="사업자등록증 전체"><figcaption><b>사업자등록</b><span>도저랩스 · 09/02 개업</span></figcaption></figure>\n      <figure><img src="assets/cert-mail.png" alt="통신판매업 신고증 전체"><figcaption><b>통신판매업 신고</b><span>11/02 신고</span></figcaption></figure>\n    </div>\n    <div class="ef-foundation-result">서비스 운영·결제를 위한 사업 기반</div>\n  </article>\n  <article class="ef-foundation-card">\n    <div class="ef-foundation-kicker">채용 정보 제공</div>\n    <h3>직업정보제공사업<br>신고 완료</h3>\n    <div class="ef-foundation-docs single">\n      <figure><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증 전체"><figcaption><b>서울청 제2026-31호</b><span>10/19 신고</span></figcaption></figure>\n    </div>\n    <div class="ef-foundation-result">직업정보제공사업자로 신고</div>\n  </article>\n  <article class="ef-foundation-card ef-foundation-ip">\n    <div class="ef-foundation-kicker">브랜드·기술 보호</div>\n    <div class="ef-foundation-trademark">\n      <img src="assets/ef-trademark.png" alt="DevFit 상표 출원공고결정서 전체">\n      <div><h3>DevFit 상표<br>출원공고 결정</h3><p>제42류 · 11/06</p></div>\n    </div>\n    <div class="ef-foundation-patents">\n      <h3>핵심 기술 <strong>3건</strong> 특허 출원</h3>\n      <div class="ef-foundation-patent-docs">\n        <figure><img src="assets/patent-a.png" alt="질문 선별 특허 출원번호통지서 10-2026-0214808"><figcaption>질문 선별</figcaption></figure>\n        <figure><img src="assets/patent-b.png" alt="질문 생성 특허 출원번호통지서 10-2026-0214809"><figcaption>질문 생성</figcaption></figure>\n        <figure><img src="assets/patent-c.png" alt="음성 답변 평가 특허 출원번호통지서 10-2026-0214811"><figcaption>음성 답변 평가</figcaption></figure>\n      </div>\n    </div>\n    <div class="ef-foundation-result">상표 출원공고 결정 · 특허 3건 출원</div>\n  </article>\n</div>', cls='ef-foundation-slide', source='사업자등록증·통신판매업 신고증·직업정보제공사업 신고확인증·상표 출원공고결정서·특허 출원번호통지서 3건'))
-PARK.note('[약 13초] 사업자등록과 통신판매업·직업정보제공사업 신고를 마쳤습니다. DevFit 상표는 출원공고 결정을 받았고, 질문 선별·질문 생성·음성 답변 평가의 핵심 기술은 특허 3건으로 출원했습니다.\n\n[기존 33~35쪽 통합 · 증빙 및 질의응답 근거 보존]\n[사업자등록 · 통신판매업 신고 · 상표 출원]\n[증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서) · 통신판매업 신고증(제2026-서울서초-3702호, 11-02) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).\n상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지. ⛔ «매출» · «공동대표» 금지.\n\n[직업정보제공사업 신고]\n[직업정보제공사업 신고 · 법률 멘토링 메모 — Q&A용]\n직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.\n법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).\n개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).\n순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 Effect 직업정보제공사업 장.\n\n[핵심 기술 3건 특허 출원: 질문 선별 · 질문 생성 · 음성 답변 평가]\n[증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).\n명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.\n⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A8.')
-
-S.append(shell('Effect', '<span class="purple">사업자등록 · 통신판매업 신고 · 상표 출원</span>', f'''
-<div class="ef-d3">
-  <figure><img src="assets/{BIZ_SRC}" alt="사업자등록증"><figcaption><b>사업자등록증</b>도저랩스 · 개업 2026-09-02</figcaption></figure>
-  <figure><img src="assets/cert-mail.png" alt="통신판매업 신고증"><figcaption><b>통신판매업 신고증</b>제2026-서울서초-3702호 · 11-02</figcaption></figure>
-  <figure><img src="assets/ef-trademark.png" alt="DevFit 상표 출원공고결정서 (제42류, 출원번호 40-2026-0177374)"><figcaption><b>상표 출원공고 결정</b>DevFit · 제42류 · 40-2026-0177374</figcaption></figure>
-</div>''', source='증빙 원본 스캔·캡처 그대로 (자르거나 가리지 않음) · 상표는 출원공고 결정 단계'))
-S.note('''[≈10초] 결제를 받으려면 서류가 필요했습니다. 사업자등록과 통신판매업 신고를 마쳤고, DevFit이라는 이름은 상표로 출원해 출원공고 결정까지 받았습니다.
-
-[증빙] 사업자등록증(640-21-02214, 개업 2026-09-02, 서초세무서) · 통신판매업 신고증(제2026-서울서초-3702호, 11-02) · 상표 출원공고결정서(DevFit, 제42류, 출원번호 40-2026-0177374, 지식재산처 2026-11-06 발송, 상표법 제57조, 출원인 박천웅, 원본 ASM/devfit_출원공고결정서.pdf 1쪽) 원본 그대로(자르지 않고 가리지 않음).
-상표: 출원공고 결정 = 심사 통과 후 공고 단계(이의신청 기간 남음), 등록 아님 → «출원공고 결정»까지만. ⛔ «상표 등록» 금지. ⛔ «매출» · «공동대표» 금지.''')
-
-S.append(shell('Effect', '<span class="purple">직업정보제공사업</span> 신고', '''
-<div class="ef-dj">
-  <div class="ef-law-doc"><img src="assets/cert-job.png" alt="직업정보제공사업 신고확인증"><span class="tag">신고확인증 · 서울청 제2026-31호 · 2026-10-19</span></div>
-  <div class="r">
-    <div class="ef-law-act">
-      <h4>직업안정법</h4>
-      <p><b>제2조의2(정의)</b> 8. "직업정보제공사업"이란 신문, 잡지, 그 밖의 간행물 또는 유선ㆍ무선방송이나 컴퓨터통신 등으로 구인ㆍ구직 정보 등 직업정보를 제공하는 사업을 말한다.</p>
-      <p><b>제23조(직업정보제공사업의 신고)</b> ① 직업정보제공사업을 하려는 자(제18조에 따라 무료직업소개사업을 하는 자와 제19조에 따라 유료직업소개사업을 하는 자는 제외한다)는 고용노동부장관에게 신고하여야 한다. 신고 사항을 변경하는 경우에도 또한 같다.</p>
-      <span class="src">법률 제20121호, 2024. 1. 23., 일부개정 · 국가법령정보센터 원문</span>
-    </div>
-    <div class="why">서울노동청에 <b>정식 신고된 직업정보제공사업자</b>로서 보다 정확하고 다양한 직업 정보를 제공</div>
-  </div>
-</div>''', source='신고확인증 원본 그대로 (자르거나 가리지 않음) · 직업안정법 [법률 제20121호, 2024. 1. 23., 일부개정] 국가법령정보센터 원문'))
-S.note('''[≈10초] 채용공고를 모아 보여 주는 서비스는 직업안정법상 직업정보제공사업입니다. 10월 19일에 서울고용노동청에 신고를 마쳤고, 그래서 여러 채용 플랫폼과 기업 사이트의 공고를 정식 사업자로서 한곳에 모아, 출처가 분명한 최신 원문으로 보여 줄 수 있습니다.
-
-[직업정보제공사업 신고 · 법률 멘토링 메모 — Q&A용]
-직업정보제공사업 신고확인증: 서울청 제2026-31호(10-19). 근거 법조 직업안정법 제2조의2 제8호·제23조(법률 제20121호, 2024. 1. 23. 일부개정, 2024. 7. 24. 시행), law.go.kr에서 2026-11-06 그대로 복사. 신고확인증 본문에도 «직업안정법 제23조»가 적혀 있음. 공고 수(플랫폼 5 + 기업 사이트 24)는 prep/JobPostingFetchService BOARDS 5 + CorporateSiteRegistry 24.
-법률 멘토링: «법무법인 백상 김재철 변호사», 소마 공식 «[자유 멘토링] Dozer(도저)팀 법률멘토링» 2026-11-05(자문 계약 아님). «기출문제 크롤링·가공 = 저작권 침해 해당 없음»은 구두 검토 의견 → «법률 멘토 검토 의견»으로만. «출원 전 공개 기술 → 특허 공지예외주장 신청» 조언도 같은 멘토링의 구두 조언(특허법 제30조).
-개인정보 보호 조치: §30 처리방침 · §22 선택 동의 · §29 토큰 AES/GCM · §21 탈퇴 시 물리 삭제. ⛔ «개인정보 보호법 완전 준수»·«위반 없음»·«법률 검토 통과» 금지. 처리방침에 OpenAI 국외 이전 등 미반영(collect/K-compliance.md §1).
-순서 주의: 신고(10-19)가 멘토링(11-05)보다 먼저 → «멘토링 결과로 신고했다»고 말하지 않음. ⛔ 외부 법무법인 자문으로 말하지 않음 (claims.md C6). 같은 내용 부록 A16.''')
-
-spec = [('patent-spec-a.png', '선별'), ('patent-spec-b.png', '생성'), ('patent-spec-c.png', '음성')]
-
-spec = [('patent-spec-a.png', '선별'), ('patent-spec-b.png', '생성'), ('patent-spec-c.png', '음성')]
-S.append(shell('Effect', '핵심 기술 3건 <span class="purple">특허 출원</span>: 질문 선별 · 질문 생성 · 음성 답변 평가', f'''
-<div class="ef-dp">
-  <div class="l"><div class="hd">출원번호통지서 (2026-11-01)</div>
-    {''.join(f"""<div class="nt" style="left:{i*34}px;top:{38+i*168}px;z-index:{i+1}"><img src="assets/{f}" alt="{n} 출원번호통지서"><span class="tag">{k} · {n}</span></div>""" for i, (f, n, k) in enumerate(pat))}
-  </div>
-  <div class="r"><div class="hd">특허 명세서</div>
-    {''.join(f"""<div class="sp" style="left:{i*120}px;top:{38+i*22}px;z-index:{i+1};transform:rotate({(i-1)*1.6}deg)"><img src="assets/{f}" alt="{k} 특허 명세서 첫 장"><span class="tag">{k}</span></div>""" for i, (f, k) in enumerate(spec))}
-  </div>
-</div>''', source='출원번호통지서 원본 캡처 · 명세서는 출원 제출본 docx 첫 장 렌더링 (특허/A_면접질문선별, B_면접질문생성, C_음성모의면접) · 출원 단계'))
-S.note('''[≈10초] 핵심 기술은 특허 3건으로 출원했습니다. 커밋에서 면접 질문을 고르는 방법, 근거를 대조해 질문을 만드는 방법, 음성 대화로 답변을 평가하는 방법입니다. 왼쪽이 출원번호통지서, 오른쪽이 명세서입니다.
-
-[증빙] 출원번호통지서 3건(2026-11-01): 10-2026-0214808(코드 저장소 기반 면접 질문 선별 방법 및 시스템) · 10-2026-0214809(코드 저장소 기반 면접 질문 생성 방법 및 시스템) · 10-2026-0214811(음성 대화 기반 면접 답변 평가 방법 및 시스템). 출원인 김건우, 발명자 김건우 박천웅 노재원, 심사청구(무) 공개신청(무).
-명세서 이미지는 devfit/특허/ 아래 제출본 docx를 LibreOffice로 렌더링한 첫 장.
-⛔ 특허 «등록»·«회사 특허» 금지 (출원 단계, 출원인 김건우 개인). 청구항 요지는 부록 A9.''')
 
 # ---------- 시장 규모 (11-11 사용자 지시: TAM·SAM·SOM 표, B2C·B2B 하이브리드) ----------
 S.append(shell("Effect", '<span class="purple">시장 규모</span>와 가격 선정 근거', '\n<div class="ef-one ef-market-pricing">\n  <div class="ef-mk-left"><div class="ef-circ">\n    <div class="c tam"><em>TAM</em><b>약 10조 원</b><span>글로벌 기업 기술 평가 + 구직자 코딩면접 준비</span><code>B2B 기술 평가 4.7조<br>+ B2C 면접 준비 5.1조</code></div>\n    <div class="c sam"><em>SAM</em><b>약 390억 원</b><span>국내 개발자 면접 준비 + 지원자 검증</span><code>B2C 184억<br>+ B2B 202억</code></div>\n    <div class="c som"><em>SOM</em><b>연 7.7억 원</b><span>3년 차 목표 매출</span><code>B2C 3.7억<br>+ B2B 4.0억</code></div>\n  </div><div class="ef-mk-src"><p>산정식과 출처: 부록 A8 ({{PAGE:A8}})</p></div></div>\n  <div class="ef-one-r">\n    <div class="ef-one-k">\n      <div><small>연간 개발 직군 입사지원</small><b>약 520만 건</b><i>사람인 · 점핏 2025 상반기 260만 건 × 2</i></div>\n      <div class="op">÷ 13.4회</div>\n      <div class="hi"><small>면접을 준비하는 개발자 구직자</small><b>약 38.8만 명</b><i>1인 평균 입사지원 13.4회 (한경협 2025)</i></div>\n    </div>\n    <div class="ef-price-basis">\n      <article class="ef-price-card">\n        <div class="ef-price-label">B2C · 구직자의 지불 의향을 참고한 가격</div>\n        <div class="ef-price-amount">월 <b>7,900원</b><span>× 준비 기간 6개월 = 47,400원</span></div>\n        <p>구직자 인터뷰: 면접 1회 <strong>1만 원</strong>, 준비 기간 <strong>2만 원</strong> 지불 의향<br>SAM: 38.8만 명 × 47,400원 = 약 184억<br>SOM: 그중 2% = 7,762명 × 47,400원 = 약 3.7억 원</p>\n      </article>\n      <article class="ef-price-card">\n        <div class="ef-price-label">B2B · 지원자 단위 과금 (기획 요금)</div>\n        <div class="ef-price-amount">지원자 1명당 <b>2만 원</b><span>공개가 비교 기준 가정</span></div>\n        <p>SAM: 서류 합격 101만 건 × 2만 원 = 약 202억<br>SOM: 그중 2% = 2.0만 건 × 2만 원 = 약 4.0억 원</p>\n      </article>\n      <div class="ef-price-cost"><b>분석 1회 변동비 약 330원</b><span>저장소 3개 기준 · B2C와 B2B가 분석 엔진 공유</span></div>\n    </div>\n  </div>\n</div>', cls='ef-market-slide', source='WiseGuy Reports Technical Skill Assessment Platform · DataIntelo Coding Interview Preparation · 점핏 2025 · 한경협 2025 · 최종보고서 · 기획 문서 B2B 요금 티어'))
