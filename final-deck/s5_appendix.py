@@ -212,6 +212,20 @@ URL: Mordor https://www.mordorintelligence.com/industry-reports/it-staffing-mark
 ⛔ «매출»은 목표 시나리오로만, 실적처럼 말하지 말 것. 5년 SOM 27억 · TAM $2.8B 금지.
 [이전 판] TAM 1,132억(B2C 92억 + 지원 520만 건 × 2만 원) · SAM 143억 · SOM 4억 — 11-13 교체.''')
 
+APX.append(shell('Appendix · A9', 'Plus 월 7,900원 <span class="purple">산출 근거</span>', f'''
+{table(['기준', '내용', '7,900원과 비교', '출처'], [
+ ['<b>구직자 지불 의향</b>', '"면접 1회 기준 만원 정도, 준비기간 동안이면 2만원까지"', '면접 1회 의향(1만 원)보다 낮게 설정', '<span style="font-size:15px;color:#6f6c78">구직자 1:1 인터뷰(20세, 프론트엔드 인턴 지원 경험), 중간평가 발표자료 수록</span>'],
+ ['<b>국내 AI 면접 구독</b>', '티오 Lite 월 14,900원 · Pro 월 19,900원', '약 53% (Lite 기준)', '<span style="font-size:15px;color:#6f6c78">tiokorea.com/pricing, 2026-11-13 확인</span>'],
+ ['<b>국내 회당 모의면접</b>', '인프런 AI 모의면접 1회 12,000원 (첫 1회 무료)', '한 달 구독료가 1회 가격보다 낮음', '<span style="font-size:15px;color:#6f6c78">inflearn.com/ai-interviews, 2026-11-13 확인</span>'],
+ ['<b>해외 AI 면접 구독</b>', 'Greenroom Pro 월 US$10 (약 13,400원) · Aced Pro 월 US$79', '약 59% (Greenroom 기준)', '<span style="font-size:15px;color:#6f6c78">usegreenroom.app · aced.io, 2026-11-13 확인, 1,337원/달러</span>'],
+ ['<b>분석 원가</b>', '분석 1회 변동비 약 330원 (저장소 3개 기준)', '월 7,900원 = 분석 약 24회분', '<span style="font-size:15px;color:#6f6c78">최종보고서 단위 경제성, AWS CloudWatch 실측</span>'],
+ ['<b>단건 대안</b>', '추가 생성권 1,900원 (공고 1건 단위)', '채용 시즌에만 쓰는 사용자용 보완 상품', '<span style="font-size:15px;color:#6f6c78">운영 요금표, 토스페이먼츠 단건 결제 승인 2026-11-02</span>']], 'sm left plain')}
+<div class="small-copy" style="margin-top:16px;font-size:20px;line-height:1.6">구직자 지불 의향(1만 원)보다 낮고, 국내외 AI 면접 구독의 절반 수준이며, 변동비 대비 여유가 있는 가격으로 정함 · 실제 결제 데이터로 검증한 가격 아님</div>''', source='구직자 인터뷰(중간평가 발표자료) · 티오 · 인프런 · Greenroom · Aced 공식 요금 페이지(2026-11-13) · 최종보고서 단위 경제성'))
+APX.note('''예상 질문: «7,900원은 어떻게 정했나?» (11-13 사용자 지시 «Plus 7,900원 산출근거 A9에 넣어»)
+근거 원문: 지불 의향 = 중간평가 IR 덱(vendor/irdeck_new.html 1485~1501행) 지원자 A 인터뷰 «면접 1회 기준 만원 정도, 준비기간 동안이면 2만원까지는 결제할 의향이 있습니다». 경쟁 가격 = collect/competitor-pricing-20261113.json(공식 페이지·공개 API, 11-13 확인): 티오 Lite 14,900·Pro 19,900 / 인프런 12,000원/회 / Greenroom Pro $10/월(10회) / Aced Pro $79/월 / 꼬꼬면 토큰 50원(문항당 텍스트 50원·음성 100원) / interviewing.io 사람 면접 $179/회~. 원가 = 최종보고서 330원(저장소 3개), 7,900 ÷ 330 ≈ 23.9.
+⚠ 한계: 지불 의향은 1명 진술(실결제 아님). 경쟁 상품은 기능·횟수 조건이 달라 같은 상품 비교가 아님(Greenroom은 월 10회, 인프런은 회당). Plus는 출시 기념 3개월 무료 개방, 정기결제 매출 없음 → «매출» 금지, Q&A: «결제는 열려 있고 매출은 아직 0»(claims.md C3).
+«가격 검증 완료» 금지. 꼬꼬면·interviewing.io는 단위가 달라 장표에서 뺌.''')
+
 
 
 
