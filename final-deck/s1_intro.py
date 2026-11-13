@@ -506,18 +506,29 @@ CSS += r"""
 .in-midterm-content{display:flex;flex-direction:column;justify-content:center;gap:24px;flex:1;min-height:0;padding:0 0 20px}
 .in-midterm-original{margin:0;background:#fff;border:1px solid var(--line);border-radius:26px;padding:20px 24px;box-shadow:0 12px 36px rgba(45,30,90,.05)}
 .in-midterm-original img{display:block;width:100%;height:auto;object-fit:contain}
+.in-midterm-image{position:relative}
+.in-midterm-highlight{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;font-family:inherit}
 .in-midterm-grade{align-self:center;width:640px;margin:0;padding:16px 22px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(45,30,90,.04)}
 .in-midterm-grade img{display:block;width:100%;height:auto;object-fit:contain}
 .in-midterm-punchline{margin:0;text-align:center;font-size:56px;font-weight:900;line-height:1.3;letter-spacing:-.045em;color:var(--purple-deep)}
 """
 S.append(shell('Teamwork', '학업도 병행했습니다. <span class="purple">다만…</span>', '''
 <div class="in-midterm-content">
-  <figure class="in-midterm-original"><img src="assets/teamwork-midterm-original.png" alt="중간고사 결과 원본: 점수 31/100, 평균 58.2, 최고 87, 최저 7"></figure>
+  <figure class="in-midterm-original"><div class="in-midterm-image">
+    <img src="assets/teamwork-midterm-original.png" alt="중간고사 결과 원본: 점수 31/100, 평균 58.2, 최고 87, 최저 7">
+    <svg class="in-midterm-highlight" viewBox="0 0 1722 338" role="img" aria-label="31점 강조: 100점 만점에 31점으로, 평균 58.2점보다 27.2점 낮음">
+      <rect x="490" y="14" width="492" height="98" rx="12" fill="#fff0f1" stroke="#f2bdc3" stroke-width="2"/>
+      <text x="514" y="56" font-size="38" font-weight="900" fill="#c72c3d">31점 / 100점</text>
+      <text x="514" y="91" font-size="25" font-weight="750" fill="#a62331">평균 58.2점보다 27.2점 낮음</text>
+      <path d="M 989 66 H 1017 M 1007 56 L 1017 66 L 1007 76" fill="none" stroke="#d93649" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1026" y="26" width="78" height="80" rx="12" fill="none" stroke="#d93649" stroke-width="5"/>
+    </svg>
+  </div></figure>
   <figure class="in-midterm-grade"><img src="assets/teamwork-psychology-grade-original.png" alt="추가 성적 화면 원본: D+, 심리학의이해"></figure>
   <p class="in-midterm-punchline">DevFit에는 진심이었습니다.</p>
 </div>''', cls='in-midterm-slide', source='사용자 제공 중간고사 결과 및 심리학의이해 D+ 화면 원본, 2026-11-13.'))
 S.note('''[짧은 에피소드 · 약 5초]
 앞 장의 학업 병행 설명을 이어 "학업도 병행했습니다. 다만… DevFit에는 진심이었습니다."라고 짧게 말한 뒤 수행 과정으로 넘어갑니다.
-화면의 성적표는 사용자 제공 원본 그대로입니다. 중간고사 점수 31/100, 평균 58.2, 최고 87, 최저 7. 점수의 주인이나 과목은 화면에 없어 특정하지 않습니다. 팀 전체 성적 또는 프로젝트 때문에 성적이 낮아졌다는 인과관계로 설명하지 않습니다.
+화면의 성적표는 사용자 제공 원본 그대로이며, 31점 위치에 빨간 테두리와 설명을 겹쳐 표시했습니다. 중간고사 점수 31/100, 평균 58.2, 최고 87, 최저 7. 평균과의 차이 58.2 - 31 = 27.2점. 점수의 주인이나 과목은 화면에 없어 특정하지 않습니다. 팀 전체 성적 또는 프로젝트 때문에 성적이 낮아졌다는 인과관계로 설명하지 않습니다.
 추가 화면에는 D+와 과목명 심리학의이해가 표시돼 있습니다. 두 화면이 같은 과목 또는 같은 사람의 기록인지는 확인되지 않아 연결해 단정하지 않습니다.
 ''')
