@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="devfit-deck-revision" content="fbc254b61613">
+<meta name="devfit-deck-revision" content="f0e7a48c9850">
 <meta name="theme-color" content="#121016"><title>DevFit 최종발표 — Team Dozer</title>
 <style>
 @font-face {
@@ -1806,7 +1806,15 @@ img{display:block}
 .in-claim{background:var(--dark);color:#fff;border-radius:26px;padding:30px 44px;font-size:40px;font-weight:900;line-height:1.4;letter-spacing:-.045em;text-align:center}
 .in-claim em{font-style:normal;color:#b9b0ff}
 .in-claim small{display:block;margin-top:8px;font-size:22px;font-weight:700;color:#c9c4d0;letter-spacing:-.02em}
-
+.in-pbar{height:12px;border-radius:6px;background:#ecebf1;overflow:hidden;margin-top:-4px}.in-pbar i{display:block;height:100%;background:var(--purple);border-radius:6px}
+.in-mkt b{font-size:72px}.in-mkt>div{gap:10px}
+.in-tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:14px}.in-tiles div{aspect-ratio:1;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;font-family:var(--mono);background:#ecebf1;color:#a3a1ad}.in-tiles div.dev{background:#1f1d24;color:#fff}
+.in-tiles+.in-tl{display:flex;justify-content:space-between;font-size:17px;font-weight:800;color:var(--muted);margin-top:2px}
+.in-cmp{display:flex;flex-direction:column;gap:14px;margin-top:14px}.in-cmp div{white-space:nowrap;display:grid;grid-template-columns:150px 1fr 76px;gap:12px;align-items:center;font-size:19px;font-weight:800;color:var(--muted)}.in-cmp div>i{display:block;height:26px;border-radius:5px;background:#ecebf1;position:relative;overflow:hidden}.in-cmp div>i>u{position:absolute;left:0;top:0;bottom:0;background:#1f1d24;border-radius:5px}.in-cmp div.hi>i>u{background:var(--red)}.in-cmp div>b{font-size:24px!important;letter-spacing:-.03em;color:var(--ink,#1f1d24)}.in-cmp div.hi>b{color:var(--red)}
+.in-donut{display:flex;align-items:center;gap:22px;margin-top:6px}.in-donut svg{width:150px;height:150px;flex:none}.in-donut span{font-size:22px!important}
+.in-ivman{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center}.in-ivman figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}.in-ivman figure svg{width:180px;height:200px}.in-ivman figcaption{font-size:20px;font-weight:900;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 14px}
+.in-ivman .bubs{display:flex;flex-direction:column;gap:22px}.in-ivman .in-q{border-radius:28px 28px 28px 28px;position:relative;margin-left:0!important}.in-ivman .in-q:before{content:"";position:absolute;left:-16px;top:34px;border:10px solid transparent;border-right:16px solid var(--line)}.in-ivman .in-q:after{content:"";position:absolute;left:-11px;top:36px;border:8px solid transparent;border-right:13px solid #fff}
+.in-iv{align-items:stretch;margin-top:auto!important;margin-bottom:auto!important}.in-iv .in-who{font-size:28px;margin-bottom:26px}.in-ivman{grid-template-columns:240px 1fr;gap:28px}.in-ivman figure svg{width:230px;height:256px}.in-ivman figcaption{font-size:24px}.in-ivman .bubs{gap:30px}.in-ivq .in-q{font-size:42px;padding:32px 46px}.in-ivq .in-qw{font-size:23px}.in-ivc{gap:0}.in-ivc>div:not(.in-who){padding:34px 34px;grid-template-columns:150px 1fr auto;margin-bottom:24px}.in-ivc b{font-size:31px}.in-ivc span{font-size:25px;white-space:nowrap}.in-iv{grid-template-columns:1fr 1.12fr;gap:44px}.in-ivc small{font-size:20px}.in-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 34px}.in-flow div{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:6px;background:#ecebf1;color:#9a98a6;font-size:22px;font-weight:800;letter-spacing:-.02em}.in-flow div i{font-style:normal;font-size:17px;font-weight:900;opacity:.8}.in-flow div.on{background:var(--red,#f0334c);color:#fff}.in-flow div.done{background:#f7d6dc;color:#c22a40}.in-flow div.on i{color:#fff;opacity:.85}.in-flow+*{margin-top:auto;margin-bottom:auto}
 .in-people-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;flex:1;min-height:0;padding:24px 0 26px}
 .in-role-card,.in-mentor-card{background:white;border:1px solid var(--line);border-radius:24px;padding:38px 32px;display:flex;flex-direction:column;min-width:0}
 .in-role-card h3,.in-mentor-card h3{font-size:48px;font-weight:900;line-height:1.2;margin:0 0 18px;letter-spacing:-.04em}
@@ -1837,6 +1845,9 @@ img{display:block}
 .in-midterm-highlight{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;font-family:inherit}
 .in-midterm-grade{align-self:center;width:640px;margin:0;padding:16px 22px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(45,30,90,.04)}
 .in-midterm-grade img{display:block;width:100%;height:auto;object-fit:contain}
+.in-midterm-grades{display:flex;justify-content:center;align-items:center;gap:24px}
+.in-midterm-grades .in-midterm-grade{align-self:auto;width:540px}
+.in-midterm-grades .in-midterm-grade-lit{width:820px}
 .in-midterm-punchline{margin:0;text-align:center;font-size:56px;font-weight:900;line-height:1.3;letter-spacing:-.045em;color:var(--purple-deep)}
 
 .in-profile-slide .topline{min-height:132px}
@@ -1985,6 +1996,12 @@ img{display:block}
 .dx-hx .mt{display:flex;flex-direction:column;gap:8px}.dx-hx .mt .lab{font-size:17px;font-weight:900;color:var(--purple)}.dx-hx .ms{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.dx-hx .ms>div{background:#fff;border-radius:12px;padding:10px 12px}.dx-hx .ms b{font-size:16px;font-weight:900}.dx-hx .ms small{display:block;font-size:11.5px;font-weight:800;color:var(--muted);margin-top:1px}.dx-hx .ms p{margin:6px 0 0;font-size:13px;font-weight:700;line-height:1.4;color:#3d3846;word-break:keep-all}.dx-hx .dg{gap:10px!important}.dx-hx .hm{grid-auto-rows:auto!important;row-gap:5px}.dx-hx .hm i{min-height:30px}.dx-hx .hm .nm{font-size:15.5px!important}.dx-hx .dg .t{font-size:17px}.dx-hx .dg .hd b{font-size:38px}
 .dv-q3 .two{align-items:stretch}.dv-q3 .q3p{justify-content:flex-start!important;gap:16px!important}.dv-q3 .q3p table{font-size:18px!important}.dv-q3 .q3p td{padding:20px 12px!important}.dv-q3 td b{font-size:22px!important}.dv-q3 .warn{margin-top:0!important}.dv-q3 .loop{font-size:14.5px;font-weight:800;color:var(--purple);background:var(--purple-pale);border-radius:10px;padding:10px 14px;line-height:1.4}
 .dx-hx .dd .cp{display:block;font-size:15px;font-weight:800;color:var(--muted);margin-top:6px}.dx-hx .hm .nm{font-size:17px}.dx-hx .hm{grid-template-columns:140px repeat(5,1fr)}.dx-hx .rs{flex:none}.dx-hx .rs .v{padding:18px 26px}.dx-hx .fx{justify-content:space-between}.dx-hx .pr div{font-size:17px}
+/* 모델 벤치마크의 단가 열, 단위는 표별 설명에 표시 */
+.dv-pp4 > .tb{min-width:0}
+.dv-pp4 .dv-price{white-space:nowrap;text-align:right!important;font-size:10.5px!important;font-variant-numeric:tabular-nums}
+.dv-pp4 .t4 td:nth-child(4){font-size:10.5px!important;color:#55505e}
+.dv-pp4 .dv-price-note{font-size:10.5px;line-height:1.35;margin-top:5px}
+
 .dv-pp4{grid-template-columns:1fr 1fr!important;grid-template-rows:auto auto;align-content:center;gap:34px 22px!important;margin-top:-14px!important}.dv-pp4 table{font-size:12.5px!important}.dv-pp4 td{padding:3.5px 5px!important}.dv-pp4 table{font-size:11.5px!important}.dv-pp4 th{font-size:10.5px!important;padding:3px 4px!important}.dv-pp4 td{padding:2.5px 4px!important;line-height:1.22!important}.dv-pp4 .cap{font-size:12px!important;margin-bottom:3px!important}.dv-pp4 .t4 td:nth-child(3){font-size:10.5px!important}.dv-pp4 td:last-child{font-size:10.5px}.dv-pp4 .t3 td:nth-child(2){font-size:10px}
 .dv-q3{display:flex;flex-direction:column;gap:18px;flex:1;min-height:0;margin-top:-6px}
 .dv-q3 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.dv-q3 .kpis>div{background:#fff;border:2px solid #ece9f1;border-radius:16px;padding:14px 18px}.dv-q3 .kpis>div.on{border-color:var(--purple);background:var(--purple-pale)}
@@ -2410,6 +2427,20 @@ img{display:block}
 
 /* ---- s3_effect ---- */
 
+.ef-market-slide .ef-mk-left{display:flex;flex-direction:column;align-items:center}
+.ef-market-slide .ef-mk-left .ef-circ{transform:scale(.86);transform-origin:top center;margin-bottom:-90px}
+.ef-market-slide .ef-mk-src{width:660px;font-size:12px;line-height:1.4;color:#8a8794;margin-top:8px}
+.ef-market-slide .ef-mk-src p{margin:0 0 2px;word-break:keep-all}.ef-market-slide .ef-mk-src b{color:var(--purple-deep);margin-right:4px}
+.ef-market-slide .ef-one-r{gap:12px}
+.ef-market-slide .ef-one-k{padding-bottom:0}
+.ef-market-slide .ef-one-k>div{padding:14px 20px}
+.ef-market-slide .ef-price-basis{gap:12px}
+.ef-market-slide .ef-price-card{padding:16px 24px}
+.ef-market-slide .ef-price-amount{margin:4px 0}
+.ef-market-slide .ef-price-card p{font-size:19px;line-height:1.45}
+.ef-market-slide .ef-price-cost{padding:14px 24px;gap:3px}
+.ef-market-slide .ef-price-cost span{font-size:19px}
+
 /* BM · 시장 (11-11 보강) */
 .ef-bm2{flex:1;min-height:0;display:grid;grid-template-columns:1fr 560px;grid-template-rows:auto auto 1fr;gap:20px 48px;margin-top:6px}
 .ef-tiers{grid-column:1;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -2434,6 +2465,8 @@ img{display:block}
 .ef-pay{grid-column:1;display:flex;align-items:center;gap:18px;background:#f3f2f8;border-radius:16px;padding:16px 26px;font-size:21px;font-weight:800}
 .ef-pay b{color:var(--purple-deep);font-weight:900}
 .ef-pay span{opacity:.72}
+.ef-cost{margin-top:auto;display:flex;flex-direction:column;gap:10px}.ef-cost-h{display:flex;justify-content:space-between;align-items:baseline}.ef-cost-h span{font-size:20px;font-weight:900}.ef-cost-h b{font-size:40px;font-weight:900;letter-spacing:-.04em;color:var(--purple-deep)}.ef-cost-bar{display:flex;height:34px;border-radius:6px;overflow:hidden;font-size:15px;font-weight:800;color:#fff}.ef-cost-bar i{font-style:normal;display:flex;align-items:center;justify-content:center;white-space:nowrap}.ef-cost-lg{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;font-size:16px;font-weight:700;color:var(--muted)}.ef-cost-lg u{text-decoration:none;display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}.ef-cost-row{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid #e6e4ee;padding:7px 2px 0}.ef-cost-row span{font-size:18px;font-weight:800}.ef-cost-row b{font-size:26px;font-weight:900;letter-spacing:-.03em}.ef-cost small{font-size:15px;font-weight:700;color:var(--muted)}.ef-b2b-list{margin-top:auto;display:flex;flex-direction:column}.ef-b2b-list div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid #dfe8f8;padding:9px 4px}.ef-b2b-list span{font-size:18px;font-weight:800;color:#4a5170}.ef-b2b-list b{font-size:23px;font-weight:900;letter-spacing:-.03em;text-align:right}.ef-b2b-list i{font-style:normal;font-size:15px;font-weight:700;color:var(--muted);margin-left:6px}.ef-cost.wide+.ef-hy{margin-top:0!important;margin-bottom:auto}.ef-cost.wide{margin:auto 0 22px;display:grid;grid-template-columns:300px 1fr 340px;gap:30px;align-items:center;background:#fff;border:2px solid #e6e4ee;border-radius:22px;padding:18px 28px}.ef-cost.wide .ef-cost-h{flex-direction:column;align-items:flex-start;gap:2px}.ef-cost.wide .ef-cost-mid{display:flex;flex-direction:column;gap:10px}.ef-cost.wide .ef-cost-side{display:flex;flex-direction:column;gap:4px}.ef-cost.wide .ef-cost-row:first-child{border-top:0}
+.ef-toss{margin-top:22px;display:flex;align-items:center;gap:28px;background:#eef4ff;border:2px solid #b9d2ff;border-radius:18px;padding:18px 32px}.ef-toss img{height:46px}.ef-toss b{font-size:34px;font-weight:900;letter-spacing:-.04em;color:#0050ff}.ef-toss span{font-size:21px;font-weight:800;color:#4a5170}
 .ef-bm2-shot{grid-column:2;grid-row:1 / span 3;align-self:center;border-radius:18px;overflow:hidden;box-shadow:0 18px 44px rgba(28,20,48,.16);border:1px solid var(--line)}
 .ef-bm2-shot img{display:block;width:100%;height:auto}
 .ef-one{flex:1;min-height:0;display:grid;grid-template-columns:780px 1fr;gap:64px;align-items:center;padding:0 10px}
@@ -3190,7 +3223,7 @@ img{display:block}
 .ef-platform-milestones i{font-size:25px;line-height:1;font-style:normal;color:var(--purple);text-align:center}
 
 /* ---- s4_closing ---- */
-.cl-idx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.cl-idx td{padding-top:5px;padding-bottom:5px;line-height:1.25}.cl-idx th{padding-top:6px;padding-bottom:6px}.cl-q{color:var(--muted,#777);font-size:.85em}
+.cl-idx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.cl-idx table{font-size:21px}.cl-idx td{padding-top:3px;padding-bottom:3px;line-height:1.2}.cl-idx th{padding-top:6px;padding-bottom:6px}.cl-q{color:var(--muted,#777);font-size:.85em}
 
 
 /* ---- s5_appendix ---- */
@@ -3279,11 +3312,11 @@ img{display:block}
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Problem</div><h1 class="title">AI가 <span class="red">실무에 주는 영향</span>은 크게 늘어났습니다</h1></header>
     <div class="slide-content">
-<div class="in-col" style="justify-content:center">
+<div class="in-col" style="justify-content:flex-start"><div class="in-flow"><div class="on"><i>01</i>AI 발전</div><div class=""><i>02</i>채용 시장 변화</div><div class=""><i>03</i>기술면접 변화</div><div class=""><i>04</i>취준생의 어려움</div></div>
   <div class="in-lv">
-    <div><em>2023</em><h4>코드 몇 줄을<br>채워 주는 수준</h4><p>사람이 <b>4분</b> 걸리는 작업까지</p><p>Copilot을 켠 파일의 코드 <b>46%</b>를 자동 완성</p><small>GPT-4 · METR · GitHub 2023</small></div>
+    <div><em>2023</em><h4>코드 몇 줄을<br>채워 주는 수준</h4><p>Copilot을 켠 파일의 코드 <b>46%</b>를 자동 완성</p><div class="in-pbar"><i style="width:46%"></i></div><small>GitHub Copilot · 2023</small></div>
     <i>→</i>
-    <div><em>2024</em><h4>실제 버그를<br>찾아 고치는 수준</h4><p>GitHub 이슈 <b>49%</b>를 혼자 해결</p><small>Claude 3.5 Sonnet · SWE-bench Verified</small></div>
+    <div><em>2024</em><h4>실제 버그를<br>찾아 고치는 수준</h4><p>GitHub 이슈 <b>49%</b>를 혼자 해결</p><div class="in-pbar"><i style="width:49%"></i></div><small>Claude 3.5 Sonnet · SWE-bench Verified</small></div>
     <i>→</i>
     <div><em>2025</em><h4>기능 하나를<br>통째로 만드는 수준</h4><p>사람이 <b>1시간~5시간</b> 걸리는 작업</p><small>Claude 3.7 Sonnet → Opus 4.5 · METR</small></div>
     <i>→</i>
@@ -3294,7 +3327,7 @@ img{display:block}
     <div class="folio"></div>
     
   </div>
-<template class="notes">[0:10–0:22] 먼저 AI가 어디까지 왔는지입니다. 2023년의 AI는 코드 몇 줄을 채워 주는 수준이었습니다. 사람이 4분이면 하는 일입니다. 실제로 GitHub은 Copilot을 켠 파일에서 코드의 46%를 Copilot이 완성했다고 발표했습니다. 2024년엔 실제 GitHub 버그의 절반을 혼자 찾아 고쳤고, 2025년엔 사람이 몇 시간 걸리는 기능 하나를 통째로 구현합니다. 그리고 지금, 올해 9월에 나온 Claude Opus 5.5와 GPT-6 Astra 세대에서는 엔지니어 팀이 몇 주 걸릴 68만 줄짜리 코드 이전을 하루 안에 끝냈다는 사례가 나옵니다. 혼자 18시간 넘게 쉬지 않고 작업했다는 사례도 있습니다. 그래서 이제 코드를 짜는 일은 누구나 합니다. 지난 1년 GitHub에 새로 들어온 개발자가 3,600만 명이고, 그중 80%가 첫 주부터 AI와 함께 코드를 씁니다.
+<template class="notes">[0:10–0:22] 먼저 AI가 어디까지 왔는지입니다. 2023년의 AI는 코드 몇 줄을 채워 주는 수준이었습니다. 실제로 GitHub은 Copilot을 켠 파일에서 코드의 46%를 Copilot이 완성했다고 발표했습니다. 2024년엔 실제 GitHub 버그의 절반을 혼자 찾아 고쳤고, 2025년엔 사람이 몇 시간 걸리는 기능 하나를 통째로 구현합니다. 그리고 지금, 올해 9월에 나온 Claude Opus 5.5와 GPT-6 Astra 세대에서는 엔지니어 팀이 몇 주 걸릴 68만 줄짜리 코드 이전을 하루 안에 끝냈다는 사례가 나옵니다. 혼자 18시간 넘게 쉬지 않고 작업했다는 사례도 있습니다. 그래서 이제 코드를 짜는 일은 누구나 합니다. 지난 1년 GitHub에 새로 들어온 개발자가 3,600만 명이고, 그중 80%가 첫 주부터 AI와 함께 코드를 씁니다.
 
 근거: last-dance/research/R5-ai-capability-interview.md 장 1.
 - METR 50% time horizon(사람 전문가 소요 시간 기준, 성공률 50%, 약 7개월마다 2배): GPT-4(2023-03) 약 4분 · Claude 3.7 Sonnet(2025-02) 약 60분 · Claude Opus 4.5(2025-11) 약 293분(4.9시간) · Claude Opus 4.6(2026-02) 약 719분(95% CI 317~3,634분). https://metr.org/assets/benchmark_results_1_1.yaml
@@ -3316,65 +3349,64 @@ img{display:block}
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Problem</div><h1 class="title">개발자 채용은 감소했고, 면접에서는 <span class="red">실무 경험</span>을 확인합니다</h1></header>
     <div class="slide-content">
-<div class="in-col" style="justify-content:center">
+<div class="in-col" style="justify-content:flex-start"><div class="in-flow"><div class="done"><i>01</i>AI 발전</div><div class="on"><i>02</i>채용 시장 변화</div><div class=""><i>03</i>기술면접 변화</div><div class=""><i>04</i>취준생의 어려움</div></div>
   <div class="in-mkt">
-    <div><h5>덜 뽑음</h5><b>6개 중 5개</b><span>원티드 공고 7.3만 건 중 유의하게 줄어든 직군이 개발자</span><small>원티드랩 · 2025-01~2026-04</small></div>
-    <div><h5>신입 자리는 더 좁음</h5><b>0.8%</b><span>개발 공고 중 신입 대상 (지원자의 29.5%는 신입)</span><small>사람인·점핏 · 2025 상반기</small></div>
-    <div class="on"><h5>뽑을 때 보는 것</h5><b>81.6%</b><span>신규채용 최우선 평가 요소 "직무 관련 업무 경험"</span><small>경총 신규채용 실태조사 2025 · 500개사</small></div>
+    <div><h5>공고 감소</h5><b>6개 중 5개</b><span>공고가 크게 줄어든 직군 중 개발자 비율</span><div class="in-tiles"><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div>···</div></div><div class="in-tl"><span>개발 직군 5</span><span>기타 1</span></div><small>원티드랩 · 2025-01~2026-04</small></div>
+    <div><h5>신입 공고</h5><b>0.8%</b><span>신입 자리는 적은데 신입 지원자는 많음</span><div class="in-cmp"><div><span>공고 중 신입</span><i><u style="width:2.7%"></u></i><b>0.8%</b></div><div class="hi"><span>지원자 중 신입</span><i><u style="width:100%"></u></i><b>29.5%</b></div></div><small>사람인·점핏 · 2025 상반기</small></div>
+    <div class="on"><h5>가장 중요한 평가 요소</h5><b>81.6%</b><div class="in-donut"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" fill="none" stroke="#f7d6dc" stroke-width="20"/><circle cx="60" cy="60" r="48" fill="none" stroke="var(--red)" stroke-width="20" stroke-dasharray="246.1 301.6" transform="rotate(-90 60 60)"/></svg><span>기업이 신규채용에서 가장 중요하게 보는 요소로 "직무 관련 업무 경험"을 꼽음</span></div><small>경총 신규채용 실태조사 2025 · 500개사</small></div>
   </div>
-  <div class="in-scnbar">"이력서에 적어둔 프로젝트에 대해 물어보면 <em>답변을 못하는 분들을 많이 봤다</em>"<small>IT 채용 담당자 · OKKY 설문 2025</small></div>
 </div></div>
     <div class="folio"></div>
     
   </div>
-<template class="notes">[0:22–0:34] 그런데 채용 시장은 반대로 갑니다. 원티드 공고 7만 3천 건을 보면 유의하게 줄어든 직군 6개 중 5개가 개발자입니다. 신입 자리는 더 좁아서, 개발 공고 중 신입 대상은 0.8%인데 지원자의 30%가 신입입니다. 그래서 뽑을 때는 경험을 봅니다. 기업 81.6%가 신규채용에서 가장 중요하게 보는 게 직무 관련 업무 경험입니다. 한 채용 담당자의 말처럼, 이력서에 적은 프로젝트를 물으면 답을 못 하는 지원자가 많습니다.
+<template class="notes">[0:22–0:34] 그런데 채용 시장은 반대로 갑니다. 원티드 공고 7만 3천 건을 보면 유의하게 줄어든 직군 6개 중 5개가 개발자입니다. 신입 자리는 더 좁아서, 개발 공고 중 신입 대상은 0.8%인데 지원자의 30%가 신입입니다. 그래서 뽑을 때는 경험을 봅니다. 기업 81.6%가 신규채용에서 가장 중요하게 보는 게 직무 관련 업무 경험입니다.
 
 근거: last-dance/research/R4-hiring-market.md.
 - 원티드: 2025-01~2026-04 공고 72,793건, 유의하게 감소한 직군 6개 중 5개가 개발자(중앙일보 2026-06-11, 원티드 원자료 미확인). 보조: 미국 Indeed SW 개발 공고 지수 81.6(2026-10-30, 2020-02=100) → 약 −18%(FRED).
 - 사람인·점핏 개발 직군 2025 상반기: 신입 공고 0.8% vs 신입 지원 29.5% · 5~10년차 공고 39.7%(이투데이 2025-08-27). 보조: 전 직군 공고 82%가 «경력만»(대한상의 2025-06 — «기업의 82%» 아님, «공고의 82%»).
 - 경총 2025 신규채용 실태조사: 100인 이상 500개사, «가장 중요한 평가 요소 직무 관련 업무 경험 81.6%» — 전 직군 수치(개발자 한정 아님). 2023→2025 상승 추세(58.4→74.6→81.6)는 원기사 미확인이라 쓰지 않음.
-- 인용: OKKY×바이라인네트워크 2025-02-28, IT 전문가 71명 — 소표본.
+- 인용(OKKY×바이라인네트워크 2025-02-28 «이력서 프로젝트 답변 못함»)은 11-13 p5와 중복이라 이 장에서 뺌. 소표본(71명).
 ⛔ 표현 한계: «AI 때문에 줄었다» 단독 원인 금지(한은: 경력직 선호 등 기존 추세를 AI가 가속). 수요 감소 → 경험 중시는 인과가 아니라 «같이 나타나는 흐름». «계속 줄고 있다» 현재형 단정 금지 — 2026 반등 신호 있음(인크루트 대졸 신입 채용계획 73.4%, 미국 SW 공고 저점 대비 +15% — 단 증가분 71%가 시니어).
 ⛔ 고용24 IT 공고 −71%는 대표성 없음(중소기업 위주) → 쓰지 않음.
 
-[장표 출처 — 화면에서는 뺌] 원티드랩 공고 72,793건 분석(중앙일보 2026-06-11) · 사람인·점핏 2025 상반기(이투데이 2025-08-27) · 경총 2025 신규채용 실태조사(2025-03-20) · OKKY×바이라인네트워크 2025-02-28</template></section>
+[장표 출처 — 화면에서는 뺌] 원티드랩 공고 72,793건 분석(중앙일보 2026-06-11) · 사람인·점핏 2025 상반기(이투데이 2025-08-27) · 경총 2025 신규채용 실태조사(2025-03-20)</template></section>
 <section class="slide problem" data-order="4" data-title="기술면접에서는 코드의 설계 과정을 물어봅니다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Problem</div><h1 class="title">기술면접에서는 코드의 <span class="red">설계 과정</span>을 물어봅니다</h1></header>
     <div class="slide-content">
-<div class="in-col" style="justify-content:center">
+<div class="in-col" style="justify-content:flex-start"><div class="in-flow"><div class="done"><i>01</i>AI 발전</div><div class="done"><i>02</i>채용 시장 변화</div><div class="on"><i>03</i>기술면접 변화</div><div class=""><i>04</i>취준생의 어려움</div></div>
   <div class="in-iv">
-    <div class="in-ivq"><div class="in-who">실제 개발자 면접 질문 (2026년 5~6월)</div>
-      <div class="in-q">"왜 이 코드를 썼는지<br>코드적으로 설명해 주세요"<small class="in-qw">이스트소프트 백엔드</small></div>
-      <div class="in-q">"다른 방법은 왜<br>선택하지 않았나요?"<small class="in-qw">비바리퍼블리카 시스템엔지니어</small></div></div>
-    <div class="in-ivc"><div class="in-who">채용 방식 변화</div>
-      <div><b>넥슨</b><span>인턴 코딩테스트 폐지 → AI 활용 역량 평가</span><small>2026-09</small></div>
-      <div><b>CJ올리브영</b><span>경력 개발 라이브 코딩 폐지 → 과정을 보는 AI 과제</span><small>2026-07</small></div>
-      <div><b>Meta</b><span>일부 코딩 면접에서 AI 어시스턴트 허용</span><small>2025-07</small></div>
-      <div><b>Canva</b><span>CS 기초 스크리닝 → AI 허용 면접</span><small>2025-06</small></div>
-      <div><b>컬리</b><span>개발자 공채 코딩테스트에서 ChatGPT 사용 허용</span><small>2025-06</small></div></div>
+    <div class="in-ivq"><div class="in-who">실제 개발자 면접 질문 (2026년 5~6월)</div><div class="in-ivman"><figure><svg viewBox="0 0 180 200"><rect x="10" y="150" width="160" height="14" rx="4" fill="#d9d7e0"/><circle cx="90" cy="54" r="34" fill="#1f1d24"/><path d="M38 150c0-38 23-62 52-62s52 24 52 62z" fill="#1f1d24"/><rect x="60" y="44" width="24" height="16" rx="5" fill="none" stroke="#fff" stroke-width="4"/><rect x="96" y="44" width="24" height="16" rx="5" fill="none" stroke="#fff" stroke-width="4"/><path d="M84 52h12" stroke="#fff" stroke-width="4"/><rect x="62" y="118" width="56" height="36" rx="4" fill="#fff" stroke="#d9d7e0" stroke-width="3"/><path d="M72 130h36M72 140h24" stroke="#c7c4d0" stroke-width="4"/></svg><figcaption>면접관</figcaption></figure><div class="bubs"><div class="in-q">"왜 이 코드를 썼는지<br>코드적으로 설명해 주세요"<small class="in-qw">이스트소프트 백엔드</small></div><div class="in-q">"다른 방법은 왜<br>선택하지 않았나요?"<small class="in-qw">비바리퍼블리카 시스템엔지니어</small></div></div></div></div>
+    <div class="in-ivc"><div class="in-who">면접 방식 변화</div>
+      <div><b>넥슨</b><span>기술면접관: "이 코드는 어떤 기능을 하고,<br>왜 이렇게 구현했나요"로 면접의 절반 정리</span><small>2026-06</small></div>
+      <div><b>빅테크</b><span>면접관 58%가 질문을 바꿈:<br>선택 이유, 코드 한 줄의 역할을 질문</span><small>2025-09</small></div>
+      <div><b>Codility</b><span>지원자가 제출한 코드로<br>후속 질문을 만드는 기능 출시</span><small>2025-09</small></div></div>
   </div>
-  <div class="in-scnbar">지원자 인터뷰 <em>"1달 전에 짠 코드 잘 기억이 안 나거든요"</em><small>현직 개발자 인터뷰 (2026-09-07) 발췌</small></div>
 </div></div>
     <div class="folio"></div>
     
   </div>
-<template class="notes">[0:34–0:46] 그래서 기술면접도 바뀝니다. 실제 올해 면접 리뷰를 보면 «왜 이 코드를 썼는지 코드적으로 설명해 달라», «다른 방법은 왜 선택하지 않았냐»를 묻습니다. 넥슨은 코딩테스트를 없애고 AI 활용 역량을 보고, CJ올리브영은 라이브 코딩 대신 과정을 보는 AI 과제를 냅니다. «AI를 쓰냐»가 아니라 «쓴 코드를 이해하고 설명할 수 있냐»를 확인하는 쪽입니다. 그런데 정작 지원자는 자기 코드를 기억하지 못합니다. «1달 전에 짠 코드 잘 기억이 안 나거든요.»
+<template class="notes">[0:34–0:46] 그래서 기술면접도 바뀝니다. 실제 올해 면접 리뷰를 보면 «왜 이 코드를 썼는지 코드적으로 설명해 달라», «다른 방법은 왜 선택하지 않았냐»를 묻습니다. 넥슨의 한 기술면접관은 «이 코드는 어떤 기능을 하고, 왜 이렇게 구현했나요» 이 질문만으로 면접의 절반이 정리된다고 말했습니다. 복사하거나 AI가 짜 준 코드는 여기에 답하지 못한다는 겁니다. 해외 빅테크 면접관도 58%가 질문을 바꿨는데, 왜 그렇게 선택했는지, 이 코드 한 줄이 무슨 일을 하는지를 묻습니다. 면접 도구 회사 Codility는 지원자가 제출한 코드로 후속 질문을 만드는 기능까지 내놨습니다.
 
 주장: claims.md C1 — 직접 재는 수치 없음 → «경험 면접 N% 증가» 같은 수치 금지. «경험 위주로 바뀌었다» 단정 대신 «"왜·어떻게"를 캐묻는 쪽으로 바뀌는 중».
 면접 질문: 잡플래닛 «토스·무신사 개발자 면접 질문, 실제로 이랬다»(2026-07-01, https://www.jobplanet.co.kr/contents/news-8309) — 에디터 큐레이션, AD 표기, 대표성 없음 → «사례»로만.
-기업 사례: 넥슨 인턴십 «넥토리얼» 코딩테스트 폐지·AI 면접·AI 활용 역량평가(바이라인네트워크 2026-09-02, 채용팀장 인용) · CJ올리브영 경력 개발 직군 라이브 코딩 폐지 → 크래프톤 «코파 프로브» AI 과제로 전 과정 평가(아시아경제 2026-07-21, 법인명 재확인) · Canva(공식 블로그 2025-06-11) · Meta 일부 코딩 면접 AI 어시스턴트 허용(404 Media 2025-07-29, 내부 공지 보도 — «Meta 전체 면접 AI 허용» 확대 금지) · 컬리 개발자 공채 코테 ChatGPT 허용, 창립 후 처음(중앙일보 단독 2025-06-10, «2025년 1월»은 오기) — R1 E10~E13·E16, R5 장3.
+11-13 교체(사용자 지적: AI 허용 사례는 자기 코드 설명 면접의 근거가 아님, research/R11-own-code-interview.md):
+- 넥슨 = 오윤호 넥슨코리아 실장 NDC 26 강연, 천지일보 2026-06-17 https://www.newscj.com/news/articleView.html?idxno=3409912 ⚠ 면접관 1인 발언. «넥슨이 면접 방식을 바꿨다» 금지.
+- 빅테크 58% = Pragmatic Engineer Pulse #146 (2025-09-18), interviewing.io 면접관 설문 n=63, «58% of Big Tech interviewers said they have adjusted the kind of questions they ask». https://newsletter.pragmaticengineer.com/p/the-pulse-146 ⚠ 같은 조사에서 알고리즘 질문을 버린 면접관 0명.
+- Codility = 공식 도움말 2025-09-18 https://support.codility.com/hc/en-us/articles/39175728044689-Follow-Up-Questions-for-Take-Home-Assessments ⚠ 벤더 자료, 도입 수 없음.
+- 국내 기업 공식 «코드 리뷰 면접 도입» 발표·비중 수치는 못 찾음 → «X% 기업이 도입» 금지.
+Q&amp;A용(장표에서 뺀 기존 3건, AI 활용 평가 확대 근거): 기업 사례: 넥슨 인턴십 «넥토리얼» 코딩테스트 폐지·AI 면접·AI 활용 역량평가(바이라인네트워크 2026-09-02, 채용팀장 인용) · CJ올리브영 경력 개발 직군 라이브 코딩 폐지 → 크래프톤 «코파 프로브» AI 과제로 전 과정 평가(아시아경제 2026-07-21, 법인명 재확인) · Canva(공식 블로그 2025-06-11) · Meta 일부 코딩 면접 AI 어시스턴트 허용(404 Media 2025-07-29, 내부 공지 보도 — «Meta 전체 면접 AI 허용» 확대 금지) · 컬리 개발자 공채 코테 ChatGPT 허용, 창립 후 처음(중앙일보 단독 2025-06-10, «2025년 1월»은 오기) — R1 E10~E13·E16, R5 장3.
 반대 근거(Q&amp;A): Karat 2026 — 62%는 여전히 면접에서 AI 금지 · 그렙 고객도 개발 직군은 코테 유지 · Pulse #146에서 알고리즘 질문을 버린 면접관 0명. → «코테가 사라졌다» 금지, «과정·이해를 묻는 방식이 늘고 있다»까지.
-인용: 현직 개발자 인터뷰 2026-09-07(collect/D P1).
+11-13 회의(글 줄이기): Meta·Canva 행은 장표에서 빼고 Q&amp;A용으로만 둠.
 
-[장표 출처 — 화면에서는 뺌] 면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 바이라인네트워크 2026-09-02 · CJ올리브영: 아시아경제 2026-07-21 · Canva 공식 블로그 2025-06-11 · Meta: 404 Media 2025-07-29 · 컬리: 중앙일보 2025-06-10 · 지원자 인용: 현직 개발자 인터뷰 (2026-09-07)</template></section>
+[장표 출처 — 화면에서는 뺌] 면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 천지일보, NDC 26 강연 보도 (2026-06-17) · 빅테크: The Pragmatic Engineer, 「The Pulse #146」 (2025-09-18, interviewing.io 면접관 설문 63명) · Codility: 공식 도움말 「Follow-Up Questions for Take-Home Assessments」 (2025-09)</template></section>
 <section class="slide problem" data-order="5" data-title="취준생은 과거에 작성한 코드를 기억하기 어렵습니다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Problem</div><h1 class="title">취준생은 과거에 작성한 코드를 <span class="red">기억하기 어렵습니다</span></h1></header>
     <div class="slide-content">
-<div class="in-col" style="justify-content:center">
+<div class="in-col" style="justify-content:flex-start"><div class="in-flow"><div class="done"><i>01</i>AI 발전</div><div class="done"><i>02</i>채용 시장 변화</div><div class="done"><i>03</i>기술면접 변화</div><div class="on"><i>04</i>취준생의 어려움</div></div>
   <div class="in-p5">
     <div class="st">
       <div class="row"><b class="r">30일</b><div><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간</span><small>Krüger et al., 「Do You Remember This Source Code?」, 2018.</small></div></div>
@@ -3382,14 +3414,15 @@ img{display:block}
     </div>
     <div class="qt"><div class="mk">"</div><blockquote>스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다</blockquote><small>바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.</small></div>
   </div>
-  <div class="in-bar">그런데 면접에서는 그 코드를 <span>왜 그렇게 짰는지</span> 설명해야 합니다</div>
+  <div class="in-scnbar">지원자 인터뷰 <em>"1달 전에 짠 코드 잘 기억이 안 나거든요"</em><small>현직 개발자 인터뷰 (2026-09-07) 발췌</small></div>
 </div></div>
     <div class="folio"></div>
     
   </div>
-<template class="notes">[0:46–0:55] 문제는 지원자 쪽에도 있습니다. 개발자들은 자기가 쓴 파일도 한 달쯤 지나면 절반은 잊는다고 답했습니다. 코드를 다시 읽는 일도 가볍지 않습니다. 경력 3년 미만 개발자는 하루 8시간 중 약 5시간을 코드를 읽고 이해하는 데 씁니다. 취준생은 레포가 여러 개이고 커밋도 많아서 전부 다시 보기가 어렵습니다. 그래서 채용 담당자들은 이력서에 적은 프로젝트를 물어보면 답하지 못하는 지원자를 많이 봤다고 말합니다. 그런데 면접은 바로 그 코드를 왜 그렇게 짰는지 묻습니다.
+<template class="notes">[0:46–0:55] 문제는 지원자 쪽에도 있습니다. 개발자들은 자기가 쓴 파일도 한 달쯤 지나면 절반은 잊는다고 답했습니다. 코드를 다시 읽는 일도 가볍지 않습니다. 경력 3년 미만 개발자는 하루 8시간 중 약 5시간을 코드를 읽고 이해하는 데 씁니다. 취준생은 레포가 여러 개이고 커밋도 많아서 전부 다시 보기가 어렵습니다. 그래서 채용 담당자들은 이력서에 적은 프로젝트를 물어보면 답하지 못하는 지원자를 많이 봤다고 말합니다. 저희가 만난 현직 개발자도 이렇게 말했습니다. «1달 전에 짠 코드 잘 기억이 안 나거든요.»
 
 출처 (research/R10-recall-own-code.md, 접근 2026-11-10):
+- 인용: 현직 개발자 인터뷰 2026-09-07(collect/D P1). 11-13 사용자 지시로 4쪽에서 이동, 기존 하단 문구(면접에서 왜 그렇게 짰는지 설명) 삭제.
 - 30일 = Krüger, Wiemann, Fenske, Saake, Leich, ICSE 2018, 오픈소스 개발자 60명(GitHub 10개 프로젝트). 원문 «forget half of their files after 30 days in the median and 40 days on average». ⚠ 측정값이 아니라 본인 추정치. ⚠ 같은 파일을 여러 번 고쳤거나 직접 쓴 비율이 높으면 더 오래 기억함 → Q&amp;A에서는 «한 번 짜고 다시 안 본 코드일수록 빨리 잊는다». https://jacobkrueger.github.io/assets/papers/Krueger2018Remember.pdf
 - 66%·58% = Xia, Bao, Lo, Xing, Hassan, Li, IEEE TSE 44(10) 2018, 현업 78명·3,148 작업시간 자동 기록. 저경력(3년 미만) 66.37%, 전체 58%. 장표 «5시간» = 66.37% × 8시간 = 5.3시간 환산(8시간 근무 가정, 원문은 비율만 제시). 장표 캡션에서는 환산 표기를 뺐으니(11-10 사용자: 출처만) 질문 나오면 이 계산으로 답할 것. ⚠ 자기 코드에 한정한 수치가 아니라 코드 이해 일반. https://xin-xia.github.io/publication/TSE17.pdf
 - 인용 = OKKY×바이라인네트워크 2025-02-28, IT 전문가 71명, 채용 담당자 발언(R4 V2). ⚠ 표본 작음. https://byline.network/2025/02/27-431/
@@ -3397,7 +3430,7 @@ img{display:block}
 Q&amp;A 보조: Anthropic 2026-01, 52명 무작위 실험 — AI로 코딩한 그룹의 이해도 퀴즈 50% vs 손코딩 67% (작업 직후 측정, 벤더 자체 연구).
 삭제한 이전 장(84%·WGU 60%·Big Tech 58%) 수치는 Q&amp;A용: Stack Overflow 2025 · WGU Workforce Decoded 2026(미국 n=3,128) · Pragmatic Engineer Pulse #146(interviewing.io n=63).
 
-[장표 출처 — 화면에서는 뺌] Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.</template></section>
+[장표 출처 — 화면에서는 뺌] Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025. · 지원자 인용: 현직 개발자 인터뷰 (2026-09-07).</template></section>
 <section class="slide " data-order="6" data-title="그 경험은 GitHub에 저장되어 있습니다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
@@ -3553,77 +3586,81 @@ Q&amp;A 외부 근거(research/R2): 같은 GPT-4 Turbo로 하네스만 바꿔 SW
     <div class="tb">
       <div class="cap"><b>Table 1.</b> 역할 선정 벤치마크. 2026-07-27 프로토콜(합성 Task 3종, Task당 3회, 정답 조건 채점)을 후보 13개 모델로 확장해 재측정</div>
       <table class="t1">
-        <thead><tr><th rowspan="2">Model</th><th rowspan="2">Structured<br>Outputs</th><th rowspan="2">Valid<br>JSON</th><th colspan="2">공고 추출</th><th colspan="2">복합 채용 판단</th><th colspan="2">코드 위험 분석</th><th rowspan="2">Total</th><th rowspan="2">Output<br>tokens</th><th rowspan="2">채택 역할</th></tr>
+        <thead><tr><th rowspan="2">Model</th><th rowspan="2" class="dv-price">단가<br>입력 / 출력</th><th rowspan="2">Structured<br>Outputs</th><th rowspan="2">Valid<br>JSON</th><th colspan="2">공고 추출</th><th colspan="2">복합 채용 판단</th><th colspan="2">코드 위험 분석</th><th rowspan="2">Total</th><th rowspan="2">Output<br>tokens</th><th rowspan="2">채택 역할</th></tr>
         <tr><th>Score</th><th>p50 (s)</th><th>Score</th><th>p50 (s)</th><th>Score</th><th>p50 (s)</th></tr></thead>
         <tbody>
-          <tr><td>Kimi K2.5</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td><b class="pu">0.69</b></td><td><b>18/18</b></td><td>1.88</td><td><b>9/9</b></td><td>5.92</td><td><b>39/39</b></td><td>216</td><td></td></tr>
-          <tr><td>GLM 4.7</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.12</td><td><b>18/18</b></td><td>2.59</td><td><b>9/9</b></td><td>6.04</td><td><b>39/39</b></td><td>261</td><td></td></tr>
-          <tr class="on"><td><b>Qwen3 Coder Next</b></td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>0.84</td><td><b>18/18</b></td><td>2.60</td><td><b>9/9</b></td><td>5.27</td><td><b>39/39</b></td><td>280</td><td><b class=pu>코드 판단</b></td></tr>
-          <tr><td>Mistral Large 3</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.12</td><td><b>18/18</b></td><td>2.95</td><td><b>9/9</b></td><td><b class="pu">3.68</b></td><td><b>39/39</b></td><td>217</td><td></td></tr>
-          <tr class="on"><td><b>GLM 5</b></td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.31</td><td><b>18/18</b></td><td>3.20</td><td><b>9/9</b></td><td>5.41</td><td><b>39/39</b></td><td>257</td><td><b class=pu>복합 추론</b></td></tr>
-          <tr><td>Qwen3 Next 80B</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.29</td><td><b>18/18</b></td><td>4.04</td><td><b>9/9</b></td><td>6.63</td><td><b>39/39</b></td><td>242</td><td></td></tr>
-          <tr><td>DeepSeek V3.2</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.52</td><td><b>18/18</b></td><td>4.31</td><td><b>9/9</b></td><td>6.45</td><td><b>39/39</b></td><td>196</td><td></td></tr>
-          <tr><td>Nova Pro</td><td><span class="lo">X</span></td><td>9/9</td><td><span class="lo">9/12</span></td><td>1.22</td><td><b>18/18</b></td><td>3.40</td><td><span class="lo">8/9</span></td><td>1.84</td><td><span class="lo">35/39</span></td><td>180</td><td>스키마를 프롬프트로</td></tr>
-          <tr class="on"><td><b>Nova 2 Lite</b></td><td><span class="lo">X</span></td><td>9/9</td><td><b>12/12</b></td><td>0.83</td><td><b>18/18</b></td><td>1.43</td><td><span class="lo">4/9</span></td><td>1.93</td><td><span class="lo">34/39</span></td><td>141</td><td><b class=pu>비전 OCR</b></td></tr>
-          <tr class="on"><td><b>GLM 4.7 Flash</b></td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.30</td><td><b>18/18</b></td><td>2.61</td><td><span class="lo">4/9</span></td><td>4.96</td><td><span class="lo">34/39</span></td><td>196</td><td><b class=pu>추출, 단문</b></td></tr>
-          <tr><td>Llama 4 Maverick</td><td><span class="lo">X</span></td><td>9/9</td><td><span class="lo">9/12</span></td><td>0.92</td><td><b>18/18</b></td><td><b class="pu">1.20</b></td><td><span class="lo">6/9</span></td><td>1.16</td><td><span class="lo">33/39</span></td><td>81</td><td>스키마를 프롬프트로</td></tr>
-          <tr><td>MiniMax M2.5</td><td>O</td><td><span class="lo">6/9</span></td><td><b>12/12</b></td><td>3.39</td><td><span class="lo">12/18</span></td><td>5.76</td><td><span class="lo">3/9</span></td><td>9.81</td><td><span class="lo">27/39</span></td><td>663</td><td>토큰 한도 초과 3회</td></tr>
-          <tr><td>gpt-oss-120b</td><td>O</td><td><span class="lo">1/9</span></td><td><span class="lo">4/12</span></td><td>1.64</td><td><span class="lo">0/18</span></td><td>4.42</td><td><span class="lo">0/9</span></td><td>7.13</td><td><span class="lo">4/39</span></td><td>666</td><td>깨진 JSON 출력</td></tr>
+          <tr><td>Kimi K2.5</td><td class="dv-price">0.60 / 3.00</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td><b class="pu">0.69</b></td><td><b>18/18</b></td><td>1.88</td><td><b>9/9</b></td><td>5.92</td><td><b>39/39</b></td><td>216</td><td></td></tr>
+          <tr><td>GLM 4.7</td><td class="dv-price">0.60 / 2.20</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.12</td><td><b>18/18</b></td><td>2.59</td><td><b>9/9</b></td><td>6.04</td><td><b>39/39</b></td><td>261</td><td></td></tr>
+          <tr class="on"><td><b>Qwen3 Coder Next</b></td><td class="dv-price">0.50 / 1.20</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>0.84</td><td><b>18/18</b></td><td>2.60</td><td><b>9/9</b></td><td>5.27</td><td><b>39/39</b></td><td>280</td><td><b class=pu>코드 판단</b></td></tr>
+          <tr><td>Mistral Large 3</td><td class="dv-price">0.50 / 1.50</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.12</td><td><b>18/18</b></td><td>2.95</td><td><b>9/9</b></td><td><b class="pu">3.68</b></td><td><b>39/39</b></td><td>217</td><td></td></tr>
+          <tr class="on"><td><b>GLM 5</b></td><td class="dv-price">1.00 / 3.20</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.31</td><td><b>18/18</b></td><td>3.20</td><td><b>9/9</b></td><td>5.41</td><td><b>39/39</b></td><td>257</td><td><b class=pu>복합 추론</b></td></tr>
+          <tr><td>Qwen3 Next 80B</td><td class="dv-price">0.15 / 1.20</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.29</td><td><b>18/18</b></td><td>4.04</td><td><b>9/9</b></td><td>6.63</td><td><b>39/39</b></td><td>242</td><td></td></tr>
+          <tr><td>DeepSeek V3.2</td><td class="dv-price">0.62 / 1.85</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.52</td><td><b>18/18</b></td><td>4.31</td><td><b>9/9</b></td><td>6.45</td><td><b>39/39</b></td><td>196</td><td></td></tr>
+          <tr><td>Nova Pro</td><td class="dv-price">0.80 / 3.20</td><td><span class="lo">X</span></td><td>9/9</td><td><span class="lo">9/12</span></td><td>1.22</td><td><b>18/18</b></td><td>3.40</td><td><span class="lo">8/9</span></td><td>1.84</td><td><span class="lo">35/39</span></td><td>180</td><td>스키마를 프롬프트로</td></tr>
+          <tr class="on"><td><b>Nova 2 Lite</b></td><td class="dv-price">0.33 / 2.75</td><td><span class="lo">X</span></td><td>9/9</td><td><b>12/12</b></td><td>0.83</td><td><b>18/18</b></td><td>1.43</td><td><span class="lo">4/9</span></td><td>1.93</td><td><span class="lo">34/39</span></td><td>141</td><td><b class=pu>비전 OCR</b></td></tr>
+          <tr class="on"><td><b>GLM 4.7 Flash</b></td><td class="dv-price">0.07 / 0.40</td><td>O</td><td>9/9</td><td><b>12/12</b></td><td>1.30</td><td><b>18/18</b></td><td>2.61</td><td><span class="lo">4/9</span></td><td>4.96</td><td><span class="lo">34/39</span></td><td>196</td><td><b class=pu>추출, 단문</b></td></tr>
+          <tr><td>Llama 4 Maverick</td><td class="dv-price">0.24 / 0.97</td><td><span class="lo">X</span></td><td>9/9</td><td><span class="lo">9/12</span></td><td>0.92</td><td><b>18/18</b></td><td><b class="pu">1.20</b></td><td><span class="lo">6/9</span></td><td>1.16</td><td><span class="lo">33/39</span></td><td>81</td><td>스키마를 프롬프트로</td></tr>
+          <tr><td>MiniMax M2.5</td><td class="dv-price">0.30 / 1.20</td><td>O</td><td><span class="lo">6/9</span></td><td><b>12/12</b></td><td>3.39</td><td><span class="lo">12/18</span></td><td>5.76</td><td><span class="lo">3/9</span></td><td>9.81</td><td><span class="lo">27/39</span></td><td>663</td><td>토큰 한도 초과 3회</td></tr>
+          <tr><td>gpt-oss-120b</td><td class="dv-price">0.15 / 0.60</td><td>O</td><td><span class="lo">1/9</span></td><td><span class="lo">4/12</span></td><td>1.64</td><td><span class="lo">0/18</span></td><td>4.42</td><td><span class="lo">0/9</span></td><td>7.13</td><td><span class="lo">4/39</span></td><td>666</td><td>깨진 JSON 출력</td></tr>
         </tbody>
       </table>
+      <div class="fn dv-price-note">단가: 입력 / 출력, USD / 100만 토큰. Bedrock Standard, us-east-1, 2026-11-13 확인.</div>
     </div>
     <div class="tb">
       <div class="cap"><b>Table 2.</b> 채용공고 이미지 OCR 벤치마크 (2026-11-11). 정답 텍스트가 있는 합성 공고 이미지 6장 × 2회, 오픈소스 OCR 3종과 비전 모델 10종</div>
       <table class="t1 t3">
-        <thead><tr><th rowspan="2">Engine</th><th rowspan="2">실행</th><th rowspan="2">CER</th><th colspan="3">어려운 이미지 CER</th><th rowspan="2">핵심 필드<br>재현율</th><th rowspan="2">p50 (s)</th><th rowspan="2">비고</th></tr>
+        <thead><tr><th rowspan="2">Engine</th><th rowspan="2" class="dv-price">단가<br>입력 / 출력</th><th rowspan="2">실행</th><th rowspan="2">CER</th><th colspan="3">어려운 이미지 CER</th><th rowspan="2">핵심 필드<br>재현율</th><th rowspan="2">p50 (s)</th><th rowspan="2">비고</th></tr>
         <tr><th>표</th><th>고밀도</th><th>저해상도</th></tr></thead>
         <tbody>
-          <tr><td><b>Kimi K2.5</b></td><td>Bedrock</td><td><b class="pu">0.0%</b></td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>2.26</td><td>전 이미지 CER 0</td></tr>
-          <tr><td>Gemma 3 27B</td><td>Bedrock</td><td>0.1%</td><td>0.5%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>4.14</td><td></td></tr>
-          <tr><td>Qwen3-VL 235B</td><td>Bedrock</td><td>0.2%</td><td>0.5%</td><td>0.0%</td><td>0.5%</td><td>100.0%</td><td>3.41</td><td></td></tr>
-          <tr><td>PaddleOCR (korean)</td><td>오픈소스 (로컬 CPU)</td><td>0.3%</td><td>0.0%</td><td>0.7%</td><td>0.5%</td><td>100.0%</td><td>6.63</td><td>오픈소스 최고, 첫 로드 74초</td></tr>
-          <tr><td>Llama 4 Scout</td><td>Bedrock</td><td>0.4%</td><td>0.0%</td><td>0.4%</td><td>1.5%</td><td>100.0%</td><td>2.01</td><td></td></tr>
-          <tr><td>Llama 4 Maverick</td><td>Bedrock</td><td>0.6%</td><td>0.0%</td><td>1.1%</td><td>0.5%</td><td>98.6%</td><td>1.72</td><td></td></tr>
-          <tr><td>Mistral Large 3</td><td>Bedrock</td><td>0.7%</td><td>1.3%</td><td>0.7%</td><td>0.5%</td><td>98.6%</td><td>2.37</td><td></td></tr>
-          <tr><td>EasyOCR (ko+en)</td><td>오픈소스 (로컬 CPU)</td><td><span class="lo">6.3%</span></td><td><span class="lo">7.6%</span></td><td><span class="lo">8.0%</span></td><td><span class="lo">12.1%</span></td><td><span class="lo">81.9%</span></td><td>1.14</td><td>가장 빠른 축</td></tr>
-          <tr class="on"><td><b>Nova 2 Lite</b></td><td>Bedrock</td><td><span class="lo">8.6%</span></td><td>2.0%</td><td><span class="lo">9.1%</span></td><td><span class="lo">18.7%</span></td><td>98.6%</td><td>2.32</td><td><b class="pu">운영 사용 중</b> (서울 리전)</td></tr>
-          <tr><td>Pixtral Large</td><td>Bedrock</td><td><span class="lo">8.9%</span></td><td>4.3%</td><td><span class="lo">9.8%</span></td><td><span class="lo">10.6%</span></td><td><span class="lo">91.0%</span></td><td>3.66</td><td></td></tr>
-          <tr><td>Tesseract 5 (kor+eng)</td><td>오픈소스 (로컬 CPU)</td><td><span class="lo">17.4%</span></td><td><span class="lo">29.8%</span></td><td><span class="lo">12.0%</span></td><td><span class="lo">29.3%</span></td><td><span class="lo">80.6%</span></td><td>0.47</td><td>표, 저해상도에 약함</td></tr>
-          <tr><td>Nova Pro</td><td>Bedrock</td><td><span class="lo">48.9%</span></td><td><span class="lo">59.1%</span></td><td><span class="lo">48.9%</span></td><td><span class="lo">52.3%</span></td><td><span class="lo">81.9%</span></td><td>2.80</td><td><span class="lo">없는 내용 생성</span></td></tr>
-          <tr><td>Nova Lite</td><td>Bedrock</td><td><span class="lo">57.1%</span></td><td><span class="lo">57.1%</span></td><td><span class="lo">55.8%</span></td><td><span class="lo">55.8%</span></td><td><span class="lo">85.4%</span></td><td>2.43</td><td><span class="lo">없는 내용 생성</span></td></tr>
+          <tr><td><b>Kimi K2.5</b></td><td class="dv-price">0.60 / 3.00</td><td>Bedrock</td><td><b class="pu">0.0%</b></td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>2.26</td><td>전 이미지 CER 0</td></tr>
+          <tr><td>Gemma 3 27B</td><td class="dv-price">0.23 / 0.38</td><td>Bedrock</td><td>0.1%</td><td>0.5%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>4.14</td><td></td></tr>
+          <tr><td>Qwen3-VL 235B</td><td class="dv-price">0.53 / 2.66</td><td>Bedrock</td><td>0.2%</td><td>0.5%</td><td>0.0%</td><td>0.5%</td><td>100.0%</td><td>3.41</td><td></td></tr>
+          <tr><td>PaddleOCR (korean)</td><td class="dv-price">API 과금 없음</td><td>오픈소스 (로컬 CPU)</td><td>0.3%</td><td>0.0%</td><td>0.7%</td><td>0.5%</td><td>100.0%</td><td>6.63</td><td>오픈소스 최고, 첫 로드 74초</td></tr>
+          <tr><td>Llama 4 Scout</td><td class="dv-price">0.17 / 0.66</td><td>Bedrock</td><td>0.4%</td><td>0.0%</td><td>0.4%</td><td>1.5%</td><td>100.0%</td><td>2.01</td><td></td></tr>
+          <tr><td>Llama 4 Maverick</td><td class="dv-price">0.24 / 0.97</td><td>Bedrock</td><td>0.6%</td><td>0.0%</td><td>1.1%</td><td>0.5%</td><td>98.6%</td><td>1.72</td><td></td></tr>
+          <tr><td>Mistral Large 3</td><td class="dv-price">0.50 / 1.50</td><td>Bedrock</td><td>0.7%</td><td>1.3%</td><td>0.7%</td><td>0.5%</td><td>98.6%</td><td>2.37</td><td></td></tr>
+          <tr><td>EasyOCR (ko+en)</td><td class="dv-price">API 과금 없음</td><td>오픈소스 (로컬 CPU)</td><td><span class="lo">6.3%</span></td><td><span class="lo">7.6%</span></td><td><span class="lo">8.0%</span></td><td><span class="lo">12.1%</span></td><td><span class="lo">81.9%</span></td><td>1.14</td><td>가장 빠른 축</td></tr>
+          <tr class="on"><td><b>Nova 2 Lite</b></td><td class="dv-price">0.33 / 2.75</td><td>Bedrock</td><td><span class="lo">8.6%</span></td><td>2.0%</td><td><span class="lo">9.1%</span></td><td><span class="lo">18.7%</span></td><td>98.6%</td><td>2.32</td><td><b class="pu">운영 사용 중</b> (서울 리전)</td></tr>
+          <tr><td>Pixtral Large</td><td class="dv-price">2.00 / 6.00</td><td>Bedrock</td><td><span class="lo">8.9%</span></td><td>4.3%</td><td><span class="lo">9.8%</span></td><td><span class="lo">10.6%</span></td><td><span class="lo">91.0%</span></td><td>3.66</td><td></td></tr>
+          <tr><td>Tesseract 5 (kor+eng)</td><td class="dv-price">API 과금 없음</td><td>오픈소스 (로컬 CPU)</td><td><span class="lo">17.4%</span></td><td><span class="lo">29.8%</span></td><td><span class="lo">12.0%</span></td><td><span class="lo">29.3%</span></td><td><span class="lo">80.6%</span></td><td>0.47</td><td>표, 저해상도에 약함</td></tr>
+          <tr><td>Nova Pro</td><td class="dv-price">0.80 / 3.20</td><td>Bedrock</td><td><span class="lo">48.9%</span></td><td><span class="lo">59.1%</span></td><td><span class="lo">48.9%</span></td><td><span class="lo">52.3%</span></td><td><span class="lo">81.9%</span></td><td>2.80</td><td><span class="lo">없는 내용 생성</span></td></tr>
+          <tr><td>Nova Lite</td><td class="dv-price">0.06 / 0.24</td><td>Bedrock</td><td><span class="lo">57.1%</span></td><td><span class="lo">57.1%</span></td><td><span class="lo">55.8%</span></td><td><span class="lo">55.8%</span></td><td><span class="lo">85.4%</span></td><td>2.43</td><td><span class="lo">없는 내용 생성</span></td></tr>
         </tbody>
       </table>
+      <div class="fn dv-price-note">단가: 입력 / 출력, USD / 100만 토큰. Bedrock Standard, us-east-1, 2026-11-13 확인. 로컬 OCR은 API 과금 없음, 실행 서버 비용 별도.</div>
     </div>
     <div class="tb">
       <div class="cap"><b>Table 3.</b> 2차 운영 데이터 비교 (2026-10-24). 운영 저장소 4개에서 뽑은 Episode 15개 × 2회, 질문 유형 7개를 4 + 3으로 나눠 호출</div>
       <table>
-        <thead><tr><th>Model + Prompt</th><th>완성 호출</th><th>Questions</th><th>Parse fail</th><th>근거 부합률</th><th>Judge 불일치</th><th>Latency p50 / p95 (s)</th><th>Tokens in / out</th><th>Cost / 28Q ($)</th></tr></thead>
+        <thead><tr><th>Model + Prompt</th><th class="dv-price">단가<br>입력 / 출력</th><th>완성 호출</th><th>Questions</th><th>Parse fail</th><th>근거 부합률</th><th>Judge 불일치</th><th>Latency p50 / p95 (s)</th><th>Tokens in / out</th><th>Cost / 28Q ($)</th></tr></thead>
         <tbody>
-          <tr><td>GLM 5 + 기존 프롬프트</td><td>55/60</td><td>192/210</td><td>3</td><td>161/192 (83.9%)</td><td>15.1%</td><td>22.80 / 59.10</td><td>479K / 167K</td><td>0.135</td></tr>
-          <tr class="on"><td><b>GLM 5 + 근거 분리 프롬프트 (채택)</b></td><td>55/60</td><td>192/210</td><td>3</td><td><b>169/192 (88.0%)</b></td><td><b>10.9%</b></td><td>27.89 / 68.59</td><td>548K / 204K</td><td>0.160</td></tr>
-          <tr><td>Kimi K2.5 + 기존 프롬프트</td><td>50/60</td><td>172/210</td><td>8</td><td>137/172 (79.7%)</td><td>18.0%</td><td>32.67 / 103.97</td><td>488K / 217K</td><td>0.126</td></tr>
-          <tr><td>Kimi K2.5 + 근거 분리 프롬프트</td><td>47/60</td><td>170/210</td><td>7</td><td>143/170 (84.1%)</td><td>15.9%</td><td>38.87 / 114.73</td><td>556K / 258K</td><td>0.148</td></tr>
-          <tr class="sub"><td colspan="9">미리 정한 Episode 6개 부분 표본 (Kimi K3 비교용, 위 15개 결과와 직접 순위를 매기지 않음)</td></tr>
-          <tr><td>GLM 5 + 근거 분리 프롬프트</td><td>21/24</td><td>73/84</td><td>-</td><td>66/73 (90.4%)</td><td>-</td><td>30.93 / 80.68</td><td>-</td><td>0.166</td></tr>
-          <tr><td>Kimi K3 + 기존 프롬프트</td><td>22/24</td><td>77/84</td><td>1</td><td>70/77 (90.9%)</td><td>7.8%</td><td>20.24 / 43.11</td><td>211K / 71K</td><td>0.469</td></tr>
-          <tr><td>Kimi K3 + 근거 분리 프롬프트</td><td>20/24</td><td>70/84</td><td>4</td><td>67/70 (95.7%)</td><td>4.3%</td><td>29.16 / <b class="r">144.77</b></td><td>232K / 109K</td><td><b class="r">0.700</b></td></tr>
+          <tr><td>GLM 5 + 기존 프롬프트</td><td class="dv-price">1.00 / 3.20</td><td>55/60</td><td>192/210</td><td>3</td><td>161/192 (83.9%)</td><td>15.1%</td><td>22.80 / 59.10</td><td>479K / 167K</td><td>0.135</td></tr>
+          <tr class="on"><td><b>GLM 5 + 근거 분리 프롬프트 (채택)</b></td><td class="dv-price">1.00 / 3.20</td><td>55/60</td><td>192/210</td><td>3</td><td><b>169/192 (88.0%)</b></td><td><b>10.9%</b></td><td>27.89 / 68.59</td><td>548K / 204K</td><td>0.160</td></tr>
+          <tr><td>Kimi K2.5 + 기존 프롬프트</td><td class="dv-price">0.60 / 3.00</td><td>50/60</td><td>172/210</td><td>8</td><td>137/172 (79.7%)</td><td>18.0%</td><td>32.67 / 103.97</td><td>488K / 217K</td><td>0.126</td></tr>
+          <tr><td>Kimi K2.5 + 근거 분리 프롬프트</td><td class="dv-price">0.60 / 3.00</td><td>47/60</td><td>170/210</td><td>7</td><td>143/170 (84.1%)</td><td>15.9%</td><td>38.87 / 114.73</td><td>556K / 258K</td><td>0.148</td></tr>
+          <tr class="sub"><td colspan="10">미리 정한 Episode 6개 부분 표본 (Kimi K3 비교용, 위 15개 결과와 직접 순위를 매기지 않음)</td></tr>
+          <tr><td>GLM 5 + 근거 분리 프롬프트</td><td class="dv-price">1.00 / 3.20</td><td>21/24</td><td>73/84</td><td>-</td><td>66/73 (90.4%)</td><td>-</td><td>30.93 / 80.68</td><td>-</td><td>0.166</td></tr>
+          <tr><td>Kimi K3 + 기존 프롬프트</td><td class="dv-price">3.30 / 16.50</td><td>22/24</td><td>77/84</td><td>1</td><td>70/77 (90.9%)</td><td>7.8%</td><td>20.24 / 43.11</td><td>211K / 71K</td><td>0.469</td></tr>
+          <tr><td>Kimi K3 + 근거 분리 프롬프트</td><td class="dv-price">3.30 / 16.50</td><td>20/24</td><td>70/84</td><td>4</td><td>67/70 (95.7%)</td><td>4.3%</td><td>29.16 / <b class="r">144.77</b></td><td>232K / 109K</td><td><b class="r">0.700</b></td></tr>
         </tbody>
       </table>
+      <div class="fn dv-price-note">단가: 입력 / 출력, USD / 100만 토큰. 실험 당시 적용값, Kimi K3는 US CRIS. Cost / 28Q는 28문항 생성 추정 비용.</div>
     </div>
     <div class="tb">
       <div class="cap"><b>Table 4.</b> 역할별 채택 모델과 검토 후보</div>
       <table class="t4">
-        <thead><tr><th>역할</th><th>채택 모델</th><th>검토 후보</th><th>선정 근거</th></tr></thead>
+        <thead><tr><th>역할</th><th>채택 모델</th><th class="dv-price">단가<br>입력 / 출력</th><th>검토 후보</th><th>선정 근거</th></tr></thead>
         <tbody>
-          <tr><td>복합 추론</td><td><b>GLM 5</b></td><td>Qwen3 Coder Next, GLM 4.7 Flash, Kimi K2.5, Kimi K3, Claude Sonnet 4.5, DeepSeek-V3.1, Llama 4 Maverick, gpt-oss-120b</td><td>근거 부합률 88.0%, parse fail과 judge 불일치 최저 (Table 3)</td></tr>
-          <tr><td>코드 판단</td><td><b>Qwen3 Coder Next</b></td><td>GLM 5, GLM 4.7 Flash, Claude Sonnet 4.5, DeepSeek-V3.1, Qwen3 235B, gpt-oss-120b</td><td>Total 39/39, 코드 Task p50 5.27초, 단가 $0.50 / $1.20 (1M 토큰, GLM 5의 절반 이하)</td></tr>
-          <tr><td>추출, 단문</td><td><b>GLM 4.7 Flash</b></td><td>Amazon Nova Micro, Claude Haiku 4.5, Llama 4 Scout, Mistral Small</td><td>공고 추출 12/12, 단가 최저 $0.07 / $0.40 (1M 토큰). 코드 판단에는 쓰지 않음 (코드 4/9)</td></tr>
-          <tr><td>비전 OCR</td><td><b>Nova 2 Lite</b></td><td>Qwen3-VL 235B, Kimi K2.5, Gemma 3 27B, Llama 4, Pixtral Large, Nova Pro, PaddleOCR, EasyOCR, Tesseract</td><td>서울 리전 처리, 핵심 필드 98.6% (Table 2). OCR CER 8.6%로 Qwen3-VL(0.2%) 교체 검토</td></tr>
-          <tr><td>커밋 판정</td><td><b>OpenAI Decisions</b></td><td>Jev</td><td>입력 토큰만 과금, 다국어 판정, 실패 시 규칙 점수</td></tr>
-          <tr><td>임베딩</td><td><b>Cohere Embed Multilingual v3</b></td><td>Amazon Titan Text Embeddings v2, Amazon Nova Multimodal Embeddings</td><td>한국어와 영어 혼용 질문, 1024차원</td></tr>
-          <tr><td>음성</td><td><b>faster-whisper small, Supertonic</b></td><td>Raon-Speech-9B, Raon-SpeechChat, Amazon Transcribe, OpenAI Whisper API</td><td>CPU 실행으로 GPU 비용 0, CER 5.6%</td></tr>
+          <tr><td>복합 추론</td><td><b>GLM 5</b></td><td class="dv-price">1.00 / 3.20</td><td>Qwen3 Coder Next, GLM 4.7 Flash, Kimi K2.5, Kimi K3, Claude Sonnet 4.5, DeepSeek-V3.1, Llama 4 Maverick, gpt-oss-120b</td><td>근거 부합률 88.0%, parse fail과 judge 불일치 최저 (Table 3)</td></tr>
+          <tr><td>코드 판단</td><td><b>Qwen3 Coder Next</b></td><td class="dv-price">0.50 / 1.20</td><td>GLM 5, GLM 4.7 Flash, Claude Sonnet 4.5, DeepSeek-V3.1, Qwen3 235B, gpt-oss-120b</td><td>Total 39/39, 코드 Task p50 5.27초, GLM 5의 절반 이하 단가</td></tr>
+          <tr><td>추출, 단문</td><td><b>GLM 4.7 Flash</b></td><td class="dv-price">0.07 / 0.40</td><td>Amazon Nova Micro, Claude Haiku 4.5, Llama 4 Scout, Mistral Small</td><td>공고 추출 12/12, 단가 최저. 코드 판단에는 쓰지 않음 (코드 4/9)</td></tr>
+          <tr><td>비전 OCR</td><td><b>Nova 2 Lite</b></td><td class="dv-price">0.36 / 2.96</td><td>Qwen3-VL 235B, Kimi K2.5, Gemma 3 27B, Llama 4, Pixtral Large, Nova Pro, PaddleOCR, EasyOCR, Tesseract</td><td>서울 리전 처리, 핵심 필드 98.6% (Table 2). OCR CER 8.6%로 Qwen3-VL(0.2%) 교체 검토</td></tr>
+          <tr><td>커밋 판정</td><td><b>OpenAI Decisions</b></td><td class="dv-price">0.10 / 비과금</td><td>Jev</td><td>입력 토큰만 과금, 다국어 판정, 실패 시 규칙 점수</td></tr>
+          <tr><td>임베딩</td><td><b>Cohere Embed Multilingual v3</b></td><td class="dv-price">0.10 / 비과금</td><td>Amazon Titan Text Embeddings v2, Amazon Nova Multimodal Embeddings</td><td>한국어와 영어 혼용 질문, 1024차원</td></tr>
+          <tr><td>음성</td><td><b>faster-whisper small, Supertonic</b></td><td class="dv-price">API 과금 없음</td><td>Raon-Speech-9B, Raon-SpeechChat, Amazon Transcribe, OpenAI Whisper API</td><td>CPU 실행으로 GPU 비용 0, CER 5.6%</td></tr>
         </tbody>
       </table>
+      <div class="fn dv-price-note">단가: 입력 / 출력, USD / 100만 토큰. Nova 2 Lite는 서울 운영 단가, Decisions는 보고서 단가. 로컬 음성은 API 과금 없음, 서버 비용 별도.</div>
     </div>
 </div></div>
     <div class="folio"></div>
@@ -3642,6 +3679,9 @@ Table 4 검토 후보와 선정 근거는 최종보고서 «역할별 모델 최
 [Table 3, 4] [≈12초] 상위권 모델의 우열은 실제 운영 데이터로 가렸습니다. 운영 저장소 4개에서 뽑은 묶음 15개를 두 번씩, 호출 288번으로 비교했고, 질문과 근거를 분리한 프롬프트의 GLM 5가 근거 부합률 88.0%로 가장 높고 judge 불일치도 10.9%로 가장 낮았습니다. Kimi K3는 부분 표본에서 지지율이 더 높았지만 비용이 약 4.2배, p95가 145초라 운영 조건을 못 맞췄습니다. 오른쪽은 그 결과로 정한 역할별 모델입니다.
 
 출처: reports/grounding-model-2026-10-24 (model-comparison.csv, metrics.json, report.html, verdict.json) · 최종보고서 역할별 모델 최적화 표.
+
+모델 단가 추가(2026-11-13): Table 1과 Table 2는 벤치마크 실행 리전 us-east-1의 Bedrock Standard 입력 / 출력 가격(USD / 100만 토큰). Nova 2 Lite는 us.amazon.nova-2-lite-v1:0의 미국 리전 가격 $0.33 / $2.75, Table 4는 기존 운영 원장과 서울 Global CRIS 가격 $0.36 / $2.96을 표기했다. Table 3은 scripts/bedrock_client.py의 실험 적용값(GLM 5 $1.00 / $3.20, Kimi K2.5 $0.60 / $3.00, Kimi K3 US CRIS $3.30 / $16.50)을 그대로 표기했고, 기존 Cost / 28Q는 바꾸지 않았다. 캐시 할인과 Batch 할인 제외. Table 4 Decisions의 $0.10은 기존 최종보고서 입력 단가이며, Cohere Embed v3는 입력 1,000토큰당 $0.0001을 100만 토큰 단위로 환산했다. 로컬 OCR과 음성 모델의 API 과금 없음은 서버 운영비 0이라는 뜻이 아니다.
+가격 출처: https://aws.amazon.com/bedrock/pricing/ (Cohere 포함), https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json , https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/ap-northeast-2/index.json (publicationDate 2026-11-11T01:30:37Z, 2026-11-13 조회), https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k3.html , reports/grounding-model-2026-10-24/scripts/bedrock_client.py , collect/A-admin-usage.md(서울 운영 단가), 기존 최종보고서 커밋 판정 모델 표(Decisions 입력 단가).
 
 [장표 출처 — 화면에서는 뺌] reports/grounding-model-2026-10-24 (Table 3) · reports/ocr-bench-2026-11-11 (Table 2) · Devfit_BE docs/BEDROCK_MODEL_SELECTION.md (2026-07-27 재현 벤치마크) · reports/grounding-model-2026-10-24 (model-comparison.csv, metrics.json, bounded-metrics.json, verdict.json, report.html) · 최종보고서 역할별 모델 최적화 표, 품질 개선 결과 3</template></section>
 <section class="slide " data-order="13" data-title="1. LLM 파이프라인 - 근거 대조를 통한 환각 검사">
@@ -3967,7 +4007,7 @@ Q&amp;A: 침투 테스트와 외부 보안 감사 없음 · 세부 조치는 부
  <div class="slide-shell">
   <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
   <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">역할을 나누고 <span class="purple">핵심 기능을 함께</span> 만들었습니다</h1></header>
-  <div class="slide-content"><div class="in-profile-wrap"><div class="in-profile-summary">3명 모두 학교 병행 · 1명은 고등학생<span>AI·SW마에스트로 17기 · Team Dozer</span></div><div class="in-profile-grid"><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-park-cheonwoong.jpg?v=023fce514542" alt="박천웅"><div><h3>박천웅</h3><div class="in-profile-role">팀장 · 인프라·분석 엔진</div></div></div><p class="in-profile-education">숭실대학교 소프트웨어학부<br>화이트햇 스쿨 1기</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>공군작전사령부 정보보호병 복무</li><li>화이트햇 콘테스트 합참의장상 (2025)<br>국방부 창업경진대회 우수상 (2025)</li><li>NASA·Naver·Google 명예의 전당</li><li>대학연합 개발동아리 UMC 숭실대 부회장</li><li>AWS SAA · SQLD · TOPCIT 수준 4</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>인프라·운영</b> · AWS ECS·RDS·CloudFront 구성<br>배포 자동화·모니터링·LLM 비용 기록</p></div><div class="in-profile-task"><p><b>AI 분석</b> · Bedrock·Decision 연동<br>본인 커밋 판정·코드 근거 질문 생성</p></div><div class="in-profile-task"><p><b>인증·보안</b> · GitHub 토큰 암호화<br>해시 인증·취약점 감사·SBOM 생성</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-kim-gunwoo.jpg?v=5519338b2b4b" alt="김건우"><div><h3>김건우</h3><div class="in-profile-role">PM · 제품 기획·풀스택</div></div></div><p class="in-profile-education">단국대부속소프트웨어고등학교<br>KAIST IP 영재기업인교육원 14기 수료</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>중앙대 고교AI 경진대회 대상 (2026)<br>강남구 AI 문제해결 해커톤 우수상 (2026)</li><li>아산유스프러너 피칭 우수상 (2025)</li><li>KAIST IP-CEO 글로벌 기업가정신 연수</li><li>특허 등록 1건·출원 12건<br>과학의 날 과기정통부 장관상 표창</li><li>COS Pro Python 1급 · 트리즈 1수준</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>제품·공고</b> · 랜딩·대시보드·학습실 구현<br>체험 데모·기업 공고 수집·캐시</p></div><div class="in-profile-task"><p><b>기출·결제</b> · 기출 연결·면접 리뷰·KPI<br>Plus·토스 결제·지원 일정 알림</p></div><div class="in-profile-task"><p><b>유입·검증</b> · SEO·광고 전환·유입 추적<br>질문 문항 분석 하네스</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-noh-jaewon.jpg?v=0e48fb62fde3" alt="노재원"><div><h3>노재원</h3><div class="in-profile-role">모의면접·음성 · B2C·마케팅</div></div></div><p class="in-profile-education">숭실대학교 컴퓨터학부<br>한국디지털미디어고 웹프로그래밍과 졸업</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>한국정보올림피아드 1차 고등부 은상 (2025)<br>전국 창의문제 해결능력 경진대회 금상 (2024)</li><li>국제 정보 올림피아드 교육생 수료 (2024)</li><li>Codeforces Expert · BOJ 1,300문제 이상</li><li>숭실대 SCCC · 알고리즘 대회 출제·검토</li><li class="in-profile-oneline">한국디지털미디어고등학교 제 1회 대회 개최</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>음성</b> · STT·TTS·CPU 사이드카·음성 캐싱<br>음성 수신·전사 분리로 종료 지연 개선</p></div><div class="in-profile-task"><p><b>체험·서류</b> · 비로그인 CS·퀴즈·미니게임<br>포트폴리오·자기소개서 Assistant 화면</p></div><div class="in-profile-task"><p><b>마케팅</b> · Meta 광고 운영<br>유입·사용 지표 분석, B2C 개선</p></div></div></section></article></div></div></div>
+  <div class="slide-content"><div class="in-profile-wrap"><div class="in-profile-summary">3명 모두 학교 병행 · 1명은 고등학생<span>AI·SW마에스트로 17기 · Team Dozer</span></div><div class="in-profile-grid"><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-park-cheonwoong.jpg?v=023fce514542" alt="박천웅"><div><h3>박천웅</h3><div class="in-profile-role">팀장 · 인프라·분석 엔진</div></div></div><p class="in-profile-education">숭실대학교 소프트웨어학부<br>공군작전사령부 정보보호실 정보보호병 복무</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>국제 대학생 사이버보안 경진대회(핵테온) 우수상 (2026)</li><li>화이트햇 콘테스트 2위, 우수상, 합참의장상 (2025)</li><li>공군 창업경진대회 최우수상, IBK기업은행장상 (2025)</li><li>국방부 창업 경진대회 우수상, 국방부장관상 (2025)</li><li>도전! K-STARTUP 28위 (2025)</li><li>NASA, Naver, Google 명예의 전당 등재</li><li>AWS SAA, SQLD, 정보처리기능사, 네트워크관리사 2급</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>인프라·운영</b> · AWS ECS·RDS·CloudFront 구성<br>배포 자동화·모니터링·LLM 비용 기록</p></div><div class="in-profile-task"><p><b>AI 분석</b> · Bedrock·Decision 연동<br>본인 커밋 판정·코드 근거 질문 생성</p></div><div class="in-profile-task"><p><b>인증·보안</b> · GitHub 토큰 암호화<br>해시 인증·취약점 감사·SBOM 생성</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-kim-gunwoo.jpg?v=5519338b2b4b" alt="김건우"><div><h3>김건우</h3><div class="in-profile-role">PM · 제품 기획·풀스택</div></div></div><p class="in-profile-education">단국대부속소프트웨어고등학교<br>KAIST IP 영재기업인교육원 14기 수료</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>중앙대 고교AI 경진대회 대상 (2026)<br>강남구 AI 문제해결 해커톤 우수상 (2026)</li><li>아산유스프러너 피칭 우수상 (2025)</li><li>KAIST IP-CEO 글로벌 기업가정신 연수</li><li>특허 등록 1건·출원 12건<br>과학의 날 과기정통부 장관상 표창</li><li>COS Pro Python 1급 · 트리즈 1수준</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>제품·공고</b> · 랜딩·대시보드·학습실 구현<br>체험 데모·기업 공고 수집·캐시</p></div><div class="in-profile-task"><p><b>기출·결제</b> · 기출 연결·면접 리뷰·KPI<br>Plus·토스 결제·지원 일정 알림</p></div><div class="in-profile-task"><p><b>유입·검증</b> · SEO·광고 전환·유입 추적<br>질문 문항 분석 하네스</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-noh-jaewon.jpg?v=0e48fb62fde3" alt="노재원"><div><h3>노재원</h3><div class="in-profile-role">모의면접·음성 · B2C·마케팅</div></div></div><p class="in-profile-education">숭실대학교 컴퓨터학부<br>한국디지털미디어고 웹프로그래밍과 졸업</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>한국정보올림피아드 1차 고등부 은상 (2025)<br>전국 창의문제 해결능력 경진대회 금상 (2024)</li><li>국제 정보 올림피아드 교육생 수료 (2024)</li><li>Codeforces Expert · BOJ 1,300문제 이상</li><li>숭실대 SCCC · 알고리즘 대회 출제·검토</li><li class="in-profile-oneline">한국디지털미디어고등학교 제 1회 대회 개최</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>음성</b> · STT·TTS·CPU 사이드카·음성 캐싱<br>음성 수신·전사 분리로 종료 지연 개선</p></div><div class="in-profile-task"><p><b>체험·서류</b> · 비로그인 CS·퀴즈·미니게임<br>포트폴리오·자기소개서 Assistant 화면</p></div><div class="in-profile-task"><p><b>마케팅</b> · Meta 광고 운영<br>유입·사용 지표 분석, B2C 개선</p></div></div></section></article></div></div></div>
   <div class="folio"></div>
  </div>
 <template class="notes">[장 연결] 지금까지 소개한 DevFit을 함께 만든 팀의 협업 과정을 말씀드리겠습니다.
@@ -4000,7 +4040,10 @@ https://app.notion.com/p/manwoong/40fd2bfa8b5481c6ac80f44944bfaf27
       <text x="1065" y="94" text-anchor="middle" font-size="86" font-weight="900" fill="#c72c3d">31</text>
     </svg>
   </div></figure>
-  <figure class="in-midterm-grade"><img src="assets/teamwork-psychology-grade-original.png?v=37aefceb8680" alt="추가 성적 화면 원본: D+, 심리학의이해"></figure>
+  <div class="in-midterm-grades">
+    <figure class="in-midterm-grade"><img src="assets/teamwork-psychology-grade-original.png?v=37aefceb8680" alt="추가 성적 화면 원본: D+, 심리학의이해"></figure>
+    <figure class="in-midterm-grade in-midterm-grade-lit"><img src="assets/teamwork-literature-grade-original.png?v=1bf675a0e7d1" alt="성적 화면 원본: 문학(3) 중간고사 100점 만점 44.10점"></figure>
+  </div>
   <p class="in-midterm-punchline">DevFit에는 진심이었습니다.</p>
 </div></div>
     <div class="folio"></div>
@@ -4014,7 +4057,7 @@ https://app.notion.com/p/manwoong/40fd2bfa8b5481c6ac80f44944bfaf27
 추가 화면에는 D+와 과목명 심리학의이해가 표시돼 있습니다. 두 화면이 같은 과목 또는 같은 사람의 기록인지는 확인되지 않아 연결해 단정하지 않습니다.
 
 
-[장표 출처 — 화면에서는 뺌] 사용자 제공 중간고사 결과 및 심리학의이해 D+ 화면 원본, 2026-11-13.</template></section>
+[장표 출처 — 화면에서는 뺌] 사용자 제공 중간고사 결과 · 심리학의이해 D+ · 문학(3) 중간고사 44.10점 화면 원본, 2026-11-13.</template></section>
 <section class="slide in-people-slide teamwork-slide" data-order="26" data-title="멘토 소개">
  <div class="slide-shell">
   <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
@@ -4308,29 +4351,29 @@ InterviewQuestionVectorSearch/InterviewQuestionEvidenceMatchService: 의미 검�
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title"><span class="purple">시장 규모</span>와 가격 선정 근거</h1></header>
     <div class="slide-content">
 <div class="ef-one ef-market-pricing">
-  <div class="ef-circ">
+  <div class="ef-mk-left"><div class="ef-circ">
     <div class="c tam"><em>TAM</em><b>약 1,132억 원</b><span>개발자 채용 전체 · 구직자 준비 + 기업 검증</span><code>구직자 38.8만 명 × 23,700원<br>+ 입사지원 520만 건 × 2만 원</code></div>
     <div class="c sam"><em>SAM</em><b>약 143억 원</b><span>돈을 쓰는 구간</span><code>취업 준비 지출 42.9% × 92억<br>+ 면접 단계 10% × 1,040억</code></div>
     <div class="c som"><em>SOM</em><b>약 4억 원</b><span>3년 내 목표</span><code>B2C 전환 1%<br>+ B2B SAM 3%</code></div>
-  </div>
+  </div><div class="ef-mk-src"><p><b>TAM</b> 38.8만 명 = 점핏 2025 리포트 ÷ 한경협 2025 · 23,700원 = DevFit Plus 월 7,900원 × 3개월(가정) · 520만 건 = 점핏 2025 상반기 2,601,390건 × 2(하반기 동일 가정) · 2만 원 = 내부 가정(기획 B2B 티어 1인 1만~3만 원)</p><p><b>SAM</b> 42.9% = 잡코리아 콘텐츠LAB 2025 대졸 취준생 조사(N=485, 아시아경제 2025-09-12) · 10% = 내부 가정(서류 통과율)</p><p><b>SOM</b> 1% = 최종보고서 전환 시나리오(가정) · 3% = 내부 가정(3년 목표)</p></div></div>
   <div class="ef-one-r">
     <div class="ef-one-k">
-      <div><small>연간 개발 직군 입사지원</small><b>약 520만 건</b><i>사람인 · 점핏 2025 상반기 260만 건 × 2</i></div>
+      <div><small>연간 개발 직군 입사지원</small><b>약 520만 건</b><i>사람인 · 점핏 2025 상반기 260만 건 × 2</i><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 점핏 「2025 개발자 채용 리포트」 jumpit.saramin.co.kr/report/2025/recruit · ×2는 하반기 동일 가정</small></div>
       <div class="op">÷ 13.4회</div>
-      <div class="hi"><small>면접을 준비하는 개발자 구직자</small><b>약 38.8만 명</b><i>1인 평균 입사지원 13.4회 (한경협 2025)</i></div>
+      <div class="hi"><small>면접을 준비하는 개발자 구직자</small><b>약 38.8만 명</b><i>1인 평균 입사지원 13.4회 (한경협 2025)</i><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 한국경제인협회 2025 대학생 취업인식 조사(머니투데이 2025-12-09 보도)</small></div>
     </div>
     <div class="ef-price-basis">
       <article class="ef-price-card">
         <div class="ef-price-label">B2C · 구직자의 지불 의향을 참고한 가격</div>
         <div class="ef-price-amount">월 <b>7,900원</b><span>× 유료 이용 3개월 = 23,700원</span></div>
-        <p>구직자 인터뷰: 면접 1회 <strong>1만 원</strong>, 준비 기간 <strong>2만 원</strong> 지불 의향<br>월 구독으로 이용 부담을 낮추고, 시장 계산에는 유료 3개월을 가정</p>
+        <p>구직자 인터뷰: 면접 1회 <strong>1만 원</strong>, 준비 기간 <strong>2만 원</strong> 지불 의향<br>월 구독으로 이용 부담을 낮추고, 시장 계산에는 유료 3개월을 가정</p><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 구직자 1명 1:1 인터뷰(20세, 프론트엔드 인턴 지원 경험, 중간평가 덱 수록) · 7,900원 = DevFit Plus 실제 요금 · 3개월 = 내부 가정</small>
       </article>
       <article class="ef-price-card">
         <div class="ef-price-label">B2B · 지원자 단위 과금 모델</div>
         <div class="ef-price-amount">지원자 1명당 <b>2만 원</b><span>시장 계산용 가정</span></div>
-        <p>코드 분석·면접 질문 준비를 지원자 단위로 제공<br>실제 기업 요금은 파일럿에서 이용 가치와 원가를 검증한 뒤 확정</p>
+        <p>코드 분석·면접 질문 준비를 지원자 단위로 제공<br>실제 기업 요금은 파일럿에서 이용 가치와 원가를 검증한 뒤 확정</p><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 내부 가정(기획 B2B 티어 1인 1만~3만 원) · 비교 공개가(11-06 확인): 프로그래머스 16,500원 · CodeSignal 약 1.9만~2.2만 원 · Codility 약 3.4만 원</small>
       </article>
-      <div class="ef-price-cost"><b>분석 1회 변동비 약 330원</b><span>저장소 3개 기준 · B2C와 B2B가 분석 엔진 공유</span></div>
+      <div class="ef-price-cost"><b>분석 1회 변동비 약 330원</b><span>저장소 3개 기준 · B2C와 B2B가 분석 엔진 공유</span><small style="display:block;font-size:12px;line-height:1.35;color:#8a8794;font-weight:400;margin-top:3px">출처: 최종보고서 단위 경제성, AWS CloudWatch 실측(LLM 호출 비용, 인건비·고정비 제외)</small></div>
     </div>
   </div>
 </div></div>
@@ -4528,7 +4571,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix</div><h1 class="title">부록 목차</h1></header>
-    <div class="slide-content"><div class="cl-idx"><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p44</b> <span class="cl-q">A1</span></td><td>중간평가 심사의견 19건 반영표<br><span class="cl-q">멘토·심사 의견을 어떻게 반영했나</span></td></tr><tr><td><b style="color:var(--purple)">p45</b> <span class="cl-q">A2</span></td><td>평가 하네스 상세<br><span class="cl-q">품질을 어떻게 믿나</span></td></tr><tr><td><b style="color:var(--purple)">p46</b> <span class="cl-q">A3</span></td><td>측정 도구별 수치 차이<br><span class="cl-q">GA는 235명인데 왜 2.2만인가</span></td></tr><tr><td><b style="color:var(--purple)">p47</b> <span class="cl-q">A4</span></td><td>유료 광고 집행과 효율<br><span class="cl-q">마케팅 효율은</span></td></tr><tr><td><b style="color:var(--purple)">p48</b> <span class="cl-q">A5</span></td><td>원가와 가격<br><span class="cl-q">돈은 어떻게 버나</span></td></tr><tr><td><b style="color:var(--purple)">p49</b> <span class="cl-q">A6</span></td><td>기출 수집과 가공<br><span class="cl-q">크롤링 문제없나</span></td></tr><tr><td><b style="color:var(--purple)">p50</b> <span class="cl-q">A7</span></td><td>특허 3건<br><span class="cl-q">특허는 뭘 보호하나</span></td></tr><tr><td><b style="color:var(--purple)">p51</b> <span class="cl-q">A9</span></td><td>시장 규모 상향식 계산<br><span class="cl-q">시장 숫자는 어떻게 나왔나</span></td></tr><tr><td><b style="color:var(--purple)">p52</b> <span class="cl-q">A10</span></td><td>모델 라우팅 · 서비스 스택<br><span class="cl-q">어떤 모델을 왜 쓰나</span></td></tr><tr><td><b style="color:var(--purple)">p53</b> <span class="cl-q">A11</span></td><td>현업 검토 · 멘토 피드백 반영<br><span class="cl-q">현업은 써 보고 뭐라 했나</span></td></tr><tr><td><b style="color:var(--purple)">p54</b> <span class="cl-q">A12</span></td><td>공고 수집과 캐시 구조<br><span class="cl-q">공고는 어떻게 가져오나</span></td></tr></tbody></table><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p55</b> <span class="cl-q">A13</span></td><td>공고 캐시 발전과정<br><span class="cl-q">같은 공고를 매번 다시 분석하나</span></td></tr><tr><td><b style="color:var(--purple)">p56</b> <span class="cl-q">A14</span></td><td>오류 수집 (Sentry)<br><span class="cl-q">오류는 어떻게 아나</span></td></tr><tr><td><b style="color:var(--purple)">p57</b> <span class="cl-q">A15</span></td><td>검색 노출 (SEO)<br><span class="cl-q">검색 유입은 어떻게 만드나</span></td></tr><tr><td><b style="color:var(--purple)">p58</b> <span class="cl-q">A16</span></td><td>서비스 보안<br><span class="cl-q">GitHub 토큰과 세션은 안전한가</span></td></tr><tr><td><b style="color:var(--purple)">p59</b> <span class="cl-q">A17</span></td><td>보안<br><span class="cl-q">내 코드 털리는 거 아닌가</span></td></tr><tr><td><b style="color:var(--purple)">p60</b> <span class="cl-q">A18</span></td><td>커밋 선별 발전과정<br><span class="cl-q">커밋 선별은 어떻게 바뀌었나</span></td></tr><tr><td><b style="color:var(--purple)">p61</b> <span class="cl-q">A19</span></td><td>질문 생성 호출 분할 · 난이도 세부<br><span class="cl-q">질문 생성은 어떻게 나눠 부르나</span></td></tr><tr><td><b style="color:var(--purple)">p62</b> <span class="cl-q">A20</span></td><td>자기소개서와 포트폴리오<br><span class="cl-q">면접 말고 또 뭘 하나</span></td></tr><tr><td><b style="color:var(--purple)">p63</b> <span class="cl-q">A21</span></td><td>소마 이후 인프라 이전<br><span class="cl-q">지원 끝나면 서버비는</span></td></tr></tbody></table></div></div>
+    <div class="slide-content"><div class="cl-idx"><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p44</b> <span class="cl-q">A1</span></td><td>중간평가 심사의견 19건 반영표<br><span class="cl-q">멘토·심사 의견을 어떻게 반영했나</span></td></tr><tr><td><b style="color:var(--purple)">p45</b> <span class="cl-q">A2</span></td><td>평가 하네스 상세<br><span class="cl-q">품질을 어떻게 믿나</span></td></tr><tr><td><b style="color:var(--purple)">p46</b> <span class="cl-q">A3</span></td><td>측정 도구별 수치 차이<br><span class="cl-q">GA는 235명인데 왜 2.2만인가</span></td></tr><tr><td><b style="color:var(--purple)">p47</b> <span class="cl-q">A4</span></td><td>유료 광고 집행과 효율<br><span class="cl-q">마케팅 효율은</span></td></tr><tr><td><b style="color:var(--purple)">p48</b> <span class="cl-q">A5</span></td><td>원가와 가격<br><span class="cl-q">돈은 어떻게 버나</span></td></tr><tr><td><b style="color:var(--purple)">p49</b> <span class="cl-q">A6</span></td><td>기출 수집과 가공<br><span class="cl-q">크롤링 문제없나</span></td></tr><tr><td><b style="color:var(--purple)">p50</b> <span class="cl-q">A7</span></td><td>특허 3건<br><span class="cl-q">특허는 뭘 보호하나</span></td></tr><tr><td><b style="color:var(--purple)">p51</b> <span class="cl-q">A9</span></td><td>시장 규모 상향식 계산<br><span class="cl-q">시장 숫자는 어떻게 나왔나</span></td></tr><tr><td><b style="color:var(--purple)">p52</b> <span class="cl-q">A10</span></td><td>모델 라우팅 · 서비스 스택<br><span class="cl-q">어떤 모델을 왜 쓰나</span></td></tr><tr><td><b style="color:var(--purple)">p53</b> <span class="cl-q">A11</span></td><td>현업 검토 · 멘토 피드백 반영<br><span class="cl-q">현업은 써 보고 뭐라 했나</span></td></tr><tr><td><b style="color:var(--purple)">p54</b> <span class="cl-q">A12</span></td><td>공고 수집과 캐시 구조<br><span class="cl-q">공고는 어떻게 가져오나</span></td></tr><tr><td><b style="color:var(--purple)">p55</b> <span class="cl-q">A13</span></td><td>공고 캐시 발전과정<br><span class="cl-q">같은 공고를 매번 다시 분석하나</span></td></tr><tr><td><b style="color:var(--purple)">p56</b> <span class="cl-q">A14</span></td><td>오류 수집 (Sentry)<br><span class="cl-q">오류는 어떻게 아나</span></td></tr></tbody></table><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p57</b> <span class="cl-q">A15</span></td><td>검색 노출 (SEO)<br><span class="cl-q">검색 유입은 어떻게 만드나</span></td></tr><tr><td><b style="color:var(--purple)">p58</b> <span class="cl-q">A16</span></td><td>서비스 보안<br><span class="cl-q">GitHub 토큰과 세션은 안전한가</span></td></tr><tr><td><b style="color:var(--purple)">p59</b> <span class="cl-q">A17</span></td><td>보안<br><span class="cl-q">내 코드 털리는 거 아닌가</span></td></tr><tr><td><b style="color:var(--purple)">p60</b> <span class="cl-q">A18</span></td><td>커밋 선별 발전과정<br><span class="cl-q">커밋 선별은 어떻게 바뀌었나</span></td></tr><tr><td><b style="color:var(--purple)">p61</b> <span class="cl-q">A19</span></td><td>질문 생성 호출 분할 · 난이도 세부<br><span class="cl-q">질문 생성은 어떻게 나눠 부르나</span></td></tr><tr><td><b style="color:var(--purple)">p62</b> <span class="cl-q">A20</span></td><td>자기소개서와 포트폴리오<br><span class="cl-q">면접 말고 또 뭘 하나</span></td></tr><tr><td><b style="color:var(--purple)">p63</b> <span class="cl-q">A21</span></td><td>소마 이후 인프라 이전<br><span class="cl-q">지원 끝나면 서버비는</span></td></tr></tbody></table></div></div>
     <div class="folio"></div>
     
   </div>
@@ -4652,24 +4695,25 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 <template class="notes">출원인 김건우(개인), 발명자 김건우·박천웅·노재원. 심사청구 무 · 공개신청 무(통지서 기준). ⛔ «등록»·«회사 특허» 금지.
 «관련 장표» 열은 장 제목으로 표기(쪽번호 금지 규칙). 최종 표기는 Dev 슬림화 후 ppt-start와 맞춤 — 0214809는 Development 입력·출력 게이트 장이 남으면 덧붙임.
 청구항 요지 원문: Devfit/docs/patent/ 명세서 (⛔ 삭제 금지, 공지예외 12개월 시한 진행 중).</template></section>
-<section class="slide " data-order="51" data-title="시장 규모: 개발 직군 구직자 약 38.8만 명">
+<section class="slide " data-order="51" data-title="시장 규모 계산 근거: 입력값 8개의 출처와 가정">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
-    <header class="topline"><div class="eyebrow">Appendix · A9</div><h1 class="title">시장 규모: 개발 직군 구직자 <span class="purple">약 38.8만 명</span></h1></header>
+    <header class="topline"><div class="eyebrow">Appendix · A9</div><h1 class="title">시장 규모 계산 근거: <span class="purple">입력값 8개의 출처와 가정</span></h1></header>
     <div class="slide-content">
-<table class="matrix sm left plain"><thead><tr><th>구분</th><th>값</th><th>근거</th></tr></thead><tbody><tr><td>연간 개발 직군 입사지원 (A)</td><td>약 520만 건</td><td>사람인·점핏 2025 상반기 약 260만 건 × 2 ⚙</td></tr><tr><td>적극 구직자 1인 평균 입사지원 (B)</td><td>13.4회</td><td>한국경제인협회 2025 조사</td></tr><tr><td><b>연간 추정 구직자 (A ÷ B)</b></td><td><b>약 38.8만 명</b></td><td>중복 지원 보정</td></tr><tr><td>유료 1인 매출 ⚙</td><td>23,700원</td><td>3개월 무료 체험 후 Plus 3개월 구독</td></tr></tbody></table>
-<div style="margin-top:26px"><table class="matrix sm left plain"><thead><tr><th>구직자 대비 유료 전환</th><th>유료 사용자</th><th>연 매출 (1인 3개월 구독)</th><th>비고</th></tr></thead><tbody><tr><td>1.0%</td><td>약 3,881명</td><td><b>약 9,200만 원</b></td><td>초기 목표, 공채 시즌 2회</td></tr><tr><td>2.0%</td><td>약 7,761명</td><td><b>약 1.84억 원</b></td><td>대학과 부트캠프 제휴 포함</td></tr><tr><td>5.0%</td><td>약 19,403명</td><td><b>약 4.6억 원</b></td><td>기업용 제품 연계 시</td></tr></tbody></table></div>
-<div class="small-copy" style="margin-top:18px;font-size:19px">⚙ = 내부 가정 · 실제 전환율은 결제 활성화 이후 측정</div></div>
+<table class="matrix sm left plain"><thead><tr><th></th><th>입력값</th><th>값</th><th>어디서 왔나</th><th>종류</th></tr></thead><tbody><tr><td>A</td><td>연간 개발 직군 입사지원</td><td>약 520만 건</td><td>점핏, 「2025 상반기 개발자 채용 리포트」, 2025. 지원 2,601,390건 × 2 (하반기도 같다고 가정)</td><td>출처 + ⚙</td></tr><tr><td>B</td><td>1인 평균 입사지원</td><td>13.4회</td><td>한국경제인협회, 「2025년 대학생 취업인식도 조사」, 2025. (N=2,492)</td><td>출처</td></tr><tr><td>C</td><td><b>개발 직군 구직자</b></td><td><b>약 38.8만 명</b></td><td>A ÷ B</td><td>계산</td></tr><tr><td>D</td><td>구직자 1인 결제액</td><td>23,700원</td><td>DevFit Plus 월 7,900원 × 3개월 (3개월 무료 체험 후 3개월 구독)</td><td>⚙</td></tr><tr><td>E</td><td>기업의 지원자 1인 분석 단가</td><td>2만 원</td><td>공개가 1.5만~4.5만 원/인의 중하단: 프로그래머스 16,500원 · CodeSignal 약 2만 원 · Codility 약 3.4만 원 (2026-11-06 확인)</td><td>출처 + ⚙</td></tr><tr><td>F</td><td>취업 준비에 돈을 쓰는 비율</td><td>42.9%</td><td>잡코리아 콘텐츠LAB 조사, 2025. 대졸 취준생의 취업 사교육 이용 비율 (N=485, 비대표 표본)</td><td>출처</td></tr><tr><td>G</td><td>면접 단계까지 가는 비율</td><td>10%</td><td>국내 서류 합격률 19.4% (한국경제인협회 2025)보다 낮게 잡음</td><td>⚙</td></tr><tr><td>H</td><td>점유 목표</td><td>B2C 1% · B2B 3%</td><td>내부 목표 (3년)</td><td>⚙</td></tr></tbody></table>
+<div class="small-copy" style="margin-top:16px;font-size:20px;line-height:1.6"><b>TAM</b> C×D 92억 + A×E 1,040억 = <b>약 1,132억 원</b> · <b>SAM</b> 92억×F 39.5억 + 1,040억×G 104억 = <b>약 143억 원</b> · <b>SOM</b> C×1%×D 0.92억 + 104억×3% 3.1억 = <b>약 4억 원</b><br>⚙ = 내부 가정 · 시장 규모이며 매출 전망 아님</div></div>
     <div class="folio"></div>
     
   </div>
-<template class="notes">예상 질문: «시장 크기는?»
+<template class="notes">예상 질문: «시장 크기는? 숫자 어디서 나왔나?» (11-13 사용자 지시: 본편 시장 규모 장의 모든 입력값 출처를 이 장에 모음)
+URL: 점핏 https://jumpit.saramin.co.kr/report/2025/recruit · 한경협 13.4회·19.4% https://www.mt.co.kr/industry/2025/12/09/2025120910041034451 · 잡코리아 42.9% https://www.asiae.co.kr/en/article/2025091208015043842 · 프로그래머스 https://business.programmers.co.kr/business/introduce_coding_test · CodeSignal https://codesignal.com/pricing/ · Codility https://www.codility.com/pricing/ (research/R1-ef-market.md §a·e).
+주의: 13.4회는 대학생 대상 조사, 520만 건은 경력직 포함 → 38.8만 명은 «개발 직군 구직자 추정치»로만. ×2가 가장 약한 가정(플랫폼 2곳만 센 값이라 과소 방향).
 - 계산은 최종보고서와 같다: 520만 건 ÷ 13.4회 = 약 38.8만 명. 유료 1인 = 3개월 무료 체험 후 3개월 구독(7,900원 × 3 = 23,700원) 가정.
 - A: 점핏 리포트 원값 지원 2,601,390건(2025 1~6월) × 2 — 하반기 동일 가정(⚙). 플랫폼 2곳 한정이라 과소.
 - 직접 시장은 B2C(면접을 준비하는 개발자 지원자). 기업용은 같은 엔진의 확장 시장으로만 말함 — B2B 시장 규모 수치는 장표·발표에서 쓰지 않음.
 ⛔ «매출»은 시나리오 표의 가정값으로만, 실적처럼 말하지 말 것. 5년 SOM 27억 · TAM $2.8B 금지.
 
-[장표 출처 — 화면에서는 뺌] 사람인·점핏 2025 상반기 개발자 채용 리포트 · 한국경제인협회 2025 구직자 조사 · 최종보고서 「시장 규모와 수익 구조」와 같은 계산</template></section>
+[장표 출처 — 화면에서는 뺌] 점핏 2025 상반기 개발자 채용 리포트(jumpit.saramin.co.kr/report/2025/recruit) · 한국경제인협회 2025 대학생 취업인식도 조사(머니투데이 2025-12-09 보도) · 잡코리아 콘텐츠LAB 2025(아시아경제 2025-09-12 보도) · 프로그래머스·CodeSignal·Codility 가격 페이지</template></section>
 <section class="slide " data-order="52" data-title="역할별 모델 라우팅과 서비스 스택">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>

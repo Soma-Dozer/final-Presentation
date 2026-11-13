@@ -267,7 +267,7 @@ S.note('''[0:00–0:10] 안녕하세요, 내 코드로 준비하는 공고 맞�
 사사문구 국문·영문: 00-평가안내.md §사사문구 원문 그대로.''')
 
 # ================= 팀과 멘토 소개: 중간발표 원본 =================
-S.append('<section class="slide in-people-slide in-profile-slide" data-order="0" data-title="팀 소개">\n <div class="slide-shell">\n  <div class="brand"><img src="assets/icon.svg" alt="">Dev<b>Fit</b></div>\n  <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">역할을 나누고 <span class="purple">핵심 기능을 함께</span> 만들었습니다</h1></header>\n  <div class="slide-content"><div class="in-profile-wrap"><div class="in-profile-summary">3명 모두 학교 병행 · 1명은 고등학생<span>AI·SW마에스트로 17기 · Team Dozer</span></div><div class="in-profile-grid"><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-park-cheonwoong.jpg" alt="박천웅"><div><h3>박천웅</h3><div class="in-profile-role">팀장 · 인프라·분석 엔진</div></div></div><p class="in-profile-education">숭실대학교 소프트웨어학부<br>화이트햇 스쿨 1기</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>공군작전사령부 정보보호병 복무</li><li>화이트햇 콘테스트 합참의장상 (2025)<br>국방부 창업경진대회 우수상 (2025)</li><li>NASA·Naver·Google 명예의 전당</li><li>대학연합 개발동아리 UMC 숭실대 부회장</li><li>AWS SAA · SQLD · TOPCIT 수준 4</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>인프라·운영</b> · AWS ECS·RDS·CloudFront 구성<br>배포 자동화·모니터링·LLM 비용 기록</p></div><div class="in-profile-task"><p><b>AI 분석</b> · Bedrock·Decision 연동<br>본인 커밋 판정·코드 근거 질문 생성</p></div><div class="in-profile-task"><p><b>인증·보안</b> · GitHub 토큰 암호화<br>해시 인증·취약점 감사·SBOM 생성</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-kim-gunwoo.jpg" alt="김건우"><div><h3>김건우</h3><div class="in-profile-role">PM · 제품 기획·풀스택</div></div></div><p class="in-profile-education">단국대부속소프트웨어고등학교<br>KAIST IP 영재기업인교육원 14기 수료</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>중앙대 고교AI 경진대회 대상 (2026)<br>강남구 AI 문제해결 해커톤 우수상 (2026)</li><li>아산유스프러너 피칭 우수상 (2025)</li><li>KAIST IP-CEO 글로벌 기업가정신 연수</li><li>특허 등록 1건·출원 12건<br>과학의 날 과기정통부 장관상 표창</li><li>COS Pro Python 1급 · 트리즈 1수준</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>제품·공고</b> · 랜딩·대시보드·학습실 구현<br>체험 데모·기업 공고 수집·캐시</p></div><div class="in-profile-task"><p><b>기출·결제</b> · 기출 연결·면접 리뷰·KPI<br>Plus·토스 결제·지원 일정 알림</p></div><div class="in-profile-task"><p><b>유입·검증</b> · SEO·광고 전환·유입 추적<br>질문 문항 분석 하네스</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-noh-jaewon.jpg" alt="노재원"><div><h3>노재원</h3><div class="in-profile-role">모의면접·음성 · B2C·마케팅</div></div></div><p class="in-profile-education">숭실대학교 컴퓨터학부<br>한국디지털미디어고 웹프로그래밍과 졸업</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>한국정보올림피아드 1차 고등부 은상 (2025)<br>전국 창의문제 해결능력 경진대회 금상 (2024)</li><li>국제 정보 올림피아드 교육생 수료 (2024)</li><li>Codeforces Expert · BOJ 1,300문제 이상</li><li>숭실대 SCCC · 알고리즘 대회 출제·검토</li><li class="in-profile-oneline">한국디지털미디어고등학교 제 1회 대회 개최</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>음성</b> · STT·TTS·CPU 사이드카·음성 캐싱<br>음성 수신·전사 분리로 종료 지연 개선</p></div><div class="in-profile-task"><p><b>체험·서류</b> · 비로그인 CS·퀴즈·미니게임<br>포트폴리오·자기소개서 Assistant 화면</p></div><div class="in-profile-task"><p><b>마케팅</b> · Meta 광고 운영<br>유입·사용 지표 분석, B2C 개선</p></div></div></section></article></div></div></div>\n  <div class="folio"></div><div class="source"></div>\n </div>\n</section>')
+S.append('<section class="slide in-people-slide in-profile-slide" data-order="0" data-title="팀 소개">\n <div class="slide-shell">\n  <div class="brand"><img src="assets/icon.svg" alt="">Dev<b>Fit</b></div>\n  <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">역할을 나누고 <span class="purple">핵심 기능을 함께</span> 만들었습니다</h1></header>\n  <div class="slide-content"><div class="in-profile-wrap"><div class="in-profile-summary">3명 모두 학교 병행 · 1명은 고등학생<span>AI·SW마에스트로 17기 · Team Dozer</span></div><div class="in-profile-grid"><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-park-cheonwoong.jpg" alt="박천웅"><div><h3>박천웅</h3><div class="in-profile-role">팀장 · 인프라·분석 엔진</div></div></div><p class="in-profile-education">숭실대학교 소프트웨어학부<br>공군작전사령부 정보보호실 정보보호병 복무</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>국제 대학생 사이버보안 경진대회(핵테온) 우수상 (2026)</li><li>화이트햇 콘테스트 2위, 우수상, 합참의장상 (2025)</li><li>공군 창업경진대회 최우수상, IBK기업은행장상 (2025)</li><li>국방부 창업 경진대회 우수상, 국방부장관상 (2025)</li><li>도전! K-STARTUP 28위 (2025)</li><li>NASA, Naver, Google 명예의 전당 등재</li><li>AWS SAA, SQLD, 정보처리기능사, 네트워크관리사 2급</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>인프라·운영</b> · AWS ECS·RDS·CloudFront 구성<br>배포 자동화·모니터링·LLM 비용 기록</p></div><div class="in-profile-task"><p><b>AI 분석</b> · Bedrock·Decision 연동<br>본인 커밋 판정·코드 근거 질문 생성</p></div><div class="in-profile-task"><p><b>인증·보안</b> · GitHub 토큰 암호화<br>해시 인증·취약점 감사·SBOM 생성</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-kim-gunwoo.jpg" alt="김건우"><div><h3>김건우</h3><div class="in-profile-role">PM · 제품 기획·풀스택</div></div></div><p class="in-profile-education">단국대부속소프트웨어고등학교<br>KAIST IP 영재기업인교육원 14기 수료</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>중앙대 고교AI 경진대회 대상 (2026)<br>강남구 AI 문제해결 해커톤 우수상 (2026)</li><li>아산유스프러너 피칭 우수상 (2025)</li><li>KAIST IP-CEO 글로벌 기업가정신 연수</li><li>특허 등록 1건·출원 12건<br>과학의 날 과기정통부 장관상 표창</li><li>COS Pro Python 1급 · 트리즈 1수준</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>제품·공고</b> · 랜딩·대시보드·학습실 구현<br>체험 데모·기업 공고 수집·캐시</p></div><div class="in-profile-task"><p><b>기출·결제</b> · 기출 연결·면접 리뷰·KPI<br>Plus·토스 결제·지원 일정 알림</p></div><div class="in-profile-task"><p><b>유입·검증</b> · SEO·광고 전환·유입 추적<br>질문 문항 분석 하네스</p></div></div></section></article><article class="in-profile-card"><div class="in-profile-head"><img src="assets/team-noh-jaewon.jpg" alt="노재원"><div><h3>노재원</h3><div class="in-profile-role">모의면접·음성 · B2C·마케팅</div></div></div><p class="in-profile-education">숭실대학교 컴퓨터학부<br>한국디지털미디어고 웹프로그래밍과 졸업</p><section class="in-profile-bio"><h4>주요 이력</h4><ul><li>한국정보올림피아드 1차 고등부 은상 (2025)<br>전국 창의문제 해결능력 경진대회 금상 (2024)</li><li>국제 정보 올림피아드 교육생 수료 (2024)</li><li>Codeforces Expert · BOJ 1,300문제 이상</li><li>숭실대 SCCC · 알고리즘 대회 출제·검토</li><li class="in-profile-oneline">한국디지털미디어고등학교 제 1회 대회 개최</li></ul></section><section class="in-profile-work"><h4>DevFit 담당 업무</h4><div class="in-profile-tasks"><div class="in-profile-task"><p><b>음성</b> · STT·TTS·CPU 사이드카·음성 캐싱<br>음성 수신·전사 분리로 종료 지연 개선</p></div><div class="in-profile-task"><p><b>체험·서류</b> · 비로그인 CS·퀴즈·미니게임<br>포트폴리오·자기소개서 Assistant 화면</p></div><div class="in-profile-task"><p><b>마케팅</b> · Meta 광고 운영<br>유입·사용 지표 분석, B2C 개선</p></div></div></section></article></div></div></div>\n  <div class="folio"></div><div class="source"></div>\n </div>\n</section>')
 S.note('[팀 소개] 박천웅은 AWS 인프라·배포와 AI 분석 엔진, 인증·보안을 담당했습니다. 김건우는 제품 기획과 랜딩·학습 화면, 공고·기출 연결, 요금·결제를 구현했습니다. 노재원은 음성 모의면접과 비로그인 체험, 분석 대기 미니게임·서류 작성 화면을 개발했고 B2C와 마케팅을 총괄했습니다.\n\n출처: Notion Dozer WorkSpace > 최종보고서(11/05 편집), 「팀 구성 및 역할」 표. 2026-11-13 원문 확인.\nhttps://app.notion.com/p/manwoong/40fd2bfa8b5481c6ac80f44944bfaf27\n원문 행: 박천웅 40fd2bfa-8b54-81e8-806d-d6ace933236e, 김건우 40fd2bfa-8b54-81d6-8736-dfc3e9152ef8, 노재원 40fd2bfa-8b54-8199-96e4-e8cddd3ea4cf.\n노재원의 B2C·마케팅 총괄은 같은 워크스페이스 「일정」에 기재된 담당자 기준: https://app.notion.com/p/manwoong/405d2bfa8b548008ab78ca6106e111f3\n기존 추상적 FE/BE 역할표보다 실제 구현 목록을 우선하여 갱신. 협업으로 개발한 기능의 독점 기여를 뜻하지 않음. 발췌 원문: data/notion-mentoring-and-roles-evidence-20261113.json.\n\n[이력 출처] 기존 최종발표 팀 소개 원문(2026-11-13 역할 간소화 이전 보존본, 중간발표에서 이관). 전공·보안/창업/AI/발명 수상·동아리·자격·알고리즘 경험은 해당 원문에서 발췌. 새로 경력을 추정하지 않음. Codeforces 등급과 BOJ 풀이 수, 개인 특허 건수는 기존 자기소개에 기재된 값이며 현재 실시간 재집계가 아님. 노재원의 한국디지털미디어고 제1회 프로그래밍 대회 개최는 이 대화에서 사용자가 제시한 이력. 담당 업무는 Notion 최종보고서 역할표와 기존 마케팅 작업 기록을 사용. 협업 기능의 단독 기여를 뜻하지 않음.\n\n[2026-11-13 사용자 이력 수정] 노재원의 경기대 프로그래밍 경진대회 장려상 표기를 삭제하고, 사용자가 직접 제공한 국제 정보 올림피아드 교육생 수료 (2024)를 기재. 한국디지털미디어고등학교 제 1회 대회 개최는 한 줄로 표기.\n\n[담당 업무 정정] 사용자 확인: 노재원은 Google 광고 운영을 담당하지 않았으므로, 마케팅 담당 업무는 Meta 광고 운영으로 표기.\n')
 
 S.append('<section class="slide in-people-slide" data-order="0" data-title="멘토 소개">\n <div class="slide-shell">\n  <div class="brand"><img src="assets/icon.svg" alt="">Dev<b>Fit</b></div>\n  <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">멘토의 피드백을 <span class="purple">제품과 운영에 반영</span>했습니다</h1></header>\n  <div class="slide-content"><div class="in-people-grid"><article class="in-mentor-card"><h3>고세환</h3><p class="in-person-bio">KIST 정보보안·개인정보보호 총괄 팀장<br>KT 보안컨설팅·네트워크 보안관제 경력</p><div class="in-person-role">BM 검증 · 개인정보·보안</div><div class="in-person-items"><div class="in-mentor-point"><h4>시장 구조·도입 장벽 검토</h4><p class="in-mentor-context">기존 서비스 락인·동시 도입 부담 확인</p><p class="in-mentor-action"><span aria-hidden="true">→</span> 1인 이용으로 가치가 생기는 DevFit 전환</p></div><div class="in-mentor-point"><h4>지원자 데이터 처리·동의 검토</h4><p class="in-mentor-context">데이터 처리 범위·동의·규제 대응 검토</p><p class="in-mentor-action"><span aria-hidden="true">→</span> 합격 판정·순위 배제, 화면 분석 마스킹</p></div><div class="in-mentor-point"><h4>마케팅 계획 구체화 조언</h4><p class="in-mentor-context">중간점검 이후 마케팅 방향 자문</p><p class="in-mentor-action"><span aria-hidden="true">→</span> 마케팅 실행 계획과 유입 계획 구체화</p></div></div></article><article class="in-mentor-card"><h3>김한빛</h3><p class="in-person-bio">풀스택 개발 15년 · 삼성전자 8년<br>뷰브레인헬스케어</p><div class="in-person-role">백엔드 · 아키텍처</div><div class="in-person-items"><div class="in-mentor-point"><h4>작업 큐·워커 동시성 검토</h4><p class="in-mentor-context">DB 작업 큐·워커 동시성·배포 구조 검토</p><p class="in-mentor-action"><span aria-hidden="true">→</span> API와 분석 작업을 격리하는 구조 반영</p></div><div class="in-mentor-point"><h4>대규모 저장소 분석 비용 지적</h4><p class="in-mentor-context">대규모 저장소의 반복 분석 비용 지적</p><p class="in-mentor-action"><span aria-hidden="true">→</span> 변경분 증분 수집·판정 모델로 커밋 선별</p></div><div class="in-mentor-point"><h4>핵심 로직에 자원 집중 조언</h4><p class="in-mentor-context">핵심 분석 로직에 자원 집중하도록 조언</p><p class="in-mentor-action"><span aria-hidden="true">→</span> 질문 생성 우선, 부가 기능은 후순위</p></div></div></article><article class="in-mentor-card"><h3>이일섭</h3><p class="in-person-bio">신한카드 AI 엔지니어·데이터 분석가<br>연세대학교 산업공학과 박사과정</p><div class="in-person-role">AI 활용 · 비용·품질 측정</div><div class="in-person-items"><div class="in-mentor-point"><h4>LLM 운영 비용 통제 자문</h4><p class="in-mentor-context">모델별 역할·호출 상한·프롬프트 검토</p><p class="in-mentor-action"><span aria-hidden="true">→</span> 생성·판정 역할을 나눠 호출 비용 통제</p></div><div class="in-mentor-point"><h4>생성 품질의 정량 평가 조언</h4><p class="in-mentor-context">고정 사례·복수 심사 모델·사전 등록 자문</p><p class="in-mentor-action"><span aria-hidden="true">→</span> 같은 기준으로 생성 질문 품질 실험</p></div><div class="in-mentor-point"><h4>저장소 밖 개인 이력의 공백 지적</h4><p class="in-mentor-context">저장소로 확인할 수 없는 개인 이력 지적</p><p class="in-mentor-action"><span aria-hidden="true">→</span> 서류 기반 질문 연결 기능으로 보완</p></div></div></article></div></div>\n  <div class="folio"></div><div class="source"></div>\n </div>\n</section>')
@@ -276,13 +276,28 @@ S.note('[멘토링] 고세환 멘토님과는 시장 구조와 개인정보 보�
 # ================= 1. 소개 — 장당 핵심 1개 (2026-11-06 재구성) =================
 # 흐름: ①AI 발전 → ②채용 시장 → ③기술면접 → ④문제 근거 → ③ 솔루션 = GitHub → ④ 솔루션 소개 → ⑤ 차별점-반론 → ⑥ 차별점-하네스 → ⑦ 경쟁사
 
+CSS += r""".in-pbar{height:12px;border-radius:6px;background:#ecebf1;overflow:hidden;margin-top:-4px}.in-pbar i{display:block;height:100%;background:var(--purple);border-radius:6px}
+.in-mkt b{font-size:72px}.in-mkt>div{gap:10px}
+.in-tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:14px}.in-tiles div{aspect-ratio:1;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;font-family:var(--mono);background:#ecebf1;color:#a3a1ad}.in-tiles div.dev{background:#1f1d24;color:#fff}
+.in-tiles+.in-tl{display:flex;justify-content:space-between;font-size:17px;font-weight:800;color:var(--muted);margin-top:2px}
+.in-cmp{display:flex;flex-direction:column;gap:14px;margin-top:14px}.in-cmp div{white-space:nowrap;display:grid;grid-template-columns:150px 1fr 76px;gap:12px;align-items:center;font-size:19px;font-weight:800;color:var(--muted)}.in-cmp div>i{display:block;height:26px;border-radius:5px;background:#ecebf1;position:relative;overflow:hidden}.in-cmp div>i>u{position:absolute;left:0;top:0;bottom:0;background:#1f1d24;border-radius:5px}.in-cmp div.hi>i>u{background:var(--red)}.in-cmp div>b{font-size:24px!important;letter-spacing:-.03em;color:var(--ink,#1f1d24)}.in-cmp div.hi>b{color:var(--red)}
+.in-donut{display:flex;align-items:center;gap:22px;margin-top:6px}.in-donut svg{width:150px;height:150px;flex:none}.in-donut span{font-size:22px!important}
+.in-ivman{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center}.in-ivman figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}.in-ivman figure svg{width:180px;height:200px}.in-ivman figcaption{font-size:20px;font-weight:900;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 14px}
+.in-ivman .bubs{display:flex;flex-direction:column;gap:22px}.in-ivman .in-q{border-radius:28px 28px 28px 28px;position:relative;margin-left:0!important}.in-ivman .in-q:before{content:"";position:absolute;left:-16px;top:34px;border:10px solid transparent;border-right:16px solid var(--line)}.in-ivman .in-q:after{content:"";position:absolute;left:-11px;top:36px;border:8px solid transparent;border-right:13px solid #fff}
+.in-iv{align-items:stretch;margin-top:auto!important;margin-bottom:auto!important}.in-iv .in-who{font-size:28px;margin-bottom:26px}.in-ivman{grid-template-columns:240px 1fr;gap:28px}.in-ivman figure svg{width:230px;height:256px}.in-ivman figcaption{font-size:24px}.in-ivman .bubs{gap:30px}.in-ivq .in-q{font-size:42px;padding:32px 46px}.in-ivq .in-qw{font-size:23px}.in-ivc{gap:0}.in-ivc>div:not(.in-who){padding:34px 34px;grid-template-columns:150px 1fr auto;margin-bottom:24px}.in-ivc b{font-size:31px}.in-ivc span{font-size:25px;white-space:nowrap}.in-iv{grid-template-columns:1fr 1.12fr;gap:44px}.in-ivc small{font-size:20px}"""
+# Problem 흐름 표시 (11-13 회의: «4가지 키워드를 밑에 네 칸으로, 해당 장만 활성화»)
+CSS += r""".in-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 34px}.in-flow div{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:6px;background:#ecebf1;color:#9a98a6;font-size:22px;font-weight:800;letter-spacing:-.02em}.in-flow div i{font-style:normal;font-size:17px;font-weight:900;opacity:.8}.in-flow div.on{background:var(--red,#f0334c);color:#fff}.in-flow div.done{background:#f7d6dc;color:#c22a40}.in-flow div.on i{color:#fff;opacity:.85}.in-flow+*{margin-top:auto;margin-bottom:auto}"""
+def _flow(n):
+    names = ['AI 발전', '채용 시장 변화', '기술면접 변화', '취준생의 어려움']
+    return '<div class="in-flow">' + ''.join(f'<div class="{"on" if i + 1 == n else ("done" if i + 1 < n else "")}"><i>0{i + 1}</i>{t}</div>' for i, t in enumerate(names)) + '</div>'
+
 # ① 문제상황 1 — AI 발전으로 무엇이 가능해졌나 (research/R5 장1, 11-07 사용자 지시: 문제 정의 4장 · «뭐까지 가능해졌는지» 구체화)
 S.append(shell('Problem', 'AI가 <span class="red">실무에 주는 영향</span>은 크게 늘어났습니다', f'''
-<div class="in-col" style="justify-content:center">
+<div class="in-col" style="justify-content:flex-start">{_flow(1)}
   <div class="in-lv">
-    <div><em>2023</em><h4>코드 몇 줄을<br>채워 주는 수준</h4><p>사람이 <b>4분</b> 걸리는 작업까지</p><p>Copilot을 켠 파일의 코드 <b>46%</b>를 자동 완성</p><small>GPT-4 · METR · GitHub 2023</small></div>
+    <div><em>2023</em><h4>코드 몇 줄을<br>채워 주는 수준</h4><p>Copilot을 켠 파일의 코드 <b>46%</b>를 자동 완성</p><div class="in-pbar"><i style="width:46%"></i></div><small>GitHub Copilot · 2023</small></div>
     <i>→</i>
-    <div><em>2024</em><h4>실제 버그를<br>찾아 고치는 수준</h4><p>GitHub 이슈 <b>49%</b>를 혼자 해결</p><small>Claude 3.5 Sonnet · SWE-bench Verified</small></div>
+    <div><em>2024</em><h4>실제 버그를<br>찾아 고치는 수준</h4><p>GitHub 이슈 <b>49%</b>를 혼자 해결</p><div class="in-pbar"><i style="width:49%"></i></div><small>Claude 3.5 Sonnet · SWE-bench Verified</small></div>
     <i>→</i>
     <div><em>2025</em><h4>기능 하나를<br>통째로 만드는 수준</h4><p>사람이 <b>1시간~5시간</b> 걸리는 작업</p><small>Claude 3.7 Sonnet → Opus 4.5 · METR</small></div>
     <i>→</i>
@@ -290,7 +305,7 @@ S.append(shell('Problem', 'AI가 <span class="red">실무에 주는 영향</span
   </div>
   <div class="in-lvbar"><b>그래서</b><span>1년 새 GitHub에 합류한 신규 개발자 <em>3,600만 명</em>, 그중 80%가 첫 주부터 AI와 함께 코드 작성</span><small>GitHub Octoverse 2025</small></div>
 </div>''', cls='problem', source='METR time horizon (원시 데이터 benchmark_results_1_1.yaml, 블로그 2025-03-19) · GitHub, 「The economic impact of the AI-powered developer lifecycle and lessons from GitHub Copilot」, 2023. · SWE-bench Verified: Anthropic 2024-10 · 2026: Anthropic Claude Opus 5.5 발표 (2026-09-22) 고객 사례 · GitHub Octoverse 2025 (2025-10-28)'))
-S.note('''[0:10–0:22] 먼저 AI가 어디까지 왔는지입니다. 2023년의 AI는 코드 몇 줄을 채워 주는 수준이었습니다. 사람이 4분이면 하는 일입니다. 실제로 GitHub은 Copilot을 켠 파일에서 코드의 46%를 Copilot이 완성했다고 발표했습니다. 2024년엔 실제 GitHub 버그의 절반을 혼자 찾아 고쳤고, 2025년엔 사람이 몇 시간 걸리는 기능 하나를 통째로 구현합니다. 그리고 지금, 올해 9월에 나온 Claude Opus 5.5와 GPT-6 Astra 세대에서는 엔지니어 팀이 몇 주 걸릴 68만 줄짜리 코드 이전을 하루 안에 끝냈다는 사례가 나옵니다. 혼자 18시간 넘게 쉬지 않고 작업했다는 사례도 있습니다. 그래서 이제 코드를 짜는 일은 누구나 합니다. 지난 1년 GitHub에 새로 들어온 개발자가 3,600만 명이고, 그중 80%가 첫 주부터 AI와 함께 코드를 씁니다.
+S.note('''[0:10–0:22] 먼저 AI가 어디까지 왔는지입니다. 2023년의 AI는 코드 몇 줄을 채워 주는 수준이었습니다. 실제로 GitHub은 Copilot을 켠 파일에서 코드의 46%를 Copilot이 완성했다고 발표했습니다. 2024년엔 실제 GitHub 버그의 절반을 혼자 찾아 고쳤고, 2025년엔 사람이 몇 시간 걸리는 기능 하나를 통째로 구현합니다. 그리고 지금, 올해 9월에 나온 Claude Opus 5.5와 GPT-6 Astra 세대에서는 엔지니어 팀이 몇 주 걸릴 68만 줄짜리 코드 이전을 하루 안에 끝냈다는 사례가 나옵니다. 혼자 18시간 넘게 쉬지 않고 작업했다는 사례도 있습니다. 그래서 이제 코드를 짜는 일은 누구나 합니다. 지난 1년 GitHub에 새로 들어온 개발자가 3,600만 명이고, 그중 80%가 첫 주부터 AI와 함께 코드를 씁니다.
 
 근거: last-dance/research/R5-ai-capability-interview.md 장 1.
 - METR 50% time horizon(사람 전문가 소요 시간 기준, 성공률 50%, 약 7개월마다 2배): GPT-4(2023-03) 약 4분 · Claude 3.7 Sonnet(2025-02) 약 60분 · Claude Opus 4.5(2025-11) 약 293분(4.9시간) · Claude Opus 4.6(2026-02) 약 719분(95% CI 317~3,634분). https://metr.org/assets/benchmark_results_1_1.yaml
@@ -308,51 +323,50 @@ S.note('''[0:10–0:22] 먼저 AI가 어디까지 왔는지입니다. 2023년의
 
 # ② 문제상황 2 — 개발자 채용 시장의 변화 (research/R4, 사용자: 수요 감소는 인정, 경험 중요로 연결)
 S.append(shell('Problem', '개발자 채용은 감소했고, 면접에서는 <span class="red">실무 경험</span>을 확인합니다', f'''
-<div class="in-col" style="justify-content:center">
+<div class="in-col" style="justify-content:flex-start">{_flow(2)}
   <div class="in-mkt">
-    <div><h5>덜 뽑음</h5><b>6개 중 5개</b><span>원티드 공고 7.3만 건 중 유의하게 줄어든 직군이 개발자</span><small>원티드랩 · 2025-01~2026-04</small></div>
-    <div><h5>신입 자리는 더 좁음</h5><b>0.8%</b><span>개발 공고 중 신입 대상 (지원자의 29.5%는 신입)</span><small>사람인·점핏 · 2025 상반기</small></div>
-    <div class="on"><h5>뽑을 때 보는 것</h5><b>81.6%</b><span>신규채용 최우선 평가 요소 "직무 관련 업무 경험"</span><small>경총 신규채용 실태조사 2025 · 500개사</small></div>
+    <div><h5>공고 감소</h5><b>6개 중 5개</b><span>공고가 크게 줄어든 직군 중 개발자 비율</span><div class="in-tiles"><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div>···</div></div><div class="in-tl"><span>개발 직군 5</span><span>기타 1</span></div><small>원티드랩 · 2025-01~2026-04</small></div>
+    <div><h5>신입 공고</h5><b>0.8%</b><span>신입 자리는 적은데 신입 지원자는 많음</span><div class="in-cmp"><div><span>공고 중 신입</span><i><u style="width:2.7%"></u></i><b>0.8%</b></div><div class="hi"><span>지원자 중 신입</span><i><u style="width:100%"></u></i><b>29.5%</b></div></div><small>사람인·점핏 · 2025 상반기</small></div>
+    <div class="on"><h5>가장 중요한 평가 요소</h5><b>81.6%</b><div class="in-donut"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" fill="none" stroke="#f7d6dc" stroke-width="20"/><circle cx="60" cy="60" r="48" fill="none" stroke="var(--red)" stroke-width="20" stroke-dasharray="246.1 301.6" transform="rotate(-90 60 60)"/></svg><span>기업이 신규채용에서 가장 중요하게 보는 요소로 "직무 관련 업무 경험"을 꼽음</span></div><small>경총 신규채용 실태조사 2025 · 500개사</small></div>
   </div>
-  <div class="in-scnbar">"이력서에 적어둔 프로젝트에 대해 물어보면 <em>답변을 못하는 분들을 많이 봤다</em>"<small>IT 채용 담당자 · OKKY 설문 2025</small></div>
-</div>''', cls='problem', source='원티드랩 공고 72,793건 분석(중앙일보 2026-06-11) · 사람인·점핏 2025 상반기(이투데이 2025-08-27) · 경총 2025 신규채용 실태조사(2025-03-20) · OKKY×바이라인네트워크 2025-02-28'))
-S.note('''[0:22–0:34] 그런데 채용 시장은 반대로 갑니다. 원티드 공고 7만 3천 건을 보면 유의하게 줄어든 직군 6개 중 5개가 개발자입니다. 신입 자리는 더 좁아서, 개발 공고 중 신입 대상은 0.8%인데 지원자의 30%가 신입입니다. 그래서 뽑을 때는 경험을 봅니다. 기업 81.6%가 신규채용에서 가장 중요하게 보는 게 직무 관련 업무 경험입니다. 한 채용 담당자의 말처럼, 이력서에 적은 프로젝트를 물으면 답을 못 하는 지원자가 많습니다.
+</div>''', cls='problem', source='원티드랩 공고 72,793건 분석(중앙일보 2026-06-11) · 사람인·점핏 2025 상반기(이투데이 2025-08-27) · 경총 2025 신규채용 실태조사(2025-03-20)'))
+S.note('''[0:22–0:34] 그런데 채용 시장은 반대로 갑니다. 원티드 공고 7만 3천 건을 보면 유의하게 줄어든 직군 6개 중 5개가 개발자입니다. 신입 자리는 더 좁아서, 개발 공고 중 신입 대상은 0.8%인데 지원자의 30%가 신입입니다. 그래서 뽑을 때는 경험을 봅니다. 기업 81.6%가 신규채용에서 가장 중요하게 보는 게 직무 관련 업무 경험입니다.
 
 근거: last-dance/research/R4-hiring-market.md.
 - 원티드: 2025-01~2026-04 공고 72,793건, 유의하게 감소한 직군 6개 중 5개가 개발자(중앙일보 2026-06-11, 원티드 원자료 미확인). 보조: 미국 Indeed SW 개발 공고 지수 81.6(2026-10-30, 2020-02=100) → 약 −18%(FRED).
 - 사람인·점핏 개발 직군 2025 상반기: 신입 공고 0.8% vs 신입 지원 29.5% · 5~10년차 공고 39.7%(이투데이 2025-08-27). 보조: 전 직군 공고 82%가 «경력만»(대한상의 2025-06 — «기업의 82%» 아님, «공고의 82%»).
 - 경총 2025 신규채용 실태조사: 100인 이상 500개사, «가장 중요한 평가 요소 직무 관련 업무 경험 81.6%» — 전 직군 수치(개발자 한정 아님). 2023→2025 상승 추세(58.4→74.6→81.6)는 원기사 미확인이라 쓰지 않음.
-- 인용: OKKY×바이라인네트워크 2025-02-28, IT 전문가 71명 — 소표본.
+- 인용(OKKY×바이라인네트워크 2025-02-28 «이력서 프로젝트 답변 못함»)은 11-13 p5와 중복이라 이 장에서 뺌. 소표본(71명).
 ⛔ 표현 한계: «AI 때문에 줄었다» 단독 원인 금지(한은: 경력직 선호 등 기존 추세를 AI가 가속). 수요 감소 → 경험 중시는 인과가 아니라 «같이 나타나는 흐름». «계속 줄고 있다» 현재형 단정 금지 — 2026 반등 신호 있음(인크루트 대졸 신입 채용계획 73.4%, 미국 SW 공고 저점 대비 +15% — 단 증가분 71%가 시니어).
 ⛔ 고용24 IT 공고 −71%는 대표성 없음(중소기업 위주) → 쓰지 않음.''')
 
 # ③ 문제상황 3 — 개발자 기술면접의 변화 (R1 + R5 장3)
 S.append(shell('Problem', '기술면접에서는 코드의 <span class="red">설계 과정</span>을 물어봅니다', f'''
-<div class="in-col" style="justify-content:center">
+<div class="in-col" style="justify-content:flex-start">{_flow(3)}
   <div class="in-iv">
-    <div class="in-ivq"><div class="in-who">실제 개발자 면접 질문 (2026년 5~6월)</div>
-      <div class="in-q">"왜 이 코드를 썼는지<br>코드적으로 설명해 주세요"<small class="in-qw">이스트소프트 백엔드</small></div>
-      <div class="in-q">"다른 방법은 왜<br>선택하지 않았나요?"<small class="in-qw">비바리퍼블리카 시스템엔지니어</small></div></div>
-    <div class="in-ivc"><div class="in-who">채용 방식 변화</div>
-      <div><b>넥슨</b><span>인턴 코딩테스트 폐지 → AI 활용 역량 평가</span><small>2026-09</small></div>
-      <div><b>CJ올리브영</b><span>경력 개발 라이브 코딩 폐지 → 과정을 보는 AI 과제</span><small>2026-07</small></div>
-      <div><b>Meta</b><span>일부 코딩 면접에서 AI 어시스턴트 허용</span><small>2025-07</small></div>
-      <div><b>Canva</b><span>CS 기초 스크리닝 → AI 허용 면접</span><small>2025-06</small></div>
-      <div><b>컬리</b><span>개발자 공채 코딩테스트에서 ChatGPT 사용 허용</span><small>2025-06</small></div></div>
+    <div class="in-ivq"><div class="in-who">실제 개발자 면접 질문 (2026년 5~6월)</div><div class="in-ivman"><figure><svg viewBox="0 0 180 200"><rect x="10" y="150" width="160" height="14" rx="4" fill="#d9d7e0"/><circle cx="90" cy="54" r="34" fill="#1f1d24"/><path d="M38 150c0-38 23-62 52-62s52 24 52 62z" fill="#1f1d24"/><rect x="60" y="44" width="24" height="16" rx="5" fill="none" stroke="#fff" stroke-width="4"/><rect x="96" y="44" width="24" height="16" rx="5" fill="none" stroke="#fff" stroke-width="4"/><path d="M84 52h12" stroke="#fff" stroke-width="4"/><rect x="62" y="118" width="56" height="36" rx="4" fill="#fff" stroke="#d9d7e0" stroke-width="3"/><path d="M72 130h36M72 140h24" stroke="#c7c4d0" stroke-width="4"/></svg><figcaption>면접관</figcaption></figure><div class="bubs"><div class="in-q">"왜 이 코드를 썼는지<br>코드적으로 설명해 주세요"<small class="in-qw">이스트소프트 백엔드</small></div><div class="in-q">"다른 방법은 왜<br>선택하지 않았나요?"<small class="in-qw">비바리퍼블리카 시스템엔지니어</small></div></div></div></div>
+    <div class="in-ivc"><div class="in-who">면접 방식 변화</div>
+      <div><b>넥슨</b><span>기술면접관: "이 코드는 어떤 기능을 하고,<br>왜 이렇게 구현했나요"로 면접의 절반 정리</span><small>2026-06</small></div>
+      <div><b>빅테크</b><span>면접관 58%가 질문을 바꿈:<br>선택 이유, 코드 한 줄의 역할을 질문</span><small>2025-09</small></div>
+      <div><b>Codility</b><span>지원자가 제출한 코드로<br>후속 질문을 만드는 기능 출시</span><small>2025-09</small></div></div>
   </div>
-  <div class="in-scnbar">지원자 인터뷰 <em>"1달 전에 짠 코드 잘 기억이 안 나거든요"</em><small>현직 개발자 인터뷰 (2026-09-07) 발췌</small></div>
-</div>''', cls='problem', source='면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 바이라인네트워크 2026-09-02 · CJ올리브영: 아시아경제 2026-07-21 · Canva 공식 블로그 2025-06-11 · Meta: 404 Media 2025-07-29 · 컬리: 중앙일보 2025-06-10 · 지원자 인용: 현직 개발자 인터뷰 (2026-09-07)'))
-S.note('''[0:34–0:46] 그래서 기술면접도 바뀝니다. 실제 올해 면접 리뷰를 보면 «왜 이 코드를 썼는지 코드적으로 설명해 달라», «다른 방법은 왜 선택하지 않았냐»를 묻습니다. 넥슨은 코딩테스트를 없애고 AI 활용 역량을 보고, CJ올리브영은 라이브 코딩 대신 과정을 보는 AI 과제를 냅니다. «AI를 쓰냐»가 아니라 «쓴 코드를 이해하고 설명할 수 있냐»를 확인하는 쪽입니다. 그런데 정작 지원자는 자기 코드를 기억하지 못합니다. «1달 전에 짠 코드 잘 기억이 안 나거든요.»
+</div>''', cls='problem', source='면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 천지일보, NDC 26 강연 보도 (2026-06-17) · 빅테크: The Pragmatic Engineer, 「The Pulse #146」 (2025-09-18, interviewing.io 면접관 설문 63명) · Codility: 공식 도움말 「Follow-Up Questions for Take-Home Assessments」 (2025-09)'))
+S.note('''[0:34–0:46] 그래서 기술면접도 바뀝니다. 실제 올해 면접 리뷰를 보면 «왜 이 코드를 썼는지 코드적으로 설명해 달라», «다른 방법은 왜 선택하지 않았냐»를 묻습니다. 넥슨의 한 기술면접관은 «이 코드는 어떤 기능을 하고, 왜 이렇게 구현했나요» 이 질문만으로 면접의 절반이 정리된다고 말했습니다. 복사하거나 AI가 짜 준 코드는 여기에 답하지 못한다는 겁니다. 해외 빅테크 면접관도 58%가 질문을 바꿨는데, 왜 그렇게 선택했는지, 이 코드 한 줄이 무슨 일을 하는지를 묻습니다. 면접 도구 회사 Codility는 지원자가 제출한 코드로 후속 질문을 만드는 기능까지 내놨습니다.
 
 주장: claims.md C1 — 직접 재는 수치 없음 → «경험 면접 N% 증가» 같은 수치 금지. «경험 위주로 바뀌었다» 단정 대신 «"왜·어떻게"를 캐묻는 쪽으로 바뀌는 중».
 면접 질문: 잡플래닛 «토스·무신사 개발자 면접 질문, 실제로 이랬다»(2026-07-01, https://www.jobplanet.co.kr/contents/news-8309) — 에디터 큐레이션, AD 표기, 대표성 없음 → «사례»로만.
-기업 사례: 넥슨 인턴십 «넥토리얼» 코딩테스트 폐지·AI 면접·AI 활용 역량평가(바이라인네트워크 2026-09-02, 채용팀장 인용) · CJ올리브영 경력 개발 직군 라이브 코딩 폐지 → 크래프톤 «코파 프로브» AI 과제로 전 과정 평가(아시아경제 2026-07-21, 법인명 재확인) · Canva(공식 블로그 2025-06-11) · Meta 일부 코딩 면접 AI 어시스턴트 허용(404 Media 2025-07-29, 내부 공지 보도 — «Meta 전체 면접 AI 허용» 확대 금지) · 컬리 개발자 공채 코테 ChatGPT 허용, 창립 후 처음(중앙일보 단독 2025-06-10, «2025년 1월»은 오기) — R1 E10~E13·E16, R5 장3.
+11-13 교체(사용자 지적: AI 허용 사례는 자기 코드 설명 면접의 근거가 아님, research/R11-own-code-interview.md):
+- 넥슨 = 오윤호 넥슨코리아 실장 NDC 26 강연, 천지일보 2026-06-17 https://www.newscj.com/news/articleView.html?idxno=3409912 ⚠ 면접관 1인 발언. «넥슨이 면접 방식을 바꿨다» 금지.
+- 빅테크 58% = Pragmatic Engineer Pulse #146 (2025-09-18), interviewing.io 면접관 설문 n=63, «58% of Big Tech interviewers said they have adjusted the kind of questions they ask». https://newsletter.pragmaticengineer.com/p/the-pulse-146 ⚠ 같은 조사에서 알고리즘 질문을 버린 면접관 0명.
+- Codility = 공식 도움말 2025-09-18 https://support.codility.com/hc/en-us/articles/39175728044689-Follow-Up-Questions-for-Take-Home-Assessments ⚠ 벤더 자료, 도입 수 없음.
+- 국내 기업 공식 «코드 리뷰 면접 도입» 발표·비중 수치는 못 찾음 → «X% 기업이 도입» 금지.
+Q&A용(장표에서 뺀 기존 3건, AI 활용 평가 확대 근거): 기업 사례: 넥슨 인턴십 «넥토리얼» 코딩테스트 폐지·AI 면접·AI 활용 역량평가(바이라인네트워크 2026-09-02, 채용팀장 인용) · CJ올리브영 경력 개발 직군 라이브 코딩 폐지 → 크래프톤 «코파 프로브» AI 과제로 전 과정 평가(아시아경제 2026-07-21, 법인명 재확인) · Canva(공식 블로그 2025-06-11) · Meta 일부 코딩 면접 AI 어시스턴트 허용(404 Media 2025-07-29, 내부 공지 보도 — «Meta 전체 면접 AI 허용» 확대 금지) · 컬리 개발자 공채 코테 ChatGPT 허용, 창립 후 처음(중앙일보 단독 2025-06-10, «2025년 1월»은 오기) — R1 E10~E13·E16, R5 장3.
 반대 근거(Q&A): Karat 2026 — 62%는 여전히 면접에서 AI 금지 · 그렙 고객도 개발 직군은 코테 유지 · Pulse #146에서 알고리즘 질문을 버린 면접관 0명. → «코테가 사라졌다» 금지, «과정·이해를 묻는 방식이 늘고 있다»까지.
-인용: 현직 개발자 인터뷰 2026-09-07(collect/D P1).''')
+11-13 회의(글 줄이기): Meta·Canva 행은 장표에서 빼고 Q&A용으로만 둠.''')
 
 # ④ 문제 근거 — 취준생은 전에 짠 코드를 다시 보기도, 기억하기도 어렵다 (11-10 사용자 지시, research/R10)
 S.append(shell('Problem', '취준생은 과거에 작성한 코드를 <span class="red">기억하기 어렵습니다</span>', f'''
-<div class="in-col" style="justify-content:center">
+<div class="in-col" style="justify-content:flex-start">{_flow(4)}
   <div class="in-p5">
     <div class="st">
       <div class="row"><b class="r">30일</b><div><span>개발자가 자기 파일 내용의<br>절반을 잊는다고 답한 기간</span><small>Krüger et al., 「Do You Remember This Source Code?」, 2018.</small></div></div>
@@ -360,11 +374,12 @@ S.append(shell('Problem', '취준생은 과거에 작성한 코드를 <span clas
     </div>
     <div class="qt"><div class="mk">"</div><blockquote>스스로 이력서에 적어둔 프로젝트에 대해 물어보면 답변을 못하는 분들을 많이 봤다</blockquote><small>바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.</small></div>
   </div>
-  <div class="in-bar">그런데 면접에서는 그 코드를 <span>왜 그렇게 짰는지</span> 설명해야 합니다</div>
-</div>''', cls='problem', source='Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025.'))
-S.note('''[0:46–0:55] 문제는 지원자 쪽에도 있습니다. 개발자들은 자기가 쓴 파일도 한 달쯤 지나면 절반은 잊는다고 답했습니다. 코드를 다시 읽는 일도 가볍지 않습니다. 경력 3년 미만 개발자는 하루 8시간 중 약 5시간을 코드를 읽고 이해하는 데 씁니다. 취준생은 레포가 여러 개이고 커밋도 많아서 전부 다시 보기가 어렵습니다. 그래서 채용 담당자들은 이력서에 적은 프로젝트를 물어보면 답하지 못하는 지원자를 많이 봤다고 말합니다. 그런데 면접은 바로 그 코드를 왜 그렇게 짰는지 묻습니다.
+  <div class="in-scnbar">지원자 인터뷰 <em>"1달 전에 짠 코드 잘 기억이 안 나거든요"</em><small>현직 개발자 인터뷰 (2026-09-07) 발췌</small></div>
+</div>''', cls='problem', source='Krüger et al., 「Do You Remember This Source Code?」, ICSE 2018. · Xia et al., 「Measuring Program Comprehension: A Large-Scale Field Study with Professionals」, IEEE TSE 2018. · 바이라인네트워크, 「채용 담당자가 말하는 신입 개발자가 꼭 갖춰야 할 역량」, 2025. · 지원자 인용: 현직 개발자 인터뷰 (2026-09-07).'))
+S.note('''[0:46–0:55] 문제는 지원자 쪽에도 있습니다. 개발자들은 자기가 쓴 파일도 한 달쯤 지나면 절반은 잊는다고 답했습니다. 코드를 다시 읽는 일도 가볍지 않습니다. 경력 3년 미만 개발자는 하루 8시간 중 약 5시간을 코드를 읽고 이해하는 데 씁니다. 취준생은 레포가 여러 개이고 커밋도 많아서 전부 다시 보기가 어렵습니다. 그래서 채용 담당자들은 이력서에 적은 프로젝트를 물어보면 답하지 못하는 지원자를 많이 봤다고 말합니다. 저희가 만난 현직 개발자도 이렇게 말했습니다. «1달 전에 짠 코드 잘 기억이 안 나거든요.»
 
 출처 (research/R10-recall-own-code.md, 접근 2026-11-10):
+- 인용: 현직 개발자 인터뷰 2026-09-07(collect/D P1). 11-13 사용자 지시로 4쪽에서 이동, 기존 하단 문구(면접에서 왜 그렇게 짰는지 설명) 삭제.
 - 30일 = Krüger, Wiemann, Fenske, Saake, Leich, ICSE 2018, 오픈소스 개발자 60명(GitHub 10개 프로젝트). 원문 «forget half of their files after 30 days in the median and 40 days on average». ⚠ 측정값이 아니라 본인 추정치. ⚠ 같은 파일을 여러 번 고쳤거나 직접 쓴 비율이 높으면 더 오래 기억함 → Q&A에서는 «한 번 짜고 다시 안 본 코드일수록 빨리 잊는다». https://jacobkrueger.github.io/assets/papers/Krueger2018Remember.pdf
 - 66%·58% = Xia, Bao, Lo, Xing, Hassan, Li, IEEE TSE 44(10) 2018, 현업 78명·3,148 작업시간 자동 기록. 저경력(3년 미만) 66.37%, 전체 58%. 장표 «5시간» = 66.37% × 8시간 = 5.3시간 환산(8시간 근무 가정, 원문은 비율만 제시). 장표 캡션에서는 환산 표기를 뺐으니(11-10 사용자: 출처만) 질문 나오면 이 계산으로 답할 것. ⚠ 자기 코드에 한정한 수치가 아니라 코드 이해 일반. https://xin-xia.github.io/publication/TSE17.pdf
 - 인용 = OKKY×바이라인네트워크 2025-02-28, IT 전문가 71명, 채용 담당자 발언(R4 V2). ⚠ 표본 작음. https://byline.network/2025/02/27-431/
@@ -510,6 +525,9 @@ CSS += r"""
 .in-midterm-highlight{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;font-family:inherit}
 .in-midterm-grade{align-self:center;width:640px;margin:0;padding:16px 22px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(45,30,90,.04)}
 .in-midterm-grade img{display:block;width:100%;height:auto;object-fit:contain}
+.in-midterm-grades{display:flex;justify-content:center;align-items:center;gap:24px}
+.in-midterm-grades .in-midterm-grade{align-self:auto;width:540px}
+.in-midterm-grades .in-midterm-grade-lit{width:820px}
 .in-midterm-punchline{margin:0;text-align:center;font-size:56px;font-weight:900;line-height:1.3;letter-spacing:-.045em;color:var(--purple-deep)}
 """
 S.append(shell('Teamwork', '학업도 병행했습니다. <span class="purple">다만…</span>', '''
@@ -522,9 +540,12 @@ S.append(shell('Teamwork', '학업도 병행했습니다. <span class="purple">�
       <text x="1065" y="94" text-anchor="middle" font-size="86" font-weight="900" fill="#c72c3d">31</text>
     </svg>
   </div></figure>
-  <figure class="in-midterm-grade"><img src="assets/teamwork-psychology-grade-original.png" alt="추가 성적 화면 원본: D+, 심리학의이해"></figure>
+  <div class="in-midterm-grades">
+    <figure class="in-midterm-grade"><img src="assets/teamwork-psychology-grade-original.png" alt="추가 성적 화면 원본: D+, 심리학의이해"></figure>
+    <figure class="in-midterm-grade in-midterm-grade-lit"><img src="assets/teamwork-literature-grade-original.png" alt="성적 화면 원본: 문학(3) 중간고사 100점 만점 44.10점"></figure>
+  </div>
   <p class="in-midterm-punchline">DevFit에는 진심이었습니다.</p>
-</div>''', cls='in-midterm-slide', source='사용자 제공 중간고사 결과 및 심리학의이해 D+ 화면 원본, 2026-11-13.'))
+</div>''', cls='in-midterm-slide', source='사용자 제공 중간고사 결과 · 심리학의이해 D+ · 문학(3) 중간고사 44.10점 화면 원본, 2026-11-13.'))
 S.note('''[짧은 에피소드 · 약 5초]
 앞 장의 학업 병행 설명을 이어 "학업도 병행했습니다. 다만… DevFit에는 진심이었습니다."라고 짧게 말한 뒤 수행 과정으로 넘어갑니다.
 사용자 제공 성적표 위에 "나의 점수 : 31"만 크게 표시해 짧은 웃음 포인트로 활용합니다. 원본의 점수는 31/100이며 평균 비교 설명은 생략합니다.

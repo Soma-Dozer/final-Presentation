@@ -4,7 +4,8 @@ const fs = require("fs"), path = require("path"), pptxgen = require("pptxgenjs")
 const D = path.dirname(__dirname), IMG = __dirname + "/img";
 const html = fs.readFileSync(D + "/index.html", "utf8");
 const un = s => s.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
-const secs = html.match(/<section[\s\S]*?<\/section>/g);
+// 장표 = 최상위 <section class="slide …">. 장 안에 중첩 <section>이 있어도 세지 않는다.
+const secs = html.match(/<section class="slide[\s\S]*?(?=<section class="slide|$)/g);
 const slides = secs.map(s => ({
   title: un((s.match(/data-title="([^"]*)"/) || [, ""])[1]),
   notes: (m => (m ? un(m[1]) : ""))(s.match(/<template class="notes">([\s\S]*?)<\/template>/)),
