@@ -177,34 +177,25 @@ APX.note('''출원인 김건우(개인), 발명자 김건우·박천웅·노재�
 «관련 장표» 열은 장 제목으로 표기(쪽번호 금지 규칙). 최종 표기는 Dev 슬림화 후 ppt-start와 맞춤 — 0214809는 Development 입력·출력 게이트 장이 남으면 덧붙임.
 청구항 요지 원문: Devfit/docs/patent/ 명세서 (⛔ 삭제 금지, 공지예외 12개월 시한 진행 중).''')
 
-APX.append(shell('Appendix · A8', '시장 규모 산정식: <span class="purple">TAM · SAM · SOM</span>', f'''
-{table(['단계', '구분', '산정식', '값'], [
- ['<b>TAM</b>', 'B2C', '글로벌 코딩면접 준비 시장 38억 달러 × 1,337원', '5.08조 원'],
- ['', 'B2B', '글로벌 기술 평가 도구 시장 35억 달러 × 1,337원', '4.68조 원'],
- ['', '<b>합계</b>', '', '<b>약 10조 원</b> (9.76조)'],
- ['<b>SAM</b>', 'B2C', '구직자 38.8만 명 (입사지원 520만 건 ÷ 1인 13.4회) × 월 7,900원 × 6개월', '184억 원'],
- ['', 'B2B', '입사지원 520만 건 × 서류 합격률 19.4% (= 101만 건) × 지원자당 2만 원', '202억 원'],
- ['', '<b>합계</b>', '', '<b>약 390억 원</b> (386억)'],
- ['<b>SOM</b>', 'B2C', 'SAM 구직자의 2% = 7,762명 × 47,400원', '3.68억 원'],
- ['', 'B2B', 'SAM 지원자 검증의 2% = 20,187건 × 2만 원', '4.04억 원'],
- ['', '<b>합계</b>', '3년 차 목표 · SAM 대비 2%', '<b>연 약 7.7억 원</b> (7.72억)']], 'sm left plain')}
-<div class="small-copy" style="margin-top:16px;font-size:20px;line-height:1.6">입사지원 520만 건 = 점핏 2025 상반기 2,601,390건 × 2 · 입력값별 출처와 가정은 다음 장(A9) · 세 단계 모두 B2C·B2B 절반 정도 · SOM은 목표이며 실적 아님</div>''', source='DataIntelo · WiseGuy Reports · 점핏 2025 · 한국경제인협회 2025 · 통계청 2025 청년층 부가조사 · DevFit Plus 요금 · 공개가 비교(프로그래머스·CodeSignal·Codility)'))
-APX.note('''예상 질문: «시장 규모 숫자를 어떻게 곱했나?» (11-13 사용자 지시 «산정식을 어펜딕스로»)
+APX.append(shell('Appendix · A8', '시장 규모 산정식과 근거: <span class="purple">TAM · SAM · SOM</span>', f'''
+{table(['단계', '<span style="white-space:nowrap">구분</span>', '산정식', '<span style="white-space:nowrap">값</span>', '근거'], [
+ ['<b>TAM</b>', 'B2C', '글로벌 코딩면접 준비 시장 38억 달러 × 1,337원', '5.08조 원', '<span style="font-size:15px;color:#6f6c78">DataIntelo, 「Coding Interview Preparation Market」, 2025. 온라인 강의·문제풀이·코칭 포함 · 환율 2026-11-13 조회</span>'],
+ ['', 'B2B', '글로벌 기술 평가 도구 시장 35억 달러 × 1,337원', '4.68조 원', '<span style="font-size:15px;color:#6f6c78">WiseGuy Reports, 「Technical Skill Assessment Platform Market」, 2025. 코딩 평가·기술 면접 도구</span>'],
+ ['', '<b>합계</b>', '', '<b>약 10조 원</b>', '<span style="font-size:15px;color:#6f6c78">조사기관 추정치, 같은 범주를 기관별로 21억~58억 달러로 봄</span>'],
+ ['<b>SAM</b>', 'B2C', '구직자 38.8만 명 × 월 7,900원 × 6개월<br>(38.8만 명 = 입사지원 520만 건 ÷ 1인 13.4회)', '184억 원', '<span style="font-size:15px;color:#6f6c78">520만 건: 점핏, 「2025 상반기 개발자 채용 리포트」 2,601,390건 × 2 ⚙ · 13.4회: 한국경제인협회, 2025 · 7,900원: DevFit Plus 요금 · 6개월: 첫 취업 평균 11.3개월(통계청 2025 청년층 부가조사)의 절반 ⚙</span>'],
+ ['', 'B2B', '입사지원 520만 건 × 서류 합격률 19.4% × 지원자당 2만 원', '202억 원', '<span style="font-size:15px;color:#6f6c78">19.4%: 한국경제인협회, 2025 · 2만 원: 공개가 기준 ⚙ (프로그래머스 16,500원 · CodeSignal 약 2만 원 · Codility 약 3.4만 원)</span>'],
+ ['', '<b>합계</b>', '', '<b>약 390억 원</b>', ''],
+ ['<b>SOM</b>', 'B2C', 'SAM 구직자의 2% = 7,762명 × 47,400원', '3.68억 원', '<span style="font-size:15px;color:#6f6c78">2%: 최종보고서 전환 시나리오와 같은 비율 ⚙</span>'],
+ ['', 'B2B', 'SAM 지원자 검증의 2% = 20,187건 × 2만 원', '4.04억 원', '<span style="font-size:15px;color:#6f6c78">2%: 내부 목표 ⚙</span>'],
+ ['', '<b>합계</b>', '3년 차 목표 · SAM 대비 2%', '<b style="white-space:nowrap">연 약 7.7억 원</b>', '']], 'sm left plain')}
+<div class="small-copy" style="margin-top:14px;font-size:18px;line-height:1.5">⚙ = 내부 가정 · 13.4회·19.4%는 대학생 대상 조사 · 세 단계 모두 B2C·B2B 절반 정도 · SOM은 목표이며 실적 아님</div>''', source='DataIntelo · WiseGuy Reports · 점핏 2025 · 한국경제인협회 2025 · 통계청 2025 청년층 부가조사 · DevFit Plus 요금 · 프로그래머스·CodeSignal·Codility 가격 페이지'))
+APX.note('''예상 질문: «시장 규모는 어떻게 계산했고 숫자는 어디서 나왔나?» (11-13 사용자 지시 «A8에 근거까지 다 넣어» → 옛 A9 계산 근거 장을 이 장으로 합침)
 검산: 5,202,780 ÷ 13.4 = 388,267 → 38.8만(최종보고서는 388,100 사용) · 388,100 × 47,400 = 183.96억 · 5,202,780 × 0.194 = 1,009,339건 × 2만 = 201.87억 · 7,762 × 47,400 = 3.679억 · 20,187 × 2만 = 4.037억 · 38억 × 1,337 = 5.081조 · 35억 × 1,337 = 4.680조.
-출처·한계는 A9 노트와 본편 시장 규모 장 노트. 환율 1,337원은 사용자 제공값(미확인).''')
+URL: DataIntelo https://dataintelo.com/report/coding-interview-preparation-market («reached $3.8 billion in 2025») · WiseGuy https://www.wiseguyreports.com/reports/technical-skill-assessment-platform-market («USD 3.5 Billion in 2025», 구매자에 교육기관·개인·정부 포함 → «기업이 쓰는 돈» 금지) · 점핏 https://jumpit.saramin.co.kr/report/2025/recruit · 한경협 13.4회·19.4% https://www.mt.co.kr/industry/2025/12/09/2025120910041034451 · 통계청 11.3개월 https://dailian.co.kr/news/view/1527230/ · 프로그래머스 https://business.programmers.co.kr/business/introduce_coding_test · CodeSignal https://codesignal.com/pricing/ · Codility https://www.codility.com/pricing/
+편차: Marketintelo 면접 준비 21억·기술 평가 58억 달러, Insight Partners 기술 스크리닝 22.1억 달러. 환율 1,337원은 사용자 제공값(미확인).
 
-APX.append(shell('Appendix · A9', '시장 규모 계산 근거: <span class="purple">입력값 8개의 출처와 가정</span>', f'''
-{table(['', '입력값', '값', '어디서 왔나', '종류'], [
- ['A', '글로벌 기술 역량 평가 플랫폼 시장 (2025)', '35억 달러', 'WiseGuy Reports, 「Technical Skill Assessment Platform Market」. 코딩 평가·기술 면접 도구, 주 구매자 기업', '출처'],
- ['B', '글로벌 코딩면접 준비 시장 (2025)', '38억 달러', 'DataIntelo, 「Coding Interview Preparation Market」. 온라인 강의·문제풀이·코칭·교재 포함', '출처'],
- ['C', '환율', '1,337원/달러', '2026-11-13 조회', '출처'],
- ['D', '연간 개발 직군 입사지원', '약 520만 건', '점핏, 「2025 상반기 개발자 채용 리포트」. 2,601,390건 × 2 (하반기도 같다고 가정)', '출처 + ⚙'],
- ['E', '개발 직군 구직자', '약 38.8만 명', 'D ÷ 1인 평균 입사지원 13.4회 (한국경제인협회, 2025)', '출처'],
- ['F', '구직자 1인 결제액', '47,400원', 'DevFit Plus 월 7,900원 × 6개월 (첫 취업까지 평균 11.3개월, 통계청 2025 청년층 부가조사의 절반)', '출처 + ⚙'],
- ['G', '서류 합격률 · 지원자 1인 분석 단가', '19.4% · 2만 원', '한국경제인협회 2025 서류 합격률 · 공개가 1.5만~4.5만 원/인의 중하단(프로그래머스·CodeSignal·Codility)', '출처 + ⚙'],
- ['H', '3년 차 점유', 'B2C 2% · B2B 2%', 'B2C는 최종보고서 2% 시나리오의 비율 · B2B는 SAM 지원자 검증 건수의 2%(내부 목표)', '⚙']], 'sm left plain')}
-<div class="small-copy" style="margin-top:16px;font-size:20px;line-height:1.6"><b>TAM</b> A×C 4.7조 + B×C 5.1조 = <b>약 10조 원</b> · <b>SAM</b> E×F 184억 + D×G 202억 = <b>약 390억 원</b> · <b>SOM</b> 각 SAM의 2%: 3.7억 + 4.0억 = <b>연 약 7.7억 원</b><br>⚙ = 내부 가정 · TAM은 조사기관 추정치, SOM은 3년 차 목표이며 실적 아님 · 세 단계 모두 B2C·B2B 절반 정도</div>''', source='WiseGuy Reports Technical Skill Assessment Platform Market(wiseguyreports.com) · DataIntelo Coding Interview Preparation Market(dataintelo.com) · 점핏 2025 상반기 개발자 채용 리포트 · 한국경제인협회 2025 대학생 취업인식도 조사 · 프로그래머스·CodeSignal·Codility 가격 페이지 · 기획 문서 B2B 요금 티어'))
-APX.note('''예상 질문: «시장 크기는? 숫자 어디서 나왔나?» (11-13 3차: 사용자 «SOM·SAM 좀 더 높게» → TAM 약 10조 · SAM 약 390억 · SOM 연 7.7억. 2차안 SOM의 B2B 고객사 계산 오류(6곳 × 월 13만 × 12 = 0.094억을 0.94억으로 표기)는 3차에서 지원자당 과금으로 바꾸며 정정)
+[옛 A9 노트 보존]
+예상 질문: «시장 크기는? 숫자 어디서 나왔나?» (11-13 3차: 사용자 «SOM·SAM 좀 더 높게» → TAM 약 10조 · SAM 약 390억 · SOM 연 7.7억. 2차안 SOM의 B2B 고객사 계산 오류(6곳 × 월 13만 × 12 = 0.094억을 0.94억으로 표기)는 3차에서 지원자당 과금으로 바꾸며 정정)
 11.3개월: 통계청 2025 청년층 부가조사 https://dailian.co.kr/news/view/1527230/ · 19.4%: 한경협 2025 https://www.mt.co.kr/industry/2025/12/09/2025120910041034451
 A: WiseGuy Reports https://www.wiseguyreports.com/reports/technical-skill-assessment-platform-market — 2025년 USD 3.5B(2024 3,130M → 2035 10.5B). ⚠ 구매자에 교육기관·개인 포함, 조사사별 편차 큼(Insight Partners 2.21B, Marketintelo 5.8B). 공개가: 프로그래머스 https://business.programmers.co.kr/business/introduce_coding_test · CodeSignal https://codesignal.com/pricing/ · Codility https://www.codility.com/pricing/
 SAM은 최종보고서와 같은 38.8만 명 계산을 씀. 폐기한 1차안(TAM 66조 = Mordor 인력공급, SAM 6,600억 = 대신증권 매칭 시장)은 아래 이전 메모 참고.
@@ -220,6 +211,8 @@ URL: Mordor https://www.mordorintelligence.com/industry-reports/it-staffing-mark
 - 최종보고서는 B2C 지출 기준 시장(38.8만 명 × 23,700원)만 계산했다 → Q&A: «보고서는 B2C 지출 기준, 발표는 채용 시장 전체로 넓혀 봤다».
 ⛔ «매출»은 목표 시나리오로만, 실적처럼 말하지 말 것. 5년 SOM 27억 · TAM $2.8B 금지.
 [이전 판] TAM 1,132억(B2C 92억 + 지원 520만 건 × 2만 원) · SAM 143억 · SOM 4억 — 11-13 교체.''')
+
+
 
 
 
