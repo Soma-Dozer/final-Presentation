@@ -179,20 +179,21 @@ APX.note('''출원인 김건우(개인), 발명자 김건우·박천웅·노재�
 
 APX.append(shell('Appendix · A8', '시장 규모 산정식과 근거: <span class="purple">TAM · SAM · SOM</span>', f'''
 {table(['단계', '<span style="white-space:nowrap">구분</span>', '산정식', '<span style="white-space:nowrap">값</span>', '근거'], [
- ['<b>TAM</b>', 'B2C', '글로벌 코딩면접 준비 시장 38억 달러 × 1,337원', '5.08조 원', '<span style="font-size:15px;color:#6f6c78">DataIntelo, 「Coding Interview Preparation Market」, 2025. 온라인 강의·문제풀이·코칭 포함 · 환율 2026-11-13 조회</span>'],
- ['', 'B2B', '글로벌 기술 평가 도구 시장 35억 달러 × 1,337원', '4.68조 원', '<span style="font-size:15px;color:#6f6c78">WiseGuy Reports, 「Technical Skill Assessment Platform Market」, 2025. 코딩 평가·기술 면접 도구</span>'],
- ['', '<b>합계</b>', '', '<b>약 10조 원</b>', '<span style="font-size:15px;color:#6f6c78">조사기관 추정치, 같은 범주를 기관별로 21억~58억 달러로 봄</span>'],
+ ['<b>TAM</b>', 'B2C', '북미 면접 준비 도구 시장 2.13억 달러 × 1,337원', '2,847억 원', '<span style="font-size:15px;color:#6f6c78">pmarketresearch, 「Worldwide Interview Preparation Tool Market」, 2025. 북미 USD 212.92M(39.6%) · 이용자 60%가 개인 구직자</span>'],
+ ['', 'B2B', '북미 코딩 면접 플랫폼 시장 2.2억 달러 × 1,337원', '2,941억 원', '<span style="font-size:15px;color:#6f6c78">DataHorizzon, 「Coding Interview Platform Market」, 2024. 북미 USD 220M(약 40%) · 기업용 개발자 채용 평가 도구</span>'],
+ ['', '<b>합계</b>', '', '<b style="white-space:nowrap">약 5,788억 원</b>', '<span style="font-size:15px;color:#6f6c78">북미 기준: 두 조사 모두 가장 큰 지역 · 코딩 면접 준비·기술 평가 도구(LeetCode · HackerRank · CodeSignal)가 먼저 유료화된 시장</span>'],
  ['<b>SAM</b>', 'B2C', '구직자 38.8만 명 × 월 7,900원 × 6개월<br>(38.8만 명 = 입사지원 520만 건 ÷ 1인 13.4회)', '184억 원', '<span style="font-size:15px;color:#6f6c78">520만 건: 점핏, 「2025 상반기 개발자 채용 리포트」 2,601,390건 × 2 ⚙ · 13.4회: 한국경제인협회, 2025 · 7,900원: DevFit Plus 요금 · 6개월: 첫 취업 평균 11.3개월(통계청 2025 청년층 부가조사)의 절반 ⚙</span>'],
  ['', 'B2B', '입사지원 520만 건 × 서류 합격률 19.4% × 지원자당 2만 원', '202억 원', '<span style="font-size:15px;color:#6f6c78">19.4%: 한국경제인협회, 2025 · 2만 원: 공개가 기준 ⚙ (프로그래머스 16,500원 · CodeSignal 약 2만 원 · Codility 약 3.4만 원)</span>'],
  ['', '<b>합계</b>', '', '<b>약 390억 원</b>', ''],
  ['<b>SOM</b>', 'B2C', 'SAM 구직자의 2% = 7,762명 × 47,400원', '3.68억 원', '<span style="font-size:15px;color:#6f6c78">2%: 최종보고서 전환 시나리오와 같은 비율 ⚙</span>'],
  ['', 'B2B', 'SAM 지원자 검증의 2% = 20,187건 × 2만 원', '4.04억 원', '<span style="font-size:15px;color:#6f6c78">2%: 내부 목표 ⚙</span>'],
  ['', '<b>합계</b>', '3년 차 목표 · SAM 대비 2%', '<b style="white-space:nowrap">연 약 7.7억 원</b>', '']], 'sm left plain')}
-<div class="small-copy" style="margin-top:14px;font-size:18px;line-height:1.5">⚙ = 내부 가정 · 13.4회·19.4%는 대학생 대상 조사 · 세 단계 모두 B2C·B2B 절반 정도 · SOM은 목표이며 실적 아님</div>''', source='DataIntelo · WiseGuy Reports · 점핏 2025 · 한국경제인협회 2025 · 통계청 2025 청년층 부가조사 · DevFit Plus 요금 · 프로그래머스·CodeSignal·Codility 가격 페이지'))
+<div class="small-copy" style="margin-top:14px;font-size:18px;line-height:1.5">⚙ = 내부 가정 · TAM은 북미, SAM·SOM은 국내 · 13.4회·19.4%는 대학생 대상 조사 · 세 단계 모두 B2C·B2B 절반 정도 · SOM은 목표이며 실적 아님</div>''', source='pmarketresearch · DataHorizzon · 점핏 2025 · 한국경제인협회 2025 · 통계청 2025 청년층 부가조사 · DevFit Plus 요금 · 프로그래머스·CodeSignal·Codility 가격 페이지'))
 APX.note('''예상 질문: «시장 규모는 어떻게 계산했고 숫자는 어디서 나왔나?» (11-13 사용자 지시 «A8에 근거까지 다 넣어» → 옛 A9 계산 근거 장을 이 장으로 합침)
-검산: 5,202,780 ÷ 13.4 = 388,267 → 38.8만(최종보고서는 388,100 사용) · 388,100 × 47,400 = 183.96억 · 5,202,780 × 0.194 = 1,009,339건 × 2만 = 201.87억 · 7,762 × 47,400 = 3.679억 · 20,187 × 2만 = 4.037억 · 38억 × 1,337 = 5.081조 · 35억 × 1,337 = 4.680조.
-URL: DataIntelo https://dataintelo.com/report/coding-interview-preparation-market («reached $3.8 billion in 2025») · WiseGuy https://www.wiseguyreports.com/reports/technical-skill-assessment-platform-market («USD 3.5 Billion in 2025», 구매자에 교육기관·개인·정부 포함 → «기업이 쓰는 돈» 금지) · 점핏 https://jumpit.saramin.co.kr/report/2025/recruit · 한경협 13.4회·19.4% https://www.mt.co.kr/industry/2025/12/09/2025120910041034451 · 통계청 11.3개월 https://dailian.co.kr/news/view/1527230/ · 프로그래머스 https://business.programmers.co.kr/business/introduce_coding_test · CodeSignal https://codesignal.com/pricing/ · Codility https://www.codility.com/pricing/
-편차: Marketintelo 면접 준비 21억·기술 평가 58억 달러, Insight Partners 기술 스크리닝 22.1억 달러. 환율 1,337원은 사용자 제공값(미확인).
+검산: 5,202,780 ÷ 13.4 = 388,267 → 38.8만(최종보고서는 388,100 사용) · 388,100 × 47,400 = 183.96억 · 5,202,780 × 0.194 = 1,009,339건 × 2만 = 201.87억 · 7,762 × 47,400 = 3.679억 · 20,187 × 2만 = 4.037억 · 212.92M × 1,337 = 2,846.7억 · 220M × 1,337 = 2,941.4억 → 합 5,788억(B2C:B2B = 49:51). 환율 2026-11-13 조회값 1,337원.
+URL: pmarketresearch https://pmarketresearch.com/?p=2569219 («In 2025, the worldwide interview preparation tool market reached USD 538.28 Million», 북미 USD 212.92M · 39.56%, 아시아태평양 USD 146.98M · 27.31%, 개인 구직자 59.70% · 대학 27.03% · 기업 교육·전직 13.27%) · DataHorizzon https://datahorizzonresearch.com/coding-interview-platform-market-46279 («valued at approximately USD 450 million in 2024», 2033년 1,800M, CAGR 14.9%, 지역 표 북미 USD 220M · 아시아태평양 USD 110M, 구매자 기업) · 점핏 https://jumpit.saramin.co.kr/report/2025/recruit · 한경협 13.4회·19.4% https://www.mt.co.kr/industry/2025/12/09/2025120910041034451 · 통계청 11.3개월 https://dailian.co.kr/news/view/1527230/ · 프로그래머스 https://business.programmers.co.kr/business/introduce_coding_test · CodeSignal https://codesignal.com/pricing/ · Codility https://www.codility.com/pricing/
+Q&A 약점: ①TAM(북미)과 SAM(국내)의 지역이 달라 SAM이 TAM의 일부가 아님 → TAM은 규모 가늠용, SAM·SOM은 국내 통계 바텀업 ②기준 연도 B2C 2025 · B2B 2024 ③미국만 낸 수치 없음, 북미 = 미국+캐나다 ④두 조사기관 모두 덜 알려진 곳, 방법론 비공개. 환율 1,337원은 사용자 제공값(미확인).
+폐기한 TAM(11-14): 전 세계 약 10조(DataIntelo 38억 + WiseGuy 35억 달러) · 아시아태평양+북미 약 7.0조 · 아시아태평양만 3,436억(같은 두 출처). 조사 노트 research/R12-tam-asia-us.md.
 
 [옛 A9 노트 보존]
 예상 질문: «시장 크기는? 숫자 어디서 나왔나?» (11-13 3차: 사용자 «SOM·SAM 좀 더 높게» → TAM 약 10조 · SAM 약 390억 · SOM 연 7.7억. 2차안 SOM의 B2B 고객사 계산 오류(6곳 × 월 13만 × 12 = 0.094억을 0.94억으로 표기)는 3차에서 지원자당 과금으로 바꾸며 정정)
@@ -288,3 +289,104 @@ Cloudflare Tunnel: VM이 바깥으로 연결을 열어 인바운드 포트를 �
 AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비스가 가장 많았고, 역할별 모델 비교 실험(A10, Table 1 13개 모델)을 한 계정에서 바로 돌릴 수 있는 Bedrock이 서비스 특성에 맞았음.
 이전 후 감수하는 것(Q&A용, 장표에서 뺌): VM 1대라 장애 시 전체 중단 · CPU가 Fargate 합계(6.5 vCPU)보다 작아 분석 worker 동시 실행 2 → 1.
 ⛔ 아직 실행하지 않은 계획. «이전 완료»·«비용 0원» 금지(Vercel Pro와 LLM 사용량은 계속 나감). 현재 AWS 월 청구액은 근거 자료가 없어 장표에 비교 수치를 쓰지 않음. B2B 콘솔은 이 장의 범위 밖.''')
+
+# ================= 광고 소재 (A29~A33) · 11-14 사용자 지시 «광고 에셋 전부 어펜딕스에» =================
+# 원본: Devfit/marketing/google-ads · instagram-ads · marketing-brand-assets/05-google-ads-current-ui (sips로 축소한 jpg를 assets/ads/에 복사)
+import os as _os
+_AD = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'assets', 'ads')
+def _ads(sub, key=None):
+    fs = sorted(f for f in _os.listdir(_os.path.join(_AD, sub)) if f.endswith('.jpg'))
+    return [f for f in fs if key is None or key in f]
+_RD = [('trust-appeal-anchor', '어필 포인트'), ('proof-evidence-code', '근거 코드'), ('pain-my-project', '내 프로젝트'),
+       ('hook-old-commit', '오래된 커밋'), ('hook-interviewer-quote', '면접관 질문'), ('hook-couldnt-explain', '설명 못 한 코드'),
+       ('hook-vs-question-list', '질문 목록 비교'), ('compare-resume-vs-commit', '이력서와 커밋')]
+def _fig(src, cap='', cls=''):
+    c = f'<figcaption>{cap}</figcaption>' if cap else ''
+    return f'<figure class="ax-ad {cls}"><img src="assets/ads/{src}" alt="{cap or "광고 소재"}" loading="lazy">{c}</figure>'
+
+CSS += r"""
+.ax-grid{display:grid;gap:18px;flex:1;min-height:0;align-content:center}
+.ax-ad{margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0;min-height:0}
+.ax-ad img{max-width:100%;max-height:100%;object-fit:contain;border:1px solid var(--line,#e5e5ea);border-radius:6px;background:#fff;display:block}
+.ax-ad figcaption{font-size:15px;font-weight:700;color:var(--graphite,#555);letter-spacing:-.02em;white-space:nowrap}
+.ax-g4{grid-template-columns:repeat(4,1fr)}
+.ax-g4 .ax-ad img{height:215px;width:auto}
+.ax-g8{grid-template-columns:repeat(8,1fr);gap:14px}
+.ax-g8 .sq img{height:190px}
+.ax-g8 .vt img{height:338px}
+.ax-ud{grid-template-columns:repeat(4,1fr);gap:28px}
+.ax-udc{display:flex;flex-direction:column;gap:10px;align-items:center}
+.ax-udc b{font-size:17px;letter-spacing:-.02em}
+.ax-udc .r{display:flex;gap:10px;align-items:flex-end;justify-content:center}
+.ax-udc img{border:1px solid var(--line,#e5e5ea);border-radius:4px;display:block;background:#fff}
+.ax-test{grid-template-columns:repeat(5,1fr);gap:16px}
+.ax-test .col{display:flex;flex-direction:column;gap:8px;align-items:center}
+.ax-test .col img{border:1px solid var(--line,#e5e5ea);border-radius:5px;display:block;background:#fff}
+.ax-test .col b{font-size:15px;letter-spacing:-.02em}
+.ax-mix{display:flex;gap:28px;flex:1;min-height:0;align-items:center;justify-content:center}
+.ax-mix img{border:1px solid var(--line,#e5e5ea);border-radius:6px;display:block;background:#fff}
+.ax-mix .grp{display:flex;flex-direction:column;gap:8px;align-items:center}
+.ax-mix .grp>b{font-size:17px;letter-spacing:-.02em}
+"""
+
+# A29 반응형 가로형 8
+APX.append(shell('Appendix · A29', 'Google 반응형 디스플레이 광고 소재: <span class="purple">가로형 8종</span>',
+    '<div class="ax-grid ax-g4">' + ''.join(_fig(f'rd/{k}-landscape-1200x628.jpg', n) for k, n in _RD) + '</div>',
+    source='Devfit/marketing/google-ads/creatives · 1200×628 · 2026-08-29 제작'))
+APX.note('''광고 소재 원본: Devfit/marketing/google-ads/creatives/png/responsive-display (콘셉트 8종 × 가로·정사각·세로 3비율 = 24장). 이 장은 가로형 8장.
+제작 방식: 실제 제품 화면(candidate 라우트)을 캡처해 HTML로 조합한 뒤 렌더. 제품에 없는 UI를 그리지 않음.
+Q&A 주의: 소재 속 공고 시나리오가 실존 회사 공고(토스 Frontend, 2026-08-29 확인)이고 지원자·레포·커밋은 가공값. 소재별 성과(CTR 등)는 따로 집계하지 않았으므로 «잘 된 소재» 같은 주장 금지. 집행 총액·단가는 A4.''')
+
+# A30 반응형 정사각·세로 16
+APX.append(shell('Appendix · A30', 'Google 반응형 디스플레이 광고 소재: <span class="purple">정사각 · 세로형 16종</span>',
+    '<div class="ax-grid ax-g8">' + ''.join(_fig(f'rd/{k}-square-1200x1200.jpg', n, 'sq') for k, n in _RD)
+    + ''.join(_fig(f'rd/{k}-vertical-900x1600.jpg', '', 'vt') for k, n in _RD) + '</div>',
+    source='Devfit/marketing/google-ads/creatives · 위 1200×1200 · 아래 900×1600'))
+APX.note('''A29와 같은 콘셉트 8종의 정사각(1200×1200)·세로(900×1600) 버전. 위아래 같은 열이 같은 콘셉트.''')
+
+# A31 업로드 디스플레이 4 × 6
+_UD = [('trust-appeal-anchor', '어필 포인트'), ('pain-my-project', '내 프로젝트'), ('hook-old-commit', '오래된 커밋'), ('hook-interviewer-quote', '면접관 질문')]
+def _udc(k, n):
+    p = lambda s: f'assets/ads/ud/{k}-{s}.jpg'
+    return (f'<div class="ax-udc"><b>{n}</b>'
+            f'<div class="r"><img src="{p("halfpage-300x600")}" alt="{n} 300×600" style="height:300px"><img src="{p("skyscraper-160x600")}" alt="{n} 160×600" style="height:300px"></div>'
+            f'<div class="r"><img src="{p("mrec-300x250")}" alt="{n} 300×250" style="width:190px"><img src="{p("lrec-336x280")}" alt="{n} 336×280" style="width:190px"></div>'
+            f'<img src="{p("leaderboard-728x90")}" alt="{n} 728×90" style="width:390px">'
+            f'<img src="{p("mobileBanner-320x100")}" alt="{n} 320×100" style="width:240px"></div>')
+APX.append(shell('Appendix · A31', 'Google 업로드 디스플레이 광고 소재: <span class="purple">4종 × 6규격</span>',
+    '<div class="ax-grid ax-ud">' + ''.join(_udc(k, n) for k, n in _UD) + '</div>',
+    source='Devfit/marketing/google-ads/creatives · 300×600 · 160×600 · 300×250 · 336×280 · 728×90 · 320×100'))
+APX.note('''업로드형 디스플레이 규격 6종(하프페이지·스카이스크래퍼·MREC·LREC·리더보드·모바일 배너) × 콘셉트 4종 = 24장. 축소해 실었으므로 실제 크기 비율과 다름.''')
+
+# A32 크리에이티브 테스트 18
+_TS = [('01-code-evidence', '근거 코드'), ('02-job-specific', '공고 맞춤'), ('03-code-not-resume', '내 코드'),
+       ('04-requirement-to-answer', '공고 요구 연결'), ('05-cs-in-project', 'CS · 프로젝트')]
+_tcol = lambda k, n: (f'<div class="col"><b>{n}</b><img src="assets/ads/test/{k}-landscape.jpg" alt="{n} 가로" style="width:300px">'
+                      f'<div style="display:flex;gap:8px;align-items:flex-end"><img src="assets/ads/test/{k}-square.jpg" alt="{n} 정사각" style="width:150px"><img src="assets/ads/test/{k}-portrait.jpg" alt="{n} 세로" style="width:128px"></div></div>')
+APX.append(shell('Appendix · A32', 'Google 광고 소재 2차 시안: <span class="purple">5종 × 3비율 + 가로형 3종</span>',
+    '<div style="display:flex;flex-direction:column;gap:22px;flex:1;min-height:0;justify-content:center">'
+    '<div class="ax-grid ax-test" style="flex:none">' + ''.join(_tcol(k, n) for k, n in _TS) + '</div>'
+    '<div style="display:flex;gap:22px;justify-content:center">'
+    + _fig('test/devfit-followup-questions-landscape.jpg', '꼬리질문') .replace('<img ', '<img style="width:330px" ')
+    + _fig('test/devfit-old-project-code-landscape.jpg', '예전 프로젝트 코드').replace('<img ', '<img style="width:330px" ')
+    + _fig('test/devfit-paper-ctrl-c-landscape.jpg', '종이에 Ctrl+C').replace('<img ', '<img style="width:330px" ')
+    + '</div></div>',
+    source='Devfit/marketing/google-ads/creative-tests/2026-09-28 · 가로 1734×907 · 정사각 1254×1254 · 세로 941×1672'))
+APX.note('''2026-09-28 제작한 2차 시안. 새 후크 5종 × 3비율(15장) + 가로형 단독 3장. 원본 INDEX.md 기준 첫 카피 테스트 가설은 «예상 면접 질문에 근거 코드까지»이고, 성과 데이터 없이 고른 가설이라 «검증된 우승 소재»라고 말하지 않음.''')
+
+# A33 Instagram 2 + 제품 화면형 10
+_UI_L = _ads('ui', 'landscape'); _UI_S = _ads('ui', 'square'); _UI_P = _ads('ui', 'portrait')
+APX.append(shell('Appendix · A33', 'Instagram 광고 소재 2종 · <span class="purple">제품 화면형 광고 소재 10종</span>',
+    '<div class="ax-mix">'
+    '<div class="grp"><b>Instagram 피드 (4:5)</b><div style="display:flex;gap:12px">'
+    + ''.join(f'<img src="assets/ads/ig/{f}" alt="Instagram 광고" style="height:440px">' for f in _ads('ig')) + '</div></div>'
+    '<div class="grp"><b>Google 제품 화면형 (가로 4 · 정사각 4 · 세로 2)</b>'
+    '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">'
+    + ''.join(f'<img src="assets/ads/ui/{f}" alt="제품 화면형 광고" style="width:200px">' for f in _UI_L)
+    + ''.join(f'<img src="assets/ads/ui/{f}" alt="제품 화면형 광고" style="width:200px">' for f in _UI_S) + '</div>'
+    '<div style="display:flex;gap:10px">' + ''.join(f'<img src="assets/ads/ui/{f}" alt="제품 화면형 광고" style="height:250px">' for f in _UI_P) + '</div>'
+    '</div></div>',
+    source='Devfit/marketing/instagram-ads (2026-09-27) · marketing-brand-assets/05-google-ads-current-ui'))
+APX.note('''Instagram: 블로그 글 형식 1장, 개발 책상 사진 형식 1장(2026-09-27, 피드 4:5). 헤드라인 "코드는 남았는데, 왜 이렇게 짰는지 기억이 안 나요".
+제품 화면형: 현재 UI(공고 입력·준비 화면·질문 은행·질문 상세·대시보드·어필 포인트·근거 코드)를 그대로 캡처한 소재 10장.
+매체 집행 금액·단가는 A4. 소재별 성과는 따로 집계하지 않음.''')
