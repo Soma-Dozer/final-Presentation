@@ -15,8 +15,7 @@ CSS = r""".cl-idx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-item
 S.append(raw('dark-slide', f'''<div class="dark-grid"></div><div class="slide-shell" style="padding:0">
 <div style="position:absolute;inset:0;display:grid;grid-template-columns:58% 42%">
   <div style="padding:0 0 0 118px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2">
-    <div style="font-size:28px;color:#9c96a3;font-weight:700;margin-bottom:30px">06 · 마무리</div>
-    <h1 style="margin:0;color:#fff;font-size:66px;font-weight:900;line-height:1.35;letter-spacing:-.055em">AI가 만든 면접 질문을,<br><span style="color:#b9b0ff">지원자 본인의 코드</span>로 증명하고<br>숫자로 검증</h1>
+    <h1 class="cl-service-message" style="margin:0;color:#fff;font-size:60px;font-weight:900;line-height:1.35;letter-spacing:-.055em">지원자는 <span style="color:#b9b0ff">내 코드</span>로<br>면접을 준비하고,<br>기업은 <span style="color:#b9b0ff">코드 근거</span>로<br>개발 경험을 확인합니다.</h1>
     <div style="display:flex;align-items:center;gap:22px;margin-top:50px"><img src="assets/icon.svg" alt="" style="width:66px;height:66px;border-radius:16px"><div style="font-size:50px;font-weight:900;letter-spacing:-.055em;color:#fff">Dev<span style="color:#b9b0ff">Fit</span></div></div>
     <div style="margin-top:28px;color:#d9d5dd;font-size:25px;font-weight:700">B2C devfit.app · B2B enterprise.devfit.app</div>
     
@@ -29,7 +28,7 @@ S.append(raw('dark-slide', f'''<div class="dark-grid"></div><div class="slide-sh
 </div>
 <div style="position:absolute;left:118px;right:118px;bottom:26px;color:#6d6774;font-size:13px;line-height:1.5;z-index:3">{ACK}<br>{ACK_EN}</div>
 <div class="folio" style="left:auto;right:88px;color:#6d6774"></div></div>''', '마무리'))
-S.note('''[14:50–15:00] DevFit은 AI가 만든 면접 질문을, 지원자 본인의 코드로 증명하고 숫자로 검증합니다. 감사합니다.
+S.note('''[14:50–15:00] DevFit에서 지원자는 내 코드로 면접을 준비하고, 기업은 코드 근거로 개발 경험을 확인합니다. 감사합니다.
 
 테스트 계정은 GitHub OAuth 전용이라 심사위원용 계정 필요 — 제출 전 시크릿 창에서 로그인 재확인.''')
 
