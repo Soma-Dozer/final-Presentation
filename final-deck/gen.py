@@ -8,7 +8,7 @@
 #   s4_closing.py 마무리·감사·부록 목차      ppt-start
 #   s5_appendix.py 부록 A1~A14 전체           ppt-start (11-07~)
 # 미리보기: python3 gen.py && open -a "Google Chrome" index.html   (PDF/PPTX까지는 build/build.sh)
-import os, re, sys, html as _html, importlib
+import os, re, sys, html as _html, importlib, hashlib
 D = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, D)
 import core
 SECTIONS = ['s1_intro', 's2_dev', 's3_effect', 's4_closing', 's5_appendix']
@@ -53,8 +53,21 @@ _apage = {f'A{akey(a)}': len(main) + i for i, a in enumerate(apx, 1)}
 slides = [re.sub(r'\{\{PAGE:(A\d+)\}\}', lambda m: f'p{_apage[m.group(1)]}', h) for h in slides]
 if any('{{PAGE:' in h for h in slides): sys.exit('부록 목차 쪽번호 치환 실패')
 
+# 같은 이미지 경로를 다시 편집해도 브라우저가 이전 그래프를 재사용하지 않도록 한다.
+_asset_versions = {}
+def version_image(match):
+    asset = match[2]
+    if asset not in _asset_versions:
+        with open(os.path.join(D, asset), 'rb') as f:
+            _asset_versions[asset] = hashlib.sha256(f.read()).hexdigest()[:12]
+    return match[1] + asset + '?v=' + _asset_versions[asset] + match[3]
+
+slides = [re.sub(r'(<img\b[^>]*\bsrc=")(assets/[^"?#]+)(")', version_image, h) for h in slides]
+_revision = hashlib.sha256((''.join(slides) + ''.join(css)).encode()).hexdigest()[:12]
+
 page = f'''<!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="devfit-deck-revision" content="{_revision}">
 <meta name="theme-color" content="#121016"><title>DevFit 최종발표 — Team Dozer</title>
 <style>{core.CSS}{core.EXTRA}{chr(10).join(css)}</style></head><body>
 <noscript><style>.slide:first-of-type{{display:block}}</style></noscript>
