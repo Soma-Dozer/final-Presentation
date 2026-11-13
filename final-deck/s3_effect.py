@@ -675,8 +675,8 @@ Q&A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비공개
 ''')
 
 
-S.append(shell('Effect', 'B2C와 B2B를 잇는 <span class="purple">하나의 채용 플랫폼</span>', '<div class="ef-platform-plan">\n<div class="ef-platform-flow">\n  <article class="ef-platform-side"><div class="ef-platform-label">B2C · 지원자</div><h3>내 코드로 면접 준비</h3><p>공고·GitHub 연동<br>질문 학습·모의면접<br>공고 수집·지원 일정 관리</p><span class="ef-platform-state">운영 중 · 결제 제공</span></article>\n  <div class="ef-platform-arrow" aria-hidden="true">↔</div>\n  <article class="ef-platform-engine"><img src="assets/icon.svg" alt=""><h3>공고 × 커밋 분석 엔진</h3><p>코드 근거를 바탕으로<br>지원자 준비와 기업 검증을 연결</p><div>지원자 질문과 면접관 질문은 분리</div></article>\n  <div class="ef-platform-arrow" aria-hidden="true">↔</div>\n  <article class="ef-platform-side ef-platform-b2b"><div class="ef-platform-label">B2B · 기업</div><h3>개발 경험을 근거로 확인</h3><p>기업 면접관 전용 콘솔<br>구조화 인터뷰 킷·근거 질문<br>평가 기록·채용 관리</p><span class="ef-platform-state">개발 완료</span></article>\n</div>\n<h3 class="ef-platform-goal-title">향후 6개월 목표: <span>B2C 가입 275명, B2B 계약 1곳</span></h3>\n<div class="ef-platform-goals">\n  <article class="ef-platform-b2c-goal"><h4>B2C 가입 목표</h4><div>275<small>명</small><span>추정치</span></div><p>현재 광고비 수준 전제<br>예상 범위 135~382명</p></article>\n  <article class="ef-platform-b2b-goal"><h4>B2B 계약까지의 실행 계획</h4><div class="ef-platform-roadmap">\n    <div><small>2026-11</small><b>회고형 파일럿</b><span>2곳</span></div><i aria-hidden="true">→</i>\n    <div><small>2027-01~02</small><b>실전 파일럿</b><span>2~3곳</span></div><i aria-hidden="true">→</i>\n    <div class="target"><small>2027-03</small><b>계약</b><span>1곳</span></div>\n  </div><p>검증 지표 · 면접관 질문 채택률</p></article>\n</div>\n</div>', source='비전 그림은 중간발표와 동일 · 초록 점 = 운영 중 · 빈 점 = 개발 완료', cls='ef-platform-plan-slide'))
-S.note('[통합 장표] B2C·B2B 플랫폼 비전과 향후 6개월 실행 목표를 함께 제시합니다. 목표는 B2C 가입 275명, B2B 계약 1곳입니다. 현재 계약 성과를 뜻하지 않습니다.\n\n[≈15초] 중간발표에서 말한 비전입니다. 지원자가 자기 코드로 준비하는 B2C와, 면접관이 근거로 검증하는 B2B를 같은 분석 엔진 위에서 하나의 개발자 채용 플랫폼으로 잇습니다. 엔진은 같지만 면접관 질문과 지원자 질문은 서로 공유하지 않습니다. B2C는 공고 수집과 지원 일정 관리까지 운영 중이고, B2B는 개발을 마쳤습니다.\n\n출처: Devfit/brand/platform/vision-diagram.png (중간발표 비전의 내용을 HTML 도식으로 재구성). B2B는 «면접관이 빠뜨린 확인 관점을 알려 주는 커버리지 어시스턴트»로 재정의(중간평가 #17 질문 유출 우려 대응 + 11-02 멘토링 제안).\n\n[6개월 목표의 산정 근거와 계획]\n[≈15초] 앞으로 6개월 목표입니다. B2C는 지금 속도면 가입 275명이고, 범위는 135명에서 382명입니다. B2B는 개발을 마쳤고, 11월 회고형 파일럿 2곳에서 시작해 내년 3월 계약 1곳까지 가고, 면접관이 우리 질문을 실제로 채택하는 비율을 잽니다.\n\n출처: 275명 = 최근 주 7.4명 × 26주 + 83명, 범위 135~382, 현 수준 광고비 전제 · B2B 로드맵 collect/J. 가입자 답변률 목표 25% (Q&A용).\n11/10 18시까지 의향서가 오면 «파일럿 의향서 1건(비구속)»으로 교체.\n⛔ «고객 확보»·«파일럿 진행 중»·«MOU» 금지 (현재 LOI·MOU·계약 0).')
+S.append(shell('Effect', 'B2C와 B2B를 잇는 <span class="purple">하나의 채용 플랫폼</span>', '<div class="ef-platform-original">\n  <div class="ef-platform-picture"><img src="assets/vision-diagram.png" alt="DevFit Platform 비전 — B2C 준비와 B2B 검증을 하나의 개발자 채용 플랫폼으로"></div>\n  <div class="ef-chips"><span>① B2C 준비 · 운영 중 · 결제 LIVE</span><span class="dev">② B2B Enterprise · 개발 완료</span><span>③ 공고 29곳 수집 · 지원 여정 트래커</span></div>\n  <div class="ef-platform-summary">\n    <h3>향후 6개월 목표: <span>B2C 가입 275명, B2B 계약 1곳</span></h3>\n    <div class="ef-platform-summary-detail">\n      <div class="ef-platform-estimate"><b>B2C 예상 범위 135~382명</b><span>현재 광고비 수준 전제 · 추정치</span></div>\n      <div class="ef-platform-milestones">\n        <div><small>2026-11</small><b>회고형 파일럿 2곳</b></div><i aria-hidden="true">→</i>\n        <div><small>2027-01~02</small><b>실전 파일럿 2~3곳</b></div><i aria-hidden="true">→</i>\n        <div><small>2027-03</small><b>B2B 계약 1곳</b></div>\n      </div>\n      <div class="ef-platform-measure"><span>검증 지표</span><b>면접관 질문 채택률</b></div>\n    </div>\n  </div>\n</div>', source='중간발표 비전 그림 원본 · 6개월 목표는 추정 및 계획', cls='ef-platform-plan-slide'))
+S.note('[통합 장표] B2C·B2B 플랫폼 비전과 향후 6개월 실행 목표를 함께 제시합니다. 목표는 B2C 가입 275명, B2B 계약 1곳입니다. 현재 계약 성과를 뜻하지 않습니다.\n\n[≈15초] 중간발표에서 말한 비전입니다. 지원자가 자기 코드로 준비하는 B2C와, 면접관이 근거로 검증하는 B2B를 같은 분석 엔진 위에서 하나의 개발자 채용 플랫폼으로 잇습니다. 엔진은 같지만 면접관 질문과 지원자 질문은 서로 공유하지 않습니다. B2C는 공고 수집과 지원 일정 관리까지 운영 중이고, B2B는 개발을 마쳤습니다.\n\n출처: Devfit/brand/platform/vision-diagram.png (중간발표와 같은 원본 그림을 그대로 사용, 하단에 6개월 목표와 계획 추가). B2B는 «면접관이 빠뜨린 확인 관점을 알려 주는 커버리지 어시스턴트»로 재정의(중간평가 #17 질문 유출 우려 대응 + 11-02 멘토링 제안).\n\n[6개월 목표의 산정 근거와 계획]\n[≈15초] 앞으로 6개월 목표입니다. B2C는 지금 속도면 가입 275명이고, 범위는 135명에서 382명입니다. B2B는 개발을 마쳤고, 11월 회고형 파일럿 2곳에서 시작해 내년 3월 계약 1곳까지 가고, 면접관이 우리 질문을 실제로 채택하는 비율을 잽니다.\n\n출처: 275명 = 최근 주 7.4명 × 26주 + 83명, 범위 135~382, 현 수준 광고비 전제 · B2B 로드맵 collect/J. 가입자 답변률 목표 25% (Q&A용).\n11/10 18시까지 의향서가 오면 «파일럿 의향서 1건(비구속)»으로 교체.\n⛔ «고객 확보»·«파일럿 진행 중»·«MOU» 금지 (현재 LOI·MOU·계약 0).')
 
 # ---------- 부록 A22~A26: DevFit Enterprise 사용 설명서 (11-11 사용자 지시 «b2b 상세 내용을 어펜딕스에 사용설명서처럼») ----------
 def entm(pages, cols):
@@ -794,37 +794,22 @@ CSS += r"""
 .dc-priced .dc-t td{padding:20px 8px;font-size:30px;vertical-align:middle}
 .dc-priced .dc-t td:first-child{font-size:25px;line-height:1.4}
 .dc-scope{display:block;font-size:17px;line-height:1.3;font-weight:750;margin-top:4px;white-space:nowrap}
-/* Platform vision and the next six months. */
-.ef-platform-plan{display:flex;flex-direction:column;gap:24px;flex:1;min-height:0}
-.ef-platform-flow{display:grid;grid-template-columns:1fr 44px 1.05fr 44px 1fr;gap:14px;align-items:stretch;min-height:320px}
-.ef-platform-side,.ef-platform-engine{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 30px;min-width:0}
-.ef-platform-label{font-size:24px;line-height:1.3;font-weight:850;color:var(--purple-deep)}
-.ef-platform-side h3{font-size:32px;line-height:1.35;font-weight:900;margin:14px 0;letter-spacing:-.04em}
-.ef-platform-side p{font-size:24px;line-height:1.65;font-weight:650;margin:0}
-.ef-platform-state{display:inline-block;margin-top:18px;font-size:18px;line-height:1.3;font-weight:700;padding:6px 12px;border-radius:8px;background:#f2efff;color:var(--purple-deep)}
-.ef-platform-b2b .ef-platform-label{color:#005ce6}
-.ef-platform-b2b .ef-platform-state{background:#eef4ff;color:#005ce6}
-.ef-platform-arrow{display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;color:var(--purple)}
-.ef-platform-engine{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--purple-pale);border-color:#d8d0fb}
-.ef-platform-engine img{width:60px;height:60px;border-radius:15px;margin-bottom:18px}
-.ef-platform-engine h3{font-size:29px;line-height:1.3;font-weight:900;letter-spacing:-.04em;margin:0 0 14px}
-.ef-platform-engine p{font-size:23px;line-height:1.5;font-weight:700;margin:0}
-.ef-platform-engine>div{font-size:19px;line-height:1.4;font-weight:800;color:var(--purple-deep);margin-top:22px}
-.ef-platform-goal-title{font-size:30px;line-height:1.35;font-weight:900;letter-spacing:-.035em;margin:0}
-.ef-platform-goal-title span{color:var(--purple-deep)}
-.ef-platform-goals{display:grid;grid-template-columns:.68fr 1.7fr;gap:24px;flex:1;min-height:0}
-.ef-platform-b2c-goal,.ef-platform-b2b-goal{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 28px}
-.ef-platform-goals h4{font-size:25px;line-height:1.3;font-weight:850;margin:0 0 15px}
-.ef-platform-b2c-goal>div{font-size:68px;line-height:1;font-weight:900;color:var(--purple-deep)}
-.ef-platform-b2c-goal small{font-size:28px;margin-left:8px}
-.ef-platform-b2c-goal>div span{font-size:18px;vertical-align:middle;margin-left:18px;padding:5px 9px;background:var(--purple-pale);border-radius:7px}
-.ef-platform-b2c-goal p{font-size:20px;line-height:1.45;font-weight:650;margin:16px 0 0}
-.ef-platform-roadmap{display:grid;grid-template-columns:1fr 36px 1fr 36px 1fr;gap:12px;align-items:center}
-.ef-platform-roadmap>div{background:#f7f6fa;border-radius:14px;padding:18px 12px;text-align:center;min-width:0}
-.ef-platform-roadmap small{display:block;font-size:20px;font-weight:750;color:var(--purple-deep);line-height:1.3}
-.ef-platform-roadmap b{display:block;font-size:26px;line-height:1.3;font-weight:850;margin:11px 0 8px}
-.ef-platform-roadmap span{display:block;font-size:31px;font-weight:900;line-height:1.2}
-.ef-platform-roadmap i{font-style:normal;font-size:32px;color:var(--purple);font-weight:900;text-align:center}
-.ef-platform-roadmap .target{background:var(--purple-pale)}
-.ef-platform-b2b-goal>p{font-size:20px;line-height:1.4;font-weight:700;margin:17px 0 0;text-align:center}
+/* Original platform image, with compact six-month goals below it. */
+.ef-platform-original{display:flex;flex-direction:column;align-items:center;gap:13px;flex:1;min-height:0;width:100%}
+.ef-platform-picture{width:100%;flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.ef-platform-picture img{display:block;width:auto;height:100%;max-width:100%;object-fit:contain;border-radius:18px}
+.ef-platform-original .ef-chips{font-size:19px;gap:30px;flex:none;line-height:1.35}
+.ef-platform-original .ef-chips span:before{width:10px;height:10px;margin-right:8px}
+.ef-platform-summary{width:100%;flex:none;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 24px}
+.ef-platform-summary h3{font-size:25px;line-height:1.3;font-weight:900;letter-spacing:-.03em;margin:0 0 12px}
+.ef-platform-summary h3 span{color:var(--purple-deep)}
+.ef-platform-summary-detail{display:grid;grid-template-columns:360px 1fr 235px;gap:24px;align-items:center}
+.ef-platform-estimate,.ef-platform-measure{display:flex;flex-direction:column;gap:7px}
+.ef-platform-estimate b,.ef-platform-measure b{font-size:20px;line-height:1.3;font-weight:800}
+.ef-platform-estimate span,.ef-platform-measure span{font-size:18px;line-height:1.3;font-weight:650}
+.ef-platform-milestones{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr;gap:10px;align-items:center;padding:0 24px;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.ef-platform-milestones>div{display:flex;flex-direction:column;gap:7px;align-items:center}
+.ef-platform-milestones small{font-size:18px;line-height:1.3;font-weight:750;color:var(--purple-deep)}
+.ef-platform-milestones b{font-size:20px;line-height:1.3;font-weight:850;white-space:nowrap}
+.ef-platform-milestones i{font-size:25px;line-height:1;font-style:normal;color:var(--purple);text-align:center}
 """
