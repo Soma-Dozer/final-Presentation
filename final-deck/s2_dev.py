@@ -154,6 +154,15 @@ CSS = r"""
 .dv-inf figure{margin:0;min-height:0}.dv-inf img{width:100%;display:block;border-radius:12px;border:1.5px solid #e4e0ea;background:#fff}.dv-inf figcaption{margin-top:6px;font-size:14px;font-weight:800;color:#8a85a0;text-align:center}
 .dv-inf aside{display:flex;flex-direction:column;gap:12px}.dv-inf aside div{background:#fff;border:2px solid #ece9f1;border-radius:16px;padding:14px 18px}.dv-inf aside div.on{border-color:var(--purple);background:var(--purple-pale)}
 .dv-inf small{display:block;font-size:13px;font-weight:900;color:var(--purple)}.dv-inf b{display:block;font-size:20px;font-weight:900;letter-spacing:-.03em;margin-top:2px}.dv-inf span{display:block;font-size:15px;font-weight:700;color:var(--muted);line-height:1.4;margin-top:4px;word-break:keep-all}
+.dv-vtl{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;width:1500px;max-width:100%;margin:12px auto auto}
+.dv-sp.dv-sp1{margin:12px auto 0;padding:11px 26px;font-size:20.5px;border-radius:16px;text-align:center}
+.dv-vtl>div{position:relative;background:#fff;border:2px solid #ece9f1;border-radius:16px;padding:13px 20px 14px;display:flex;flex-direction:column;gap:2px}
+.dv-vtl>div.on{border-color:var(--purple);background:var(--purple-pale)}
+.dv-vtl>div:not(:last-child)::after{content:"→";position:absolute;right:-19px;top:50%;transform:translateY(-50%);color:var(--purple);font-size:18px;font-weight:900}
+.dv-vtl small{font-size:14px;font-weight:900;color:var(--purple)}
+.dv-vtl b{font-size:21px;font-weight:900;letter-spacing:-.03em;line-height:1.3}
+.dv-vtl span{font-size:15.5px;font-weight:700;line-height:1.4;color:#4a4552;word-break:keep-all}
+.dv-vtl span em{font-style:normal;font-weight:900;color:var(--purple)}
 .dv-sp{margin:16px auto auto;width:1500px;max-width:100%;font-size:21px;padding:16px 26px}.dv-sp strong{color:var(--purple)}.dv-dm .new li{grid-template-columns:32px 186px 1fr!important;column-gap:10px!important}.dv-dm .new li span{font-size:16px!important}.dv-dm .new{padding-left:24px!important;padding-right:22px!important}
 .dv-p11{display:grid;grid-template-columns:1200px 1fr;gap:26px;align-items:center;margin:auto 0}.dv-p11 .l{display:flex;flex-direction:column}.dv-p11 .dv-lg{justify-content:flex-start;margin-top:12px}
 .dv-models{background:var(--purple-pale);border-radius:22px;padding:20px 20px 16px;display:flex;flex-direction:column;gap:8px}.dv-models h4{margin:0 0 4px;font-size:22px;font-weight:900;letter-spacing:-.03em}
@@ -1033,10 +1042,18 @@ S.append(shell('Development · 개발', '5. 모의면접과 음성 인식', f'''
    ('fu.t', 'a.t', '꼬리질문에 다시 답변 · 최대 5단', 'loop', [(1345, 16), (625, 16)]),
    ('rec.b', 'ws.l', '음성 스트림'), ('ws.b', 'stt.l'), ('stt.r', 'vf.b', '전사 텍스트'), ('vf.t', 'tts.l'),
    ('tts.l@0.25', 'rec.r@0.25', '다음 문항: 다시 음성 답변', 'loop')],
-  [(0, 0, 0, 225, '텍스트', 'lane'), (0, 252, 0, 148, '음성<br>브라우저', 'lane'), (0, 412, 0, 148, '음성<br>Spring 서버', 'lane'), (0, 572, 0, 148, '음성<br>사이드카', 'lane')]).replace('class="dv-wf dv-dg" style="', 'class="dv-wf dv-dg" style="zoom:.86;margin:auto auto 0;', 1)}
-<div class="dv-q dv-sp">브라우저는 녹음과 16kHz 변환까지만, 인식은 서버에서 <strong>실시간 자막용(Whisper small)과 최종 답변용(large-v3-turbo)으로 분리</strong>해 속도와 정확도를 함께 확보<small>자막 약 0.9초 간격 갱신 · 최종 답변 문자 오류율 5.82% · 브라우저 전송량 48kHz 대비 1/3</small></div>''',
-    source='origin/prod BedrockService evaluateAnswer(code 모델, temperature 0.15, JSON Schema) · StudySetService MAX_FOLLOW_UP_CHAIN=5 · BE c5a3ac7 → prod 9a808a2 (09-07) · public/pcm-worklet.js · speech-local(STT 하이브리드 b929ec4) · generateVoiceFollowUp(reasoning, 0.2) · VoiceDialogue.MAX_QUESTIONS 5 · 특허 출원 10-2026-0214811'))
-S.note('''[≈20초] 다음은 모의면접과 음성 인식입니다. 위는 텍스트입니다. 답을 쓰면 피드백과 꼬리질문이 나오고, 꼬리질문에 답하면 또 이어져 최대 5단까지 갑니다. 아래는 음성입니다. 브라우저에서 16kHz로 녹음해 서버로 보내고, 자막은 작은 모델로 빠르게 띄우고 저장용 글은 큰 모델로 확정합니다. 그 답을 보고 꼬리질문을 하나 만들어 음성으로 되묻습니다. 최대 5문항입니다.
+  [(0, 0, 0, 225, '텍스트', 'lane'), (0, 252, 0, 148, '음성<br>브라우저', 'lane'), (0, 412, 0, 148, '음성<br>Spring 서버', 'lane'), (0, 572, 0, 148, '음성<br>사이드카', 'lane')]).replace('class="dv-wf dv-dg" style="', 'class="dv-wf dv-dg" style="zoom:.79;margin:auto auto 0;', 1)}
+<div class="dv-q dv-sp dv-sp1">브라우저는 녹음과 16kHz 변환까지만, 인식은 서버에서 <strong>실시간 자막용(Whisper small)과 최종 답변용(large-v3-turbo)으로 분리</strong>해 속도와 정확도를 함께 확보</div>
+<div class="dv-vtl">
+  <div><small>09-16 출시</small><b>음성 모의면접</b><span>녹음, STT, 꼬리질문, TTS로 되묻기</span></div>
+  <div><small>09-18 2차</small><b>답변 종료 안정화</b><span>수신 종료와 전사 완료를 분리, <em>답변 3분까지</em></span></div>
+  <div><small>09-22 3차</small><b>실시간 자막 지원</b><span>자막과 최종 답변 모델을 분리, <em>오류율 5.82%</em></span></div>
+  <div class="on"><small>10-09 4차</small><b>꼬리질문 지원</b><span>미리 만든 질문 대신 <em>내 답변을 보고</em> 60자 이하 1개</span></div>
+</div>''',
+    source='origin/prod BedrockService evaluateAnswer(code 모델, temperature 0.15, JSON Schema) · StudySetService MAX_FOLLOW_UP_CHAIN=5 · BE c5a3ac7 → prod 9a808a2 (09-07) · public/pcm-worklet.js · speech-local(STT 하이브리드 b929ec4) · generateVoiceFollowUp(reasoning, 0.2) · VoiceDialogue.MAX_QUESTIONS 5 · 특허 출원 10-2026-0214811 · prod 반영: 98ebb0f(09-16) · 08abfcb(09-18) · fcb5b41(09-22) · 9f7b934(10-09)'))
+S.note('''[≈20초] 다음은 모의면접과 음성 인식입니다. 위는 텍스트입니다. 답을 쓰면 피드백과 꼬리질문이 나오고, 꼬리질문에 답하면 또 이어져 최대 5단까지 갑니다. 아래는 음성입니다. 브라우저에서 16kHz로 녹음해 서버로 보내고, 자막은 작은 모델로 빠르게 띄우고 저장용 글은 큰 모델로 확정합니다. 그 답을 보고 꼬리질문을 하나 만들어 음성으로 되묻습니다. 최대 5문항입니다. 맨 아래는 출시 후 개선입니다. 9월 16일에 음성을 내고 세 번 더 고쳤습니다. 말을 끝내도 멈추지 않던 문제, 자막이 늦던 문제, 꼬리질문이 내 답을 안 보던 문제입니다.
+
+[2026-11-13 통합: 음성 발전과정 장(2차~4차)을 아래 띠로 줄여 넣음. 원래 장은 바로 아래 PARK에 보관. 띠에서 뺀 수치: 타임아웃 정렬 40초 < 45초 < 60초, 자막 오류율 9.75%, 음성 1분당 처리 6.64초 vs 13.72초, 1/4 → 4/4(fixture)]
 
 출처(텍스트): 녹취 docs/feedback/record/260907-한유일멘토님.txt:104 · BE c5a3ac7 → prod 9a808a2(09-07) · StudySetService.java:44. 꼬리질문 깊어지는 순서: 대안 → 실패·엣지 → 검증.
 출처(음성): 녹취 260907-한유일멘토님.txt:251-254 · prod 98ebb0f(09-16 «음성 모의면접 Supertonic 전환») · speech-local/README.md(whisper small 자막 · large-v3-turbo 확정, 8초 넘으면 발화 경계에서 확정).
@@ -1059,7 +1076,8 @@ PARK.note('''[≈12초] 모의면접은 이렇게 바뀌어 왔습니다. 9월 7
 출처: 녹취 docs/feedback/record/260907-한유일멘토님.txt:104 · :251-254 · BE c5a3ac7 → prod 9a808a2(09-07) · prod 98ebb0f(09-16 «음성 모의면접 Supertonic 전환»).
 측정값 없음: 피드백 지연 전후 수치(«이후 잘림 재현 없음»은 정성 서술).''')
 
-S.append(shell('Development · 개발', '5. 모의면접과 음성 인식', '''<div class="dx dx-pipe">
+# (11-13 사용자: 음성 발전과정 장은 줄여서 위 장 아래 띠로 합침. 원본은 보류)
+PARK.append(shell('Development · 개발', '5. 모의면접과 음성 인식', '''<div class="dx dx-pipe">
   <div class="lane"><div class="hit">녹음 · 수신<small>브라우저 → 서버</small></div><div class="hit">전사 · 종료<small>사이드카</small></div><div class="hit">실시간 자막<small>Whisper small</small></div><div class="hit">최종 답변<small>large-v3-turbo</small></div><div class="hit">꼬리질문<small>답변 → 질문 → TTS</small></div></div>
   <div class="fx">
     <div class="s"><small>09-18 · 2차</small><h4>답변 종료 안정화</h4><p><i>문제</i>말을 끝내도 전사가 끝나지 않아 종료가 타임아웃</p><p><i class="s">해결</i>수신 종료와 전사 완료를 분리 · 타임아웃을 사이드카 40초 &lt; 서버 45초 &lt; 브라우저 60초로 정렬</p><em>답변 3분까지<small>종료 타임아웃 해결과 함께 확대</small></em></div>
@@ -1068,7 +1086,7 @@ S.append(shell('Development · 개발', '5. 모의면접과 음성 인식', '''<
   </div>
 </div>''',
     source='prod 반영: 08abfcb(09-18) · fcb5b41(09-22) · 9f7b934(10-09) · speech-local/README.md · question-logic-v13-2026-10-16.md:12'))
-S.note('''[≈10초] 음성은 출시하고 세 번 더 고쳤습니다. 말을 끝내도 멈추지 않던 문제는 수신과 전사를 분리하고 타임아웃 순서를 맞춰 풀었습니다. 자막이 늦던 문제는 자막과 저장을 다른 모델로 나눠 풀었습니다. 꼬리질문이 내 답을 안 보던 문제는 답변을 보고 만들게 바꿨습니다.
+PARK.note('''[≈10초] 음성은 출시하고 세 번 더 고쳤습니다. 말을 끝내도 멈추지 않던 문제는 수신과 전사를 분리하고 타임아웃 순서를 맞춰 풀었습니다. 자막이 늦던 문제는 자막과 저장을 다른 모델로 나눠 풀었습니다. 꼬리질문이 내 답을 안 보던 문제는 답변을 보고 만들게 바꿨습니다.
 
 출처: 54001a2·917876f → 08abfcb(09-18) · b929ec4 → fcb5b41(09-22) · c4f7169·1e9193a → 9f7b934(10-09).
 음성 수치(최종보고서 기준): 문자 오류율(CER) 14.7% → 5.6%(-9.1%p, 합성 음성 4가지 문장 구조 벤치마크) · 이중 구조 비교 — 자막 Whisper small 음성 1분당 6.64초 · 오류율 9.75% / 최종 답변 large-v3-turbo 13.72초 · 5.82%. 자막 갱신 간격 약 0.9초는 설정값.

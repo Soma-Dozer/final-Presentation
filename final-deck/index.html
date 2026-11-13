@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="devfit-deck-revision" content="37c4428ee235">
+<meta name="devfit-deck-revision" content="cfedd179ea0c">
 <meta name="theme-color" content="#121016"><title>DevFit 최종발표 — Team Dozer</title>
 <style>
 @font-face {
@@ -2008,6 +2008,15 @@ img{display:block}
 .dv-inf figure{margin:0;min-height:0}.dv-inf img{width:100%;display:block;border-radius:12px;border:1.5px solid #e4e0ea;background:#fff}.dv-inf figcaption{margin-top:6px;font-size:14px;font-weight:800;color:#8a85a0;text-align:center}
 .dv-inf aside{display:flex;flex-direction:column;gap:12px}.dv-inf aside div{background:#fff;border:2px solid #ece9f1;border-radius:16px;padding:14px 18px}.dv-inf aside div.on{border-color:var(--purple);background:var(--purple-pale)}
 .dv-inf small{display:block;font-size:13px;font-weight:900;color:var(--purple)}.dv-inf b{display:block;font-size:20px;font-weight:900;letter-spacing:-.03em;margin-top:2px}.dv-inf span{display:block;font-size:15px;font-weight:700;color:var(--muted);line-height:1.4;margin-top:4px;word-break:keep-all}
+.dv-vtl{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;width:1500px;max-width:100%;margin:12px auto auto}
+.dv-sp.dv-sp1{margin:12px auto 0;padding:11px 26px;font-size:20.5px;border-radius:16px;text-align:center}
+.dv-vtl>div{position:relative;background:#fff;border:2px solid #ece9f1;border-radius:16px;padding:13px 20px 14px;display:flex;flex-direction:column;gap:2px}
+.dv-vtl>div.on{border-color:var(--purple);background:var(--purple-pale)}
+.dv-vtl>div:not(:last-child)::after{content:"→";position:absolute;right:-19px;top:50%;transform:translateY(-50%);color:var(--purple);font-size:18px;font-weight:900}
+.dv-vtl small{font-size:14px;font-weight:900;color:var(--purple)}
+.dv-vtl b{font-size:21px;font-weight:900;letter-spacing:-.03em;line-height:1.3}
+.dv-vtl span{font-size:15.5px;font-weight:700;line-height:1.4;color:#4a4552;word-break:keep-all}
+.dv-vtl span em{font-style:normal;font-weight:900;color:var(--purple)}
 .dv-sp{margin:16px auto auto;width:1500px;max-width:100%;font-size:21px;padding:16px 26px}.dv-sp strong{color:var(--purple)}.dv-dm .new li{grid-template-columns:32px 186px 1fr!important;column-gap:10px!important}.dv-dm .new li span{font-size:16px!important}.dv-dm .new{padding-left:24px!important;padding-right:22px!important}
 .dv-p11{display:grid;grid-template-columns:1200px 1fr;gap:26px;align-items:center;margin:auto 0}.dv-p11 .l{display:flex;flex-direction:column}.dv-p11 .dv-lg{justify-content:flex-start;margin-top:12px}
 .dv-models{background:var(--purple-pale);border-radius:22px;padding:20px 20px 16px;display:flex;flex-direction:column;gap:8px}.dv-models h4{margin:0 0 4px;font-size:22px;font-weight:900;letter-spacing:-.03em}
@@ -3828,12 +3837,20 @@ Q&amp;A: 11-05 감사에서 엉뚱한 매칭 사례(회사 필터 없음) → �
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Development · 개발</div><h1 class="title">5. 모의면접과 음성 인식</h1></header>
     <div class="slide-content">
-<div class="dv-wf dv-dg" style="zoom:.86;margin:auto auto 0;height:730px"><div class="lane" style="top:0px;height:225px"><i>텍스트</i></div><div class="lane" style="top:252px;height:148px"><i>음성<br>브라우저</i></div><div class="lane" style="top:412px;height:148px"><i>음성<br>Spring 서버</i></div><div class="lane" style="top:572px;height:148px"><i>음성<br>사이드카</i></div><svg class="e" viewBox="0 0 1500 730"><defs><marker id="dg6n" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse" style="overflow:visible"><path d="M0 0 L10 5 L0 10 z" fill="var(--purple)" transform="scale(1.6) translate(-4 -2)"/></marker><marker id="dg6hit" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse" style="overflow:visible"><path d="M0 0 L10 5 L0 10 z" fill="var(--purple)" transform="scale(1.6) translate(-4 -2)"/></marker><marker id="dg6loop" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse" style="overflow:visible"><path d="M0 0 L10 5 L0 10 z" fill="#e0485c" transform="scale(1.6) translate(-4 -2)"/></marker><marker id="dg6dash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse" style="overflow:visible"><path d="M0 0 L10 5 L0 10 z" fill="#b9b4c6" transform="scale(1.6) translate(-4 -2)"/></marker></defs><path d="M420 110 L480 110" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M770 110 L830 110" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M1140 110 L1200 110" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M1345 40 L1345 16 L625 16 L625 40" fill="none" stroke="#e0485c" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8" marker-end="url(#dg6loop)"/><path d="M255 388 L255 485 L330 485" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M480 548 L480 645 L600 645" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M880 645 L1040 645 L1040 548" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M1040 422 L1040 325 L1220 325" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M1220 294 L380 294" fill="none" stroke="#e0485c" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8" marker-end="url(#dg6loop)"/></svg><div class="n " style="left:130px;top:40px;width:290px;height:140px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg></span><b>본 질문</b></div><span>내 코드 근거 · 의도 7유형</span></div><div class="n " style="left:480px;top:40px;width:290px;height:140px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></span><b>내 답변</b></div><span>텍스트 입력</span></div><div class="n on" style="left:830px;top:40px;width:310px;height:140px"><div class="hd"><img class="lg" src="assets/dv-logo-qwen-color.svg?v=1a45d6f8d69a" alt=""><b>피드백</b></div><span>질문이 요구한 확인점으로 채점 · 묻지 않은 것은 감점 안 함</span><em class="llm">Qwen3-Coder</em></div><div class="n " style="left:1200px;top:40px;width:290px;height:140px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg></span><b>꼬리질문</b></div><span>답할 때마다 다음 꼬리질문 2~3개 · 대안 → 실패·엣지 → 검증</span></div><div class="n " style="left:130px;top:262px;width:250px;height:126px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0013 0M12 17.5V21"/></svg></span><b>녹음</b></div><span>16kHz PCM, 답변 최대 3분</span></div><div class="n " style="left:330px;top:422px;width:300px;height:126px"><div class="hd"><img class="lg" src="assets/dv-logo-spring.svg?v=92a748eb1089" alt=""><b>WebSocket 프록시</b></div><span>세션·소유권 검증 · 동시 4세션</span></div><div class="n on" style="left:600px;top:582px;width:280px;height:126px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></span><b>STT</b></div><span>자막은 작은 모델 ≈0.9초 · 저장은 큰 모델로 확정</span></div><div class="n " style="left:900px;top:422px;width:280px;height:126px"><div class="hd"><img class="lg" src="assets/dv-logo-zhipu-color.svg?v=8174e65ff716" alt=""><b>꼬리질문 (GLM-5)</b></div><span>내 답변을 보고 60자 이하 1개</span></div><div class="n " style="left:1220px;top:262px;width:270px;height:126px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9a4 4 0 010 6M18.5 6.5a7.5 7.5 0 010 11"/></svg></span><b>TTS로 되묻기</b></div><span>세트 생성 때 미리 합성 · 최대 5문항</span></div><div class="lb loop" style="left:985px;top:16px">꼬리질문에 다시 답변 · 최대 5단</div><div class="lb " style="left:255px;top:436px">음성 스트림</div><div class="lb " style="left:960px;top:645px">전사 텍스트</div><div class="lb loop" style="left:800px;top:294px">다음 문항: 다시 음성 답변</div></div>
-<div class="dv-q dv-sp">브라우저는 녹음과 16kHz 변환까지만, 인식은 서버에서 <strong>실시간 자막용(Whisper small)과 최종 답변용(large-v3-turbo)으로 분리</strong>해 속도와 정확도를 함께 확보<small>자막 약 0.9초 간격 갱신 · 최종 답변 문자 오류율 5.82% · 브라우저 전송량 48kHz 대비 1/3</small></div></div>
+<div class="dv-wf dv-dg" style="zoom:.79;margin:auto auto 0;height:730px"><div class="lane" style="top:0px;height:225px"><i>텍스트</i></div><div class="lane" style="top:252px;height:148px"><i>음성<br>브라우저</i></div><div class="lane" style="top:412px;height:148px"><i>음성<br>Spring 서버</i></div><div class="lane" style="top:572px;height:148px"><i>음성<br>사이드카</i></div><svg class="e" viewBox="0 0 1500 730"><defs><marker id="dg6n" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse" style="overflow:visible"><path d="M0 0 L10 5 L0 10 z" fill="var(--purple)" transform="scale(1.6) translate(-4 -2)"/></marker><marker id="dg6hit" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse" style="overflow:visible"><path d="M0 0 L10 5 L0 10 z" fill="var(--purple)" transform="scale(1.6) translate(-4 -2)"/></marker><marker id="dg6loop" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse" style="overflow:visible"><path d="M0 0 L10 5 L0 10 z" fill="#e0485c" transform="scale(1.6) translate(-4 -2)"/></marker><marker id="dg6dash" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="userSpaceOnUse" style="overflow:visible"><path d="M0 0 L10 5 L0 10 z" fill="#b9b4c6" transform="scale(1.6) translate(-4 -2)"/></marker></defs><path d="M420 110 L480 110" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M770 110 L830 110" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M1140 110 L1200 110" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M1345 40 L1345 16 L625 16 L625 40" fill="none" stroke="#e0485c" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8" marker-end="url(#dg6loop)"/><path d="M255 388 L255 485 L330 485" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M480 548 L480 645 L600 645" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M880 645 L1040 645 L1040 548" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M1040 422 L1040 325 L1220 325" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linejoin="round" marker-end="url(#dg6n)"/><path d="M1220 294 L380 294" fill="none" stroke="#e0485c" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 8" marker-end="url(#dg6loop)"/></svg><div class="n " style="left:130px;top:40px;width:290px;height:140px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg></span><b>본 질문</b></div><span>내 코드 근거 · 의도 7유형</span></div><div class="n " style="left:480px;top:40px;width:290px;height:140px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></span><b>내 답변</b></div><span>텍스트 입력</span></div><div class="n on" style="left:830px;top:40px;width:310px;height:140px"><div class="hd"><img class="lg" src="assets/dv-logo-qwen-color.svg?v=1a45d6f8d69a" alt=""><b>피드백</b></div><span>질문이 요구한 확인점으로 채점 · 묻지 않은 것은 감점 안 함</span><em class="llm">Qwen3-Coder</em></div><div class="n " style="left:1200px;top:40px;width:290px;height:140px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg></span><b>꼬리질문</b></div><span>답할 때마다 다음 꼬리질문 2~3개 · 대안 → 실패·엣지 → 검증</span></div><div class="n " style="left:130px;top:262px;width:250px;height:126px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0013 0M12 17.5V21"/></svg></span><b>녹음</b></div><span>16kHz PCM, 답변 최대 3분</span></div><div class="n " style="left:330px;top:422px;width:300px;height:126px"><div class="hd"><img class="lg" src="assets/dv-logo-spring.svg?v=92a748eb1089" alt=""><b>WebSocket 프록시</b></div><span>세션·소유권 검증 · 동시 4세션</span></div><div class="n on" style="left:600px;top:582px;width:280px;height:126px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></span><b>STT</b></div><span>자막은 작은 모델 ≈0.9초 · 저장은 큰 모델로 확정</span></div><div class="n " style="left:900px;top:422px;width:280px;height:126px"><div class="hd"><img class="lg" src="assets/dv-logo-zhipu-color.svg?v=8174e65ff716" alt=""><b>꼬리질문 (GLM-5)</b></div><span>내 답변을 보고 60자 이하 1개</span></div><div class="n " style="left:1220px;top:262px;width:270px;height:126px"><div class="hd"><span class="ic "><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9a4 4 0 010 6M18.5 6.5a7.5 7.5 0 010 11"/></svg></span><b>TTS로 되묻기</b></div><span>세트 생성 때 미리 합성 · 최대 5문항</span></div><div class="lb loop" style="left:985px;top:16px">꼬리질문에 다시 답변 · 최대 5단</div><div class="lb " style="left:255px;top:436px">음성 스트림</div><div class="lb " style="left:960px;top:645px">전사 텍스트</div><div class="lb loop" style="left:800px;top:294px">다음 문항: 다시 음성 답변</div></div>
+<div class="dv-q dv-sp dv-sp1">브라우저는 녹음과 16kHz 변환까지만, 인식은 서버에서 <strong>실시간 자막용(Whisper small)과 최종 답변용(large-v3-turbo)으로 분리</strong>해 속도와 정확도를 함께 확보</div>
+<div class="dv-vtl">
+  <div><small>09-16 출시</small><b>음성 모의면접</b><span>녹음, STT, 꼬리질문, TTS로 되묻기</span></div>
+  <div><small>09-18 2차</small><b>답변 종료 안정화</b><span>수신 종료와 전사 완료를 분리, <em>답변 3분까지</em></span></div>
+  <div><small>09-22 3차</small><b>실시간 자막 지원</b><span>자막과 최종 답변 모델을 분리, <em>오류율 5.82%</em></span></div>
+  <div class="on"><small>10-09 4차</small><b>꼬리질문 지원</b><span>미리 만든 질문 대신 <em>내 답변을 보고</em> 60자 이하 1개</span></div>
+</div></div>
     <div class="folio"></div>
     
   </div>
-<template class="notes">[≈20초] 다음은 모의면접과 음성 인식입니다. 위는 텍스트입니다. 답을 쓰면 피드백과 꼬리질문이 나오고, 꼬리질문에 답하면 또 이어져 최대 5단까지 갑니다. 아래는 음성입니다. 브라우저에서 16kHz로 녹음해 서버로 보내고, 자막은 작은 모델로 빠르게 띄우고 저장용 글은 큰 모델로 확정합니다. 그 답을 보고 꼬리질문을 하나 만들어 음성으로 되묻습니다. 최대 5문항입니다.
+<template class="notes">[≈20초] 다음은 모의면접과 음성 인식입니다. 위는 텍스트입니다. 답을 쓰면 피드백과 꼬리질문이 나오고, 꼬리질문에 답하면 또 이어져 최대 5단까지 갑니다. 아래는 음성입니다. 브라우저에서 16kHz로 녹음해 서버로 보내고, 자막은 작은 모델로 빠르게 띄우고 저장용 글은 큰 모델로 확정합니다. 그 답을 보고 꼬리질문을 하나 만들어 음성으로 되묻습니다. 최대 5문항입니다. 맨 아래는 출시 후 개선입니다. 9월 16일에 음성을 내고 세 번 더 고쳤습니다. 말을 끝내도 멈추지 않던 문제, 자막이 늦던 문제, 꼬리질문이 내 답을 안 보던 문제입니다.
+
+[2026-11-13 통합: 음성 발전과정 장(2차~4차)을 아래 띠로 줄여 넣음. 원래 장은 바로 아래 PARK에 보관. 띠에서 뺀 수치: 타임아웃 정렬 40초 &lt; 45초 &lt; 60초, 자막 오류율 9.75%, 음성 1분당 처리 6.64초 vs 13.72초, 1/4 → 4/4(fixture)]
 
 출처(텍스트): 녹취 docs/feedback/record/260907-한유일멘토님.txt:104 · BE c5a3ac7 → prod 9a808a2(09-07) · StudySetService.java:44. 꼬리질문 깊어지는 순서: 대안 → 실패·엣지 → 검증.
 출처(음성): 녹취 260907-한유일멘토님.txt:251-254 · prod 98ebb0f(09-16 «음성 모의면접 Supertonic 전환») · speech-local/README.md(whisper small 자막 · large-v3-turbo 확정, 8초 넘으면 발화 경계에서 확정).
@@ -3841,30 +3858,8 @@ Q&amp;A: 11-05 감사에서 엉뚱한 매칭 사례(회사 필터 없음) → �
 🔴 확인 필요: 운영 STT provider(env APP_SPEECH_PROVIDER). 코드 기본값·09-16 릴리스는 자체 사이드카(faster-whisper STT + Supertonic TTS), AwsSpeechProvider(Transcribe·Polly)는 대체 경로. 확인 전엔 «Transcribe»라고 말하지 말 것.
 ⛔ 자체 음성 모델 주장 금지(오픈소스 모델 사용). Q&amp;A: 텍스트 세트 완료 4.4%(182 중 8) · 음성 세트 18건 생성·완료 0건 → 완주가 다음 병목 · 개인정보처리방침에 음성 항목 없음(K-compliance) → 발표 전 확인.
 
-[장표 출처 — 화면에서는 뺌] origin/prod BedrockService evaluateAnswer(code 모델, temperature 0.15, JSON Schema) · StudySetService MAX_FOLLOW_UP_CHAIN=5 · BE c5a3ac7 → prod 9a808a2 (09-07) · public/pcm-worklet.js · speech-local(STT 하이브리드 b929ec4) · generateVoiceFollowUp(reasoning, 0.2) · VoiceDialogue.MAX_QUESTIONS 5 · 특허 출원 10-2026-0214811</template></section>
-<section class="slide " data-order="19" data-title="5. 모의면접과 음성 인식">
-  <div class="slide-shell">
-    <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
-    <header class="topline"><div class="eyebrow">Development · 개발</div><h1 class="title">5. 모의면접과 음성 인식</h1></header>
-    <div class="slide-content"><div class="dx dx-pipe">
-  <div class="lane"><div class="hit">녹음 · 수신<small>브라우저 → 서버</small></div><div class="hit">전사 · 종료<small>사이드카</small></div><div class="hit">실시간 자막<small>Whisper small</small></div><div class="hit">최종 답변<small>large-v3-turbo</small></div><div class="hit">꼬리질문<small>답변 → 질문 → TTS</small></div></div>
-  <div class="fx">
-    <div class="s"><small>09-18 · 2차</small><h4>답변 종료 안정화</h4><p><i>문제</i>말을 끝내도 전사가 끝나지 않아 종료가 타임아웃</p><p><i class="s">해결</i>수신 종료와 전사 완료를 분리 · 타임아웃을 사이드카 40초 &lt; 서버 45초 &lt; 브라우저 60초로 정렬</p><em>답변 3분까지<small>종료 타임아웃 해결과 함께 확대</small></em></div>
-    <div class="t2"><small>09-22 · 3차</small><h4>실시간 자막 지원</h4><p><i>문제</i>큰 모델 하나로 자막까지 만들면 화면이 늦게 따라옴</p><p><i class="s">해결</i>실시간 자막은 Whisper small, 최종 답변은 large-v3-turbo로 확정 (이중 구조)</p><em>오류율 9.75% → 5.82%<small>자막 small → 최종 large-v3-turbo · 음성 1분당 처리 6.64초 vs 13.72초</small></em></div>
-    <div class="u on"><small>10-09 · 4차</small><h4>꼬리질문 지원</h4><p><i>문제</i>미리 만든 꼬리질문이 내 답변을 안 봄</p><p><i class="s">해결</i>실제 답변의 부족한 점을 보고 60자 이하 질문 1개</p><em>1/4 → 4/4<small>코드 1개 × 합성 답변 2개 × 2회</small></em></div>
-  </div>
-</div></div>
-    <div class="folio"></div>
-    
-  </div>
-<template class="notes">[≈10초] 음성은 출시하고 세 번 더 고쳤습니다. 말을 끝내도 멈추지 않던 문제는 수신과 전사를 분리하고 타임아웃 순서를 맞춰 풀었습니다. 자막이 늦던 문제는 자막과 저장을 다른 모델로 나눠 풀었습니다. 꼬리질문이 내 답을 안 보던 문제는 답변을 보고 만들게 바꿨습니다.
-
-출처: 54001a2·917876f → 08abfcb(09-18) · b929ec4 → fcb5b41(09-22) · c4f7169·1e9193a → 9f7b934(10-09).
-음성 수치(최종보고서 기준): 문자 오류율(CER) 14.7% → 5.6%(-9.1%p, 합성 음성 4가지 문장 구조 벤치마크) · 이중 구조 비교 — 자막 Whisper small 음성 1분당 6.64초 · 오류율 9.75% / 최종 답변 large-v3-turbo 13.72초 · 5.82%. 자막 갱신 간격 약 0.9초는 설정값.
-⛔ 1/4 → 4/4는 운영 성공률이 아님(fixture). 오류율은 합성 음성 벤치마크 값 — 실사용 녹음 정확도라 말하지 말 것. 자체 음성 모델 주장 금지.
-
-[장표 출처 — 화면에서는 뺌] prod 반영: 08abfcb(09-18) · fcb5b41(09-22) · 9f7b934(10-09) · speech-local/README.md · question-logic-v13-2026-10-16.md:12</template></section>
-<section class="slide " data-order="20" data-title="1. 인프라">
+[장표 출처 — 화면에서는 뺌] origin/prod BedrockService evaluateAnswer(code 모델, temperature 0.15, JSON Schema) · StudySetService MAX_FOLLOW_UP_CHAIN=5 · BE c5a3ac7 → prod 9a808a2 (09-07) · public/pcm-worklet.js · speech-local(STT 하이브리드 b929ec4) · generateVoiceFollowUp(reasoning, 0.2) · VoiceDialogue.MAX_QUESTIONS 5 · 특허 출원 10-2026-0214811 · prod 반영: 98ebb0f(09-16) · 08abfcb(09-18) · fcb5b41(09-22) · 9f7b934(10-09)</template></section>
+<section class="slide " data-order="19" data-title="1. 인프라">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Development · 운영</div><h1 class="title">1. 인프라</h1></header>
@@ -3889,7 +3884,7 @@ Q&amp;A: 11-05 감사에서 엉뚱한 매칭 사례(회사 필터 없음) → �
 Q&amp;A: PR 리뷰 0건, 96% 작성자 병합 → 사람 승인 대신 CI와 승격 게이트로 보증, PR 본문 72%에 검증 내역.
 
 [장표 출처 — 화면에서는 뺌] 최종보고서 시스템 구성도 · 수행 방법(운영 측면) · BE·FE ci.yml origin/prod · collect/B §6 게이트 집계(GitHub Actions 실패 실행 140건 jobs API) · 112회는 FE·BE 합산 · 13건 = 승격 11 · 유출 1 · 테스트 1</template></section>
-<section class="slide " data-order="21" data-title="2. 관리자 페이지 - 운영 도구, 유저 트래킹">
+<section class="slide " data-order="20" data-title="2. 관리자 페이지 - 운영 도구, 유저 트래킹">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Development · 운영</div><h1 class="title">2. 관리자 페이지 <span class="purple">- 운영 도구, 유저 트래킹</span></h1></header>
@@ -3922,7 +3917,7 @@ Q&amp;A: PR 리뷰 0건, 96% 작성자 병합 → 사람 승인 대신 CI와 승
 Q&amp;A: GA는 하한(가입 이벤트 40 vs DB 83명) · GA 설정 감사 10항목은 제안 단계.
 
 [장표 출처 — 화면에서는 뺌] admin.devfit.app 운영 모니터링 (2026-11-11 02:03 캡처, 최근 14일) · 메뉴 (2026-11-04 캡처) · Devfit_FE/admin (별도 Next 앱) · BE com.devfit.admin · collect/A-admin-usage.md · FE 3255a69 · 3372511 · fff2768(네이버 소유 확인 08-21) · 7aa25dc · f42c9e7 · 67e5238 / BE 00a4c31 · 56c55b7 (운영 반영일 기준) · 도구별 숫자 차이는 부록 A3</template></section>
-<section class="slide " data-order="22" data-title="1. AI 보안">
+<section class="slide " data-order="21" data-title="1. AI 보안">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Development · 보안</div><h1 class="title">1. AI 보안</h1></header>
@@ -3940,7 +3935,7 @@ Q&amp;A(장표에서 뺀 불리한 수치): 공격 실험의 방어 실패율(�
 ⛔ 인젝션 «완전 차단» 금지, 규칙 + 출력 검증까지만. 코드 diff 속 비밀값을 LLM에 보내기 전에 지우는 마스킹은 없음 → «비밀값 차단» 금지.
 
 [장표 출처 — 화면에서는 뺌] 최종보고서 AI 보안 ([그림 7] OWASP LLM Top 10 기반 AI 가드레일) · OWASP, 「Top 10 for LLM Applications 2025」, 2024. · BE origin/prod BedrockService · CommitDecisionPrompts · CandidateAnalysisService</template></section>
-<section class="slide " data-order="23" data-title="2. SBOM">
+<section class="slide " data-order="22" data-title="2. SBOM">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Development · 보안</div><h1 class="title">2. SBOM</h1></header>
@@ -3963,8 +3958,8 @@ Q&amp;A(장표에서 뺀 불리한 수치): 공격 실험의 방어 실패율(�
 Q&amp;A: 침투 테스트와 외부 보안 감사 없음 · 세부 조치는 부록 A16.
 
 [장표 출처 — 화면에서는 뺌] BE origin/prod: build.gradle(org.cyclonedx.bom 3.5.1) · ci.yml vulnerability-scan(grype 0.121.0, 배포 잡 needs) · .github/scripts/vulnerability-gate.py · vulnerability-exceptions.json · AdminSbomController · FE origin/prod ci.yml(npm audit --audit-level=high, 지원자 웹과 관리자 웹) · 최종보고서 SBOM 표 · f7d2f42(11-02) → 운영 0fe63e1(11-05)</template></section>
-<section class="slide divider teamwork-divider" data-order="24" data-title="Teamwork"><div class="slide-shell"><div class="divider-copy"><div class="divider-kicker">04 · 협업</div><div class="divider-title">Teamwork</div><div class="divider-sub">역할 분담, 협업 방식, 수행 과정과 피드백 반영</div></div><div class="folio"></div></div><template class="notes">[구분] 앞에서 소개한 기술을 함께 구현한 팀과 협업 과정을 소개합니다. 역할 분담과 멘토진, 학업과 병행한 협업, 출시 전후의 수행 과정, 피드백 반영 성과의 순서로 이어집니다.</template></section>
-<section class="slide in-people-slide in-profile-slide teamwork-slide" data-order="25" data-title="팀 소개">
+<section class="slide divider teamwork-divider" data-order="23" data-title="Teamwork"><div class="slide-shell"><div class="divider-copy"><div class="divider-kicker">04 · 협업</div><div class="divider-title">Teamwork</div><div class="divider-sub">역할 분담, 협업 방식, 수행 과정과 피드백 반영</div></div><div class="folio"></div></div><template class="notes">[구분] 앞에서 소개한 기술을 함께 구현한 팀과 협업 과정을 소개합니다. 역할 분담과 멘토진, 학업과 병행한 협업, 출시 전후의 수행 과정, 피드백 반영 성과의 순서로 이어집니다.</template></section>
+<section class="slide in-people-slide in-profile-slide teamwork-slide" data-order="24" data-title="팀 소개">
  <div class="slide-shell">
   <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
   <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">역할을 나누고 <span class="purple">핵심 기능을 함께</span> 만들었습니다</h1></header>
@@ -3987,7 +3982,7 @@ https://app.notion.com/p/manwoong/40fd2bfa8b5481c6ac80f44944bfaf27
 
 [담당 업무 정정] 사용자 확인: 노재원은 Google 광고 운영을 담당하지 않았으므로, 마케팅 담당 업무는 Meta 광고 운영으로 표기.
 </template></section>
-<section class="slide in-midterm-slide teamwork-slide" data-order="26" data-title="학업도 병행했습니다. 다만…">
+<section class="slide in-midterm-slide teamwork-slide" data-order="25" data-title="학업도 병행했습니다. 다만…">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">학업도 병행했습니다. <span class="purple">다만…</span></h1></header>
@@ -4016,7 +4011,7 @@ https://app.notion.com/p/manwoong/40fd2bfa8b5481c6ac80f44944bfaf27
 
 
 [장표 출처 — 화면에서는 뺌] 사용자 제공 중간고사 결과 및 심리학의이해 D+ 화면 원본, 2026-11-13.</template></section>
-<section class="slide in-people-slide teamwork-slide" data-order="27" data-title="멘토 소개">
+<section class="slide in-people-slide teamwork-slide" data-order="26" data-title="멘토 소개">
  <div class="slide-shell">
   <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
   <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">멘토의 피드백을 <span class="purple">제품과 운영에 반영</span>했습니다</h1></header>
@@ -4034,7 +4029,7 @@ https://app.notion.com/p/manwoong/40fd2bfa8b5481c6ac80f44944bfaf27
 이일섭 원문 행 40fd2bfa-8b54-81bb-9b59-e9a5926361cf: 역할별 모델·호출 상한·프롬프트, 고정 사례·복수 심사 모델·사전 등록 평가, 저장소 밖 이력 공백 → 서류 기반 질문 연결.
 직접 발언의 따옴표 인용이 아닌 팀 보고서에 기록된 자문과 반영을 요약. 슬라이드의 화살표는 이 기록의 조언→반영 관계. 발췌 원문: data/notion-mentoring-and-roles-evidence-20261113.json.
 </template></section>
-<section class="slide  teamwork-slide" data-order="28" data-title="피봇 후 MVP 구축, 배포 후 중간평가">
+<section class="slide  teamwork-slide" data-order="27" data-title="피봇 후 MVP 구축, 배포 후 중간평가">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">피봇 후 MVP 구축, <span class="purple">배포 후 중간평가</span></h1></header>
@@ -4051,7 +4046,7 @@ https://app.notion.com/p/manwoong/40fd2bfa8b5481c6ac80f44944bfaf27
 ⛔ Meta 광고 시작일(08-10)은 원천 미확인 → 넣지 않음. GA4 코드(08-12)는 운영 반영일 미확인 → 넣지 않음.
 
 [장표 출처 — 화면에서는 뺌] 날짜: 커밋·PR·서류로 확인한 것만 (research/R3-ef-timeline.md) · 커밋 = BE+FE 원격 전체, 08-02까지 · 운영 배포 = 운영 브랜치 성공 배포 (BE+FE, 08-03 ~ 09-06)</template></section>
-<section class="slide  teamwork-slide" data-order="29" data-title="음성 모의 면접 도입, 결제 · 특허 신고">
+<section class="slide  teamwork-slide" data-order="28" data-title="음성 모의 면접 도입, 결제 · 특허 신고">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">음성 모의 면접 도입, <span class="purple">결제 · 특허 신고</span></h1></header>
@@ -4072,7 +4067,7 @@ SBOM 차단 게이트 f7d2f42는 11-05 0fe63e1 승격으로 origin/prod 반영(m
 토스페이먼츠 계약 완료는 BM 장에 표기(11-11 사용자 지시). 날짜(10-28)는 간접이라 장표에 쓰지 않음.
 
 [장표 출처 — 화면에서는 뺌] 누적 운영 배포 = 출시 후 전체 (03-실행력-집계.md) · research/R3-ef-timeline.md</template></section>
-<section class="slide  teamwork-slide" data-order="30" data-title="피드백을 운영에 반영한 협업 성과">
+<section class="slide  teamwork-slide" data-order="29" data-title="피드백을 운영에 반영한 협업 성과">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Teamwork</div><h1 class="title">피드백을 운영에 반영한 <span class="purple">협업 성과</span></h1></header>
@@ -4100,8 +4095,8 @@ SBOM 차단 게이트 f7d2f42는 11-05 0fe63e1 승격으로 origin/prod 반영(m
 ⛔ «500회+» · «1,515» · «리드타임 단축» 금지.
 
 [장표 출처 — 화면에서는 뺌] 반영일 = 운영 브랜치 배포 기준 · 08-타임라인.md(전체 간트는 부록 타임라인 삭제, 본편 1~20주차 장) · collect/I-feedback-patterns.md · 최종보고서 "중간점검 반영표"와 같은 분류 · GitHub Actions prod 배포 성공 (2026-08-03 ~ 11-04) · collect/data/dora_prod_deploys_weekly.csv</template></section>
-<section class="slide divider" data-order="31" data-title="Effect"><div class="slide-shell"><div class="divider-copy"><div class="divider-kicker">05 · Effect</div><div class="divider-title">Effect</div><div class="divider-sub">사용자 유입, 운영 지표, 비즈니스 모델과 비전</div></div><div class="folio"></div></div><template class="notes">[구분] 협업과 수행 과정을 바탕으로 만든 서비스에서 어떤 성과를 확인했는지 소개합니다. 사용자 유입과 운영 지표, 비즈니스 모델, 비전으로 이어집니다.</template></section>
-<section class="slide ef-marketing-slide" data-order="32" data-title="검색 · 광고 · SNS · 현장을 통한 사용자 유입">
+<section class="slide divider" data-order="30" data-title="Effect"><div class="slide-shell"><div class="divider-copy"><div class="divider-kicker">05 · Effect</div><div class="divider-title">Effect</div><div class="divider-sub">사용자 유입, 운영 지표, 비즈니스 모델과 비전</div></div><div class="folio"></div></div><template class="notes">[구분] 협업과 수행 과정을 바탕으로 만든 서비스에서 어떤 성과를 확인했는지 소개합니다. 사용자 유입과 운영 지표, 비즈니스 모델, 비전으로 이어집니다.</template></section>
+<section class="slide ef-marketing-slide" data-order="31" data-title="검색 · 광고 · SNS · 현장을 통한 사용자 유입">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">검색 · 광고 · SNS · 현장을 통한 <span class="purple">사용자 유입</span></h1></header>
@@ -4127,7 +4122,7 @@ SBOM 차단 게이트 f7d2f42는 11-05 0fe63e1 승격으로 origin/prod 반영(m
 기존 콜백 메일은 구축 근거만 있고 실제 발송·복귀 성과가 확인되지 않아 수행 실적 목록에 포함하지 않음.
 
 [장표 출처 — 화면에서는 뺌] Dozer, 「DevFit 최종보고서 마케팅」, 2026. Microsoft Clarity, 「CS 지식백과 진입 집계」, 2026. Meta·Google Ads, 「캠페인 내보내기」, 2026.</template></section>
-<section class="slide ef-marketing-slide" data-order="33" data-title="유입 비용을 고려하여 Meta 광고 중심 집행">
+<section class="slide ef-marketing-slide" data-order="32" data-title="유입 비용을 고려하여 Meta 광고 중심 집행">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">유입 비용을 고려하여 <span class="purple">Meta 광고 중심 집행</span></h1></header>
@@ -4145,7 +4140,7 @@ SBOM 차단 게이트 f7d2f42는 11-05 0fe63e1 승격으로 origin/prod 반영(m
 근거: 03_Meta캠페인.csv 합계2,338,208원/21,318링크클릭;04_Google주별.csv 합계1,163,048원/2,038클릭. 합3,501,256원; Meta66.782%,Google33.218%. CPC109.68/570.68원. 예산계획서나 날짜별 배분 결정 로그는 미확인; 이 슬라이드는 사후 성과 해석에 따른 설명 근거. 광고 클릭 정의는 플랫폼별로 다름. GA4 05_GA4획득.csv 첫 사용자 소스/매체 ig/paid61명57초, google/cpc57명278초. 활성 사용자당 평균 참여 시간이며 세션 체류시간 아님. 측정 동의 범위의 표본이며 인과 실험 아님. Google PMax 전체를 검색광고라고 부르지 않음. Google 최신11/11 지출1,377,062원과 혼합하지 않고11/05 스냅샷 사용.
 
 [장표 출처 — 화면에서는 뺌] Meta·Google Ads, 「11/05 캠페인 CSV」, 2026. Google Analytics 4, 「8/24~11/05 사용자 획득」, 2026.</template></section>
-<section class="slide ef-marketing-slide ef-hypothesis-one" data-order="34" data-title="가설 1. 새 광고를 등록하면 잠깐의 기간동안 노출 수가 증가할 것이다">
+<section class="slide ef-marketing-slide ef-hypothesis-one" data-order="33" data-title="가설 1. 새 광고를 등록하면 잠깐의 기간동안 노출 수가 증가할 것이다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">가설 1. 새 광고를 등록하면 <span class="purple">잠깐의 기간동안 노출 수가 증가할 것이다</span></h1></header>
@@ -4175,7 +4170,7 @@ Meta 원본 CSV의 보고 기간은 2026-08-01~11-10. 집계행을 제외한 76�
 이전 노트의 6개 세트·10/13 ①② 표기는 원자료와 이전 판의 조사 이력. 현재 비교표는 5개 세트(8/31·9/26·9/29·10/13·10/25), AI 광고 외 4개 세트 대비 비용을 재계산함.
 현재 다른 4개 세트 합산 CPM 3856.17988066원, 10/25 CPM 3340.48785984원, 감소율 13.37313188%. 공변량을 통제한 AI ON/OFF 실험이 아니라 관측 비교.
 </template></section>
-<section class="slide ef-marketing-slide" data-order="35" data-title="가설 2. Meta AI 기능을 활용하면 노출이 늘어날 것이다">
+<section class="slide ef-marketing-slide" data-order="34" data-title="가설 2. Meta AI 기능을 활용하면 노출이 늘어날 것이다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">가설 2. Meta AI 기능을 활용하면 <span class="purple">노출이 늘어날 것이다</span></h1></header>
@@ -4199,7 +4194,7 @@ Meta 원본 CSV의 보고 기간은 2026-08-01~11-10. 집계행을 제외한 76�
 이전 노트의 6개 세트·10/13 ①② 표기는 원자료와 이전 판의 조사 이력. 현재 비교표는 5개 세트(8/31·9/26·9/29·10/13·10/25), AI 광고 외 4개 세트 대비 비용을 재계산함.
 현재 다른 4개 세트 합산 CPM 3856.17988066원, 10/25 CPM 3340.48785984원, 감소율 13.37313188%. 공변량을 통제한 AI ON/OFF 실험이 아니라 관측 비교.
 </template></section>
-<section class="slide ef-marketing-slide ef-overview-slide" data-order="36" data-title="가입 계정 추이와 재방문, 기능 이용 실적">
+<section class="slide ef-marketing-slide ef-overview-slide" data-order="35" data-title="가입 계정 추이와 재방문, 기능 이용 실적">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">가입 계정 추이와 재방문, <span class="purple">기능 이용 실적</span></h1></header>
@@ -4245,7 +4240,7 @@ Meta 원본 CSV의 보고 기간은 2026-08-01~11-10. 집계행을 제외한 76�
 set_id별viewed_at보유를1세트로집계.텍스트66=JD_MATCH33+PRIORITY31+MOCK_INTERVIEW2로질문학습포함. 운영화면의텍스트입력은JD_MATCH이고기본모의면접은PRIORITY로생성됨. MOCK_INTERVIEW라는DB유형명만으로텍스트모의면접을정의하면누락이생기므로모드분류는voice_enabled기준. 텍스트MOCK_INTERVIEW2세트는질문은행선택경로의일부이며텍스트모의면접전체가아님.음성MOCK_INTERVIEW20,STT보유10세트25건,음성답변저장9세트. 문항열람은재실행횟수/모든질문완료수와다름. 모의면접완료상태0.피드백attempt_feedback91행/37세트,그중MOCK_INTERVIEW8행/7세트. 피드백생성이지확인/열람횟수아님.각지표를사람수퍼널로연결하거나합산하지않음.
 
 [장표 출처 — 화면에서는 뺌] DevFit 운영 DB, 「회원·게스트 계정 생성일 집계」, 2026-11-11 05:42 KST. 관리자 콘솔 회원 목록 상위 8명, 2026-11-11 캡처(이름·메일 비공개).</template></section>
-<section class="slide ef-marketing-slide ef-interview-slide" data-order="37" data-title="광고로 유입된 사용자가 면접 준비에 활용했습니다">
+<section class="slide ef-marketing-slide ef-interview-slide" data-order="36" data-title="광고로 유입된 사용자가 면접 준비에 활용했습니다">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">광고로 유입된 사용자가 <span class="purple">면접 준비에 활용</span>했습니다</h1></header>
@@ -4303,7 +4298,7 @@ InterviewQuestionVectorSearch/InterviewQuestionEvidenceMatchService: 의미 검�
 
 
 [장표 출처 — 화면에서는 뺌] 11/02 사용자 이메일 인터뷰 · DevFit FE/BE 운영 브랜치(2026-11-13 확인)</template></section>
-<section class="slide ef-market-slide" data-order="38" data-title="시장 규모와 가격 선정 근거">
+<section class="slide ef-market-slide" data-order="37" data-title="시장 규모와 가격 선정 근거">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title"><span class="purple">시장 규모</span>와 가격 선정 근거</h1></header>
@@ -4361,7 +4356,7 @@ Q&amp;A: «결제는 열려 있고 매출은 아직 0» (claims.md C3).
 
 
 [장표 출처 — 화면에서는 뺌] 점핏 2025 개발자 채용 리포트 · 한경협 2025 구직자 조사 · 구직자 인터뷰 · 최종보고서 요금·단위 경제성 · B2B 가격은 내부 가정</template></section>
-<section class="slide " data-order="39" data-title="개발자 대상 경쟁 서비스 비교">
+<section class="slide " data-order="38" data-title="개발자 대상 경쟁 서비스 비교">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">개발자 대상 <span class="purple">경쟁 서비스 비교</span></h1></header>
@@ -4417,7 +4412,7 @@ Q&amp;A: «결제는 열려 있고 매출은 아직 0» (claims.md C3).
 
 
 [장표 출처 — 화면에서는 뺌] 각 서비스 공개 페이지 기준 (2026-11-05 · 인프런 11-07 확인 · 티오 최종보고서 경쟁 표) · DevFit 칸은 운영 코드 기준</template></section>
-<section class="slide ef-enterprise-slide" data-order="40" data-title="DevFit Enterprise: B2C와 분리된 면접관 전용 지원자 검">
+<section class="slide ef-enterprise-slide" data-order="39" data-title="DevFit Enterprise: B2C와 분리된 면접관 전용 지원자 검">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">DevFit Enterprise: B2C와 분리된 <span class="purple">면접관 전용 지원자 검증 도구</span></h1></header>
@@ -4467,7 +4462,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11, devfit.app/enterprise.pdf) 6·10·12쪽 · 화면: 서비스 소개서(가상 데이터) · 분리 구조: BE recruit 패키지 · 공개 지원 API(/apply) 응답</template></section>
-<section class="slide ef-platform-plan-slide" data-order="41" data-title="B2C와 B2B를 잇는 하나의 채용 플랫폼">
+<section class="slide ef-platform-plan-slide" data-order="40" data-title="B2C와 B2B를 잇는 하나의 채용 플랫폼">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Effect</div><h1 class="title">B2C와 B2B를 잇는 <span class="purple">하나의 채용 플랫폼</span></h1></header>
@@ -4503,7 +4498,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 ⛔ «고객 확보»·«파일럿 진행 중»·«MOU» 금지 (현재 LOI·MOU·계약 0).
 
 [장표 출처 — 화면에서는 뺌] 중간발표 비전 그림 원본 · 6개월 목표는 추정 및 계획</template></section>
-<section class="slide dark-slide" data-order="42" data-title="마무리"><div class="dark-grid"></div><div class="slide-shell" style="padding:0">
+<section class="slide dark-slide" data-order="41" data-title="마무리"><div class="dark-grid"></div><div class="slide-shell" style="padding:0">
 <div style="position:absolute;inset:0;display:grid;grid-template-columns:58% 42%">
   <div style="padding:0 0 0 118px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2">
     <h1 class="cl-service-message" style="margin:0;color:#fff;font-size:60px;font-weight:900;line-height:1.35;letter-spacing:-.055em">지원자는 <span style="color:#b9b0ff">내 코드</span>로<br>면접을 준비하고,<br>기업은 <span style="color:#b9b0ff">코드 근거</span>로<br>개발 경험을 확인합니다.</h1>
@@ -4521,20 +4516,20 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 <div class="folio" style="left:auto;right:88px;color:#6d6774"></div></div><template class="notes">[14:50–15:00] DevFit에서 지원자는 내 코드로 면접을 준비하고, 기업은 코드 근거로 개발 경험을 확인합니다. 감사합니다.
 
 테스트 계정은 GitHub OAuth 전용이라 심사위원용 계정 필요 — 제출 전 시크릿 창에서 로그인 재확인.</template></section>
-<section class="slide " data-order="43" data-title="감사합니다"><div class="slide-shell"><div class="slide-content" style="margin:0;align-items:center;justify-content:center">
+<section class="slide " data-order="42" data-title="감사합니다"><div class="slide-shell"><div class="slide-content" style="margin:0;align-items:center;justify-content:center">
 <img src="assets/Dozer_일러스트.png?v=b83a370c1470" alt="팀 Dozer" style="width:980px;max-width:74%;display:block;margin-top:-40px">
 <div style="font-size:48px;font-weight:900;letter-spacing:-.045em;margin-top:-150px">감사합니다</div>
 <div class="small-copy" style="font-size:22px;margin-top:14px">팀 Dozer, 박천웅, 김건우, 노재원 · Q&amp;A</div></div><div class="folio"></div></div><template class="notes">Q&amp;A로 넘어갑니다. 부록은 쪽번호로 바로 엽니다(맨 뒤 부록 목차).</template></section>
-<section class="slide " data-order="44" data-title="부록 목차">
+<section class="slide " data-order="43" data-title="부록 목차">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix</div><h1 class="title">부록 목차</h1></header>
-    <div class="slide-content"><div class="cl-idx"><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p45</b> <span class="cl-q">A1</span></td><td>중간평가 심사의견 19건 반영표<br><span class="cl-q">멘토·심사 의견을 어떻게 반영했나</span></td></tr><tr><td><b style="color:var(--purple)">p46</b> <span class="cl-q">A2</span></td><td>평가 하네스 상세<br><span class="cl-q">품질을 어떻게 믿나</span></td></tr><tr><td><b style="color:var(--purple)">p47</b> <span class="cl-q">A3</span></td><td>측정 도구별 수치 차이<br><span class="cl-q">GA는 235명인데 왜 2.2만인가</span></td></tr><tr><td><b style="color:var(--purple)">p48</b> <span class="cl-q">A4</span></td><td>유료 광고 집행과 효율<br><span class="cl-q">마케팅 효율은</span></td></tr><tr><td><b style="color:var(--purple)">p49</b> <span class="cl-q">A5</span></td><td>원가와 가격<br><span class="cl-q">돈은 어떻게 버나</span></td></tr><tr><td><b style="color:var(--purple)">p50</b> <span class="cl-q">A6</span></td><td>기출 수집과 가공<br><span class="cl-q">크롤링 문제없나</span></td></tr><tr><td><b style="color:var(--purple)">p51</b> <span class="cl-q">A7</span></td><td>특허 3건<br><span class="cl-q">특허는 뭘 보호하나</span></td></tr><tr><td><b style="color:var(--purple)">p52</b> <span class="cl-q">A9</span></td><td>시장 규모 상향식 계산<br><span class="cl-q">시장 숫자는 어떻게 나왔나</span></td></tr><tr><td><b style="color:var(--purple)">p53</b> <span class="cl-q">A10</span></td><td>모델 라우팅 · 서비스 스택<br><span class="cl-q">어떤 모델을 왜 쓰나</span></td></tr><tr><td><b style="color:var(--purple)">p54</b> <span class="cl-q">A11</span></td><td>현업 검토 · 멘토 피드백 반영<br><span class="cl-q">현업은 써 보고 뭐라 했나</span></td></tr><tr><td><b style="color:var(--purple)">p55</b> <span class="cl-q">A12</span></td><td>공고 수집과 캐시 구조<br><span class="cl-q">공고는 어떻게 가져오나</span></td></tr></tbody></table><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p56</b> <span class="cl-q">A13</span></td><td>공고 캐시 발전과정<br><span class="cl-q">같은 공고를 매번 다시 분석하나</span></td></tr><tr><td><b style="color:var(--purple)">p57</b> <span class="cl-q">A14</span></td><td>오류 수집 (Sentry)<br><span class="cl-q">오류는 어떻게 아나</span></td></tr><tr><td><b style="color:var(--purple)">p58</b> <span class="cl-q">A15</span></td><td>검색 노출 (SEO)<br><span class="cl-q">검색 유입은 어떻게 만드나</span></td></tr><tr><td><b style="color:var(--purple)">p59</b> <span class="cl-q">A16</span></td><td>서비스 보안<br><span class="cl-q">GitHub 토큰과 세션은 안전한가</span></td></tr><tr><td><b style="color:var(--purple)">p60</b> <span class="cl-q">A17</span></td><td>보안<br><span class="cl-q">내 코드 털리는 거 아닌가</span></td></tr><tr><td><b style="color:var(--purple)">p61</b> <span class="cl-q">A18</span></td><td>커밋 선별 발전과정<br><span class="cl-q">커밋 선별은 어떻게 바뀌었나</span></td></tr><tr><td><b style="color:var(--purple)">p62</b> <span class="cl-q">A19</span></td><td>질문 생성 호출 분할 · 난이도 세부<br><span class="cl-q">질문 생성은 어떻게 나눠 부르나</span></td></tr><tr><td><b style="color:var(--purple)">p63</b> <span class="cl-q">A20</span></td><td>자기소개서와 포트폴리오<br><span class="cl-q">면접 말고 또 뭘 하나</span></td></tr><tr><td><b style="color:var(--purple)">p64</b> <span class="cl-q">A21</span></td><td>소마 이후 인프라 이전<br><span class="cl-q">지원 끝나면 서버비는</span></td></tr></tbody></table></div></div>
+    <div class="slide-content"><div class="cl-idx"><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p44</b> <span class="cl-q">A1</span></td><td>중간평가 심사의견 19건 반영표<br><span class="cl-q">멘토·심사 의견을 어떻게 반영했나</span></td></tr><tr><td><b style="color:var(--purple)">p45</b> <span class="cl-q">A2</span></td><td>평가 하네스 상세<br><span class="cl-q">품질을 어떻게 믿나</span></td></tr><tr><td><b style="color:var(--purple)">p46</b> <span class="cl-q">A3</span></td><td>측정 도구별 수치 차이<br><span class="cl-q">GA는 235명인데 왜 2.2만인가</span></td></tr><tr><td><b style="color:var(--purple)">p47</b> <span class="cl-q">A4</span></td><td>유료 광고 집행과 효율<br><span class="cl-q">마케팅 효율은</span></td></tr><tr><td><b style="color:var(--purple)">p48</b> <span class="cl-q">A5</span></td><td>원가와 가격<br><span class="cl-q">돈은 어떻게 버나</span></td></tr><tr><td><b style="color:var(--purple)">p49</b> <span class="cl-q">A6</span></td><td>기출 수집과 가공<br><span class="cl-q">크롤링 문제없나</span></td></tr><tr><td><b style="color:var(--purple)">p50</b> <span class="cl-q">A7</span></td><td>특허 3건<br><span class="cl-q">특허는 뭘 보호하나</span></td></tr><tr><td><b style="color:var(--purple)">p51</b> <span class="cl-q">A9</span></td><td>시장 규모 상향식 계산<br><span class="cl-q">시장 숫자는 어떻게 나왔나</span></td></tr><tr><td><b style="color:var(--purple)">p52</b> <span class="cl-q">A10</span></td><td>모델 라우팅 · 서비스 스택<br><span class="cl-q">어떤 모델을 왜 쓰나</span></td></tr><tr><td><b style="color:var(--purple)">p53</b> <span class="cl-q">A11</span></td><td>현업 검토 · 멘토 피드백 반영<br><span class="cl-q">현업은 써 보고 뭐라 했나</span></td></tr><tr><td><b style="color:var(--purple)">p54</b> <span class="cl-q">A12</span></td><td>공고 수집과 캐시 구조<br><span class="cl-q">공고는 어떻게 가져오나</span></td></tr></tbody></table><table class="matrix left plain"><thead><tr><th>쪽</th><th>장표 · 예상 질문</th></tr></thead><tbody><tr><td><b style="color:var(--purple)">p55</b> <span class="cl-q">A13</span></td><td>공고 캐시 발전과정<br><span class="cl-q">같은 공고를 매번 다시 분석하나</span></td></tr><tr><td><b style="color:var(--purple)">p56</b> <span class="cl-q">A14</span></td><td>오류 수집 (Sentry)<br><span class="cl-q">오류는 어떻게 아나</span></td></tr><tr><td><b style="color:var(--purple)">p57</b> <span class="cl-q">A15</span></td><td>검색 노출 (SEO)<br><span class="cl-q">검색 유입은 어떻게 만드나</span></td></tr><tr><td><b style="color:var(--purple)">p58</b> <span class="cl-q">A16</span></td><td>서비스 보안<br><span class="cl-q">GitHub 토큰과 세션은 안전한가</span></td></tr><tr><td><b style="color:var(--purple)">p59</b> <span class="cl-q">A17</span></td><td>보안<br><span class="cl-q">내 코드 털리는 거 아닌가</span></td></tr><tr><td><b style="color:var(--purple)">p60</b> <span class="cl-q">A18</span></td><td>커밋 선별 발전과정<br><span class="cl-q">커밋 선별은 어떻게 바뀌었나</span></td></tr><tr><td><b style="color:var(--purple)">p61</b> <span class="cl-q">A19</span></td><td>질문 생성 호출 분할 · 난이도 세부<br><span class="cl-q">질문 생성은 어떻게 나눠 부르나</span></td></tr><tr><td><b style="color:var(--purple)">p62</b> <span class="cl-q">A20</span></td><td>자기소개서와 포트폴리오<br><span class="cl-q">면접 말고 또 뭘 하나</span></td></tr><tr><td><b style="color:var(--purple)">p63</b> <span class="cl-q">A21</span></td><td>소마 이후 인프라 이전<br><span class="cl-q">지원 끝나면 서버비는</span></td></tr></tbody></table></div></div>
     <div class="folio"></div>
     
   </div>
 <template class="notes">Q&amp;A 때 쪽번호로 이동. 답변 원고: collect/00-통합보고.md §3.</template></section>
-<section class="slide " data-order="45" data-title="중간평가 심사의견 19건: 완료 10 · 부분 5 · 소명 3 · 미반영">
+<section class="slide " data-order="44" data-title="중간평가 심사의견 19건: 완료 10 · 부분 5 · 소명 3 · 미반영">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A1</div><h1 class="title">중간평가 심사의견 19건: 완료 10 · 부분 5 · 소명 3 · 미반영 1</h1></header>
@@ -4547,7 +4542,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 멘토 피드백 31행 표는 collect/I 원본 참조 — 필요 시 A1-2로 추가.
 
 [장표 출처 — 화면에서는 뺌] 반영일·근거 커밋은 운영 브랜치 포함 여부 확인</template></section>
-<section class="slide " data-order="46" data-title="평가 하네스: LLM 심판 점수의 편차와 보완 지표">
+<section class="slide " data-order="45" data-title="평가 하네스: LLM 심판 점수의 편차와 보완 지표">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A2</div><h1 class="title">평가 하네스: <span class="purple">LLM 심판 점수의 편차</span>와 보완 지표</h1></header>
@@ -4560,7 +4555,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
     
   </div>
 <template class="notes">출처: collect/C-quality.md. 17.82점(n=91) = Kimi·DeepSeek 문항별 차 평균, 12.23점(n=24) = 같은 심판 재채점 차, «LLM 심판이 사람보다 약 1점 후함»(n=18).</template></section>
-<section class="slide " data-order="47" data-title="측정 도구별 수치 차이 (기준: 관리자 DB)">
+<section class="slide " data-order="46" data-title="측정 도구별 수치 차이 (기준: 관리자 DB)">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A3</div><h1 class="title">측정 도구별 수치 차이 (<span class="purple">기준: 관리자 DB</span>)</h1></header>
@@ -4575,7 +4570,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 <template class="notes">출처: metrics/charts/14_measurement_gap.png · collect/D §1. GA4는 쿠키 동의 게이트 때문에 하한(가입 이벤트가 실제 가입의 약 절반만 잡힘). 정본 우선순위: 관리자 DB &gt; Clarity &gt; 광고 관리자 &gt; GA4.
 
 [장표 출처 — 화면에서는 뺌] 기간 2026-08-01 ~ 11-04 · 정본 우선순위: 관리자 DB &gt; Clarity &gt; 광고 관리자 &gt; GA4</template></section>
-<section class="slide " data-order="48" data-title="유료 광고 ₩347.5만: 클릭 1회 ₩110~563, 가입 1명당 최소">
+<section class="slide " data-order="47" data-title="유료 광고 ₩347.5만: 클릭 1회 ₩110~563, 가입 1명당 최소">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A4</div><h1 class="title">유료 광고 ₩347.5만: 클릭 1회 ₩110~563, <span class="red">가입 1명당 최소 ₩4.2만</span></h1></header>
@@ -4588,7 +4583,7 @@ Q&amp;A 전용(장표·발화에서는 말하지 않음): 운영은 아직 비�
 <template class="notes">출처: collect/D §2. ₩4.2만은 하한(가입 전원이 광고로 들어왔다고 가정) — «상한»이라 쓰지 말 것. 상한 추정 ₩12.9만. Meta·Google의 «전환»과 DB «가입»은 정의가 다름.
 
 [장표 출처 — 화면에서는 뺌] Meta 광고 관리자(8/1~11/3) · Google Ads(8/24~11/3) · ₩4.2만 = 광고비 ÷ 전체 가입 83명(전원 광고 유입 가정)</template></section>
-<section class="slide " data-order="49" data-title="분석 1회 약 330원, 단건 1,900원 · Plus 월 7,900원">
+<section class="slide " data-order="48" data-title="분석 1회 약 330원, 단건 1,900원 · Plus 월 7,900원">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A5</div><h1 class="title">분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원</h1></header>
@@ -4605,7 +4600,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 원가의 대부분이 LLM(인프라는 개발 DB·서버 정지 운영). Plus 정기결제는 심사 중 — «구독 매출» 금지.
 
 [장표 출처 — 화면에서는 뺌] CloudWatch 실측 · 운영 요금표 · 최종보고서 「단위 경제성」 표와 같은 기준</template></section>
-<section class="slide " data-order="50" data-title="공개된 면접 후기에서 내용만 뽑아 직접 가공">
+<section class="slide " data-order="49" data-title="공개된 면접 후기에서 내용만 뽑아 직접 가공">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A6</div><h1 class="title">공개된 면접 후기에서 내용만 뽑아 <span class="purple">직접 가공</span></h1></header>
@@ -4640,7 +4635,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 11-08 운영 DB 실측(gichul): 기출 1,880 / 벡터 1,880 · 누락 0 (853 + 2차 1,027).
 
 [장표 출처 — 화면에서는 뺌] 저작권법 제2조 제1호 · 대법원 2000. 10. 24. 선고 99다10813 판결 · cho.sh, 「Mini R&amp;D Engineer Job Interview」, 2022 · Devfit_BE interview-question-evidence.csv 운영 적재본</template></section>
-<section class="slide " data-order="51" data-title="특허 3건 출원: 선별 · 생성 · 음성">
+<section class="slide " data-order="50" data-title="특허 3건 출원: 선별 · 생성 · 음성">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A7</div><h1 class="title">특허 3건 출원: <span class="purple">선별 · 생성 · 음성</span></h1></header>
@@ -4653,7 +4648,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 <template class="notes">출원인 김건우(개인), 발명자 김건우·박천웅·노재원. 심사청구 무 · 공개신청 무(통지서 기준). ⛔ «등록»·«회사 특허» 금지.
 «관련 장표» 열은 장 제목으로 표기(쪽번호 금지 규칙). 최종 표기는 Dev 슬림화 후 ppt-start와 맞춤 — 0214809는 Development 입력·출력 게이트 장이 남으면 덧붙임.
 청구항 요지 원문: Devfit/docs/patent/ 명세서 (⛔ 삭제 금지, 공지예외 12개월 시한 진행 중).</template></section>
-<section class="slide " data-order="52" data-title="시장 규모: 개발 직군 구직자 약 38.8만 명">
+<section class="slide " data-order="51" data-title="시장 규모: 개발 직군 구직자 약 38.8만 명">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A9</div><h1 class="title">시장 규모: 개발 직군 구직자 <span class="purple">약 38.8만 명</span></h1></header>
@@ -4671,7 +4666,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 ⛔ «매출»은 시나리오 표의 가정값으로만, 실적처럼 말하지 말 것. 5년 SOM 27억 · TAM $2.8B 금지.
 
 [장표 출처 — 화면에서는 뺌] 사람인·점핏 2025 상반기 개발자 채용 리포트 · 한국경제인협회 2025 구직자 조사 · 최종보고서 「시장 규모와 수익 구조」와 같은 계산</template></section>
-<section class="slide " data-order="53" data-title="역할별 모델 라우팅과 서비스 스택">
+<section class="slide " data-order="52" data-title="역할별 모델 라우팅과 서비스 스택">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A10</div><h1 class="title">역할별 모델 라우팅과 <span class="purple">서비스 스택</span></h1></header>
@@ -4693,7 +4688,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 🔴 OpenAI(커밋 판정 · 조건부 TTS) 호출이 개인정보처리방침 국외 이전에 미고지(R1) — 발표 전 정리. 음성 provider 운영값 확인 필요(s2 음성 장 노트).
 
 [장표 출처 — 화면에서는 뺌] origin/prod application.yml bedrock.models.* · app.commit-decision · interview-evidence.vector (2026-11-06)</template></section>
-<section class="slide " data-order="54" data-title="현업 면접관·게임사 대표의 서비스 검토와 반영">
+<section class="slide " data-order="53" data-title="현업 면접관·게임사 대표의 서비스 검토와 반영">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A11</div><h1 class="title">현업 면접관·게임사 대표의 <span class="purple">서비스 검토와 반영</span></h1></header>
@@ -4736,7 +4731,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 추가 반영 항목 근거(collect/I-feedback-patterns.md §1-2): 한유일 09-07 → AI 코치 출력 상한 1280→8192 BE c5a3ac7(당일) · 음성 STT·TTS·음성 꼬리질문 BE 98ebb0f 등(09-16 운영) · private scope 보존 FE 61fbe10·BE 7399ff1(09-09·09-16). 김준엽 «CS·프로젝트 비중은 인재상 따라 상이»·«자사는 GitHub를 AI로 검토» = 10-26 회신 요지(05-현장검증.md §3). 김한빛 «주간 개선 루프»는 매주 멘토링 + 하네스 개선 이력(사용자 진술 11-06) 기반 서술.
 
 [장표 출처 — 화면에서는 뺌] 한유일 멘토 09-07 녹취(68분) · 김한빛 멘토 정기 멘토링 · 김종욱 멘토 10-25 Webex · 바삭한소프트 대표 10-26 이메일 회신</template></section>
-<section class="slide " data-order="55" data-title="공고 URL 하나로 29곳에서 본문을 받고, 두 층으로 캐시">
+<section class="slide " data-order="54" data-title="공고 URL 하나로 29곳에서 본문을 받고, 두 층으로 캐시">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A12</div><h1 class="title">공고 URL 하나로 <span class="purple">29곳</span>에서 본문을 받고, <span class="purple">두 층으로 캐시</span></h1></header>
@@ -4752,7 +4747,7 @@ Q&amp;A 대비: LLM 호출 원장(08-30~11-05, 단가 설정 호출 $32.77 / 분
 ⛔ 회사명·로고·«제휴» 금지. «공고 1,450건 사전 수집» 본편 금지(직업안정법 표현 리스크, K-compliance O5).
 
 [장표 출처 — 화면에서는 뺌] origin/prod prep/corporate (CorporateSite · CorporateSiteRegistry · SafeFetcher · CorporateParsing.withOcrFallback) · prep/cache (V59·V60, TTL 30일) · 22곳 중 10곳: corporate-boards-2/STATUS.md</template></section>
-<section class="slide " data-order="56" data-title="본문과 LLM 결과를 2층으로 캐시해 같은 공고는 한 번만 수집 · 분석">
+<section class="slide " data-order="55" data-title="본문과 LLM 결과를 2층으로 캐시해 같은 공고는 한 번만 수집 · 분석">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A13</div><h1 class="title">본문과 LLM 결과를 2층으로 캐시해 같은 공고는 <span class="purple">한 번만 수집 · 분석</span></h1></header>
@@ -4787,7 +4782,7 @@ Q&amp;A: 캐시 공고 카드 1.0초 vs 미스 17~34초(운영 11-05 · 공고 4
 ⛔ 미리 받은 공고 건수(«1,450건 사전 수집») 본편 금지(직업안정법 표현 리스크, K-compliance O5). 회사명·로고 금지.
 
 [장표 출처 — 화면에서는 뺌] origin/prod prep/cache: job_posting_cache(키 = site.key + canonicalKey) · job_posting_insight(키 = sha256(normalizeForHash) + insight-version) · Flyway V59·V60 · 일일 예산 posting_cache_daily_budget · skip_reason · TTL 30일 · 커밋 74b9f18(07-19) · ee304b2·b7cd360(09-15) · 5b45b2d·0794272(09-18) · 8250405(09-21)</template></section>
-<section class="slide " data-order="57" data-title="오류는 Sentry로 모으고, 그 SDK로 무거워진 랜딩은 다시 경량화">
+<section class="slide " data-order="56" data-title="오류는 Sentry로 모으고, 그 SDK로 무거워진 랜딩은 다시 경량화">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A14</div><h1 class="title">오류는 Sentry로 모으고, <span class="purple">그 SDK로 무거워진 랜딩은 다시 경량화</span></h1></header>
@@ -4807,7 +4802,7 @@ Q&amp;A: 캐시 공고 카드 1.0초 vs 미스 17~34초(운영 11-05 · 공고 4
 Q&amp;A: 14일 미해결 이슈 25개(BE 22 · FE 3), 대부분 10-28·11-04 두 번의 DB 연결 장애 — 원인 미확인(비밀번호 회전 추정). 10-08 이전은 오류 수집 공백.
 
 [장표 출처 — 화면에서는 뺌] FE f42c9e7 → prod 1470a36 (10-08) · 47e660b (10-12) · BE 00a4c31 · 5985868 · 관리자 조회 BE 6629aee · FE 5d17f02</template></section>
-<section class="slide " data-order="58" data-title="구글 검색 결과 0건에서 검색엔진 등록부터 시작">
+<section class="slide " data-order="57" data-title="구글 검색 결과 0건에서 검색엔진 등록부터 시작">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A15</div><h1 class="title">구글 검색 결과 <span class="red">0건</span>에서 <span class="purple">검색엔진 등록</span>부터 시작</h1></header>
@@ -4823,7 +4818,7 @@ Q&amp;A: 14일 미해결 이슈 25개(BE 22 · FE 3), 대부분 10-28·11-04 두
 Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구글이 색인하지 않아 55편으로 줄이고 나머지는 noindex. 효과는 11월 말 재측정. · 운영 404가 아직 403(CloudFront 설정이 레포 밖 Terraform) · 네이버 서치어드바이저 새 sitemap 미재제출 · 명조 웹폰트 433KB(라이선스로 못 줄임) · 중복 주제 8쌍 301 미처리.
 
 [장표 출처 — 화면에서는 뺌] GSC·curl 실측 (11-06) · FE 1891ad2 · fdcdd87 · 3832cea · 11505c1 · a4cda5a · 4f5aaf6 · #212→#218 (모두 origin/prod) · GSC 11-04 색인 1 / 미색인 224</template></section>
-<section class="slide " data-order="59" data-title="GitHub는 최소 권한으로 연결하고, 토큰과 세션은 원문을 남기지 않음">
+<section class="slide " data-order="58" data-title="GitHub는 최소 권한으로 연결하고, 토큰과 세션은 원문을 남기지 않음">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A16</div><h1 class="title">GitHub는 <span class="purple">최소 권한</span>으로 연결하고, 토큰과 세션은 원문을 남기지 않음</h1></header>
@@ -4847,7 +4842,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
 🔴 확인 필요: 커밋 판정(OpenAI)과 조건부 TTS 호출이 개인정보처리방침 국외 이전 항목에 고지됐는지(부록 A10 노트 R1). 보안을 앞세우면 Q&amp;A에서 물을 수 있음.
 
 [장표 출처 — 화면에서는 뺌] BE origin/prod: auth/GithubTokenCipher(AES-256-GCM, application-prod.yml require-token-encryption: true) · user_session(SHA-256) · prep/corporate/SafeFetcher · admin/AdminAuditService · infra/terraform prod admin.tf(mfa_configuration ON, software_token_mfa) · 최종보고서 개발 타당성과 위험 요소 · 부록 A16</template></section>
-<section class="slide " data-order="60" data-title="최소 권한으로 연결하고, 토큰은 암호화">
+<section class="slide " data-order="59" data-title="최소 권한으로 연결하고, 토큰은 암호화">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A17</div><h1 class="title">최소 권한으로 연결하고, <span class="purple">토큰은 암호화</span></h1></header>
@@ -4856,7 +4851,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
     
   </div>
 <template class="notes">근거 코드: auth/GithubTokenCipher(AES-256-GCM) · user_session(SHA-256 해시) · V38 github_user_id · prep/corporate/SafeFetcher. 레포 범위 선택은 08-07 피드백 후 16일 만(08-23) 반영.</template></section>
-<section class="slide " data-order="61" data-title="커밋 선별 방식은 세 번 바뀌어 Decision Model까지">
+<section class="slide " data-order="60" data-title="커밋 선별 방식은 세 번 바뀌어 Decision Model까지">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A18</div><h1 class="title">커밋 선별 방식은 <span class="purple">세 번 바뀌어</span> Decision Model까지</h1></header>
@@ -4880,7 +4875,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
 ⛔ Jev는 «검토 후 미채택»까지(성능 비교 수치 없음). 각 단계 개선 폭은 전후 측정 없음 — 수치로 말하지 말 것. «커밋 선별 LLM 0회» 금지.
 
 [장표 출처 — 화면에서는 뺌] origin/prod: d7f9b98(06-29 초기 점수식) · e4d9ce8 → 9cf0e6e(09-08 midrank 정규화) · d20e5eb(10-16 Decisions 메시지·패치 판정) · b82467b(10-24 수집 중 병렬) · 최종보고서 수행 방법</template></section>
-<section class="slide " data-order="62" data-title="질문 생성 호출 분할과 난이도 계산 세부">
+<section class="slide " data-order="61" data-title="질문 생성 호출 분할과 난이도 계산 세부">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A19</div><h1 class="title">질문 생성 <span class="purple">호출 분할</span>과 난이도 계산 세부</h1></header>
@@ -4924,7 +4919,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
 근거: 본편 17장 노트와 같음. ⛔ «12% → 78%» 금지, 품질 점수(QI) 개선 주장 금지.
 
 [장표 출처 — 화면에서는 뺌] 최종보고서 품질 개선 결과 2(질문 생성 호출 분할) · question-generation-logic.md (v13, 10-16) · mentor-4-final-report-2026-09-09.md(하드코딩 3곳 · H1 · H2 · QuestionDifficultyTest)</template></section>
-<section class="slide " data-order="63" data-title="분석한 저장소로 쓰는 자기소개서와 포트폴리오">
+<section class="slide " data-order="62" data-title="분석한 저장소로 쓰는 자기소개서와 포트폴리오">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A20</div><h1 class="title">분석한 저장소로 쓰는 <span class="purple">자기소개서와 포트폴리오</span></h1></header>
@@ -4946,7 +4941,7 @@ Q&amp;A: «결국 색인 1페이지?» → 맞다. 172편을 만들었지만 구
 ⛔ «합격 자기소개서»·«AI가 대신 써 준다» 표현 금지, 초안과 확인 흐름까지. 캡처 속 계정은 팀원 테스트 계정.
 
 [장표 출처 — 화면에서는 뺌] 최종보고서 주요 기능 4 · 서비스 화면 10(포트폴리오와 자기소개서 작성 도우미, [그림 24]) · BE origin/prod studio/StudioContent(MAX_QUESTIONS 8, MAX_QUESTION_PROJECTS 3) · StudioMaterials(MAX_REPOSITORIES 8) · StudioRepositoryGroups(MAX_PROJECTS 6) · StudioAssistanceService · fe924cb(10-08)</template></section>
-<section class="slide " data-order="64" data-title="소마 이후 B2C 인프라: AWS에서 Vercel과 Oracle Clou">
+<section class="slide " data-order="63" data-title="소마 이후 B2C 인프라: AWS에서 Vercel과 Oracle Clou">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A21</div><h1 class="title">소마 이후 B2C 인프라: <span class="purple">AWS에서 Vercel과 Oracle Cloud로</span></h1></header>
@@ -4982,7 +4977,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 ⛔ 아직 실행하지 않은 계획. «이전 완료»·«비용 0원» 금지(Vercel Pro와 LLM 사용량은 계속 나감). 현재 AWS 월 청구액은 근거 자료가 없어 장표에 비교 수치를 쓰지 않음. B2B 콘솔은 이 장의 범위 밖.
 
 [장표 출처 — 화면에서는 뺌] infra/terraform/prod terraform.tfvars, speech.tf (2026-11-13) · Oracle Cloud Free Tier, Vercel Pricing 공개 요금표</template></section>
-<section class="slide " data-order="65" data-title="DevFit Enterprise 사용 설명서 1: ATS + GitHub">
+<section class="slide " data-order="64" data-title="DevFit Enterprise 사용 설명서 1: ATS + GitHub">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A22</div><h1 class="title">DevFit Enterprise 사용 설명서 1: <span class="purple">ATS + GitHub</span> 구성과 분석 범위</h1></header>
@@ -4995,7 +4990,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
-<section class="slide " data-order="66" data-title="DevFit Enterprise 사용 설명서 2: 코드 면접 (브리프 ·">
+<section class="slide " data-order="65" data-title="DevFit Enterprise 사용 설명서 2: 코드 면접 (브리프 ·">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A23</div><h1 class="title">DevFit Enterprise 사용 설명서 2: <span class="purple">코드 면접</span> (브리프 · 질문 가이드 · 커밋 근거)</h1></header>
@@ -5008,7 +5003,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
-<section class="slide " data-order="67" data-title="DevFit Enterprise 사용 설명서 3: 채용 관리(ATS) 대">
+<section class="slide " data-order="66" data-title="DevFit Enterprise 사용 설명서 3: 채용 관리(ATS) 대">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A24</div><h1 class="title">DevFit Enterprise 사용 설명서 3: <span class="purple">채용 관리(ATS)</span> 대시보드 · 지원 접수 · 전형 단계</h1></header>
@@ -5021,7 +5016,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
-<section class="slide " data-order="68" data-title="DevFit Enterprise 사용 설명서 4: 협업 평가 코멘트 · ">
+<section class="slide " data-order="67" data-title="DevFit Enterprise 사용 설명서 4: 협업 평가 코멘트 · ">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A25</div><h1 class="title">DevFit Enterprise 사용 설명서 4: <span class="purple">협업 평가</span> 코멘트 · 평가표 · 일정 · 메일</h1></header>
@@ -5034,7 +5029,7 @@ AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비�
 본편 B2B 장(Enterprise)과 같은 소개서. 상태는 «개발 완료» — ⛔ «운영 중»·«고객 확보»·«파일럿 진행 중» 금지. 화면 속 회사·지원자는 가상 데이터. 면접 질문은 면접관 콘솔에서만 보이고 지원자 화면·B2C 질문과 공유하지 않음(본편 B2B 장 노트 근거).
 
 [장표 출처 — 화면에서는 뺌] DevFit Enterprise 서비스 소개서(2026-11 발행, 30쪽, devfit.app/enterprise.pdf) 원본 페이지 · 화면은 가상 데이터</template></section>
-<section class="slide " data-order="69" data-title="DevFit Enterprise 사용 설명서 5: 블라인드 채용과 기존 ">
+<section class="slide " data-order="68" data-title="DevFit Enterprise 사용 설명서 5: 블라인드 채용과 기존 ">
   <div class="slide-shell">
     <div class="brand"><img src="assets/icon.svg?v=87feba72f545" alt="">Dev<b>Fit</b></div>
     <header class="topline"><div class="eyebrow">Appendix · A26</div><h1 class="title">DevFit Enterprise 사용 설명서 5: <span class="purple">블라인드 채용</span>과 기존 ATS 비교</h1></header>
