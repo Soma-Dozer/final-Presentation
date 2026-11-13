@@ -76,9 +76,9 @@ APX.note('''근거: interview-evidence-audit-2026-10-11 · production-upload-res
 ⛔ «검증된 853건» 금지(REVIEWED 0 · NEEDS_REVIEW 158 · 302건은 주제 보고). 법률: 11-05 소마 법률 멘토링 구두 검토 의견(claims C7) — «법률의견서»·«합법 확인» 금지.
 11-08 운영 DB 실측(gichul): 기출 1,880 / 벡터 1,880 · 누락 0 (853 + 2차 1,027).''')
 
-team = [('박천웅', '팀장 · DevSecOps &amp; Full Stack', '인증·보안, AWS 인프라·CI/CD·운영 배포, FE·BE 통합, 결제·사업자 행정', 'team-park-cheonwoong.jpg'),
-        ('김건우', 'PM &amp; Frontend', '문제 정의·제품 방향·BM, Next.js 프론트엔드(B2C·B2B·관리자 콘솔), 마케팅·유입 계측', 'team-kim-gunwoo.jpg'),
-        ('노재원', 'Backend · Core Logic &amp; AI', 'GitHub 커밋 선별 알고리즘, 근거 묶음·질문 생성 핵심 로직, Spring Boot 백엔드', 'team-noh-jaewon.jpg')]
+team = [('박천웅', '팀장 · 인프라·분석 엔진', 'AWS 인프라·CI/CD, LLM 연동·코드 근거 질문 생성, GitHub 인증·보안', 'team-park-cheonwoong.jpg'),
+        ('김건우', 'PM · 제품 기획·풀스택', '랜딩·대시보드·학습실, 기업 공고 수집·기출 연결, Plus 요금제·토스 결제', 'team-kim-gunwoo.jpg'),
+        ('노재원', '모의면접·음성 · B2C·마케팅', '음성 인식·합성·대화형 면접, 비로그인 CS 체험, 분석 대기·서류 작성 화면', 'team-noh-jaewon.jpg')]
 tc = ''.join(f'<div class="a10-m"><img src="assets/{p}" alt="{n}"><div><b>{n}</b><span class="badge">{r}</span><em class="{"hs" if n == "김건우" else ""}">{"고등학생 · 학교 병행" if n == "김건우" else "학교 병행"}</em><small>{d}</small></div></div>' for n, r, d, p in team)
 import csv as _csv
 _HM = list(_csv.DictReader(open(__import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)),'..','collect','data','commit_heatmap_weekday_hour_kst.csv'), encoding='utf8')))

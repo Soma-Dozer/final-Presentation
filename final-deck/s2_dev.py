@@ -644,8 +644,8 @@ def psr(p, s, r):
 def li(rows): return '<div class="dv-li">' + ''.join(f'<div>{a}' + (f'<small>{b}</small>' if b else '') + '</div>' for a, b in rows) + '</div>'
 
 # ================= Development =================
-S.append(divider('03 · 개발', 'Development', '개발, 운영, 보안과 수행과정'))
-S.note('''[구분] Development는 세 범주로 나눴습니다. 개발(LLM 파이프라인, Decision Model 도입, 질문 품질 개선, 회사 기출 질문 연결, 모의면접과 음성 인식), 운영(인프라, 관리자 페이지), 보안(AI 보안, SBOM), 그다음 수행과정입니다.''')
+S.append(divider('03 · 개발', 'Development', '개발, 운영, 보안'))
+S.note('''[구분] Development는 세 범주로 나눴습니다. 개발(LLM 파이프라인, Decision Model 도입, 질문 품질 개선, 회사 기출 질문 연결, 모의면접과 음성 인식), 운영(인프라, 관리자 페이지), 보안(AI 보안, SBOM)입니다. 협업과 수행과정은 다음 Teamwork 챕터에서 소개합니다.''')
 
 # ───────────────── 개발 1. LLM 파이프라인 ─────────────────
 S.append(shell('Development · 개발', '1. LLM 파이프라인 <span class="purple">- 하네스 구조</span>', f'''

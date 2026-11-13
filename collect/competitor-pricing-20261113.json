@@ -1,0 +1,55 @@
+{
+  "checked": "2026-11-13",
+  "pricing": [
+    {
+      "name": "DevFit",
+      "price": "7,900원 / 월",
+      "detail": "Plus · 3개월 체험",
+      "url": "https://devfit.app/pricing",
+      "facts": "Free 제공. Plus는 3개월 무료 체험 후 별도 유료 전환 동의 시 월 7,900원. 추가 생성권 1회 1,900원."
+    },
+    {
+      "name": "티오(TIO)",
+      "price": "14,900원 / 월~",
+      "detail": "Lite 월간 · 무료 제공",
+      "url": "https://tiokorea.com/pricing",
+      "facts": "Free AI 일 5회, Lite 월간 14,900원, Pro 월간 19,900원. 반년 선결제 환산액을 월간 결제 가격과 혼동하지 않음."
+    },
+    {
+      "name": "인프런 모의면접",
+      "price": "12,000원 / 회",
+      "detail": "첫 1회 무료",
+      "url": "https://www.inflearn.com/ai-interviews",
+      "facts": "공식 FAQ에서 첫 1회 무료, 이후 1회 12,000원 확인."
+    },
+    {
+      "name": "꼬꼬면",
+      "price": "토큰 구매 방식",
+      "detail": "금액: 로그인 후 확인",
+      "url": "https://kokomen.kr/purchase",
+      "facts": "공식 홈페이지 토큰 구매 링크가 /purchase이며 로그인 페이지로 이동. 익명 공개 화면에서 구매 금액을 확인하지 못했으므로 추정 금액을 기입하지 않음. 무료 체험은 홈페이지 제공."
+    },
+    {
+      "name": "Greenroom",
+      "price": "US$10 / 월~",
+      "detail": "Pro · 무료 월 1회",
+      "url": "https://usegreenroom.app/#pricing",
+      "facts": "Free 월 1회, Pro 월 $10/10회, Premium 월 $20/30회. GitHub 레포 분석은 Pro에 기재."
+    },
+    {
+      "name": "interviewing.io",
+      "price": "US$179 / 회~",
+      "detail": "사람 면접 · AI 무료",
+      "url": "https://interviewing.io/faq",
+      "facts": "공식 FAQ: 사람 모의면접 $179부터, 주제·회사에 따라 달라짐. AI 면접 무료. 사람 전문가 가격과 AI 구독 가격은 동등한 상품 비교가 아님."
+    },
+    {
+      "name": "Pramp · Aced",
+      "price": "US$79 / 월",
+      "detail": "Pro 월간 · 무료 5회",
+      "url": "https://www.aced.io/upgrade?src=nav",
+      "facts": "공식 요금 페이지 Monthly 선택: Pro $79/월, Expert $99/월. Basic 동료 면접 월 5회 무료, Pro 동료 면접 무제한. Annually 선택 시 표시된 $12/$20는 월 환산 표시이므로 본 표에는 월간 결제 금액을 사용. Pramp는 Aced로 이전(공식 practice FAQ). 브라우저 확인 결과 data/aced-pricing-browser-20261113.json."
+    }
+  ],
+  "notes": "공식 페이지 기준; 월간 결제 가격과 무료 범위를 구분. 꼬꼬면 유료 금액 미확인."
+}

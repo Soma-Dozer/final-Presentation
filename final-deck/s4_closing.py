@@ -15,7 +15,7 @@ CSS = r""".cl-idx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-item
 S.append(raw('dark-slide', f'''<div class="dark-grid"></div><div class="slide-shell" style="padding:0">
 <div style="position:absolute;inset:0;display:grid;grid-template-columns:58% 42%">
   <div style="padding:0 0 0 118px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2">
-    <div style="font-size:28px;color:#9c96a3;font-weight:700;margin-bottom:30px">05 · 마무리</div>
+    <div style="font-size:28px;color:#9c96a3;font-weight:700;margin-bottom:30px">06 · 마무리</div>
     <h1 style="margin:0;color:#fff;font-size:66px;font-weight:900;line-height:1.35;letter-spacing:-.055em">AI가 만든 면접 질문을,<br><span style="color:#b9b0ff">지원자 본인의 코드</span>로 증명하고<br>숫자로 검증</h1>
     <div style="display:flex;align-items:center;gap:22px;margin-top:50px"><img src="assets/icon.svg" alt="" style="width:66px;height:66px;border-radius:16px"><div style="font-size:50px;font-weight:900;letter-spacing:-.055em;color:#fff">Dev<span style="color:#b9b0ff">Fit</span></div></div>
     <div style="margin-top:28px;color:#d9d5dd;font-size:25px;font-weight:700">B2C devfit.app · B2B enterprise.devfit.app</div>
@@ -42,6 +42,11 @@ S.note('''Q&A로 넘어갑니다. 부록은 쪽번호로 바로 엽니다(맨 �
 # ================= 부록 =================
 apx = [('A1', '중간평가 심사의견 19건 반영표'), ('A2', '범용 AI 비교 실험 · 유사 서비스'), ('A3', '평가 하네스 상세'), ('A4', '측정 도구별 수치 차이'), ('A5', '유료 광고 집행과 효율'), ('A6', '원가와 가격'), ('A7', '기출 데이터 수집'), ('A8', '특허 3건'), ('A9', '팀 역할 · 품질 보증'), ('A10', '시장 규모 상향식 계산'), ('A11', '모델 라우팅 · 서비스 스택'), ('A12', '배포 게이트'), ('A13', '현업 검토 · 멘토 피드백 반영'), ('A14', '공고 수집과 캐시 구조'), ('A15', '공고 캐시 발전과정'), ('A16', '오류 수집 (Sentry)'), ('A17', '검색 노출 (SEO)'), ('A18', '서비스 보안'), ('A19', '보안'), ('A20', '커밋 선별 발전과정'), ('A21', '질문 생성 호출 분할 · 난이도 세부'), ('A22', '자기소개서와 포트폴리오')]
 qs = ['멘토·심사 의견을 어떻게 반영했나', '범용 AI랑 뭐가 다른가', '품질을 어떻게 믿나', 'GA는 235명인데 왜 2.2만인가', '마케팅 효율은', '돈은 어떻게 버나', '크롤링 문제없나', '특허는 뭘 보호하나', '누가 뭘 했나 · 리뷰는', '시장 숫자는 어떻게 나왔나', '어떤 모델을 왜 쓰나', '검증 안 된 코드가 운영에 나가나', '현업은 써 보고 뭐라 했나', '공고는 어떻게 가져오나', '같은 공고를 매번 다시 분석하나', '오류는 어떻게 아나', '검색 유입은 어떻게 만드나', 'GitHub 토큰과 세션은 안전한가', '내 코드 털리는 거 아닌가', '커밋 선별은 어떻게 바뀌었나', '질문 생성은 어떻게 나눠 부르나', '면접 말고 또 뭘 하나']
+# A9(팀 역할·협업)은 2026-11-13 사용자 요청으로 본편 Teamwork에 이동.
+# 나머지 A번호는 기존 Q&A 참조를 유지하기 위해 바꾸지 않는다.
+apx_qs = [(a, q) for a, q in zip(apx, qs) if a[0] != 'A9']
+apx = [a for a, _ in apx_qs]
+qs = [q for _, q in apx_qs]
 _rows = [[f'<b style="color:var(--purple)">{{{{PAGE:{a}}}}}</b> <span class="cl-q">{a}</span>', f'{b}<br><span class="cl-q">{q}</span>'] for (a, b), q in zip(apx, qs)]
 S.append(shell('Appendix', '부록 목차', '<div class="cl-idx">' + table(['쪽', '장표 · 예상 질문'], _rows[:11], 'left plain') + table(['쪽', '장표 · 예상 질문'], _rows[11:], 'left plain') + '</div>'))
 S.note('''Q&A 때 쪽번호로 이동. 답변 원고: collect/00-통합보고.md §3.''')

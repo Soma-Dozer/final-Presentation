@@ -29,12 +29,18 @@ apx.sort(key=akey)
 dup = [k for k in {akey(a) for a in apx} if [akey(a) for a in apx].count(k) > 1]
 if dup: sys.exit(f'부록 A번호 중복: {dup}')
 
+# 2026-11-13 사용자 요청: Development와 Effect 사이에 Teamwork 챕터 신설.
+from storyline import arrange
+main, apx = arrange(main, apx)
+
 slides = []
 for n, (name, h, note) in enumerate(main + apx, 1):
     h = re.sub(r'data-order="\d+"', f'data-order="{n}"', h, count=1)
     # 장표 오른쪽 하단 출처 줄은 화면에서 지우고 발표자 노트 끝으로 옮긴다 (사용자 지시 2026-11-06)
     srcs = [re.sub(r'<[^>]+>', '', x).strip() for x in re.findall(r'<div class="source">([\s\S]*?)</div>', h)]
     h = re.sub(r'<div class="source">[\s\S]*?</div>', '', h)
+    if name == 'teamwork' or 'ef-interview-slide' in h or 'ef-foundation-slide' in h:
+        h = re.sub(r'(?m)[ \t]+$', '', h)
     srcs = [_html.unescape(x) for x in srcs if x]
     if srcs:
         note = (note + '\n\n' if note else '') + '[장표 출처 — 화면에서는 뺌] ' + ' / '.join(srcs)
