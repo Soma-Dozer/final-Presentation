@@ -292,7 +292,7 @@ def _flow(n):
     return '<div class="in-flow">' + ''.join(f'<div class="{"on" if i + 1 == n else ("done" if i + 1 < n else "")}"><i>0{i + 1}</i>{t}</div>' for i, t in enumerate(names)) + '</div>'
 
 # ① 문제상황 1 — AI 발전으로 무엇이 가능해졌나 (research/R5 장1, 11-07 사용자 지시: 문제 정의 4장 · «뭐까지 가능해졌는지» 구체화)
-S.append(shell('Problem', 'AI가 <span class="red">실무에 주는 영향</span>은 크게 늘어났습니다', f'''
+S.append(shell('Problem', '1. AI가 바꾼 <span class="red">개발 실무</span>', f'''
 <div class="in-col" style="justify-content:flex-start">{_flow(1)}
   <div class="in-lv">
     <div><em>2023</em><h4>코드 몇 줄을<br>채워 주는 수준</h4><p>Copilot을 켠 파일의 코드 <b>46%</b>를 자동 완성</p><div class="in-pbar"><i style="width:46%"></i></div><small>GitHub Copilot · 2023</small></div>
@@ -322,7 +322,7 @@ S.note('''[0:10–0:22] 먼저 AI가 어디까지 왔는지입니다. 2023년의
 반대 근거(Q&A): METR RCT에서 숙련 개발자가 AI를 쓰면 19% 느려짐 · Veracode AI 생성 코드 45%에 보안 취약점 → «그래서 쓴 코드를 이해하는지가 더 중요해짐»으로 받는다.''')
 
 # ② 문제상황 2 — 개발자 채용 시장의 변화 (research/R4, 사용자: 수요 감소는 인정, 경험 중요로 연결)
-S.append(shell('Problem', '개발자 채용은 감소했고, 면접에서는 <span class="red">실무 경험</span>을 확인합니다', f'''
+S.append(shell('Problem', '2. 줄어든 채용, 중요해진 <span class="red">실무 경험</span>', f'''
 <div class="in-col" style="justify-content:flex-start">{_flow(2)}
   <div class="in-mkt">
     <div><h5>공고 감소</h5><b>6개 중 5개</b><span>공고가 크게 줄어든 직군 중 개발자 비율</span><div class="in-tiles"><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div class="dev">&lt;/&gt;</div><div>···</div></div><div class="in-tl"><span>개발 직군 5</span><span>기타 1</span></div><small>원티드랩 · 2025-01~2026-04</small></div>
@@ -341,31 +341,33 @@ S.note('''[0:22–0:34] 그런데 채용 시장은 반대로 갑니다. 원티�
 ⛔ 고용24 IT 공고 −71%는 대표성 없음(중소기업 위주) → 쓰지 않음.''')
 
 # ③ 문제상황 3 — 개발자 기술면접의 변화 (R1 + R5 장3)
-S.append(shell('Problem', '기술면접에서는 코드의 <span class="red">설계 과정</span>을 물어봅니다', f'''
+S.append(shell('Problem', '3. 코드의 <span class="red">설계 과정</span>을 묻는 기술면접', f'''
 <div class="in-col" style="justify-content:flex-start">{_flow(3)}
   <div class="in-iv">
     <div class="in-ivq"><div class="in-who">실제 개발자 면접 질문 (2026년 5~6월)</div><div class="in-ivman"><figure><svg viewBox="0 0 180 200"><rect x="10" y="150" width="160" height="14" rx="4" fill="#d9d7e0"/><circle cx="90" cy="54" r="34" fill="#1f1d24"/><path d="M38 150c0-38 23-62 52-62s52 24 52 62z" fill="#1f1d24"/><rect x="60" y="44" width="24" height="16" rx="5" fill="none" stroke="#fff" stroke-width="4"/><rect x="96" y="44" width="24" height="16" rx="5" fill="none" stroke="#fff" stroke-width="4"/><path d="M84 52h12" stroke="#fff" stroke-width="4"/><rect x="62" y="118" width="56" height="36" rx="4" fill="#fff" stroke="#d9d7e0" stroke-width="3"/><path d="M72 130h36M72 140h24" stroke="#c7c4d0" stroke-width="4"/></svg><figcaption>면접관</figcaption></figure><div class="bubs"><div class="in-q">"왜 이 코드를 썼는지<br>코드적으로 설명해 주세요"<small class="in-qw">이스트소프트 백엔드</small></div><div class="in-q">"다른 방법은 왜<br>선택하지 않았나요?"<small class="in-qw">비바리퍼블리카 시스템엔지니어</small></div></div></div></div>
     <div class="in-ivc"><div class="in-who">면접 방식 변화</div>
       <div><b>넥슨</b><span>기술면접관: "이 코드는 어떤 기능을 하고,<br>왜 이렇게 구현했나요"로 면접의 절반 정리</span><small>2026-06</small></div>
-      <div><b>빅테크</b><span>면접관 58%가 질문을 바꿈:<br>선택 이유, 코드 한 줄의 역할을 질문</span><small>2025-09</small></div>
-      <div><b>Codility</b><span>지원자가 제출한 코드로<br>후속 질문을 만드는 기능 출시</span><small>2025-09</small></div></div>
+      <div><b>카카오<br>모빌리티</b><span>리크루터 안내: 과제에서 어떤 고민을 했고<br>왜 그렇게 결정했는지 설명할 수 있게 준비</span><small>2025</small></div>
+      <div><b>무신사</b><span>신입 개발자 채용: 직접 만든 시스템의<br>구현 방법과 이유를 설명</span><small>2026</small></div></div>
   </div>
-</div>''', cls='problem', source='면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 천지일보, NDC 26 강연 보도 (2026-06-17) · 빅테크: The Pragmatic Engineer, 「The Pulse #146」 (2025-09-18, interviewing.io 면접관 설문 63명) · Codility: 공식 도움말 「Follow-Up Questions for Take-Home Assessments」 (2025-09)'))
-S.note('''[0:34–0:46] 그래서 기술면접도 바뀝니다. 실제 올해 면접 리뷰를 보면 «왜 이 코드를 썼는지 코드적으로 설명해 달라», «다른 방법은 왜 선택하지 않았냐»를 묻습니다. 넥슨의 한 기술면접관은 «이 코드는 어떤 기능을 하고, 왜 이렇게 구현했나요» 이 질문만으로 면접의 절반이 정리된다고 말했습니다. 복사하거나 AI가 짜 준 코드는 여기에 답하지 못한다는 겁니다. 해외 빅테크 면접관도 58%가 질문을 바꿨는데, 왜 그렇게 선택했는지, 이 코드 한 줄이 무슨 일을 하는지를 묻습니다. 면접 도구 회사 Codility는 지원자가 제출한 코드로 후속 질문을 만드는 기능까지 내놨습니다.
+</div>''', cls='problem', source='면접 질문: 잡플래닛 면접 리뷰 큐레이션 (2026-07-01) · 넥슨: 천지일보, NDC 26 강연 보도 (2026-06-17) · 카카오모빌리티: 공식 채용 페이지 「리크루터의 시크릿노트 EP.01」 · 무신사: 데이터뉴스 (2026-11-13)'))
+S.note('''[0:34–0:46] 그래서 기술면접도 바뀝니다. 실제 올해 면접 리뷰를 보면 «왜 이 코드를 썼는지 코드적으로 설명해 달라», «다른 방법은 왜 선택하지 않았냐»를 묻습니다. 넥슨의 한 기술면접관은 «이 코드는 어떤 기능을 하고, 왜 이렇게 구현했나요» 이 질문만으로 면접의 절반이 정리된다고 말했습니다. 복사하거나 AI가 짜 준 코드는 여기에 답하지 못한다는 겁니다. 카카오모빌리티는 채용 페이지에서 과제를 하며 어떤 고민을 했고 왜 그렇게 결정했는지 설명할 수 있게 준비하라고 안내하고, 무신사는 올해 신입 개발자 채용에서 지원자가 직접 만든 시스템의 구현 방법과 이유를 설명하게 했습니다.
 
 주장: claims.md C1 — 직접 재는 수치 없음 → «경험 면접 N% 증가» 같은 수치 금지. «경험 위주로 바뀌었다» 단정 대신 «"왜·어떻게"를 캐묻는 쪽으로 바뀌는 중».
 면접 질문: 잡플래닛 «토스·무신사 개발자 면접 질문, 실제로 이랬다»(2026-07-01, https://www.jobplanet.co.kr/contents/news-8309) — 에디터 큐레이션, AD 표기, 대표성 없음 → «사례»로만.
 11-13 교체(사용자 지적: AI 허용 사례는 자기 코드 설명 면접의 근거가 아님, research/R11-own-code-interview.md):
 - 넥슨 = 오윤호 넥슨코리아 실장 NDC 26 강연, 천지일보 2026-06-17 https://www.newscj.com/news/articleView.html?idxno=3409912 ⚠ 면접관 1인 발언. «넥슨이 면접 방식을 바꿨다» 금지.
-- 빅테크 58% = Pragmatic Engineer Pulse #146 (2025-09-18), interviewing.io 면접관 설문 n=63, «58% of Big Tech interviewers said they have adjusted the kind of questions they ask». https://newsletter.pragmaticengineer.com/p/the-pulse-146 ⚠ 같은 조사에서 알고리즘 질문을 버린 면접관 0명.
-- Codility = 공식 도움말 2025-09-18 https://support.codility.com/hc/en-us/articles/39175728044689-Follow-Up-Questions-for-Take-Home-Assessments ⚠ 벤더 자료, 도입 수 없음.
+- 카카오모빌리티 = 공식 채용 페이지(greetinghr) 「주니어 개발자로 카카오모빌리티에 입사하는 법 (리크루터의 시크릿노트 EP.01)」 https://kakaomobility.career.greetinghr.com/ko/secretnote1 — Recruiter's Note 원문 "과제 수행 과정에서 어떤 고민을 했고, 왜 특정 결정을 내렸는지 명확히 설명할 수 있도록 준비하세요." 2024 공채 주니어 안드로이드 사례, 게시일 표기 없음(이미지 경로 2025-02) ⚠ 회사 공식 안내지만 특정 직무 사례. 11-13 사용자 지시로 빅테크·Codility 대체.
+- 무신사 = 데이터뉴스 「잇딴 해킹에 금융권 IT '정답 맞히기' 코딩테스트 없앤다」 권선무 기자 2026-11-13 https://www.datanews.co.kr/news/article.html?no=147534 — "무신사는 올해 신입 개발자 채용에서 AI로 대학 수강 신청 시스템을 만들게 했다. 지원자가 구현 방법과 이유를 설명하고, 코드뿐 아니라 설계 문서와 AI 지시 내용까지 평가받도록 했다." ⚠ AI 활용 과제 맥락. 과제 1차는 코딩테스트 유지(R11 §3).
+- (Q&A용으로 내림) 빅테크 58% = Pragmatic Engineer Pulse #146 (2025-09-18), interviewing.io 면접관 설문 n=63, «58% of Big Tech interviewers said they have adjusted the kind of questions they ask». https://newsletter.pragmaticengineer.com/p/the-pulse-146 ⚠ 같은 조사에서 알고리즘 질문을 버린 면접관 0명.
+- (Q&A용으로 내림) Codility = 공식 도움말 2025-09-18 https://support.codility.com/hc/en-us/articles/39175728044689-Follow-Up-Questions-for-Take-Home-Assessments ⚠ 벤더 자료, 도입 수 없음.
 - 국내 기업 공식 «코드 리뷰 면접 도입» 발표·비중 수치는 못 찾음 → «X% 기업이 도입» 금지.
 Q&A용(장표에서 뺀 기존 3건, AI 활용 평가 확대 근거): 기업 사례: 넥슨 인턴십 «넥토리얼» 코딩테스트 폐지·AI 면접·AI 활용 역량평가(바이라인네트워크 2026-09-02, 채용팀장 인용) · CJ올리브영 경력 개발 직군 라이브 코딩 폐지 → 크래프톤 «코파 프로브» AI 과제로 전 과정 평가(아시아경제 2026-07-21, 법인명 재확인) · Canva(공식 블로그 2025-06-11) · Meta 일부 코딩 면접 AI 어시스턴트 허용(404 Media 2025-07-29, 내부 공지 보도 — «Meta 전체 면접 AI 허용» 확대 금지) · 컬리 개발자 공채 코테 ChatGPT 허용, 창립 후 처음(중앙일보 단독 2025-06-10, «2025년 1월»은 오기) — R1 E10~E13·E16, R5 장3.
 반대 근거(Q&A): Karat 2026 — 62%는 여전히 면접에서 AI 금지 · 그렙 고객도 개발 직군은 코테 유지 · Pulse #146에서 알고리즘 질문을 버린 면접관 0명. → «코테가 사라졌다» 금지, «과정·이해를 묻는 방식이 늘고 있다»까지.
 11-13 회의(글 줄이기): Meta·Canva 행은 장표에서 빼고 Q&A용으로만 둠.''')
 
 # ④ 문제 근거 — 취준생은 전에 짠 코드를 다시 보기도, 기억하기도 어렵다 (11-10 사용자 지시, research/R10)
-S.append(shell('Problem', '취준생은 과거에 작성한 코드를 <span class="red">기억하기 어렵습니다</span>', f'''
+S.append(shell('Problem', '4. 기억나지 않는 <span class="red">과거의 코드</span>', f'''
 <div class="in-col" style="justify-content:flex-start">{_flow(4)}
   <div class="in-p5">
     <div class="st">
@@ -389,7 +391,7 @@ Q&A 보조: Anthropic 2026-01, 52명 무작위 실험 — AI로 코딩한 그룹
 
 
 # ③ 솔루션 = GitHub — GitHub 자체를 소개 (중간평가 덱 «GitHub 소개» 장 구성)
-S.append(shell('Solution', '그 경험은 <span class="purple">GitHub</span>에 저장되어 있습니다', f'''
+S.append(shell('Solution', '1. 개발 경험이 남아 있는 <span class="purple">GitHub</span>', f'''
 <div class="in-col in-ghx">
   <div class="in-ghtop">
     <div class="in-ghlogo"><img src="assets/github_mark.svg" alt="GitHub 로고"></div>
@@ -416,7 +418,7 @@ S.note('''[0:55–1:15] 그런데 그 경험은 사라진 게 아닙니다. GitH
 수치: GitHub Octoverse 2025 — 개발자 1억 8천만+, 저장소 6억 3천만 (중간평가 덱 7장과 동일 출처·동일 수치). 로고: GitHub 공식 mark(흰색), 중간평가 덱 deck_assets/github_mark_dark.svg.\nDevFit 화면(Q3 useCamera)은 사용자 지시(11-06)로 이 장에서 뺐다 — 다음 장·시연에서 보여 준다.''')
 
 # ④ 솔루션 소개
-S.append(shell('Solution', '<span class="purple">공고 링크와 GitHub 주소</span>만 있으면 면접을 준비할 수 있습니다', f'''
+S.append(shell('Solution', '2. <span class="purple">공고 링크와 GitHub 주소</span>로 시작하는 면접 준비', f'''
 <div class="in-col">
   <div class="in-dp-pipe">
     <div class="in-dp-pin">
