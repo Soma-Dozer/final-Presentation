@@ -12,7 +12,7 @@ APX = Slides()
 CSS = ''
 
 # ================= s1_intro 출신 (A2 · A3) =================
-APX.append(shell('Appendix · A3 · 기술', '평가 하네스: <span class="purple">LLM 심판 점수의 편차</span>와 보완 지표', f'''
+APX.append(shell('Appendix · A13 · 기술', '평가 하네스: <span class="purple">LLM 심판 점수의 편차</span>와 보완 지표', f'''
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;flex:1;min-height:0">
   <div class="panel" style="padding:30px 36px"><div class="section-line"><span class="num">1</span><span>평가 하네스 구성</span></div>{ul(['운영 파이프라인을 직접 호출해 질문 생성', '8축 루브릭 (LLM 심판)', '결정적 지표 13개: 출처 연결 · 공고별 중복 · 식별자 실존 등', '회귀 게이트: 질문 로직 버전(v1 → v13)마다 측정'])}</div>
   <div class="panel" style="padding:30px 36px"><div class="section-line"><span class="num">2</span><span>LLM 심판 점수의 편차</span></div>{table(['측정', '값', 'n'], [['심판 2종 간 문항별 점수 차', '17.8점', '91'], ['같은 심판 재채점 차', '12.2점', '24'], ['LLM 심판 vs 사람', '사람보다 약 1점 후함', '18'], ['근거 특정성 (우연 25%)', '81.9%', '177'], ['질문 출처 연결', '353/353', '전수']], 'sm')}</div>
@@ -40,12 +40,12 @@ MID19 = [("1", "늦은 피봇을 범위 축소로 만회(긍정)", "완료", "B2
  ("18", "개인정보 보호조치", "완료", "토큰 AES-256-GCM, 세션 해시, numeric id 신원, 증분 동의, 블라인드 평가"),
  ("19", "개발·운영 환경 통합(비용)", "소명", "결제 TEST 격리 필요로 분리 유지. 원가의 94%가 LLM")]
 BC = {'완료': 'green', '강화': 'green', '유지': 'neutral', '부분': '', '부분·소명': 'amber', '부분·착수': '', '소명': 'amber', '미반영': 'red'}
-APX.append(shell('Appendix · A1 · 검토', '중간평가 심사의견 19건: 완료 10 · 부분 5 · 소명 3 · 미반영 1', table(['#', '심사의견', '구분', '조치'], [[a, b, badge(c, BC[c]), d] for a, b, c, d in MID19], 'xs left plain a1'), source='반영일·근거 커밋은 운영 브랜치 포함 여부 확인'))
+APX.append(shell('Appendix · A11 · 검토', '중간평가 심사의견 19건: 완료 10 · 부분 5 · 소명 3 · 미반영 1', table(['#', '심사의견', '구분', '조치'], [[a, b, badge(c, BC[c]), d] for a, b, c, d in MID19], 'xs left plain a1'), source='반영일·근거 커밋은 운영 브랜치 포함 여부 확인'))
 APX.note('''판정 기준(11-07 재분류): 완료 = 조언 핵심을 실행해 운영 반영 · 부분 = 조치 칸에 0건·없음·미검증이 남은 것(#2 파일럿 0 · #4 변별도 실측 0 · #8 수치·LOI 없음 · #11 유료 전체 플로우 기록 없음 · #14 발송 전 미검증) · 소명 3 · 미반영 1은 그대로. collect/I 원분류(완료 5 · 부분 10)와 다름.
 출처: collect/I-feedback-patterns.md (반영일·근거 커밋은 운영 브랜치 포함 여부 확인). 최종보고서 «중간점검 반영표»와 같은 내용.
-멘토 피드백 31행 표는 collect/I 원본 참조 — 필요 시 A1-2로 추가.''')
+멘토 피드백 31행 표는 collect/I 원본 참조 — 필요 시 A11-2로 추가.''')
 
-APX.append(shell('Appendix · A13 · 기술', '최소 권한으로 연결하고, <span class="purple">토큰은 암호화</span>', table(['우려', '조치'], [
+APX.append(shell('Appendix · A23 · 기술', '최소 권한으로 연결하고, <span class="purple">토큰은 암호화</span>', table(['우려', '조치'], [
  ['"GitHub 연동하면 내 코드 털리나"', '기본 로그인 권한은 read:user · user:email만. 비공개 레포는 사용자가 원할 때만 증분 동의'],
  ['분석 범위', '분석할 레포를 사용자가 직접 선택 (08-07 피드백 → 08-23 반영)'],
  ['토큰 유출', 'GitHub access token AES-256-GCM 암호화 저장'],
@@ -55,7 +55,7 @@ APX.append(shell('Appendix · A13 · 기술', '최소 권한으로 연결하고,
  ['B2B 지원자 정보', '블라인드 평가 · 지원 시 동의 2건 필수']], 'sm left plain')))
 APX.note('''근거 코드: auth/GithubTokenCipher(AES-256-GCM) · user_session(SHA-256 해시) · V38 github_user_id · prep/corporate/SafeFetcher. 레포 범위 선택은 08-07 피드백 후 16일 만(08-23) 반영.''')
 
-APX.append(shell('Appendix · A14 · 비즈니스', '분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원', f'''
+APX.append(shell('Appendix · A1 · 비즈니스', '분석 1회 약 330원, 단건 <span class="purple">1,900원</span> · Plus 월 7,900원', f'''
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px">{kpi('약 330원', '분석 1회 변동비 · 저장소 3개 기준 · 공고 구조화와 질문 생성 포함', '저장소 3개', 'soft', 'purple')}{kpi('약 1,404원', '저장소 20개 상한 기준 최대치', '저장소 20개')}{kpi('0원', '코드 변경 없는 재분석 · 최신 커밋 지문이 같으면 결과 재사용', '재분석')}</div>
 <div class="small-copy" style="margin-top:18px;font-size:23px">Plus 1인 월 7,900원 = 저장소 3개 기준 분석 약 24회분의 변동비</div>
 <div style="margin-top:26px">{table(['상품', '가격', '상태'], [['Free', '무료 (사용 한도 있음)', '운영 중'], ['추가 생성권 (공고 단위 단건)', '1,900원', '토스페이먼츠 단건 결제 승인 (2026-11-02)'], ['Plus', '월 7,900원', '출시 기념 3개월 무료 개방']], 'sm left plain')}</div>
@@ -112,7 +112,7 @@ CSS += r"""
 .apx-g2-meta{font-size:20px;color:var(--muted);margin:0 0 10px}
 .apx-g2-meta b{color:var(--ink)}
 """
-APX.append(shell('Appendix · A7 · 기술', '공개된 면접 후기에서 내용만 뽑아 <span class="purple">직접 가공</span>', f'''
+APX.append(shell('Appendix · A17 · 기술', '공개된 면접 후기에서 내용만 뽑아 <span class="purple">직접 가공</span>', f'''
 <div class="apx-gc"><div class="wrap">
   <div class="col"><div class="panel raw"><div class="k">1. 원문 (공개 면접 후기)</div>
     당근 Mini R&amp;D Engineer 인턴 기술 면접 (2022) 꼬리질문 중 하나
@@ -139,8 +139,8 @@ APX.note('''공개 면접 후기에는 면접 시간, 분위기, 본인 감상 �
 ⛔ «검증된 853건» 금지(REVIEWED 0 · NEEDS_REVIEW 158 · 302건은 주제 보고). 법률: 11-05 소마 법률 멘토링 구두 검토 의견(claims C7) — «법률의견서»·«합법 확인» 금지.
 11-08 운영 DB 실측(gichul): 기출 1,880 / 벡터 1,880 · 누락 0 (853 + 2차 1,027).''')
 
-# --- A2 모델 라우팅 · 스택 ---
-APX.append(shell('Appendix · A4 · 기술', '역할별 모델 라우팅과 <span class="purple">서비스 스택</span>', '''
+# --- A12 모델 라우팅 · 스택 ---
+APX.append(shell('Appendix · A14 · 기술', '역할별 모델 라우팅과 <span class="purple">서비스 스택</span>', '''
 <div class="hero" style="grid-template-columns:1.1fr .9fr;margin:auto 0">
   <div class="panel" style="padding:30px 34px"><div class="infra-summary-title">LLM · 역할별 라우팅 (Bedrock 5종 + 외부 2종)</div>
     <div class="mchips">
@@ -155,19 +155,19 @@ APX.note('''출처: origin/prod application.yml:103-127(bedrock.models reasoning
 🔴 OpenAI(커밋 판정 · 조건부 TTS) 호출이 개인정보처리방침 국외 이전에 미고지(R1) — 발표 전 정리. 음성 provider 운영값 확인 필요(s2 음성 장 노트).''')
 
 # ================= s3_effect 출신 (A4 · A5 · A8 · A10) =================
-APX.append(shell('Appendix · A21 · 비즈니스', '측정 도구별 수치 차이 (<span class="purple">기준: 관리자 DB</span>)', f'''
+APX.append(shell('Appendix · A8 · 비즈니스', '측정 도구별 수치 차이 (<span class="purple">기준: 관리자 DB</span>)', f'''
 <div style="display:grid;grid-template-columns:1.25fr .75fr;gap:30px;flex:1;min-height:0">
   <div class="shot"><img src="assets/14_measurement_gap.png" alt="측정 도구별 수치 차이" style="object-fit:contain"></div>
   <div style="display:flex;flex-direction:column;gap:20px">{kpi('22,360명', 'Microsoft Clarity 방문자 · 동의와 무관하게 수집, 봇 제외', 'Clarity')}{kpi('235명', 'GA4 사용자 · 쿠키 동의한 사람만 → 하한', 'GA4', 'red-soft', 'red')}{kpi('83명', '관리자 DB 가입 · 기준 수치 (내부 4명 포함)', '관리자 DB', 'soft', 'purple')}</div>
 </div>''', source='기간 2026-08-01 ~ 11-04 · 정본 우선순위: 관리자 DB > Clarity > 광고 관리자 > GA4'))
 APX.note('''출처: metrics/charts/14_measurement_gap.png · collect/D §1. GA4는 쿠키 동의 게이트 때문에 하한(가입 이벤트가 실제 가입의 약 절반만 잡힘). 정본 우선순위: 관리자 DB > Clarity > 광고 관리자 > GA4.''')
 
-APX.append(shell('Appendix · A22 · 비즈니스', '유료 광고 ₩347.5만: 클릭 1회 ₩110~563, <span class="red">가입 1명당 최소 ₩4.2만</span>', f'''
+APX.append(shell('Appendix · A9 · 비즈니스', '유료 광고 ₩347.5만: 클릭 1회 ₩110~563, <span class="red">가입 1명당 최소 ₩4.2만</span>', f'''
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px">{kpi('₩347.5만', 'Meta ₩233.8만 + Google ₩113.7만', '유료 광고 합계')}{kpi('최소 ₩4.2만', '가입 1명당 광고비 (하한, 상한 추정 ₩12.9만)', '가입 단가', 'red-soft', 'red')}{kpi('브랜드 검색뿐', 'Search Console 클릭 37건, 대부분 "devfit"', '자연 검색')}</div>
 <div style="margin-top:26px">{table(['지표', 'Meta', 'Google'], [['지출', '₩2,338,208', '₩1,136,972'], ['노출', '666,197', '116,041'], ['클릭', '21,318 (링크 클릭)', '2,018'], ['클릭 1회', '₩110', '₩563'], ['랜딩 1회', '₩151 (Meta 랜딩 조회)', '—']], 'sm plain')}</div>''', source='Meta 광고 관리자(8/1~11/3) · Google Ads(8/24~11/3) · ₩4.2만 = 광고비 ÷ 전체 가입 83명(전원 광고 유입 가정)'))
 APX.note('''출처: collect/D §2. ₩4.2만은 하한(가입 전원이 광고로 들어왔다고 가정) — «상한»이라 쓰지 말 것. 상한 추정 ₩12.9만. Meta·Google의 «전환»과 DB «가입»은 정의가 다름.''')
 
-APX.append(shell('Appendix · A20 · 비즈니스', '특허 3건 출원: <span class="purple">선별 · 생성 · 음성</span>', f'''
+APX.append(shell('Appendix · A7 · 비즈니스', '특허 3건 출원: <span class="purple">선별 · 생성 · 음성</span>', f'''
 {table(['출원번호', '발명의 명칭', '보호하는 것 (요지)', '관련 장표'], [
  ['<span class="patent">10-2026-0214808</span>', '코드 저장소 기반 면접 질문 선별 방법 및 시스템', '본인 기여 커밋을 골라 가중(본인 1.0 · 공동 0.70 · 타인 제외)하고 질문 대상 지점을 선별', 'Key Features 경쟁사 비교(본인 커밋만) · Development 점수식'],
  ['<span class="patent">10-2026-0214809</span>', '코드 저장소 기반 면접 질문 생성 방법 및 시스템', '근거 코드 묶음에서 질문을 만들고, 질문 속 식별자를 코드와 대조해 유지·폐기·재질의하는 게이트', 'Key Features 반론(근거 대조)'],
@@ -177,7 +177,7 @@ APX.note('''출원인 김건우(개인), 발명자 김건우·박천웅·노재�
 «관련 장표» 열은 장 제목으로 표기(쪽번호 금지 규칙). 최종 표기는 Dev 슬림화 후 ppt-start와 맞춤 — 0214809는 Development 입력·출력 게이트 장이 남으면 덧붙임.
 청구항 요지 원문: Devfit/docs/patent/ 명세서 (⛔ 삭제 금지, 공지예외 12개월 시한 진행 중).''')
 
-APX.append(shell('Appendix · A18 · 비즈니스', '시장 규모 산정식과 근거: <span class="purple">TAM · SAM · SOM</span>', f'''
+APX.append(shell('Appendix · A5 · 비즈니스', '시장 규모 산정식과 근거: <span class="purple">TAM · SAM · SOM</span>', f'''
 {table(['단계', '<span style="white-space:nowrap">구분</span>', '산정식', '<span style="white-space:nowrap">값</span>', '근거'], [
  ['<b>TAM</b>', 'B2C', '북미 면접 준비 도구 시장 2.13억 달러 × 1,337원', '2,847억 원', '<span style="font-size:15px;color:#6f6c78">pmarketresearch, 「Worldwide Interview Preparation Tool Market」, 2025. 북미 USD 212.92M(39.6%) · 이용자 60%가 개인 구직자</span>'],
  ['', 'B2B', '북미 코딩 면접 플랫폼 시장 2.2억 달러 × 1,337원', '2,941억 원', '<span style="font-size:15px;color:#6f6c78">DataHorizzon, 「Coding Interview Platform Market」, 2024. 북미 USD 220M(약 40%) · 기업용 개발자 채용 평가 도구</span>'],
@@ -213,7 +213,7 @@ URL: Mordor https://www.mordorintelligence.com/industry-reports/it-staffing-mark
 ⛔ «매출»은 목표 시나리오로만, 실적처럼 말하지 말 것. 5년 SOM 27억 · TAM $2.8B 금지.
 [이전 판] TAM 1,132억(B2C 92억 + 지원 520만 건 × 2만 원) · SAM 143억 · SOM 4억 — 11-13 교체.''')
 
-APX.append(shell('Appendix · A15 · 비즈니스', 'Plus 월 7,900원 <span class="purple">산출 근거</span>', f'''
+APX.append(shell('Appendix · A2 · 비즈니스', 'Plus 월 7,900원 <span class="purple">산출 근거</span>', f'''
 {table(['기준', '내용', '7,900원과 비교', '출처'], [
  ['<b>구직자 지불 의향</b>', '"면접 1회 기준 만원 정도, 준비기간 동안이면 2만원까지"', '면접 1회 의향(1만 원)보다 낮게 설정', '<span style="font-size:15px;color:#6f6c78">구직자 1:1 인터뷰(20세, 프론트엔드 인턴 지원 경험), 중간평가 발표자료 수록</span>'],
  ['<b>국내 AI 면접 구독</b>', '티오 Lite 월 14,900원 · Pro 월 19,900원', '약 53% (Lite 기준)', '<span style="font-size:15px;color:#6f6c78">tiokorea.com/pricing, 2026-11-13 확인</span>'],
@@ -222,7 +222,7 @@ APX.append(shell('Appendix · A15 · 비즈니스', 'Plus 월 7,900원 <span cla
  ['<b>분석 원가</b>', '분석 1회 변동비 약 330원 (저장소 3개 기준)', '월 7,900원 = 분석 약 24회분', '<span style="font-size:15px;color:#6f6c78">최종보고서 단위 경제성, AWS CloudWatch 실측</span>'],
  ['<b>단건 대안</b>', '추가 생성권 1,900원 (공고 1건 단위)', '채용 시즌에만 쓰는 사용자용 보완 상품', '<span style="font-size:15px;color:#6f6c78">운영 요금표, 토스페이먼츠 단건 결제 승인 2026-11-02</span>']], 'sm left plain')}
 <div class="small-copy" style="margin-top:16px;font-size:20px;line-height:1.6">구직자 지불 의향(1만 원)보다 낮고, 국내외 AI 면접 구독의 절반 수준이며, 변동비 대비 여유가 있는 가격으로 정함 · 실제 결제 데이터로 검증한 가격 아님</div>''', source='구직자 인터뷰(중간평가 발표자료) · 티오 · 인프런 · Greenroom · Aced 공식 요금 페이지(2026-11-13) · 최종보고서 단위 경제성'))
-APX.note('''예상 질문: «7,900원은 어떻게 정했나?» (11-13 사용자 지시 «Plus 7,900원 산출근거 A15에 넣어»)
+APX.note('''예상 질문: «7,900원은 어떻게 정했나?» (11-13 사용자 지시 «Plus 7,900원 산출근거 A2에 넣어»)
 근거 원문: 지불 의향 = 중간평가 IR 덱(vendor/irdeck_new.html 1485~1501행) 지원자 A 인터뷰 «면접 1회 기준 만원 정도, 준비기간 동안이면 2만원까지는 결제할 의향이 있습니다». 경쟁 가격 = collect/competitor-pricing-20261113.json(공식 페이지·공개 API, 11-13 확인): 티오 Lite 14,900·Pro 19,900 / 인프런 12,000원/회 / Greenroom Pro $10/월(10회) / Aced Pro $79/월 / 꼬꼬면 토큰 50원(문항당 텍스트 50원·음성 100원) / interviewing.io 사람 면접 $179/회~. 원가 = 최종보고서 330원(저장소 3개), 7,900 ÷ 330 ≈ 23.9.
 ⚠ 한계: 지불 의향은 1명 진술(실결제 아님). 경쟁 상품은 기능·횟수 조건이 달라 같은 상품 비교가 아님(Greenroom은 월 10회, 인프런은 회당). Plus는 출시 기념 3개월 무료 개방, 정기결제 매출 없음 → «매출» 금지, Q&A: «결제는 열려 있고 매출은 아직 0»(claims.md C3).
 «가격 검증 완료» 금지. 꼬꼬면·interviewing.io는 단위가 달라 장표에서 뺌.''')
@@ -262,7 +262,7 @@ _MIG = [
     ['배포', 'GitHub Actions OIDC → ECR → ECS', '<b>GitHub Actions → GHCR</b> → compose pull, staging → prod 게이트 유지'],
     ['유지', 'Bedrock LLM, SES 메일, Cloudflare DNS, Sentry', '사용량 과금이라 그대로 · Bedrock은 API 키 방식(코드 지원)'],
 ]
-APX.append(shell('Appendix · A17 · 비즈니스', '소마 이후 B2C 인프라: <span class="purple">AWS에서 Vercel과 Oracle Cloud로</span>', f'''
+APX.append(shell('Appendix · A4 · 비즈니스', '소마 이후 B2C 인프라: <span class="purple">AWS에서 Vercel과 Oracle Cloud로</span>', f'''
 <div class="apx-mig">
   <div>{table(['구성', '현재 (AWS)', '이전 후'], _MIG, 'left plain').replace('<tr><td>유지<', '<tr class="keep"><td>유지<')}</div>
   <div class="side">
@@ -282,11 +282,11 @@ APX.append(shell('Appendix · A17 · 비즈니스', '소마 이후 B2C 인프라
 APX.note('''소마 지원(AWS 크레딧)이 끝나면 B2C를 Vercel과 Oracle Cloud Always Free로 옮기는 계획입니다. 프런트는 이미 정적 export라 Vercel에 그대로 올리고, API, 분석 worker, 음성 서버, DB를 Oracle Ampere VM 한 대에 compose로 모읍니다. 고정비는 Vercel Pro 월 20달러이고, LLM과 메일은 지금처럼 쓴 만큼 냅니다.
 
 근거(현재 구성): infra/terraform/prod/terraform.tfvars = API 512 CPU/2048MB ×1, 분석 worker 1024/3072 ×2, RDS db.t4g.small 30GiB · speech.tf 기본값 4096/8192 ×1 · foundation nat_gateway_mode single · 전 컨테이너 X86_64. FE next.config.mjs 운영 빌드 output: "export". BE application.yml bedrock.api-key(BEDROCK_API_KEY) 지원 → IAM 역할 없이 호출 가능.
-메모리 합계 API 2 + worker 3×2 + 음성 8 = 16GB, DB 포함 약 18GB로 A1 24GB 안. CPU는 4 OCPU라 worker를 1개로 줄이고 운영 지표 보고 조정.
+메모리 합계 API 2 + worker 3×2 + 음성 8 = 16GB, DB 포함 약 18GB로 A11 24GB 안. CPU는 4 OCPU라 worker를 1개로 줄이고 운영 지표 보고 조정.
 Oracle Always Free: Ampere A1 합계 4 OCPU / 24GB, 블록 볼륨 200GB, Object Storage 20GB, Vault 비밀값 포함, 아웃바운드 월 10TB. 유휴 인스턴스 회수 정책과 A1 용량 부족 때문에 계정은 PAYG로 전환(무료 범위 안이면 0원).
 Vercel: Hobby는 비상업 용도 한정, Pro 월 $20/석. /api rewrite로 same-origin 쿠키 유지.
 Cloudflare Tunnel: VM이 바깥으로 연결을 열어 인바운드 포트를 열지 않음. 기존 X-Devfit-Origin-Verify 헤더 검사 대신 터널 인증으로 대체.
-AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비스가 가장 많았고, 역할별 모델 비교 실험(A4, Table 1 13개 모델)을 한 계정에서 바로 돌릴 수 있는 Bedrock이 서비스 특성에 맞았음.
+AWS를 쓴 이유(장표): 소마 예산 처리상 AWS가 쓸 수 있는 서비스가 가장 많았고, 역할별 모델 비교 실험(A14, Table 1 13개 모델)을 한 계정에서 바로 돌릴 수 있는 Bedrock이 서비스 특성에 맞았음.
 이전 후 감수하는 것(Q&A용, 장표에서 뺌): VM 1대라 장애 시 전체 중단 · CPU가 Fargate 합계(6.5 vCPU)보다 작아 분석 worker 동시 실행 2 → 1.
 ⛔ 아직 실행하지 않은 계획. «이전 완료»·«비용 0원» 금지(Vercel Pro와 LLM 사용량은 계속 나감). 현재 AWS 월 청구액은 근거 자료가 없어 장표에 비교 수치를 쓰지 않음. B2B 콘솔은 이 장의 범위 밖.''')
 
@@ -330,15 +330,15 @@ CSS += r"""
 """
 
 # A24 반응형 가로형 8
-APX.append(shell('Appendix · A24 · 비즈니스', 'Google 반응형 디스플레이 광고 소재: <span class="purple">가로형 8종</span>',
+APX.append(shell('Appendix · A24 · 광고', 'Google 반응형 디스플레이 광고 소재: <span class="purple">가로형 8종</span>',
     '<div class="ax-grid ax-g4">' + ''.join(_fig(f'rd/{k}-landscape-1200x628.jpg', n) for k, n in _RD) + '</div>',
     source='Devfit/marketing/google-ads/creatives · 1200×628 · 2026-08-29 제작'))
 APX.note('''광고 소재 원본: Devfit/marketing/google-ads/creatives/png/responsive-display (콘셉트 8종 × 가로·정사각·세로 3비율 = 24장). 이 장은 가로형 8장.
 제작 방식: 실제 제품 화면(candidate 라우트)을 캡처해 HTML로 조합한 뒤 렌더. 제품에 없는 UI를 그리지 않음.
-Q&A 주의: 소재 속 공고 시나리오가 실존 회사 공고(토스 Frontend, 2026-08-29 확인)이고 지원자·레포·커밋은 가공값. 소재별 성과(CTR 등)는 따로 집계하지 않았으므로 «잘 된 소재» 같은 주장 금지. 집행 총액·단가는 A22.''')
+Q&A 주의: 소재 속 공고 시나리오가 실존 회사 공고(토스 Frontend, 2026-08-29 확인)이고 지원자·레포·커밋은 가공값. 소재별 성과(CTR 등)는 따로 집계하지 않았으므로 «잘 된 소재» 같은 주장 금지. 집행 총액·단가는 A9.''')
 
 # A25 반응형 정사각·세로 16
-APX.append(shell('Appendix · A25 · 비즈니스', 'Google 반응형 디스플레이 광고 소재: <span class="purple">정사각 · 세로형 16종</span>',
+APX.append(shell('Appendix · A25 · 광고', 'Google 반응형 디스플레이 광고 소재: <span class="purple">정사각 · 세로형 16종</span>',
     '<div class="ax-grid ax-g8">' + ''.join(_fig(f'rd/{k}-square-1200x1200.jpg', n, 'sq') for k, n in _RD)
     + ''.join(_fig(f'rd/{k}-vertical-900x1600.jpg', '', 'vt') for k, n in _RD) + '</div>',
     source='Devfit/marketing/google-ads/creatives · 위 1200×1200 · 아래 900×1600'))
@@ -353,7 +353,7 @@ def _udc(k, n):
             f'<div class="r"><img src="{p("mrec-300x250")}" alt="{n} 300×250" style="width:190px"><img src="{p("lrec-336x280")}" alt="{n} 336×280" style="width:190px"></div>'
             f'<img src="{p("leaderboard-728x90")}" alt="{n} 728×90" style="width:390px">'
             f'<img src="{p("mobileBanner-320x100")}" alt="{n} 320×100" style="width:240px"></div>')
-APX.append(shell('Appendix · A26 · 비즈니스', 'Google 업로드 디스플레이 광고 소재: <span class="purple">4종 × 6규격</span>',
+APX.append(shell('Appendix · A26 · 광고', 'Google 업로드 디스플레이 광고 소재: <span class="purple">4종 × 6규격</span>',
     '<div class="ax-grid ax-ud">' + ''.join(_udc(k, n) for k, n in _UD) + '</div>',
     source='Devfit/marketing/google-ads/creatives · 300×600 · 160×600 · 300×250 · 336×280 · 728×90 · 320×100'))
 APX.note('''업로드형 디스플레이 규격 6종(하프페이지·스카이스크래퍼·MREC·LREC·리더보드·모바일 배너) × 콘셉트 4종 = 24장. 축소해 실었으므로 실제 크기 비율과 다름.''')
@@ -363,7 +363,7 @@ _TS = [('01-code-evidence', '근거 코드'), ('02-job-specific', '공고 맞춤
        ('04-requirement-to-answer', '공고 요구 연결'), ('05-cs-in-project', 'CS · 프로젝트')]
 _tcol = lambda k, n: (f'<div class="col"><b>{n}</b><img src="assets/ads/test/{k}-landscape.jpg" alt="{n} 가로" style="width:300px">'
                       f'<div style="display:flex;gap:8px;align-items:flex-end"><img src="assets/ads/test/{k}-square.jpg" alt="{n} 정사각" style="width:150px"><img src="assets/ads/test/{k}-portrait.jpg" alt="{n} 세로" style="width:128px"></div></div>')
-APX.append(shell('Appendix · A27 · 비즈니스', 'Google 광고 소재 2차 시안: <span class="purple">5종 × 3비율 + 가로형 3종</span>',
+APX.append(shell('Appendix · A27 · 광고', 'Google 광고 소재 2차 시안: <span class="purple">5종 × 3비율 + 가로형 3종</span>',
     '<div style="display:flex;flex-direction:column;gap:22px;flex:1;min-height:0;justify-content:center">'
     '<div class="ax-grid ax-test" style="flex:none">' + ''.join(_tcol(k, n) for k, n in _TS) + '</div>'
     '<div style="display:flex;gap:22px;justify-content:center">'
@@ -376,7 +376,7 @@ APX.note('''2026-09-28 제작한 2차 시안. 새 후크 5종 × 3비율(15장) 
 
 # A28 Instagram 2 + 제품 화면형 10
 _UI_L = _ads('ui', 'landscape'); _UI_S = _ads('ui', 'square'); _UI_P = _ads('ui', 'portrait')
-APX.append(shell('Appendix · A28 · 비즈니스', 'Instagram 광고 소재 2종 · <span class="purple">제품 화면형 광고 소재 10종</span>',
+APX.append(shell('Appendix · A28 · 광고', 'Instagram 광고 소재 2종 · <span class="purple">제품 화면형 광고 소재 10종</span>',
     '<div class="ax-mix">'
     '<div class="grp"><b>Instagram 피드 (4:5)</b><div style="display:flex;gap:12px">'
     + ''.join(f'<img src="assets/ads/ig/{f}" alt="Instagram 광고" style="height:440px">' for f in _ads('ig')) + '</div></div>'
@@ -389,4 +389,4 @@ APX.append(shell('Appendix · A28 · 비즈니스', 'Instagram 광고 소재 2�
     source='Devfit/marketing/instagram-ads (2026-09-27) · marketing-brand-assets/05-google-ads-current-ui'))
 APX.note('''Instagram: 블로그 글 형식 1장, 개발 책상 사진 형식 1장(2026-09-27, 피드 4:5). 헤드라인 "코드는 남았는데, 왜 이렇게 짰는지 기억이 안 나요".
 제품 화면형: 현재 UI(공고 입력·준비 화면·질문 은행·질문 상세·대시보드·어필 포인트·근거 코드)를 그대로 캡처한 소재 10장.
-매체 집행 금액·단가는 A22. 소재별 성과는 따로 집계하지 않음.''')
+매체 집행 금액·단가는 A9. 소재별 성과는 따로 집계하지 않음.''')
