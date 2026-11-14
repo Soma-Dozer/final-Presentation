@@ -76,6 +76,8 @@ page = f'''<!DOCTYPE html>
 </main>
 <nav id="hud" aria-label="슬라이드 탐색"><button id="prev" type="button" aria-label="이전 슬라이드">‹</button><span id="counter">1 / 1</span><button id="next" type="button" aria-label="다음 슬라이드">›</button><button id="fullscreen" type="button" aria-label="전체 화면">⛶</button></nav>
 {core.JS}
+<style>body.ui-off #hud,body.ui-off #progress{{display:none!important}}body.ui-off,body.ui-off *{{cursor:none!important}}</style>
+<script>/* H 키: 진행 막대·하단 탐색 버튼·마우스 커서 숨김/표시 토글 */window.addEventListener('keydown',function(e){{if(e.metaKey||e.ctrlKey||e.altKey)return;if(e.key&&e.key.toLowerCase()==='h'){{document.body.classList.toggle('ui-off')}}}});</script>
 </body></html>'''
 tmp = core.OUT + f'.{os.getpid()}.tmp'
 open(tmp, 'w', encoding='utf8').write(page); os.replace(tmp, core.OUT)
