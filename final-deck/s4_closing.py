@@ -7,7 +7,7 @@ from core import *
 
 S = Slides()    # 본편 — 이 파일 순서 그대로 들어간다
 APX = Slides()  # 부록 — A번호 순으로 자동 정렬
-CSS = r""".cl-idx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.cl-idx table{font-size:21px}.cl-idx td{padding-top:3px;padding-bottom:3px;line-height:1.2}.cl-idx th{padding-top:6px;padding-bottom:6px}.cl-q{color:var(--muted,#777);font-size:.85em}
+CSS = r""".cl-idx{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.cl-idx table{font-size:19px}.cl-idx td{padding-top:2px;padding-bottom:2px;line-height:1.15}.cl-idx th{padding-top:6px;padding-bottom:6px}.cl-q{color:var(--muted,#777);font-size:.85em}.cl-g{display:inline-block;color:var(--ink);font-size:19px;font-weight:900;padding-top:4px;white-space:nowrap}
 
 """
 
@@ -39,9 +39,16 @@ S.append(raw('', '''<div class="slide-shell"><div class="slide-content" style="m
 S.note('''Q&A로 넘어갑니다. 부록은 쪽번호로 바로 엽니다(맨 뒤 부록 목차).''')
 
 # ================= 부록 =================
-# 팀 역할 부록(A8)은 2026-11-13 본편 Teamwork로 이동(storyline.py가 제목으로 옮김). 목차에서만 뺀다.
-apx = [('A1', '중간평가 심사의견 19건 반영표'), ('A2', '평가 하네스 상세'), ('A3', '측정 도구별 수치 차이'), ('A4', '유료 광고 집행과 효율'), ('A5', '원가와 가격'), ('A6', '기출 수집과 가공'), ('A7', '특허 3건'), ('A8', '시장 규모 산정식과 근거'), ('A9', 'Plus 7,900원 산출 근거'), ('A10', '모델 라우팅 · 서비스 스택'), ('A11', '현업 검토 · 멘토 피드백 반영'), ('A12', '공고 수집과 캐시 구조'), ('A13', '공고 캐시 발전과정'), ('A14', '오류 수집 (Sentry)'), ('A15', '검색 노출 (SEO)'), ('A16', '서비스 보안'), ('A17', '보안'), ('A18', '커밋 선별 발전과정'), ('A19', '질문 생성 호출 분할 · 난이도 세부'), ('A20', '자기소개서와 포트폴리오'), ('A21', '소마 이후 인프라 이전'), ('A27', '비성수기 대응: 상시와 수시 채용 지표'), ('A28', '재방문 회원의 AI 비용'), ('A29', '광고 소재 전체 (A29~A33)')]
-qs = ['멘토·심사 의견을 어떻게 반영했나', '품질을 어떻게 믿나', 'GA는 235명인데 왜 2.2만인가', '마케팅 효율은', '돈은 어떻게 버나', '크롤링 문제없나', '특허는 뭘 보호하나', '시장 규모는 어떻게 계산했고 숫자는 어디서 나왔나', '7,900원은 어떻게 정했나', '어떤 모델을 왜 쓰나', '현업은 써 보고 뭐라 했나', '공고는 어떻게 가져오나', '같은 공고를 매번 다시 분석하나', '오류는 어떻게 아나', '검색 유입은 어떻게 만드나', 'GitHub 토큰과 세션은 안전한가', '내 코드 털리는 거 아닌가', '커밋 선별은 어떻게 바뀌었나', '질문 생성은 어떻게 나눠 부르나', '면접 말고 또 뭘 하나', '지원 끝나면 서버비는', '채용 비성수기에는 어떻게 하나', '자주 쓰면 AI 비용이 계속 늘지 않나', '광고는 어떤 소재로 했나']
-_rows = [[f'<b style="color:var(--purple)">{{{{PAGE:{a}}}}}</b> <span class="cl-q">{a}</span>', f'{b}<br><span class="cl-q">{q}</span>'] for (a, b), q in zip(apx, qs)]
-S.append(shell('Appendix', '부록 목차', '<div class="cl-idx">' + table(['쪽', '장표 · 예상 질문'], _rows[:13], 'left plain') + table(['쪽', '장표 · 예상 질문'], _rows[13:], 'left plain') + '</div>'))
+# 팀 역할 부록(A18)은 2026-11-13 본편 Teamwork로 이동(storyline.py가 제목으로 옮김). 목차에서만 뺀다.
+apx = [('A1', '중간평가 심사의견 19건 반영표'), ('A2', '현업 검토 · 멘토 피드백 반영'), ('A3', '평가 하네스 상세'), ('A4', '모델 라우팅 · 서비스 스택'), ('A5', '커밋 선별 발전과정'), ('A6', '질문 생성 호출 분할 · 난이도 세부'), ('A7', '기출 수집과 가공'), ('A8', '자기소개서와 포트폴리오'), ('A9', '공고 수집과 캐시 구조'), ('A10', '공고 캐시 발전과정'), ('A11', '오류 수집 (Sentry)'), ('A12', '서비스 보안'), ('A13', '보안'), ('A14', '원가와 가격'), ('A15', 'Plus 7,900원 산출 근거'), ('A16', '재방문 회원의 AI 비용'), ('A17', '소마 이후 인프라 이전'), ('A18', '시장 규모 산정식과 근거'), ('A19', '비성수기 대응: 상시와 수시 채용 지표'), ('A20', '특허 3건'), ('A21', '측정 도구별 수치 차이'), ('A22', '유료 광고 집행과 효율'), ('A23', '검색 노출 (SEO)'), ('A24', '광고 소재 전체 (A24~A28)'), ('A29', 'B2B Enterprise 사용 설명서 (A29~A33)')]
+qs = ['멘토·심사 의견을 어떻게 반영했나', '현업은 써 보고 뭐라 했나', '품질을 어떻게 믿나', '어떤 모델을 왜 쓰나', '커밋 선별은 어떻게 바뀌었나', '질문 생성은 어떻게 나눠 부르나', '크롤링 문제없나', '면접 말고 또 뭘 하나', '공고는 어떻게 가져오나', '같은 공고를 매번 다시 분석하나', '오류는 어떻게 아나', 'GitHub 토큰과 세션은 안전한가', '내 코드 털리는 거 아닌가', '돈은 어떻게 버나', '7,900원은 어떻게 정했나', '자주 쓰면 AI 비용이 계속 늘지 않나', '지원 끝나면 서버비는', '시장 규모는 어떻게 계산했고 숫자는 어디서 나왔나', '채용 비성수기에는 어떻게 하나', '특허는 뭘 보호하나', 'GA는 235명인데 왜 2.2만인가', '마케팅 효율은', '검색 유입은 어떻게 만드나', '광고는 어떤 소재로 했나', '기업은 실제로 어떻게 쓰나']
+_grp = lambda n: '검토와 피드백' if n <= 2 else '기술' if n <= 13 else '비즈니스' if n <= 28 else 'B2B'
+_rows, _g = [], None
+for (a, b), q in zip(apx, qs):
+    if _grp(int(a[1:])) != _g:
+        _g = _grp(int(a[1:]))
+        _rows.append([f'<b class="cl-g">{_g}</b>', ''])
+    _rows.append([f'<b style="color:var(--purple)">{{{{PAGE:{a}}}}}</b> <span class="cl-q">{a}</span>', f'{b}<br><span class="cl-q">{q}</span>'])
+_cut = next(k for k, r in enumerate(_rows) if 'cl-g">비즈니스' in r[0])
+S.append(shell('Appendix', '부록 목차', '<div class="cl-idx">' + table(['쪽', '장표 · 예상 질문'], _rows[:_cut], 'left plain') + table(['쪽', '장표 · 예상 질문'], _rows[_cut:], 'left plain') + '</div>'))
 S.note('''Q&A 때 쪽번호로 이동. 답변 원고: collect/00-통합보고.md §3.''')

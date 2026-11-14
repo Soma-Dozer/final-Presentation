@@ -476,7 +476,7 @@ S.note('''[1:45–2:25] 가장 많이 들은 반론입니다. «Claude Code에 G
 Q&A 대비: clone한 Claude Code는 30/32 실존 → «잘 지시하면 찾는다. 그 지시와 대조를 사용자가 매번 해야 한다. DevFit은 서버가 매번 강제 + 공고 단위 흐름 + 본인 커밋 필터 + 음성 모의면접». Greenroom(GitHub 레포 분석 모의면접) 존재 — collect/E-compare.md(범용 AI 비교 부록은 11-13 삭제).
 ⛔ «유일»·«최초»·«AI는 레포를 못 읽는다»·«Claude보다 정확» 금지. ⛔ «46/46 일치» 금지.
 🔴 인용 실명은 동의 후에만 — 현재 역할만 표기.
-(11-10 삭제한 장표 2개 → Q&A용) 질문 귀속 4지선다 81.9% vs 우연 25%, n=177 — 부록 A2 · AI 모의면접 비교(이력서 vs 내 커밋, 본인 1.0/공동 0.70/타인 제외, 공고 29곳) — collect/E-compare.md.''')
+(11-10 삭제한 장표 2개 → Q&A용) 질문 귀속 4지선다 81.9% vs 우연 25%, n=177 — 부록 A3 · AI 모의면접 비교(이력서 vs 내 커밋, 본인 1.0/공동 0.70/타인 제외, 공고 29곳) — collect/E-compare.md.''')
 
 # ================= 2. 시연 =================
 S.append(raw('dark-slide', f'''<div class="dark-grid"></div><div class="slide-shell" style="padding:0">
